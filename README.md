@@ -8,7 +8,9 @@ git checkout ipv6
 
 # clone
 ```
-git clone git@github.com:zi-an/zi-an.github.io.git --single-branch ipv6 --depth=1
+git clone git@github.com:zi-an/zi-an.github.io.git ipv6
+cd ipv6
+git checkout ipv6
 ```
 
 # update
