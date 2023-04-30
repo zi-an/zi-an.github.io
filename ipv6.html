@@ -5,7 +5,7 @@
     <title>ipv6</title>
 </head>
 <body>
-<button id="copy" onclick="copy()"> 123</button>
+<h1 id="copy" > 123</h1>
 </body>
 
 <script type="text/javascript">
@@ -15,14 +15,8 @@
     httpRequest.send();
     httpRequest.onreadystatechange = function ()  {
         d = httpRequest.responseText;
-        d = d.substring(d.indexOf('240'), d.indexOf('/64'))
-        document.getElementById("copy").innerText = '['+d+']';
-    }
-
-    function copy() {
-        let copy = document.getElementById('copy');
-        copy.select();
-        document.execCommand("Copy");
+        d = '['+d.substring(d.indexOf('240'), d.indexOf('/64'))+']';
+        document.getElementById("copy").innerText = d;
     }
 </script>
 </html>
