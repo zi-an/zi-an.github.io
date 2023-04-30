@@ -1,0 +1,8 @@
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 state UNKNOWN qlen 1000
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+44: eth0@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 state UNKNOWN 
+    inet6 2409:8a55:9865:dca0:6:ff:fe00:0/64 scope global mngtmpaddr dynamic 
+       valid_lft 255890sec preferred_lft 169490sec
+    inet6 fe80::6:ff:fe00:0/64 scope link 
+       valid_lft forever preferred_lft forever
