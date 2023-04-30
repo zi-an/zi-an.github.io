@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>ipv6</title>
+</head>
+<body>
+<button id="copy" onclick="copy()"> 123</button>
+</body>
+
+<script type="text/javascript">
+    let d;
+    let httpRequest = new XMLHttpRequest();
+    httpRequest.open("GET", "https://raw.githubusercontent.com/zi-an/zi-an.github.io/ipv6/ipv6.txt?r=" + Math.random());
+    httpRequest.send();
+    httpRequest.onreadystatechange = function ()  {
+        d = httpRequest.responseText;
+        d = d.substring(d.indexOf('240'), d.indexOf('/64'))
+        document.getElementById("copy").innerText = '['+d+']';
+    }
+
+    function copy() {
+        let copy = document.getElementById('copy');
+        copy.select();
+        document.execCommand("Copy");
+    }
+</script>
+</html>
