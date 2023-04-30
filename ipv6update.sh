@@ -1,6 +1,6 @@
 cd ~/ipv6 
-docker exec -it nginx ip -6 addr > ipv6.txt
-sleep 2s
+sh -c "docker exec nginx ip -6 addr" > ipv6.txt
+#sleep 2s
 
 git add .
 git commit -m "update ipv6"
