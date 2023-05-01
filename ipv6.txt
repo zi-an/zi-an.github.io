@@ -3,6 +3,6 @@
        valid_lft forever preferred_lft forever
 46: eth0@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 state UNKNOWN 
     inet6 2409:8a55:9865:fc60:6:ff:fe00:0/64 scope global mngtmpaddr dynamic 
-       valid_lft 219117sec preferred_lft 132717sec
+       valid_lft 215514sec preferred_lft 129114sec
     inet6 fe80::6:ff:fe00:0/64 scope link 
        valid_lft forever preferred_lft forever
