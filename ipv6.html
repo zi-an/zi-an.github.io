@@ -12,12 +12,12 @@
 <script type="text/javascript">
     let d;
     let httpRequest = new XMLHttpRequest();
-    httpRequest.open("GET", "https://raw.githubusercontent.com/zi-an/zi-an.github.io/ipv6/ipv6.txt?r=" + Math.random());
+    httpRequest.open("GET", "https://raw.githubusercontent.com/zi-an/zi-an.github.io/ipv6/ipv6.txt");
     httpRequest.send();
     httpRequest.onreadystatechange = function ()  {
         d = httpRequest.responseText;
         d = '['+d.substring(d.indexOf('240'), d.indexOf('/64'))+']';
-        document.getElementById("cop1").innerText = d;
+        document.getElementById("copy1").innerText = d;
         document.getElementById("copy2").innerText = "http://"+d;
     }
 </script>
