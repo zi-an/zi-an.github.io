@@ -28,7 +28,11 @@
 
     function copy() {
         let text = document.getElementById("copy1").innerText;
-        navigator.clipboard.writeText(text);
+        navigator.clipboard.writeText(text).then(function () {
+            alert("复制成功");
+        }, function () {
+            alert("复制失败");
+        });
     }
 
     function enter() {
