@@ -1,2 +1,3 @@
     inet6 2409:8a55:9868:f470:6:ff:fe00:0/64 scope global mngtmpaddr dynamic 
+       valid_lft 212400sec preferred_lft 126000sec
     inet6 2409:8a55:9868:8420:6:ff:fe00:0/64 scope global mngtmpaddr dynamic 
