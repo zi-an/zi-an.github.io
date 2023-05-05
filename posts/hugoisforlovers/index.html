@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
 <head>
-	<meta name="generator" content="Hugo 0.111.3">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" 我的Github Pages # Hugo构建工具 # 通过 Hugo 你可以快速搭建你的静态网站,比如博客系统,文档介绍,公司主页,产品介绍等等. hugo-book主题 # hugo-book 适合做文档功能的网页 准备 # 建议使用hugo extended (解压hugo_extended_0.111.3_windows-amd64.zip把exe放到C:/Windows下) 主题hugo-book下载https://themes.gohugo.io/themes/hugo-book/ 主题演示地址 https://hugo-book-demo.netlify.app/ 构建 shell # 创建文件并把example运行 hugo new site mysite cd mysite git clone https://github.com/alex-shpak/hugo-book themes/hugo-book cp ./themes/hugo-book/exampleSite/content.en/* ./content -r hugo server --theme=hugo-book --buildDrafts 发布 shell # 修改 config.toml中的baseURL 使用主题生成静态页面文件 之后生成./public文件夹,复制到nginx即可以 hugo --theme=hugo-book ">
+<meta name="description" content="Step 1. Install Hugo # Go to Hugo releases and download the appropriate version for your OS and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at Install Hugo
+Step 2. Build the Docs # Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="首页" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://zi-an.github.io/" />
-<title>首页 | Zi-An</title>
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Getting Started with Hugo" />
+<meta property="og:description" content="Step 1. Install Hugo # Go to Hugo releases and download the appropriate version for your OS and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at Install Hugo
+Step 2. Build the Docs # Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://zi-an.github.io/posts/hugoisforlovers/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2014-04-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-04-02T00:00:00+00:00" />
+<title>Getting Started with Hugo | Zi-An</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.f8de3645fe00591b41524aee174e19edd98a22255a2930a0cdc82a94835ba387.css" integrity="sha256-&#43;N42Rf4AWRtBUkruF04Z7dmKIiVaKTCgzcgqlINbo4c=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
   <script defer src="/en.search.min.d7dbcc8b9ac786f16085748638d85f361e08ae9a68793b63b33eb52f6c67801a.js" integrity="sha256-19vMi5rHhvFghXSGONhfNh4IrppoeTtjsz61L2xngBo=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="http://zi-an.github.io/index.xml" title="Zi-An" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -395,7 +403,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>首页</strong>
+  <strong>Getting Started with Hugo</strong>
 
   <label for="toc-control">
     
@@ -411,11 +419,10 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#准备">准备</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#发布-shell">发布 shell</a></li>
+    <li><a href="#step-1-install-hugo">Step 1. Install Hugo</a></li>
+    <li><a href="#step-2-build-the-docs">Step 2. Build the Docs</a></li>
+    <li><a href="#step-3-change-the-docs-site">Step 3. Change the docs site</a></li>
+    <li><a href="#step-4-have-fun">Step 4. Have fun</a></li>
   </ul>
 </nav>
 
@@ -428,62 +435,102 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="我的github-pages">
-  我的Github Pages
-  <a class="anchor" href="#%e6%88%91%e7%9a%84github-pages">#</a>
-</h1>
-<div class="book-columns flex flex-wrap">
+<article class="markdown">
+  <h1>
+    <a href="/posts/hugoisforlovers/">Getting Started with Hugo</a>
+  </h1>
+  
+  <h5>April 2, 2014</h5>
 
-  <div class="flex-even markdown-inner">
-    <h2 id="hugo构建工具">
-  Hugo构建工具
-  <a class="anchor" href="#hugo%e6%9e%84%e5%bb%ba%e5%b7%a5%e5%85%b7">#</a>
-</h2>
-<p>通过 Hugo 你可以快速搭建你的静态网站,比如博客系统,文档介绍,公司主页,产品介绍等等.
+
+
+  
+  <div>
+    
+      <a href="/categories/development/">Development</a>, 
+      <a href="/categories/golang/">golang</a>
   </div>
+  
 
-  <div class="flex-even markdown-inner">
-    <h2 id="hugo-book主题">
-  hugo-book主题
-  <a class="anchor" href="#hugo-book%e4%b8%bb%e9%a2%98">#</a>
-</h2>
-<p>hugo-book 适合做文档功能的网页
+  
+  <div>
+    
+      <a href="/tags/go/">go</a>, 
+      <a href="/tags/golang/">golang</a>, 
+      <a href="/tags/hugo/">hugo</a>, 
+      <a href="/tags/development/">development</a>
   </div>
+  
 
-</div>
 
-<h2 id="准备">
-  准备
-  <a class="anchor" href="#%e5%87%86%e5%a4%87">#</a>
+
+<h2 id="step-1-install-hugo">
+  Step 1. Install Hugo
+  <a class="anchor" href="#step-1-install-hugo">#</a>
 </h2>
-<ul>
-<li>建议使用hugo extended (解压hugo_extended_0.111.3_windows-amd64.zip把exe放到C:/Windows下)</li>
-<li>主题hugo-book下载https://themes.gohugo.io/themes/hugo-book/</li>
-<li>主题演示地址 <a href="https://hugo-book-demo.netlify.app/">https://hugo-book-demo.netlify.app/</a></li>
-</ul>
-<h1 id="构建-shell">
-  构建 shell
-  <a class="anchor" href="#%e6%9e%84%e5%bb%ba-shell">#</a>
-</h1>
-<ul>
-<li>创建文件并把example运行</li>
-</ul>
-<pre tabindex="0"><code>hugo new site mysite
-cd mysite
-git clone https://github.com/alex-shpak/hugo-book themes/hugo-book
-cp ./themes/hugo-book/exampleSite/content.en/* ./content -r
-hugo server --theme=hugo-book --buildDrafts
-</code></pre><h2 id="发布-shell">
-  发布 shell
-  <a class="anchor" href="#%e5%8f%91%e5%b8%83-shell">#</a>
+<p>Go to <a href="https://github.com/spf13/hugo/releases">Hugo releases</a> and download the
+appropriate version for your OS and architecture.</p>
+<p>Save it somewhere specific as we will be using it in the next step.</p>
+<p>More complete instructions are available at <a href="https://gohugo.io/getting-started/installing/">Install Hugo</a></p>
+<h2 id="step-2-build-the-docs">
+  Step 2. Build the Docs
+  <a class="anchor" href="#step-2-build-the-docs">#</a>
 </h2>
-<ul>
-<li><del>修改 config.toml中的baseURL</del></li>
-<li>使用主题生成静态页面文件</li>
-<li>之后生成./public文件夹,复制到nginx即可以</li>
-</ul>
-<pre tabindex="0"><code>hugo --theme=hugo-book 
-</code></pre></article>
+<p>Hugo has its own example site which happens to also be the documentation site
+you are reading right now.</p>
+<p>Follow the following steps:</p>
+<ol>
+<li>Clone the <a href="http://github.com/spf13/hugo">Hugo repository</a></li>
+<li>Go into the repo</li>
+<li>Run hugo in server mode and build the docs</li>
+<li>Open your browser to http://localhost:1313</li>
+</ol>
+<p>Corresponding pseudo commands:</p>
+<pre><code>git clone https://github.com/spf13/hugo
+cd hugo
+/path/to/where/you/installed/hugo server --source=./docs
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 27 ms
+&gt; Web Server is available at http://localhost:1313
+&gt; Press ctrl+c to stop
+</code></pre>
+<p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
+<h2 id="step-3-change-the-docs-site">
+  Step 3. Change the docs site
+  <a class="anchor" href="#step-3-change-the-docs-site">#</a>
+</h2>
+<p>Stop the Hugo process by hitting Ctrl+C.</p>
+<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
+<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 27 ms
+&gt; Web Server is available at http://localhost:1313
+&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&gt; Press ctrl+c to stop
+</code></pre>
+<p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
+content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
+<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
+are located at the same relative location as the url, in our case
+<code>docs/content/overview/quickstart.md</code>.</p>
+<p>Change and save this file.. Notice what happened in your terminal.</p>
+<pre><code>&gt; Change detected, rebuilding site
+
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 26 ms
+</code></pre>
+<p>Refresh the browser and observe that the typo is now fixed.</p>
+<p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
+<h2 id="step-4-have-fun">
+  Step 4. Have fun
+  <a class="anchor" href="#step-4-have-fun">#</a>
+</h2>
+<p>The best way to learn something is to play with it.</p>
+</article>
  
       
 
@@ -524,11 +571,10 @@ hugo server --theme=hugo-book --buildDrafts
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#准备">准备</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#发布-shell">发布 shell</a></li>
+    <li><a href="#step-1-install-hugo">Step 1. Install Hugo</a></li>
+    <li><a href="#step-2-build-the-docs">Step 2. Build the Docs</a></li>
+    <li><a href="#step-3-change-the-docs-site">Step 3. Change the docs site</a></li>
+    <li><a href="#step-4-have-fun">Step 4. Have fun</a></li>
   </ul>
 </nav>
 
