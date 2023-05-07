@@ -1,0 +1,13 @@
+baseURL = 'http://zi-an.github.io/'
+languageCode = 'en-us'
+title = 'Zi-An'
+
+[params]
+  # (Optional, default light) Sets color theme: light, dark or auto.
+  # Theme 'auto' switches between dark and light modes based on browser/os preferences
+  BookTheme = 'auto'
+
+[[menu.after]]
+  name = "IPV6"
+  url = "./ipv6.html"
+  weight = 10
