@@ -8,9 +8,9 @@
     <title>ipv6</title>
 </head>
 <body>
-<button onclick="copy()"><h3 id="copy1">123</h3></button>
+<button onclick="copy()"><h3>IP:</h3></button>
 <br><br>
-<button onclick="enter()"><h3 id="copy2">http</h3></button>
+<button onclick="enter()"><h3>HTTP:</h3></button>
 
 </body>
 
@@ -20,15 +20,13 @@
     httpRequest.open("GET", "https://raw.githubusercontent.com/zi-an/zi-an.github.io/ipv6/last.txt");
     httpRequest.send();
     httpRequest.onreadystatechange = function () {
-        ipp = httpRequest.responseText;
-        //d = '[' + d.substring(d.indexOf('240'), d.indexOf('/64')) + ']';
-        ip='[' + ip + ']';
-        document.getElementById("copy1").innerText = ip;
-        document.getElementById("copy2").innerText = "http://" + ip;
+        ip = httpRequest.responseText;
+        ip = '[' + ip.replace('\n', '') + ']';
+        document.getElementsByTagName("h3")[0].innerText = ip;
+        document.getElementsByTagName("h3")[1].innerText = "http://" + ip;
     }
 
     function copy() {
-        //let text = document.getElementById("copy1").innerText;
         navigator.clipboard.writeText(ip).then(function () {
             alert("复制成功");
         }, function () {
@@ -37,7 +35,7 @@
     }
 
     function enter() {
-        let url =  "http://" + ip;
+        let url = "http://" + ip;
         window.open(url)
     }
 </script>
