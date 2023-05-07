@@ -15,20 +15,21 @@
 </body>
 
 <script type="text/javascript">
-    let d;
+    let ip;
     let httpRequest = new XMLHttpRequest();
     httpRequest.open("GET", "https://raw.githubusercontent.com/zi-an/zi-an.github.io/ipv6/now.txt");
     httpRequest.send();
     httpRequest.onreadystatechange = function () {
-        d = httpRequest.responseText;
-        d = '[' + d.substring(d.indexOf('240'), d.indexOf('/64')) + ']';
-        document.getElementById("copy1").innerText = d;
-        document.getElementById("copy2").innerText = "http://" + d;
+        ipp = httpRequest.responseText;
+        //d = '[' + d.substring(d.indexOf('240'), d.indexOf('/64')) + ']';
+        ip='[' + ip + ']';
+        document.getElementById("copy1").innerText = ip;
+        document.getElementById("copy2").innerText = "http://" + ip;
     }
 
     function copy() {
-        let text = document.getElementById("copy1").innerText;
-        navigator.clipboard.writeText(text).then(function () {
+        //let text = document.getElementById("copy1").innerText;
+        navigator.clipboard.writeText(ip).then(function () {
             alert("复制成功");
         }, function () {
             alert("复制失败");
@@ -36,7 +37,7 @@
     }
 
     function enter() {
-        let url = document.getElementById("copy2").innerText;
+        let url =  "http://" + ip;
         window.open(url)
     }
 </script>
