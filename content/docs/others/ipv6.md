@@ -1,9 +1,15 @@
 ---
-menu:
-  after:
-    name: ipv6
-    weight: 5
-title: IPV6
+weight: 1
+#权重
+bookFlatSection: false
+#左显示
+bookCollapseSection: false
+#左折叠
+bookHidden: false
+#隐藏
+bookToc: false
+#右目录
+title: "IPV6"
 ---
 
 ## 这是我的ipv6
