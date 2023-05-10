@@ -20,8 +20,7 @@
     httpRequest.open("GET", "https://raw.githubusercontent.com/zi-an/zi-an.github.io/ipv6/last.txt");
     httpRequest.send();
     httpRequest.onreadystatechange = function () {
-        ip = httpRequest.responseText;
-        ip = '[' + ip.replace('\n', '') + ']';
+        ip = '[' +httpRequest.responseText + ']';
         document.getElementsByTagName("h3")[0].innerText = ip;
         document.getElementsByTagName("h3")[1].innerText = "http://" + ip;
     }
