@@ -10,6 +10,7 @@ last=`md5sum last.txt`
 if [ ${now:0:32} == ${last:0:32} ] ;then
  echo "no change"
 else
+ git pull
  echo -n $docker > last.txt 
  git add .
  git commit -m "update ipv6"
