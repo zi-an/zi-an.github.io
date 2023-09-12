@@ -4,7 +4,7 @@ echo "HandleLidSwitch=lock" >> /etc/systemd/logind.conf
 systemctl restart systemd-logind.service
 
 apt update
-apt install -y unzip wget
+apt install -y unzip wget openssh-server
 
 wget https://zi-an.github.io/install/virc
 mv virc /etc/vim/vimrc.tiny
@@ -18,9 +18,9 @@ mv /etc/ssh/id_ed* ~/.ssh/
 rm keys.zip
 
 mkdir /root/.ssh -p
-echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOnFp3JLA1fwdHjEs8NSpgQ4k0eAhvaQbecKXl03mhsm" >> ~/.ssh/authorized_keys 
-chmod 700 ~/.ssh 
-chmod 644 ~/.ssh/authorized_keys
+echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOnFp3JLA1fwdHjEs8NSpgQ4k0eAhvaQbecKXl03mhsm" >> /root/.ssh/authorized_keys 
+chmod 700 /root/.ssh 
+chmod 644 /root/.ssh/authorized_keys
  
 echo "source /etc/profile" >> /root/.bashrc 
 echo "clear" >> /root/.bashrc
