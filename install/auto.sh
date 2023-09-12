@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "HandleLidSwitch=lock" >> /etc/systemd/logind.conf
+systemctl restart systemd-logind.service
+
 apt update
 apt install -y unzip wget
 
@@ -21,14 +24,13 @@ chmod 644 ~/.ssh/authorized_keys
  
 echo "source /etc/profile" >> /root/.bashrc 
 echo "clear" >> /root/.bashrc
-echo "HandleLidSwitch=lock" >> /etc/systemd/logind.conf
-systemctl restart systemd-logind.service
 
 
 
 echo 'net.ipv6.conf.all.disable_ipv6 = 1'>/etc/sysctl.conf
 echo 'net.ipv6.conf.default.disable_ipv6 = 1'>>/etc/sysctl.conf
 echo 'net.ipv6.conf.lo.disable_ipv6 = 1'>>/etc/sysctl.conf
+/sbin/sysctl -p
 
 apt install -y docker-compose
 echo '{"hosts":["unix:///var/run/docker.sock","tcp://0.0.0.0:2375"]}' > /etc/docker/daemon.json
@@ -36,3 +38,4 @@ sed -i "s|-H fd:// ||g" /usr/lib/systemd/system/docker.service
 systemctl daemon-reload
 systemctl restart docker.service
 
+exit
