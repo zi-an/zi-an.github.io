@@ -3,6 +3,8 @@
 function default(){
     str=`cat /etc/systemd/logind.conf | grep lock`
     if [ ${#str} != 20 ] ; then
+	    echo k610d > /etc/hostname
+        echo "192.168.10.5 k610d" >> /etc/hosts
         echo "HandleLidSwitch=lock" >> /etc/systemd/logind.conf
         systemctl restart systemd-logind.service
 		sed -i "s/^[^#].*swap*/#&/g" /etc/fstab
