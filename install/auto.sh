@@ -6,7 +6,6 @@ function default(){
         hostname k610d
         echo k610d > /etc/hostname
         echo "192.168.10.5 k610d" >> /etc/hosts
-        useradd dokcer -p 1
         echo "HandleLidSwitch=lock" >> /etc/systemd/logind.conf
         systemctl restart systemd-logind.service
         sed -i "s/^[^#].*swap*/#&/g" /etc/fstab
