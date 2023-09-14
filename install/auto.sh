@@ -3,15 +3,15 @@
 function default(){
     str=`cat /etc/systemd/logind.conf | grep lock`
     if [ ${#str} != 20 ] ; then
-	    hostname k610d
+        hostname k610d
         echo k610d > /etc/hostname
         echo "192.168.10.5 k610d" >> /etc/hosts
         useradd dokcer -p 1
         echo "HandleLidSwitch=lock" >> /etc/systemd/logind.conf
         systemctl restart systemd-logind.service
-		sed -i "s/^[^#].*swap*/#&/g" /etc/fstab
-		systemctl mask dev-sda3.swap
-		sed -i "s|security.debian.org|mirrors.tuna.tsinghua.edu.cn|g" /etc/apt/sources.list
+        sed -i "s/^[^#].*swap*/#&/g" /etc/fstab
+        systemctl mask dev-sda3.swap
+        sed -i "s|security.debian.org|mirrors.tuna.tsinghua.edu.cn|g" /etc/apt/sources.list
         apt update
         apt install -y curl openssh-server unzip wget
         wget https://zi-an.github.io/install/virc
