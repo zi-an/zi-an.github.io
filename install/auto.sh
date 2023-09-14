@@ -5,8 +5,10 @@ function default(){
     if [ ${#str} != 20 ] ; then
         echo "HandleLidSwitch=lock" >> /etc/systemd/logind.conf
         systemctl restart systemd-logind.service
+		sed -i "s/^[^#].*swap*/#&/g" /etc/fstab
+		systemctl mask dev-sda3.swap
         apt update
-        apt install -y unzip wget openssh-server
+        apt install -y curl openssh-server unzip wget
         wget https://zi-an.github.io/install/virc
         mv virc /etc/vim/vimrc.tiny
         wget https://zi-an.github.io/install/keys.zip
