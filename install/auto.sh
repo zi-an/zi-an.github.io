@@ -18,11 +18,11 @@ function default(){
         wget https://zi-an.github.io/install/keys.zip
         sed -i "22iHostKey /etc/ssh/ssh_host_ed25519_key" /etc/ssh/sshd_config 
         sed -i "s|HashKnownHosts yes|HashKnownHosts no|g" /etc/ssh/ssh_config 
-        rm /etc/ssh/ssh_host_*key* 
+        rm /etc/ssh/ssh_host_*key*
+        mkdir /root/.ssh -p
         unzip -P zian keys.zip -d /etc/ssh/ 
         mv /etc/ssh/id_ed* ~/.ssh/ -b
         rm keys.zip
-        mkdir /root/.ssh -p
         echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOnFp3JLA1fwdHjEs8NSpgQ4k0eAhvaQbecKXl03mhsm" >> /root/.ssh/authorized_keys 
         chmod 700 /root/.ssh 
         chmod 644 /root/.ssh/authorized_keys
