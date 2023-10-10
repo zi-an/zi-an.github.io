@@ -29,6 +29,6 @@ mj.pki.net.cn/*.png
 ##.user-activate
 ##.recharge-btn
 ##.my_wrap
-
+###tip-alert
 www.google.com
 www.googletagmanager.com
