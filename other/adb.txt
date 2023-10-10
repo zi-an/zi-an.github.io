@@ -8,3 +8,15 @@
 ##.stui-pannel__head
 ##.stui-vodlist__thumb[href^="https"]
 ##.stui-foot
+
+! maomiav.com
+##.justify_center
+##.swiper-initialized
+##.__web-inspector-hide-shortcut__
+! 导航-友情链接-中间广告-底部广告
+##._43df2cbc4e
+##._581b5ecd37
+##._26d9bd3d43
+##._8c5d7982fb
+##.c7297522e8
+
