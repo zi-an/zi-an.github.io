@@ -1,0 +1,10 @@
+[Adblock Plus 2.0]
+! Title: Mine
+! https://www.jianshu.com/p/905f89de656c
+
+! hsck.cc
+##div[style=" max-width:990px; margin:0 auto;"]
+##.gonggao
+##.stui-pannel__head
+##.stui-vodlist__thumb[href^="https"]
+##.stui-foot
