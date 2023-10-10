@@ -17,7 +17,16 @@ mj.pki.net.cn/public/
 mj.pki.net.cn/build1/static/node_modules/react-dom/cjs/react-dom.production.min.js
 mj.pki.net.cn/*.png
 
+!https://mj.pki.net.cn/build1/static/js/main.a32b8133.js
 ##.e1da28913d
 ##._581b5ecd37
 ##._43df2cbc4e
 ##._8c5d7982fb
+
+! caoliu1024.com旧版
+###cate_12
+###cate_thread
+
+##.user-activate
+##.recharge-btn
+##.my_wrap
