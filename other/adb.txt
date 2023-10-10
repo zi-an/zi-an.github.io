@@ -26,7 +26,9 @@ mj.pki.net.cn/*.png
 ! caoliu1024.com旧版
 ###cate_12
 ###cate_thread
-
 ##.user-activate
 ##.recharge-btn
 ##.my_wrap
+
+www.google.com
+www.googletagmanager.com
