@@ -32,3 +32,6 @@ mj.pki.net.cn/*.png
 ###tip-alert
 www.google.com
 www.googletagmanager.com
+
+##.list.t_one.url_link[data-url="read.php?tid=42290"]
+##.list.t_one.url_link[data-url="read.php?tid=42193"]
