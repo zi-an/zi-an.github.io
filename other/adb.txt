@@ -1,6 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: Mine
 ! https://www.jianshu.com/p/905f89de656c
+! 参考:https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt
 
 ! hsck.cc
 ##div[style=" max-width:990px; margin:0 auto;"]
@@ -10,13 +11,13 @@
 ##.stui-foot
 
 ! maomiav.com
-##.justify_center
-##.swiper-initialized
-##.__web-inspector-hide-shortcut__
-! 导航-友情链接-中间广告-底部广告
-##._43df2cbc4e
-##._581b5ecd37
-##._26d9bd3d43
-##._8c5d7982fb
-##.c7297522e8
+##.header_original
+mj.pki.net.cn/public/1/plugins/
+mj.pki.net.cn/public/
+mj.pki.net.cn/build1/static/node_modules/react-dom/cjs/react-dom.production.min.js
+mj.pki.net.cn/*.png
 
+##.e1da28913d
+##._581b5ecd37
+##._43df2cbc4e
+##._8c5d7982fb
