@@ -1,7 +1,7 @@
 |分类|一|二|三|亖|
 |-|-|-|-|-|
 |站内|[adbp](https://zi-an.github.io/other/adb.txt)|[ipv6](https://zi-an.github.io/ipv6)||
-|私站|[5mm](http://5.mm)|[200mm](http://5.mm)|[222mm](http://222.mm)||
+|私站|[5mm](http://5.mm)|[200m](http://5.mm)|[222m](http://222.mm)||
 |查询|[faker](https://www.op.gg/summoners/kr/Hide%20on%20bush)|||
 |虎牙|[安珀](https://m.huya.com/20411512)|[蛋挞](https://m.huya.com/799147)|[霸哥](https://m.huya.com/bagea)|[星痕](https://m.huya.com/699772)|
 ||[夕璃](https://m.huya.com/21809097)|||
