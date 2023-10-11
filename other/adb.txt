@@ -46,6 +46,7 @@ m.sohu.com###artFloatDiscuss
 m.sohu.com##.top-bill-wrapper
 m.sohu.com###footerMenu
 m.sohu.com##.comment-reply__box
+m.sohu.com##.to-home
 
 ! https://view.inews.qq.com/
 
