@@ -11,9 +11,8 @@ cn.bing.com#?#li.b_algo:-abp-contains(知乎)
 cn.bing.com###bnp_rich_div
 cn.bing.com###b_footer
 cn.bing.com##li.b_rs
-cn.bing.com#@#li.b_nwsAns
 cn.bing.com###ev_talkbox_wrapper
-cn.bing.com###a.mnws_cwrp[href^="https://new.qq.com/"]
+cn.bing.com##.mnws_cwrp[href^="https://new.qq.com/"]
 
 ! blog.csdn.net
 blog.csdn.net###csdn-toolbar
