@@ -3,6 +3,11 @@
 ! https://www.jianshu.com/p/905f89de656c
 ! 参考:https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt
 
+! https://www.msn.cn/
+##.breakingNews-DS-EntryPoint1-1
+##.button-DS-EntryPoint1-1
+##.articlePage_riverContainer-DS-EntryPoint1-1
+
 ! hsck.cc
 ##div[style=" max-width:990px; margin:0 auto;"]
 ##.gonggao
@@ -17,7 +22,7 @@ mj.pki.net.cn/public/
 mj.pki.net.cn/build1/static/node_modules/react-dom/cjs/react-dom.production.min.js
 mj.pki.net.cn/*.png
 
-!https://mj.pki.net.cn/build1/static/js/main.a32b8133.js
+! https://mj.pki.net.cn/build1/static/js/main.a32b8133.js
 ##.e1da28913d
 ##._581b5ecd37
 ##._43df2cbc4e
