@@ -7,6 +7,10 @@
 ! https://cn.bing.com/ 屏蔽csdn,jianshu等名字需要全大写
 ! 知乎不好屏蔽,先用csdn cn.bing.com#?#li.b_algo:-abp-contains(CSDN)
 cn.bing.com#?#li.b_algo:-abp-contains(ZHIHU)
+cn.bing.com###bnp_rich_div
+cn.bing.com###b_footer
+cn.bing.com##.b_ans
+cn.bing.com###ev_talkbox_wrapper
 
 ! blog.csdn.net
 blog.csdn.net###csdn-toolbar
