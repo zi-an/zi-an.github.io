@@ -5,8 +5,27 @@
 ! https://help.adblockplus.org/hc/en-us/search?utf8=%E2%9C%93&query=ruler
 
 ! https://cn.bing.com/ 屏蔽csdn,jianshu等
-cn.bing.com#?#li.b_algo:-abp-contains(CSDN)
+!cn.bing.com#?#li.b_algo:-abp-contains(CSDN)
+cn.bing.com#?#li.b_algo:-abp-contains(zhihu)
 
+! blog.csdn.net
+blog.csdn.net###csdn-toolbar
+blog.csdn.net##.feed-Sign-weixin
+blog.csdn.net##.open_app_channelCode
+blog.csdn.net###recommend
+blog.csdn.net###operate
+blog.csdn.net###treeSkill
+
+! www.jianshu.com
+www.jianshu.com##.header-wrap
+www.jianshu.com##.note-graceful-button
+www.jianshu.com###recommended-notes
+www.jianshu.com###footer
+www.jianshu.com##.call-app-Ad-bottom
+www.jianshu.com###free-reward-panel
+www.jianshu.com##blockquote
+www.jianshu.com##.comment-open-app-btn-wrap
+www.jianshu.com###lwaAdFive
 
 ! https://www.msn.cn/
 www.msn.cn###header
