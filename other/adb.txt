@@ -91,21 +91,18 @@ www.googletagmanager.com
 
 ! maomiav.com --> 213.mm
 ! 部分规则在ADGURD下获取方便
-##.header_original
-mj.pki.net.cn/public/1/plugins/
-mj.pki.net.cn/public/
-mj.pki.net.cn/build1/static/node_modules/react-dom/cjs/react-dom.production.min.js
-mj.pki.net.cn/*.png
-mj.pki.net.cn/img/
-bjm.1vkx.cn
-213.mm###root > div > div:last-child > div.grid:first-child > div.m0auto:nth-child(2) > div > div.grid:nth-child(2) > div:first-child > div.point.grid:nth-child(1)
-213.mm###root > div > div:last-child > div.grid:first-child > div.m0auto:nth-child(2) > div > div.grid:nth-child(2) > div:first-child > div.point.grid:nth-child(2)
-213.mm###root > div > div:last-child > div.grid:first-child > div.m0auto:nth-child(2) > div > div.grid:nth-child(2) > div:first-child > div.point.grid:nth-child(7)
-213.mm###root > div > div:last-child > div.grid:first-child > div.m0auto:nth-child(2) > div > div.grid:nth-child(2) > div:first-child > div.point.grid:nth-child(8)
-213.mm###root > div > div:last-child > div.grid:first-child > div.m0auto:nth-child(2) > div > div:last-child
+!##.header_original
+!mj.pki.net.cn/public/1/plugins/
+!mj.pki.net.cn/public/
+!mj.pki.net.cn/build1/static/node_modules/react-dom/cjs/react-dom.production.min.js
+!mj.pki.net.cn/*.png
+!mj.pki.net.cn/img/
+!bjm.1vkx.cn
 
+! 213.mm
+213.mm#?#.mw1100 > div:-abp-contains(VIP视频)
  
 
 ! 影响速度,或只适合小部分网站,手动添加
 ! 不写域名的脚本不能用,via内建规则无法加入
-! #?#.mw1100 > div:-abp-contains(VIP视频)
+ 
