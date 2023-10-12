@@ -56,9 +56,14 @@ m.sohu.com##.to-home
 
 ! https://view.inews.qq.com/
 
-! huya.com
+! m.huya.com
+m.huya.com##.logo
+m.huya.com##.open-app-button
 m.huya.com##.room-info-box
+m.huya.com###videoHdCount
 m.huya.com##.cutDown
+m.huya.com###videoBlueBtn
+
 
 ! ==================================================================================
 
