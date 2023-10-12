@@ -104,7 +104,18 @@ bjm.1vkx.cn
 ###root > div > div:last-child > div.grid:first-child > div.m0auto:nth-child(2) > div > div.grid:nth-child(2) > div:first-child > div.point.grid:nth-child(8)
 ###root > div > div:last-child > div.grid:first-child > div.m0auto:nth-child(2) > div > div:last-child
 
+! 213.mm->maomiav
+213.mm###root > div > div:last-child > div.grid._673d3ccb9f._92990cddc5._2b86d2ffa6:first-child > div.relative:first-child > div.fl.a49f64abc4._58ca769bf2.align_center.justify_center.header_original._3875fbd465
+213.mm###root > div > div:last-child > div.ff7012043c.fb66a70ac7:nth-child(2)
+213.mm###root > div > div:last-child > div._8128736383._219f84f383.ca04184285.a29caedccc._3c64ad07dc._9d9b00f05f.ea9435d6a5.f37dd2bab7.ee059a83f0._9ef5b67505:last-child
+213.mm###root > div > div:last-child > div.grid._673d3ccb9f._92990cddc5._2b86d2ffa6:first-child > div:last-child > div:last-child
+213.mm###root > div > div:last-child > div.grid._673d3ccb9f._92990cddc5._2b86d2ffa6:first-child > div:last-child > div:first-child > div.mw1100 > div:first-child
+213.mm###root > div > div:last-child > div.grid._673d3ccb9f._92990cddc5._2b86d2ffa6:first-child > div.m0auto._0286912943._7cbe5dcdd6:nth-child(2) > div > div:last-child
+213.mm###root > div > div:last-child > div.grid._673d3ccb9f._92990cddc5._2b86d2ffa6:first-child > div.relative:first-child > div.fl.a49f64abc4._58ca769bf2.align_center.justify_center.header_original
+213.mm###root > div > div:last-child > div._8128736383._219f84f383.ca04184285.a29caedccc._3c64ad07dc._9d9b00f05f.ea9435d6a5.f37dd2bab7.ee059a83f0._9ef5b67505:nth-child(3)
+
+
 
 ! 影响速度,或只适合小部分网站,手动添加
-! 不写域名的脚本不能用
+! 不写域名的脚本不能用,via内建规则无法加入
 ! #?#.mw1100 > div:-abp-contains(VIP视频)
