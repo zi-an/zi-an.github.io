@@ -87,8 +87,8 @@ bjm.1vkx.cn
 ###root > div > div:last-child > div.grid:first-child > div.m0auto:nth-child(2) > div > div.grid:nth-child(2) > div:first-child > div.point.grid:nth-child(2)
 ###root > div > div:last-child > div.grid:first-child > div.m0auto:nth-child(2) > div > div.grid:nth-child(2) > div:first-child > div.point.grid:nth-child(7)
 ###root > div > div:last-child > div.grid:first-child > div.m0auto:nth-child(2) > div > div.grid:nth-child(2) > div:first-child > div.point.grid:nth-child(8)
-!###root > div > div:last-child > div.grid:first-child > div.m0auto:nth-child(2) > div > div:last-child
-!#?#.mw1100 > div:-abp-contains(VIP视频)
+###root > div > div:last-child > div.grid:first-child > div.m0auto:nth-child(2) > div > div:last-child
+#?#.mw1100 > div:-abp-contains(VIP视频)
 
 
 ! caoliu1024.com旧版
