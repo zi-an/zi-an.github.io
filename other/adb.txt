@@ -75,6 +75,7 @@ m.huya.com###videoBlueBtn
 ##.stui-foot
 
 ! maomiav.com
+! 部分规则在ADGURD下获取方便
 ##.header_original
 mj.pki.net.cn/public/1/plugins/
 mj.pki.net.cn/public/
@@ -82,6 +83,8 @@ mj.pki.net.cn/build1/static/node_modules/react-dom/cjs/react-dom.production.min.
 mj.pki.net.cn/*.png
 mj.pki.net.cn/img/
 bjm.1vkx.cn
+###root > div > div:last-child > div.grid:first-child > div:last-child > div:first-child > div.mw1100 > div:first-child
+###root > div > div:last-child > div.grid:first-child > div.m0auto:nth-child(2) > div > div:last-child
 
 ! caoliu1024.com旧版
 ###cate_12
@@ -94,3 +97,6 @@ www.google.com
 www.googletagmanager.com
 ##.list.t_one.url_link[data-url="read.php?tid=42290"]
 ##.list.t_one.url_link[data-url="read.php?tid=42193"]
+
+! 影响速度,或只适合小部分网站,手动添加
+!###root > div > div:last-child > div:nth-child(2)
