@@ -102,7 +102,8 @@ www.googletagmanager.com
 ! 213.mm
 bjm.1vkx.cn
 mj.pki.net.cn/public/
-213.mm#?#.mw1100 > div:-abp-contains(VIP视频)
+! 书签设置为 213.mm/page/shipin/13
+! 213.mm#?#.mw1100 > div:-abp-contains(VIP视频)
 213.mm##._171cb22b1f:nth-child(1)
 213.mm##._171cb22b1f:nth-child(2)
 213.mm##._171cb22b1f:nth-child(7)
@@ -117,7 +118,45 @@ mj.pki.net.cn/public/
 213.mm##._3dfe7a2849
 ! sed -i "s|;margin-top:52px|;margin-top:0px|g" /var/www/html/maomi.css
 
+! 7.mm(212上线删)
+mj.pki.net.cn/*.png
+mj.pki.net.cn/public/2/assets/js/custom/ad_tmp.js
+7.mm###scroll-mian
+7.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(2) > div.header-menu:last-child > div.share-url:nth-child(8)
+7.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(4)
+7.mm##div.c_sfev8.c_hnncv:nth-child(9) > div
+7.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(2) > div.header-fix:first-child
+7.mm###main-container > div.vip-video:first-child
+7.mm##div[style="bottom: 0; left: 0; position: fixed; right: 0; text-align: center; z-index: 987"]
+7.mm##footer
+7.mm##.header-mobile
+7.mm##.share-content1
+7.mm##.row-item-title
+7.mm##.home-banner-mobile-swiper.swiper-initialized.swiper-horizontal
+7.mm###section-menu > div.row-item.even:nth-child(1)
+7.mm###section-menu > div.row-item.even:nth-child(2)
+7.mm###section-menu > div.row-item.even:nth-child(7)
+7.mm###section-menu > div.row-item.even:nth-child(8)
 
+! 212.mm
+mj.pki.net.cn/*.png
+mj.pki.net.cn/public/2/assets/js/custom/ad_tmp.js
+212.mm###scroll-mian
+212.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(2) > div.header-menu:last-child > div.share-url:nth-child(8)
+212.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(4)
+212.mm##div.c_sfev8.c_hnncv:nth-child(9) > div
+212.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(2) > div.header-fix:first-child
+212.mm###main-container > div.vip-video:first-child
+212.mm##div[style="bottom: 0; left: 0; position: fixed; right: 0; text-align: center; z-index: 987"]
+212.mm##footer
+212.mm##.header-mobile
+212.mm##.share-content1
+212.mm##.row-item-title
+212.mm##.home-banner-mobile-swiper.swiper-initialized.swiper-horizontal
+212.mm###section-menu > div.row-item.even:nth-child(1)
+212.mm###section-menu > div.row-item.even:nth-child(2)
+212.mm###section-menu > div.row-item.even:nth-child(7)
+212.mm###section-menu > div.row-item.even:nth-child(8)
 
 ! 影响速度,或只适合小部分网站,手动添加
 ! 不写域名的脚本不能用,via内建规则无法加入
