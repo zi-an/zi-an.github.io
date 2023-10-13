@@ -100,10 +100,8 @@ www.googletagmanager.com
 !
 
 ! 211.mm
-bjm.1vkx.cn
-mj.pki.net.cn/public/
-! 书签设置为 211.mm/page/shipin/13
-! 211.mm#?#.mw1100 > div:-abp-contains(VIP视频)
+
+
 211.mm##._171cb22b1f:nth-child(1)
 211.mm##._171cb22b1f:nth-child(2)
 211.mm##._171cb22b1f:nth-child(7)
@@ -119,8 +117,7 @@ mj.pki.net.cn/public/
 ! sed -i "s|;margin-top:52px|;margin-top:0px|g" /var/www/html/maomi.css
 
 ! 212.mm
-mj.pki.net.cn/*.png
-mj.pki.net.cn/public/2/assets/js/custom/ad_tmp.js
+
 212.mm###scroll-mian
 212.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(2) > div.header-menu:last-child > div.share-url:nth-child(8)
 212.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(4)
@@ -138,8 +135,14 @@ mj.pki.net.cn/public/2/assets/js/custom/ad_tmp.js
 212.mm###section-menu > div.row-item.even:nth-child(7)
 212.mm###section-menu > div.row-item.even:nth-child(8)
 
+!共同部分
+mj.pki.net.cn/*.png
+mj.pki.net.cn/public/2/assets/js/custom/ad_tmp.js
+bjm.1vkx.cn
+mj.pki.net.cn/public/1/
+
 ! 影响速度,或只适合小部分网站,手动添加
 ! 不写域名的脚本不能用,via内建规则无法加入
- 
+
  
  
