@@ -130,10 +130,10 @@ www.googletagmanager.com
 212.mm##.share-content1
 212.mm##.row-item-title
 212.mm##.home-banner-mobile-swiper.swiper-initialized.swiper-horizontal
-212.mm###section-menu > div.row-item.even:nth-child(1)
-212.mm###section-menu > div.row-item.even:nth-child(2)
-212.mm###section-menu > div.row-item.even:nth-child(7)
-212.mm###section-menu > div.row-item.even:nth-child(8)
+212.mm###section-menu > div.row-item:nth-child(1)
+212.mm###section-menu > div.row-item:nth-child(2)
+212.mm###section-menu > div.row-item:nth-child(7)
+212.mm###section-menu > div.row-item:nth-child(8)
 
 !共同部分
 mj.pki.net.cn/*.png
