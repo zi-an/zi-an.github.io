@@ -131,6 +131,7 @@ www.googletagmanager.com
 212.mm##.header-mobile
 212.mm##.share-content1
 212.mm##.row-item-title
+212.mm##.road-down
 212.mm##.home-banner-mobile-swiper.swiper-initialized.swiper-horizontal
 212.mm###section-menu > div.row-item:nth-child(1)
 212.mm###section-menu > div.row-item:nth-child(2)
@@ -138,14 +139,22 @@ www.googletagmanager.com
 212.mm###section-menu > div.row-item:nth-child(7)
 212.mm###section-menu > div.row-item:nth-child(8)
 
+
 !共同部分
 mj.pki.net.cn/*.png
 mj.pki.net.cn/public/2/assets/js/custom/ad_tmp.js
 bjm.1vkx.cn
+insjs.1vkx.cn
 mj.pki.net.cn/public/1/
+js.xzjhome.cc
+uuindex.1vkx.cn
+img.maskanalyse.com
 
 ! 影响速度,或只适合小部分网站,手动添加
 ! 不写域名的脚本不能用,via内建规则无法加入
+
+ 
+ 
 
  
  
