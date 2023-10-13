@@ -89,6 +89,7 @@ www.googletagmanager.com
 ##.list.t_one.url_link[data-url="read.php?tid=42290"]
 ##.list.t_one.url_link[data-url="read.php?tid=42193"]
 
+! ======================================================以下猫咪
 ! maomiav.com --> 213.mm
 ! 部分规则在ADGURD下获取方便
 !##.header_original
@@ -100,8 +101,6 @@ www.googletagmanager.com
 !
 
 ! 211.mm
-
-
 211.mm##._171cb22b1f:nth-child(1)
 211.mm##._171cb22b1f:nth-child(2)
 211.mm##._171cb22b1f:nth-child(4)
@@ -119,7 +118,6 @@ www.googletagmanager.com
 ! sed -i "s|;margin-top:52px|;margin-top:0px|g" /var/www/html/maomi.css
 
 ! 212.mm
-
 212.mm###scroll-mian
 212.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(2) > div.header-menu:last-child > div.share-url:nth-child(8)
 212.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(4)
@@ -139,8 +137,7 @@ www.googletagmanager.com
 212.mm###section-menu > div.row-item:nth-child(7)
 212.mm###section-menu > div.row-item:nth-child(8)
 
-
-!共同部分
+! maomiav1+2
 mj.pki.net.cn/*.png
 mj.pki.net.cn/public/2/assets/js/custom/ad_tmp.js
 bjm.1vkx.cn
@@ -149,6 +146,8 @@ mj.pki.net.cn/public/1/
 js.xzjhome.cc
 uuindex.1vkx.cn
 img.maskanalyse.com
+baidutongji.baidutongj.com
+https://sujc*
 
 ! 影响速度,或只适合小部分网站,手动添加
 ! 不写域名的脚本不能用,via内建规则无法加入
