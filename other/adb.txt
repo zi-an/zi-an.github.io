@@ -104,6 +104,7 @@ www.googletagmanager.com
 
 211.mm##._171cb22b1f:nth-child(1)
 211.mm##._171cb22b1f:nth-child(2)
+211.mm##._171cb22b1f:nth-child(4)
 211.mm##._171cb22b1f:nth-child(7)
 211.mm##._171cb22b1f:nth-child(8)
 211.mm##.s_h
@@ -133,6 +134,7 @@ www.googletagmanager.com
 212.mm##.home-banner-mobile-swiper.swiper-initialized.swiper-horizontal
 212.mm###section-menu > div.row-item:nth-child(1)
 212.mm###section-menu > div.row-item:nth-child(2)
+212.mm###section-menu > div.row-item:nth-child(4)
 212.mm###section-menu > div.row-item:nth-child(7)
 212.mm###section-menu > div.row-item:nth-child(8)
 
