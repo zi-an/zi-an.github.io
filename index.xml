@@ -6,194 +6,78 @@
     <description>Recent content in 首页 on Zi-An</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate><atom:link href="http://zi-an.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jan 1980 00:00:00 +0000</lastBuildDate><atom:link href="http://zi-an.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>With ToC</title>
-      <link>http://zi-an.github.io/docs/example/table-of-contents/with-toc/</link>
+      <title>  mysql</title>
+      <link>http://zi-an.github.io/docs/databases/mysql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://zi-an.github.io/docs/example/table-of-contents/with-toc/</guid>
-      <description>Caput vino delphine in tamen vias # Cognita laeva illo fracta # Lorem markdownum pavent auras, surgit nunc cingentibus libet Laomedonque que est. Pastor An arbor filia foedat, ne fugit aliter, per. Helicona illas et callida neptem est Oresitrophos caput, dentibus est venit. Tenet reddite famuli praesentem fortibus, quaeque vis foret si frondes gelidos gravidae circumtulit inpulit armenta nativum.
-Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara postquam habitasse Subitarum supplevit quoque fontesque venabula spretis modo Montis tot est mali quasque gravis Quinquennem domus arsit ipse Pellem turis pugnabant locavit Natus quaerere # Pectora et sine mulcere, coniuge dum tincta incurvae.</description>
+      <guid>http://zi-an.github.io/docs/databases/mysql/</guid>
+      <description>常用mysql语句#ECHO &amp;#34;&amp;#34; </description>
     </item>
     
     <item>
-      <title>Without ToC</title>
-      <link>http://zi-an.github.io/docs/example/table-of-contents/without-toc/</link>
+      <title>IPV6</title>
+      <link>http://zi-an.github.io/docs/others/ipv6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://zi-an.github.io/docs/example/table-of-contents/without-toc/</guid>
-      <description>At me ipso nepotibus nunc celebratior genus # Tanto oblite # Lorem markdownum pectora novis patenti igne sua opus aurae feras materiaque illic demersit imago et aristas questaque posset. Vomit quoque suo inhaesuro clara. Esse cumque, per referri triste. Ut exponit solisque communis in tendens vincetis agisque iamque huic bene ante vetat omina Thebae rates. Aeacus servat admonitu concidit, ad resimas vultus et rugas vultu dignamque Siphnon.
-Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt dixit: ritu pharetramque.</description>
+      <guid>http://zi-an.github.io/docs/others/ipv6/</guid>
+      <description>这是我的ipv6#ipv6的获取方式
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;zh&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta content=&amp;#34;yes&amp;#34; name=&amp;#34;apple-mobile-web-app-capable&amp;#34;&amp;gt; &amp;lt;meta content=&amp;#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&amp;#34; name=&amp;#34;viewport&amp;#34;&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;ipv6&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;button onclick=&amp;#34;copy()&amp;#34;&amp;gt;&amp;lt;h3&amp;gt;IP:&amp;lt;/h3&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;br&amp;gt;&amp;lt;br&amp;gt; &amp;lt;button onclick=&amp;#34;enter()&amp;#34;&amp;gt;&amp;lt;h3&amp;gt;HTTP:&amp;lt;/h3&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34;&amp;gt; let ip; let httpRequest = new XMLHttpRequest(); httpRequest.open(&amp;#34;GET&amp;#34;, &amp;#34;https://raw.githubusercontent.com/zi-an/zi-an.github.io/ipv6/last.txt&amp;#34;); httpRequest.send(); httpRequest.onreadystatechange = function () { ip = httpRequest.responseText; ip = &amp;#39;[&amp;#39; + ip.replace(&amp;#39;\n&amp;#39;, &amp;#39;&amp;#39;) + &amp;#39;]&amp;#39;; document.getElementsByTagName(&amp;#34;h3&amp;#34;)[0].innerText = ip; document.getElementsByTagName(&amp;#34;h3&amp;#34;)[1].innerText = &amp;#34;http://&amp;#34; + ip; } function copy() { navigator.</description>
     </item>
     
     <item>
-      <title>Creating a New Theme</title>
-      <link>http://zi-an.github.io/posts/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <title>mysql</title>
+      <link>http://zi-an.github.io/docs/java/mysql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://zi-an.github.io/posts/creating-a-new-theme/</guid>
-      <description>Introduction # This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+      <guid>http://zi-an.github.io/docs/java/mysql/</guid>
+      <description>this is my mysql#import java.sql.*;public class DBUtil {public String username = &amp;#34;root&amp;#34;;public String password = &amp;#34;123456&amp;#34;;private String url=&amp;#34;jdbc:mysql://localhost:3306/mysql&amp;#34;;/*** 1. 实现数据库连接的方法*/public Connection getConn() {Connection conn = null;try {Class.forName(&amp;#34;com.mysql.jdbc.Driver&amp;#34;);conn = DriverManager.getConnection(url, username, password);System.out.println(&amp;#34;连接数据库成功.&amp;#34;);} catch (Exception e) {e.printStackTrace();}return conn;}/*** 2. 释放数据库连接*/public void closeConn(ResultSet rs, PreparedStatement pstm, Connection conn) throws Exception {if (rs !</description>
     </item>
     
     <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>http://zi-an.github.io/posts/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      <title>nginx</title>
+      <link>http://zi-an.github.io/docs/linux/nginx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://zi-an.github.io/posts/migrate-from-jekyll/</guid>
-      <description>Move static content to static # Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+      <guid>http://zi-an.github.io/docs/linux/nginx/</guid>
+      <description>Nginx#https://nginx.org/en/docs/ 常用模块#模块 功能 备注 ngx_stream_proxy_module TCP/UDP转发模块 ngx_http_proxy_module HTTP代理模块 ngx_http_gzip_module gzip压缩 ngx_http_v3_module http3模块 1.25.0以后可用 Windows版nginx#为不完全版,许多功能可能不可用,以下命令为部分命令 命令 作用 备注 taskkill /f /im nginx.exe 关闭nginx nginx -s stop 关闭nginx nginx -t 仅测试配置文件是否正确 nginx -s reload 重新加载配置文件 nginx &amp;amp; 后台运行 </description>
     </item>
     
     <item>
-      <title>(Hu)go Template Primer</title>
-      <link>http://zi-an.github.io/posts/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>string</title>
+      <link>http://zi-an.github.io/docs/linux/string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://zi-an.github.io/posts/goisforlovers/</guid>
-      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
-This document is a brief primer on using Go templates.</description>
+      <guid>http://zi-an.github.io/docs/linux/string/</guid>
+      <description>三剑客awk+grep+sed#awk使用#-F fs or --field-separator fs指定输入文件折分隔符，fs是一个字符串或者是一个正则表达式，如-F:。-v var=value or --asign var=value赋值一个用户定义变量。-f scripfile or --file scriptfile从脚本文件中读取awk命令。-mf nnn and -mr nnn对nnn值设置内在限制，-mf选项限制分配给nnn的最大块数目；-mr选项限制记录的最大数目。这两个功能是Bell实验室版awk的扩展功能，在标准awk中不适用。-W compact or --compat, -W traditional or --traditional在兼容模式下运行awk。所以gawk的行为和标准的awk完全一样，所有的awk扩展都被忽略。-W copyleft or --copyleft, -W copyright or --copyright打印简短的版权信息。-W help or --help, -W usage or --usage打印全部awk选项和每个选项的简短说明。-W lint or --lint打印不能向传统unix平台移植的结构的警告。-W lint-old or --lint-old打印关于不能向传统unix平台移植的结构的警告。-W posix打开兼容模式。但有以下限制，不识别：/x、函数关键字、func、换码序列以及当fs是一个空格时，将新行作为一个域分隔符；操作符**和**=不能代替^和^=；fflush无效。-W re-interval or --re-inerval允许间隔正则表达式的使用，参考(grep中的Posix字符类)，如括号表达式[[:alpha:]]。-W source program-text or --source program-text使用program-text作为源代码，可与-f命令混用。-W version or --version打印bug报告信息的版本。 以.</description>
     </item>
     
     <item>
-      <title>Getting Started with Hugo</title>
-      <link>http://zi-an.github.io/posts/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>模板</title>
+      <link>http://zi-an.github.io/docs/demo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://zi-an.github.io/posts/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo # Go to Hugo releases and download the appropriate version for your OS and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at Install Hugo
-Step 2. Build the Docs # Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:</description>
+      <guid>http://zi-an.github.io/docs/demo/</guid>
+      <description>这是我的文档模板#ECHO &amp;#34;&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title>模板博客标题</title>
+      <link>http://zi-an.github.io/blogs/demo/</link>
+      <pubDate>Tue, 01 Jan 1980 00:00:00 +0000</pubDate>
+      
+      <guid>http://zi-an.github.io/blogs/demo/</guid>
+      <description>模板二级标题#</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://zi-an.github.io/docs/example/collapsed/3rd-level/4th-level/</link>
+      <link>http://zi-an.github.io/docs/java/redis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://zi-an.github.io/docs/example/collapsed/3rd-level/4th-level/</guid>
-      <description>4th Level of Menu # Caesorum illa tu sentit micat vestes papyriferi # Inde aderam facti; Theseus vis de tauri illa peream. Oculos uberaque non regisque vobis cursuque, opus venit quam vulnera. Et maiora necemque, lege modo; gestanda nitidi, vero? Dum ne pectoraque testantur.
-Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii. Cupiens auctoribus pariter rubet, profana magni super nocens. Vos ius sibilat inpar turba visae iusto!</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://zi-an.github.io/docs/example/hidden/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zi-an.github.io/docs/example/hidden/</guid>
-      <description>This page is hidden in menu # Quondam non pater est dignior ille Eurotas # Latent te facies # Lorem markdownum arma ignoscas vocavit quoque ille texit mandata mentis ultimus, frementes, qui in vel. Hippotades Peleus pennas conscia cuiquam Caeneus quas.
-Pater demittere evincitque reddunt Maxime adhuc pressit huc Danaas quid freta Soror ego Luctus linguam saxa ultroque prior Tatiumque inquit Saepe liquitur subita superata dederat Anius sudor Cum honorum Latona # O fallor in sustinui iussorum equidem.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://zi-an.github.io/docs/shortcodes/buttons/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zi-an.github.io/docs/shortcodes/buttons/</guid>
-      <description> Buttons # Buttons are styled links that can lead to local page or external link.
-Example # {{&amp;lt; button relref=&amp;#34;/&amp;#34; [class=&amp;#34;...&amp;#34;] &amp;gt;}}Get Home{{&amp;lt; /button &amp;gt;}} {{&amp;lt; button href=&amp;#34;https://github.com/alex-shpak/hugo-book&amp;#34; &amp;gt;}}Contribute{{&amp;lt; /button &amp;gt;}} Get Home Contribute </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://zi-an.github.io/docs/shortcodes/columns/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zi-an.github.io/docs/shortcodes/columns/</guid>
-      <description>Columns # Columns help organize shorter pieces of content horizontally for readability.
-{{&amp;lt; columns &amp;gt;}} &amp;lt;!-- begin columns block --&amp;gt; # Left Content Lorem markdownum insigne... &amp;lt;---&amp;gt; &amp;lt;!-- magic separator, between columns --&amp;gt; # Mid Content Lorem markdownum insigne... &amp;lt;---&amp;gt; &amp;lt;!-- magic separator, between columns --&amp;gt; # Right Content Lorem markdownum insigne... {{&amp;lt; /columns &amp;gt;}} Example # Left Content # Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter!</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://zi-an.github.io/docs/shortcodes/details/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zi-an.github.io/docs/shortcodes/details/</guid>
-      <description> Details # Details shortcode is a helper for details html5 element. It is going to replace expand shortcode.
-Example # {{&amp;lt; details &amp;#34;Title&amp;#34; [open] &amp;gt;}} ## Markdown content Lorem markdownum insigne... {{&amp;lt; /details &amp;gt;}} {{&amp;lt; details title=&amp;#34;Title&amp;#34; open=true &amp;gt;}} ## Markdown content Lorem markdownum insigne... {{&amp;lt; /details &amp;gt;}} Title Markdown content # Lorem markdownum insigne&amp;hellip; </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://zi-an.github.io/docs/shortcodes/expand/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zi-an.github.io/docs/shortcodes/expand/</guid>
-      <description>Expand # Expand shortcode can help to decrease clutter on screen by hiding part of text. Expand content by clicking on it.
-Example # Default # {{&amp;lt; expand &amp;gt;}} ## Markdown content Lorem markdownum insigne... {{&amp;lt; /expand &amp;gt;}} Expand ↕ Markdown content # Lorem markdownum insigne&amp;hellip; With Custom Label # {{&amp;lt; expand &amp;#34;Custom Label&amp;#34; &amp;#34;...&amp;#34; &amp;gt;}} ## Markdown content Lorem markdownum insigne... {{&amp;lt; /expand &amp;gt;}} Custom Label ... Markdown content # Lorem markdownum insigne.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://zi-an.github.io/docs/shortcodes/hints/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zi-an.github.io/docs/shortcodes/hints/</guid>
-      <description>Hints # Hint shortcode can be used as hint/alerts/notification block.
-There are 3 colors to choose: info, warning and danger.
-{{&amp;lt; hint [info|warning|danger] &amp;gt;}} **Markdown content** Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa {{&amp;lt; /hint &amp;gt;}} Example # Markdown content
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa Markdown content</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://zi-an.github.io/docs/shortcodes/katex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zi-an.github.io/docs/shortcodes/katex/</guid>
-      <description>KaTeX # KaTeX shortcode let you render math typesetting in markdown document. See KaTeX
-Example # {{&amp;lt;/* katex [display] [class=&amp;#34;text-center&amp;#34;] */&amp;gt;}} f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi {{&amp;lt;/* /katex */&amp;gt;}} Display Mode Example # Here is some inline example: \(\pi(x)\) , rendered in the same line. And below is display example, having display: block \[f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi\] Text continues here.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://zi-an.github.io/docs/shortcodes/mermaid/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zi-an.github.io/docs/shortcodes/mermaid/</guid>
-      <description>Mermaid Chart # MermaidJS is library for generating svg charts and diagrams from text.
-Override Mermaid Initialization Config
-To override the initialization config for Mermaid, create a mermaid.json file in your assets folder!
-Example # {{&amp;lt;/* mermaid [class=&amp;#34;text-center&amp;#34;]*/&amp;gt;}} stateDiagram-v2 State1: The state with a note note right of State1 Important information! You can write notes. end note State1 --&amp;gt; State2 note left of State2 : This is the note to the left.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://zi-an.github.io/docs/shortcodes/section/first-page/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zi-an.github.io/docs/shortcodes/section/first-page/</guid>
-      <description>First page # Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://zi-an.github.io/docs/shortcodes/section/second-page/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zi-an.github.io/docs/shortcodes/section/second-page/</guid>
-      <description>Second Page # Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://zi-an.github.io/docs/shortcodes/tabs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zi-an.github.io/docs/shortcodes/tabs/</guid>
-      <description>Tabs # Tabs let you organize content by context, for example installation instructions for each supported platform.
-{{&amp;lt; tabs &amp;#34;uniqueid&amp;#34; &amp;gt;}} {{&amp;lt; tab &amp;#34;MacOS&amp;#34; &amp;gt;}} # MacOS Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab &amp;#34;Linux&amp;#34; &amp;gt;}} # Linux Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab &amp;#34;Windows&amp;#34; &amp;gt;}} # Windows Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; /tabs &amp;gt;}} Example # MacOS MacOS # This is tab MacOS content.
-Lorem markdownum insigne. Olympo signis Delphis!</description>
+      <guid>http://zi-an.github.io/docs/java/redis/</guid>
+      <description></description>
     </item>
     
   </channel>

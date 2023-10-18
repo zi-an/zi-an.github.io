@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="generator" content="Hugo 0.111.3">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="这是我的ipv6#ipv6的获取方式
+&lt;!DOCTYPE html&gt; &lt;html lang=&#34;zh&#34;&gt; &lt;head&gt; &lt;meta content=&#34;yes&#34; name=&#34;apple-mobile-web-app-capable&#34;&gt; &lt;meta content=&#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&#34; name=&#34;viewport&#34;&gt; &lt;meta charset=&#34;UTF-8&#34;&gt; &lt;title&gt;ipv6&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;button onclick=&#34;copy()&#34;&gt;&lt;h3&gt;IP:&lt;/h3&gt;&lt;/button&gt; &lt;br&gt;&lt;br&gt; &lt;button onclick=&#34;enter()&#34;&gt;&lt;h3&gt;HTTP:&lt;/h3&gt;&lt;/button&gt; &lt;/body&gt; &lt;script type=&#34;text/javascript&#34;&gt; let ip; let httpRequest = new XMLHttpRequest(); httpRequest.open(&#34;GET&#34;, &#34;https://raw.githubusercontent.com/zi-an/zi-an.github.io/ipv6/last.txt&#34;); httpRequest.send(); httpRequest.onreadystatechange = function () { ip = httpRequest.responseText; ip = &#39;[&#39; &#43; ip.replace(&#39;\n&#39;, &#39;&#39;) &#43; &#39;]&#39;; document.getElementsByTagName(&#34;h3&#34;)[0].innerText = ip; document.getElementsByTagName(&#34;h3&#34;)[1].innerText = &#34;http://&#34; &#43; ip; } function copy() { navigator.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="IPV6" />
+<meta property="og:description" content="这是我的ipv6#ipv6的获取方式
+&lt;!DOCTYPE html&gt; &lt;html lang=&#34;zh&#34;&gt; &lt;head&gt; &lt;meta content=&#34;yes&#34; name=&#34;apple-mobile-web-app-capable&#34;&gt; &lt;meta content=&#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&#34; name=&#34;viewport&#34;&gt; &lt;meta charset=&#34;UTF-8&#34;&gt; &lt;title&gt;ipv6&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;button onclick=&#34;copy()&#34;&gt;&lt;h3&gt;IP:&lt;/h3&gt;&lt;/button&gt; &lt;br&gt;&lt;br&gt; &lt;button onclick=&#34;enter()&#34;&gt;&lt;h3&gt;HTTP:&lt;/h3&gt;&lt;/button&gt; &lt;/body&gt; &lt;script type=&#34;text/javascript&#34;&gt; let ip; let httpRequest = new XMLHttpRequest(); httpRequest.open(&#34;GET&#34;, &#34;https://raw.githubusercontent.com/zi-an/zi-an.github.io/ipv6/last.txt&#34;); httpRequest.send(); httpRequest.onreadystatechange = function () { ip = httpRequest.responseText; ip = &#39;[&#39; &#43; ip.replace(&#39;\n&#39;, &#39;&#39;) &#43; &#39;]&#39;; document.getElementsByTagName(&#34;h3&#34;)[0].innerText = ip; document.getElementsByTagName(&#34;h3&#34;)[1].innerText = &#34;http://&#34; &#43; ip; } function copy() { navigator." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://zi-an.github.io/docs/others/ipv6/" /><meta property="article:section" content="docs" />
+
+
+<title>IPV6 | Zi-An</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.ece3f56fc3f716f87ccd4e6f3ea44ba1fa6757114261dadfbf861fde7d4e6203.css" integrity="sha256-7OP1b8P3Fvh8zU5vPqRLofpnVxFCYdrfv4Yf3n1OYgM=">
+<script defer src="/en.search.min.8592fd2e43835d2ef6fab8eb9b8969ee6ad1bdb888a636e37e28032f8bd9887d.js" integrity="sha256-hZL9LkODXS72&#43;rjrm4lp7mrRvbiIpjbjfigDL4vZiH0="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Zi-An</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6ae1a891fb3a3f71d71273fc61b29b76" class="toggle"  />
+    <label for="section-6ae1a891fb3a3f71d71273fc61b29b76" class="flex justify-between">
+      <a href="http://zi-an.github.io/docs/linux/" class="">Linux</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7ca01ad93160bf0bf16b32f6852a4867" class="toggle"  />
+    <label for="section-7ca01ad93160bf0bf16b32f6852a4867" class="flex justify-between">
+      <a href="http://zi-an.github.io/docs/linux/nginx/" class="">nginx</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-75c3d1344de01359eb87174245cb5d40" class="toggle"  />
+    <label for="section-75c3d1344de01359eb87174245cb5d40" class="flex justify-between">
+      <a href="http://zi-an.github.io/docs/linux/string/" class="">string</a>
+    </label>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-eca69da21de5b0cd25d8421dec09a327" class="toggle"  />
+    <label for="section-eca69da21de5b0cd25d8421dec09a327" class="flex justify-between">
+      <a href="http://zi-an.github.io/docs/java/" class="">Java</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://zi-an.github.io/docs/java/mysql/" class="">mysql</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f07598050bc3e3535f3f5e3e152ede5e" class="toggle"  />
+    <label for="section-f07598050bc3e3535f3f5e3e152ede5e" class="flex justify-between">
+      <a href="http://zi-an.github.io/docs/windows/" class="">Windows</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6fc49ad6722ad822609d4f02b81f6358" class="toggle"  />
+    <label for="section-6fc49ad6722ad822609d4f02b81f6358" class="flex justify-between">
+      <a href="http://zi-an.github.io/docs/databases/" class="">Databases</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://zi-an.github.io/docs/databases/mysql/" class="">  mysql</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a432bb056edf769c9f15f6893988f152" class="toggle"  />
+    <label for="section-a432bb056edf769c9f15f6893988f152" class="flex justify-between">
+      <a href="http://zi-an.github.io/docs/tools/" class="">Tools</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9df867f1ccb076f4c1a4602e12169b93" class="toggle" checked />
+    <label for="section-9df867f1ccb076f4c1a4602e12169b93" class="flex justify-between">
+      <a href="http://zi-an.github.io/docs/others/" class="">其他</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://zi-an.github.io/docs/others/ipv6/" class=" active">IPV6</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/blogs/" >
+        博客
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>IPV6</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="这是我的ipv6">
+  这是我的ipv6
+  <a class="anchor" href="#%e8%bf%99%e6%98%af%e6%88%91%e7%9a%84ipv6">#</a>
+</h2>
+<p><a href="/ipv6.html">ipv6的获取方式</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;zh&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;yes&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;apple-mobile-web-app-capable&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&#34;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;ipv6&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;copy()&#34;</span>&gt;&lt;<span style="color:#f92672">h3</span>&gt;IP:&lt;/<span style="color:#f92672">h3</span>&gt;&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">br</span>&gt;&lt;<span style="color:#f92672">br</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;enter()&#34;</span>&gt;&lt;<span style="color:#f92672">h3</span>&gt;HTTP:&lt;/<span style="color:#f92672">h3</span>&gt;&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">ip</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">httpRequest</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">XMLHttpRequest</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">httpRequest</span>.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;GET&#34;</span>, <span style="color:#e6db74">&#34;https://raw.githubusercontent.com/zi-an/zi-an.github.io/ipv6/last.txt&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">httpRequest</span>.<span style="color:#a6e22e">send</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">httpRequest</span>.<span style="color:#a6e22e">onreadystatechange</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">ip</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">httpRequest</span>.<span style="color:#a6e22e">responseText</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">ip</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;[&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">ip</span>.<span style="color:#a6e22e">replace</span>(<span style="color:#e6db74">&#39;\n&#39;</span>, <span style="color:#e6db74">&#39;&#39;</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;]&#39;</span>;
+</span></span><span style="display:flex;"><span>        document.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#e6db74">&#34;h3&#34;</span>)[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">innerText</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ip</span>;
+</span></span><span style="display:flex;"><span>        document.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#e6db74">&#34;h3&#34;</span>)[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">innerText</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">ip</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">copy</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">navigator</span>.<span style="color:#a6e22e">clipboard</span>.<span style="color:#a6e22e">writeText</span>(<span style="color:#a6e22e">ip</span>).<span style="color:#a6e22e">then</span>(<span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;复制成功&#34;</span>);
+</span></span><span style="display:flex;"><span>        }, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;复制失败&#34;</span>);
+</span></span><span style="display:flex;"><span>        });
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">enter</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">ip</span>;
+</span></span><span style="display:flex;"><span>        window.<span style="color:#a6e22e">open</span>(<span style="color:#a6e22e">url</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--https://zi-an.github.io/ipv6.html--&gt;</span>
+</span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="generator" content="Hugo 0.111.3">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nginx#https://nginx.org/en/docs/ 常用模块#模块 功能 备注 ngx_stream_proxy_module TCP/UDP转发模块 ngx_http_proxy_module HTTP代理模块 ngx_http_gzip_module gzip压缩 ngx_http_v3_module http3模块 1.25.0以后可用 Windows版nginx#为不完全版,许多功能可能不可用,以下命令为部分命令 命令 作用 备注 taskkill /f /im nginx.exe 关闭nginx nginx -s stop 关闭nginx nginx -t 仅测试配置文件是否正确 nginx -s reload 重新加载配置文件 nginx &amp; 后台运行 ">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="nginx" />
+<meta property="og:description" content="Nginx#https://nginx.org/en/docs/ 常用模块#模块 功能 备注 ngx_stream_proxy_module TCP/UDP转发模块 ngx_http_proxy_module HTTP代理模块 ngx_http_gzip_module gzip压缩 ngx_http_v3_module http3模块 1.25.0以后可用 Windows版nginx#为不完全版,许多功能可能不可用,以下命令为部分命令 命令 作用 备注 taskkill /f /im nginx.exe 关闭nginx nginx -s stop 关闭nginx nginx -t 仅测试配置文件是否正确 nginx -s reload 重新加载配置文件 nginx &amp; 后台运行 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://zi-an.github.io/docs/linux/nginx/" /><meta property="article:section" content="docs" />
+
+
+<title>nginx | Zi-An</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.ece3f56fc3f716f87ccd4e6f3ea44ba1fa6757114261dadfbf861fde7d4e6203.css" integrity="sha256-7OP1b8P3Fvh8zU5vPqRLofpnVxFCYdrfv4Yf3n1OYgM=">
+<script defer src="/en.search.min.8592fd2e43835d2ef6fab8eb9b8969ee6ad1bdb888a636e37e28032f8bd9887d.js" integrity="sha256-hZL9LkODXS72&#43;rjrm4lp7mrRvbiIpjbjfigDL4vZiH0="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Zi-An</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6ae1a891fb3a3f71d71273fc61b29b76" class="toggle" checked />
+    <label for="section-6ae1a891fb3a3f71d71273fc61b29b76" class="flex justify-between">
+      <a href="http://zi-an.github.io/docs/linux/" class="">Linux</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7ca01ad93160bf0bf16b32f6852a4867" class="toggle" checked />
+    <label for="section-7ca01ad93160bf0bf16b32f6852a4867" class="flex justify-between">
+      <a href="http://zi-an.github.io/docs/linux/nginx/" class="active">nginx</a>
+    </label>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-75c3d1344de01359eb87174245cb5d40" class="toggle"  />
+    <label for="section-75c3d1344de01359eb87174245cb5d40" class="flex justify-between">
+      <a href="http://zi-an.github.io/docs/linux/string/" class="">string</a>
+    </label>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-eca69da21de5b0cd25d8421dec09a327" class="toggle"  />
+    <label for="section-eca69da21de5b0cd25d8421dec09a327" class="flex justify-between">
+      <a href="http://zi-an.github.io/docs/java/" class="">Java</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://zi-an.github.io/docs/java/mysql/" class="">mysql</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f07598050bc3e3535f3f5e3e152ede5e" class="toggle"  />
+    <label for="section-f07598050bc3e3535f3f5e3e152ede5e" class="flex justify-between">
+      <a href="http://zi-an.github.io/docs/windows/" class="">Windows</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6fc49ad6722ad822609d4f02b81f6358" class="toggle"  />
+    <label for="section-6fc49ad6722ad822609d4f02b81f6358" class="flex justify-between">
+      <a href="http://zi-an.github.io/docs/databases/" class="">Databases</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://zi-an.github.io/docs/databases/mysql/" class="">  mysql</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a432bb056edf769c9f15f6893988f152" class="toggle"  />
+    <label for="section-a432bb056edf769c9f15f6893988f152" class="flex justify-between">
+      <a href="http://zi-an.github.io/docs/tools/" class="">Tools</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9df867f1ccb076f4c1a4602e12169b93" class="toggle"  />
+    <label for="section-9df867f1ccb076f4c1a4602e12169b93" class="flex justify-between">
+      <a href="http://zi-an.github.io/docs/others/" class="">其他</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://zi-an.github.io/docs/others/ipv6/" class="">IPV6</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/blogs/" >
+        博客
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>nginx</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="nginx">
+  Nginx
+  <a class="anchor" href="#nginx">#</a>
+</h1>
+<ul>
+<li><a href="https://nginx.org/en/docs/">https://nginx.org/en/docs/</a></li>
+</ul>
+<h2 id="常用模块">
+  常用模块
+  <a class="anchor" href="#%e5%b8%b8%e7%94%a8%e6%a8%a1%e5%9d%97">#</a>
+</h2>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ngx_stream_proxy_module</td>
+<td>TCP/UDP转发模块</td>
+<td></td>
+</tr>
+<tr>
+<td>ngx_http_proxy_module</td>
+<td>HTTP代理模块</td>
+<td></td>
+</tr>
+<tr>
+<td>ngx_http_gzip_module</td>
+<td>gzip压缩</td>
+<td></td>
+</tr>
+<tr>
+<td>ngx_http_v3_module</td>
+<td>http3模块</td>
+<td>1.25.0以后可用</td>
+</tr>
+</tbody>
+</table>
+<h3 id="windows版nginx">
+  Windows版nginx
+  <a class="anchor" href="#windows%e7%89%88nginx">#</a>
+</h3>
+<ul>
+<li>为不完全版,许多功能可能不可用,以下命令为部分命令</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>taskkill /f /im nginx.exe</td>
+<td>关闭nginx</td>
+<td></td>
+</tr>
+<tr>
+<td>nginx -s stop</td>
+<td>关闭nginx</td>
+<td></td>
+</tr>
+<tr>
+<td>nginx -t</td>
+<td>仅测试配置文件是否正确</td>
+<td></td>
+</tr>
+<tr>
+<td>nginx -s reload</td>
+<td>重新加载配置文件</td>
+<td></td>
+</tr>
+<tr>
+<td>nginx &amp;</td>
+<td>后台运行</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
