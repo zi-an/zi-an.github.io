@@ -1,6 +1,6 @@
 ---
 title: "Java"
-weight: 1
+weight: 2
 #权重
 bookFlatSection: true
 #左显示
@@ -13,3 +13,5 @@ bookToc: false
 ---
 
 ## this is my jdk
+* JDK 下载: https://developers.redhat.com/products/openjdk/download
+* IDEA下载: https://www.jetbrains.com/zh-cn/idea/download/other.html
