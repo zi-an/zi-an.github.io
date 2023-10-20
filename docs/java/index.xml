@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Zi-An</title>
+    <link>http://zi-an.github.io/docs/java/</link>
+    <description>Recent content in Java on Zi-An</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://zi-an.github.io/docs/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql</title>
+      <link>http://zi-an.github.io/docs/java/mysql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zi-an.github.io/docs/java/mysql/</guid>
+      <description>this is my mysql#import java.sql.*;public class DBUtil {public String username = &amp;#34;root&amp;#34;;public String password = &amp;#34;123456&amp;#34;;private String url=&amp;#34;jdbc:mysql://localhost:3306/mysql&amp;#34;;/*** 1. 实现数据库连接的方法*/public Connection getConn() {Connection conn = null;try {Class.forName(&amp;#34;com.mysql.jdbc.Driver&amp;#34;);conn = DriverManager.getConnection(url, username, password);System.out.println(&amp;#34;连接数据库成功.&amp;#34;);} catch (Exception e) {e.printStackTrace();}return conn;}/*** 2. 释放数据库连接*/public void closeConn(ResultSet rs, PreparedStatement pstm, Connection conn) throws Exception {if (rs !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://zi-an.github.io/docs/java/redis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://zi-an.github.io/docs/java/redis/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
