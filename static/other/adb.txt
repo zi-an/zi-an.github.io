@@ -67,6 +67,9 @@ m.huya.com###videoBlueBtn
 
 ! ==================================================================================
 
+! sukebei.nyaa.si/
+a.magsrv.com/ad-provider.js
+
 ! hsck.cc
 ##div[style=" max-width:990px; margin:0 auto;"]
 ##.gonggao
