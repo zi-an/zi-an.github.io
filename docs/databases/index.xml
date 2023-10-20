@@ -1,19 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Databases on Zi-An</title>
-    <link>http://zi-an.github.io/docs/databases/</link>
-    <description>Recent content in Databases on Zi-An</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://zi-an.github.io/docs/databases/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>  mysql</title>
-      <link>http://zi-an.github.io/docs/databases/mysql/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://zi-an.github.io/docs/databases/mysql/</guid>
-      <description>常用mysql语句#ECHO &amp;#34;&amp;#34; </description>
-    </item>
-    
-  </channel>
-</rss>
