@@ -14,7 +14,8 @@ bookToc: false
 
 # Nginx
 * https://nginx.org/en/docs/
-
+* https://nginx.org/en/docs/http/ngx_http_core_module.html (内置变量大全)
+* https://nginx.org/en/docs/http/ngx_http_log_module.html (日志配置)
 ## 常用模块
 
 |模块|功能|备注|
