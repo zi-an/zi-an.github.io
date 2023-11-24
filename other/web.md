@@ -1,5 +1,6 @@
 |站内|[导航](https://zi-an.github.io/other/web.html)|[广告](https://zi-an.github.io/other/adb.txt)|[公网](https://zi-an.github.io/ipv6)|[播放](https://zi-an.github.io/other/m3u8.html)|
 |-|-|-|-|-|
+||[搜索](https://zi-an.github.io/other/bing.html)|[仓库](https://zi-an.github.io/other/hsck.html)|||
 |阳光|[系统](https://hicp.sungrow-re.com)|[学习](https://edu.sungrow-re.com)|||
 |内网|[主机](http://5.mm)|[零零](http://200.mm)|[壹零](http://210.mm)|[贰贰](http://222.mm)|
 |查询|[大飞](https://www.op.gg/summoners/kr/Hide%20on%20bush/ingame)|||
