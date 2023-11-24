@@ -6,18 +6,20 @@
     <title>必应搜索</title>
 </head>
 <body>
-<input type="text" id="key" />
+<label for="key"></label>
+<input id="key" type="text"/>
 <br>
-<button   onclick="bing()" >搜索</button>
+<button onclick="bing()">搜索</button>
 </body>
 <script type="text/javascript">
-    function bing(){
-        window.location.href="https://cn.bing.com/search?q=" + document.getElementById("key").value;
+    function bing() {
+        window.location.href = "https://cn.bing.com/search?q=" + document.getElementById("key").value;
     }
+
     document.onkeydown = function (e) {
-        var theEvent = window.event || e;
-        var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
-        if (code == 13) {
+        const theEvent = window.event || e;
+        const code = theEvent.keyCode || theEvent.which || theEvent.charCode;
+        if (code === 13) {
             bing()
         }
     }
