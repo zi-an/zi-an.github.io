@@ -1,4 +1,4 @@
-|站内|[导航](https://zi-an.github.io/other/web.html)|[广告](https://zi-an.github.io/other/adb.txt)|[公网](https://zi-an.github.io/ipv6)|[播放](https://zi-an.github.io/other/m3u8.html)|
+|站内|[导航](https://zi-an.github.io/other/web.html)|[广告](https://zi-an.github.io/other/adb.md)|[公网](https://zi-an.github.io/ipv6)|[播放](https://zi-an.github.io/other/m3u8.html)|
 |-|-|-|-|-|
 ||[搜索](https://zi-an.github.io/other/bing.html)|[仓库](https://zi-an.github.io/other/hsck.html)|||
 |阳光|[系统](https://hicp.sungrow-re.com)|[学习](https://edu.sungrow-re.com)|||

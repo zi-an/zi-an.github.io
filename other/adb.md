@@ -1,0 +1,162 @@
+[Adblock Plus 2.0]
+! Title: Mine
+! https://www.jianshu.com/p/905f89de656c
+! 参考:https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt
+! https://help.adblockplus.org/hc/en-us/search?utf8=%E2%9C%93&query=ruler
+
+! https://cn.bing.com/ 屏蔽csdn,jianshu等名字需要全大写
+! 知乎不好屏蔽,先用csdn cn.bing.com#?#li.b_algo:-abp-contains(CSDN)
+cn.bing.com#?#li.b_algo:-abp-contains(知乎)
+cn.bing.com#?#li.b_algo:-abp-contains(腾讯网)
+cn.bing.com###bnp_rich_div
+cn.bing.com###b_footer
+cn.bing.com##li.b_rs
+cn.bing.com###ev_talkbox_wrapper
+cn.bing.com##.mnws_cwrp[href^="https://new.qq.com/"]
+
+! blog.csdn.net
+blog.csdn.net###csdn-toolbar
+blog.csdn.net##.feed-Sign-weixin
+blog.csdn.net##.open_app_channelCode
+blog.csdn.net###recommend
+blog.csdn.net###operate
+blog.csdn.net###treeSkill
+
+! www.jianshu.com
+www.jianshu.com##.header-wrap
+www.jianshu.com##.note-graceful-button
+www.jianshu.com###recommended-notes
+www.jianshu.com###footer
+www.jianshu.com##.call-app-Ad-bottom
+www.jianshu.com###free-reward-panel
+www.jianshu.com##blockquote
+www.jianshu.com##.comment-open-app-btn-wrap
+www.jianshu.com###lwaAdFive
+
+! https://www.msn.cn/
+www.msn.cn###header
+www.msn.cn##.breakingNews-DS-EntryPoint1-1
+www.msn.cn##.button-DS-EntryPoint1-1
+www.msn.cn##.articlePage_riverContainer-DS-EntryPoint1-1
+
+! https://m.sohu.com/
+m.sohu.com##.top-header
+m.sohu.com##.middle-insert-ad
+m.sohu.com###middleBanner
+m.sohu.com###navMap.nav_maps
+m.sohu.com###recommendSearch
+m.sohu.com###bottomBanner
+m.sohu.com###middleText
+m.sohu.com###artRecNews
+m.sohu.com###artFloatDiscuss
+m.sohu.com##.top-bill-wrapper
+m.sohu.com###footerMenu
+m.sohu.com##.comment-reply__box
+m.sohu.com##.to-home
+
+! https://view.inews.qq.com/
+
+! m.huya.com
+m.huya.com##.logo
+m.huya.com##.open-app-button
+m.huya.com##.room-info-box
+m.huya.com###videoHdCount
+m.huya.com##.cutDown
+m.huya.com###videoBlueBtn
+
+
+! ==================================================================================
+
+! sukebei.nyaa.si/
+a.magsrv.com/ad-provider.js
+
+! hsck.cc
+##div[style=" max-width:990px; margin:0 auto;"]
+##.gonggao
+##.stui-pannel__head
+##.stui-vodlist__thumb[href^="https"]
+##.stui-foot
+##ul.stui-vodlist.clearfix>li:nth-child(3)
+##ul.stui-vodlist.clearfix>li:nth-child(2)
+##ul.stui-vodlist.clearfix>li:nth-child(1)
+
+! caoliu1024.com旧版
+###cate_12
+###cate_thread
+##.user-activate
+##.recharge-btn
+##.my_wrap
+###tip-alert
+www.google.com
+www.googletagmanager.com
+##.list.t_one.url_link[data-url="read.php?tid=42290"]
+##.list.t_one.url_link[data-url="read.php?tid=42193"]
+
+! ======================================================以下猫咪
+! maomiav.com --> 213.mm
+! 部分规则在ADGURD下获取方便
+!##.header_original
+!mj.pki.net.cn/public/1/plugins/
+!mj.pki.net.cn/public/
+!mj.pki.net.cn/build1/static/node_modules/react-dom/cjs/react-dom.production.min.js
+!mj.pki.net.cn/*.png
+!mj.pki.net.cn/img/
+!
+
+! 211.mm
+211.mm##._171cb22b1f:nth-child(1)
+211.mm##._171cb22b1f:nth-child(2)
+211.mm##._171cb22b1f:nth-child(4)
+211.mm##._171cb22b1f:nth-child(7)
+211.mm##._171cb22b1f:nth-child(8)
+211.mm##.s_h
+211.mm##._44ac13b608._32dd428fbe
+211.mm##._505cf89648.grid.gap10
+211.mm##._8128736383._219f84f383.ca04184285
+211.mm##.justify_center.header_original
+211.mm##.ff7012043c.fb66a70ac7
+211.mm##.grid.gap20.pad10
+211.mm##._3dfe7a2849
+211.mm##div.f23f562445._480547dbd5
+! sed -i "s|;margin-top:52px|;margin-top:0px|g" /var/www/html/maomi.css
+
+! 212.mm
+212.mm###scroll-mian
+212.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(2) > div.header-menu:last-child > div.share-url:nth-child(8)
+212.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(4)
+212.mm##div.c_sfev8.c_hnncv:nth-child(9) > div
+212.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(2) > div.header-fix:first-child
+212.mm###main-container > div.vip-video:first-child
+212.mm##div[style="bottom: 0; left: 0; position: fixed; right: 0; text-align: center; z-index: 987"]
+212.mm##footer
+212.mm##.header-mobile
+212.mm##.share-content1
+212.mm##.row-item-title
+212.mm##.road-down
+212.mm##.home-banner-mobile-swiper.swiper-initialized.swiper-horizontal
+212.mm###section-menu > div.row-item:nth-child(1)
+212.mm###section-menu > div.row-item:nth-child(2)
+212.mm###section-menu > div.row-item:nth-child(4)
+212.mm###section-menu > div.row-item:nth-child(7)
+212.mm###section-menu > div.row-item:nth-child(8)
+
+! maomiav1+2
+mj.pki.net.cn/*.png
+mj.pki.net.cn/public/2/assets/js/custom/ad_tmp.js
+bjm.1vkx.cn
+insjs.1vkx.cn
+mj.pki.net.cn/public/1/
+js.xzjhome.cc
+uuindex.1vkx.cn
+img.maskanalyse.com
+baidutongji.baidutongj.com
+https://sujc*
+
+! 影响速度,或只适合小部分网站,手动添加
+! 不写域名的脚本不能用,via内建规则无法加入
+
+ 
+ 
+
+ 
+ 
