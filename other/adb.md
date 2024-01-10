@@ -76,9 +76,10 @@ a.magsrv.com/ad-provider.js
 ##.stui-pannel__head
 ##.stui-vodlist__thumb[href^="https"]
 ##.stui-foot
-##ul.stui-vodlist.clearfix>li:nth-child(3)
-##ul.stui-vodlist.clearfix>li:nth-child(2)
 ##ul.stui-vodlist.clearfix>li:nth-child(1)
+##ul.stui-vodlist.clearfix>li:nth-child(2)
+##ul.stui-vodlist.clearfix>li:nth-child(3)
+##ul.stui-vodlist.clearfix>li:nth-child(4)
 
 ! caoliu1024.com旧版
 ###cate_12
