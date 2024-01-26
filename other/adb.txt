@@ -133,6 +133,8 @@ www.googletagmanager.com
 211.mm##._069f0f8902
 211.mm##._0f9e7209ba:nth-child(9)
 211.mm##._0f9e7209ba:nth-child(8)
+211.mm##._0f9e7209ba:nth-child(7)
+211.mm##._0f9e7209ba:nth-child(6)
 211.mm##._0f9e7209ba:nth-child(5)
 211.mm##._0f9e7209ba:nth-child(1)
 
