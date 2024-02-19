@@ -13,9 +13,9 @@ function default(){
         sed -i "s|security.debian.org|mirrors.tuna.tsinghua.edu.cn|g" /etc/apt/sources.list
         apt update
         apt install -y curl openssh-server unzip wget
-        wget https://zi-an.github.io/debian/virc
+        wget https://zian.netlify.app/debian/virc
         mv virc /etc/vim/vimrc.tiny
-        wget https://zi-an.github.io/debian/keys.zip
+        wget https://zian.netlify.app/debian/keys.zip
         sed -i "22iHostKey /etc/ssh/ssh_host_ed25519_key" /etc/ssh/sshd_config 
         sed -i "s|HashKnownHosts yes|HashKnownHosts no|g" /etc/ssh/ssh_config 
         rm /etc/ssh/ssh_host_*key*
