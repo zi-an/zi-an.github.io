@@ -26,10 +26,10 @@ function default(){
         echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOnFp3JLA1fwdHjEs8NSpgQ4k0eAhvaQbecKXl03mhsm" >> /root/.ssh/authorized_keys 
         chmod 700 /root/.ssh 
         chmod 644 /root/.ssh/authorized_keys
-        cp /root/.ssh /etc/skel/ -r
-        echo 'export DOCKER_HOST="tcp://0.0.0.0:2375"' >> /etc/skel/.bashrc
-        echo "clear" >> /etc/skel/.bashrc
-        useradd docker -s /bin/bash -k /etc/skel -m
+		cp /root/.ssh /etc/skel/ -r
+		echo 'export DOCKER_HOST="tcp://0.0.0.0:2375"' >> /etc/skel/.bashrc
+		echo "clear" >> /etc/skel/.bashrc
+		useradd docker -s /bin/bash -k /etc/skel -m
         echo "source /etc/profile" >> /root/.bashrc 
         echo "clear" >> /root/.bashrc
         echo 'net.ipv6.conf.all.disable_ipv6 = 1'>/etc/sysctl.conf
