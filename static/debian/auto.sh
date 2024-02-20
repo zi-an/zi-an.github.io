@@ -49,7 +49,6 @@ function docker(){
     fi
 }
 
-
 date
 if [ -z $1 ] ; then
     default >> /dev/null;echo system auto installed
