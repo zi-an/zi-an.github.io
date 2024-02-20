@@ -13,9 +13,9 @@ function default(){
         sed -i "s|security.debian.org|mirrors.tuna.tsinghua.edu.cn|g" /etc/apt/sources.list
         apt update
         apt install -y curl openssh-server unzip wget
-        wget https://zi-an.github.io/debian/virc
+        wget https://zian.netlify.app/debian/virc
         mv virc /etc/vim/vimrc.tiny
-        wget https://zi-an.github.io/debian/keys.zip
+        wget https://zian.netlify.app/debian/keys.zip
         sed -i "22iHostKey /etc/ssh/ssh_host_ed25519_key" /etc/ssh/sshd_config 
         sed -i "s|HashKnownHosts yes|HashKnownHosts no|g" /etc/ssh/ssh_config 
         rm /etc/ssh/ssh_host_*key*
@@ -26,6 +26,10 @@ function default(){
         echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOnFp3JLA1fwdHjEs8NSpgQ4k0eAhvaQbecKXl03mhsm" >> /root/.ssh/authorized_keys 
         chmod 700 /root/.ssh 
         chmod 644 /root/.ssh/authorized_keys
+		cp /root/.ssh /etc/skel/ -r
+		echo 'export DOCKER_HOST="tcp://0.0.0.0:2375"' >> /etc/skel/.bashrc
+		echo "clear" >> /etc/skel/.bashrc
+		useradd docker -s /bin/bash -k /etc/skel -m
         echo "source /etc/profile" >> /root/.bashrc 
         echo "clear" >> /root/.bashrc
         echo 'net.ipv6.conf.all.disable_ipv6 = 1'>/etc/sysctl.conf
