@@ -1,6 +1,6 @@
 |[站内](https://zian.netlify.app/other/web.html)|[导航](https://zi-an.github.io/other/web.html)|[广告](https://zi-an.github.io/other/adb.html)|[公网](https://zi-an.github.io/ipv6)|[播放](https://zi-an.github.io/other/m3u8.html)|
 |-|-|-|-|-|
-||[搜索](https://zi-an.github.io/other/bing.html)|[仓库](https://user.301go.net:8899/?u=http://hsck.net/&p=/)|[猫咪](http://192.168.10.211)|[查证](https://cx.mem.gov.cn/special)|
+||[搜索](https://zi-an.github.io/other/bing.html)|[仓库](https://666937.xyz:8899/?u=http://hsck.net/&p=/)|[猫咪](http://192.168.10.211)|[查证](https://cx.mem.gov.cn/special)|
 |阳光|[系统](https://hicp.sungrow-re.com)|[学习](https://edu.sungrow-re.com)|||
 |内网|[主机](http://5.mm)|[零零](http://200.mm)|[壹零](http://210.mm)|[贰贰](http://222.mm)|
 ||[主路](http://192.168.10.1)||||
