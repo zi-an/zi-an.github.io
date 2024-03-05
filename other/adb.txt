@@ -180,6 +180,28 @@ www.googletagmanager.com
 212.mm###section-menu > div.row-item:nth-child(7)
 212.mm###section-menu > div.row-item:nth-child(8)
 
+
+! 阿里云213端口
+120.76.158.149###scroll-mian
+120.76.158.149##div.pc-main-content:first-child > div.mobile_show:nth-child(2) > div.header-menu:last-child > div.share-url:nth-child(8)
+120.76.158.149##div.pc-main-content:first-child > div.mobile_show:nth-child(4)
+120.76.158.149##div.c_sfev8.c_hnncv:nth-child(9) > div
+120.76.158.149##div.pc-main-content:first-child > div.mobile_show:nth-child(2) > div.header-fix:first-child
+120.76.158.149###main-container > div.vip-video:first-child
+120.76.158.149##div[style="bottom: 0; left: 0; position: fixed; right: 0; text-align: center; z-index: 987"]
+120.76.158.149##footer
+120.76.158.149##.header-mobile
+120.76.158.149##.share-content1
+120.76.158.149##.row-item-title
+120.76.158.149##.road-down
+120.76.158.149##.home-banner-mobile-swiper.swiper-initialized.swiper-horizontal
+120.76.158.149##._1be4bd56df
+120.76.158.149###section-menu > div.row-item:nth-child(1)
+120.76.158.149###section-menu > div.row-item:nth-child(2)
+120.76.158.149###section-menu > div.row-item:nth-child(4)
+120.76.158.149###section-menu > div.row-item:nth-child(7)
+120.76.158.149###section-menu > div.row-item:nth-child(8)
+
 ! maomiav1+2
 mj.pki.net.cn/*.png
 mj.pki.net.cn/public/2/assets/js/custom/ad_tmp.js
