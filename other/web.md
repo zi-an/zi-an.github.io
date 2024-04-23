@@ -3,7 +3,7 @@
 ||[搜索](https://zian.netlify.app/other/bing.html)|[仓库](https://666937.xyz:8899/?u=http://hsck.net/&p=/)|[猫咪](http://192.168.10.211)|[查证](https://cx.mem.gov.cn/special)|
 |阳光|[系统](https://hicp.sungrow-re.com)|[学习](https://edu.sungrow-re.com)|[设计](https://isolarroof.sungrowplant.com/)|[对账](http://ygfppt.sungrow-re.com:8081/login)|
 |内网|[主机](http://5.mm)|[零零](http://200.mm)|[壹零](http://210.mm)|[贰贰](http://222.mm)|
-||[主路](http://192.168.10.1)||||
+||[主路](http://192.168.10.1)|[十制](http://2018287253)|||
 |查询|[大飞](https://www.op.gg/summoners/kr/Hide%20on%20bush/ingame)|||
 |抖音|[安珀](https://live.douyin.com/356402078496)||||
 |虎牙|[安珀](https://m.huya.com/20411512)|[蛋挞](https://m.huya.com/799147)|[霸哥](https://m.huya.com/189201)|[星痕](https://m.huya.com/699772)|
