@@ -19,3 +19,11 @@
 阳光商E学  jy079107
 
 [对账](http://ygfppt.sungrow-re.com:8081/login) HX_0025002316/01234%wer
+
+
+gd.tzxm.gov.cn
+https://tyrz.gd.gov.cn/pscp/sso/static/
+法人登录->账号密码-> sungrow20230725 / sun123456! ->
+
+
+备案证下载:辅助服务->电子证照
