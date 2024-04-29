@@ -213,6 +213,12 @@ img.maskanalyse.com
 baidutongji.baidutongj.com
 https://sujc*
 
+! 黑料社区
+###mySwiper
+##.abd
+
+
+
 ! 影响速度,或只适合小部分网站,手动添加
 ! 不写域名的脚本不能用,via内建规则无法加入
 
