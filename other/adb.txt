@@ -216,7 +216,7 @@ https://sujc*
 ! 黑料社区
 ###mySwiper
 ##.abd
-
+##.top_app_down
 
 
 ! 影响速度,或只适合小部分网站,手动添加
