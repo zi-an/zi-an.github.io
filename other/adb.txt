@@ -217,6 +217,8 @@ https://sujc*
 ###mySwiper
 ##.abd
 ##.top_app_down
+##.banner_group
+##.abd_icon
 
 
 ! 影响速度,或只适合小部分网站,手动添加
