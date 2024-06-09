@@ -1,7 +1,7 @@
 |[站内](https://zian.netlify.app/other/web.html)|[导航](https://zian.netlify.app/other/web.html)|[广告](https://zian.netlify.app/other/adb.html)|[公网](https://zian.netlify.app/ipv6)|[播放](https://zian.netlify.app/other/m3u8.html)|
 |-|-|-|-|-|
 |刷机|[K70E](https://xiaomirom.com/rom/redmi-k70e-poco-x6-pro-5g-duchamp-china-fastboot-recovery-rom/)|[K40S](https://xiaomirom.com/rom/redmi-k40s-munch-china-fastboot-recovery-rom/)|[K30](https://xiaomirom.com/rom/redmi-k30-5g-redmi-k30i-5g-picasso-china-fastboot-recovery-rom/)|
-|配置|[DAV](http://120.76.158.149:5005/)|[PAC](http://120.76.158.149/json/.pac)||
+|配置|[DAV](http://120.76.158.149:5005/)|zian|zian|[PAC](http://120.76.158.149/json/.pac)|
 |地图|[百度](https://api.map.baidu.com/lbsapi/getpoint/index.html)|[高德](https://lbs.amap.com/tools/picker)|||
 ||[搜索](https://zian.netlify.app/other/bing.html)|[仓库](https://666937.xyz:8899/?u=http://hsck.net/&p=/)|[猫咪](http://192.168.10.211)|[查证](https://cx.mem.gov.cn/special)|
 |阳光|[系统](https://hicp.sungrow-re.com)|[学习](https://edu.sungrow-re.com)|[设计](https://isolarroof.sungrowplant.com/)|[对账](http://ygfppt.sungrow-re.com:8081/login)|
