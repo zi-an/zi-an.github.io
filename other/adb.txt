@@ -104,83 +104,6 @@ www.googletagmanager.com
 !mj.pki.net.cn/img/
 !
 
-! 211.mm
-211.mm##._171cb22b1f:nth-child(1)
-211.mm##._171cb22b1f:nth-child(2)
-211.mm##._171cb22b1f:nth-child(4)
-211.mm##._171cb22b1f:nth-child(7)
-211.mm##._171cb22b1f:nth-child(8)
-211.mm##.s_h
-211.mm##._44ac13b608._32dd428fbe
-211.mm##._505cf89648.grid.gap10
-211.mm##._8128736383._219f84f383.ca04184285
-211.mm##.justify_center.header_original
-211.mm##.ff7012043c.fb66a70ac7
-211.mm##.grid.gap20.pad10
-211.mm##._3dfe7a2849
-211.mm##div.f23f562445._480547dbd5
-! sed -i "s|;margin-top:52px|;margin-top:0px|g" /var/www/html/maomi.css
-
-211.mm##.e8ee5a614c._7f9e79dff6
-211.mm##._35ea136195.grid.gap10
-211.mm##.grid.gap20.pad10
-211.mm##._50c5dc0db3.d93904377c
-211.mm##._4e9b27c258._3eaae9c6b0
-211.mm##._06cfc86b17.fbe4119a93
-211.mm##.s_h
-211.mm##._3624f9d64b._30f8e67f5a
-211.mm##._2d8aa05d87.f9fa8c0e68
-211.mm##._069f0f8902
-211.mm##._0f9e7209ba:nth-child(9)
-211.mm##._0f9e7209ba:nth-child(8)
-211.mm##._0f9e7209ba:nth-child(7)
-211.mm##._0f9e7209ba:nth-child(6)
-211.mm##._0f9e7209ba:nth-child(5)
-211.mm##._0f9e7209ba:nth-child(1)
-211.mm##._1be4bd56df 
-211.mm##._6aecb636da
-
-
-
-! 192.168.3.7
-192.168.3.7##._171cb22b1f:nth-child(1)
-192.168.3.7##._171cb22b1f:nth-child(2)
-192.168.3.7##._171cb22b1f:nth-child(4)
-192.168.3.7##._171cb22b1f:nth-child(7)
-192.168.3.7##._171cb22b1f:nth-child(8)
-192.168.3.7##.s_h
-192.168.3.7##._44ac13b608._32dd428fbe
-192.168.3.7##._505cf89648.grid.gap10
-192.168.3.7##._8128736383._219f84f383.ca04184285
-192.168.3.7##.justify_center.header_original
-192.168.3.7##.ff7012043c.fb66a70ac7
-192.168.3.7##.grid.gap20.pad10
-192.168.3.7##._3dfe7a2849
-192.168.3.7##div.f23f562445._480547dbd5
-! sed -i "s|;margin-top:52px|;margin-top:0px|g" /var/www/html/maomi.css
-
-! 212.mm
-212.mm###scroll-mian
-212.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(2) > div.header-menu:last-child > div.share-url:nth-child(8)
-212.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(4)
-212.mm##div.c_sfev8.c_hnncv:nth-child(9) > div
-212.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(2) > div.header-fix:first-child
-212.mm###main-container > div.vip-video:first-child
-212.mm##div[style="bottom: 0; left: 0; position: fixed; right: 0; text-align: center; z-index: 987"]
-212.mm##footer
-212.mm##.header-mobile
-212.mm##.share-content1
-212.mm##.row-item-title
-212.mm##.road-down
-212.mm##.home-banner-mobile-swiper.swiper-initialized.swiper-horizontal
-211.mm##._1be4bd56df
-212.mm###section-menu > div.row-item:nth-child(1)
-212.mm###section-menu > div.row-item:nth-child(2)
-212.mm###section-menu > div.row-item:nth-child(4)
-212.mm###section-menu > div.row-item:nth-child(7)
-212.mm###section-menu > div.row-item:nth-child(8)
-
-
 ! 阿里云213端口2024.3.5
 120.76.158.149##.e8ee5a614c._7f9e79dff6
 120.76.158.149##._35ea136195.grid.gap10
@@ -200,6 +123,16 @@ www.googletagmanager.com
 120.76.158.149##._0f9e7209ba:nth-child(1)
 120.76.158.149##._1be4bd56df 
 120.76.158.149##._6aecb636da
+
+
+! =======================================6.14更新
+120.76.158.149##.cb025bedc2.b3b3182fb0
+120.76.158.149##._4ae15162de._906dca819e
+120.76.158.149##._40fa6e3ac3.c0657e38e0
+120.76.158.149##._3ec6b1fbbf
+120.76.158.149##.a5e4e42ad9
+120.76.158.149##._87e3e4b3a1:nth-child(1)
+120.76.158.149##._87e3e4b3a1:nth-child(3)
 
 ! maomiav1+2
 mj.pki.net.cn/*.png
