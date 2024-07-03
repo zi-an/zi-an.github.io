@@ -119,6 +119,8 @@ www.googletagmanager.com
 120.76.158.149##.aad97a2630.bea77c4347:nth-child(9)
 120.76.158.149##.aad97a2630.bea77c4347:nth-child(8)
 120.76.158.149##.aad97a2630.bea77c4347:nth-child(4)
+120.76.158.149##.aad97a2630.bea77c4347:nth-child(3)
+120.76.158.149##.aad97a2630.bea77c4347:nth-child(1)
 
 ! maomiav1+2
 mj.pki.net.cn/*.png
