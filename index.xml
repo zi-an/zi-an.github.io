@@ -68,7 +68,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://zi-an.github.io/docs/linux/crontab/</guid>
-      <description>定时任务crontab#* * * * * - - - - - | | | | | | | | | +----- 星期中星期几 (0 - 6) (星期天 为0) | | | +---------- 月份 (1 - 12) | | +--------------- 一个月中的第几天 (1 - 31) | +-------------------- 小时 (0 - 23) +------------------------- 分钟 (0 - 59) 制定任务,5分钟执行一次 */5 * * * * docker exec maomiav2 /update.sh 查看日志 : journalctl -u cron.service -fn200 root@k610d:~# journalctl -u cron.</description>
+      <description>定时任务crontab#* * * * *- - - - -| | | | || | | | +----- 星期中星期几 (0 - 6) (星期天 为0)| | | +---------- 月份 (1 - 12) | | +--------------- 一个月中的第几天 (1 - 31)| +-------------------- 小时 (0 - 23)+------------------------- 分钟 (0 - 59) 制定任务,5分钟执行一次 */5 * * * * docker exec maomiav2 /update.sh 查看日志 : journalctl -u cron.service -fn200 root@k610d:~# journalctl -u cron.</description>
     </item>
     
     <item>
@@ -104,7 +104,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://zi-an.github.io/docs/linux/cpupower/</guid>
-      <description>linux电源选项#apt install -y linux-cpupower available cpufreq governors: performance schedutil 以下指CPU只支持两种模式,性能模式/调度模式 cpupower frequency-set -g schedutil # 默认调度模式 root@k610d:~# cpupower frequency-info analyzing CPU 0: driver: intel_cpufreq CPUs which run at the same hardware frequency: 0 CPUs which need to have their frequency coordinated by software: 0 maximum transition latency: 20.0 us hardware limits: 800 MHz - 3.20 GHz available cpufreq governors: performance schedutil current policy: frequency should be within 800 MHz and 3.</description>
+      <description>linux电源选项#apt install -y linux-cpupower available cpufreq governors: performance schedutil 以下指CPU只支持两种模式,性能模式/调度模式 cpupower frequency-set -g schedutil # 默认调度模式 root@k610d:~# cpupower frequency-infoanalyzing CPU 0:driver: intel_cpufreqCPUs which run at the same hardware frequency: 0CPUs which need to have their frequency coordinated by software: 0maximum transition latency: 20.0 ushardware limits: 800 MHz - 3.20 GHzavailable cpufreq governors: performance schedutilcurrent policy: frequency should be within 800 MHz and 3.</description>
     </item>
     
   </channel>
