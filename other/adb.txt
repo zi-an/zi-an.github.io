@@ -94,130 +94,37 @@ www.googletagmanager.com
 ##.list.t_one.url_link[data-url="read.php?tid=42193"]
 
 ! ======================================================以下猫咪
-! maomiav.com --> 213.mm
-! 部分规则在ADGURD下获取方便
-!##.header_original
-!mj.pki.net.cn/public/1/plugins/
-!mj.pki.net.cn/public/
-!mj.pki.net.cn/build1/static/node_modules/react-dom/cjs/react-dom.production.min.js
-!mj.pki.net.cn/*.png
-!mj.pki.net.cn/img/
-!
-
-! 211.mm
-211.mm##._171cb22b1f:nth-child(1)
-211.mm##._171cb22b1f:nth-child(2)
-211.mm##._171cb22b1f:nth-child(4)
-211.mm##._171cb22b1f:nth-child(7)
-211.mm##._171cb22b1f:nth-child(8)
-211.mm##.s_h
-211.mm##._44ac13b608._32dd428fbe
-211.mm##._505cf89648.grid.gap10
-211.mm##._8128736383._219f84f383.ca04184285
-211.mm##.justify_center.header_original
-211.mm##.ff7012043c.fb66a70ac7
-211.mm##.grid.gap20.pad10
-211.mm##._3dfe7a2849
-211.mm##div.f23f562445._480547dbd5
-! sed -i "s|;margin-top:52px|;margin-top:0px|g" /var/www/html/maomi.css
-
-211.mm##.e8ee5a614c._7f9e79dff6
-211.mm##._35ea136195.grid.gap10
-211.mm##.grid.gap20.pad10
-211.mm##._50c5dc0db3.d93904377c
-211.mm##._4e9b27c258._3eaae9c6b0
-211.mm##._06cfc86b17.fbe4119a93
-211.mm##.s_h
-211.mm##._3624f9d64b._30f8e67f5a
-211.mm##._2d8aa05d87.f9fa8c0e68
-211.mm##._069f0f8902
-211.mm##._0f9e7209ba:nth-child(9)
-211.mm##._0f9e7209ba:nth-child(8)
-211.mm##._0f9e7209ba:nth-child(7)
-211.mm##._0f9e7209ba:nth-child(6)
-211.mm##._0f9e7209ba:nth-child(5)
-211.mm##._0f9e7209ba:nth-child(1)
-211.mm##._1be4bd56df 
-211.mm##._6aecb636da
-
-
-
-! 192.168.3.7
-192.168.3.7##._171cb22b1f:nth-child(1)
-192.168.3.7##._171cb22b1f:nth-child(2)
-192.168.3.7##._171cb22b1f:nth-child(4)
-192.168.3.7##._171cb22b1f:nth-child(7)
-192.168.3.7##._171cb22b1f:nth-child(8)
-192.168.3.7##.s_h
-192.168.3.7##._44ac13b608._32dd428fbe
-192.168.3.7##._505cf89648.grid.gap10
-192.168.3.7##._8128736383._219f84f383.ca04184285
-192.168.3.7##.justify_center.header_original
-192.168.3.7##.ff7012043c.fb66a70ac7
-192.168.3.7##.grid.gap20.pad10
-192.168.3.7##._3dfe7a2849
-192.168.3.7##div.f23f562445._480547dbd5
-! sed -i "s|;margin-top:52px|;margin-top:0px|g" /var/www/html/maomi.css
-
-! 212.mm
-212.mm###scroll-mian
-212.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(2) > div.header-menu:last-child > div.share-url:nth-child(8)
-212.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(4)
-212.mm##div.c_sfev8.c_hnncv:nth-child(9) > div
-212.mm##div.pc-main-content:first-child > div.mobile_show:nth-child(2) > div.header-fix:first-child
-212.mm###main-container > div.vip-video:first-child
-212.mm##div[style="bottom: 0; left: 0; position: fixed; right: 0; text-align: center; z-index: 987"]
-212.mm##footer
-212.mm##.header-mobile
-212.mm##.share-content1
-212.mm##.row-item-title
-212.mm##.road-down
-212.mm##.home-banner-mobile-swiper.swiper-initialized.swiper-horizontal
-211.mm##._1be4bd56df
-212.mm###section-menu > div.row-item:nth-child(1)
-212.mm###section-menu > div.row-item:nth-child(2)
-212.mm###section-menu > div.row-item:nth-child(4)
-212.mm###section-menu > div.row-item:nth-child(7)
-212.mm###section-menu > div.row-item:nth-child(8)
-
-
-! 阿里云213端口2024.3.5
-120.76.158.149##.e8ee5a614c._7f9e79dff6
-120.76.158.149##._35ea136195.grid.gap10
+! 阿里云213端口2024.9.21
+120.76.158.149##._6a733f0f03.c4b09a8d20
+120.76.158.149##._08d8b41091._16402e23ad
+120.76.158.149##._3abe481988.b0dcbed15b
+120.76.158.149##._6f2db7b94e._30206c9ee0
+120.76.158.149##.bf75f858aa.f0df0a84d0
+120.76.158.149##._9884c4ad06
+120.76.158.149##.b41a45f81f._856696d74e
+120.76.158.149##._579786f3b3
 120.76.158.149##.grid.gap20.pad10
-120.76.158.149##._50c5dc0db3.d93904377c
-120.76.158.149##._4e9b27c258._3eaae9c6b0
-120.76.158.149##._06cfc86b17.fbe4119a93
+120.76.158.149##.fl.e6189ee1b7._06f198ea2c.align_center
 120.76.158.149##.s_h
-120.76.158.149##._3624f9d64b._30f8e67f5a
-120.76.158.149##._2d8aa05d87.f9fa8c0e68
-120.76.158.149##._069f0f8902
-120.76.158.149##._0f9e7209ba:nth-child(9)
-120.76.158.149##._0f9e7209ba:nth-child(8)
-120.76.158.149##._0f9e7209ba:nth-child(7)
-120.76.158.149##._0f9e7209ba:nth-child(6)
-120.76.158.149##._0f9e7209ba:nth-child(5)
-120.76.158.149##._0f9e7209ba:nth-child(1)
-120.76.158.149##._1be4bd56df 
-120.76.158.149##._6aecb636da
+120.76.158.149##._594c4ac183._85853aed86
+120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(1)
+120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(2)
+120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(3)
+120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(7)
+120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(8)
+120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(9)
+120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(10)
+120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(11)
+120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(12)
 
-! maomiav1+2
-mj.pki.net.cn/*.png
-mj.pki.net.cn/public/2/assets/js/custom/ad_tmp.js
-bjm.1vkx.cn
-insjs.1vkx.cn
-mj.pki.net.cn/public/1/
-js.xzjhome.cc
-uuindex.1vkx.cn
-img.maskanalyse.com
-baidutongji.baidutongj.com
-https://sujc*
+zbb.bbb.*.com
+ad.xmmnsd.com
+amjs.xylhwdu.com
+57573zubo36833.com
+https://jm.wuxingruoyin.top/public/1/plugins/utils/u_goods.json
+
 
 ! 影响速度,或只适合小部分网站,手动添加
 ! 不写域名的脚本不能用,via内建规则无法加入
 
- 
- 
 
- 
- 
