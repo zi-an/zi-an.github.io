@@ -1,4 +1,4 @@
-|[站内](./other/web.html)|[导航](./other/web.html)|[广告](./other/adb.html)|[公网](./ipv6)|[播放](./m3u8.html)|
+|[站内](/other/web.html)|[导航](/other/web.html)|[广告](/other/adb.html)|[公网](/ipv6)|[播放](/m3u8.html)|
 |-|-|-|-|-|
 |刷机|[K70E](https://xiaomirom.com/rom/redmi-k70e-poco-x6-pro-5g-duchamp-china-fastboot-recovery-rom/)|[K40S](https://xiaomirom.com/rom/redmi-k40s-munch-china-fastboot-recovery-rom/)|[K30](https://xiaomirom.com/rom/redmi-k30-5g-redmi-k30i-5g-picasso-china-fastboot-recovery-rom/)||
 |翻墙|[阿里](http://120.76.158.149/json/.pac)|[211](http://5.mm/json/.pac)|||
