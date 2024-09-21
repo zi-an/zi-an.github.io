@@ -128,3 +128,7 @@ https://jm.wuxingruoyin.top/public/1/plugins/utils/u_goods.json
 ! 不写域名的脚本不能用,via内建规则无法加入
 
 
+
+https://m3qytc8kvb.b10to2ni.com/?key=60dbb4b6e84540d2376b1cfb2f1641ca&t=66ee0af6
+
+https://m3qytc8kvb.b10to2ni.com/common/pulse/pulse/831f5a371207366eb2687c0a93__300081/hls/1/index.m3u8?key=9dd92f1fa82920451684b77156f2b7eb&t=66ee0af6
