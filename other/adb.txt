@@ -94,41 +94,57 @@ www.googletagmanager.com
 ##.list.t_one.url_link[data-url="read.php?tid=42193"]
 
 ! ======================================================以下猫咪
-! 阿里云213端口2024.9.21
-120.76.158.149##._6a733f0f03.c4b09a8d20
-120.76.158.149##._08d8b41091._16402e23ad
-120.76.158.149##._3abe481988.b0dcbed15b
-120.76.158.149##._6f2db7b94e._30206c9ee0
-120.76.158.149##.bf75f858aa.f0df0a84d0
-120.76.158.149##._9884c4ad06
-120.76.158.149##.b41a45f81f._856696d74e
-120.76.158.149##._579786f3b3
-120.76.158.149##.grid.gap20.pad10
-120.76.158.149##.fl.e6189ee1b7._06f198ea2c.align_center
-120.76.158.149##.s_h
-120.76.158.149##._594c4ac183._85853aed86
-120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(1)
-120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(2)
-120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(3)
-120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(7)
-120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(8)
-120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(9)
-120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(10)
-120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(11)
-120.76.158.149##.point.grid._0120860fd4.c0c876a14f:nth-child(12)
+! 阿里云213端口2024.9.28
+ali.mm##.s_h
+ali.mm##.bb3351af8f._80cdf7b4d1
+ali.mm##._56e53f9068._1dff69178b
+ali.mm##._8f06401829._702a69989c
+ali.mm##._0636708e3c._611ebbc31a
+ali.mm##._9c2c5a4205.de86aa2982._68dc777951.c100c15cf9
+ali.mm##._2a6ca3f8ff._8f758c1703
+ali.mm##._6e938191bb.a04a892119
+ali.mm##._19561fd94b.grid.gap10
+ali.mm##._5571a32b73.c3726a4af7
+ali.mm##._22e9f61314
+ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(1)
+ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(2)
+ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(3)
+ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(7)
+ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(8)
+ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(9)
+ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(10)
+ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(11)
+ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(12)
+
+127.0.0.1##.s_h
+127.0.0.1##.bb3351af8f._80cdf7b4d1
+127.0.0.1##._56e53f9068._1dff69178b
+127.0.0.1##._8f06401829._702a69989c
+127.0.0.1##._0636708e3c._611ebbc31a
+127.0.0.1##._9c2c5a4205.de86aa2982._68dc777951.c100c15cf9
+127.0.0.1##._2a6ca3f8ff._8f758c1703
+127.0.0.1##._6e938191bb.a04a892119
+127.0.0.1##._19561fd94b.grid.gap10
+127.0.0.1##._5571a32b73.c3726a4af7
+127.0.0.1##._22e9f61314
+127.0.0.1##._29eff91ceb._35211daff8._97f29428bc:nth-child(1)
+127.0.0.1##._29eff91ceb._35211daff8._97f29428bc:nth-child(2)
+127.0.0.1##._29eff91ceb._35211daff8._97f29428bc:nth-child(3)
+127.0.0.1##._29eff91ceb._35211daff8._97f29428bc:nth-child(7)
+127.0.0.1##._29eff91ceb._35211daff8._97f29428bc:nth-child(8)
+127.0.0.1##._29eff91ceb._35211daff8._97f29428bc:nth-child(9)
+127.0.0.1##._29eff91ceb._35211daff8._97f29428bc:nth-child(10)
+127.0.0.1##._29eff91ceb._35211daff8._97f29428bc:nth-child(11)
+127.0.0.1##._29eff91ceb._35211daff8._97f29428bc:nth-child(12)
+
 
 zbb.bbb.*.com
 ad.xmmnsd.com
 amjs.xylhwdu.com
 57573zubo36833.com
-https://jm.wuxingruoyin.top/public/1/plugins/utils/u_goods.json
+*.1vkx.cn
+hm.baidu.com
 
 
 ! 影响速度,或只适合小部分网站,手动添加
 ! 不写域名的脚本不能用,via内建规则无法加入
-
-
-
-https://m3qytc8kvb.b10to2ni.com/?key=60dbb4b6e84540d2376b1cfb2f1641ca&t=66ee0af6
-
-https://m3qytc8kvb.b10to2ni.com/common/pulse/pulse/831f5a371207366eb2687c0a93__300081/hls/1/index.m3u8?key=9dd92f1fa82920451684b77156f2b7eb&t=66ee0af6
