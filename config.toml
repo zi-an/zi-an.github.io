@@ -1,0 +1,6 @@
+baseURL = 'http://zi-an.github.io/'
+languageCode = 'en-us'
+title = 'Zi-An'
+theme = 'hugo-book'
+[params] 
+  BookTheme = 'auto' 
