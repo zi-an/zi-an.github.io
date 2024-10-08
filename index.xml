@@ -13,7 +13,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://zi-an.github.io/docs/databases/mysql/</guid>
-      <description>常用mysql语句#ECHO &amp;#34;&amp;#34; </description>
+      <description> 常用mysql语句 # ECHO &amp;#34;&amp;#34; </description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://zi-an.github.io/docs/others/ipv6/</guid>
-      <description>这是我的ipv6#ipv6的获取方式
+      <description>这是我的ipv6 # ipv6的获取方式
 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;zh&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta content=&amp;#34;yes&amp;#34; name=&amp;#34;apple-mobile-web-app-capable&amp;#34;&amp;gt; &amp;lt;meta content=&amp;#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&amp;#34; name=&amp;#34;viewport&amp;#34;&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;ipv6&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;button onclick=&amp;#34;copy()&amp;#34;&amp;gt;&amp;lt;h3&amp;gt;IP:&amp;lt;/h3&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;br&amp;gt;&amp;lt;br&amp;gt; &amp;lt;button onclick=&amp;#34;enter()&amp;#34;&amp;gt;&amp;lt;h3&amp;gt;HTTP:&amp;lt;/h3&amp;gt;&amp;lt;/button&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34;&amp;gt; let ip; let httpRequest = new XMLHttpRequest(); httpRequest.open(&amp;#34;GET&amp;#34;, &amp;#34;https://raw.githubusercontent.com/zi-an/zi-an.github.io/ipv6/last.txt&amp;#34;); httpRequest.send(); httpRequest.onreadystatechange = function () { ip = httpRequest.responseText; ip = &amp;#39;[&amp;#39; + ip.replace(&amp;#39;\n&amp;#39;, &amp;#39;&amp;#39;) + &amp;#39;]&amp;#39;; document.getElementsByTagName(&amp;#34;h3&amp;#34;)[0].innerText = ip; document.getElementsByTagName(&amp;#34;h3&amp;#34;)[1].innerText = &amp;#34;http://&amp;#34; + ip; } function copy() { navigator.</description>
     </item>
     
@@ -32,7 +32,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://zi-an.github.io/docs/java/mysql/</guid>
-      <description>this is my mysql#import java.sql.*;public class DBUtil {public String username = &amp;#34;root&amp;#34;;public String password = &amp;#34;123456&amp;#34;;private String url=&amp;#34;jdbc:mysql://localhost:3306/mysql&amp;#34;;/*** 1. 实现数据库连接的方法*/public Connection getConn() {Connection conn = null;try {Class.forName(&amp;#34;com.mysql.jdbc.Driver&amp;#34;);conn = DriverManager.getConnection(url, username, password);System.out.println(&amp;#34;连接数据库成功.&amp;#34;);} catch (Exception e) {e.printStackTrace();}return conn;}/*** 2. 释放数据库连接*/public void closeConn(ResultSet rs, PreparedStatement pstm, Connection conn) throws Exception {if (rs !</description>
+      <description>this is my mysql # import java.sql.*; public class DBUtil { public String username = &amp;#34;root&amp;#34;; public String password = &amp;#34;123456&amp;#34;; private String url=&amp;#34;jdbc:mysql://localhost:3306/mysql&amp;#34;; /** * 1. 实现数据库连接的方法 */ public Connection getConn() { Connection conn = null; try { Class.forName(&amp;#34;com.mysql.jdbc.Driver&amp;#34;); conn = DriverManager.getConnection(url, username, password); System.out.println(&amp;#34;连接数据库成功.&amp;#34;); } catch (Exception e) { e.printStackTrace(); } return conn; } /** * 2. 释放数据库连接 */ public void closeConn(ResultSet rs, PreparedStatement pstm, Connection conn) throws Exception { if (rs !</description>
     </item>
     
     <item>
@@ -41,7 +41,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://zi-an.github.io/docs/linux/nginx/</guid>
-      <description>Nginx#https://nginx.org/en/docs/ https://nginx.org/en/docs/http/ngx_http_core_module.html (内置变量大全) https://nginx.org/en/docs/http/ngx_http_log_module.html (日志配置) 常用模块#模块 功能 备注 ngx_stream_proxy_module TCP/UDP转发模块 ngx_http_proxy_module HTTP代理模块 ngx_http_gzip_module gzip压缩 ngx_http_v3_module http3模块 1.25.0以后可用 Windows版nginx#为不完全版,许多功能可能不可用,以下命令为部分命令 命令 作用 备注 taskkill /f /im nginx.exe 关闭nginx nginx -s stop 关闭nginx nginx -t 仅测试配置文件是否正确 nginx -s reload 重新加载配置文件 nginx &amp;amp; 后台运行 </description>
+      <description> Nginx # https://nginx.org/en/docs/ https://nginx.org/en/docs/http/ngx_http_core_module.html (内置变量大全) https://nginx.org/en/docs/http/ngx_http_log_module.html (日志配置) 常用模块 # 模块 功能 备注 ngx_stream_proxy_module TCP/UDP转发模块 ngx_http_proxy_module HTTP代理模块 ngx_http_gzip_module gzip压缩 ngx_http_v3_module http3模块 1.25.0以后可用 Windows版nginx # 为不完全版,许多功能可能不可用,以下命令为部分命令 命令 作用 备注 taskkill /f /im nginx.exe 关闭nginx nginx -s stop 关闭nginx nginx -t 仅测试配置文件是否正确 nginx -s reload 重新加载配置文件 nginx &amp;amp; 后台运行 </description>
     </item>
     
     <item>
@@ -50,7 +50,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://zi-an.github.io/docs/linux/string/</guid>
-      <description>三剑客awk+grep+sed#awk使用#-F fs or --field-separator fs指定输入文件折分隔符，fs是一个字符串或者是一个正则表达式，如-F:。-v var=value or --asign var=value赋值一个用户定义变量。-f scripfile or --file scriptfile从脚本文件中读取awk命令。-mf nnn and -mr nnn对nnn值设置内在限制，-mf选项限制分配给nnn的最大块数目；-mr选项限制记录的最大数目。这两个功能是Bell实验室版awk的扩展功能，在标准awk中不适用。-W compact or --compat, -W traditional or --traditional在兼容模式下运行awk。所以gawk的行为和标准的awk完全一样，所有的awk扩展都被忽略。-W copyleft or --copyleft, -W copyright or --copyright打印简短的版权信息。-W help or --help, -W usage or --usage打印全部awk选项和每个选项的简短说明。-W lint or --lint打印不能向传统unix平台移植的结构的警告。-W lint-old or --lint-old打印关于不能向传统unix平台移植的结构的警告。-W posix打开兼容模式。但有以下限制，不识别：/x、函数关键字、func、换码序列以及当fs是一个空格时，将新行作为一个域分隔符；操作符**和**=不能代替^和^=；fflush无效。-W re-interval or --re-inerval允许间隔正则表达式的使用，参考(grep中的Posix字符类)，如括号表达式[[:alpha:]]。-W source program-text or --source program-text使用program-text作为源代码，可与-f命令混用。-W version or --version打印bug报告信息的版本。 以.</description>
+      <description>三剑客awk+grep+sed # awk使用 # -F fs or --field-separator fs 指定输入文件折分隔符，fs是一个字符串或者是一个正则表达式，如-F:。 -v var=value or --asign var=value 赋值一个用户定义变量。 -f scripfile or --file scriptfile 从脚本文件中读取awk命令。 -mf nnn and -mr nnn 对nnn值设置内在限制，-mf选项限制分配给nnn的最大块数目；-mr选项限制记录的最大数目。这两个功能是Bell实验室版awk的扩展功能，在标准awk中不适用。 -W compact or --compat, -W traditional or --traditional 在兼容模式下运行awk。所以gawk的行为和标准的awk完全一样，所有的awk扩展都被忽略。 -W copyleft or --copyleft, -W copyright or --copyright 打印简短的版权信息。 -W help or --help, -W usage or --usage 打印全部awk选项和每个选项的简短说明。 -W lint or --lint 打印不能向传统unix平台移植的结构的警告。 -W lint-old or --lint-old 打印关于不能向传统unix平台移植的结构的警告。 -W posix 打开兼容模式。但有以下限制，不识别：/x、函数关键字、func、换码序列以及当fs是一个空格时，将新行作为一个域分隔符；操作符**和**=不能代替^和^=；fflush无效。 -W re-interval or --re-inerval 允许间隔正则表达式的使用，参考(grep中的Posix字符类)，如括号表达式[[:alpha:]]。 -W source program-text or --source program-text 使用program-text作为源代码，可与-f命令混用。 -W version or --version 打印bug报告信息的版本。 以.</description>
     </item>
     
     <item>
@@ -59,7 +59,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://zi-an.github.io/docs/demo/</guid>
-      <description>这是我的文档模板#ECHO &amp;#34;&amp;#34; </description>
+      <description> 这是我的文档模板 # ECHO &amp;#34;&amp;#34; </description>
     </item>
     
     <item>
@@ -68,7 +68,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://zi-an.github.io/docs/linux/crontab/</guid>
-      <description>定时任务crontab#* * * * *- - - - -| | | | || | | | +----- 星期中星期几 (0 - 6) (星期天 为0)| | | +---------- 月份 (1 - 12) | | +--------------- 一个月中的第几天 (1 - 31)| +-------------------- 小时 (0 - 23)+------------------------- 分钟 (0 - 59) 制定任务,5分钟执行一次 */5 * * * * docker exec maomiav2 /update.sh 查看日志 : journalctl -u cron.service -fn200 root@k610d:~# journalctl -u cron.</description>
+      <description>定时任务crontab # * * * * * - - - - - | | | | | | | | | +----- 星期中星期几 (0 - 6) (星期天 为0) | | | +---------- 月份 (1 - 12) | | +--------------- 一个月中的第几天 (1 - 31) | +-------------------- 小时 (0 - 23) +------------------------- 分钟 (0 - 59) 制定任务,5分钟执行一次 */5 * * * * docker exec maomiav2 /update.sh 查看日志 : journalctl -u cron.service -fn200 root@k610d:~# journalctl -u cron.</description>
     </item>
     
     <item>
@@ -77,7 +77,7 @@
       <pubDate>Tue, 01 Jan 1980 00:00:00 +0000</pubDate>
       
       <guid>http://zi-an.github.io/blogs/demo/</guid>
-      <description>模板二级标题#</description>
+      <description> 模板二级标题 # </description>
     </item>
     
     <item>
@@ -104,7 +104,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://zi-an.github.io/docs/linux/cpupower/</guid>
-      <description>linux电源选项#apt install -y linux-cpupower available cpufreq governors: performance schedutil 以下指CPU只支持两种模式,性能模式/调度模式 cpupower frequency-set -g schedutil # 默认调度模式 root@k610d:~# cpupower frequency-infoanalyzing CPU 0:driver: intel_cpufreqCPUs which run at the same hardware frequency: 0CPUs which need to have their frequency coordinated by software: 0maximum transition latency: 20.0 ushardware limits: 800 MHz - 3.20 GHzavailable cpufreq governors: performance schedutilcurrent policy: frequency should be within 800 MHz and 3.</description>
+      <description>linux电源选项 # apt install -y linux-cpupower available cpufreq governors: performance schedutil 以下指CPU只支持两种模式,性能模式/调度模式 cpupower frequency-set -g schedutil # 默认调度模式 root@k610d:~# cpupower frequency-info analyzing CPU 0: driver: intel_cpufreq CPUs which run at the same hardware frequency: 0 CPUs which need to have their frequency coordinated by software: 0 maximum transition latency: 20.0 us hardware limits: 800 MHz - 3.20 GHz available cpufreq governors: performance schedutil current policy: frequency should be within 800 MHz and 3.</description>
     </item>
     
   </channel>
