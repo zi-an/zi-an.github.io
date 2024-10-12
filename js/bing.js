@@ -2,7 +2,7 @@
 // @name         bing
 // @version      2024-10-12
 // @description  必应搜索屏蔽知乎;https://cn.bing.com/search?q=-site%3Azhihu.com%20
-// @match        https://cn.bing.com/search?*
+// @match        https://cn.bing.com/*search?*
 // ==/UserScript==
 
 (function() {
