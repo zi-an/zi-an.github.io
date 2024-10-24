@@ -71,18 +71,16 @@ m.huya.com###videoBlueBtn
 a.magsrv.com/ad-provider.js
 
 ! hsck.cc
-##div[style=" max-width:990px; margin:0 auto;"]
-##.gonggao
-##.stui-pannel__head
-##.stui-vodlist__thumb[href^="https"]
-##.stui-foot
-##ul.stui-vodlist.clearfix>li:nth-child(1)
-##ul.stui-vodlist.clearfix>li:nth-child(2)
-##ul.stui-vodlist.clearfix>li:nth-child(3)
-##ul.stui-vodlist.clearfix>li:nth-child(4)
-##ul.stui-vodlist.clearfix>li:nth-child(5)
-##.tupian
-
+cc##div[style=" max-width:990px; margin:0 auto;"]
+cc##.gonggao
+cc##.stui-pannel__head
+cc##.stui-vodlist__thumb[href^="https"]
+cc##.stui-foot
+cc##ul.stui-vodlist.clearfix>li:nth-child(1)
+cc##ul.stui-vodlist.clearfix>li:nth-child(2)
+cc##ul.stui-vodlist.clearfix>li:nth-child(3)
+cc##ul.stui-vodlist.clearfix>li:nth-child(4)
+cc##.tupian
 
 ! caoliu1024.com旧版
 ###cate_12
@@ -98,68 +96,26 @@ www.googletagmanager.com
 
 ! ======================================================以下猫咪
 ! 阿里云213端口2024.9.28
-x.mm##.s_h
-x.mm##.bb3351af8f._80cdf7b4d1
-x.mm##._56e53f9068._1dff69178b
-x.mm##._8f06401829._702a69989c
-x.mm##._0636708e3c._611ebbc31a
-x.mm##._9c2c5a4205.de86aa2982._68dc777951.c100c15cf9
-x.mm##._2a6ca3f8ff._8f758c1703
-x.mm##._6e938191bb.a04a892119
-x.mm##._19561fd94b.grid.gap10
-x.mm##._5571a32b73.c3726a4af7
-x.mm##._22e9f61314
-x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(1)
-x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(2)
-x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(3)
-x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(7)
-x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(8)
-x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(9)
-x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(10)
-x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(11)
-x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(12)
-
-pic.x.mm##.s_h
-pic.x.mm##.bb3351af8f._80cdf7b4d1
-pic.x.mm##._56e53f9068._1dff69178b
-pic.x.mm##._8f06401829._702a69989c
-pic.x.mm##._0636708e3c._611ebbc31a
-pic.x.mm##._9c2c5a4205.de86aa2982._68dc777951.c100c15cf9
-pic.x.mm##._2a6ca3f8ff._8f758c1703
-pic.x.mm##._6e938191bb.a04a892119
-pic.x.mm##._19561fd94b.grid.gap10
-pic.x.mm##._5571a32b73.c3726a4af7
-pic.x.mm##._22e9f61314
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(1)
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(2)
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(3)
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(7)
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(8)
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(9)
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(10)
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(11)
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(12)
-
-ali.mm##.s_h
-ali.mm##.bb3351af8f._80cdf7b4d1
-ali.mm##._56e53f9068._1dff69178b
-ali.mm##._8f06401829._702a69989c
-ali.mm##._0636708e3c._611ebbc31a
-ali.mm##._9c2c5a4205.de86aa2982._68dc777951.c100c15cf9
-ali.mm##._2a6ca3f8ff._8f758c1703
-ali.mm##._6e938191bb.a04a892119
-ali.mm##._19561fd94b.grid.gap10
-ali.mm##._5571a32b73.c3726a4af7
-ali.mm##._22e9f61314
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(1)
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(2)
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(3)
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(7)
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(8)
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(9)
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(10)
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(11)
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(12)
+mm##.s_h
+mm##.bb3351af8f._80cdf7b4d1
+mm##._56e53f9068._1dff69178b
+mm##._8f06401829._702a69989c
+mm##._0636708e3c._611ebbc31a
+mm##._9c2c5a4205.de86aa2982._68dc777951.c100c15cf9
+mm##._2a6ca3f8ff._8f758c1703
+mm##._6e938191bb.a04a892119
+mm##._19561fd94b.grid.gap10
+mm##._5571a32b73.c3726a4af7
+mm##._22e9f61314
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(1)
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(2)
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(3)
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(7)
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(8)
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(9)
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(10)
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(11)
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(12)
 
 120.76.158.149##.s_h
 120.76.158.149##.bb3351af8f._80cdf7b4d1
