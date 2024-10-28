@@ -16,7 +16,7 @@ hugo-book 适合做文档功能的网页
 
 
 ## 准备
-* 建议使用hugo extended (解压hugo_extended_0.111.3_windows-amd64.zip把exe放到C:/Windows下)
+* 建议使用hugo extended (解压[hugo_extended_0.111.3_windows-amd64.zip](https://github.com/gohugoio/hugo/releases/download/v0.111.3/hugo_extended_0.111.3_windows-amd64.zip)把exe放到C:/Windows下)
 * 主题hugo-book下载https://themes.gohugo.io/themes/hugo-book/
 * 主题演示地址 https://hugo-book-demo.netlify.app/
 
