@@ -7,7 +7,7 @@ git clone --depth 1 git@github.com:zi-an/zi-an.github.io.git public
 
 if exist "mi.md" (
 tar -cvf x.png mi.md
-move x.png public/x
+move x.png public/x.png
 ) else (
 tar -xvf public/x.png
 )
