@@ -2,7 +2,7 @@
 |-|-|-|-|-|
 |刷机|[K30](https://xiaomirom.com/rom/redmi-k30-5g-redmi-k30i-5g-picasso-china-fastboot-recovery-rom/)|[K40S](https://xiaomirom.com/rom/redmi-k40s-munch-china-fastboot-recovery-rom/)|[K70E](https://xiaomirom.com/rom/redmi-k70e-poco-x6-pro-5g-duchamp-china-fastboot-recovery-rom/)||
 |小米|[测试](tel:*#*#64663#*#*)||[关Vol](tel:*#*#86583#*#*)|[关5G](tel:*#*#54638#*#*)|
-|资源|[存储](http://120.76.158.149/?from=/)|[日记](http://120.76.158.149/?from=/note/)|[BT下载](http://120.76.158.149:9091/transmission/web/)|[迅雷](http://120.76.158.149:996/webman/3rdparty/pan-xunlei-com/index.cgi/#/home)|
+|资源|[存储](http://120.76.158.149/?from=/)|[日记](http://120.76.158.149/?from=/note/)|[BT](http://120.76.158.149:90/transmission/web/)|[迅雷](http://120.76.158.149:996/webman/3rdparty/pan-xunlei-com/index.cgi/#/home)|
 |站点|[仓库](https://666937.xyz:8899/?u=http://www.hsck.cc/&p=/)|[搜索](https://sukebei.nyaa.si/)|[猫咪](http://x.mm:8080)||
 |翻墙|[阿里](http://120.76.158.149/json/.pac)|[211](http://5.mm/json/.pac)|||
 ||[谷歌](https://www.google.com/)|[油管](https://youtube.com/)|||
