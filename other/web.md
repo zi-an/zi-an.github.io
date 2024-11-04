@@ -9,5 +9,5 @@
 ||[谷歌](https://www.google.com/)|[油管](https://youtube.com/)|||
 |短信|[推荐](https://onlinesim.io/zh)|[备用](https://www.yunjiema.top)|
 |联通|[客服](tel:10010)|[话费](sms:10010?body=hf)|[流量1](sms:10010?body=cxll)|[流量2](sms:10010?body=2082)
-|ali.mm|[阿里](http://120.76.158.149/)|[Dav](http://120.76.158.149:5005)|||
+|ali.mm|[阿里](http://120.76.158.149/)|[Dav](http://zian:zian@120.76.158.149:5005)|||
 |5.mm|[210](http://210.mm)|[代理](http://211.mm/)|||
