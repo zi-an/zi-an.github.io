@@ -94,6 +94,16 @@ www.googletagmanager.com
 ##.list.t_one.url_link[data-url="read.php?tid=42290"]
 ##.list.t_one.url_link[data-url="read.php?tid=42193"]
 
+! xgxg.vip
+##.adv-container
+##.top_app_down.heiliao
+##.van-notice-bar
+##.ad-list.heiliao
+##.ad-dialog-con
+##.player-adv
+##.animate__backInLeft
+##.hf-con
+
 ! ======================================================以下猫咪
 ! 阿里云213端口2024.9.28
 mm##.s_h
