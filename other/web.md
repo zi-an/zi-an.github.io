@@ -1,4 +1,4 @@
-|[站内](https://120.76.158.149/other/web.html)|[导航](https://120.76.158.149/other/web.html)|[广告](https://120.76.158.149/other/adb.html)|[公网](https://120.76.158.149/ipv6)|[播放](https://120.76.158.149/other/m3u8.html)|
+|[站内](https://120.76.158.149/other/web.html)|[油猴](https://zi-an.github.io/js/bing.js)|[广告](https://120.76.158.149/other/adb.html)|[公网](https://120.76.158.149/ipv6)|[播放](https://120.76.158.149/other/m3u8.html)|
 |-|-|-|-|-|
 |刷机|[K30](https://xiaomirom.com/rom/redmi-k30-5g-redmi-k30i-5g-picasso-china-fastboot-recovery-rom/)|[K40S](https://xiaomirom.com/rom/redmi-k40s-munch-china-fastboot-recovery-rom/)|[K70E](https://xiaomirom.com/rom/redmi-k70e-poco-x6-pro-5g-duchamp-china-fastboot-recovery-rom/)||
 |小米|[测试](tel:*#*#64663#*#*)||[关Vol](tel:*#*#86583#*#*)|[关5G](tel:*#*#54638#*#*)|
@@ -9,5 +9,5 @@
 ||[谷歌](https://www.google.com/)|[油管](https://youtube.com/)|||
 |短信|[推荐](https://onlinesim.io/zh)|[备用](https://www.yunjiema.top)|
 |联通|[客服](tel:10010)|[话费](sms:10010?body=hf)|[流量1](sms:10010?body=cxll)|[流量2](sms:10010?body=2082)
-|ali.mm|[阿里](http://120.76.158.149/)|[webdav](http://120.76.158.149:5005)|||
-|5.mm|[210](http://210.mm)|[v2raya](http://211.mm/)|||
+|ali.mm|[阿里](http://120.76.158.149/)|[Dav](http://120.76.158.149:5005)|||
+|5.mm|[210](http://210.mm)|[代理](http://211.mm/)|||
