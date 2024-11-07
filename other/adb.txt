@@ -5,7 +5,7 @@
 ! https://help.adblockplus.org/hc/en-us/search?utf8=%E2%9C%93&query=ruler
 
 ! https://cn.bing.com/ 屏蔽csdn,jianshu等名字需要全大写
-! 知乎不好屏蔽,先用csdn cn.bing.com#?#li.b_algo:-abp-contains(CSDN)
+cn.bing.com###sb_form
 cn.bing.com#?#li.b_algo:-abp-contains(知乎)
 cn.bing.com#?#li.b_algo:-abp-contains(腾讯网)
 cn.bing.com###bnp_rich_div
@@ -63,10 +63,7 @@ m.huya.com##.room-info-box
 m.huya.com###videoHdCount
 m.huya.com##.cutDown
 m.huya.com###videoBlueBtn
-
-
 ! ==================================================================================
-
 ! sukebei.nyaa.si/
 a.magsrv.com/ad-provider.js
 
@@ -80,11 +77,13 @@ a.magsrv.com/ad-provider.js
 ##ul.stui-vodlist.clearfix>li:nth-child(2)
 ##ul.stui-vodlist.clearfix>li:nth-child(3)
 ##ul.stui-vodlist.clearfix>li:nth-child(4)
-##ul.stui-vodlist.clearfix>li:nth-child(5)
 ##.tupian
 
+! jable.tv uzicjb/uzicjb
+jable.tv###site-footer
+jable.tv##text-center
 
-! caoliu1024.com旧版
+! caoliu1024.com旧版 920722/920722
 ###cate_12
 ###cate_thread
 ##.user-activate
@@ -97,7 +96,7 @@ www.googletagmanager.com
 ##.list.t_one.url_link[data-url="read.php?tid=42193"]
 
 ! ======================================================以下猫咪
-! 阿里云213端口2024.9.28
+! 阿里云8080端口2024.11.07 需要代理到本地 
 x.mm##.s_h
 x.mm##.bb3351af8f._80cdf7b4d1
 x.mm##._56e53f9068._1dff69178b
@@ -118,70 +117,6 @@ x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(9)
 x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(10)
 x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(11)
 x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(12)
-
-pic.x.mm##.s_h
-pic.x.mm##.bb3351af8f._80cdf7b4d1
-pic.x.mm##._56e53f9068._1dff69178b
-pic.x.mm##._8f06401829._702a69989c
-pic.x.mm##._0636708e3c._611ebbc31a
-pic.x.mm##._9c2c5a4205.de86aa2982._68dc777951.c100c15cf9
-pic.x.mm##._2a6ca3f8ff._8f758c1703
-pic.x.mm##._6e938191bb.a04a892119
-pic.x.mm##._19561fd94b.grid.gap10
-pic.x.mm##._5571a32b73.c3726a4af7
-pic.x.mm##._22e9f61314
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(1)
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(2)
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(3)
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(7)
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(8)
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(9)
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(10)
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(11)
-pic.x.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(12)
-
-ali.mm##.s_h
-ali.mm##.bb3351af8f._80cdf7b4d1
-ali.mm##._56e53f9068._1dff69178b
-ali.mm##._8f06401829._702a69989c
-ali.mm##._0636708e3c._611ebbc31a
-ali.mm##._9c2c5a4205.de86aa2982._68dc777951.c100c15cf9
-ali.mm##._2a6ca3f8ff._8f758c1703
-ali.mm##._6e938191bb.a04a892119
-ali.mm##._19561fd94b.grid.gap10
-ali.mm##._5571a32b73.c3726a4af7
-ali.mm##._22e9f61314
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(1)
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(2)
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(3)
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(7)
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(8)
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(9)
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(10)
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(11)
-ali.mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(12)
-
-120.76.158.149##.s_h
-120.76.158.149##.bb3351af8f._80cdf7b4d1
-120.76.158.149##._56e53f9068._1dff69178b
-120.76.158.149##._8f06401829._702a69989c
-120.76.158.149##._0636708e3c._611ebbc31a
-120.76.158.149##._9c2c5a4205.de86aa2982._68dc777951.c100c15cf9
-120.76.158.149##._2a6ca3f8ff._8f758c1703
-120.76.158.149##._6e938191bb.a04a892119
-120.76.158.149##._19561fd94b.grid.gap10
-120.76.158.149##._5571a32b73.c3726a4af7
-120.76.158.149##._22e9f61314
-120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(1)
-120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(2)
-120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(3)
-120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(7)
-120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(8)
-120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(9)
-120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(10)
-120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(11)
-120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(12)
-
 
 zbb.bbb.*.com
 ad.xmmnsd.com

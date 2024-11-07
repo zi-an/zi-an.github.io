@@ -1,4 +1,4 @@
-|[站内](https://120.76.158.149/other/web.html)|[油猴](https://zi-an.github.io/js/bing.js)|[广告](https://120.76.158.149/other/adb.html)|[公网](https://120.76.158.149/ipv6)|[播放](https://120.76.158.149/other/m3u8.html)|
+|[站内](https://120.76.158.149/other/web.html)|[油猴](/js/bing.js)|[广告](/other/adb.html)|[公网](/ipv6.html)|[播放](/other/m3u8.html)|
 |-|-|-|-|-|
 |刷机|[K30](https://xiaomirom.com/rom/redmi-k30-5g-redmi-k30i-5g-picasso-china-fastboot-recovery-rom/)|[K40S](https://xiaomirom.com/rom/redmi-k40s-munch-china-fastboot-recovery-rom/)|[K70E](https://xiaomirom.com/rom/redmi-k70e-poco-x6-pro-5g-duchamp-china-fastboot-recovery-rom/)||
 |小米|[测试](tel:*#*#64663#*#*)||[关Vol](tel:*#*#86583#*#*)|[关5G](tel:*#*#54638#*#*)|
