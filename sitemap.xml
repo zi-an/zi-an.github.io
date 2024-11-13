@@ -2,59 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://zi-an.github.io/docs/databases/mysql/</loc>
+    <loc>/docs/databases/mysql/</loc>
   </url><url>
-    <loc>http://zi-an.github.io/docs/others/ipv6/</loc>
+    <loc>/docs/others/ipv6/</loc>
   </url><url>
-    <loc>http://zi-an.github.io/docs/linux/</loc>
+    <loc>/docs/linux/</loc>
   </url><url>
-    <loc>http://zi-an.github.io/docs/java/mysql/</loc>
+    <loc>/docs/java/mysql/</loc>
   </url><url>
-    <loc>http://zi-an.github.io/docs/linux/nginx/</loc>
+    <loc>/docs/linux/nginx/</loc>
   </url><url>
-    <loc>http://zi-an.github.io/docs/linux/string/</loc>
+    <loc>/docs/linux/string/</loc>
   </url><url>
-    <loc>http://zi-an.github.io/docs/demo/</loc>
+    <loc>/docs/demo/</loc>
   </url><url>
-    <loc>http://zi-an.github.io/blogs/</loc>
+    <loc>/blogs/</loc>
     <lastmod>1980-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://zi-an.github.io/docs/java/</loc>
+    <loc>/docs/java/</loc>
   </url><url>
-    <loc>http://zi-an.github.io/docs/linux/crontab/</loc>
+    <loc>/docs/linux/crontab/</loc>
   </url><url>
-    <loc>http://zi-an.github.io/docs/windows/</loc>
+    <loc>/docs/windows/</loc>
   </url><url>
-    <loc>http://zi-an.github.io/docs/databases/</loc>
+    <loc>/docs/databases/</loc>
   </url><url>
-    <loc>http://zi-an.github.io/docs/tools/</loc>
+    <loc>/docs/tools/</loc>
   </url><url>
-    <loc>http://zi-an.github.io/blogs/demo/</loc>
+    <loc>/blogs/demo/</loc>
     <lastmod>1980-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://zi-an.github.io/docs/others/</loc>
+    <loc>/docs/others/</loc>
   </url><url>
-    <loc>http://zi-an.github.io/tags/blog/</loc>
+    <loc>/tags/blog/</loc>
     <lastmod>1980-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://zi-an.github.io/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>1980-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://zi-an.github.io/categories/demo/</loc>
+    <loc>/categories/demo/</loc>
     <lastmod>1980-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://zi-an.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>1980-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://zi-an.github.io/</loc>
+    <loc>/</loc>
     <lastmod>1980-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://zi-an.github.io/docs/java/redis/</loc>
+    <loc>/docs/java/redis/</loc>
   </url><url>
-    <loc>http://zi-an.github.io/docs/linux/apt/</loc>
+    <loc>/docs/linux/apt/</loc>
   </url><url>
-    <loc>http://zi-an.github.io/docs/linux/cpupower/</loc>
+    <loc>/docs/linux/cpupower/</loc>
   </url><url>
-    <loc>http://zi-an.github.io/docs/</loc>
+    <loc>/docs/</loc>
   </url>
 </urlset>
