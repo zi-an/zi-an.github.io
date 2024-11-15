@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>博客 on </title>
+    <link>https://example.org/posts/</link>
+    <description>Recent content in 博客 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UZI retry</title>
+      <link>https://example.org/posts/2024-11-15/</link>
+      <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/2024-11-15/</guid>
+      <description> UZI 又复出老头杯 # 恭喜uzi又双叒叕复出了 </description>
+    </item>
+    <item>
+      <title>恭喜Faker</title>
+      <link>https://example.org/posts/2024-11-03/</link>
+      <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/2024-11-03/</guid>
+      <description>恭喜Faker第五冠！ # 已经生效!</description>
+    </item>
+  </channel>
+</rss>

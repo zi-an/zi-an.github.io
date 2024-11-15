@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta charset="UTF-8">
+    <title>播放器</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/hls.js/1.4.12/hls.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/dplayer/1.27.1/DPlayer.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="col-lg-12" id="input">
+    <div class="input-group">
+        <input class="form-control" id="url" type="text" onkeydown="if(event.keyCode===13) {play()}">
+        <span class="input-group-btn">
+		 <button class="btn btn-default" type="button" onclick="play()">Go!</button>
+		</span>
+    </div>
+</div>
+
+<div id="dplayer"></div>
+</body>
+<script type="text/javascript">
+    function play() {
+        let url = document.getElementById('url').value
+        document.getElementById('input').style.display = 'none'
+        let dp = new DPlayer({
+            container: document.getElementById('dplayer'),
+            video: {
+                url: url,
+            },
+        });
+    }
+</script>
+</html>

@@ -2,59 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/docs/databases/mysql/</loc>
+    <loc>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/</loc>
   </url><url>
-    <loc>/docs/others/ipv6/</loc>
+    <loc>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/</loc>
   </url><url>
-    <loc>/docs/linux/</loc>
+    <loc>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/</loc>
   </url><url>
-    <loc>/docs/java/mysql/</loc>
+    <loc>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
   </url><url>
-    <loc>/docs/linux/nginx/</loc>
+    <loc>https://example.org/posts/2024-11-15/</loc>
+    <lastmod>2024-11-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/docs/linux/string/</loc>
+    <loc>https://example.org/posts/</loc>
+    <lastmod>2024-11-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/docs/demo/</loc>
+    <loc>https://example.org/</loc>
+    <lastmod>2024-11-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blogs/</loc>
-    <lastmod>1980-01-01T00:00:00+00:00</lastmod>
+    <loc>https://example.org/posts/2024-11-03/</loc>
+    <lastmod>2024-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/docs/java/</loc>
+    <loc>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%89%E8%A3%85/</loc>
   </url><url>
-    <loc>/docs/linux/crontab/</loc>
+    <loc>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</loc>
   </url><url>
-    <loc>/docs/windows/</loc>
+    <loc>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/</loc>
   </url><url>
-    <loc>/docs/databases/</loc>
+    <loc>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E6%89%A9%E5%B1%95%E5%91%BD%E4%BB%A4/</loc>
   </url><url>
-    <loc>/docs/tools/</loc>
+    <loc>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96/</loc>
   </url><url>
-    <loc>/blogs/demo/</loc>
-    <lastmod>1980-01-01T00:00:00+00:00</lastmod>
+    <loc>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD/</loc>
   </url><url>
-    <loc>/docs/others/</loc>
+    <loc>https://example.org/categories/</loc>
   </url><url>
-    <loc>/tags/blog/</loc>
-    <lastmod>1980-01-01T00:00:00+00:00</lastmod>
+    <loc>https://example.org/docs/</loc>
   </url><url>
-    <loc>/categories/</loc>
-    <lastmod>1980-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/demo/</loc>
-    <lastmod>1980-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>1980-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>1980-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/docs/java/redis/</loc>
-  </url><url>
-    <loc>/docs/linux/apt/</loc>
-  </url><url>
-    <loc>/docs/linux/cpupower/</loc>
-  </url><url>
-    <loc>/docs/</loc>
+    <loc>https://example.org/tags/</loc>
   </url>
 </urlset>

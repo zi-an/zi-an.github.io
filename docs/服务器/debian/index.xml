@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>debian on </title>
+    <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/</link>
+    <description>Recent content in debian on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <atom:link href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%89%E8%A3%85/</guid>
+      <description> 服务器安装 # </description>
+    </item>
+  </channel>
+</rss>
