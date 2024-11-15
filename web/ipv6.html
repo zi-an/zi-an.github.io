@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          name="viewport">
+    <meta charset="UTF-8">
+    <title>ipv6</title>
+</head>
+<body>
+<button onclick="copy()"><h3>IP:</h3></button>
+<br><br>
+<button onclick="enter()"><h3>HTTP:</h3></button>
+
+</body>
+
+<script type="text/javascript">
+    let ip;
+    let httpRequest = new XMLHttpRequest();
+    httpRequest.open("GET", "https://raw.githubusercontent.com/zi-an/zi-an.github.io/ipv6/last.txt");
+    httpRequest.send();
+    httpRequest.onreadystatechange = function () {
+        ip = httpRequest.responseText;
+        ip = '[' + ip.replace('\n', '') + ']';
+        document.getElementsByTagName("h3")[0].innerText = ip;
+        document.getElementsByTagName("h3")[1].innerText = "http://" + ip;
+    }
+
+    function copy() {
+        navigator.clipboard.writeText(ip).then(function () {
+            alert("复制成功");
+        }, function () {
+            alert("复制失败");
+        });
+    }
+
+    function enter() {
+        let url = "http://" + ip;
+        window.open(url)
+    }
+</script>
+</html>
+<!--https://zi-an.github.io/ipv6.html-->
