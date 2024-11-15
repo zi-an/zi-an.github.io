@@ -9,6 +9,20 @@
     <lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title></title>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
+      <description> 系统安装 # 推荐使用LTSC,专业版需登录账号才能完成安装 </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96/</guid>
+      <description> 系统优化 # </description>
+    </item>
+    <item>
       <title>UZI retry</title>
       <link>https://example.org/posts/2024-11-15/</link>
       <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
@@ -20,21 +34,28 @@
       <link>https://example.org/posts/2024-11-03/</link>
       <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
       <guid>https://example.org/posts/2024-11-03/</guid>
-      <description>恭喜Faker第五冠！ # 已经生效!</description>
+      <description>恭喜Faker第五冠！ # 亚运会视频&#xA;已经生效!</description>
     </item>
     <item>
       <title></title>
-      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%89%E8%A3%85/</link>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%89%E8%A3%85/</guid>
-      <description> 服务器安装 # </description>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
+      <description> 服务器安装 # 清华镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) </description>
     </item>
     <item>
       <title></title>
-      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%B9%E5%99%A8%E8%B5%84%E6%96%99/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
-      <description> 系统安装 # </description>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%B9%E5%99%A8%E8%B5%84%E6%96%99/</guid>
+      <description> Docker相关 # </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/linux/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/linux/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/</guid>
+      <description>系统推荐 # Cinnamon是debian官方维护的桌面系统，是debian中的一个桌面，个人感觉比较好看&#xA;使用默认安装即可</description>
     </item>
     <item>
       <title></title>
@@ -48,21 +69,14 @@
       <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E6%89%A9%E5%B1%95%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E6%89%A9%E5%B1%95%E5%91%BD%E4%BB%A4/</guid>
-      <description>扩展 # 需要的扩展命令</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96/</guid>
-      <description></description>
+      <description> 扩展命令 # powershell虽然好用,但是命令与Linux差别巨大 wget hugo </description>
     </item>
     <item>
       <title></title>
       <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD/</guid>
-      <description> 资源下载 # </description>
+      <description> 资源下载 # win11x64&#xA;开发软件 # webstorm(非商业免费) idea goland </description>
     </item>
   </channel>
 </rss>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>博客 on </title>
+    <title>日记本 on </title>
     <link>https://example.org/posts/</link>
-    <description>Recent content in 博客 on </description>
+    <description>Recent content in 日记本 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate>
@@ -20,7 +20,7 @@
       <link>https://example.org/posts/2024-11-03/</link>
       <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
       <guid>https://example.org/posts/2024-11-03/</guid>
-      <description>恭喜Faker第五冠！ # 已经生效!</description>
+      <description>恭喜Faker第五冠！ # 亚运会视频&#xA;已经生效!</description>
     </item>
   </channel>
 </rss>
