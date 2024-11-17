@@ -73,6 +73,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/</guid>
+      <description>nohup ffmpeg -ss 1:23 -re -stream_loop -1 -i 3.2_CG16_2_mux.mp4 -c:v copy -c:a copy-f flv rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-0-3575444560-10057-A-1727171574-1?seq=1731856465590&amp;amp;type=simple &amp;amp;&#xA;ffmpeg -ss 1:23 -re -stream_loop -1 -i heishenhua.mp4 -c:v copy -f flv rtmp://215.mm:1935/hls/999 http://215.mm/hls/999.m3u8&#xA;nohup ffmpeg -ss 1:23 -re -stream_loop -1 -i 3.2_CG16_2_mux.mp4 -c:v copy -acodec copy -f flv rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-7438266878141176820-3575444560-10057-A-1731860186-1?seq=1731856465590&amp;amp;type=simple &amp;amp;&#xA;最快的剪辑视频 # ffmpeg -ss 1:25 -i 3.2_CG16_2_mux.mp4 -c: copy bbb.mp4 服务器上的参数 # ffmpeg -ss 1:23 -i heishenhua.mp4 -c:v copy -acodec copy -f flv 1.</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD/</guid>
