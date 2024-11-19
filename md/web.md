@@ -1,4 +1,4 @@
-|资源|[虎牙](https://m.huya.com/huaweimei)||
+|资源|[虎牙](https://m.huya.com/huaweimei)||||
 |-|-|-|-|-|
 |刷机|[K30](https://xiaomirom.com/rom/redmi-k30-5g-redmi-k30i-5g-picasso-china-fastboot-recovery-rom/)|[K40S](https://xiaomirom.com/rom/redmi-k40s-munch-china-fastboot-recovery-rom/)|[K70E](https://xiaomirom.com/rom/redmi-k70e-poco-x6-pro-5g-duchamp-china-fastboot-recovery-rom/)||
 |小米|[测试](tel:*#*#64663#*#*)||[关Vol](tel:*#*#86583#*#*)|[关5G](tel:*#*#54638#*#*)|
@@ -14,6 +14,6 @@
 |网页|[存储](http://120.76.158.149:88/?from=/)|[日记](http://120.76.158.149:88/?from=/note/)|[BT](http://120.76.158.149:90/transmission/web/)|[迅雷](http://120.76.158.149:996/webman/3rdparty/pan-xunlei-com/index.cgi/#/home)|
 |资源|[阿里](http://120.76.158.149/)|[PAC](http://120.76.158.149:88/json/.pac)|[DAV](http://zian:zian@120.76.158.149:85)||
 
-|内网|[210](http://210.mm)|[BT](http://208.mm)|[迅雷](http://209.mm)|
+|内网|[210](http://210.mm)|[BT](http://208.mm)|[迅雷](http://209.mm)||
 |-|-|-|-|-|
-|网络|[代理](http://211.mm/)|[PAC](http://5.mm/json/.pac)||
+|网络|[代理](http://211.mm/)|[PAC](http://5.mm/json/.pac)|||
