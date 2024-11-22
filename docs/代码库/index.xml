@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>代码库 on </title>
+    <link>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/</link>
+    <description>Recent content in 代码库 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <atom:link href="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/</guid>
+      <description>计算圆周率 # 圆周率查询 https://www.pilookup.com/zh-cn/ 圆周率下载 https://www.pilookup.com/zh-cn/download.html 源代码 https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html 最大ftt值为536870912大约512M内存 使用FFT+AGM代码计算 # apt install gcc make -y&#xD;wget https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fftc6_src.tgz&#xD;tar -zxvf pi_fftc6_src.tgz&#xD;cd pi_fftc6/&#xD;sed -i &amp;#34;s|-fast|-Ofast|g&amp;#34; Makefile_64bit&#xD;sed -i &amp;#39;s|scanf(&amp;#34;%lg&amp;#34;, &amp;amp;x)|x=100000|g&amp;#39; pi_fftcw.c&#xD;make -f Makefile_64bit&#xD;nohup ./pi_cw &amp;amp;&#xD;cat pi.dat 四行代码求圆周率 # 资料 https://cs.uwaterloo.ca/~alopez-o/math-faq/mathtext/node12.html pi.c如下,执行 * gcc pi.c &amp;amp;&amp;amp; ./a.out * #include &amp;lt;stdio.h&amp;gt;&#xD;int a=10000,b,c=2800,d,e,f[2801],g;&#xD;void main(){&#xD;for(;b-c;)f[b++]=a/5;&#xD;for(;d=0,g=c*2;c-=14,printf(&amp;#34;%.4d&amp;#34;,e+d/a),e=d%a)for(b=c;d+=f[b]*a,&#xD;f[b]=d%--g,d/=g--,--b;d*=b);} 下载 # wget https://files.pilookup.com/pi/1-100000000.zip&#xD;wget https://files.pilookup.com/pi/100000001-200000000.zip&#xD;wget https://files.pilookup.com/pi/200000001-300000000.zip wget https://files.</description>
+    </item>
+  </channel>
+</rss>

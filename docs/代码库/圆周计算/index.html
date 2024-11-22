@@ -3,26 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="nohup ffmpeg -ss 1:23 -re -stream_loop -1 -i 3.2_CG16_2_mux.mp4 -c:v copy -c:a copy-f flv rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-0-3575444560-10057-A-1727171574-1?seq=1731856465590&amp;type=simple &amp;
-ffmpeg -ss 1:23 -re -stream_loop -1 -i heishenhua.mp4 -c:v copy -f flv rtmp://215.mm:1935/hls/999 http://215.mm/hls/999.m3u8
-nohup ffmpeg -ss 1:23 -re -stream_loop -1 -i 3.2_CG16_2_mux.mp4 -c:v copy -acodec copy -f flv rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-7438266878141176820-3575444560-10057-A-1731860186-1?seq=1731856465590&amp;type=simple &amp;
-最快的剪辑视频 # ffmpeg -ss 1:25 -i 3.2_CG16_2_mux.mp4 -c: copy bbb.mp4 服务器上的参数 # ffmpeg -ss 1:23 -i heishenhua.mp4 -c:v copy -acodec copy -f flv 1.">
+<meta name="description" content="计算圆周率 # 圆周率查询 https://www.pilookup.com/zh-cn/ 圆周率下载 https://www.pilookup.com/zh-cn/download.html 源代码 https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html 最大ftt值为536870912大约512M内存 使用FFT&#43;AGM代码计算 # apt install gcc make -ywget https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fftc6_src.tgztar -zxvf pi_fftc6_src.tgzcd pi_fftc6/sed -i &#34;s|-fast|-Ofast|g&#34; Makefile_64bitsed -i &#39;s|scanf(&#34;%lg&#34;, &amp;x)|x=100000|g&#39; pi_fftcw.cmake -f Makefile_64bitnohup ./pi_cw &amp;cat pi.dat 四行代码求圆周率 # 资料 https://cs.uwaterloo.ca/~alopez-o/math-faq/mathtext/node12.html pi.c如下,执行 * gcc pi.c &amp;&amp; ./a.out * #include &lt;stdio.h&gt;int a=10000,b,c=2800,d,e,f[2801],g;void main(){for(;b-c;)f[b&#43;&#43;]=a/5;for(;d=0,g=c*2;c-=14,printf(&#34;%.4d&#34;,e&#43;d/a),e=d%a)for(b=c;d&#43;=f[b]*a,f[b]=d%--g,d/=g--,--b;d*=b);} 下载 # wget https://files.pilookup.com/pi/1-100000000.zipwget https://files.pilookup.com/pi/100000001-200000000.zipwget https://files.pilookup.com/pi/200000001-300000000.zip wget https://files.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="nohup ffmpeg -ss 1:23 -re -stream_loop -1 -i 3.2_CG16_2_mux.mp4 -c:v copy -c:a copy-f flv rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-0-3575444560-10057-A-1727171574-1?seq=1731856465590&amp;type=simple &amp;
-ffmpeg -ss 1:23 -re -stream_loop -1 -i heishenhua.mp4 -c:v copy -f flv rtmp://215.mm:1935/hls/999 http://215.mm/hls/999.m3u8
-nohup ffmpeg -ss 1:23 -re -stream_loop -1 -i 3.2_CG16_2_mux.mp4 -c:v copy -acodec copy -f flv rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-7438266878141176820-3575444560-10057-A-1731860186-1?seq=1731856465590&amp;type=simple &amp;
-最快的剪辑视频 # ffmpeg -ss 1:25 -i 3.2_CG16_2_mux.mp4 -c: copy bbb.mp4 服务器上的参数 # ffmpeg -ss 1:23 -i heishenhua.mp4 -c:v copy -acodec copy -f flv 1." />
+<meta property="og:description" content="计算圆周率 # 圆周率查询 https://www.pilookup.com/zh-cn/ 圆周率下载 https://www.pilookup.com/zh-cn/download.html 源代码 https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html 最大ftt值为536870912大约512M内存 使用FFT&#43;AGM代码计算 # apt install gcc make -ywget https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fftc6_src.tgztar -zxvf pi_fftc6_src.tgzcd pi_fftc6/sed -i &#34;s|-fast|-Ofast|g&#34; Makefile_64bitsed -i &#39;s|scanf(&#34;%lg&#34;, &amp;x)|x=100000|g&#39; pi_fftcw.cmake -f Makefile_64bitnohup ./pi_cw &amp;cat pi.dat 四行代码求圆周率 # 资料 https://cs.uwaterloo.ca/~alopez-o/math-faq/mathtext/node12.html pi.c如下,执行 * gcc pi.c &amp;&amp; ./a.out * #include &lt;stdio.h&gt;int a=10000,b,c=2800,d,e,f[2801],g;void main(){for(;b-c;)f[b&#43;&#43;]=a/5;for(;d=0,g=c*2;c-=14,printf(&#34;%.4d&#34;,e&#43;d/a),e=d%a)for(b=c;d&#43;=f[b]*a,f[b]=d%--g,d/=g--,--b;d*=b);} 下载 # wget https://files.pilookup.com/pi/1-100000000.zipwget https://files.pilookup.com/pi/100000001-200000000.zipwget https://files.pilookup.com/pi/200000001-300000000.zip wget https://files." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/" /><meta property="article:section" content="docs" />
 
 
-<title>虎牙推流
+<title>圆周计算
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/">
+<link rel="canonical" href="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/zh.search.min.f9e198562708bb9dcda0730acdaa728414d6dd0d8523b031b6d87364c9722dc6.js" integrity="sha256-&#43;eGYVicIu53NoHMKzapyhBTW3Q2FI7AxtthzZMlyLcY=" crossorigin="anonymous"></script>
@@ -146,7 +140,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-204411f02d12c1978f6018a50348d52f" class="toggle" checked />
+    <input type="checkbox" id="section-204411f02d12c1978f6018a50348d52f" class="toggle"  />
     <label for="section-204411f02d12c1978f6018a50348d52f" class="flex justify-between">
       <a role="button" class="">笔记本</a>
     </label>
@@ -162,7 +156,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-45c19555f52478328d1a149fd40ccbea" class="toggle" checked />
+    <input type="checkbox" id="section-45c19555f52478328d1a149fd40ccbea" class="toggle"  />
     <label for="section-45c19555f52478328d1a149fd40ccbea" class="flex justify-between">
       <a role="button" class="">windows 11</a>
     </label>
@@ -219,7 +213,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/" class="active">虎牙推流</a>
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/" class="">虎牙推流</a>
   
 
         </li>
@@ -268,7 +262,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-87ee3812bbd8548e182fdf34e62008e3" class="toggle"  />
+    <input type="checkbox" id="section-87ee3812bbd8548e182fdf34e62008e3" class="toggle" checked />
     <label for="section-87ee3812bbd8548e182fdf34e62008e3" class="flex justify-between">
       <a role="button" class="">代码库</a>
     </label>
@@ -284,7 +278,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/" class="">圆周计算</a>
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/" class="active">圆周计算</a>
   
 
         </li>
@@ -343,7 +337,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>虎牙推流</strong>
+  <strong>圆周计算</strong>
 
   <label for="toc-control">
     
@@ -357,7 +351,13 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#使用fftagm代码计算">使用<em>FFT+AGM</em>代码计算</a></li>
+    <li><a href="#四行代码求圆周率">四行代码求圆周率</a></li>
+    <li><a href="#下载">下载</a></li>
+  </ul>
+</nav>
 
 
 
@@ -368,29 +368,59 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><p>nohup ffmpeg -ss 1:23 -re -stream_loop -1 -i 3.2_CG16_2_mux.mp4 -c:v copy -c:a copy-f flv rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-0-3575444560-10057-A-1727171574-1?seq=1731856465590&amp;type=simple &amp;</p>
-<p>ffmpeg -ss 1:23 -re -stream_loop -1 -i heishenhua.mp4 -c:v copy -f flv rtmp://215.mm:1935/hls/999
-<a href="http://215.mm/hls/999.m3u8">http://215.mm/hls/999.m3u8</a></p>
-<p>nohup ffmpeg -ss 1:23 -re -stream_loop -1 -i 3.2_CG16_2_mux.mp4 -c:v copy -acodec copy -f flv rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-7438266878141176820-3575444560-10057-A-1731860186-1?seq=1731856465590&amp;type=simple &amp;</p>
-<h1 id="最快的剪辑视频">
-  最快的剪辑视频
-  <a class="anchor" href="#%e6%9c%80%e5%bf%ab%e7%9a%84%e5%89%aa%e8%be%91%e8%a7%86%e9%a2%91">#</a>
+  <article class="markdown book-article"><h1 id="计算圆周率">
+  计算圆周率
+  <a class="anchor" href="#%e8%ae%a1%e7%ae%97%e5%9c%86%e5%91%a8%e7%8e%87">#</a>
 </h1>
-<pre tabindex="0"><code>ffmpeg -ss 1:25 -i 3.2_CG16_2_mux.mp4 -c: copy bbb.mp4
-</code></pre><h1 id="服务器上的参数">
-  服务器上的参数
-  <a class="anchor" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8a%e7%9a%84%e5%8f%82%e6%95%b0">#</a>
-</h1>
-<p>ffmpeg -ss 1:23 -i heishenhua.mp4 -c:v copy -acodec copy -f flv 1.flv
-ffmpeg -ss 1:23 -i heishenhua.mp4 -c:v copy -f flv 2.flv</p>
-<p>虎牙直播测试中</p>
 <ul>
-<li>-re (input) 以本机帧速率读取输入。这相当于设置-readrate 1。</li>
-<li>-stream_loop number (input) 设置输入流应循环的次数。Loop 0表示无循环，loop-1表示无限循环。</li>
-<li>-codec[:stream_specifier] codec (input/output,per-stream)为一个或多个流选择编码器（当在输出文件之前使用时）或解码器（当在输入文件之前使用时）。codec是解码器/编码器的名称或特殊值copy（仅输出），指示流不被重新编码。</li>
-<li>-c: copy 表示所有流格式都是复制</li>
+<li>圆周率查询 <a href="https://www.pilookup.com/zh-cn/">https://www.pilookup.com/zh-cn/</a></li>
+<li>圆周率下载 <a href="https://www.pilookup.com/zh-cn/download.html">https://www.pilookup.com/zh-cn/download.html</a></li>
+<li>源代码 <a href="https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html">https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html</a></li>
+<li>最大ftt值为536870912大约512M内存</li>
 </ul>
-<pre tabindex="0"><code>nohup ffmpeg -re -stream_loop -1 -i bbb.mp4 -c: copy -f flv &#34;rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-7438266878141176820-3575444560-10057-A-1731860186-1?seq=1731856465590&amp;type=simple&#34; &amp;
+<h2 id="使用fftagm代码计算">
+  使用<em>FFT+AGM</em>代码计算
+  <a class="anchor" href="#%e4%bd%bf%e7%94%a8fftagm%e4%bb%a3%e7%a0%81%e8%ae%a1%e7%ae%97">#</a>
+</h2>
+<pre tabindex="0"><code>apt install gcc make -y
+
+wget https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fftc6_src.tgz
+tar -zxvf pi_fftc6_src.tgz
+cd pi_fftc6/
+sed -i &#34;s|-fast|-Ofast|g&#34; Makefile_64bit
+sed -i &#39;s|scanf(&#34;%lg&#34;, &amp;x)|x=100000|g&#39; pi_fftcw.c
+make -f Makefile_64bit
+
+nohup ./pi_cw &amp;
+cat pi.dat
+</code></pre><h2 id="四行代码求圆周率">
+  四行代码求圆周率
+  <a class="anchor" href="#%e5%9b%9b%e8%a1%8c%e4%bb%a3%e7%a0%81%e6%b1%82%e5%9c%86%e5%91%a8%e7%8e%87">#</a>
+</h2>
+<ul>
+<li>资料 <a href="https://cs.uwaterloo.ca/~alopez-o/math-faq/mathtext/node12.html">https://cs.uwaterloo.ca/~alopez-o/math-faq/mathtext/node12.html</a></li>
+<li>pi.c如下,执行 * gcc pi.c &amp;&amp; ./a.out *</li>
+</ul>
+<pre tabindex="0"><code>#include &lt;stdio.h&gt;
+int a=10000,b,c=2800,d,e,f[2801],g;
+void main(){
+for(;b-c;)f[b++]=a/5;
+for(;d=0,g=c*2;c-=14,printf(&#34;%.4d&#34;,e+d/a),e=d%a)for(b=c;d+=f[b]*a,
+f[b]=d%--g,d/=g--,--b;d*=b);}
+</code></pre><h2 id="下载">
+  下载
+  <a class="anchor" href="#%e4%b8%8b%e8%bd%bd">#</a>
+</h2>
+<pre tabindex="0"><code>wget https://files.pilookup.com/pi/1-100000000.zip
+wget https://files.pilookup.com/pi/100000001-200000000.zip
+wget https://files.pilookup.com/pi/200000001-300000000.zip 
+wget https://files.pilookup.com/pi/300000001-400000000.zip 
+wget https://files.pilookup.com/pi/400000001-500000000.zip 
+wget https://files.pilookup.com/pi/500000001-600000000.zip 
+wget https://files.pilookup.com/pi/600000001-700000000.zip 
+wget https://files.pilookup.com/pi/700000001-800000000.zip 
+wget https://files.pilookup.com/pi/800000001-900000000.zip 
+wget https://files.pilookup.com/pi/900000001-1000000000.zip
 </code></pre></article>
  
       
@@ -430,7 +460,13 @@ ffmpeg -ss 1:23 -i heishenhua.mp4 -c:v copy -f flv 2.flv</p>
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#使用fftagm代码计算">使用<em>FFT+AGM</em>代码计算</a></li>
+    <li><a href="#四行代码求圆周率">四行代码求圆周率</a></li>
+    <li><a href="#下载">下载</a></li>
+  </ul>
+</nav>
 
 
  
