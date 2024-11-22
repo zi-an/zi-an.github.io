@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
 <head>
-	<meta name="generator" content="Hugo 0.124.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" HUGO # Hugo构建工具 # 通过 Hugo 你可以快速搭建你的静态网站,比如博客系统,文档介绍,公司主页,产品介绍等等.
-hugo-book主题 # hugo-book 适合做文档功能的网页
-准备 # 建议使用hugo extended (解压hugo_extended_0.111.3_windows-amd64.zip把exe放到C:/Windows下) 主题hugo-book下载https://themes.gohugo.io/themes/hugo-book/ 主题演示地址 https://hugo-book-demo.netlify.app/ 构建 shell # 创建文件并把example运行 hugo new site mysite cd mysite git clone https://github.com/alex-shpak/hugo-book themes/hugo-book cp ./themes/hugo-book/exampleSite/content.en/* ./content -r hugo server --theme=hugo-book --buildDrafts 发布 shell # 修改 config.toml中的baseURL 使用主题生成静态页面文件 之后生成./public文件夹,复制到nginx即可以 hugo --theme=hugo-book github # git clone --branch=mysite git@github.com:zi-an/zi-an.github.io.git mysite 80端口测试项目 # hugo server --contentDir=themes/hugo-book/exampleSite/content.en -p=80 ">
+<meta name="description" content=" 计算圆周率 # 圆周率查询 https://www.pilookup.com/zh-cn/ 圆周率下载 https://www.pilookup.com/zh-cn/download.html 源代码 https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html 最大ftt值为536870912大约512M内存 使用代码计算 # apt install gcc make -ywget https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fftc6_src.tgztar -zxvf pi_fftc6_src.tgzcd pi_fftc6/sed -i &#34;s|-fast|-Ofast|g&#34; Makefile_64bitsed -i &#39;s|scanf(&#34;%lg&#34;, &amp;x)|x=100000|g&#39; pi_fftcw.cmake -f Makefile_64bitnohup ./pi_cw &amp;cat pi.dat 下载 # wget https://files.pilookup.com/pi/1-100000000.zipwget https://files.pilookup.com/pi/100000001-200000000.zipwget https://files.pilookup.com/pi/200000001-300000000.zip wget https://files.pilookup.com/pi/300000001-400000000.zip wget https://files.pilookup.com/pi/400000001-500000000.zip wget https://files.pilookup.com/pi/500000001-600000000.zip wget https://files.pilookup.com/pi/600000001-700000000.zip wget https://files.pilookup.com/pi/700000001-800000000.zip wget https://files.pilookup.com/pi/800000001-900000000.zip wget https://files.pilookup.com/pi/900000001-1000000000.zip ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="主页" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://example.org/" />
-<title>主页
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content=" 计算圆周率 # 圆周率查询 https://www.pilookup.com/zh-cn/ 圆周率下载 https://www.pilookup.com/zh-cn/download.html 源代码 https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html 最大ftt值为536870912大约512M内存 使用代码计算 # apt install gcc make -ywget https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fftc6_src.tgztar -zxvf pi_fftc6_src.tgzcd pi_fftc6/sed -i &#34;s|-fast|-Ofast|g&#34; Makefile_64bitsed -i &#39;s|scanf(&#34;%lg&#34;, &amp;x)|x=100000|g&#39; pi_fftcw.cmake -f Makefile_64bitnohup ./pi_cw &amp;cat pi.dat 下载 # wget https://files.pilookup.com/pi/1-100000000.zipwget https://files.pilookup.com/pi/100000001-200000000.zipwget https://files.pilookup.com/pi/200000001-300000000.zip wget https://files.pilookup.com/pi/300000001-400000000.zip wget https://files.pilookup.com/pi/400000001-500000000.zip wget https://files.pilookup.com/pi/500000001-600000000.zip wget https://files.pilookup.com/pi/600000001-700000000.zip wget https://files.pilookup.com/pi/700000001-800000000.zip wget https://files.pilookup.com/pi/800000001-900000000.zip wget https://files.pilookup.com/pi/900000001-1000000000.zip " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/" /><meta property="article:section" content="docs" />
+
+
+<title>圆周计算
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://example.org/">
+<link rel="canonical" href="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/zh.search.min.1898bfc64e8167db38bd4f2821804f6b8d079345e1a344b4c89875c0b7a5de15.js" integrity="sha256-GJi/xk6BZ9s4vU8oIYBPa40Hk0Xho0S0yJh1wLel3hU=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://example.org/index.xml" title="" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -142,7 +140,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-204411f02d12c1978f6018a50348d52f" class="toggle"  />
+    <input type="checkbox" id="section-204411f02d12c1978f6018a50348d52f" class="toggle" checked />
     <label for="section-204411f02d12c1978f6018a50348d52f" class="flex justify-between">
       <a role="button" class="">笔记本</a>
     </label>
@@ -158,7 +156,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-45c19555f52478328d1a149fd40ccbea" class="toggle"  />
+    <input type="checkbox" id="section-45c19555f52478328d1a149fd40ccbea" class="toggle" checked />
     <label for="section-45c19555f52478328d1a149fd40ccbea" class="flex justify-between">
       <a role="button" class="">windows 11</a>
     </label>
@@ -200,7 +198,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/" class="">圆周计算</a>
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/" class="active">圆周计算</a>
   
 
         </li>
@@ -318,7 +316,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>主页</strong>
+  <strong>圆周计算</strong>
 
   <label for="toc-control">
     
@@ -334,12 +332,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#准备">准备</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#发布-shell">发布 shell</a></li>
-    <li><a href="#github">github</a></li>
+    <li><a href="#计算圆周率">计算圆周率</a></li>
   </ul>
 </nav>
 
@@ -352,71 +345,45 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h1 id="hugo">
-  HUGO
-  <a class="anchor" href="#hugo">#</a>
-</h1>
-<div class="book-columns flex flex-wrap">
-
-  <div class="flex-even markdown-inner">
-    <h2 id="hugo构建工具">
-  Hugo构建工具
-  <a class="anchor" href="#hugo%e6%9e%84%e5%bb%ba%e5%b7%a5%e5%85%b7">#</a>
-</h2>
-<p>通过 Hugo 你可以快速搭建你的静态网站,比如博客系统,文档介绍,公司主页,产品介绍等等.</p>
-  </div>
-
-  <div class="flex-even markdown-inner">
-    <h2 id="hugo-book主题">
-  hugo-book主题
-  <a class="anchor" href="#hugo-book%e4%b8%bb%e9%a2%98">#</a>
-</h2>
-<p>hugo-book 适合做文档功能的网页</p>
-  </div>
-
-</div>
-
-<h2 id="准备">
-  准备
-  <a class="anchor" href="#%e5%87%86%e5%a4%87">#</a>
+  <article class="markdown book-article"><h2 id="计算圆周率">
+  计算圆周率
+  <a class="anchor" href="#%e8%ae%a1%e7%ae%97%e5%9c%86%e5%91%a8%e7%8e%87">#</a>
 </h2>
 <ul>
-<li>建议使用hugo extended (解压<a href="https://github.com/gohugoio/hugo/releases/download/v0.111.3/hugo_extended_0.111.3_windows-amd64.zip">hugo_extended_0.111.3_windows-amd64.zip</a>把exe放到C:/Windows下)</li>
-<li>主题hugo-book下载https://themes.gohugo.io/themes/hugo-book/</li>
-<li>主题演示地址 <a href="https://hugo-book-demo.netlify.app/">https://hugo-book-demo.netlify.app/</a></li>
+<li>圆周率查询 <a href="https://www.pilookup.com/zh-cn/">https://www.pilookup.com/zh-cn/</a></li>
+<li>圆周率下载 <a href="https://www.pilookup.com/zh-cn/download.html">https://www.pilookup.com/zh-cn/download.html</a></li>
+<li>源代码 <a href="https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html">https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html</a></li>
+<li>最大ftt值为536870912大约512M内存</li>
 </ul>
-<h1 id="构建-shell">
-  构建 shell
-  <a class="anchor" href="#%e6%9e%84%e5%bb%ba-shell">#</a>
+<h1 id="使用代码计算">
+  使用代码计算
+  <a class="anchor" href="#%e4%bd%bf%e7%94%a8%e4%bb%a3%e7%a0%81%e8%ae%a1%e7%ae%97">#</a>
 </h1>
-<ul>
-<li>创建文件并把example运行</li>
-</ul>
-<pre tabindex="0"><code>hugo new site mysite
-cd mysite
-git clone https://github.com/alex-shpak/hugo-book themes/hugo-book
-cp ./themes/hugo-book/exampleSite/content.en/* ./content -r
-hugo server --theme=hugo-book --buildDrafts
-</code></pre><h2 id="发布-shell">
-  发布 shell
-  <a class="anchor" href="#%e5%8f%91%e5%b8%83-shell">#</a>
-</h2>
-<ul>
-<li><del>修改 config.toml中的baseURL</del></li>
-<li>使用主题生成静态页面文件</li>
-<li>之后生成./public文件夹,复制到nginx即可以</li>
-</ul>
-<pre tabindex="0"><code>hugo --theme=hugo-book 
-</code></pre><h2 id="github">
-  github
-  <a class="anchor" href="#github">#</a>
-</h2>
-<pre tabindex="0"><code>git clone --branch=mysite git@github.com:zi-an/zi-an.github.io.git mysite
-</code></pre><h1 id="80端口测试项目">
-  80端口测试项目
-  <a class="anchor" href="#80%e7%ab%af%e5%8f%a3%e6%b5%8b%e8%af%95%e9%a1%b9%e7%9b%ae">#</a>
+<pre tabindex="0"><code>apt install gcc make -y
+
+wget https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fftc6_src.tgz
+tar -zxvf pi_fftc6_src.tgz
+cd pi_fftc6/
+sed -i &#34;s|-fast|-Ofast|g&#34; Makefile_64bit
+sed -i &#39;s|scanf(&#34;%lg&#34;, &amp;x)|x=100000|g&#39; pi_fftcw.c
+make -f Makefile_64bit
+
+nohup ./pi_cw &amp;
+cat pi.dat
+</code></pre><h1 id="下载">
+  下载
+  <a class="anchor" href="#%e4%b8%8b%e8%bd%bd">#</a>
 </h1>
-<pre tabindex="0"><code>hugo server --contentDir=themes/hugo-book/exampleSite/content.en -p=80
+<pre tabindex="0"><code>wget https://files.pilookup.com/pi/1-100000000.zip
+wget https://files.pilookup.com/pi/100000001-200000000.zip
+wget https://files.pilookup.com/pi/200000001-300000000.zip 
+wget https://files.pilookup.com/pi/300000001-400000000.zip 
+wget https://files.pilookup.com/pi/400000001-500000000.zip 
+wget https://files.pilookup.com/pi/500000001-600000000.zip 
+wget https://files.pilookup.com/pi/600000001-700000000.zip 
+wget https://files.pilookup.com/pi/700000001-800000000.zip 
+wget https://files.pilookup.com/pi/800000001-900000000.zip 
+wget https://files.pilookup.com/pi/900000001-1000000000.zip
 </code></pre></article>
  
       
@@ -458,12 +425,7 @@ hugo server --theme=hugo-book --buildDrafts
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#准备">准备</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#发布-shell">发布 shell</a></li>
-    <li><a href="#github">github</a></li>
+    <li><a href="#计算圆周率">计算圆周率</a></li>
   </ul>
 </nav>
 

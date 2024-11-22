@@ -23,6 +23,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/</guid>
+      <description> 计算圆周率 # 圆周率查询 https://www.pilookup.com/zh-cn/ 圆周率下载 https://www.pilookup.com/zh-cn/download.html 源代码 https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html 最大ftt值为536870912大约512M内存 使用代码计算 # apt install gcc make -y&#xD;wget https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fftc6_src.tgz&#xD;tar -zxvf pi_fftc6_src.tgz&#xD;cd pi_fftc6/&#xD;sed -i &amp;#34;s|-fast|-Ofast|g&amp;#34; Makefile_64bit&#xD;sed -i &amp;#39;s|scanf(&amp;#34;%lg&amp;#34;, &amp;amp;x)|x=100000|g&amp;#39; pi_fftcw.c&#xD;make -f Makefile_64bit&#xD;nohup ./pi_cw &amp;amp;&#xD;cat pi.dat 下载 # wget https://files.pilookup.com/pi/1-100000000.zip&#xD;wget https://files.pilookup.com/pi/100000001-200000000.zip&#xD;wget https://files.pilookup.com/pi/200000001-300000000.zip wget https://files.pilookup.com/pi/300000001-400000000.zip wget https://files.pilookup.com/pi/400000001-500000000.zip wget https://files.pilookup.com/pi/500000001-600000000.zip wget https://files.pilookup.com/pi/600000001-700000000.zip wget https://files.pilookup.com/pi/700000001-800000000.zip wget https://files.pilookup.com/pi/800000001-900000000.zip wget https://files.pilookup.com/pi/900000001-1000000000.zip </description>
+    </item>
+    <item>
+      <title></title>
       <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/</guid>
