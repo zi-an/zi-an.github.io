@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>计时器</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #timer {
+            font-size: 48px;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>计时器</h1>
+    <div id="timer">00:00:00</div>
+    <button onclick="startTimer()">开始</button>
+    <button onclick="stopTimer()">停止</button>
+    <button onclick="resetTimer()">重置</button>
+
+    <script>
+        let hours = 0, minutes = 0, seconds = 0;
+        let intervalId;
+
+        function formatTime(time) {
+            return time < 10 ? '0' + time : time;
+        }
+
+        function updateTimer() {
+            seconds++;
+            if (seconds >= 60) {
+                seconds = 0;
+                minutes++;
+                if (minutes >= 60) {
+                    minutes = 0;
+                    hours++;
+                    if (hours >= 24) {
+                        hours = 0;
+                    }
+                }
+            }
+            document.getElementById('timer').innerText = `${formatTime(hours)}:${formatTime(minutes)}:${formatTime(seconds)}`;
+        }
+
+        function startTimer() {
+            intervalId = setInterval(updateTimer, 1000);
+        }
+
+        function stopTimer() {
+            clearInterval(intervalId);
+        }
+
+        function resetTimer() {
+            clearInterval(intervalId);
+            hours = 0;
+            minutes = 0;
+            seconds = 0;
+            document.getElementById('timer').innerText = '00:00:00';
+        }
+    </script>
+</body>
+</html>
