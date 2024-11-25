@@ -1,4 +1,4 @@
-|资源|[虎牙](https://m.huya.com/huaweimei)||||
+|资源|[直播](https://m.huya.com/huaweimei)|[开播](https://i.huya.com/index.php?m=ProfileSetting#ktylts)|||
 |-|-|-|-|-|
 |刷机|[K30](https://xiaomirom.com/rom/redmi-k30-5g-redmi-k30i-5g-picasso-china-fastboot-recovery-rom/)|[K40S](https://xiaomirom.com/rom/redmi-k40s-munch-china-fastboot-recovery-rom/)|[K70E](https://xiaomirom.com/rom/redmi-k70e-poco-x6-pro-5g-duchamp-china-fastboot-recovery-rom/)||
 |应用|[火哥](https://www.firepx.com/)|[虎牙](https://www.firepx.com/app/android-huaya-google-play/)|[哔哩](https://www.firepx.com/app/bilibili-google-play-and-other-version/)|[影音](https://www.firepx.com/app/qqplayer-last-version/)|
