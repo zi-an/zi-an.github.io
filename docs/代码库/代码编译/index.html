@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="代码编译 # main.go # go build main.go package mainimport (&#34;fmt&#34;&#34;io&#34;&#34;net/http&#34;&#34;net/url&#34;&#34;os&#34;&#34;os/exec&#34;&#34;strings&#34;&#34;time&#34;)func main() {Init()server := &amp;http.Server{Addr: &#34;0.0.0.0:8888&#34;,}mux := http.NewServeMux()mux.HandleFunc(&#34;/get&#34;, get)mux.HandleFunc(&#34;/post&#34;, post)mux.HandleFunc(&#34;/m3u8er&#34;, m3u8er)mux.HandleFunc(&#34;/noter&#34;, noter)server.Handler = mux_ = server.ListenAndServe()}func Init() {dirs := []string{&#34;/home/nginx/m3u8/&#34;, &#34;/home/nginx/note/&#34;}for _, dir := range dirs {_, err := os.Stat(dir)if err == nil {_ = os.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="代码编译 # main.go # go build main.go package mainimport (&#34;fmt&#34;&#34;io&#34;&#34;net/http&#34;&#34;net/url&#34;&#34;os&#34;&#34;os/exec&#34;&#34;strings&#34;&#34;time&#34;)func main() {Init()server := &amp;http.Server{Addr: &#34;0.0.0.0:8888&#34;,}mux := http.NewServeMux()mux.HandleFunc(&#34;/get&#34;, get)mux.HandleFunc(&#34;/post&#34;, post)mux.HandleFunc(&#34;/m3u8er&#34;, m3u8er)mux.HandleFunc(&#34;/noter&#34;, noter)server.Handler = mux_ = server.ListenAndServe()}func Init() {dirs := []string{&#34;/home/nginx/m3u8/&#34;, &#34;/home/nginx/note/&#34;}for _, dir := range dirs {_, err := os.Stat(dir)if err == nil {_ = os." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91/" /><meta property="article:section" content="docs" />
+
+
+<title>代码编译
+</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91/">
+<link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/zh.search.min.30c0970d6e84959dfe3c928a17451ffd8509900478c3a43358a626cd5764e272.js" integrity="sha256-MMCXDW6ElZ3&#43;PJKKF0Uf/YUJkAR4w6QzWKYmzVdk4nI=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span></span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-868f4099916fd86498af9ef536a85f8d" class="toggle"  />
+    <label for="section-868f4099916fd86498af9ef536a85f8d" class="flex justify-between">
+      <a role="button" class="">服务器</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1f767a4f0e0c9a8a9faea067ef762ff0" class="toggle"  />
+    <label for="section-1f767a4f0e0c9a8a9faea067ef762ff0" class="flex justify-between">
+      <a role="button" class="">debian</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/" class="">安装系统</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%B9%E5%99%A8%E8%B5%84%E6%96%99/" class="">容器资料</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-204411f02d12c1978f6018a50348d52f" class="toggle"  />
+    <label for="section-204411f02d12c1978f6018a50348d52f" class="flex justify-between">
+      <a role="button" class="">笔记本</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-45c19555f52478328d1a149fd40ccbea" class="toggle"  />
+    <label for="section-45c19555f52478328d1a149fd40ccbea" class="flex justify-between">
+      <a role="button" class="">windows 11</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/" class="">安装系统</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96/" class="">系统优化</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E6%89%A9%E5%B1%95%E5%91%BD%E4%BB%A4/" class="">扩展命令</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/" class="">虎牙推流</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD/" class="">资源下载</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/linux/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/" class="">系统推荐</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-87ee3812bbd8548e182fdf34e62008e3" class="toggle" checked />
+    <label for="section-87ee3812bbd8548e182fdf34e62008e3" class="flex justify-between">
+      <a role="button" class="">代码库</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91/" class="active">代码编译</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/" class="">圆周计算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/" class="">执行脚本</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        日记本
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>代码编译</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="代码编译">
+  代码编译
+  <a class="anchor" href="#%e4%bb%a3%e7%a0%81%e7%bc%96%e8%af%91">#</a>
+</h1>
+<h1 id="maingo">
+  main.go
+  <a class="anchor" href="#maingo">#</a>
+</h1>
+<ul>
+<li>go build main.go</li>
+</ul>
+<pre tabindex="0"><code>package main
+
+import (
+	&#34;fmt&#34;
+	&#34;io&#34;
+	&#34;net/http&#34;
+	&#34;net/url&#34;
+	&#34;os&#34;
+	&#34;os/exec&#34;
+	&#34;strings&#34;
+	&#34;time&#34;
+)
+
+func main() {
+	Init()
+	server := &amp;http.Server{
+		Addr: &#34;0.0.0.0:8888&#34;,
+	}
+	mux := http.NewServeMux()
+	mux.HandleFunc(&#34;/get&#34;, get)
+	mux.HandleFunc(&#34;/post&#34;, post)
+	mux.HandleFunc(&#34;/m3u8er&#34;, m3u8er)
+	mux.HandleFunc(&#34;/noter&#34;, noter)
+	server.Handler = mux
+	_ = server.ListenAndServe()
+}
+func Init() {
+	dirs := []string{&#34;/home/nginx/m3u8/&#34;, &#34;/home/nginx/note/&#34;}
+	for _, dir := range dirs {
+		_, err := os.Stat(dir)
+		if err == nil {
+			_ = os.MkdirAll(dir, 0777)
+		}
+	}
+}
+
+// 获取客户端信息
+func get(w http.ResponseWriter, r *http.Request) {
+	write := &#34;ip:&#34; + r.Header.Get(&#34;X-Real-IP&#34;) + &#34;\n&#34;
+	for k, v := range r.Header {
+		write = write + k + &#34;:&#34; + strings.Join(v, &#34;;&#34;) + &#34;\n&#34;
+	}
+	_, _ = w.Write([]byte(write))
+}
+
+// 文件上传
+// 测试数据: curl http://127.0.0.1:8888/post -F file=@bank.jpg -H &#34;Referer: http://127.0.0.1/?from=/upload/&#34;
+func post(w http.ResponseWriter, r *http.Request) {
+	from := r.Header.Get(&#34;Referer&#34;)
+	from = from[strings.Index(from, &#34;=/&#34;)+1 : len(from)] //获取相对地址
+
+	switch r.Method {
+	case &#34;GET&#34;:
+		_, _ = w.Write([]byte(string(&#34;method is GET&#34;)))
+	case &#34;POST&#34;:
+		_ = r.ParseForm()
+		imgFile, _, _ := r.FormFile(&#34;file&#34;) //获取文件内容
+
+		defer imgFile.Close()
+		files := r.MultipartForm.File        //获取表单中的信息
+		imgName := files[&#34;file&#34;][0].Filename //获取表单文件中name为file的数据
+		imgName = &#34;.&#34; + from + imgName
+
+		_, err := os.Stat(imgName) //判断文件是否存在,在则隐藏并添加时间戳
+		if err == nil {
+			loc, _ := time.LoadLocation(&#34;Asia/Taipei&#34;)
+			newName := &#34;.&#34; + from + &#34;.&#34; + files[&#34;file&#34;][0].Filename + &#34;.&#34; + time.Now().In(loc).Format(&#34;20060102_150405&#34;)
+			_ = os.Rename(imgName, newName)
+		}
+
+		saveFile, _ := os.Create(imgName)
+		_ = saveFile.Close()
+		_, _ = io.Copy(saveFile, imgFile) //保存
+
+		http.Redirect(w, r, &#34;/?from=&#34;+from, http.StatusSeeOther)
+	default:
+		fmt.Print(&#34;error method&#34;)
+	}
+}
+
+// m3u8下载
+func m3u8er(w http.ResponseWriter, r *http.Request) {
+	uri := r.PostFormValue(&#34;uri&#34;)
+	uri, _ = url.QueryUnescape(uri)
+	name := r.PostFormValue(&#34;name&#34;)
+	fmt.Println(uri, &#34;:&#34;, name)
+	_ = exec.Command(&#34;m3u8downloader&#34;, uri, name).Run()
+	http.Redirect(w, r, &#34;/?from=/m3u8/&#34;, http.StatusSeeOther)
+}
+
+func noter(w http.ResponseWriter, r *http.Request) {
+	note := r.PostFormValue(&#34;note&#34;)
+	file, _ := os.OpenFile(&#34;/home/nginx/note/note.log&#34;, os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+	loc, _ := time.LoadLocation(&#34;Asia/Taipei&#34;)
+	_, _ = file.WriteString(time.Now().In(loc).Format(&#34;0102_1504: &#34;) + note + &#34;\n&#34;)
+	http.Redirect(w, r, &#34;/?from=/note/&#34;, http.StatusSeeOther)
+}
+</code></pre></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -22,5 +22,12 @@
       <guid>https://example.org/posts/2024-11-03/</guid>
       <description>恭喜Faker第五冠！ # 亚运会视频&#xA;已经生效!</description>
     </item>
+    <item>
+      <title>影视资源</title>
+      <link>https://example.org/posts/1111-11-11/</link>
+      <pubDate>Sat, 11 Nov 1111 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/1111-11-11/</guid>
+      <description> 种子下载 # 获取元文件 https://webtor.io/ 元数据编辑64位 https://torrent-file-editor.github.io/ 旧BE，需要到谷歌网盘下载 https://sites.google.com/site/ultimasites/files 四人拼接结果 ed2k://|file|4ren.mp4|4483035686|AA06C4FFF569C937A81E51F8023F8FFA|/ 能下载&#xA;BT编辑器 # apt install aria2&#xD;https://github.com/torrent-file-editor/torrent-file-editor/releases/download/v1.0.0/torrent-file-editor-1.0.0-x64.exe 浆果儿 # magnet:?xt=urn:btih:9d6f242a44d2cf99ec89b6ed8b43663f11748495&amp;amp;dn=%E6%B5%86%E6%9E%9C%E5%84%BF </description>
+    </item>
   </channel>
 </rss>

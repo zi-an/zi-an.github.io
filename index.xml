@@ -37,6 +37,20 @@
       <description>恭喜Faker第五冠！ # 亚运会视频&#xA;已经生效!</description>
     </item>
     <item>
+      <title>影视资源</title>
+      <link>https://example.org/posts/1111-11-11/</link>
+      <pubDate>Sat, 11 Nov 1111 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/1111-11-11/</guid>
+      <description> 种子下载 # 获取元文件 https://webtor.io/ 元数据编辑64位 https://torrent-file-editor.github.io/ 旧BE，需要到谷歌网盘下载 https://sites.google.com/site/ultimasites/files 四人拼接结果 ed2k://|file|4ren.mp4|4483035686|AA06C4FFF569C937A81E51F8023F8FFA|/ 能下载&#xA;BT编辑器 # apt install aria2&#xD;https://github.com/torrent-file-editor/torrent-file-editor/releases/download/v1.0.0/torrent-file-editor-1.0.0-x64.exe 浆果儿 # magnet:?xt=urn:btih:9d6f242a44d2cf99ec89b6ed8b43663f11748495&amp;amp;dn=%E6%B5%86%E6%9E%9C%E5%84%BF </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91/</guid>
+      <description>代码编译 # main.go # go build main.go package main&#xD;import (&#xD;&amp;#34;fmt&amp;#34;&#xD;&amp;#34;io&amp;#34;&#xD;&amp;#34;net/http&amp;#34;&#xD;&amp;#34;net/url&amp;#34;&#xD;&amp;#34;os&amp;#34;&#xD;&amp;#34;os/exec&amp;#34;&#xD;&amp;#34;strings&amp;#34;&#xD;&amp;#34;time&amp;#34;&#xD;)&#xD;func main() {&#xD;Init()&#xD;server := &amp;amp;http.Server{&#xD;Addr: &amp;#34;0.0.0.0:8888&amp;#34;,&#xD;}&#xD;mux := http.NewServeMux()&#xD;mux.HandleFunc(&amp;#34;/get&amp;#34;, get)&#xD;mux.HandleFunc(&amp;#34;/post&amp;#34;, post)&#xD;mux.HandleFunc(&amp;#34;/m3u8er&amp;#34;, m3u8er)&#xD;mux.HandleFunc(&amp;#34;/noter&amp;#34;, noter)&#xD;server.Handler = mux&#xD;_ = server.ListenAndServe()&#xD;}&#xD;func Init() {&#xD;dirs := []string{&amp;#34;/home/nginx/m3u8/&amp;#34;, &amp;#34;/home/nginx/note/&amp;#34;}&#xD;for _, dir := range dirs {&#xD;_, err := os.Stat(dir)&#xD;if err == nil {&#xD;_ = os.</description>
+    </item>
+    <item>
       <title></title>
       <link>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
