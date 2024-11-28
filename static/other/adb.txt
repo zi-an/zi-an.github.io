@@ -1,0 +1,161 @@
+[Adblock Plus 2.0]
+! Title: Mine
+! https://www.jianshu.com/p/905f89de656c
+! 参考:https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt
+! https://help.adblockplus.org/hc/en-us/search?utf8=%E2%9C%93&query=ruler
+
+! https://cn.bing.com/ 屏蔽csdn,jianshu等名字需要全大写
+! 知乎不好屏蔽,先用csdn cn.bing.com#?#li.b_algo:-abp-contains(CSDN)
+cn.bing.com#?#li.b_algo:-abp-contains(知乎)
+cn.bing.com#?#li.b_algo:-abp-contains(腾讯网)
+cn.bing.com###bnp_rich_div
+cn.bing.com###b_footer
+cn.bing.com##li.b_rs
+cn.bing.com###ev_talkbox_wrapper
+cn.bing.com##.mnws_cwrp[href^="https://new.qq.com/"]
+
+! blog.csdn.net
+blog.csdn.net###csdn-toolbar
+blog.csdn.net##.feed-Sign-weixin
+blog.csdn.net##.open_app_channelCode
+blog.csdn.net###recommend
+blog.csdn.net###operate
+blog.csdn.net###treeSkill
+
+! www.jianshu.com
+www.jianshu.com##.header-wrap
+www.jianshu.com##.note-graceful-button
+www.jianshu.com###recommended-notes
+www.jianshu.com###footer
+www.jianshu.com##.call-app-Ad-bottom
+www.jianshu.com###free-reward-panel
+www.jianshu.com##blockquote
+www.jianshu.com##.comment-open-app-btn-wrap
+www.jianshu.com###lwaAdFive
+
+! https://www.msn.cn/
+www.msn.cn###header
+www.msn.cn##.breakingNews-DS-EntryPoint1-1
+www.msn.cn##.button-DS-EntryPoint1-1
+www.msn.cn##.articlePage_riverContainer-DS-EntryPoint1-1
+
+! https://m.sohu.com/
+m.sohu.com##.top-header
+m.sohu.com##.middle-insert-ad
+m.sohu.com###middleBanner
+m.sohu.com###navMap.nav_maps
+m.sohu.com###recommendSearch
+m.sohu.com###bottomBanner
+m.sohu.com###middleText
+m.sohu.com###artRecNews
+m.sohu.com###artFloatDiscuss
+m.sohu.com##.top-bill-wrapper
+m.sohu.com###footerMenu
+m.sohu.com##.comment-reply__box
+m.sohu.com##.to-home
+
+! https://view.inews.qq.com/
+
+! m.huya.com
+m.huya.com##.logo
+m.huya.com##.open-app-button
+m.huya.com##.room-info-box
+m.huya.com###videoHdCount
+m.huya.com##.cutDown
+m.huya.com###videoBlueBtn
+
+
+! ==================================================================================
+
+! sukebei.nyaa.si/
+a.magsrv.com/ad-provider.js
+
+! hsck.cc
+cc##div[style=" max-width:990px; margin:0 auto;"]
+cc##.gonggao
+cc##.stui-pannel__head
+cc##.stui-vodlist__thumb[href^="https"]
+cc##.stui-foot
+cc##ul.stui-vodlist.clearfix>li:nth-child(1)
+cc##ul.stui-vodlist.clearfix>li:nth-child(2)
+cc##ul.stui-vodlist.clearfix>li:nth-child(3)
+cc##ul.stui-vodlist.clearfix>li:nth-child(4)
+cc##.tupian
+
+! caoliu1024.com旧版
+###cate_12
+###cate_thread
+##.user-activate
+##.recharge-btn
+##.my_wrap
+###tip-alert
+www.google.com
+www.googletagmanager.com
+##.list.t_one.url_link[data-url="read.php?tid=42290"]
+##.list.t_one.url_link[data-url="read.php?tid=42193"]
+
+! xgxg.vip
+##.adv-container
+##.top_app_down.heiliao
+##.van-notice-bar
+##.ad-list.heiliao
+##.ad-dialog-con
+##.player-adv
+##.animate__backInLeft
+##.hf-con
+
+! ======================================================以下猫咪
+! 阿里云213端口2024.9.28
+mm##.s_h
+mm##.bb3351af8f._80cdf7b4d1
+mm##._56e53f9068._1dff69178b
+mm##._8f06401829._702a69989c
+mm##._0636708e3c._611ebbc31a
+mm##._9c2c5a4205.de86aa2982._68dc777951.c100c15cf9
+mm##._2a6ca3f8ff._8f758c1703
+mm##._6e938191bb.a04a892119
+mm##._19561fd94b.grid.gap10
+mm##._5571a32b73.c3726a4af7
+mm##._22e9f61314
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(1)
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(2)
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(3)
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(7)
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(8)
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(9)
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(10)
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(11)
+mm##._29eff91ceb._35211daff8._97f29428bc:nth-child(12)
+
+120.76.158.149##.s_h
+120.76.158.149##.bb3351af8f._80cdf7b4d1
+120.76.158.149##._56e53f9068._1dff69178b
+120.76.158.149##._8f06401829._702a69989c
+120.76.158.149##._0636708e3c._611ebbc31a
+120.76.158.149##._9c2c5a4205.de86aa2982._68dc777951.c100c15cf9
+120.76.158.149##._2a6ca3f8ff._8f758c1703
+120.76.158.149##._6e938191bb.a04a892119
+120.76.158.149##._19561fd94b.grid.gap10
+120.76.158.149##._5571a32b73.c3726a4af7
+120.76.158.149##._22e9f61314
+120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(1)
+120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(2)
+120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(3)
+120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(7)
+120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(8)
+120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(9)
+120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(10)
+120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(11)
+120.76.158.149##._29eff91ceb._35211daff8._97f29428bc:nth-child(12)
+
+
+zbb.bbb.*.com
+ad.xmmnsd.com
+amjs.xylhwdu.com
+57573zubo36833.com
+*.1vkx.cn
+hm.baidu.com
+
+
+! 影响速度,或只适合小部分网站,手动添加
+! 不写域名的脚本不能用,via内建规则无法加入
