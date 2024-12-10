@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>笔记本 on </title>
-    <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/</link>
+    <link>http://localhost:80/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/</link>
     <description>Recent content in 笔记本 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <atom:link href="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:80/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/linux/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/</link>
+      <link>http://localhost:80/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/linux/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/linux/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/</guid>
+      <guid>http://localhost:80/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/linux/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/</guid>
       <description>系统推荐 # Cinnamon是debian官方维护的桌面系统，是debian中的一个桌面，个人感觉比较好看&#xA;使用默认安装即可</description>
     </item>
   </channel>

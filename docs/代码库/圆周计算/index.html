@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=80&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="计算圆周率 # 圆周率查询 https://www.pilookup.com/zh-cn/ 圆周率下载 https://www.pilookup.com/zh-cn/download.html 源代码 https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html 最大ftt值为536870912大约512M内存 使用FFT&#43;AGM代码计算 # apt install gcc make -ywget https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fftc6_src.tgztar -zxvf pi_fftc6_src.tgzcd pi_fftc6/sed -i &#34;s|-fast|-Ofast|g&#34; Makefile_64bitsed -i &#39;s|scanf(&#34;%lg&#34;, &amp;x)|x=100000|g&#39; pi_fftcw.cmake -f Makefile_64bitnohup ./pi_cw &amp;cat pi.dat 四行代码求圆周率 # 资料 https://cs.uwaterloo.ca/~alopez-o/math-faq/mathtext/node12.html pi.c如下,执行 * gcc pi.c &amp;&amp; ./a.out * #include &lt;stdio.h&gt;int a=10000,b,c=2800,d,e,f[2801],g;void main(){for(;b-c;)f[b&#43;&#43;]=a/5;for(;d=0,g=c*2;c-=14,printf(&#34;%.4d&#34;,e&#43;d/a),e=d%a)for(b=c;d&#43;=f[b]*a,f[b]=d%--g,d/=g--,--b;d*=b);} 下载 # wget https://files.pilookup.com/pi/1-100000000.zipwget https://files.pilookup.com/pi/100000001-200000000.zipwget https://files.pilookup.com/pi/200000001-300000000.zip wget https://files.">
@@ -9,17 +9,17 @@
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
 <meta property="og:description" content="计算圆周率 # 圆周率查询 https://www.pilookup.com/zh-cn/ 圆周率下载 https://www.pilookup.com/zh-cn/download.html 源代码 https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html 最大ftt值为536870912大约512M内存 使用FFT&#43;AGM代码计算 # apt install gcc make -ywget https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fftc6_src.tgztar -zxvf pi_fftc6_src.tgzcd pi_fftc6/sed -i &#34;s|-fast|-Ofast|g&#34; Makefile_64bitsed -i &#39;s|scanf(&#34;%lg&#34;, &amp;x)|x=100000|g&#39; pi_fftcw.cmake -f Makefile_64bitnohup ./pi_cw &amp;cat pi.dat 四行代码求圆周率 # 资料 https://cs.uwaterloo.ca/~alopez-o/math-faq/mathtext/node12.html pi.c如下,执行 * gcc pi.c &amp;&amp; ./a.out * #include &lt;stdio.h&gt;int a=10000,b,c=2800,d,e,f[2801],g;void main(){for(;b-c;)f[b&#43;&#43;]=a/5;for(;d=0,g=c*2;c-=14,printf(&#34;%.4d&#34;,e&#43;d/a),e=d%a)for(b=c;d&#43;=f[b]*a,f[b]=d%--g,d/=g--,--b;d*=b);} 下载 # wget https://files.pilookup.com/pi/1-100000000.zipwget https://files.pilookup.com/pi/100000001-200000000.zipwget https://files.pilookup.com/pi/200000001-300000000.zip wget https://files." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://localhost:80/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/" /><meta property="article:section" content="docs" />
 
 
 <title>圆周计算
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/">
+<link rel="canonical" href="http://localhost:80/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.015966349dd31431a0a9676d3346cecc1b13d39bf811a7ff10a94de019d40ecd.js" integrity="sha256-AVlmNJ3TFDGgqWdtM0bOzBsT05v4Eaf/EKlN4BnUDs0=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.65ea188d75acf61d65918ea4773fd9b468a8bdcc5d0239d22ead81873d09649a.js" integrity="sha256-ZeoYjXWs9h1lkY6kdz/ZtGiovcxdAjnSLq2Bhz0JZJo=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
