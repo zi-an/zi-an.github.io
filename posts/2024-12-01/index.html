@@ -3,22 +3,23 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content=" 短码使用 # {{&lt; video src=&#34;/1.mp4&#34; &gt;}}{{&lt; /video &gt;}} 在短码中配置(layouts/shortcodes/video.html) # {{ $ref := &#34;&#34; }} {{ with .Get &#34;src&#34; }} {{ $ref = . }} {{ end }} {{ with .Get &#34;relref&#34; }} {{ $ref = relref $ . }} {{ end }} &lt;video controls width=&#34;100%&#34;&gt; &lt;source {{ with $ref }} src=&#34;{{.}}&#34; {{ end }} type=&#34;video/mp4&#34; /&gt; {{ .Inner | .Page.RenderString }} &lt;/video&gt; ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="笔记本" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/" />
-<title>笔记本
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="短码使用" />
+<meta property="og:description" content=" 短码使用 # {{&lt; video src=&#34;/1.mp4&#34; &gt;}}{{&lt; /video &gt;}} 在短码中配置(layouts/shortcodes/video.html) # {{ $ref := &#34;&#34; }} {{ with .Get &#34;src&#34; }} {{ $ref = . }} {{ end }} {{ with .Get &#34;relref&#34; }} {{ $ref = relref $ . }} {{ end }} &lt;video controls width=&#34;100%&#34;&gt; &lt;source {{ with $ref }} src=&#34;{{.}}&#34; {{ end }} type=&#34;video/mp4&#34; /&gt; {{ .Inner | .Page.RenderString }} &lt;/video&gt; " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/posts/2024-12-01/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-12-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-12-10T00:00:00+00:00" />
+<title>短码使用
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/">
+<link rel="canonical" href="https://example.org/posts/2024-12-01/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/zh.search.min.648f8a532afcb56afdc706f35b0d4baae23c3db24f1a2aa211f2d7d078b66eb9.js" integrity="sha256-ZI&#43;KUyr8tWr9xwbzWw1LquI8PbJPGiqiEfLX0Hi2brk=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/index.xml" title="" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -139,9 +140,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-69ea6a18acbd408b17a06556c8b882ae" class="toggle" checked />
+    <input type="checkbox" id="section-69ea6a18acbd408b17a06556c8b882ae" class="toggle"  />
     <label for="section-69ea6a18acbd408b17a06556c8b882ae" class="flex justify-between">
-      <a role="button" class="active">笔记本</a>
+      <a role="button" class="">笔记本</a>
     </label>
   
 
@@ -375,7 +376,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>笔记本</strong>
+  <strong>短码使用</strong>
 
   <label for="toc-control">
     
@@ -389,7 +390,11 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#在短码中配置layoutsshortcodesvideohtml">在短码中配置(layouts/shortcodes/video.html)</a></li>
+  </ul>
+</nav>
 
 
 
@@ -400,7 +405,43 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"></article>
+<article class="markdown book-post">
+  <h1>
+    <a href="/posts/2024-12-01/">短码使用</a>
+  </h1>
+  
+  <h5>2024-12-10</h5>
+
+
+
+  
+
+  
+
+
+
+<h1 id="短码使用">
+  短码使用
+  <a class="anchor" href="#%e7%9f%ad%e7%a0%81%e4%bd%bf%e7%94%a8">#</a>
+</h1>
+<pre tabindex="0"><code>{{&lt; video src=&#34;/1.mp4&#34; &gt;}}{{&lt; /video &gt;}}
+</code></pre><h2 id="在短码中配置layoutsshortcodesvideohtml">
+  在短码中配置(layouts/shortcodes/video.html)
+  <a class="anchor" href="#%e5%9c%a8%e7%9f%ad%e7%a0%81%e4%b8%ad%e9%85%8d%e7%bd%aelayoutsshortcodesvideohtml">#</a>
+</h2>
+<pre tabindex="0"><code>{{ $ref := &#34;&#34; }}
+{{ with .Get &#34;src&#34; }}
+  {{ $ref = . }}
+{{ end }}
+{{ with .Get &#34;relref&#34; }}
+  {{ $ref = relref $ . }}
+{{ end }}
+
+&lt;video controls width=&#34;100%&#34;&gt;
+  &lt;source {{ with $ref }} src=&#34;{{.}}&#34; {{ end }} type=&#34;video/mp4&#34; /&gt;
+  {{ .Inner | .Page.RenderString }}
+&lt;/video&gt;
+</code></pre></article>
  
       
 
@@ -425,6 +466,10 @@ https://github.com/alex-shpak/hugo-book
 
       
   
+  <div class="book-comments">
+
+</div>
+  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -435,7 +480,11 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#在短码中配置layoutsshortcodesvideohtml">在短码中配置(layouts/shortcodes/video.html)</a></li>
+  </ul>
+</nav>
 
 
  

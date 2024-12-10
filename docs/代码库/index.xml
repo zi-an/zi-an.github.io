@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>代码库 on </title>
-    <link>http://localhost:80/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/</link>
+    <link>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/</link>
     <description>Recent content in 代码库 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <atom:link href="http://localhost:80/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:80/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%89%8D%E7%AB%AF%E8%B5%84%E6%BA%90/</link>
+      <link>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%89%8D%E7%AB%AF%E8%B5%84%E6%BA%90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:80/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%89%8D%E7%AB%AF%E8%B5%84%E6%BA%90/</guid>
+      <guid>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%89%8D%E7%AB%AF%E8%B5%84%E6%BA%90/</guid>
       <description> 前端资料 # WebStorm # 下载地址 https://www.jetbrains.com/webstorm/download/other.html&#xA;Bootstrap5.3 # 首页 https://getbootstrap.com/&#xA;源码+示例 https://github.com/twbs/bootstrap/releases&#xA;Vue # https://cn.vuejs.org/&#xA;网络问题先执行以下 npm config set registry https://registry.npmmirror.com </description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:80/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/</link>
+      <link>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:80/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/</guid>
+      <guid>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/</guid>
       <description>服务器常用脚本 # 参考资料 https://github.com/fengyuhetao/shell&#xA;常用定时器 # 自动休眠 清楚内存 更新容器内的git项目 */10 * * * * /usr/powersave.sh&#xD;*/10 * * * * echo 3 &amp;gt; /proc/sys/vm/drop_caches&#xD;0 */2 * * * docker exec zian updategit powersave.sh # #!/bin/bash&#xD;logintime=`last docker --time-format iso | head -n1 | awk &amp;#39;{print $6}&amp;#39;`&#xD;#logintime=&amp;#34;2024-09-11T07:18:18+08:00&amp;#34;&#xD;if [ ${#logintime} -eq 6 ];then&#xD;echo &amp;#34;555&amp;#34; &amp;gt;&amp;gt; 555.log&#xD;else&#xD;logintime=`date -d $logintime +%s`&#xD;logintime=$(expr $logintime)&#xD;now=$(expr `date +%s`)&#xD;now=$(expr $now - $logintime)&#xD;if [ $now -gt 7200 ] ;then&#xD;systemctl suspend&#xD;fi&#xD;fi updategit # #!</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:80/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91/</link>
+      <link>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:80/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91/</guid>
+      <guid>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91/</guid>
       <description>代码编译 # main.go # go build main.go package main&#xD;import (&#xD;&amp;#34;fmt&amp;#34;&#xD;&amp;#34;io&amp;#34;&#xD;&amp;#34;net/http&amp;#34;&#xD;&amp;#34;net/url&amp;#34;&#xD;&amp;#34;os&amp;#34;&#xD;&amp;#34;os/exec&amp;#34;&#xD;&amp;#34;strings&amp;#34;&#xD;&amp;#34;time&amp;#34;&#xD;)&#xD;func main() {&#xD;Init()&#xD;server := &amp;amp;http.Server{&#xD;Addr: &amp;#34;0.0.0.0:8888&amp;#34;,&#xD;}&#xD;mux := http.NewServeMux()&#xD;mux.HandleFunc(&amp;#34;/get&amp;#34;, get)&#xD;mux.HandleFunc(&amp;#34;/post&amp;#34;, post)&#xD;mux.HandleFunc(&amp;#34;/m3u8er&amp;#34;, m3u8er)&#xD;mux.HandleFunc(&amp;#34;/noter&amp;#34;, noter)&#xD;server.Handler = mux&#xD;_ = server.ListenAndServe()&#xD;}&#xD;func Init() {&#xD;dirs := []string{&amp;#34;/home/nginx/m3u8/&amp;#34;, &amp;#34;/home/nginx/note/&amp;#34;}&#xD;for _, dir := range dirs {&#xD;_, err := os.Stat(dir)&#xD;if err == nil {&#xD;_ = os.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:80/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/</link>
+      <link>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:80/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/</guid>
+      <guid>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/</guid>
       <description>计算圆周率 # 圆周率查询 https://www.pilookup.com/zh-cn/ 圆周率下载 https://www.pilookup.com/zh-cn/download.html 源代码 https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html 最大ftt值为536870912大约512M内存 使用FFT+AGM代码计算 # apt install gcc make -y&#xD;wget https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fftc6_src.tgz&#xD;tar -zxvf pi_fftc6_src.tgz&#xD;cd pi_fftc6/&#xD;sed -i &amp;#34;s|-fast|-Ofast|g&amp;#34; Makefile_64bit&#xD;sed -i &amp;#39;s|scanf(&amp;#34;%lg&amp;#34;, &amp;amp;x)|x=100000|g&amp;#39; pi_fftcw.c&#xD;make -f Makefile_64bit&#xD;nohup ./pi_cw &amp;amp;&#xD;cat pi.dat 四行代码求圆周率 # 资料 https://cs.uwaterloo.ca/~alopez-o/math-faq/mathtext/node12.html pi.c如下,执行 * gcc pi.c &amp;amp;&amp;amp; ./a.out * #include &amp;lt;stdio.h&amp;gt;&#xD;int a=10000,b,c=2800,d,e,f[2801],g;&#xD;void main(){&#xD;for(;b-c;)f[b++]=a/5;&#xD;for(;d=0,g=c*2;c-=14,printf(&amp;#34;%.4d&amp;#34;,e+d/a),e=d%a)for(b=c;d+=f[b]*a,&#xD;f[b]=d%--g,d/=g--,--b;d*=b);} 下载 # wget https://files.pilookup.com/pi/1-100000000.zip&#xD;wget https://files.pilookup.com/pi/100000001-200000000.zip&#xD;wget https://files.pilookup.com/pi/200000001-300000000.zip wget https://files.</description>
     </item>
   </channel>
