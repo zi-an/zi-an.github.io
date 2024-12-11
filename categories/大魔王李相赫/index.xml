@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>大魔王李相赫 on </title>
+    <link>https://example.org/categories/%E5%A4%A7%E9%AD%94%E7%8E%8B%E6%9D%8E%E7%9B%B8%E8%B5%AB/</link>
+    <description>Recent content in 大魔王李相赫 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 02 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/categories/%E5%A4%A7%E9%AD%94%E7%8E%8B%E6%9D%8E%E7%9B%B8%E8%B5%AB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Faker第五冠,为了所有支持者!</title>
+      <link>https://example.org/posts/2024-11-03/</link>
+      <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/2024-11-03/</guid>
+      <description> 恭喜Faker第五冠！ # 2024全球总局赛视频 # 第一局 # 第二局 # 第三局 # 第四局 # 第五局 # </description>
+    </item>
+    <item>
+      <title>沙特石油杯EWC,成就双底座赛区的荣光!</title>
+      <link>https://example.org/posts/2024-07-08/</link>
+      <pubDate>Mon, 08 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/2024-07-08/</guid>
+      <description> 总决赛(第二底座) # 第一局 # 第二局 # 第三局 # 第四局 # 1/4决赛(第一底座) # 第一局 # 第二局 # 第三局 # </description>
+    </item>
+    <item>
+      <title>Faker第四冠,为了队友!</title>
+      <link>https://example.org/posts/2023-11-19/</link>
+      <pubDate>Sun, 19 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/2023-11-19/</guid>
+      <description> 2023全球总决赛 # 第一局 # 第二局 # 第三局 # </description>
+    </item>
+  </channel>
+</rss>
