@@ -6,34 +6,41 @@
     <description>Recent content in 日记本 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 10 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>短码使用</title>
-      <link>https://example.org/posts/2024-12-01/</link>
-      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/2024-12-01/</guid>
-      <description> 短码使用 # {{&amp;lt; video src=&amp;#34;/1.mp4&amp;#34; &amp;gt;}}{{&amp;lt; /video &amp;gt;}} 在短码中配置(layouts/shortcodes/video.html) # {{ $ref := &amp;#34;&amp;#34; }} {{ with .Get &amp;#34;src&amp;#34; }} {{ $ref = . }} {{ end }} {{ with .Get &amp;#34;relref&amp;#34; }} {{ $ref = relref $ . }} {{ end }} &amp;lt;video controls width=&amp;#34;100%&amp;#34;&amp;gt; &amp;lt;source {{ with $ref }} src=&amp;#34;{{.}}&amp;#34; {{ end }} type=&amp;#34;video/mp4&amp;#34; /&amp;gt; {{ .Inner | .Page.RenderString }} &amp;lt;/video&amp;gt; </description>
-    </item>
-    <item>
-      <title>UZI retry</title>
-      <link>https://example.org/posts/2024-11-15/</link>
-      <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/2024-11-15/</guid>
-      <description> UZI 又复出老头杯 # 恭喜uzi又双叒叕复出了 </description>
-    </item>
-    <item>
-      <title>恭喜Faker</title>
+      <title>Faker第五冠,为了所有支持者!</title>
       <link>https://example.org/posts/2024-11-03/</link>
       <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
       <guid>https://example.org/posts/2024-11-03/</guid>
-      <description> 恭喜Faker第五冠！ # [亚运会视频] </description>
+      <description> 恭喜Faker第五冠！ # 2024全球总局赛视频 # 第一局 # 第二局 # 第三局 # 第四局 # 第五局 # </description>
+    </item>
+    <item>
+      <title>沙特石油杯EWC,成就双底座赛区的荣光!</title>
+      <link>https://example.org/posts/2024-07-08/</link>
+      <pubDate>Mon, 08 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/2024-07-08/</guid>
+      <description> 总决赛(第二底座) # 第一局 # 第二局 # 第三局 # 第四局 # 1/4决赛(第一底座) # 第一局 # 第二局 # 第三局 # </description>
+    </item>
+    <item>
+      <title>Faker第四冠,为了队友!</title>
+      <link>https://example.org/posts/2023-11-19/</link>
+      <pubDate>Sun, 19 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/2023-11-19/</guid>
+      <description> 2023全球总决赛 # 第一局 # 第二局 # 第三局 # </description>
+    </item>
+    <item>
+      <title>四金一铜,英雄联盟!</title>
+      <link>https://example.org/posts/2023-09-29/</link>
+      <pubDate>Fri, 29 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/2023-09-29/</guid>
+      <description> 2022杭州亚运冠军集体照！ # 亚运总决赛视频 # 第一局:韩国1-0中华台湾 # 第二局:韩国2-0中华台湾,我们是冠军! # 亚运半决赛 # 第一局 韩国1-0中国 # 第二局 韩国2-0中国 # 季军争夺战！ # 第一局:越南1-0中国 # 第二局: 越南1-1中国 # 第三局:越南1-2中国,我们是季军！ # </description>
     </item>
     <item>
       <title>影视资源</title>
-      <link>https://example.org/posts/1111-11-11/</link>
+      <link>https://example.org/posts/2024-11-11/</link>
       <pubDate>Sat, 11 Nov 1111 00:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/1111-11-11/</guid>
+      <guid>https://example.org/posts/2024-11-11/</guid>
       <description> 种子下载 # 获取元文件 https://webtor.io/ 元数据编辑64位 https://torrent-file-editor.github.io/ 旧BE，需要到谷歌网盘下载 https://sites.google.com/site/ultimasites/files 四人拼接结果 ed2k://|file|4ren.mp4|4483035686|AA06C4FFF569C937A81E51F8023F8FFA|/ 能下载&#xA;BT编辑器 # apt install aria2&#xD;https://github.com/torrent-file-editor/torrent-file-editor/releases/download/v1.0.0/torrent-file-editor-1.0.0-x64.exe 浆果儿 # magnet:?xt=urn:btih:9d6f242a44d2cf99ec89b6ed8b43663f11748495&amp;amp;dn=%E6%B5%86%E6%9E%9C%E5%84%BF 岳欣月 # magnet:?xt=urn:btih:e9aa39b943b7f90e6be196f580faa6397ad07a1d&amp;amp;dn=%E3%80%90%E9%9C%87%E6%83%8A%E2%9D%A4%EF%B8%8F%E7%BD%91%E6%9B%9D%E7%83%AD%E9%97%A8%E4%BA%8B%E4%BB%B6%E3%80%91%E8%B6%85%E7%81%AB%E7%88%86%E5%90%89%E6%9E%97%E5%A5%B3%E5%AD%A9%E5%B2%B3%E6%AC%A3%E6%9C%88%E5%A4%9A%E4%BA%BA%E8%BF%90%E5%8A%A8%E4%B8%8D%E9%9B%85%E7%A7%81%E6%8B%8D%E6%B5%81%E5%87%BA%20%E7%96%AF%E7%8B%8210P%E4%B9%B1%E6%93%8D%20%E5%9B%BD%E4%BA%A7%E5%A4%A7%E4%B9%B1%E4%BA%A4%20%E5%A0%AA%E6%AF%94AV%20%E9%AB%98%E6%B8%85720P%E5%AE%8C%E6%95%B4%E7%89%88&amp;amp;tr=http%3A%2F%2Fsukebei.tracker.wf%3A8888%2Fannounce&amp;amp;tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&amp;amp;tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&amp;amp;tr=udp%3A%2F%2Fexodus.desync.com%3A6969%2Fannounce&amp;amp;tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce 紫色面具 # 其实只有14个不重复文件 magnet:?xt=urn:btih:9299f4be2d5b26f8fe7ab0b17a8c6a7d63af0f84&amp;amp;dn=%E7%B4%AB%E8%89%B2%E9%9D%A2%E5%85%B7&#xD;4b0931f2a5a1bcd10b9a06afeea96f5c 3.mp4&#xD;e57de350277cc8086f300244689749be 5.mp4&#xD;0f74b1f26b6421e4a1786088ae142267 9.mp4&#xD;e16f7b311aa849c7b5432d66da76f958 紫色面具 (10).mp4&#xD;51eab4935abaa1c9b55ab3bf82a73110 紫色面具 (11).mp4&#xD;df88b75692efd9d308f03c020f0f15ba 紫色面具 (1).mp4&#xD;d5e49d4c7354463487986cafaeada2dd 紫色面具 (2).mp4&#xD;b195c894cc439b130f9585c0e87b872e 紫色面具 (3).mp4&#xD;8168b209befaeafde0bf9164da67323d 紫色面具 (4).mp4&#xD;76444c6eeef02580b3c7a313a18b8650 紫色面具 (5).mp4&#xD;794c96907cf245d27b8d9a2075b73351 紫色面具 (6).mp4&#xD;3b974835a30635e90de3ec3b589a9456 紫色面具 (7).mp4&#xD;5950f2f2b6be317e42a1b00fe34fb19f 紫色面具 (8).mp4&#xD;bc05491e17a35a7b739363459b8ad8b6 紫色面具 (9).mp4 </description>
     </item>
   </channel>

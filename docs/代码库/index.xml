@@ -9,6 +9,13 @@
     <atom:link href="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E4%B8%BB%E9%A2%98%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E4%B8%BB%E9%A2%98%E6%95%99%E7%A8%8B/</guid>
+      <description> 主题教程 # 短码使用 # content\docs*.md中引用 {{&amp;lt; video src=&amp;#34;/1.mp4&amp;#34; &amp;gt;}}{{&amp;lt; /video &amp;gt;}} 在短码中配置(layouts/shortcodes/video.html) &amp;lt;video controls width=&amp;#34;100%&amp;#34;&amp;gt; &amp;lt;source {{ with .Get &amp;#34;src&amp;#34; }} src=&amp;#34;{{.}}&amp;#34; {{ end }} type=&amp;#34;video/mp4&amp;#34; /&amp;gt; {{ .Inner }} &amp;lt;/video&amp;gt; 图片相对文件位置 # ./post/1111-11-11.md引用当前目录下1.jpg编译后路径为./post/1111-11-11/1.jpg ./post/1111-11-11/index.md引用当前目录下1.jpg编译后路径为./post/1111-11-11/1.jpg ./post/1111-11-11/_index.md为子节点不要写文章,叶子节点的为index.md </description>
+    </item>
+    <item>
+      <title></title>
       <link>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%89%8D%E7%AB%AF%E8%B5%84%E6%BA%90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%89%8D%E7%AB%AF%E8%B5%84%E6%BA%90/</guid>
