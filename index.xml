@@ -90,7 +90,7 @@
       <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/</guid>
-      <description>nohup ffmpeg -ss 1:23 -re -stream_loop -1 -i 3.2_CG16_2_mux.mp4 -c:v copy -c:a copy-f flv rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-0-3575444560-10057-A-1727171574-1?seq=1731856465590&amp;amp;type=simple &amp;amp;&#xA;ffmpeg -ss 1:23 -re -stream_loop -1 -i heishenhua.mp4 -c:v copy -f flv rtmp://215.mm:1935/hls/999 http://215.mm/hls/999.m3u8&#xA;nohup ffmpeg -ss 1:23 -re -stream_loop -1 -i 3.2_CG16_2_mux.mp4 -c:v copy -acodec copy -f flv rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-7438266878141176820-3575444560-10057-A-1731860186-1?seq=1731856465590&amp;amp;type=simple &amp;amp;&#xA;最快的剪辑视频 # ffmpeg -ss 1:25 -i 3.2_CG16_2_mux.mp4 -c: copy bbb.mp4 服务器上的参数 # ffmpeg -ss 1:23 -i heishenhua.mp4 -c:v copy -acodec copy -f flv 1.</description>
+      <description> 虎牙推流 # 虎牙直播 # -re (input) 以本机帧速率读取输入。这相当于设置-readrate 1。 -stream_loop number (input) 设置输入流应循环的次数。Loop 0表示无循环，loop-1表示无限循环。 -codec[:stream_specifier] codec (input/output,per-stream)为一个或多个流选择编码器（当在输出文件之前使用时）或解码器（当在输入文件之前使用时）。codec是解码器/编码器的名称或特殊值copy（仅输出），指示流不被重新编码。 -c: copy 表示所有流格式都是复制 nohup ffmpeg -re -stream_loop -1 -i bbb.mp4 -c: copy -f flv &amp;#34;rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-7438266878141176820-3575444560-10057-A-1731860186-1?seq=1731856465590&amp;amp;type=simple&amp;#34; &amp;amp; 最快的剪辑视频 # ffmpeg -ss 1:25 -i 3.2_CG16_2_mux.mp4 -c: copy bbb.mp4 </description>
     </item>
     <item>
       <title></title>
