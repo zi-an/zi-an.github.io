@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="zh">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
@@ -12,11 +12,14 @@
     <div id="markdown">
     </div>
     <script>let httpRequest = new XMLHttpRequest();
-      httpRequest.open("GET", "/md/web.md");
+    let md=new URL(window.location.href).searchParams.get("uri")
+    if (md===null){md="/md/web.md"}
+      httpRequest.open("GET", md);
       httpRequest.send();
       httpRequest.onreadystatechange = function() {
-        text = httpRequest.responseText;
+        const text = httpRequest.responseText;
         document.getElementById('markdown').innerHTML = marked.parse(text);
-      }</script>
+    }
+    </script>
   </body>
 </html>

@@ -95,6 +95,13 @@ www.googletagmanager.com
 ##.list.t_one.url_link[data-url="read.php?tid=42290"]
 ##.list.t_one.url_link[data-url="read.php?tid=42193"]
 
+! ======================================================仓库跳转
+! 8vga.com
+##.latp
+##.bht019
+##.i0a0d0v0
+###vadv
+
 ! ======================================================以下猫咪
 ! 阿里云8080端口2024.11.07 需要代理到本地 
 x.mm##.s_h
