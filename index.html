@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Hugo # Hugo构建工具 # 通过 Hugo 你可以快速搭建你的静态网站,比如博客系统,文档介绍,公司主页,产品介绍等等.
 hugo-book主题 # hugo-book 适合做文档功能的网页.Hugo众多主题中的一个
-准备 # 版本使用 hugo extended 主题使用 hugo-book 主题演示地址 https://hugo-book-demo.netlify.app/ Hugo安装 # 最好使用对应版本，否则会有问题 apt install -y hugo wget gitdl.cn/github.com/gohugoio/hugo/releases/download/v0.124.1/hugo_extended_0.124.1_linux-amd64.tar.gz tar -zxvf hugo_extended_0.124.1_linux-amd64.tar.gz -C /usr/bin/ rm hugo_extended_0.124.1_linux-amd64.tar.gz HugoBook使用 # hugo new site mysite cd mysite wget gitdl.cn/github.com/alex-shpak/hugo-book/archive/refs/tags/v10.tar.gz tar -zxvf v10.tar.gz -C themes rm v10.tar.gz cp -r themes/hugo-book-10/exampleSite/content.en/* content/ hugo server -p 80 --bind 0.0.0.0 --theme hugo-book-10 github # git clone git@github.">
+演示 # 主题演示地址 https://hugo-book-demo.netlify.app/ 安装 # Debian12.8 Hugo安装 # 最好使用对应版本，否则会有问题 apt install -y hugo wget gitdl.cn/github.com/gohugoio/hugo/releases/download/v0.124.1/hugo_extended_0.124.1_linux-amd64.tar.gz tar -zxvf hugo_extended_0.124.1_linux-amd64.tar.gz -C /usr/bin/ rm hugo_extended_0.124.1_linux-amd64.tar.gz HugoBook使用 # hugo new site mysite cd mysite wget gitdl.cn/github.com/alex-shpak/hugo-book/archive/refs/tags/v10.tar.gz tar -zxvf v10.tar.gz -C themes rm v10.tar.gz cp -r themes/hugo-book-10/exampleSite/content.en/* content/ hugo server -p 80 --bind 0.0.0.0 --theme hugo-book-10 Windows11 版本 https://github.com/gohugoio/hugo/releases/tag/v0.124.1 下载 hugo_extended_0.124.1_windows-amd64.zip解压放到C:\Windows 主题 hugo-book.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="主页" />
@@ -407,10 +407,8 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#准备">准备</a></li>
-    <li><a href="#hugo安装">Hugo安装</a></li>
-    <li><a href="#hugobook使用">HugoBook使用</a></li>
-    <li><a href="#github">github</a></li>
+    <li><a href="#演示">演示</a></li>
+    <li><a href="#安装">安装</a></li>
   </ul>
 </nav>
 
@@ -447,16 +445,24 @@ https://github.com/alex-shpak/hugo-book
 
 </div>
 
-<h2 id="准备">
-  准备
-  <a class="anchor" href="#%e5%87%86%e5%a4%87">#</a>
+<h2 id="演示">
+  演示
+  <a class="anchor" href="#%e6%bc%94%e7%a4%ba">#</a>
 </h2>
 <ul>
-<li>版本使用 <a href="https://github.com/gohugoio/hugo/releases/download/v0.124.1/hugo_extended_0.124.1_windows-amd64.zip">hugo extended</a></li>
-<li>主题使用 <a href="https://github.com/alex-shpak/hugo-book/releases/tag/v10">hugo-book</a></li>
 <li>主题演示地址 <a href="https://hugo-book-demo.netlify.app/">https://hugo-book-demo.netlify.app/</a></li>
 </ul>
-<h2 id="hugo安装">
+<h2 id="安装">
+  安装
+  <a class="anchor" href="#%e5%ae%89%e8%a3%85">#</a>
+</h2>
+
+
+
+
+<div class="book-tabs"><input type="radio" class="toggle" name="tabs-TAB" id="tabs-TAB-0" checked="checked" />
+  <label for="tabs-TAB-0">Debian12.8</label>
+  <div class="book-tabs-content markdown-inner"><h2 id="hugo安装">
   Hugo安装
   <a class="anchor" href="#hugo%e5%ae%89%e8%a3%85">#</a>
 </h2>
@@ -478,12 +484,32 @@ tar -zxvf v10.tar.gz -C themes
 rm v10.tar.gz
 cp -r themes/hugo-book-10/exampleSite/content.en/* content/
 hugo server -p 80 --bind 0.0.0.0 --theme hugo-book-10
-</code></pre><h2 id="github">
-  github
-  <a class="anchor" href="#github">#</a>
-</h2>
-<pre tabindex="0"><code>git clone git@github.com:zi-an/zian.git zian
-</code></pre></article>
+</code></pre></div><input type="radio" class="toggle" name="tabs-TAB" id="tabs-TAB-1"  />
+  <label for="tabs-TAB-1">Windows11</label>
+  <div class="book-tabs-content markdown-inner"><ul>
+<li>版本 <a href="https://github.com/gohugoio/hugo/releases/tag/v0.124.1">https://github.com/gohugoio/hugo/releases/tag/v0.124.1</a></li>
+<li>下载 <a href="github.com/gohugoio/hugo/releases/download/v0.124.1/hugo_extended_0.124.1_windows-amd64.zip">hugo_extended_0.124.1_windows-amd64.zip</a>解压放到C:\Windows</li>
+<li>主题 <a href="github.com/alex-shpak/hugo-book/archive/refs/tags/v10.tar.gz">hugo-book.v10</a>解压放到项目的themes目录下</li>
+<li>hugo.toml配置文件如下:</li>
+</ul>
+<pre tabindex="0"><code>baseURL = &#39;https://example.org/&#39;
+defaultContentLanguage = &#39;zh&#39;
+#title = &#39;&#39;
+theme = &#39;hugo-book-10&#39;
+
+[params]
+  BookTheme = &#39;auto&#39;
+  BookDateFormat = &#39;2006-01-02&#39;
+</code></pre></div></div>
+
+<details ><summary>Github</summary>
+  <div class="markdown-inner">
+    <pre tabindex="0"><code>git clone git@github.com:zi-an/zian.git zian
+</code></pre>
+  </div>
+</details>
+
+</article>
  
       
 
@@ -524,10 +550,8 @@ hugo server -p 80 --bind 0.0.0.0 --theme hugo-book-10
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#准备">准备</a></li>
-    <li><a href="#hugo安装">Hugo安装</a></li>
-    <li><a href="#hugobook使用">HugoBook使用</a></li>
-    <li><a href="#github">github</a></li>
+    <li><a href="#演示">演示</a></li>
+    <li><a href="#安装">安装</a></li>
   </ul>
 </nav>
 

@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
         }
         #timer {
-            font-size: 200px;
+            font-size: 330px;
             margin: 20px 0;
         }
         button {
@@ -21,13 +21,13 @@
     </style>
 </head>
 <body>
-    <div id="timer">00:00:00</div>
+    <div id="timer">00:00</div>
     <button onclick="startTimer()">开始</button>
     <button onclick="stopTimer()">停止</button>
-    <button onclick="resetTimer()">重置</button>
+    <button onclick="resetTimer()">重计</button>
 
     <script>
-        let hours = 0, minutes = 0, seconds = 0;
+        let  minutes = 0, seconds = 0;
         let intervalId;
         startTimer();
         function formatTime(time) {
@@ -41,13 +41,9 @@
                 minutes++;
                 if (minutes >= 60) {
                     minutes = 0;
-                    hours++;
-                    if (hours >= 24) {
-                        hours = 0;
-                    }
                 }
             }
-            document.getElementById('timer').innerText = `${formatTime(hours)}:${formatTime(minutes)}:${formatTime(seconds)}`;
+            document.getElementById('timer').innerText = `${formatTime(minutes)}:${formatTime(seconds)}`;
         }
 
         function startTimer() {
@@ -60,10 +56,10 @@
 
         function resetTimer() {
             clearInterval(intervalId);
-            hours = 0;
             minutes = 0;
             seconds = 0;
-            document.getElementById('timer').innerText = '00:00:00';
+            document.getElementById('timer').innerText = '00:00';
+            startTimer();
         }
     </script>
 </body>
