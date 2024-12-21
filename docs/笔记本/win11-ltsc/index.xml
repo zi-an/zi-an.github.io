@@ -37,24 +37,10 @@
     </item>
     <item>
       <title></title>
-      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E6%97%A7%E7%89%88%E7%B3%BB%E7%BB%9F/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E6%97%A7%E7%89%88%E7%B3%BB%E7%BB%9F/</guid>
-      <description> 旧版系统 # win 10 ltsc # 下载 ed2k://|file|LTSC_2021_X64.ISO|5044211712|1555B7DCA052B5958EE68DB58A42408D|/&#xA;win 7 # 专业版VL&#xA;旗舰版下载 ed2k://|file|windows_7_ultimate_x64.iso|3419052032|56E90251E665E643C81168F6DD870BCB|/ win7旗舰版不能用kms激活。&#xA;U盘使用USB-HDD chrome浏览器 QQ拼音输入法 slmgr /skms kms.03k.org slmgr /ato ## 4G内存+关闭动态 ## xp mstsc /v 172.28.146.241 ftp://10.0.0.64:2121 </description>
-    </item>
-    <item>
-      <title></title>
       <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/</guid>
       <description> 虎牙推流 # 虎牙直播 # -re (input) 以本机帧速率读取输入。这相当于设置-readrate 1。 -stream_loop number (input) 设置输入流应循环的次数。Loop 0表示无循环，loop-1表示无限循环。 -codec[:stream_specifier] codec (input/output,per-stream)为一个或多个流选择编码器（当在输出文件之前使用时）或解码器（当在输入文件之前使用时）。codec是解码器/编码器的名称或特殊值copy（仅输出），指示流不被重新编码。 -c: copy 表示所有流格式都是复制 nohup ffmpeg -re -stream_loop -1 -i bbb.mp4 -c: copy -f flv &amp;#34;rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-7438266878141176820-3575444560-10057-A-1731860186-1?seq=1731856465590&amp;amp;type=simple&amp;#34; &amp;amp; 最快的剪辑视频 # ffmpeg -ss 1:25 -i 3.2_CG16_2_mux.mp4 -c: copy bbb.mp4 </description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%AE%BE%E5%A4%87%E8%B5%84%E6%96%99/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%AE%BE%E5%A4%87%E8%B5%84%E6%96%99/</guid>
-      <description> 设备资料 # 台式机 # 三星 DM-Z250 win7x64英特尔驱动 win7x64网卡驱动 ESC 选择启动盘 F2 进入BIOS&#xA;笔记本 # 8852ae驱动 </description>
     </item>
     <item>
       <title></title>
