@@ -14,19 +14,5 @@
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
       <description> 服务器安装 # 清华镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 </description>
     </item>
-    <item>
-      <title></title>
-      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E4%BB%A3%E7%90%86%E4%BD%BF%E7%94%A8/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E4%BB%A3%E7%90%86%E4%BD%BF%E7%94%A8/</guid>
-      <description>docker使用容器 # /etc/systemd/system/docker.service.d [Service] Environment=&amp;#34;HTTP_PROXY=http://x:x@172.22.43.127:10086&amp;#34; Environment=&amp;#34;HTTPS_PROXY=http://x:x@172.22.43.127:10086&amp;#34; Environment=&amp;#34;NO_PROXY=localhost,127.0.0.1,.cn&amp;#34; sudo systemctl daemon-reload sudo systemctl restart docker</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%B9%E5%99%A8%E8%B5%84%E6%96%99/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%B9%E5%99%A8%E8%B5%84%E6%96%99/</guid>
-      <description> Docker相关 # </description>
-    </item>
   </channel>
 </rss>
