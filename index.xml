@@ -62,7 +62,7 @@
       <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
-      <description> 服务器安装 # 清华镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 </description>
+      <description> 服务器安装 # 清华镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 初始化安装 # echo &amp;#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware&amp;#34; | sudo tee /etc/apt/sources.list&#xD;wget ali.mm/debian/config.tgz&#xD;sudo tar -zxvf config.tgz -C /&#xD;rm config.tgz 容器优化 # cat &amp;gt; proxy.conf &amp;lt;&amp;lt; EOF&#xD;[Service]&#xD;Environment=&amp;#34;HTTP_PROXY=http://x:x@127.1:10086&amp;#34;&#xD;Environment=&amp;#34;HTTPS_PROXY=http://x:x@127.1:10086&amp;#34;&#xD;Environment=&amp;#34;NO_PROXY=localhost,127.0.0.1,.cn&amp;#34;&#xD;EOF&#xD;sudo mkdir /etc/systemd/system/docker.service.d&#xD;sudo mv proxy.conf /etc/systemd/system/docker.service.d&#xD;sudo apt install -y docker.io 网络优化 # </description>
     </item>
     <item>
       <title></title>
@@ -125,7 +125,7 @@
       <link>https://example.org/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E7%A1%AC%E7%9B%98%E5%88%86%E7%B1%BB/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E7%A1%AC%E7%9B%98%E5%88%86%E7%B1%BB/</guid>
-      <description> 硬盘分类 # 硬盘型号 容量 系统 备注 机械盘 500G FAT32 不可拆卸硬盘 机械盘 140G win7专业版 三星台式 机械盘 500G 神舟 郎科 64G LTSC2021 闪迪 16G 长城 16G 长城 8G 浪潮 4G 笔记本用 </description>
+      <description> 硬盘分类 # 硬盘型号 容量 系统 备注 机械盘 500G FAT32 不可拆卸硬盘 机械盘 140G win7专业版 三星台式 机械盘 500G 神舟 郎科 64G LTSC2021 闪迪 16G 长城 16G 长城 8G Debian12.8 debian-12.8.0-amd64-DVD-1.iso版 浪潮 4G 预 笔记本用,台式机会识别出软驱无法使用 </description>
     </item>
     <item>
       <title></title>

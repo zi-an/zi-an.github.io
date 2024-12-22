@@ -19,7 +19,7 @@
       <link>https://example.org/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E7%A1%AC%E7%9B%98%E5%88%86%E7%B1%BB/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E7%A1%AC%E7%9B%98%E5%88%86%E7%B1%BB/</guid>
-      <description> 硬盘分类 # 硬盘型号 容量 系统 备注 机械盘 500G FAT32 不可拆卸硬盘 机械盘 140G win7专业版 三星台式 机械盘 500G 神舟 郎科 64G LTSC2021 闪迪 16G 长城 16G 长城 8G 浪潮 4G 笔记本用 </description>
+      <description> 硬盘分类 # 硬盘型号 容量 系统 备注 机械盘 500G FAT32 不可拆卸硬盘 机械盘 140G win7专业版 三星台式 机械盘 500G 神舟 郎科 64G LTSC2021 闪迪 16G 长城 16G 长城 8G Debian12.8 debian-12.8.0-amd64-DVD-1.iso版 浪潮 4G 预 笔记本用,台式机会识别出软驱无法使用 </description>
     </item>
     <item>
       <title></title>
