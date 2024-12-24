@@ -7,7 +7,7 @@
 |小米|[测试](tel:*#*#64663#*#*)|[关5G](tel:*#*#54638#*#*)|[关Vol](tel:*#*#86583#*#*)||
 |影音|[追剧](https://m.zjuys.com/)|[短剧](https://www.duanjuwang.cc/)|[音乐](https://github.com/maotoumao/MusicFree/releases)|[音源](https://raw.niuma666bet.buzz/Huibq/keep-alive/master/Music_Free/myPlugins.json)|
 |站点|[仓库](https://888kkkz.com:8899/?u=http://www.hsck.cc/&p=/)|[搜索](https://sukebei.nyaa.si/)|[猫咪](https://pic.3a6r7.com/main)|[黑料](https://xgxg.vip)|
-||[主播](https://8vga.com)|[谷歌](https://www.google.com/)|[油管](https://youtube.com/)||
+||[主播](https://k34h.com/)|[谷歌](https://www.google.com/)|[油管](https://youtube.com/)||
 |短信|[推荐](https://onlinesim.io/zh)|[备用](https://www.yunjiema.top)|
 |联通|[客服](tel:10010)|[话费](sms:10010?body=hf)|[流量1](sms:10010?body=cxll)|[流量2](sms:10010?body=2082)|
 |AI|[秘塔](https://metaso.cn)|[海螺](https://hailuoai.com)|[豆包](https://www.doubao.com)||

@@ -66,6 +66,20 @@
     </item>
     <item>
       <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E7%A1%AC%E7%9B%98%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E7%A1%AC%E7%9B%98%E4%BD%BF%E7%94%A8/</guid>
+      <description> 硬盘使用 # 移动硬盘 格式化+挂载 # sudo apt install -y exfatprogs sudo mkfs.exfat /dev/sda sudo mount /dev/sda /home/nginx/samsung/ </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E8%B0%83%E8%AF%95%E7%A8%8B%E5%BA%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E8%B0%83%E8%AF%95%E7%A8%8B%E5%BA%8F/</guid>
+      <description> 程序调试 # 安装调试工具+开启远程 # 需重启sshd apt install -y apt-file | apt-file update echo &amp;#34;X11UseLocalhost no&amp;#34; &amp;gt;&amp;gt; /etc/ssh/sshd_config Apt使用 # #apt-file -h list|show &amp;lt;pattern&amp;gt; List files in packages search|find &amp;lt;pattern&amp;gt; Search files in packages update Fetch Contents files from apt-sources. #apt install --print-uris tree #显示下载链接 &amp;#39;http://mirrors.tuna.tsinghua.edu.cn/debian/pool/main/t/tree/tree_2.1.0-1_amd64.deb&amp;#39; tree_2.1.0-1_amd64.deb 52464 MD5Sum:a12f30705b94d891f14bd5199fe6f4f2 </description>
+    </item>
+    <item>
+      <title></title>
       <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E4%BB%A3%E7%90%86%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E4%BB%A3%E7%90%86%E4%BD%BF%E7%94%A8/</guid>
