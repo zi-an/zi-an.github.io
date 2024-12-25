@@ -4,10 +4,8 @@
 |官方|[地图](https://guangdong.tianditu.gov.cn/)||||
 |刷机|[K30](https://xiaomirom.com/rom/redmi-k30-5g-redmi-k30i-5g-picasso-china-fastboot-recovery-rom/)|[K40S](https://xiaomirom.com/rom/redmi-k40s-munch-china-fastboot-recovery-rom/)|[K70E](https://xiaomirom.com/rom/redmi-k70e-poco-x6-pro-5g-duchamp-china-fastboot-recovery-rom/)|[配置](/web/?uri=/md/miui.md)|
 |应用|[火哥](https://www.firepx.com/)|[虎牙](https://www.firepx.com/app/android-huaya-google-play/)|[哔哩](https://www.firepx.com/app/bilibili-google-play-and-other-version/)|[影音](https://www.firepx.com/app/qqplayer-last-version/)|
-|小米|[测试](tel:*#*#64663#*#*)|[关5G](tel:*#*#54638#*#*)|[关Vol](tel:*#*#86583#*#*)||
+|小米|[测试](tel:*#*#64663#*#*)|[关5G](tel:*#*#54638#*#*)|[关Vol](tel:*#*#86583#*#*)|[电影](/web/?uri=/md/av.md)|
 |影音|[追剧](https://m.zjuys.com/)|[短剧](https://www.duanjuwang.cc/)|[音乐](https://github.com/maotoumao/MusicFree/releases)|[音源](https://raw.niuma666bet.buzz/Huibq/keep-alive/master/Music_Free/myPlugins.json)|
-|站点|[仓库](https://888kkkz.com:8899/?u=http://www.hsck.cc/&p=/)|[搜索](https://sukebei.nyaa.si/)|[猫咪](https://pic.3a6r7.com/main)|[黑料](https://xgxg.vip)|
-||[主播](https://k34h.com/)|[谷歌](https://www.google.com/)|[油管](https://youtube.com/)||
 |短信|[推荐](https://onlinesim.io/zh)|[备用](https://www.yunjiema.top)|
 |联通|[客服](tel:10010)|[话费](sms:10010?body=hf)|[流量1](sms:10010?body=cxll)|[流量2](sms:10010?body=2082)|
 |AI|[秘塔](https://metaso.cn)|[海螺](https://hailuoai.com)|[豆包](https://www.doubao.com)||
