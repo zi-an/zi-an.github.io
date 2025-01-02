@@ -19,7 +19,7 @@
       <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E5%AE%B9%E5%99%A8%E8%B5%84%E6%96%99/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E5%AE%B9%E5%99%A8%E8%B5%84%E6%96%99/</guid>
-      <description> Docker相关 # </description>
+      <description>Docker相关 # FROM scratch&#xD;#debian12.x --force-rm&#xD;ADD rootfs.tar.xz /&#xD;ENV TZ=&amp;#39;CST-8&amp;#39; LANG=&amp;#39;zh_CN.UTF-8&amp;#39;&#xD;# 笔记本盒盖问题+apt清华源&#xD;# 安装openssh-server时要确认,使用echo管道&#xD;# 解决sshd时中文显示错误问题(apt安装语言包locales),bash下可以不用&#xD;# 中文汉化,通过find /etc -mtime -1找到dpkg-reconfigure locales的不同,确定是/etc/default/locale文件&#xD;# 添加docker用户不设密码&#xD;RUN echo &amp;#34;HandleLidSwitch=lock&amp;#34; &amp;gt;&amp;gt; /etc/systemd/logind.conf &amp;amp;&amp;amp;\&#xD;sed -i &amp;#34;s|deb.debian.org|mirrors.tuna.tsinghua.edu.cn|g&amp;#34; /etc/apt/sources.list.d/debian.sources &amp;amp;&amp;amp;\&#xD;apt update &amp;amp;&amp;amp;\&#xD;echo &amp;#39;y&amp;#39; | apt install -y bash-completion curl iproute2 iputils-ping locales net-tools openssh-server sudo vim-tiny wget &amp;amp;&amp;amp;\&#xD;mkdir /run/sshd &amp;amp;&amp;amp;\&#xD;apt clean &amp;amp;&amp;amp;\&#xD;echo &amp;#34;zh_CN.UTF-8 UTF-8&amp;#34; &amp;gt; /etc/locale.gen &amp;amp;&amp;amp;\&#xD;echo &amp;#34;LANG=zh_CN.</description>
     </item>
   </channel>
 </rss>
