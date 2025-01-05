@@ -22,6 +22,13 @@
       <description> 系统优化 # </description>
     </item>
     <item>
+      <title>WSL1</title>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/wsl1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/wsl1/</guid>
+      <description>WSL1 # https://learn.microsoft.com/zh-cn/windows/wsl/install-manual#downloading-distributions Ubuntu 24.04 Debian wsl.exe --update https://github.com/microsoft/WSL/releases/download/2.3.26/wsl.2.3.26.0.x64.msi Add-AppxPackage .\app_name.appx 配置 # echo &amp;#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main&amp;#34; | sudo tee /etc/apt/sources.list sudo apt update sudo apt install bash-completion /etc/wsl.conf [boot] systemd=true [network] hostname = redmibook.com generateHosts = false 常用命令 # wsl --shutdown 未解决 # networkingMode Nat</description>
+    </item>
+    <item>
       <title></title>
       <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

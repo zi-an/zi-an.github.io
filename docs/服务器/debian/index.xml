@@ -28,5 +28,12 @@
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E8%B0%83%E8%AF%95%E7%A8%8B%E5%BA%8F/</guid>
       <description> 程序调试 # 安装调试工具+开启远程 # 需重启sshd apt install -y apt-file | apt-file update echo &amp;#34;X11UseLocalhost no&amp;#34; &amp;gt;&amp;gt; /etc/ssh/sshd_config Apt使用 # #apt-file -h list|show &amp;lt;pattern&amp;gt; List files in packages search|find &amp;lt;pattern&amp;gt; Search files in packages update Fetch Contents files from apt-sources. #apt install --print-uris tree #显示下载链接 &amp;#39;http://mirrors.tuna.tsinghua.edu.cn/debian/pool/main/t/tree/tree_2.1.0-1_amd64.deb&amp;#39; tree_2.1.0-1_amd64.deb 52464 MD5Sum:a12f30705b94d891f14bd5199fe6f4f2 </description>
     </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/</guid>
+      <description> 官方文档 # nginx配置 # cat &amp;gt; /etc/nginx/sites-enabled/84.conf &amp;lt;&amp;lt;EOF server { listen 84; charset &amp;#39;utf-8&amp;#39;; location /json/{autoindex on;alias /var/www/docs;} } EOF 下载部署 # cd /tmp wget https://github.com/twbs/bootstrap/releases/download/v5.3.3/bootstrap-5.3.3-examples.zip unzip bootstrap-5.3.3-examples.zip mv bootstrap-5.3.3-examples /var/www/docs/bootstrap5.3.3 rm bootstrap-5.3.3-examples.zip cd /tmp wget https://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz tar -zxvf hadoop-3.4.1.tar.gz mv hadoop-3.4.1/share/doc/hadoop /var/www/docs/hadoop3.4.1 rm hadoop-3.4.1* -rf </description>
+    </item>
   </channel>
 </rss>
