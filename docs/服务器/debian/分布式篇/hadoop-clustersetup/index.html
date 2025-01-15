@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=80&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Hadoop 3.4.1 集群版之HDFS # https://www.runoob.com/w3cnote/hadoop-tutorial.html
-root操作(建议docker打包) # sed -i &#34;s|bookworm-updates|bookworm-updates bullseye|g&#34; /etc/apt/sources.list.d/debian.sources apt update &amp;&amp; apt install -y openjdk-11-jdk sudo apt install openjdk-11-jdk-headless -y sed -i &#39;$aPATH=\$PATH:/usr/games:/opt/hadoop-3.4.1/bin:/opt/hadoop-3.4.1/sbin&#39; /etc/profile sed -i &#39;$aexport JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/&#39; /etc/profile sed -i &#39;$aexport HADOOP_HOME=/opt/hadoop-3.4.1/&#39; /etc/profile sudo useradd -ms/bin/bash -k/etc/skel/ hadoop sudo usermod -aG sudo hadoop echo hadoop:. | chpasswd cd /opt wget https://dlcdn.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz tar -zxvf hadoop-3.4.1.tar.gz sed -i &#34;1 i JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64&#34; /opt/hadoop-3.4.1/etc/hadoop/hadoop-env.sh mv /opt/hadoop-3.4.1.tar.gz /opt/hadoop-3.4.1 find /opt/hadoop-3.">
+root操作(建议docker打包) # sed -i &#34;s|bookworm-updates|bookworm-updates bullseye|g&#34; /etc/apt/sources.list.d/debian.sources apt update &amp;&amp; apt install -y openjdk-11-jdk sudo apt install openjdk-11-jdk-headless -y sed -i &#39;$aPATH=\$PATH:/usr/games:/opt/hadoop/bin:/opt/hadoop/sbin&#39; /etc/profile sed -i &#39;$aexport JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/&#39; /etc/profile sed -i &#39;$aexport HADOOP_HOME=/opt/hadoop/&#39; /etc/profile source /etc/profile sudo useradd -ms/bin/bash -k/etc/skel/ hadoop sudo usermod -aG sudo hadoop echo hadoop:. | chpasswd cd /opt wget https://dlcdn.apache.org/hadoop/common/hadoop/hadoop.tar.gz tar -zxvf hadoop.tar.gz sed -i &#34;1 i JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64&#34; /opt/hadoop/etc/hadoop/hadoop-env.sh mv /opt/hadoop.tar.gz /opt/hadoop find /opt/hadoop/ -name *cmd -delete mkdir /opt/hadoop/data chown hadoop /opt -R 免登录 # 每台机器都要执行,此密钥仅作为示例ssh-keygen -t rsa -b 1024 mkdir ~/.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Hadoop 3.4.1 集群版" />
 <meta property="og:description" content="Hadoop 3.4.1 集群版之HDFS # https://www.runoob.com/w3cnote/hadoop-tutorial.html
-root操作(建议docker打包) # sed -i &#34;s|bookworm-updates|bookworm-updates bullseye|g&#34; /etc/apt/sources.list.d/debian.sources apt update &amp;&amp; apt install -y openjdk-11-jdk sudo apt install openjdk-11-jdk-headless -y sed -i &#39;$aPATH=\$PATH:/usr/games:/opt/hadoop-3.4.1/bin:/opt/hadoop-3.4.1/sbin&#39; /etc/profile sed -i &#39;$aexport JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/&#39; /etc/profile sed -i &#39;$aexport HADOOP_HOME=/opt/hadoop-3.4.1/&#39; /etc/profile sudo useradd -ms/bin/bash -k/etc/skel/ hadoop sudo usermod -aG sudo hadoop echo hadoop:. | chpasswd cd /opt wget https://dlcdn.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz tar -zxvf hadoop-3.4.1.tar.gz sed -i &#34;1 i JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64&#34; /opt/hadoop-3.4.1/etc/hadoop/hadoop-env.sh mv /opt/hadoop-3.4.1.tar.gz /opt/hadoop-3.4.1 find /opt/hadoop-3." />
+root操作(建议docker打包) # sed -i &#34;s|bookworm-updates|bookworm-updates bullseye|g&#34; /etc/apt/sources.list.d/debian.sources apt update &amp;&amp; apt install -y openjdk-11-jdk sudo apt install openjdk-11-jdk-headless -y sed -i &#39;$aPATH=\$PATH:/usr/games:/opt/hadoop/bin:/opt/hadoop/sbin&#39; /etc/profile sed -i &#39;$aexport JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/&#39; /etc/profile sed -i &#39;$aexport HADOOP_HOME=/opt/hadoop/&#39; /etc/profile source /etc/profile sudo useradd -ms/bin/bash -k/etc/skel/ hadoop sudo usermod -aG sudo hadoop echo hadoop:. | chpasswd cd /opt wget https://dlcdn.apache.org/hadoop/common/hadoop/hadoop.tar.gz tar -zxvf hadoop.tar.gz sed -i &#34;1 i JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64&#34; /opt/hadoop/etc/hadoop/hadoop-env.sh mv /opt/hadoop.tar.gz /opt/hadoop find /opt/hadoop/ -name *cmd -delete mkdir /opt/hadoop/data chown hadoop /opt -R 免登录 # 每台机器都要执行,此密钥仅作为示例ssh-keygen -t rsa -b 1024 mkdir ~/." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop-clustersetup/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="http://localhost:80/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop-clustersetup/" /><meta property="article:section" content="docs" />
 
 
 <title>Hadoop 3.4.1 集群版
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop-clustersetup/">
+<link rel="canonical" href="http://localhost:80/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop-clustersetup/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.629e3a549f7728eb1fa0786a942b7cc0e24f762648aef8eb1c28e732250b7e59.js" integrity="sha256-Yp46VJ93KOsfoHhqlCt8wOJPdiZIrvjrHCjnMiULflk=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.cb535a2fbb946452f0071eda43a432a21ab0fa21a2434bc2021366b3b94c65cc.js" integrity="sha256-y1NaL7uUZFLwBx7aQ6Qyohqw&#43;iGiQ0vCAhNms7lMZcw=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -167,6 +167,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hive/" class="">Hive</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -300,6 +313,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/" class="">官方文档</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/debian/%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/" class="">镜像网站</a>
   
 
         </li>
@@ -691,19 +717,20 @@ https://github.com/alex-shpak/hugo-book
 <pre tabindex="0"><code>sed -i &#34;s|bookworm-updates|bookworm-updates bullseye|g&#34; /etc/apt/sources.list.d/debian.sources
 apt update &amp;&amp; apt install -y openjdk-11-jdk
 sudo apt install openjdk-11-jdk-headless -y
-sed -i &#39;$aPATH=\$PATH:/usr/games:/opt/hadoop-3.4.1/bin:/opt/hadoop-3.4.1/sbin&#39; /etc/profile
+sed -i &#39;$aPATH=\$PATH:/usr/games:/opt/hadoop/bin:/opt/hadoop/sbin&#39; /etc/profile
 sed -i &#39;$aexport JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/&#39; /etc/profile
-sed -i &#39;$aexport HADOOP_HOME=/opt/hadoop-3.4.1/&#39; /etc/profile
+sed -i &#39;$aexport HADOOP_HOME=/opt/hadoop/&#39; /etc/profile
+source /etc/profile
 sudo useradd -ms/bin/bash -k/etc/skel/ hadoop
 sudo usermod -aG sudo hadoop
 echo hadoop:. | chpasswd
 cd /opt
-wget https://dlcdn.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz
-tar -zxvf hadoop-3.4.1.tar.gz
-sed -i &#34;1 i JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64&#34; /opt/hadoop-3.4.1/etc/hadoop/hadoop-env.sh
-mv /opt/hadoop-3.4.1.tar.gz /opt/hadoop-3.4.1
-find /opt/hadoop-3.4.1/ -name *cmd -delete
-mkdir /opt/hadoop-3.4.1/data
+wget https://dlcdn.apache.org/hadoop/common/hadoop/hadoop.tar.gz
+tar -zxvf hadoop.tar.gz
+sed -i &#34;1 i JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64&#34; /opt/hadoop/etc/hadoop/hadoop-env.sh
+mv /opt/hadoop.tar.gz /opt/hadoop
+find /opt/hadoop/ -name *cmd -delete
+mkdir /opt/hadoop/data
 chown hadoop /opt -R
 </code></pre><h2 id="免登录">
   免登录
@@ -740,22 +767,22 @@ chmod 600 ~/.ssh/id_rsa
   <a class="anchor" href="#%e4%bf%ae%e6%94%b9%e9%85%8d%e7%bd%ae">#</a>
 </h2>
 <ul>
-<li>/opt/hadoop-3.4.1/etc/hadoop/core-site.xml</li>
-<li>/opt/hadoop-3.4.1/etc/hadoop/hdfs-site.xml</li>
-<li>/opt/hadoop-3.4.1/etc/hadoop/yarn-site.xml</li>
-<li>/opt/hadoop-3.4.1/etc/hadoop/mapred-site.xml</li>
-<li>/opt/hadoop-3.4.1/etc/hadoop/workers</li>
+<li>/opt/hadoop/etc/hadoop/core-site.xml</li>
+<li>/opt/hadoop/etc/hadoop/hdfs-site.xml</li>
+<li>/opt/hadoop/etc/hadoop/yarn-site.xml</li>
+<li>/opt/hadoop/etc/hadoop/mapred-site.xml</li>
+<li>/opt/hadoop/etc/hadoop/workers</li>
 </ul>
-<pre tabindex="0"><code>sed -i &#34;20 i &lt;property&gt;&lt;name&gt;fs.defaultFS&lt;/name&gt;&lt;value&gt;hdfs://200.mm:9000&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop-3.4.1/etc/hadoop/core-site.xml
-sed -i &#34;20 i &lt;property&gt;&lt;name&gt;hadoop.http.staticuser.user&lt;/name&gt;&lt;value&gt;hadoop&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop-3.4.1/etc/hadoop/core-site.xml
-sed -i &#34;20 i &lt;property&gt;&lt;name&gt;hadoop.tmp.dir&lt;/name&gt;&lt;value&gt;/opt/data/&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop-3.4.1/etc/hadoop/core-site.xml
-sed -i &#34;20 i &lt;property&gt;&lt;name&gt;dfs.replication&lt;/name&gt;&lt;value&gt;2&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop-3.4.1/etc/hadoop/hdfs-site.xml
-sed -i &#34;20 i &lt;property&gt;&lt;name&gt;dfs.datanode.data.dir&lt;/name&gt;&lt;value&gt;/opt/data/&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop-3.4.1/etc/hadoop/hdfs-site.xml
-sed -i &#34;16 i &lt;property&gt;&lt;name&gt;yarn.resourcemanager.hostname&lt;/name&gt;&lt;value&gt;200.mm&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop-3.4.1/etc/hadoop/yarn-site.xml
-sed -i &#34;16 i &lt;property&gt;&lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt;&lt;value&gt;mapreduce_shuffle&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop-3.4.1/etc/hadoop/yarn-site.xml
-sed -i &#34;16 i &lt;property&gt;&lt;name&gt;yarn.application.classpath&lt;/name&gt;&lt;value&gt;`hadoop classpath`&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop-3.4.1/etc/hadoop/yarn-site.xml
-sed -i &#34;20 i &lt;property&gt;&lt;name&gt;mapreduce.framework.name&lt;/name&gt;&lt;value&gt;yarn&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop-3.4.1/etc/hadoop/mapred-site.xml
-echo -e &#39;200.mm\n201.mm\n202.mm&#39; &gt; /opt/hadoop-3.4.1/etc/hadoop/workers
+<pre tabindex="0"><code>sed -i &#34;20 i &lt;property&gt;&lt;name&gt;fs.defaultFS&lt;/name&gt;&lt;value&gt;hdfs://200.mm:9000&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop/etc/hadoop/core-site.xml
+sed -i &#34;20 i &lt;property&gt;&lt;name&gt;hadoop.http.staticuser.user&lt;/name&gt;&lt;value&gt;hadoop&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop/etc/hadoop/core-site.xml
+sed -i &#34;20 i &lt;property&gt;&lt;name&gt;hadoop.tmp.dir&lt;/name&gt;&lt;value&gt;/opt/data/&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop/etc/hadoop/core-site.xml
+sed -i &#34;20 i &lt;property&gt;&lt;name&gt;dfs.replication&lt;/name&gt;&lt;value&gt;2&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop/etc/hadoop/hdfs-site.xml
+sed -i &#34;20 i &lt;property&gt;&lt;name&gt;dfs.datanode.data.dir&lt;/name&gt;&lt;value&gt;/opt/data/&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop/etc/hadoop/hdfs-site.xml
+sed -i &#34;16 i &lt;property&gt;&lt;name&gt;yarn.resourcemanager.hostname&lt;/name&gt;&lt;value&gt;200.mm&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop/etc/hadoop/yarn-site.xml
+sed -i &#34;16 i &lt;property&gt;&lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt;&lt;value&gt;mapreduce_shuffle&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop/etc/hadoop/yarn-site.xml
+sed -i &#34;16 i &lt;property&gt;&lt;name&gt;yarn.application.classpath&lt;/name&gt;&lt;value&gt;`hadoop classpath`&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop/etc/hadoop/yarn-site.xml
+sed -i &#34;20 i &lt;property&gt;&lt;name&gt;mapreduce.framework.name&lt;/name&gt;&lt;value&gt;yarn&lt;/value&gt;&lt;/property&gt;&#34; /opt/hadoop/etc/hadoop/mapred-site.xml
+echo -e &#39;200.mm\n201.mm\n202.mm&#39; &gt; /opt/hadoop/etc/hadoop/workers
 </code></pre><h2 id="主机启动">
   主机启动
   <a class="anchor" href="#%e4%b8%bb%e6%9c%ba%e5%90%af%e5%8a%a8">#</a>
@@ -776,7 +803,7 @@ start-dfs.sh
 <li>在新的机器执行</li>
 </ul>
 <pre tabindex="0"><code>hdfs --daemon start datanode
-echo -e &#39;200.mm\n201.mm\n202.mm\n203.mm&#39; &gt; /opt/hadoop-3.4.1/etc/hadoop/workers
+echo -e &#39;200.mm\n201.mm\n202.mm\n203.mm&#39; &gt; /opt/hadoop/etc/hadoop/workers
 </code></pre><details ><summary>docker基础配置</summary>
   <div class="markdown-inner">
     <pre tabindex="0"><code>version: &#34;3.8&#34;
