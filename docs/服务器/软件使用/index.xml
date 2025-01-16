@@ -14,5 +14,12 @@
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/goaccess/</guid>
       <description> goaccess # 安装 # apt install -y goaccess sed -i &amp;#39;$a log-format COMBINED&amp;#39; /etc/goaccess/goaccess.conf 生成页面 # goaccess /var/log/nginx/access.log -o 1.html </description>
     </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wget/</guid>
+      <description> wget使用 # 下载所有能遍历的目录及文件(爬虫) # wget -r -np -nH -R index.html http://127.0.0.1/&#xA;# </description>
+    </item>
   </channel>
 </rss>

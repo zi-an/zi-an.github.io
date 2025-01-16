@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
 <head>
-	<meta name="generator" content="Hugo 0.124.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Hugo # Hugo构建工具 # 通过 Hugo 你可以快速搭建你的静态网站,比如博客系统,文档介绍,公司主页,产品介绍等等.
-hugo-book主题 # hugo-book 适合做文档功能的网页.Hugo众多主题中的一个
-演示 # 主题演示地址 https://hugo-book-demo.netlify.app/ 安装 # Debian12.8 Hugo安装 # 最好使用对应版本，否则会有问题 apt install -y hugo wget gitdl.cn/github.com/gohugoio/hugo/releases/download/v0.124.1/hugo_extended_0.124.1_linux-amd64.tar.gz tar -zxvf hugo_extended_0.124.1_linux-amd64.tar.gz -C /usr/bin/ rm hugo_extended_0.124.1_linux-amd64.tar.gz HugoBook使用 # hugo new site mysite cd mysite wget gitdl.cn/github.com/alex-shpak/hugo-book/archive/refs/tags/v10.tar.gz tar -zxvf v10.tar.gz -C themes rm v10.tar.gz cp -r themes/hugo-book-10/exampleSite/content.en/* content/ hugo server -p 80 --bind 0.0.0.0 --theme hugo-book-10 Windows11 版本 https://github.com/gohugoio/hugo/releases/tag/v0.124.1 下载 hugo_extended_0.124.1_windows-amd64.zip解压放到C:\Windows 主题 hugo-book.">
+<meta name="description" content="hadoop 3.4.1 运维篇 # 块损坏与丢失 # 损坏或丢失会进入安全模式 hdfs dfsadmin -safemode get	#查看安全模式状态 hdfs dfsadmin -safemode enter	#进入安全模式状态 hdfs dfsadmin -safemode leave	#离开安全模式状态 hdfs dfsadmin -safemode wait	#等待安全模式状态 hadoop fsck	#检查时候存在丢失或者损坏 hdfs fsck / -delete	#删除问题文件,在获得问题的解决办法前不建议使用 测试数据 # 写入100个128M的数据 for x in {1..100};do dd if=/dev/random of=$RANDOM bs=1M count=128;done hadoop fs -put * /4m 查找文件 # find /opt/ -mmin -30 find /opt/ -exec touch -ht 197001010000.00 {} \; rm /opt/data/* /opt/hadoop-3.4.1/logs/* -rf find /opt/ -name *meta 空间管理 # 只分配1G能启动,但存储不了文件 The volume with the most available space (=950 190 080 B) is less than the block size (=134 217 728 B) sudo mkdir /home/hadoop/space/ -p sudo dd if=/dev/zero of=/home/hadoop/space/hadoop0 bs=1G count=2 sudo dd if=/dev/zero of=/home/hadoop/space/hadoop1 bs=1G count=2 sudo dd if=/dev/zero of=/home/hadoop/space/hadoop2 bs=1G count=2 sudo dd if=/dev/zero of=/home/hadoop/space/hadoop3 bs=1G count=2 sudo losetup /dev/loop0 /home/hadoop/space/hadoop0 sudo losetup /dev/loop1 /home/hadoop/space/hadoop1 sudo losetup /dev/loop2 /home/hadoop/space/hadoop2 sudo losetup /dev/loop3 /home/hadoop/space/hadoop3 sudo mkfs.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="主页" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://example.org/" />
-<title>主页
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Hadoop 3.4.1 运维篇" />
+<meta property="og:description" content="hadoop 3.4.1 运维篇 # 块损坏与丢失 # 损坏或丢失会进入安全模式 hdfs dfsadmin -safemode get	#查看安全模式状态 hdfs dfsadmin -safemode enter	#进入安全模式状态 hdfs dfsadmin -safemode leave	#离开安全模式状态 hdfs dfsadmin -safemode wait	#等待安全模式状态 hadoop fsck	#检查时候存在丢失或者损坏 hdfs fsck / -delete	#删除问题文件,在获得问题的解决办法前不建议使用 测试数据 # 写入100个128M的数据 for x in {1..100};do dd if=/dev/random of=$RANDOM bs=1M count=128;done hadoop fs -put * /4m 查找文件 # find /opt/ -mmin -30 find /opt/ -exec touch -ht 197001010000.00 {} \; rm /opt/data/* /opt/hadoop-3.4.1/logs/* -rf find /opt/ -name *meta 空间管理 # 只分配1G能启动,但存储不了文件 The volume with the most available space (=950 190 080 B) is less than the block size (=134 217 728 B) sudo mkdir /home/hadoop/space/ -p sudo dd if=/dev/zero of=/home/hadoop/space/hadoop0 bs=1G count=2 sudo dd if=/dev/zero of=/home/hadoop/space/hadoop1 bs=1G count=2 sudo dd if=/dev/zero of=/home/hadoop/space/hadoop2 bs=1G count=2 sudo dd if=/dev/zero of=/home/hadoop/space/hadoop3 bs=1G count=2 sudo losetup /dev/loop0 /home/hadoop/space/hadoop0 sudo losetup /dev/loop1 /home/hadoop/space/hadoop1 sudo losetup /dev/loop2 /home/hadoop/space/hadoop2 sudo losetup /dev/loop3 /home/hadoop/space/hadoop3 sudo mkfs." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%BF%90%E7%BB%B4%E7%AF%87/" /><meta property="article:section" content="docs" />
+
+
+<title>Hadoop 3.4.1 运维篇
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://example.org/">
+<link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%BF%90%E7%BB%B4%E7%AF%87/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/zh.search.min.92291ca2e3bc069ba13368960041bf500fbb2d91c8771e64e544e72675c3a793.js" integrity="sha256-kikcouO8BpuhM2iWAEG/UA&#43;7LZHIdx5k5UTnJnXDp5M=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://example.org/index.xml" title="" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -74,7 +72,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-0488dc51fd99636dd6b4d238151c1db5" class="toggle"  />
+    <input type="checkbox" id="section-0488dc51fd99636dd6b4d238151c1db5" class="toggle" checked />
     <label for="section-0488dc51fd99636dd6b4d238151c1db5" class="flex justify-between">
       <a role="button" class="">服务器</a>
     </label>
@@ -90,7 +88,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-325b6b542a51d3d21ff88c5bf7887306" class="toggle"  />
+    <input type="checkbox" id="section-325b6b542a51d3d21ff88c5bf7887306" class="toggle" checked />
     <label for="section-325b6b542a51d3d21ff88c5bf7887306" class="flex justify-between">
       <a role="button" class="">分布式篇</a>
     </label>
@@ -132,7 +130,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%BF%90%E7%BB%B4%E7%AF%87/" class="">Hadoop 3.4.1 运维篇</a>
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%BF%90%E7%BB%B4%E7%AF%87/" class="active">Hadoop 3.4.1 运维篇</a>
   
 
         </li>
@@ -662,7 +660,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>主页</strong>
+  <strong>Hadoop 3.4.1 运维篇</strong>
 
   <label for="toc-control">
     
@@ -678,8 +676,10 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#演示">演示</a></li>
-    <li><a href="#安装">安装</a></li>
+    <li><a href="#块损坏与丢失">块损坏与丢失</a></li>
+    <li><a href="#测试数据">测试数据</a></li>
+    <li><a href="#查找文件">查找文件</a></li>
+    <li><a href="#空间管理">空间管理</a></li>
   </ul>
 </nav>
 
@@ -692,95 +692,71 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h1 id="hugo">
-  Hugo
-  <a class="anchor" href="#hugo">#</a>
+  <article class="markdown book-article"><h1 id="hadoop-341-运维篇">
+  hadoop 3.4.1 运维篇
+  <a class="anchor" href="#hadoop-341-%e8%bf%90%e7%bb%b4%e7%af%87">#</a>
 </h1>
-<div class="book-columns flex flex-wrap">
-
-  <div class="flex-even markdown-inner">
-    <h2 id="hugo构建工具">
-  Hugo构建工具
-  <a class="anchor" href="#hugo%e6%9e%84%e5%bb%ba%e5%b7%a5%e5%85%b7">#</a>
-</h2>
-<p>通过 Hugo 你可以快速搭建你的静态网站,比如博客系统,文档介绍,公司主页,产品介绍等等.</p>
-  </div>
-
-  <div class="flex-even markdown-inner">
-    <h2 id="hugo-book主题">
-  hugo-book主题
-  <a class="anchor" href="#hugo-book%e4%b8%bb%e9%a2%98">#</a>
-</h2>
-<p>hugo-book 适合做文档功能的网页.Hugo众多主题中的一个</p>
-  </div>
-
-</div>
-
-<h2 id="演示">
-  演示
-  <a class="anchor" href="#%e6%bc%94%e7%a4%ba">#</a>
+<h2 id="块损坏与丢失">
+  块损坏与丢失
+  <a class="anchor" href="#%e5%9d%97%e6%8d%9f%e5%9d%8f%e4%b8%8e%e4%b8%a2%e5%a4%b1">#</a>
 </h2>
 <ul>
-<li>主题演示地址 <a href="https://hugo-book-demo.netlify.app/">https://hugo-book-demo.netlify.app/</a></li>
+<li>损坏或丢失会进入安全模式</li>
 </ul>
-<h2 id="安装">
-  安装
-  <a class="anchor" href="#%e5%ae%89%e8%a3%85">#</a>
-</h2>
-
-
-
-
-<div class="book-tabs"><input type="radio" class="toggle" name="tabs-TAB" id="tabs-TAB-0" checked="checked" />
-  <label for="tabs-TAB-0">Debian12.8</label>
-  <div class="book-tabs-content markdown-inner"><h2 id="hugo安装">
-  Hugo安装
-  <a class="anchor" href="#hugo%e5%ae%89%e8%a3%85">#</a>
+<pre tabindex="0"><code>hdfs dfsadmin -safemode get	#查看安全模式状态
+hdfs dfsadmin -safemode enter	#进入安全模式状态
+hdfs dfsadmin -safemode leave	#离开安全模式状态
+hdfs dfsadmin -safemode wait	#等待安全模式状态
+</code></pre><pre tabindex="0"><code>hadoop fsck	#检查时候存在丢失或者损坏
+hdfs fsck / -delete	#删除问题文件,在获得问题的解决办法前不建议使用
+</code></pre><h2 id="测试数据">
+  测试数据
+  <a class="anchor" href="#%e6%b5%8b%e8%af%95%e6%95%b0%e6%8d%ae">#</a>
 </h2>
 <ul>
-<li>最好使用对应版本，否则会有问题</li>
+<li>写入100个128M的数据</li>
 </ul>
-<pre tabindex="0"><code>apt install -y hugo
-wget gitdl.cn/github.com/gohugoio/hugo/releases/download/v0.124.1/hugo_extended_0.124.1_linux-amd64.tar.gz
-tar -zxvf hugo_extended_0.124.1_linux-amd64.tar.gz -C /usr/bin/
-rm hugo_extended_0.124.1_linux-amd64.tar.gz
-</code></pre><h2 id="hugobook使用">
-  HugoBook使用
-  <a class="anchor" href="#hugobook%e4%bd%bf%e7%94%a8">#</a>
+<pre tabindex="0"><code>for x in {1..100};do dd if=/dev/random of=$RANDOM bs=1M count=128;done
+hadoop fs -put * /4m
+</code></pre><h2 id="查找文件">
+  查找文件
+  <a class="anchor" href="#%e6%9f%a5%e6%89%be%e6%96%87%e4%bb%b6">#</a>
 </h2>
-<pre tabindex="0"><code>hugo new site mysite
-cd mysite
-wget gitdl.cn/github.com/alex-shpak/hugo-book/archive/refs/tags/v10.tar.gz
-tar -zxvf v10.tar.gz -C themes
-rm v10.tar.gz
-cp -r themes/hugo-book-10/exampleSite/content.en/* content/
-hugo server -p 80 --bind 0.0.0.0 --theme hugo-book-10
-</code></pre></div><input type="radio" class="toggle" name="tabs-TAB" id="tabs-TAB-1"  />
-  <label for="tabs-TAB-1">Windows11</label>
-  <div class="book-tabs-content markdown-inner"><ul>
-<li>版本 <a href="https://github.com/gohugoio/hugo/releases/tag/v0.124.1">https://github.com/gohugoio/hugo/releases/tag/v0.124.1</a></li>
-<li>下载 <a href="github.com/gohugoio/hugo/releases/download/v0.124.1/hugo_extended_0.124.1_windows-amd64.zip">hugo_extended_0.124.1_windows-amd64.zip</a>解压放到C:\Windows</li>
-<li>主题 <a href="github.com/alex-shpak/hugo-book/archive/refs/tags/v10.tar.gz">hugo-book.v10</a>解压放到项目的themes目录下</li>
-<li>hugo.toml配置文件如下:</li>
+<pre tabindex="0"><code>find /opt/ -mmin -30
+find /opt/ -exec touch -ht 197001010000.00 {} \;
+rm /opt/data/* /opt/hadoop-3.4.1/logs/* -rf
+find /opt/ -name *meta
+</code></pre><h2 id="空间管理">
+  空间管理
+  <a class="anchor" href="#%e7%a9%ba%e9%97%b4%e7%ae%a1%e7%90%86">#</a>
+</h2>
+<ul>
+<li>只分配1G能启动,但存储不了文件</li>
+<li>The volume with the most available space (=950 190 080 B) is less than the block size (=134 217 728 B)</li>
 </ul>
-<pre tabindex="0"><code>baseURL = &#39;https://example.org/&#39;
-defaultContentLanguage = &#39;zh&#39;
-#title = &#39;&#39;
-theme = &#39;hugo-book-10&#39;
-
-[params]
-  BookTheme = &#39;auto&#39;
-  BookDateFormat = &#39;2006-01-02&#39;
-</code></pre></div></div>
-
-<details ><summary>Github</summary>
-  <div class="markdown-inner">
-    <pre tabindex="0"><code>git clone git@github.com:zi-an/zian.git zian
-</code></pre>
-  </div>
-</details>
-
-</article>
+<pre tabindex="0"><code>sudo mkdir /home/hadoop/space/ -p
+sudo dd if=/dev/zero of=/home/hadoop/space/hadoop0 bs=1G count=2
+sudo dd if=/dev/zero of=/home/hadoop/space/hadoop1 bs=1G count=2
+sudo dd if=/dev/zero of=/home/hadoop/space/hadoop2 bs=1G count=2
+sudo dd if=/dev/zero of=/home/hadoop/space/hadoop3 bs=1G count=2
+sudo losetup /dev/loop0 /home/hadoop/space/hadoop0 
+sudo losetup /dev/loop1 /home/hadoop/space/hadoop1
+sudo losetup /dev/loop2 /home/hadoop/space/hadoop2 
+sudo losetup /dev/loop3 /home/hadoop/space/hadoop3
+sudo mkfs.ext4 /dev/loop0
+sudo mkfs.ext4 /dev/loop1
+sudo mkfs.ext4 /dev/loop2
+sudo mkfs.ext4 /dev/loop3
+sudo mount -t ext4 /dev/loop0 /home/hadoop/hadoop0
+sudo mount -t ext4 /dev/loop1 /home/hadoop/hadoop1
+sudo mount -t ext4 /dev/loop2 /home/hadoop/hadoop2
+sudo mount -t ext4 /dev/loop3 /home/hadoop/hadoop3
+sudo chmod 777 /home/hadoop/hadoop* -R
+</code></pre><ul>
+<li>删除虚拟驱动</li>
+</ul>
+<pre tabindex="0"><code>sudo losetup -d /dev/loop0 /dev/loop1 /dev/loop2 /dev/loop3
+</code></pre></article>
  
       
 
@@ -821,8 +797,10 @@ theme = &#39;hugo-book-10&#39;
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#演示">演示</a></li>
-    <li><a href="#安装">安装</a></li>
+    <li><a href="#块损坏与丢失">块损坏与丢失</a></li>
+    <li><a href="#测试数据">测试数据</a></li>
+    <li><a href="#查找文件">查找文件</a></li>
+    <li><a href="#空间管理">空间管理</a></li>
   </ul>
 </nav>
 

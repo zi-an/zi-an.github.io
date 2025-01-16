@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
 <head>
-	<meta name="generator" content="Hugo 0.124.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Hugo # Hugo构建工具 # 通过 Hugo 你可以快速搭建你的静态网站,比如博客系统,文档介绍,公司主页,产品介绍等等.
-hugo-book主题 # hugo-book 适合做文档功能的网页.Hugo众多主题中的一个
-演示 # 主题演示地址 https://hugo-book-demo.netlify.app/ 安装 # Debian12.8 Hugo安装 # 最好使用对应版本，否则会有问题 apt install -y hugo wget gitdl.cn/github.com/gohugoio/hugo/releases/download/v0.124.1/hugo_extended_0.124.1_linux-amd64.tar.gz tar -zxvf hugo_extended_0.124.1_linux-amd64.tar.gz -C /usr/bin/ rm hugo_extended_0.124.1_linux-amd64.tar.gz HugoBook使用 # hugo new site mysite cd mysite wget gitdl.cn/github.com/alex-shpak/hugo-book/archive/refs/tags/v10.tar.gz tar -zxvf v10.tar.gz -C themes rm v10.tar.gz cp -r themes/hugo-book-10/exampleSite/content.en/* content/ hugo server -p 80 --bind 0.0.0.0 --theme hugo-book-10 Windows11 版本 https://github.com/gohugoio/hugo/releases/tag/v0.124.1 下载 hugo_extended_0.124.1_windows-amd64.zip解压放到C:\Windows 主题 hugo-book.">
+<meta name="description" content="hive4.0.1安装部署 # 目前hive4.0.1&#43;hadoop3.4.1&#43;jdk11.0.24,正常使用 多注意日志中关于用户权限的问题 官方镜像中 hive4.0.1 匹配 hadoop3.3.6 https://hive.apache.org/docs/latest/manual-installation_283118363/ 下载安装 # hadoop的鉴权&#43;文件权限要注意 sed -i &#34;20 i &lt;property&gt;&lt;name&gt;hadoop.proxyuser.hadoop.hosts&lt;/name&gt;&lt;value&gt;*&lt;/value&gt;&lt;/property&gt;&#34; ${HADOOP_HOME}/etc/hadoop/core-site.xml sed -i &#34;20 i &lt;property&gt;&lt;name&gt;hadoop.proxyuser.hadoop.groups&lt;/name&gt;&lt;value&gt;*&lt;/value&gt;&lt;/property&gt;&#34; ${HADOOP_HOME}/etc/hadoop/core-site.xml wget https://mirrors.aliyun.com/apache/hive/hive-4.0.1/apache-hive-4.0.1-bin.tar.gz tar -zxvf apache-hive-4.0.1-bin.tar.gz mv apache-hive-4.0.1-bin hive mv hive /opt/ sudo sed -i &#39;$aexport HIVE_HOME=/opt/hive&#39; /etc/profile sudo sed -i &#39;$aPATH=\$PATH:\$HIVE_HOME/bin/&#39; /etc/profile sudo sed -i &#39;$aalias beelinehive=&#34;beeline -u jdbc:hive2://127.0.0.1:10000/&#34;&#39; /etc/profile source /etc/profile hadoop fs -mkdir /tmp hadoop fs -mkdir -p /user/hive/ hadoop fs -chmod &#43;rwx /tmp hadoop fs -chmod &#43;w /user/hive/ 使用MySQL # host:ali.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="主页" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://example.org/" />
-<title>主页
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="hive4.0.1安装部署 # 目前hive4.0.1&#43;hadoop3.4.1&#43;jdk11.0.24,正常使用 多注意日志中关于用户权限的问题 官方镜像中 hive4.0.1 匹配 hadoop3.3.6 https://hive.apache.org/docs/latest/manual-installation_283118363/ 下载安装 # hadoop的鉴权&#43;文件权限要注意 sed -i &#34;20 i &lt;property&gt;&lt;name&gt;hadoop.proxyuser.hadoop.hosts&lt;/name&gt;&lt;value&gt;*&lt;/value&gt;&lt;/property&gt;&#34; ${HADOOP_HOME}/etc/hadoop/core-site.xml sed -i &#34;20 i &lt;property&gt;&lt;name&gt;hadoop.proxyuser.hadoop.groups&lt;/name&gt;&lt;value&gt;*&lt;/value&gt;&lt;/property&gt;&#34; ${HADOOP_HOME}/etc/hadoop/core-site.xml wget https://mirrors.aliyun.com/apache/hive/hive-4.0.1/apache-hive-4.0.1-bin.tar.gz tar -zxvf apache-hive-4.0.1-bin.tar.gz mv apache-hive-4.0.1-bin hive mv hive /opt/ sudo sed -i &#39;$aexport HIVE_HOME=/opt/hive&#39; /etc/profile sudo sed -i &#39;$aPATH=\$PATH:\$HIVE_HOME/bin/&#39; /etc/profile sudo sed -i &#39;$aalias beelinehive=&#34;beeline -u jdbc:hive2://127.0.0.1:10000/&#34;&#39; /etc/profile source /etc/profile hadoop fs -mkdir /tmp hadoop fs -mkdir -p /user/hive/ hadoop fs -chmod &#43;rwx /tmp hadoop fs -chmod &#43;w /user/hive/ 使用MySQL # host:ali." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hive4.0.1/" /><meta property="article:section" content="docs" />
+
+
+<title>Hive4.0.1
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://example.org/">
+<link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hive4.0.1/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/zh.search.min.92291ca2e3bc069ba13368960041bf500fbb2d91c8771e64e544e72675c3a793.js" integrity="sha256-kikcouO8BpuhM2iWAEG/UA&#43;7LZHIdx5k5UTnJnXDp5M=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://example.org/index.xml" title="" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -74,7 +72,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-0488dc51fd99636dd6b4d238151c1db5" class="toggle"  />
+    <input type="checkbox" id="section-0488dc51fd99636dd6b4d238151c1db5" class="toggle" checked />
     <label for="section-0488dc51fd99636dd6b4d238151c1db5" class="flex justify-between">
       <a role="button" class="">服务器</a>
     </label>
@@ -90,7 +88,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-325b6b542a51d3d21ff88c5bf7887306" class="toggle"  />
+    <input type="checkbox" id="section-325b6b542a51d3d21ff88c5bf7887306" class="toggle" checked />
     <label for="section-325b6b542a51d3d21ff88c5bf7887306" class="flex justify-between">
       <a role="button" class="">分布式篇</a>
     </label>
@@ -158,7 +156,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hive4.0.1/" class="">Hive4.0.1</a>
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hive4.0.1/" class="active">Hive4.0.1</a>
   
 
         </li>
@@ -662,7 +660,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>主页</strong>
+  <strong>Hive4.0.1</strong>
 
   <label for="toc-control">
     
@@ -678,8 +676,11 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#演示">演示</a></li>
-    <li><a href="#安装">安装</a></li>
+    <li><a href="#下载安装">下载安装</a></li>
+    <li><a href="#使用mysql">使用MySQL</a></li>
+    <li><a href="#使用derby">使用Derby</a></li>
+    <li><a href="#测试">测试</a></li>
+    <li><a href="#tez-引擎官方推荐的引擎mr可以用但过时">tez 引擎(官方推荐的引擎,MR可以用但过时)</a></li>
   </ul>
 </nav>
 
@@ -692,94 +693,85 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h1 id="hugo">
-  Hugo
-  <a class="anchor" href="#hugo">#</a>
+  <article class="markdown book-article"><h1 id="hive401安装部署">
+  hive4.0.1安装部署
+  <a class="anchor" href="#hive401%e5%ae%89%e8%a3%85%e9%83%a8%e7%bd%b2">#</a>
 </h1>
-<div class="book-columns flex flex-wrap">
-
-  <div class="flex-even markdown-inner">
-    <h2 id="hugo构建工具">
-  Hugo构建工具
-  <a class="anchor" href="#hugo%e6%9e%84%e5%bb%ba%e5%b7%a5%e5%85%b7">#</a>
-</h2>
-<p>通过 Hugo 你可以快速搭建你的静态网站,比如博客系统,文档介绍,公司主页,产品介绍等等.</p>
-  </div>
-
-  <div class="flex-even markdown-inner">
-    <h2 id="hugo-book主题">
-  hugo-book主题
-  <a class="anchor" href="#hugo-book%e4%b8%bb%e9%a2%98">#</a>
-</h2>
-<p>hugo-book 适合做文档功能的网页.Hugo众多主题中的一个</p>
-  </div>
-
-</div>
-
-<h2 id="演示">
-  演示
-  <a class="anchor" href="#%e6%bc%94%e7%a4%ba">#</a>
+<ul>
+<li>目前hive4.0.1+hadoop3.4.1+jdk11.0.24,正常使用</li>
+<li>多注意日志中关于用户权限的问题</li>
+<li>官方镜像中 <a href="https://mirrors.aliyun.com/apache/hive/hive-4.0.1/apache-hive-4.0.1-bin.tar.gz">hive4.0.1</a> 匹配 <a href="https://mirrors.aliyun.com/apache/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz">hadoop3.3.6</a></li>
+<li><a href="https://hive.apache.org/docs/latest/manual-installation_283118363/">https://hive.apache.org/docs/latest/manual-installation_283118363/</a></li>
+</ul>
+<h2 id="下载安装">
+  下载安装
+  <a class="anchor" href="#%e4%b8%8b%e8%bd%bd%e5%ae%89%e8%a3%85">#</a>
 </h2>
 <ul>
-<li>主题演示地址 <a href="https://hugo-book-demo.netlify.app/">https://hugo-book-demo.netlify.app/</a></li>
+<li>hadoop的鉴权+文件权限要注意</li>
 </ul>
-<h2 id="安装">
-  安装
-  <a class="anchor" href="#%e5%ae%89%e8%a3%85">#</a>
-</h2>
-
-
-
-
-<div class="book-tabs"><input type="radio" class="toggle" name="tabs-TAB" id="tabs-TAB-0" checked="checked" />
-  <label for="tabs-TAB-0">Debian12.8</label>
-  <div class="book-tabs-content markdown-inner"><h2 id="hugo安装">
-  Hugo安装
-  <a class="anchor" href="#hugo%e5%ae%89%e8%a3%85">#</a>
+<pre tabindex="0"><code>sed -i &#34;20 i &lt;property&gt;&lt;name&gt;hadoop.proxyuser.hadoop.hosts&lt;/name&gt;&lt;value&gt;*&lt;/value&gt;&lt;/property&gt;&#34; ${HADOOP_HOME}/etc/hadoop/core-site.xml
+sed -i &#34;20 i &lt;property&gt;&lt;name&gt;hadoop.proxyuser.hadoop.groups&lt;/name&gt;&lt;value&gt;*&lt;/value&gt;&lt;/property&gt;&#34; ${HADOOP_HOME}/etc/hadoop/core-site.xml
+</code></pre><pre tabindex="0"><code>wget https://mirrors.aliyun.com/apache/hive/hive-4.0.1/apache-hive-4.0.1-bin.tar.gz
+tar -zxvf apache-hive-4.0.1-bin.tar.gz
+mv apache-hive-4.0.1-bin hive
+mv hive /opt/
+sudo sed -i &#39;$aexport HIVE_HOME=/opt/hive&#39; /etc/profile
+sudo sed -i &#39;$aPATH=\$PATH:\$HIVE_HOME/bin/&#39; /etc/profile
+sudo sed -i &#39;$aalias beelinehive=&#34;beeline -u jdbc:hive2://127.0.0.1:10000/&#34;&#39; /etc/profile
+source /etc/profile
+hadoop fs -mkdir /tmp
+hadoop fs -mkdir -p /user/hive/
+hadoop fs -chmod +rwx /tmp
+hadoop fs -chmod +w /user/hive/
+</code></pre><h2 id="使用mysql">
+  使用MySQL
+  <a class="anchor" href="#%e4%bd%bf%e7%94%a8mysql">#</a>
 </h2>
 <ul>
-<li>最好使用对应版本，否则会有问题</li>
+<li>host:ali.mm username:zian passwd:zian</li>
 </ul>
-<pre tabindex="0"><code>apt install -y hugo
-wget gitdl.cn/github.com/gohugoio/hugo/releases/download/v0.124.1/hugo_extended_0.124.1_linux-amd64.tar.gz
-tar -zxvf hugo_extended_0.124.1_linux-amd64.tar.gz -C /usr/bin/
-rm hugo_extended_0.124.1_linux-amd64.tar.gz
-</code></pre><h2 id="hugobook使用">
-  HugoBook使用
-  <a class="anchor" href="#hugobook%e4%bd%bf%e7%94%a8">#</a>
+<pre tabindex="0"><code>wget -P $HIVE_HOME/lib https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.49/mysql-connector-java-5.1.49.jar 
+cp $HIVE_HOME/conf/hive-default.xml.template $HIVE_HOME/conf/hive-site.xml
+sed -i &#34;s|jdbc:derby:;databaseName=metastore_db;create=true|jdbc:mysql://ali.mm:3306/zian|g&#34; $HIVE_HOME/conf/hive-site.xml
+sed -i &#34;s|org.apache.derby.jdbc.EmbeddedDriver|com.mysql.jdbc.Driver|g&#34; $HIVE_HOME/conf/hive-site.xml
+sed -i &#34;s|APP|zian|g&#34; $HIVE_HOME/conf/hive-site.xml
+sed -i &#34;s|mine&lt;|zian&lt;|g&#34; $HIVE_HOME/conf/hive-site.xml
+sed -i &#34;s|system:||g&#34; $HIVE_HOME/conf/hive-site.xml
+schematool -dbType mysql -initSchema
+nohup hiveserver2 &amp;
+</code></pre><h2 id="使用derby">
+  使用Derby
+  <a class="anchor" href="#%e4%bd%bf%e7%94%a8derby">#</a>
 </h2>
-<pre tabindex="0"><code>hugo new site mysite
-cd mysite
-wget gitdl.cn/github.com/alex-shpak/hugo-book/archive/refs/tags/v10.tar.gz
-tar -zxvf v10.tar.gz -C themes
-rm v10.tar.gz
-cp -r themes/hugo-book-10/exampleSite/content.en/* content/
-hugo server -p 80 --bind 0.0.0.0 --theme hugo-book-10
-</code></pre></div><input type="radio" class="toggle" name="tabs-TAB" id="tabs-TAB-1"  />
-  <label for="tabs-TAB-1">Windows11</label>
-  <div class="book-tabs-content markdown-inner"><ul>
-<li>版本 <a href="https://github.com/gohugoio/hugo/releases/tag/v0.124.1">https://github.com/gohugoio/hugo/releases/tag/v0.124.1</a></li>
-<li>下载 <a href="github.com/gohugoio/hugo/releases/download/v0.124.1/hugo_extended_0.124.1_windows-amd64.zip">hugo_extended_0.124.1_windows-amd64.zip</a>解压放到C:\Windows</li>
-<li>主题 <a href="github.com/alex-shpak/hugo-book/archive/refs/tags/v10.tar.gz">hugo-book.v10</a>解压放到项目的themes目录下</li>
-<li>hugo.toml配置文件如下:</li>
+<ul>
+<li>要注意文件目录的位置,schematool在当前目录下生成文件</li>
 </ul>
-<pre tabindex="0"><code>baseURL = &#39;https://example.org/&#39;
-defaultContentLanguage = &#39;zh&#39;
-#title = &#39;&#39;
-theme = &#39;hugo-book-10&#39;
-
-[params]
-  BookTheme = &#39;auto&#39;
-  BookDateFormat = &#39;2006-01-02&#39;
-</code></pre></div></div>
-
-<details ><summary>Github</summary>
-  <div class="markdown-inner">
-    <pre tabindex="0"><code>git clone git@github.com:zi-an/zian.git zian
-</code></pre>
-  </div>
-</details>
-
+<pre tabindex="0"><code>schematool -dbType derby -initSchema
+nohup hiveserver2 &amp;
+</code></pre><h2 id="测试">
+  测试
+  <a class="anchor" href="#%e6%b5%8b%e8%af%95">#</a>
+</h2>
+<ul>
+<li>默认日志位置 /tmp/启动的用户名/hive.log</li>
+<li>需要注意在日志中出现的文件权限问题</li>
+</ul>
+<pre tabindex="0"><code>
+CREATE TABLE IF NOT EXISTS testtable (id INT,name STRING);  
+insert into testtable VALUES (1,&#34;li&#34;),(2,&#34;xiang&#34;),(3,&#34;he&#34;);
+select * from testtable;
+</code></pre><pre tabindex="0"><code>CREATE TABLE IF NOT EXISTS md5 (id STRING,md5 STRING) 
+row format delimited fields terminated by &#39;,&#39; stored as textfile;
+load data inpath &#39;/md5.txt&#39; into table md5;
+</code></pre><h2 id="tez-引擎官方推荐的引擎mr可以用但过时">
+  tez 引擎(官方推荐的引擎,MR可以用但过时)
+  <a class="anchor" href="#tez-%e5%bc%95%e6%93%8e%e5%ae%98%e6%96%b9%e6%8e%a8%e8%8d%90%e7%9a%84%e5%bc%95%e6%93%8emr%e5%8f%af%e4%bb%a5%e7%94%a8%e4%bd%86%e8%bf%87%e6%97%b6">#</a>
+</h2>
+<ul>
+<li><a href="https://blog.csdn.net/cc__cc___/article/details/134690366">https://blog.csdn.net/cc__cc___/article/details/134690366</a></li>
+<li><a href="https://mirrors.aliyun.com/apache/tez/0.10.4/apache-tez-0.10.4-bin.tar.gz">https://mirrors.aliyun.com/apache/tez/0.10.4/apache-tez-0.10.4-bin.tar.gz</a></li>
+</ul>
 </article>
  
       
@@ -821,8 +813,11 @@ theme = &#39;hugo-book-10&#39;
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#演示">演示</a></li>
-    <li><a href="#安装">安装</a></li>
+    <li><a href="#下载安装">下载安装</a></li>
+    <li><a href="#使用mysql">使用MySQL</a></li>
+    <li><a href="#使用derby">使用Derby</a></li>
+    <li><a href="#测试">测试</a></li>
+    <li><a href="#tez-引擎官方推荐的引擎mr可以用但过时">tez 引擎(官方推荐的引擎,MR可以用但过时)</a></li>
   </ul>
 </nav>
 

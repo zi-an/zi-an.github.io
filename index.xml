@@ -24,9 +24,9 @@
     </item>
     <item>
       <title>Hadoop 3.4.1 单机版</title>
-      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop-singlecluster/</link>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-singlecluster/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop-singlecluster/</guid>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-singlecluster/</guid>
       <description>Hadoop 3.4.1 单机版 # https://www.runoob.com/w3cnote/hadoop-tutorial.html https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html 目前JDK11能正常使用,JDK17网页无法使用上传下载 root操作 # export HADOOP_VERSION=3.4.1 wget https://dlcdn.apache.org/hadoop/common/hadoop-${HADOOP_VERSION}/hadoop-${HADOOP_VERSION}.tar.gz sed -i &amp;#34;s|bookworm-updates|bookworm-updates bullseye|g&amp;#34; /etc/apt/sources.list.d/debian.sources apt update &amp;amp;&amp;amp; apt install openjdk-11-jdk-headless -y sed -i &amp;#39;$aexport HADOOP_VERSION=\$HADOOP_VERSION&amp;#39; /etc/profile sed -i &amp;#39;$aexport JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64&amp;#39; /etc/profile sed -i &amp;#39;$aexport HADOOP_HOME=/opt/hadoop&amp;#39; /etc/profile sed -i &amp;#39;$aPATH=\$PATH:\$JAVA_HOME/bin/:\$HADOOP_HOME/bin:\$HADOOP_HOME/sbin&amp;#39; /etc/profile sudo useradd -ms/bin/bash -k/etc/skel/ hadoop sudo usermod -aG sudo hadoop echo hadoop:. | chpasswd tar -zxvf hadoop-${HADOOP_VERSION}.tar.gz -C /opt/ --transform=&amp;#34;s|hadoop-${HADOOP_VERSION}|hadoop|g&amp;#34; rm hadoop-${HADOOP_VERSION}.tar.gz sed -i &amp;#34;1 i JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64&amp;#34; /opt/hadoop/etc/hadoop/hadoop-env.</description>
     </item>
     <item>
@@ -38,16 +38,16 @@
     </item>
     <item>
       <title>Hadoop 3.4.1 集群版</title>
-      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop-clustersetup/</link>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-clustersetup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop-clustersetup/</guid>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-clustersetup/</guid>
       <description>Hadoop 3.4.1 集群版之HDFS # https://www.runoob.com/w3cnote/hadoop-tutorial.html&#xA;root操作(建议docker打包) # sed -i &amp;#34;s|bookworm-updates|bookworm-updates bullseye|g&amp;#34; /etc/apt/sources.list.d/debian.sources apt update &amp;amp;&amp;amp; apt install -y openjdk-11-jdk sudo apt install openjdk-11-jdk-headless -y sed -i &amp;#39;$aPATH=\$PATH:/usr/games:/opt/hadoop/bin:/opt/hadoop/sbin&amp;#39; /etc/profile sed -i &amp;#39;$aexport JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/&amp;#39; /etc/profile sed -i &amp;#39;$aexport HADOOP_HOME=/opt/hadoop/&amp;#39; /etc/profile source /etc/profile sudo useradd -ms/bin/bash -k/etc/skel/ hadoop sudo usermod -aG sudo hadoop echo hadoop:. | chpasswd cd /opt wget https://dlcdn.apache.org/hadoop/common/hadoop/hadoop.tar.gz tar -zxvf hadoop.tar.gz sed -i &amp;#34;1 i JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64&amp;#34; /opt/hadoop/etc/hadoop/hadoop-env.sh mv /opt/hadoop.tar.gz /opt/hadoop find /opt/hadoop/ -name *cmd -delete mkdir /opt/hadoop/data chown hadoop /opt -R 免登录 # 每台机器都要执行,此密钥仅作为示例ssh-keygen -t rsa -b 1024 mkdir ~/.</description>
     </item>
     <item>
       <title>Hadoop 3.4.1 运维篇</title>
-      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop-%E8%BF%90%E7%BB%B4%E7%AF%87/</link>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%BF%90%E7%BB%B4%E7%AF%87/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop-%E8%BF%90%E7%BB%B4%E7%AF%87/</guid>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%BF%90%E7%BB%B4%E7%AF%87/</guid>
       <description>hadoop 3.4.1 运维篇 # 块损坏与丢失 # 损坏或丢失会进入安全模式 hdfs dfsadmin -safemode get&#x9;#查看安全模式状态 hdfs dfsadmin -safemode enter&#x9;#进入安全模式状态 hdfs dfsadmin -safemode leave&#x9;#离开安全模式状态 hdfs dfsadmin -safemode wait&#x9;#等待安全模式状态 hadoop fsck&#x9;#检查时候存在丢失或者损坏 hdfs fsck / -delete&#x9;#删除问题文件,在获得问题的解决办法前不建议使用 测试数据 # 写入100个128M的数据 for x in {1..100};do dd if=/dev/random of=$RANDOM bs=1M count=128;done hadoop fs -put * /4m 查找文件 # find /opt/ -mmin -30 find /opt/ -exec touch -ht 197001010000.00 {} \; rm /opt/data/* /opt/hadoop-3.4.1/logs/* -rf find /opt/ -name *meta 空间管理 # 只分配1G能启动,但存储不了文件 The volume with the most available space (=950 190 080 B) is less than the block size (=134 217 728 B) sudo mkdir /home/hadoop/space/ -p sudo dd if=/dev/zero of=/home/hadoop/space/hadoop0 bs=1G count=2 sudo dd if=/dev/zero of=/home/hadoop/space/hadoop1 bs=1G count=2 sudo dd if=/dev/zero of=/home/hadoop/space/hadoop2 bs=1G count=2 sudo dd if=/dev/zero of=/home/hadoop/space/hadoop3 bs=1G count=2 sudo losetup /dev/loop0 /home/hadoop/space/hadoop0 sudo losetup /dev/loop1 /home/hadoop/space/hadoop1 sudo losetup /dev/loop2 /home/hadoop/space/hadoop2 sudo losetup /dev/loop3 /home/hadoop/space/hadoop3 sudo mkfs.</description>
     </item>
     <item>
@@ -129,17 +129,17 @@
     </item>
     <item>
       <title></title>
-      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop-%E8%AE%A1%E7%AE%97%E7%AF%87/</link>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%AE%A1%E7%AE%97%E7%AF%87/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop-%E8%AE%A1%E7%AE%97%E7%AF%87/</guid>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%AE%A1%E7%AE%97%E7%AF%87/</guid>
       <description>hadoop计算篇 # 源码(内有WordCount)&#xA;3.4.1文档 备用&#xA;启动示例 # hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.4.1.jar wordcount /1.csv `date +%m%d-%H%M` 源码编译 # WordCount.java hadoop com.sun.tools.javac.Main WordCount.java jar cf wc.jar WordCount*.class hadoop jar wc.jar WordCount /1.csv `date +%m%d-%H%M` # https://files.pilookup.com/pi/1-100000000.zip hadoop com.sun.tools.javac.Main WordCount.java jar cf wc.jar WordCount*.class hadoop jar wc.jar WordCount /1-100000000.txt `date +%m%d-%H%M` sed -i &amp;ldquo;16 i yarn.nodemanager.resource.memory-mb1024&amp;rdquo; /opt/hadoop-3.4.1/etc/hadoop/yarn-site.xml&#xA;sed -i &amp;ldquo;16 i yarn.nodemanager.resource.cpu-vcores1&amp;rdquo; /opt/hadoop-3.4.1/etc/hadoop/yarn-site.xml</description>
     </item>
     <item>
       <title></title>
-      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hive/</link>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hive4.0.1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hive/</guid>
-      <description>hive4.0.1 # 官方镜像中 hive4.0.1 匹配 hadoop3.3.6 不要使用root或者hadoop用户 驱动 https://hive.apache.org/docs/latest/manual-installation_283118363/ https://mirrors.aliyun.com/apache/tez/0.10.4/apache-tez-0.10.4-bin.tar.gz cp hive-default.xml.template hive-site.xml sed -i &amp;#34;s|jdbc:derby:;databaseName=metastore_db;create=true|jdbc:mysql://ali.mm:3306/zian|g&amp;#34; /opt/hive/conf/hive-site.xml sed -i &amp;#34;s|org.apache.derby.jdbc.EmbeddedDriver|com.mysql.jdbc.Driver|g&amp;#34; /opt/hive/conf/hive-site.xml sed -i &amp;#34;s|APP|zian|g&amp;#34; /opt/hive/conf/hive-site.xml sed -i &amp;#34;s|mine&amp;lt;|zian&amp;lt;|g&amp;#34; /opt/hive/conf/hive-site.xml &amp;lt;property&amp;gt;&amp;lt;name&amp;gt;hadoop.proxyuser.hadoop.hosts&amp;lt;/name&amp;gt;&amp;lt;value&amp;gt;*&amp;lt;/value&amp;gt;&amp;lt;/property&amp;gt; &amp;lt;property&amp;gt;&amp;lt;name&amp;gt;hadoop.proxyuser.hadoop.groups&amp;lt;/name&amp;gt;&amp;lt;value&amp;gt;*&amp;lt;/value&amp;gt;&amp;lt;/property&amp;gt; wget https://mirrors.aliyun.com/apache/hive/hive-4.0.1/apache-hive-4.0.1-bin.tar.gz tar -zxvf apache-hive-4.0.1-bin.tar.gz mv apache-hive-4.0.1-bin hive mv hive /opt/ sudo sed -i &amp;#39;$aexport HIVE_HOME=/opt/hive&amp;#39; /etc/profile sudo sed -i &amp;#39;$aPATH=\$PATH:\$HIVE_HOME/bin/&amp;#39; /etc/profile hadoop fs -mkdir /tmp hadoop fs -mkdir -p /user/hive/ hadoop fs -chmod g+w /tmp hadoop fs -chmod g+w /user/hive/ schematool -dbType derby -initSchema hiveserver2 测试 # 默认日志 beeline -u &amp;#39;jdbc:hive2://x.</description>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hive4.0.1/</guid>
+      <description>hive4.0.1安装部署 # 目前hive4.0.1+hadoop3.4.1+jdk11.0.24,正常使用 多注意日志中关于用户权限的问题 官方镜像中 hive4.0.1 匹配 hadoop3.3.6 https://hive.apache.org/docs/latest/manual-installation_283118363/ 下载安装 # hadoop的鉴权+文件权限要注意 sed -i &amp;#34;20 i &amp;lt;property&amp;gt;&amp;lt;name&amp;gt;hadoop.proxyuser.hadoop.hosts&amp;lt;/name&amp;gt;&amp;lt;value&amp;gt;*&amp;lt;/value&amp;gt;&amp;lt;/property&amp;gt;&amp;#34; ${HADOOP_HOME}/etc/hadoop/core-site.xml sed -i &amp;#34;20 i &amp;lt;property&amp;gt;&amp;lt;name&amp;gt;hadoop.proxyuser.hadoop.groups&amp;lt;/name&amp;gt;&amp;lt;value&amp;gt;*&amp;lt;/value&amp;gt;&amp;lt;/property&amp;gt;&amp;#34; ${HADOOP_HOME}/etc/hadoop/core-site.xml wget https://mirrors.aliyun.com/apache/hive/hive-4.0.1/apache-hive-4.0.1-bin.tar.gz tar -zxvf apache-hive-4.0.1-bin.tar.gz mv apache-hive-4.0.1-bin hive mv hive /opt/ sudo sed -i &amp;#39;$aexport HIVE_HOME=/opt/hive&amp;#39; /etc/profile sudo sed -i &amp;#39;$aPATH=\$PATH:\$HIVE_HOME/bin/&amp;#39; /etc/profile sudo sed -i &amp;#39;$aalias beelinehive=&amp;#34;beeline -u jdbc:hive2://127.0.0.1:10000/&amp;#34;&amp;#39; /etc/profile source /etc/profile hadoop fs -mkdir /tmp hadoop fs -mkdir -p /user/hive/ hadoop fs -chmod +rwx /tmp hadoop fs -chmod +w /user/hive/ 使用MySQL # host:ali.</description>
     </item>
     <item>
       <title></title>
@@ -154,6 +154,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E5%AE%B9%E5%99%A8%E8%B5%84%E6%96%99/</guid>
       <description>Docker相关 # FROM scratch&#xD;#debian12.x --force-rm&#xD;ADD rootfs.tar.xz /&#xD;ENV TZ=&amp;#39;CST-8&amp;#39; LANG=&amp;#39;zh_CN.UTF-8&amp;#39;&#xD;# 笔记本盒盖问题+apt清华源&#xD;# 安装openssh-server时要确认,使用echo管道&#xD;# 解决sshd时中文显示错误问题(apt安装语言包locales),bash下可以不用&#xD;# 中文汉化,通过find /etc -mtime -1找到dpkg-reconfigure locales的不同,确定是/etc/default/locale文件&#xD;# 添加docker用户不设密码&#xD;RUN echo &amp;#34;HandleLidSwitch=lock&amp;#34; &amp;gt;&amp;gt; /etc/systemd/logind.conf &amp;amp;&amp;amp;\&#xD;sed -i &amp;#34;s|deb.debian.org|mirrors.tuna.tsinghua.edu.cn|g&amp;#34; /etc/apt/sources.list.d/debian.sources &amp;amp;&amp;amp;\&#xD;apt update &amp;amp;&amp;amp;\&#xD;echo &amp;#39;y&amp;#39; | apt install -y bash-completion curl iproute2 iputils-ping locales net-tools openssh-server sudo vim-tiny wget &amp;amp;&amp;amp;\&#xD;mkdir /run/sshd &amp;amp;&amp;amp;\&#xD;apt clean &amp;amp;&amp;amp;\&#xD;echo &amp;#34;zh_CN.UTF-8 UTF-8&amp;#34; &amp;gt; /etc/locale.gen &amp;amp;&amp;amp;\&#xD;echo &amp;#34;LANG=zh_CN.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wget/</guid>
+      <description> wget使用 # 下载所有能遍历的目录及文件(爬虫) # wget -r -np -nH -R index.html http://127.0.0.1/&#xA;# </description>
     </item>
     <item>
       <title></title>
