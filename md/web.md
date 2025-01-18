@@ -2,9 +2,10 @@
 |-|-|-|-|-|
 |抖音|[安珀](https://live.douyin.com/356402078496)|[神黛](https://live.douyin.com/588307360871)|||
 |官方|[地图](https://guangdong.tianditu.gov.cn/)||||
-|刷机|[K30](https://xiaomirom.com/rom/redmi-k30-5g-redmi-k30i-5g-picasso-china-fastboot-recovery-rom/)|[K40S](https://xiaomirom.com/rom/redmi-k40s-munch-china-fastboot-recovery-rom/)|[K70E](https://xiaomirom.com/rom/redmi-k70e-poco-x6-pro-5g-duchamp-china-fastboot-recovery-rom/)|[配置](/web/?uri=/md/miui.md)|
+|刷机|[K30](https://xiaomirom.com/rom/redmi-k30-5g-redmi-k30i-5g-picasso-china-fastboot-recovery-rom/)|[K40S](https://xiaomirom.com/rom/redmi-k40s-munch-china-fastboot-recovery-rom/)|[K70E](https://xiaomirom.com/rom/redmi-k70e-poco-x6-pro-5g-duchamp-china-fastboot-recovery-rom/)||
+|手机|[配置](/web/?uri=/md/miui.md)|[游戏](/web/?uri=/md/game.md)||
 |应用|[火哥](https://www.firepx.com/)|[虎牙](https://www.firepx.com/app/android-huaya-google-play/)|[哔哩](https://www.firepx.com/app/bilibili-google-play-and-other-version/)|[影音](https://www.firepx.com/app/qqplayer-last-version/)|
-|小米|[测试](tel:*#*#64663#*#*)|[关5G](tel:*#*#54638#*#*)|[关Vol](tel:*#*#86583#*#*)|[电影](/web/?uri=/md/av.md)|
+|小米|[测试](tel:*#*#64663#*#*)|[关5G](tel:*#*#54638#*#*)|[关Vol](tel:*#*#86583#*#*)|[影视](/web/?uri=/md/av.md)|
 |影音|[追剧](https://m.zjuys.com/)|[短剧](https://www.duanjuwang.cc/)|[音乐](https://github.com/maotoumao/MusicFree/releases)|[音源](https://raw.niuma666bet.buzz/Huibq/keep-alive/master/Music_Free/myPlugins.json)|
 |短信|[推荐](https://onlinesim.io/zh)|[备用](https://www.yunjiema.top)|
 |联通|[客服](tel:10010)|[话费](sms:10010?body=hf)|[流量1](sms:10010?body=cxll)|[流量2](sms:10010?body=2082)|
@@ -26,4 +27,6 @@
 |服务|[210](http://210.mm)|[BT](http://208.mm)|[迅雷](http://209.mm)||
 |资源|[代理](http://211.mm/)|[PAC](http://10.0.0.5/json/.pac)|||
 
-
+---
+|200.mm|||
+|222.mm|||

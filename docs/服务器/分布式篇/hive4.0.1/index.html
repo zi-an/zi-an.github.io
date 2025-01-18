@@ -19,7 +19,7 @@
 <link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hive4.0.1/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.963e9013b67f7d9b21a802833d2b76dd809691c8dea477eb5728e2d4360a45e5.js" integrity="sha256-lj6QE7Z/fZshqAKDPSt23YCWkcjepHfrVyji1DYKReU=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.cc4d048d534f63ec005403d0d0321f7390f0824470087573668828f3c6462d72.js" integrity="sha256-zE0EjVNPY&#43;wAVAPQ0DIfc5DwgkRwCHVzZogo88ZGLXI=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -679,7 +679,7 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#下载安装">下载安装</a></li>
     <li><a href="#使用mysql">使用MySQL</a></li>
     <li><a href="#使用derby">使用Derby</a></li>
-    <li><a href="#测试">测试</a></li>
+    <li><a href="#hql">HQL</a></li>
     <li><a href="#tez-引擎官方推荐的引擎mr可以用但过时">tez 引擎(官方推荐的引擎,MR可以用但过时)</a></li>
   </ul>
 </nav>
@@ -749,24 +749,18 @@ nohup hiveserver2 &amp;
 </ul>
 <pre tabindex="0"><code>schematool -dbType derby -initSchema
 nohup hiveserver2 &amp;
-</code></pre><h2 id="测试">
-  测试
-  <a class="anchor" href="#%e6%b5%8b%e8%af%95">#</a>
-</h2>
-<ul>
-<li>默认日志位置 /tmp/启动的用户名/hive.log</li>
-<li>需要注意在日志中出现的文件权限问题</li>
-</ul>
-<pre tabindex="0"><code>
-CREATE TABLE IF NOT EXISTS testtable (id INT,name STRING);  
-insert into testtable VALUES (1,&#34;li&#34;),(2,&#34;xiang&#34;),(3,&#34;he&#34;);
-select * from testtable;
-</code></pre><ul>
+</code></pre><details ><summary>1亿数据生成代码</summary>
+  <div class="markdown-inner">
+    <ul>
 <li>导入csv文件</li>
 </ul>
-<details ><summary>1亿数据生成代码</summary>
-  <div class="markdown-inner">
-    <pre tabindex="0"><code>import org.apache.commons.codec.digest.DigestUtils;
+<pre tabindex="0"><code>CREATE TABLE IF NOT EXISTS md5 (id STRING,md5 STRING) 
+row format delimited fields terminated by &#39;,&#39; stored as textfile;
+load data inpath &#39;/md5.txt&#39; into table md5;
+</code></pre><ul>
+<li>生成代码</li>
+</ul>
+<pre tabindex="0"><code>import org.apache.commons.codec.digest.DigestUtils;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -798,9 +792,30 @@ public class MD5 {
   </div>
 </details>
 
-<pre tabindex="0"><code>CREATE TABLE IF NOT EXISTS md5 (id STRING,md5 STRING) 
-row format delimited fields terminated by &#39;,&#39; stored as textfile;
-load data inpath &#39;/md5.txt&#39; into table md5;
+<h2 id="hql">
+  HQL
+  <a class="anchor" href="#hql">#</a>
+</h2>
+<ul>
+<li>默认日志位置 /tmp/启动的用户名/hive.log</li>
+<li>需要注意在日志中出现的文件权限问题</li>
+</ul>
+<pre tabindex="0"><code>
+CREATE TABLE IF NOT EXISTS testtable (id INT,name STRING);  
+insert into testtable VALUES (1,&#34;li&#34;),(2,&#34;xiang&#34;),(3,&#34;he&#34;);
+select * from testtable;
+</code></pre><ul>
+<li>保存结果到本地磁盘local</li>
+</ul>
+<pre tabindex="0"><code>insert overwrite local directory &#34;/tmp/out/1&#34;
+row format delimited fields terminated by &#34;|&#34;
+select * from testtable;
+</code></pre><ul>
+<li>保存结果到hdfs(无local)</li>
+</ul>
+<pre tabindex="0"><code>insert overwrite directory &#34;/tmp/out/2&#34;
+row format delimited fields terminated by &#34;|&#34;
+select * from testtable;
 </code></pre><h2 id="tez-引擎官方推荐的引擎mr可以用但过时">
   tez 引擎(官方推荐的引擎,MR可以用但过时)
   <a class="anchor" href="#tez-%e5%bc%95%e6%93%8e%e5%ae%98%e6%96%b9%e6%8e%a8%e8%8d%90%e7%9a%84%e5%bc%95%e6%93%8emr%e5%8f%af%e4%bb%a5%e7%94%a8%e4%bd%86%e8%bf%87%e6%97%b6">#</a>
@@ -809,6 +824,40 @@ load data inpath &#39;/md5.txt&#39; into table md5;
 <li><a href="https://blog.csdn.net/cc__cc___/article/details/134690366">https://blog.csdn.net/cc__cc___/article/details/134690366</a></li>
 <li><a href="https://mirrors.aliyun.com/apache/tez/0.10.4/apache-tez-0.10.4-bin.tar.gz">https://mirrors.aliyun.com/apache/tez/0.10.4/apache-tez-0.10.4-bin.tar.gz</a></li>
 </ul>
+<pre tabindex="0"><code>wget https://mirrors.aliyun.com/apache/tez/0.10.4/apache-tez-0.10.4-bin.tar.gz
+tar -zxvf apache-tez-0.10.4-bin.tar.gz -C /opt/ --transform=&#34;s|apache-tez-0.10.4-bin|tez|g&#34;
+sudo sed -i &#39;$aexport TEZ_HOME=/opt/tez&#39; /etc/profile
+source /etc/profile
+</code></pre><pre tabindex="0"><code>cat &gt; $TEZ_HOME/conf/tez-site.xml &lt;&lt; EOF
+&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+&lt;configuration&gt;
+  &lt;!-- 指定在hdfs上的tez包文件 --&gt;
+  &lt;property&gt;
+    &lt;name&gt;tez.lib.uris&lt;/name&gt;
+    &lt;value&gt;hdfs://master:9000/user/tez/tez.tar.gz&lt;/value&gt;
+  &lt;/property&gt;
+&lt;/configuration&gt;
+EOF
+</code></pre><p><!-- raw HTML omitted --><!-- raw HTML omitted -->hive.execution.engine<!-- raw HTML omitted --><!-- raw HTML omitted -->tez<!-- raw HTML omitted --><!-- raw HTML omitted -->
+mapreduce.framework.name修改为yarn-tez</p>
+<p>mr修改为tez</p>
+<ul>
+<li>/opt/hive/conf/hive-site.xml
+sed -i &ldquo;s|<!-- raw HTML omitted -->mr<!-- raw HTML omitted -->|<!-- raw HTML omitted -->tez<!-- raw HTML omitted -->|g&rdquo; $HIVE_HOME/conf/hive-site.xml</li>
+</ul>
+<p>$TEZ_HOME/share/tez.tar.gz
+hadoop fs -mkdir /user/tez/ -p
+hadoop fs -put $TEZ_HOME/share/tez.tar.gz /user/tez</p>
+<p>sudo sed -i &lsquo;$aexport HADOOP_CLASSPATH=<code>hadoop classpath</code>&rsquo; /etc/profile
+sudo sed -i &lsquo;$aexport TEZ_CONF_DIR=$HADOOP_CONF_DIR&rsquo; /etc/profile
+sudo sed -i &lsquo;$aexport TEZ_JARS=$TEZ_HOME/<em>.jar:$TEZ_HOME/lib/</em>.jar&rsquo; /etc/profile
+sudo sed -i &lsquo;$aexport HADOOP_CLASSPATH=$TEZ_CONF_DIR:$TEZ_JARS:$HADOOP_CLASSPATH&rsquo; /etc/profile</p>
+<p><a href="https://blog.csdn.net/cc__cc___/article/details/134690366">https://blog.csdn.net/cc__cc___/article/details/134690366</a></p>
+<p>tez+hadoop
+<a href="https://blog.csdn.net/qq_38628046/article/details/124775470">https://blog.csdn.net/qq_38628046/article/details/124775470</a></p>
+<p>临时使用可在beeline执行
+set hive.execution.engine=tez;
+set hive.execution.engine=mr;</p>
 </article>
  
       
@@ -853,7 +902,7 @@ load data inpath &#39;/md5.txt&#39; into table md5;
     <li><a href="#下载安装">下载安装</a></li>
     <li><a href="#使用mysql">使用MySQL</a></li>
     <li><a href="#使用derby">使用Derby</a></li>
-    <li><a href="#测试">测试</a></li>
+    <li><a href="#hql">HQL</a></li>
     <li><a href="#tez-引擎官方推荐的引擎mr可以用但过时">tez 引擎(官方推荐的引擎,MR可以用但过时)</a></li>
   </ul>
 </nav>
