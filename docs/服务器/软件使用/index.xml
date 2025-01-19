@@ -8,6 +8,13 @@
     <language>zh</language>
     <atom:link href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>frp内网穿透</title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/</guid>
+      <description> FRP内网穿透 # https://github.com/fatedier/frp/ https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gz 服务端 # wget https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gz tar -zxvf frp_0.61.1_linux_amd64.tar.gz --transform=&amp;#34;s|frp_0.61.1_linux_amd64|frp|g&amp;#34; ./frp/frps -c ./frp/frps.toml 客户端 # 因服务端不在127.0.0.1,直接替换(未备案的域名可能被拦截无法访问,最好用IP) 测试 ssh ali.mm -p 6000 修改后缀.toml为.ini可以不输入参数 sed -i &amp;#39;s|serverAddr = &amp;#34;127.0.0.1&amp;#34;|serverAddr = &amp;#34;ali.mm&amp;#34;|g&amp;#39; ./frp/frpc.toml ./frp/frpc -c ./frp/frpc.toml 免费FRP # 免费网站https://freefrp.com/&#xA;frpc.toml 启动: #./frpc -c frpc.toml 网页 http://public.freefrp.org:59876 serverAddr = &amp;#34;public.freefrp.org&amp;#34; auth.token = &amp;#34;public.freefrp.com&amp;#34; serverPort = 8000 [[proxies]] name = &amp;#34;uzicjb&amp;#34; type = &amp;#34;tcp&amp;#34; localIP = &amp;#34;6.mm&amp;#34; localPort = 80 remotePort = 59876 </description>
+    </item>
+    <item>
       <title>goaccess日志分析</title>
       <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/goaccess/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
