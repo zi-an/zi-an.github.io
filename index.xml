@@ -10,24 +10,24 @@
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
-      <description> 系统安装 # 推荐使用LTSC,专业版需登录账号才能完成安装 </description>
-    </item>
-    <item>
-      <title>frp内网穿透</title>
       <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/</guid>
       <description> FRP内网穿透 # https://github.com/fatedier/frp/ https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gz 服务端 # wget https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gz tar -zxvf frp_0.61.1_linux_amd64.tar.gz --transform=&amp;#34;s|frp_0.61.1_linux_amd64|frp|g&amp;#34; ./frp/frps -c ./frp/frps.toml 客户端 # 因服务端不在127.0.0.1,直接替换(未备案的域名可能被拦截无法访问,最好用IP) 测试 ssh ali.mm -p 6000 修改后缀.toml为.ini可以不输入参数 sed -i &amp;#39;s|serverAddr = &amp;#34;127.0.0.1&amp;#34;|serverAddr = &amp;#34;ali.mm&amp;#34;|g&amp;#39; ./frp/frpc.toml ./frp/frpc -c ./frp/frpc.toml 免费FRP # 免费网站https://freefrp.com/&#xA;frpc.toml 启动: #./frpc -c frpc.toml 网页 http://public.freefrp.org:59876 serverAddr = &amp;#34;public.freefrp.org&amp;#34; auth.token = &amp;#34;public.freefrp.com&amp;#34; serverPort = 8000 [[proxies]] name = &amp;#34;uzicjb&amp;#34; type = &amp;#34;tcp&amp;#34; localIP = &amp;#34;6.mm&amp;#34; localPort = 80 remotePort = 59876 </description>
     </item>
     <item>
-      <title>goaccess日志分析</title>
+      <title></title>
       <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/goaccess/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/goaccess/</guid>
       <description> goaccess # 安装 # apt install -y goaccess sed -i &amp;#39;$a log-format COMBINED&amp;#39; /etc/goaccess/goaccess.conf 生成页面 # goaccess /var/log/nginx/access.log -o 1.html </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
+      <description> 系统安装 # 推荐使用LTSC,专业版需登录账号才能完成安装 </description>
     </item>
     <item>
       <title>Hadoop 3.4.1 单机版</title>
@@ -132,7 +132,7 @@
       <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/</guid>
-      <description> 镜像网站 # 镜像 清华 南科 阿里 华为 Debian 新× Apache Maven </description>
+      <description> 镜像网站 # 镜像 清华 南科 阿里 华为 Debian 新× Apache Maven github镜像: https://gh.llkk.cc/ https://github.akams.cn/ </description>
     </item>
     <item>
       <title></title>
@@ -161,6 +161,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E5%AE%B9%E5%99%A8%E8%B5%84%E6%96%99/</guid>
       <description>Docker相关 # FROM scratch&#xD;#debian12.x --force-rm&#xD;ADD rootfs.tar.xz /&#xD;ENV TZ=&amp;#39;CST-8&amp;#39; LANG=&amp;#39;zh_CN.UTF-8&amp;#39;&#xD;# 笔记本盒盖问题+apt清华源&#xD;# 安装openssh-server时要确认,使用echo管道&#xD;# 解决sshd时中文显示错误问题(apt安装语言包locales),bash下可以不用&#xD;# 中文汉化,通过find /etc -mtime -1找到dpkg-reconfigure locales的不同,确定是/etc/default/locale文件&#xD;# 添加docker用户不设密码&#xD;RUN echo &amp;#34;HandleLidSwitch=lock&amp;#34; &amp;gt;&amp;gt; /etc/systemd/logind.conf &amp;amp;&amp;amp;\&#xD;sed -i &amp;#34;s|deb.debian.org|mirrors.tuna.tsinghua.edu.cn|g&amp;#34; /etc/apt/sources.list.d/debian.sources &amp;amp;&amp;amp;\&#xD;apt update &amp;amp;&amp;amp;\&#xD;echo &amp;#39;y&amp;#39; | apt install -y bash-completion curl iproute2 iputils-ping locales net-tools openssh-server sudo vim-tiny wget &amp;amp;&amp;amp;\&#xD;mkdir /run/sshd &amp;amp;&amp;amp;\&#xD;apt clean &amp;amp;&amp;amp;\&#xD;echo &amp;#34;zh_CN.UTF-8 UTF-8&amp;#34; &amp;gt; /etc/locale.gen &amp;amp;&amp;amp;\&#xD;echo &amp;#34;LANG=zh_CN.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/</guid>
+      <description>ollama部署 # https://ollama.com/ 我的AI http://public.freefrp.org:11434 deepseek部署R1 # 本地部署纯属玩具 docker pull ollama/ollama ollama run deepseek-r1:1.5b 通义千问2.5 coder # 写代码专用 ollama run qwen2.5-coder:0.5b Docker docker安装 # 精简版的只能使用CPU,但是只有70m的镜像 docker pull alpine/ollama ollama: container_name: ollama hostname: ollama.service image: alpine/ollama tty: true ports: - &amp;#34;11434:11434&amp;#34; volumes: - /home/ollama/.ollama/:/root/.ollama/ environment: - OLLAMA_KEEP_ALIVE=-1 # ollama run qwen2.5-coder:0.5b Linux Linux安装 # 官方脚本(会检测驱动) 实际下载地址(https://github.com/ollama/ollama/releases/latest/download/ollama-linux-amd64.tgz) curl -fsSL https://ollama.com/install.sh | sh 后台启动 nohup ollama serve &amp;amp; Windows11 下载安装即可,默认服务自动打开 https://ollama.com/download/OllamaSetup.exe 远程使用 # 桌面端及移动端口: https://chatboxai.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/sysbench/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/sysbench/</guid>
+      <description>sysbench性能测试 # 帮助文档 # sysbench &amp;ndash;help Compiled-in tests: fileio - File I/O test cpu - CPU performance test memory - Memory functions speed test threads - Threads subsystem performance test mutex - Mutex performance test 测试开始 # apt install -y sysbench sysbench cpu run sysbench 测试结果 # root@zian:/home/nginx# sysbench cpu run sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3) Running the test with following options: Number of threads: 1 Initializing random number generator from current time Prime numbers limit: 10000 Initializing worker threads.</description>
     </item>
     <item>
       <title></title>
@@ -216,14 +230,14 @@
       <link>https://example.org/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E7%A1%AC%E7%9B%98%E5%88%86%E7%B1%BB/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E7%A1%AC%E7%9B%98%E5%88%86%E7%B1%BB/</guid>
-      <description> 硬盘分类 # 硬盘型号 容量 系统 备注 机械盘 500G FAT32 不可拆卸硬盘 机械盘 140G win7专业版 三星台式 机械盘 500G 神舟 郎科 64G LTSC2021 闪迪 16G 长城 16G 长城 8G Debian12.8 debian-12.8.0-amd64-DVD-1.iso版 浪潮 4G 预 笔记本用,台式机会识别出软驱无法使用 </description>
+      <description> 硬盘分类 # 硬盘型号 容量 系统 备注 机械盘 希捷500G exfat 数据盘 机械盘 三星500G exfat 数据盘 机械盘 三星250G Win7pro 三星台式系统盘 机械盘 500G 神舟 机械盘 140G win7专业版 郎科 64G LTSC2021 闪迪 16G 长城 16G 长城 8G Debian12.8 debian-12.8.0-amd64-DVD-1.iso版 浪潮 4G 预 笔记本用,台式机会识别出软驱无法使用 </description>
     </item>
     <item>
       <title></title>
       <link>https://example.org/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E8%AE%BE%E5%A4%87%E8%B5%84%E6%96%99/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E8%AE%BE%E5%A4%87%E8%B5%84%E6%96%99/</guid>
-      <description> 设备资料 # 台式机 # 三星 DM-Z250 win7x64英特尔驱动 win7x64网卡驱动 ESC 选择启动盘 F2 进入BIOS&#xA;笔记本 # 8852ae驱动 </description>
+      <description> 设备资料 # 台式机 # F2:进入BIOS ESC:选择启动盘 三星 DM-Z250 win7x64英特尔驱动 win7x64网卡驱动 笔记本 # 8852ae驱动 </description>
     </item>
     <item>
       <title></title>
@@ -244,7 +258,7 @@
       <link>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/</guid>
-      <description>服务器常用脚本 # 参考资料 https://github.com/fengyuhetao/shell&#xA;常用定时器 # 自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * /usr/powersave.sh&#xD;*/10 * * * * echo 3 &amp;gt; /proc/sys/vm/drop_caches&#xD;0 */2 * * * docker exec zian updategit powersave.sh # #!/bin/bash&#xD;logintime=`last docker --time-format iso | head -n1 | awk &amp;#39;{print $6}&amp;#39;`&#xD;#logintime=&amp;#34;2024-09-11T07:18:18+08:00&amp;#34;&#xD;if [ ${#logintime} -eq 6 ];then&#xD;echo &amp;#34;555&amp;#34; &amp;gt;&amp;gt; 555.log&#xD;else&#xD;logintime=`date -d $logintime +%s`&#xD;logintime=$(expr $logintime)&#xD;now=$(expr `date +%s`)&#xD;now=$(expr $now - $logintime)&#xD;if [ $now -gt 7200 ] ;then&#xD;systemctl suspend&#xD;fi&#xD;fi updategit # #!</description>
+      <description>服务器常用脚本 # 参考资料 https://github.com/fengyuhetao/shell&#xA;常用定时器 # 自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * /usr/powersave.sh&#xD;*/10 * * * * echo 3 &amp;gt; /proc/sys/vm/drop_caches&#xD;0 */2 * * * docker exec zian updategit powersave.sh # 让机械硬盘休眠 让系统休眠 #!/bin/bash&#xD;logintime=`last docker --time-format iso | head -n1 | awk &amp;#39;{print $6}&amp;#39;`&#xD;#logintime=&amp;#34;2024-09-11T07:18:18+08:00&amp;#34;&#xD;if [ ${#logintime} -eq 6 ];then&#xD;date&#xD;echo &amp;#34;docker there&amp;#34;&#xD;else&#xD;logintime=`date -d $logintime +%s`&#xD;logintime=$(expr $logintime)&#xD;now=$(expr `date +%s`)&#xD;now=$(expr $now - $logintime)&#xD;if [ $now -gt 7200 ] ;then&#xD;systemctl suspend&#xD;else&#xD;echo &amp;#34;docker leave&amp;#34; $now&#xD;fi&#xD;fi updategit # #!</description>
     </item>
     <item>
       <title></title>
@@ -259,6 +273,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/</guid>
       <description>计算圆周率 # 圆周率查询 https://www.pilookup.com/zh-cn/ 圆周率下载 https://www.pilookup.com/zh-cn/download.html 源代码 https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html 最大ftt值为536870912大约512M内存 使用FFT+AGM代码计算 # apt install gcc make -y&#xD;wget https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fftc6_src.tgz&#xD;tar -zxvf pi_fftc6_src.tgz&#xD;cd pi_fftc6/&#xD;sed -i &amp;#34;s|-fast|-Ofast|g&amp;#34; Makefile_64bit&#xD;sed -i &amp;#39;s|scanf(&amp;#34;%lg&amp;#34;, &amp;amp;x)|x=100000|g&amp;#39; pi_fftcw.c&#xD;make -f Makefile_64bit&#xD;nohup ./pi_cw &amp;amp;&#xD;cat pi.dat 四行代码求圆周率 # 资料 https://cs.uwaterloo.ca/~alopez-o/math-faq/mathtext/node12.html pi.c如下,执行 * gcc pi.c &amp;amp;&amp;amp; ./a.out * #include &amp;lt;stdio.h&amp;gt;&#xD;int a=10000,b,c=2800,d,e,f[2801],g;&#xD;void main(){&#xD;for(;b-c;)f[b++]=a/5;&#xD;for(;d=0,g=c*2;c-=14,printf(&amp;#34;%.4d&amp;#34;,e+d/a),e=d%a)for(b=c;d+=f[b]*a,&#xD;f[b]=d%--g,d/=g--,--b;d*=b);} 下载 # wget https://files.pilookup.com/pi/1-100000000.zip&#xD;wget https://files.pilookup.com/pi/100000001-200000000.zip&#xD;wget https://files.pilookup.com/pi/200000001-300000000.zip wget https://files.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE/</guid>
+      <description>域名配置 # 100-125 # 127.0.0.1 x.mm 120.76.158.149 ali.mm 127.0.0.1 update.miui.com 10.0.0.100 100.mm 10.0.0.101 101.mm 10.0.0.102 102.mm 10.0.0.103 103.mm 10.0.0.104 104.mm 10.0.0.105 105.mm 10.0.0.106 106.mm 10.0.0.107 107.mm 10.0.0.108 108.mm 10.0.0.109 109.mm 10.0.0.110 110.mm 10.0.0.111 111.mm 10.0.0.112 112.mm 10.0.0.113 113.mm 10.0.0.114 114.mm 10.0.0.115 115.mm 10.0.0.116 116.mm 10.0.0.117 117.mm 10.0.0.118 118.mm 10.0.0.119 119.mm 10.0.0.120 120.mm 200~225 # 10.0.0.200 200.mm 10.0.0.201 201.mm 10.0.0.202 202.mm 10.0.0.203 203.mm 10.0.0.204 204.mm 10.0.0.205 205.mm 10.0.0.206 206.mm 10.0.0.207 207.</description>
     </item>
   </channel>
 </rss>

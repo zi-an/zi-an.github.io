@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ollama部署 # https://ollama.com/ 我的AI http://public.freefrp.org:11434 deepseek部署R1 # 本地部署纯属玩具 docker pull ollama/ollama ollama run deepseek-r1:1.5b 通义千问2.5 coder # 写代码专用 ollama run qwen2.5-coder:0.5b Docker docker安装 # 精简版的只能使用CPU,但是只有70m的镜像 docker pull alpine/ollama ollama: container_name: ollama hostname: ollama.service image: alpine/ollama tty: true ports: - &#34;11434:11434&#34; volumes: - /home/ollama/.ollama/:/root/.ollama/ environment: - OLLAMA_KEEP_ALIVE=-1 # ollama run qwen2.5-coder:0.5b Linux Linux安装 # 官方脚本(会检测驱动) 实际下载地址(https://github.com/ollama/ollama/releases/latest/download/ollama-linux-amd64.tgz) curl -fsSL https://ollama.com/install.sh | sh 后台启动 nohup ollama serve &amp; Windows11 下载安装即可,默认服务自动打开 https://ollama.com/download/OllamaSetup.exe 远程使用 # 桌面端及移动端口: https://chatboxai.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="ollama部署 # https://ollama.com/ 我的AI http://public.freefrp.org:11434 deepseek部署R1 # 本地部署纯属玩具 docker pull ollama/ollama ollama run deepseek-r1:1.5b 通义千问2.5 coder # 写代码专用 ollama run qwen2.5-coder:0.5b Docker docker安装 # 精简版的只能使用CPU,但是只有70m的镜像 docker pull alpine/ollama ollama: container_name: ollama hostname: ollama.service image: alpine/ollama tty: true ports: - &#34;11434:11434&#34; volumes: - /home/ollama/.ollama/:/root/.ollama/ environment: - OLLAMA_KEEP_ALIVE=-1 # ollama run qwen2.5-coder:0.5b Linux Linux安装 # 官方脚本(会检测驱动) 实际下载地址(https://github.com/ollama/ollama/releases/latest/download/ollama-linux-amd64.tgz) curl -fsSL https://ollama.com/install.sh | sh 后台启动 nohup ollama serve &amp; Windows11 下载安装即可,默认服务自动打开 https://ollama.com/download/OllamaSetup.exe 远程使用 # 桌面端及移动端口: https://chatboxai." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/" /><meta property="article:section" content="docs" />
+
+
+<title>Ollama
+</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/">
+<link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/zh.search.min.26c659095f7a12c36c4b85a74f5b85158f5f818b64bb29a6d4320a078627e711.js" integrity="sha256-JsZZCV96EsNsS4WnT1uFFY9fgYtkuymm1DIKB4Yn5xE=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span></span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0488dc51fd99636dd6b4d238151c1db5" class="toggle" checked />
+    <label for="section-0488dc51fd99636dd6b4d238151c1db5" class="flex justify-between">
+      <a role="button" class="">服务器</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-325b6b542a51d3d21ff88c5bf7887306" class="toggle"  />
+    <label for="section-325b6b542a51d3d21ff88c5bf7887306" class="flex justify-between">
+      <a role="button" class="">分布式篇</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-singlecluster/" class="">Hadoop 3.4.1 单机版</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-clustersetup/" class="">Hadoop 3.4.1 集群版</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%BF%90%E7%BB%B4%E7%AF%87/" class="">Hadoop 3.4.1 运维篇</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%AE%A1%E7%AE%97%E7%AF%87/" class="">Hadoop3.4.1 计算篇</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hive4.0.1/" class="">Hive4.0.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-52ca3c06231d11fcc8c0b70afaaf1f47" class="toggle"  />
+    <label for="section-52ca3c06231d11fcc8c0b70afaaf1f47" class="flex justify-between">
+      <a role="button" class="">容器相关</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E4%BB%A3%E7%90%86%E4%BD%BF%E7%94%A8/" class="">代理使用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E5%AE%B9%E5%99%A8%E8%B5%84%E6%96%99/" class="">容器资料</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1c94fe179191121debb232d029fa7ab0" class="toggle" checked />
+    <label for="section-1c94fe179191121debb232d029fa7ab0" class="flex justify-between">
+      <a role="button" class="">软件使用</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/" class="">Frp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/goaccess/" class="">Goaccess</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/" class="active">Ollama</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/sysbench/" class="">Sysbench</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wget/" class="">Wget</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/" class="">安装系统</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%A1%AC%E7%9B%98%E4%BD%BF%E7%94%A8/" class="">硬盘使用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%B0%83%E8%AF%95%E7%A8%8B%E5%BA%8F/" class="">调试程序</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/" class="">官方文档</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/" class="">镜像网站</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-69ea6a18acbd408b17a06556c8b882ae" class="toggle"  />
+    <label for="section-69ea6a18acbd408b17a06556c8b882ae" class="flex justify-between">
+      <a role="button" class="">笔记本</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b5b5750d75a81663c53d7ba3cb32c954" class="toggle"  />
+    <label for="section-b5b5750d75a81663c53d7ba3cb32c954" class="flex justify-between">
+      <a role="button" class="">windows 11</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/" class="">安装系统</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96/" class="">系统优化</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/wsl1/" class="">WSL1</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E6%89%A9%E5%B1%95%E5%91%BD%E4%BB%A4/" class="">扩展命令</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/" class="">虎牙推流</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD/" class="">资源下载</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/linux/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/" class="">系统推荐</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8275259d5746a9fb519d904ee673e025" class="toggle"  />
+    <label for="section-8275259d5746a9fb519d904ee673e025" class="flex justify-between">
+      <a role="button" class="">硬件库</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E6%97%A7%E7%89%88%E7%B3%BB%E7%BB%9F/" class="">旧版系统</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E7%A1%AC%E7%9B%98%E5%88%86%E7%B1%BB/" class="">硬盘分类</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E8%AE%BE%E5%A4%87%E8%B5%84%E6%96%99/" class="">设备资料</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4c5225b7eae8094cdab6239dd506ef7a" class="toggle"  />
+    <label for="section-4c5225b7eae8094cdab6239dd506ef7a" class="flex justify-between">
+      <a role="button" class="">代码库</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E4%B8%BB%E9%A2%98%E6%95%99%E7%A8%8B/" class="">主题教程</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%89%8D%E7%AB%AF%E8%B5%84%E6%BA%90/" class="">前端资源</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/" class="">执行脚本</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91/" class="">代码编译</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/" class="">圆周计算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE/" class="">域名配置</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        日记本
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Ollama</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#deepseek部署r1">deepseek部署R1</a></li>
+    <li><a href="#通义千问25-coder">通义千问2.5 coder</a></li>
+    <li><a href="#远程使用">远程使用</a></li>
+    <li><a href="#服务器上使用shell获取json结果">服务器上使用shell获取json结果</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="ollama部署">
+  ollama部署
+  <a class="anchor" href="#ollama%e9%83%a8%e7%bd%b2">#</a>
+</h1>
+<ul>
+<li><a href="https://ollama.com/">https://ollama.com/</a></li>
+<li>我的AI <a href="http://public.freefrp.org:11434">http://public.freefrp.org:11434</a></li>
+</ul>
+<h2 id="deepseek部署r1">
+  deepseek部署R1
+  <a class="anchor" href="#deepseek%e9%83%a8%e7%bd%b2r1">#</a>
+</h2>
+<ul>
+<li>本地部署纯属玩具</li>
+</ul>
+<pre tabindex="0"><code>docker pull ollama/ollama
+ollama run deepseek-r1:1.5b
+</code></pre><h2 id="通义千问25-coder">
+  通义千问2.5 coder
+  <a class="anchor" href="#%e9%80%9a%e4%b9%89%e5%8d%83%e9%97%ae25-coder">#</a>
+</h2>
+<ul>
+<li>写代码专用</li>
+</ul>
+<pre tabindex="0"><code>ollama run qwen2.5-coder:0.5b
+</code></pre>
+
+
+
+<div class="book-tabs"><input type="radio" class="toggle" name="tabs-TAB" id="tabs-TAB-0" checked="checked" />
+  <label for="tabs-TAB-0">Docker</label>
+  <div class="book-tabs-content markdown-inner"><h2 id="docker安装">
+  docker安装
+  <a class="anchor" href="#docker%e5%ae%89%e8%a3%85">#</a>
+</h2>
+<ul>
+<li>精简版的只能使用CPU,但是只有70m的镜像</li>
+</ul>
+<pre tabindex="0"><code>docker pull alpine/ollama
+</code></pre><pre tabindex="0"><code>  ollama:
+    container_name: ollama
+    hostname: ollama.service
+    image: alpine/ollama
+    tty: true
+    ports:
+      - &#34;11434:11434&#34;
+    volumes:
+      - /home/ollama/.ollama/:/root/.ollama/
+    environment:
+      - OLLAMA_KEEP_ALIVE=-1
+# ollama run qwen2.5-coder:0.5b
+</code></pre></div><input type="radio" class="toggle" name="tabs-TAB" id="tabs-TAB-1"  />
+  <label for="tabs-TAB-1">Linux</label>
+  <div class="book-tabs-content markdown-inner"><h2 id="linux安装">
+  Linux安装
+  <a class="anchor" href="#linux%e5%ae%89%e8%a3%85">#</a>
+</h2>
+<ul>
+<li>官方脚本(会检测驱动)</li>
+<li>实际下载地址(<a href="https://github.com/ollama/ollama/releases/latest/download/ollama-linux-amd64.tgz">https://github.com/ollama/ollama/releases/latest/download/ollama-linux-amd64.tgz</a>)</li>
+</ul>
+<pre tabindex="0"><code>curl -fsSL https://ollama.com/install.sh | sh
+</code></pre><ul>
+<li>后台启动</li>
+</ul>
+<pre tabindex="0"><code>nohup ollama serve &amp;
+</code></pre></div><input type="radio" class="toggle" name="tabs-TAB" id="tabs-TAB-2"  />
+  <label for="tabs-TAB-2">Windows11</label>
+  <div class="book-tabs-content markdown-inner"><ul>
+<li>下载安装即可,默认服务自动打开</li>
+<li><a href="https://ollama.com/download/OllamaSetup.exe">https://ollama.com/download/OllamaSetup.exe</a></li>
+</ul>
+</div></div>
+
+<h2 id="远程使用">
+  远程使用
+  <a class="anchor" href="#%e8%bf%9c%e7%a8%8b%e4%bd%bf%e7%94%a8">#</a>
+</h2>
+<ul>
+<li>桌面端及移动端口: <a href="https://chatboxai.app/zh">https://chatboxai.app/zh</a></li>
+<li>浏览器插件: <a href="https://github.com/n4ze3m/page-assist/releases">https://github.com/n4ze3m/page-assist/releases</a></li>
+</ul>
+<h2 id="服务器上使用shell获取json结果">
+  服务器上使用shell获取json结果
+  <a class="anchor" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%b8%8a%e4%bd%bf%e7%94%a8shell%e8%8e%b7%e5%8f%96json%e7%bb%93%e6%9e%9c">#</a>
+</h2>
+<ul>
+<li>chmod +x deepseek</li>
+<li>deepseek &ldquo;请问要提出什么问题&rdquo;</li>
+</ul>
+<pre tabindex="0"><code>#!/bin/bash
+
+nohup curl 127.1:11434/api/generate -d &#39;{&#34;model&#34;:&#34;deepseek-r1:1.5b&#34;,&#34;stream&#34;:false,&#34;prompt&#34;:&#34;&#39;$1&#39;&#34;}&#39; -o `date +%m%d-%H%M`${1}.txt &amp;
+</code></pre></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#deepseek部署r1">deepseek部署R1</a></li>
+    <li><a href="#通义千问25-coder">通义千问2.5 coder</a></li>
+    <li><a href="#远程使用">远程使用</a></li>
+    <li><a href="#服务器上使用shell获取json结果">服务器上使用shell获取json结果</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

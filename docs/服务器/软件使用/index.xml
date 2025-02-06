@@ -8,18 +8,32 @@
     <language>zh</language>
     <atom:link href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>frp内网穿透</title>
+      <title></title>
       <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/</guid>
       <description> FRP内网穿透 # https://github.com/fatedier/frp/ https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gz 服务端 # wget https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gz tar -zxvf frp_0.61.1_linux_amd64.tar.gz --transform=&amp;#34;s|frp_0.61.1_linux_amd64|frp|g&amp;#34; ./frp/frps -c ./frp/frps.toml 客户端 # 因服务端不在127.0.0.1,直接替换(未备案的域名可能被拦截无法访问,最好用IP) 测试 ssh ali.mm -p 6000 修改后缀.toml为.ini可以不输入参数 sed -i &amp;#39;s|serverAddr = &amp;#34;127.0.0.1&amp;#34;|serverAddr = &amp;#34;ali.mm&amp;#34;|g&amp;#39; ./frp/frpc.toml ./frp/frpc -c ./frp/frpc.toml 免费FRP # 免费网站https://freefrp.com/&#xA;frpc.toml 启动: #./frpc -c frpc.toml 网页 http://public.freefrp.org:59876 serverAddr = &amp;#34;public.freefrp.org&amp;#34; auth.token = &amp;#34;public.freefrp.com&amp;#34; serverPort = 8000 [[proxies]] name = &amp;#34;uzicjb&amp;#34; type = &amp;#34;tcp&amp;#34; localIP = &amp;#34;6.mm&amp;#34; localPort = 80 remotePort = 59876 </description>
     </item>
     <item>
-      <title>goaccess日志分析</title>
+      <title></title>
       <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/goaccess/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/goaccess/</guid>
       <description> goaccess # 安装 # apt install -y goaccess sed -i &amp;#39;$a log-format COMBINED&amp;#39; /etc/goaccess/goaccess.conf 生成页面 # goaccess /var/log/nginx/access.log -o 1.html </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/</guid>
+      <description>ollama部署 # https://ollama.com/ 我的AI http://public.freefrp.org:11434 deepseek部署R1 # 本地部署纯属玩具 docker pull ollama/ollama ollama run deepseek-r1:1.5b 通义千问2.5 coder # 写代码专用 ollama run qwen2.5-coder:0.5b Docker docker安装 # 精简版的只能使用CPU,但是只有70m的镜像 docker pull alpine/ollama ollama: container_name: ollama hostname: ollama.service image: alpine/ollama tty: true ports: - &amp;#34;11434:11434&amp;#34; volumes: - /home/ollama/.ollama/:/root/.ollama/ environment: - OLLAMA_KEEP_ALIVE=-1 # ollama run qwen2.5-coder:0.5b Linux Linux安装 # 官方脚本(会检测驱动) 实际下载地址(https://github.com/ollama/ollama/releases/latest/download/ollama-linux-amd64.tgz) curl -fsSL https://ollama.com/install.sh | sh 后台启动 nohup ollama serve &amp;amp; Windows11 下载安装即可,默认服务自动打开 https://ollama.com/download/OllamaSetup.exe 远程使用 # 桌面端及移动端口: https://chatboxai.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/sysbench/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/sysbench/</guid>
+      <description>sysbench性能测试 # 帮助文档 # sysbench &amp;ndash;help Compiled-in tests: fileio - File I/O test cpu - CPU performance test memory - Memory functions speed test threads - Threads subsystem performance test mutex - Mutex performance test 测试开始 # apt install -y sysbench sysbench cpu run sysbench 测试结果 # root@zian:/home/nginx# sysbench cpu run sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3) Running the test with following options: Number of threads: 1 Initializing random number generator from current time Prime numbers limit: 10000 Initializing worker threads.</description>
     </item>
     <item>
       <title></title>

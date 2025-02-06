@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="服务器常用脚本 # 参考资料 https://github.com/fengyuhetao/shell
-常用定时器 # 自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * /usr/powersave.sh*/10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches0 */2 * * * docker exec zian updategit powersave.sh # #!/bin/bashlogintime=`last docker --time-format iso | head -n1 | awk &#39;{print $6}&#39;`#logintime=&#34;2024-09-11T07:18:18&#43;08:00&#34;if [ ${#logintime} -eq 6 ];thenecho &#34;555&#34; &gt;&gt; 555.logelselogintime=`date -d $logintime &#43;%s`logintime=$(expr $logintime)now=$(expr `date &#43;%s`)now=$(expr $now - $logintime)if [ $now -gt 7200 ] ;thensystemctl suspendfifi updategit # #!">
+常用定时器 # 自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * /usr/powersave.sh*/10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches0 */2 * * * docker exec zian updategit powersave.sh # 让机械硬盘休眠 让系统休眠 #!/bin/bashlogintime=`last docker --time-format iso | head -n1 | awk &#39;{print $6}&#39;`#logintime=&#34;2024-09-11T07:18:18&#43;08:00&#34;if [ ${#logintime} -eq 6 ];thendateecho &#34;docker there&#34;elselogintime=`date -d $logintime &#43;%s`logintime=$(expr $logintime)now=$(expr `date &#43;%s`)now=$(expr $now - $logintime)if [ $now -gt 7200 ] ;thensystemctl suspendelseecho &#34;docker leave&#34; $nowfifi updategit # #!">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
 <meta property="og:description" content="服务器常用脚本 # 参考资料 https://github.com/fengyuhetao/shell
-常用定时器 # 自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * /usr/powersave.sh*/10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches0 */2 * * * docker exec zian updategit powersave.sh # #!/bin/bashlogintime=`last docker --time-format iso | head -n1 | awk &#39;{print $6}&#39;`#logintime=&#34;2024-09-11T07:18:18&#43;08:00&#34;if [ ${#logintime} -eq 6 ];thenecho &#34;555&#34; &gt;&gt; 555.logelselogintime=`date -d $logintime &#43;%s`logintime=$(expr $logintime)now=$(expr `date &#43;%s`)now=$(expr $now - $logintime)if [ $now -gt 7200 ] ;thensystemctl suspendfifi updategit # #!" />
+常用定时器 # 自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * /usr/powersave.sh*/10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches0 */2 * * * docker exec zian updategit powersave.sh # 让机械硬盘休眠 让系统休眠 #!/bin/bashlogintime=`last docker --time-format iso | head -n1 | awk &#39;{print $6}&#39;`#logintime=&#34;2024-09-11T07:18:18&#43;08:00&#34;if [ ${#logintime} -eq 6 ];thendateecho &#34;docker there&#34;elselogintime=`date -d $logintime &#43;%s`logintime=$(expr $logintime)now=$(expr `date &#43;%s`)now=$(expr $now - $logintime)if [ $now -gt 7200 ] ;thensystemctl suspendelseecho &#34;docker leave&#34; $nowfifi updategit # #!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/" /><meta property="article:section" content="docs" />
 
@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.4b70a7fe45a117f9c4a852b0f2a464827dc6f658acfd3da4ab66ead36d020e65.js" integrity="sha256-S3Cn/kWhF/nEqFKw8qRkgn3G9lis/T2kq2bq020CDmU=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.26c659095f7a12c36c4b85a74f5b85158f5f818b64bb29a6d4320a078627e711.js" integrity="sha256-JsZZCV96EsNsS4WnT1uFFY9fgYtkuymm1DIKB4Yn5xE=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -239,7 +239,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/" class="">frp内网穿透</a>
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/" class="">Frp</a>
   
 
         </li>
@@ -252,7 +252,33 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/goaccess/" class="">goaccess日志分析</a>
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/goaccess/" class="">Goaccess</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/" class="">Ollama</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/sysbench/" class="">Sysbench</a>
   
 
         </li>
@@ -622,6 +648,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE/" class="">域名配置</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -735,12 +774,17 @@ https://github.com/alex-shpak/hugo-book
   powersave.sh
   <a class="anchor" href="#powersavesh">#</a>
 </h3>
+<ul>
+<li>让机械硬盘休眠</li>
+<li>让系统休眠</li>
+</ul>
 <pre tabindex="0"><code>#!/bin/bash
 
 logintime=`last docker --time-format iso | head -n1 | awk &#39;{print $6}&#39;`
 #logintime=&#34;2024-09-11T07:18:18+08:00&#34;
 if [ ${#logintime} -eq 6 ];then
-    echo &#34;555&#34; &gt;&gt; 555.log
+    date
+    echo &#34;docker there&#34;
 else
         logintime=`date -d $logintime +%s`
         logintime=$(expr $logintime)
@@ -748,6 +792,8 @@ else
         now=$(expr $now - $logintime)
         if [ $now -gt 7200 ] ;then
                 systemctl suspend
+        else
+            echo &#34;docker leave&#34; $now
         fi
 fi
 </code></pre><h3 id="updategit">
