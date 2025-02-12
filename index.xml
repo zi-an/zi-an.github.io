@@ -181,7 +181,7 @@
       <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wget/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wget/</guid>
-      <description> wget使用 # 下载所有能遍历的目录及文件(爬虫) # wget -r -np -nH -R index.html http://127.0.0.1/&#xA;# </description>
+      <description>wget使用 # 下载所有能遍历的目录及文件(爬虫) # wget -r -np -nH -R index.html http://127.0.0.1/&#xA;参数解析 # # wget -h GNU Wget 1.21.3，非交互式的网络文件下载工具。 用法： wget [选项]... [URL]... 长选项所必须的参数在使用短选项时也是必须的。 启动： -V, --version 显示 Wget 的版本信息并退出 -h, --help 打印此帮助 -b, --background 启动后转入后台 -e, --execute=命令 运行一个“.wgetrc”风格的命令 日志和输入文件： -o, --output-file=文件 将日志信息写入 FILE -a, --append-output=文件 将信息添加至 FILE -d, --debug 打印大量调试信息 -q, --quiet 安静模式 (无信息输出) -v, --verbose 详尽的输出 (此为默认值) -nv, --no-verbose 关闭详尽输出，但不进入安静模式 --report-speed=类型 以 &amp;lt;类型&amp;gt; 报告带宽。类型可以是 bits -i, --input-file=文件 下载本地或外部 &amp;lt;文件&amp;gt; 中的 URL -F, --force-html 把输入文件当成 HTML 文件 -B, --base=URL 解析相对于 URL 的 HTML 输入文件链接 (-i -F) --config=文件 指定要使用的配置文件 --no-cookies 不读取任何配置文件 --rejected-log=文件 将拒绝 URL 的原因写入 &amp;lt;文件&amp;gt;。 下载： -t, --tries=数字 设置重试次数为 &amp;lt;数字&amp;gt; (0 代表无限制) --retry-connrefused 即使拒绝连接也是重试 --retry-on-http-error=ERRORS 提供以逗号分隔的列表，列出遇到时进行重试的 HTTP 错误 -O, --output-document=文件 将文档写入 FILE -nc, --no-clobber 不要下载已存在将被覆盖的文件 --no-netrc 不要尝试从 .</description>
     </item>
     <item>
       <title></title>

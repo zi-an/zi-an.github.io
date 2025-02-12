@@ -10,6 +10,7 @@
 |短信|[推荐](https://onlinesim.io/zh)|[备用](https://www.yunjiema.top)|
 |联通|[客服](tel:10010)|[话费](sms:10010?body=hf)|[流量1](sms:10010?body=cxll)|[流量2](sms:10010?body=2082)|
 |AI|[秘塔](https://metaso.cn)|[海螺](https://hailuoai.com)|[豆包](https://www.doubao.com)||
+|股价|[苹果](https://www.msn.cn/zh-cn/money/stockdetails/fi-a1mou2)|[小米](https://www.msn.cn/zh-cn/money/stockdetails/fi-bgnyp2)|[英伟达](https://www.msn.cn/zh-cn/money/stockdetails/fi-a1yv52)||
 
 ---
 
@@ -28,5 +29,3 @@
 |资源|[代理](http://211.mm/)|[PAC](http://10.0.0.5/json/.pac)|||
 
 ---
-|200.mm|||
-|222.mm|||
