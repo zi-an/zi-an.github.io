@@ -79,6 +79,8 @@
   </url><url>
     <loc>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E5%AE%B9%E5%99%A8%E8%B5%84%E6%96%99/</loc>
   </url><url>
+    <loc>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E7%A3%81%E7%9B%98%E6%93%8D%E4%BD%9C/</loc>
+  </url><url>
     <loc>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/</loc>
   </url><url>
     <loc>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/sysbench/</loc>

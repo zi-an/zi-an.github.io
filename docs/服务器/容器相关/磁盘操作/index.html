@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" 官方文档 # nginx配置 # cat &gt; /etc/nginx/sites-enabled/84.conf &lt;&lt;EOF server { listen 84; charset &#39;utf-8&#39;; location /json/{autoindex on;alias /var/www/docs;} } EOF 下载部署 # cd /tmp wget https://github.com/twbs/bootstrap/releases/download/v5.3.3/bootstrap-5.3.3-examples.zip unzip bootstrap-5.3.3-examples.zip mv bootstrap-5.3.3-examples /var/www/docs/bootstrap5.3.3 rm bootstrap-5.3.3-examples.zip cd /tmp wget https://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz tar -zxvf hadoop-3.4.1.tar.gz mv hadoop-3.4.1/share/doc/hadoop /var/www/docs/hadoop3.4.1 rm hadoop-3.4.1* -rf ">
+<meta name="description" content="Docker磁盘操作 # 磁盘占用 # # docker system df TYPE TOTAL ACTIVE SIZE RECLAIMABLE Images 13 6 10.01GB 4.703GB (46%) Containers 7 2 28.41GB 11.01GB (38%) Local Volumes 3 1 398.5kB 291.2kB (73%) Build Cache 15 0 0B 0B docker system df -v Images space usage: REPOSITORY TAG IMAGE ID CREATED SIZE SHARED SIZE UNIQUE SIZE CONTAINERS mariadb10.11 latest 40a2eb6e350c 4 weeks ago 837.9MB 473.4MB 364.5MB 1 mzz2017/v2raya latest d853d92ccbe4 2 months ago 135.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content=" 官方文档 # nginx配置 # cat &gt; /etc/nginx/sites-enabled/84.conf &lt;&lt;EOF server { listen 84; charset &#39;utf-8&#39;; location /json/{autoindex on;alias /var/www/docs;} } EOF 下载部署 # cd /tmp wget https://github.com/twbs/bootstrap/releases/download/v5.3.3/bootstrap-5.3.3-examples.zip unzip bootstrap-5.3.3-examples.zip mv bootstrap-5.3.3-examples /var/www/docs/bootstrap5.3.3 rm bootstrap-5.3.3-examples.zip cd /tmp wget https://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz tar -zxvf hadoop-3.4.1.tar.gz mv hadoop-3.4.1/share/doc/hadoop /var/www/docs/hadoop3.4.1 rm hadoop-3.4.1* -rf " />
+<meta property="og:description" content="Docker磁盘操作 # 磁盘占用 # # docker system df TYPE TOTAL ACTIVE SIZE RECLAIMABLE Images 13 6 10.01GB 4.703GB (46%) Containers 7 2 28.41GB 11.01GB (38%) Local Volumes 3 1 398.5kB 291.2kB (73%) Build Cache 15 0 0B 0B docker system df -v Images space usage: REPOSITORY TAG IMAGE ID CREATED SIZE SHARED SIZE UNIQUE SIZE CONTAINERS mariadb10.11 latest 40a2eb6e350c 4 weeks ago 837.9MB 473.4MB 364.5MB 1 mzz2017/v2raya latest d853d92ccbe4 2 months ago 135." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E7%A3%81%E7%9B%98%E6%93%8D%E4%BD%9C/" /><meta property="article:section" content="docs" />
 
 
-<title>官方文档
+<title>磁盘操作
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/">
+<link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E7%A3%81%E7%9B%98%E6%93%8D%E4%BD%9C/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/zh.search.min.f0a0d8f14c7dff62ae19874901ea731ede51fc0d6e65406b44170e8c6854ddd6.js" integrity="sha256-8KDY8Ux9/2KuGYdJAepzHt5R/A1uZUBrRBcOjGhU3dY=" crossorigin="anonymous"></script>
@@ -174,7 +174,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-52ca3c06231d11fcc8c0b70afaaf1f47" class="toggle"  />
+    <input type="checkbox" id="section-52ca3c06231d11fcc8c0b70afaaf1f47" class="toggle" checked />
     <label for="section-52ca3c06231d11fcc8c0b70afaaf1f47" class="flex justify-between">
       <a role="button" class="">容器相关</a>
     </label>
@@ -216,7 +216,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E7%A3%81%E7%9B%98%E6%93%8D%E4%BD%9C/" class="">磁盘操作</a>
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E7%A3%81%E7%9B%98%E6%93%8D%E4%BD%9C/" class="active">磁盘操作</a>
   
 
         </li>
@@ -359,7 +359,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/" class="active">官方文档</a>
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/" class="">官方文档</a>
   
 
         </li>
@@ -725,7 +725,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>官方文档</strong>
+  <strong>磁盘操作</strong>
 
   <label for="toc-control">
     
@@ -741,8 +741,8 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#nginx配置">nginx配置</a></li>
-    <li><a href="#下载部署">下载部署</a></li>
+    <li><a href="#磁盘占用">磁盘占用</a></li>
+    <li><a href="#磁盘回收">磁盘回收</a></li>
   </ul>
 </nav>
 
@@ -755,35 +755,60 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h1 id="官方文档">
-  官方文档
-  <a class="anchor" href="#%e5%ae%98%e6%96%b9%e6%96%87%e6%a1%a3">#</a>
+  <article class="markdown book-article"><h1 id="docker磁盘操作">
+  Docker磁盘操作
+  <a class="anchor" href="#docker%e7%a3%81%e7%9b%98%e6%93%8d%e4%bd%9c">#</a>
 </h1>
-<h2 id="nginx配置">
-  nginx配置
-  <a class="anchor" href="#nginx%e9%85%8d%e7%bd%ae">#</a>
+<h2 id="磁盘占用">
+  磁盘占用
+  <a class="anchor" href="#%e7%a3%81%e7%9b%98%e5%8d%a0%e7%94%a8">#</a>
 </h2>
-<pre tabindex="0"><code>cat &gt; /etc/nginx/sites-enabled/84.conf &lt;&lt;EOF
-server {
-listen 84;
-charset &#39;utf-8&#39;;
-location /json/{autoindex on;alias /var/www/docs;}
-}
-EOF
-</code></pre><h2 id="下载部署">
-  下载部署
-  <a class="anchor" href="#%e4%b8%8b%e8%bd%bd%e9%83%a8%e7%bd%b2">#</a>
+<pre tabindex="0"><code># docker system df
+TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
+Images          13        6         10.01GB   4.703GB (46%)
+Containers      7         2         28.41GB   11.01GB (38%)
+Local Volumes   3         1         398.5kB   291.2kB (73%)
+Build Cache     15        0         0B        0B
+</code></pre><pre tabindex="0"><code>docker system df -v
+Images space usage:
+
+REPOSITORY                 TAG       IMAGE ID       CREATED        SIZE      SHARED SIZE   UNIQUE SIZE   CONTAINERS
+mariadb10.11               latest    40a2eb6e350c   4 weeks ago    837.9MB   473.4MB       364.5MB       1
+mzz2017/v2raya             latest    d853d92ccbe4   2 months ago   135.1MB   0B            135.1MB       1
+debian12.x                 latest    6f7450a8a8c4   3 months ago   473.4MB   473.4MB       0B            1
+vlmcsd                     latest    2dc260eb11e2   3 months ago   42.14MB   0B            42.14MB       1
+linuxserver/transmission   latest    06a747fbae86   3 months ago   76.57MB   0B            76.57MB       1
+alpine/ollama              latest    0f688d4786f2   3 months ago   48.31MB   0B            48.31MB       1
+cnk3x/xunlei               latest    0451df588f92   5 months ago   105.9MB   0B            105.9MB       1
+
+Containers space usage:
+
+CONTAINER ID   IMAGE                      COMMAND                  LOCAL VOLUMES   SIZE      CREATED        STATUS        NAMES
+4c972c826ad6   debian12.x                 &#34;/bin/sh -c &#39;/usr/sb…&#34;   0               1.16GB    7 days ago     Up 4 days     test
+d7fc44b2c8b2   alpine/ollama              &#34;/usr/bin/ollama ser…&#34;   0               383B      7 days ago     Up 27 hours   ollama
+7602758a26e5   mariadb10.11               &#34;/bin/sh -c &#39;/mariad…&#34;   0               8B        4 weeks ago    Up 4 days     mariadb
+b4be867b4dd5   mzz2017/v2raya             &#34;v2raya&#34;                 0               159B      7 weeks ago    Up 4 days     v2raya
+43d4dc7234a8   linuxserver/transmission   &#34;/init&#34;                  1               23kB      3 months ago   Up 4 days     transmission
+2c1a1ddc830e   vlmcsd                     &#34;/binaries/Linux/int…&#34;   0               0B        3 months ago   Up 4 days     vlmcsd
+9be99a12bf4d   cnk3x/xunlei               &#34;/bin/xlp&#34;               0               161MB     5 months ago   Up 4 days     xunlei
+
+Local Volumes space usage:
+
+VOLUME NAME                                                        LINKS     SIZE
+6a7bdac3861185162370d16c7b0a2a7ca7f1b79202d0ad9e6fc765194a68a8b7   0         107.5kB
+9afce303b8c68add8d337413f9746097d7e2b71a99b9ee3b7aca31a60f0e07a6   0         173kB
+b753413220ef011d3148248d21ff36f60b6d936c1d1457b60b489adb00dccd3a   0         0B
+c1d6c0e6c453f5d7d192df68c9a478cbf3b24d7d1135215fa61f22b30bfa050f   0         309.5kB
+0d02fb39a972a26bb4c6a653abc77a48462bee2b3251cca53730b2932eb13d6b   1         658.6kB
+58b166ef59902945d90c90ac01458bb0a0d3e159a12a751fa31401e6cca5835d   0         646.5kB
+59d0c895f025d80d829cc4cb0c01c04a5ac5be4e310efd657023443df10e5595   0         175.4kB
+</code></pre><h2 id="磁盘回收">
+  磁盘回收
+  <a class="anchor" href="#%e7%a3%81%e7%9b%98%e5%9b%9e%e6%94%b6">#</a>
 </h2>
-<pre tabindex="0"><code>cd /tmp
-wget https://github.com/twbs/bootstrap/releases/download/v5.3.3/bootstrap-5.3.3-examples.zip
-unzip bootstrap-5.3.3-examples.zip
-mv bootstrap-5.3.3-examples /var/www/docs/bootstrap5.3.3
-rm bootstrap-5.3.3-examples.zip
-</code></pre><pre tabindex="0"><code>cd /tmp
-wget https://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz
-tar -zxvf hadoop-3.4.1.tar.gz
-mv hadoop-3.4.1/share/doc/hadoop /var/www/docs/hadoop3.4.1
-rm hadoop-3.4.1* -rf
+<pre tabindex="0"><code># docker builder prune
+WARNING! This will remove all dangling build cache. Are you sure you want to continue? [y/N] y
+Total reclaimed space: 0B
 </code></pre></article>
  
       
@@ -825,8 +850,8 @@ rm hadoop-3.4.1* -rf
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#nginx配置">nginx配置</a></li>
-    <li><a href="#下载部署">下载部署</a></li>
+    <li><a href="#磁盘占用">磁盘占用</a></li>
+    <li><a href="#磁盘回收">磁盘回收</a></li>
   </ul>
 </nav>
 
