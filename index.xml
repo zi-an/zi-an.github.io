@@ -27,7 +27,7 @@
       <link>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/</guid>
-      <description> 系统推荐 # WIN7_2011_X64.iso LTSC_2021_X64.iso LTSC_2024_X64.iso U盘启动 安全问题 系统版本 下载地址 备注 WIN7 WIN7_2011_X64.iso 这是专业版;旗舰版不能用kms命令激活 WIN10 LTSC_2021_X64.iso WIN11 LTSC_2024_X64.iso 普通版需要登录才能进系统 #以管理员权限运行&#xD;slmgr /skms kms.03k.org&#xD;slmgr /ato 输入法 # 微软输入法 ctrl+space 切换中英 ctrl+ 。 切换标点 简体/繁体关闭 模糊音打开 浏览器缓存 # 二选其一,同时会有一个不生效 Mklink /d &amp;#34;C:\Users\docker\AppData\Local\Google\Chrome\User Data\Default\Cache&amp;#34; &amp;#34;Z:\Temp&amp;#34;&#xD;Mklink /d &amp;#34;C:\Users\docker\AppData\Local\Microsoft\Edge\User Data\Default\Cache&amp;#34; &amp;#34;Z:\Temp&amp;#34; </description>
+      <description> 系统推荐 # WIN7_2011_X64.iso LTSC_2021_X64.iso LTSC_2024_X64.iso U盘启动 安全问题 系统版本 下载地址 备注 WIN7 WIN7_2011_X64.iso 这是专业版;旗舰版不能用kms命令激活 WIN10 LTSC_2021_X64.iso WIN11 LTSC_2024_X64.iso 普通版需要登录才能进系统 #以管理员权限运行&#xD;slmgr /skms kms.03k.org&#xD;slmgr /ato 输入法 # 微软输入法 ctrl+space 切换中英 ctrl+ 。 切换标点 简体/繁体关闭 模糊音打开 浏览器缓存 # 二选其一,同时会有一个不生效 Mklink /d &amp;#34;C:\Users\docker\AppData\Local\Google\Chrome\User Data\Default\Cache&amp;#34; &amp;#34;Z:\Temp&amp;#34;&#xD;Mklink /d &amp;#34;C:\Users\docker\AppData\Local\Microsoft\Edge\User Data\Default\Cache&amp;#34; &amp;#34;Z:\Temp&amp;#34; 注册表优化 # 恢复右键 取消XBOX录屏注册表 reg.exe add &amp;#34;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32&amp;#34; /f /ve&#xD;reg add HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR /f /t REG_DWORD /v &amp;#34;AppCaptureEnabled&amp;#34; /d 0 </description>
     </item>
     <item>
       <title>Hadoop 3.4.1 单机版</title>
@@ -132,7 +132,7 @@
       <link>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/</guid>
-      <description> 镜像网站 # 镜像 清华 南科 阿里 华为 Debian 新× Apache Maven github镜像: https://gh.llkk.cc/ https://github.akams.cn/ </description>
+      <description> 镜像网站 # 镜像 清华 南科 阿里 华为 Debian 新× Apache Maven https://github.akams.cn/ github镜像: https://gh.llkk.cc/ https://github.akams.cn/ </description>
     </item>
     <item>
       <title></title>
@@ -223,7 +223,7 @@
       <link>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD/</guid>
-      <description>资源下载 # win11x64&#xA;开发软件 # webstorm(非商业免费) idea goland WebStorm 2024.2.4 及更新版本才可以获取非商业许可证。 非商业订阅的期限为一年，一年后将自动续订</description>
+      <description>资源下载 # win11x64&#xA;开发软件 # webstorm(非商业免费) idea goland WebStorm 2024.2.4 及更新版本才可以获取非商业许可证。 非商业订阅的期限为一年，一年后将自动续订&#xA;环境变量 # IDEA_VM_OPTIONS D:\tools\jetbra\vmoptions\idea.vmoptions GOLAND_VM_OPTIONS D:\tools\jetbra\vmoptions\goland.vmoptions</description>
     </item>
     <item>
       <title></title>
