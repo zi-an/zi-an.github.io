@@ -9,17 +9,17 @@
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Hadoop 3.4.1 运维篇" />
 <meta property="og:description" content="hadoop 3.4.1 运维篇 # 块损坏与丢失 # 损坏或丢失会进入安全模式 hdfs dfsadmin -safemode get	#查看安全模式状态 hdfs dfsadmin -safemode enter	#进入安全模式状态 hdfs dfsadmin -safemode leave	#离开安全模式状态 hdfs dfsadmin -safemode wait	#等待安全模式状态 hadoop fsck	#检查时候存在丢失或者损坏 hdfs fsck / -delete	#删除问题文件,在获得问题的解决办法前不建议使用 测试数据 # 写入100个128M的数据 for x in {1..100};do dd if=/dev/random of=$RANDOM bs=1M count=128;done hadoop fs -put * /4m 查找文件 # find /opt/ -mmin -30 find /opt/ -exec touch -ht 197001010000.00 {} \; rm /opt/data/* /opt/hadoop-3.4.1/logs/* -rf find /opt/ -name *meta 空间管理 # 只分配1G能启动,但存储不了文件 The volume with the most available space (=950 190 080 B) is less than the block size (=134 217 728 B) sudo mkdir /home/hadoop/space/ -p sudo dd if=/dev/zero of=/home/hadoop/space/hadoop0 bs=1G count=2 sudo dd if=/dev/zero of=/home/hadoop/space/hadoop1 bs=1G count=2 sudo dd if=/dev/zero of=/home/hadoop/space/hadoop2 bs=1G count=2 sudo dd if=/dev/zero of=/home/hadoop/space/hadoop3 bs=1G count=2 sudo losetup /dev/loop0 /home/hadoop/space/hadoop0 sudo losetup /dev/loop1 /home/hadoop/space/hadoop1 sudo losetup /dev/loop2 /home/hadoop/space/hadoop2 sudo losetup /dev/loop3 /home/hadoop/space/hadoop3 sudo mkfs." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%BF%90%E7%BB%B4%E7%AF%87/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%BF%90%E7%BB%B4%E7%AF%87/" /><meta property="article:section" content="docs" />
 
 
 <title>Hadoop 3.4.1 运维篇
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%BF%90%E7%BB%B4%E7%AF%87/">
+<link rel="canonical" href="https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%BF%90%E7%BB%B4%E7%AF%87/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.f0a0d8f14c7dff62ae19874901ea731ede51fc0d6e65406b44170e8c6854ddd6.js" integrity="sha256-8KDY8Ux9/2KuGYdJAepzHt5R/A1uZUBrRBcOjGhU3dY=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.7a7a078492f4dcac1441ffd025ce0db14da4d215cfee4796a39b7c7e4ff28354.js" integrity="sha256-enoHhJL03KwUQf/QJc4NsU2k0hXP7keWo5t8fk/yg1Q=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -422,7 +422,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/" class="">安装系统</a>
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/" class="">系统推荐</a>
   
 
         </li>
@@ -464,6 +464,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E6%89%A9%E5%B1%95%E5%91%BD%E4%BB%A4/" class="">扩展命令</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/" class="">磁盘管理</a>
   
 
         </li>

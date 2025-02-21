@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" 服务器安装 # 清华镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 初始化安装 # echo &#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware&#34; | sudo tee /etc/apt/sources.listwget ali.mm/debian/config.tgzsudo tar -zxvf config.tgz -C /rm config.tgz 容器优化 # cat &gt; proxy.conf &lt;&lt; EOF[Service]Environment=&#34;HTTP_PROXY=http://x:x@127.1:10086&#34;Environment=&#34;HTTPS_PROXY=http://x:x@127.1:10086&#34;Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cn&#34;EOFsudo mkdir /etc/systemd/system/docker.service.dsudo mv proxy.conf /etc/systemd/system/docker.service.dsudo apt install -y docker.io 网络优化 # ">
+<meta name="description" content=" 系统推荐 # WIN7_2011_X64.iso LTSC_2021_X64.iso LTSC_2024_X64.iso U盘启动 安全问题 系统版本 下载地址 备注 WIN7 WIN7_2011_X64.iso 这是专业版;旗舰版不能用kms命令激活 WIN10 LTSC_2021_X64.iso WIN11 LTSC_2024_X64.iso 普通版需要登录才能进系统 #以管理员权限运行slmgr /skms kms.03k.orgslmgr /ato 输入法 # 微软输入法 ctrl&#43;space 切换中英 ctrl&#43; 。 切换标点 简体/繁体关闭 模糊音打开 浏览器缓存 # 二选其一,同时会有一个不生效 Mklink /d &#34;C:\Users\docker\AppData\Local\Google\Chrome\User Data\Default\Cache&#34; &#34;Z:\Temp&#34;Mklink /d &#34;C:\Users\docker\AppData\Local\Microsoft\Edge\User Data\Default\Cache&#34; &#34;Z:\Temp&#34; ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content=" 服务器安装 # 清华镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 初始化安装 # echo &#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware&#34; | sudo tee /etc/apt/sources.listwget ali.mm/debian/config.tgzsudo tar -zxvf config.tgz -C /rm config.tgz 容器优化 # cat &gt; proxy.conf &lt;&lt; EOF[Service]Environment=&#34;HTTP_PROXY=http://x:x@127.1:10086&#34;Environment=&#34;HTTPS_PROXY=http://x:x@127.1:10086&#34;Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cn&#34;EOFsudo mkdir /etc/systemd/system/docker.service.dsudo mv proxy.conf /etc/systemd/system/docker.service.dsudo apt install -y docker.io 网络优化 # " />
+<meta property="og:description" content=" 系统推荐 # WIN7_2011_X64.iso LTSC_2021_X64.iso LTSC_2024_X64.iso U盘启动 安全问题 系统版本 下载地址 备注 WIN7 WIN7_2011_X64.iso 这是专业版;旗舰版不能用kms命令激活 WIN10 LTSC_2021_X64.iso WIN11 LTSC_2024_X64.iso 普通版需要登录才能进系统 #以管理员权限运行slmgr /skms kms.03k.orgslmgr /ato 输入法 # 微软输入法 ctrl&#43;space 切换中英 ctrl&#43; 。 切换标点 简体/繁体关闭 模糊音打开 浏览器缓存 # 二选其一,同时会有一个不生效 Mklink /d &#34;C:\Users\docker\AppData\Local\Google\Chrome\User Data\Default\Cache&#34; &#34;Z:\Temp&#34;Mklink /d &#34;C:\Users\docker\AppData\Local\Microsoft\Edge\User Data\Default\Cache&#34; &#34;Z:\Temp&#34; " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/" /><meta property="article:section" content="docs" />
 
 
-<title>安装系统
+<title>系统推荐
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/">
+<link rel="canonical" href="https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/zh.search.min.7a7a078492f4dcac1441ffd025ce0db14da4d215cfee4796a39b7c7e4ff28354.js" integrity="sha256-enoHhJL03KwUQf/QJc4NsU2k0hXP7keWo5t8fk/yg1Q=" crossorigin="anonymous"></script>
@@ -72,7 +72,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-0488dc51fd99636dd6b4d238151c1db5" class="toggle" checked />
+    <input type="checkbox" id="section-0488dc51fd99636dd6b4d238151c1db5" class="toggle"  />
     <label for="section-0488dc51fd99636dd6b4d238151c1db5" class="flex justify-between">
       <a role="button" class="">服务器</a>
     </label>
@@ -320,7 +320,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/" class="active">安装系统</a>
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/" class="">安装系统</a>
   
 
         </li>
@@ -390,7 +390,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-69ea6a18acbd408b17a06556c8b882ae" class="toggle"  />
+    <input type="checkbox" id="section-69ea6a18acbd408b17a06556c8b882ae" class="toggle" checked />
     <label for="section-69ea6a18acbd408b17a06556c8b882ae" class="flex justify-between">
       <a role="button" class="">笔记本</a>
     </label>
@@ -406,7 +406,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-b5b5750d75a81663c53d7ba3cb32c954" class="toggle"  />
+    <input type="checkbox" id="section-b5b5750d75a81663c53d7ba3cb32c954" class="toggle" checked />
     <label for="section-b5b5750d75a81663c53d7ba3cb32c954" class="flex justify-between">
       <a role="button" class="">windows 11</a>
     </label>
@@ -422,7 +422,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/" class="">系统推荐</a>
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/" class="active">系统推荐</a>
   
 
         </li>
@@ -738,7 +738,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>安装系统</strong>
+  <strong>系统推荐</strong>
 
   <label for="toc-control">
     
@@ -754,9 +754,8 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#初始化安装">初始化安装</a></li>
-    <li><a href="#容器优化">容器优化</a></li>
-    <li><a href="#网络优化">网络优化</a></li>
+    <li><a href="#输入法">输入法</a></li>
+    <li><a href="#浏览器缓存">浏览器缓存</a></li>
   </ul>
 </nav>
 
@@ -769,42 +768,65 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h1 id="服务器安装">
-  服务器安装
-  <a class="anchor" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%ae%89%e8%a3%85">#</a>
+  <article class="markdown book-article"><h1 id="系统推荐">
+  系统推荐
+  <a class="anchor" href="#%e7%b3%bb%e7%bb%9f%e6%8e%a8%e8%8d%90">#</a>
 </h1>
 <ul>
-<li><a href="https://mirrors.tuna.tsinghua.edu.cn/debian-cd/current/amd64/iso-dvd/debian-12.8.0-amd64-DVD-1.iso">清华镜像下载</a></li>
-<li><a href="https://ultraiso.net/uiso9_cn.exe">软碟通</a> 王涛 7C81-1689-4046-626F</li>
-<li>只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同)</li>
-<li><a href="https://manpages.debian.org/bookworm/">命令查找</a></li>
+<li><a href="ed2k://%7cfile%7cWIN7_2011_X64.iso%7c3266004992%7c5A52F4CCEFA71797D58389B397038B2F%7c/">WIN7_2011_X64.iso</a></li>
+<li><a href="ed2k://%7cfile%7cLTSC_2021_X64.iso%7c5044211712%7c1555B7DCA052B5958EE68DB58A42408D%7c/">LTSC_2021_X64.iso</a></li>
+<li><a href="ed2k://%7cfile%7cLTSC_2024_X64.iso%7c5287520256%7cD6E4FE0BA5FD8A2F22FC9C0326481791%7c/">LTSC_2024_X64.iso</a></li>
+<li><a href="https://www.ventoy.net/cn/">U盘启动</a> <a href="https://www.ventoy.net/cn/doc_secure.html">安全问题</a>
+<table>
+<thead>
+<tr>
+<th>系统版本</th>
+<th>下载地址</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WIN7</td>
+<td>WIN7_2011_X64.iso</td>
+<td>这是专业版;旗舰版不能用kms命令激活</td>
+</tr>
+<tr>
+<td>WIN10</td>
+<td>LTSC_2021_X64.iso</td>
+<td></td>
+</tr>
+<tr>
+<td>WIN11</td>
+<td>LTSC_2024_X64.iso</td>
+<td>普通版需要登录才能进系统</td>
+</tr>
+</tbody>
+</table>
+</li>
 </ul>
-<h2 id="初始化安装">
-  初始化安装
-  <a class="anchor" href="#%e5%88%9d%e5%a7%8b%e5%8c%96%e5%ae%89%e8%a3%85">#</a>
+<pre tabindex="0"><code>#以管理员权限运行
+slmgr /skms kms.03k.org
+slmgr /ato
+</code></pre><h2 id="输入法">
+  输入法
+  <a class="anchor" href="#%e8%be%93%e5%85%a5%e6%b3%95">#</a>
 </h2>
-<pre tabindex="0"><code>echo &#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware&#34; | sudo tee /etc/apt/sources.list
-wget ali.mm/debian/config.tgz
-sudo tar -zxvf config.tgz -C /
-rm config.tgz
-</code></pre><h2 id="容器优化">
-  容器优化
-  <a class="anchor" href="#%e5%ae%b9%e5%99%a8%e4%bc%98%e5%8c%96">#</a>
+<ul>
+<li>微软输入法 ctrl+space 切换中英 ctrl+ 。 切换标点</li>
+<li>简体/繁体关闭</li>
+<li>模糊音打开</li>
+</ul>
+<h2 id="浏览器缓存">
+  浏览器缓存
+  <a class="anchor" href="#%e6%b5%8f%e8%a7%88%e5%99%a8%e7%bc%93%e5%ad%98">#</a>
 </h2>
-<pre tabindex="0"><code>cat &gt; proxy.conf &lt;&lt; EOF
-[Service]
-Environment=&#34;HTTP_PROXY=http://x:x@127.1:10086&#34;
-Environment=&#34;HTTPS_PROXY=http://x:x@127.1:10086&#34;
-Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cn&#34;
-EOF
-sudo mkdir /etc/systemd/system/docker.service.d
-sudo mv proxy.conf /etc/systemd/system/docker.service.d
-sudo apt install -y docker.io
-</code></pre><h2 id="网络优化">
-  网络优化
-  <a class="anchor" href="#%e7%bd%91%e7%bb%9c%e4%bc%98%e5%8c%96">#</a>
-</h2>
-</article>
+<ul>
+<li>二选其一,同时会有一个不生效</li>
+</ul>
+<pre tabindex="0"><code>Mklink /d &#34;C:\Users\docker\AppData\Local\Google\Chrome\User Data\Default\Cache&#34; &#34;Z:\Temp&#34;
+Mklink /d &#34;C:\Users\docker\AppData\Local\Microsoft\Edge\User Data\Default\Cache&#34; &#34;Z:\Temp&#34;
+</code></pre></article>
  
       
 
@@ -845,9 +867,8 @@ sudo apt install -y docker.io
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#初始化安装">初始化安装</a></li>
-    <li><a href="#容器优化">容器优化</a></li>
-    <li><a href="#网络优化">网络优化</a></li>
+    <li><a href="#输入法">输入法</a></li>
+    <li><a href="#浏览器缓存">浏览器缓存</a></li>
   </ul>
 </nav>
 
