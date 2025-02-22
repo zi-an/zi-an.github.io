@@ -9,6 +9,13 @@
     <atom:link href="https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/debian13/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/debian13/</guid>
+      <description> Debian13 # docker https://github.com/debuerreotype/docker-debian-artifacts/raw/32138bf51ca52d8a4a8dcf24953d464fbedbf4bb/trixie/oci/blobs/rootfs.tar.gz # </description>
+    </item>
+    <item>
+      <title></title>
       <link>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E4%BB%A3%E7%90%86%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E4%BB%A3%E7%90%86%E4%BD%BF%E7%94%A8/</guid>
