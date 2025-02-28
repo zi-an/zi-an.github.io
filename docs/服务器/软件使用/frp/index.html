@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" FRP内网穿透 # https://github.com/fatedier/frp/ https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gz 服务端 # wget https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gz tar -zxvf frp_0.61.1_linux_amd64.tar.gz --transform=&#34;s|frp_0.61.1_linux_amd64|frp|g&#34; ./frp/frps -c ./frp/frps.toml 客户端 # 因服务端不在127.0.0.1,直接替换(未备案的域名可能被拦截无法访问,最好用IP) 测试 ssh ali.mm -p 6000 修改后缀.toml为.ini可以不输入参数 sed -i &#39;s|serverAddr = &#34;127.0.0.1&#34;|serverAddr = &#34;ali.mm&#34;|g&#39; ./frp/frpc.toml ./frp/frpc -c ./frp/frpc.toml 免费FRP # 免费网站https://freefrp.com/
-frpc.toml 启动: #./frpc -c frpc.toml 网页 http://public.freefrp.org:59876 serverAddr = &#34;public.freefrp.org&#34; auth.token = &#34;public.freefrp.com&#34; serverPort = 8000 [[proxies]] name = &#34;uzicjb&#34; type = &#34;tcp&#34; localIP = &#34;6.mm&#34; localPort = 80 remotePort = 59876 ">
+<meta name="description" content="FRP内网穿透#https://github.com/fatedier/frp/ https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gz 服务端#wget https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gztar -zxvf frp_0.61.1_linux_amd64.tar.gz --transform=&#34;s|frp_0.61.1_linux_amd64|frp|g&#34;./frp/frps -c ./frp/frps.toml 客户端#因服务端不在127.0.0.1,直接替换(未备案的域名可能被拦截无法访问,最好用IP) 测试 ssh ali.mm -p 6000 修改后缀.toml为.ini可以不输入参数 sed -i &#39;s|serverAddr = &#34;127.0.0.1&#34;|serverAddr = &#34;ali.mm&#34;|g&#39; ./frp/frpc.toml./frp/frpc -c ./frp/frpc.toml 免费FRP#免费网站https://freefrp.com/
+frpc.toml 启动: #./frpc -c frpc.toml 网页 http://public.freefrp.org:59876 serverAddr = &#34;public.freefrp.org&#34;auth.token = &#34;public.freefrp.com&#34;serverPort = 8000[[proxies]]name = &#34;uzicjb&#34;type = &#34;tcp&#34;localIP = &#34;6.mm&#34;localPort = 80remotePort = 59876 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content=" FRP内网穿透 # https://github.com/fatedier/frp/ https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gz 服务端 # wget https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gz tar -zxvf frp_0.61.1_linux_amd64.tar.gz --transform=&#34;s|frp_0.61.1_linux_amd64|frp|g&#34; ./frp/frps -c ./frp/frps.toml 客户端 # 因服务端不在127.0.0.1,直接替换(未备案的域名可能被拦截无法访问,最好用IP) 测试 ssh ali.mm -p 6000 修改后缀.toml为.ini可以不输入参数 sed -i &#39;s|serverAddr = &#34;127.0.0.1&#34;|serverAddr = &#34;ali.mm&#34;|g&#39; ./frp/frpc.toml ./frp/frpc -c ./frp/frpc.toml 免费FRP # 免费网站https://freefrp.com/
-frpc.toml 启动: #./frpc -c frpc.toml 网页 http://public.freefrp.org:59876 serverAddr = &#34;public.freefrp.org&#34; auth.token = &#34;public.freefrp.com&#34; serverPort = 8000 [[proxies]] name = &#34;uzicjb&#34; type = &#34;tcp&#34; localIP = &#34;6.mm&#34; localPort = 80 remotePort = 59876 " />
+<meta property="og:description" content="FRP内网穿透#https://github.com/fatedier/frp/ https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gz 服务端#wget https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gztar -zxvf frp_0.61.1_linux_amd64.tar.gz --transform=&#34;s|frp_0.61.1_linux_amd64|frp|g&#34;./frp/frps -c ./frp/frps.toml 客户端#因服务端不在127.0.0.1,直接替换(未备案的域名可能被拦截无法访问,最好用IP) 测试 ssh ali.mm -p 6000 修改后缀.toml为.ini可以不输入参数 sed -i &#39;s|serverAddr = &#34;127.0.0.1&#34;|serverAddr = &#34;ali.mm&#34;|g&#39; ./frp/frpc.toml./frp/frpc -c ./frp/frpc.toml 免费FRP#免费网站https://freefrp.com/
+frpc.toml 启动: #./frpc -c frpc.toml 网页 http://public.freefrp.org:59876 serverAddr = &#34;public.freefrp.org&#34;auth.token = &#34;public.freefrp.com&#34;serverPort = 8000[[proxies]]name = &#34;uzicjb&#34;type = &#34;tcp&#34;localIP = &#34;6.mm&#34;localPort = 80remotePort = 59876 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/" /><meta property="article:section" content="docs" />
 
 
 <title>Frp
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/">
+<link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.1fa5adea1825394ff7c2d14afb658d724ed3b18c9b648993257c8d914269a052.js" integrity="sha256-H6Wt6hglOU/3wtFK&#43;2WNck7TsYybZImTJXyNkUJpoFI=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.ce3f36980e5db9f15da27648a8b0fe2d3f95a257d095022ad644a9cdf0284de0.js" integrity="sha256-zj82mA5dufFdonZIqLD&#43;LT&#43;VolfQlQIq1kSpzfAoTeA=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -184,19 +184,6 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/debian13/" class="">Debian13</a>
-  
-
-        </li>
-      
     
       
         <li>
@@ -437,7 +424,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/" class="">系统推荐</a>
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/" class="">安装系统</a>
   
 
         </li>
@@ -470,6 +457,19 @@ https://github.com/alex-shpak/hugo-book
       
     
       
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/notepad/" class="">Notepad</a>
+  
+
+        </li>
+      
+    
+      
     
       
         <li>
@@ -479,19 +479,6 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E6%89%A9%E5%B1%95%E5%91%BD%E4%BB%A4/" class="">扩展命令</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/" class="">磁盘管理</a>
   
 
         </li>

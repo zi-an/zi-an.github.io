@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>软件使用 on </title>
-    <link>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/</link>
+    <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/</link>
     <description>Recent content in 软件使用 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <atom:link href="https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/</link>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/</guid>
-      <description> FRP内网穿透 # https://github.com/fatedier/frp/ https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gz 服务端 # wget https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gz tar -zxvf frp_0.61.1_linux_amd64.tar.gz --transform=&amp;#34;s|frp_0.61.1_linux_amd64|frp|g&amp;#34; ./frp/frps -c ./frp/frps.toml 客户端 # 因服务端不在127.0.0.1,直接替换(未备案的域名可能被拦截无法访问,最好用IP) 测试 ssh ali.mm -p 6000 修改后缀.toml为.ini可以不输入参数 sed -i &amp;#39;s|serverAddr = &amp;#34;127.0.0.1&amp;#34;|serverAddr = &amp;#34;ali.mm&amp;#34;|g&amp;#39; ./frp/frpc.toml ./frp/frpc -c ./frp/frpc.toml 免费FRP # 免费网站https://freefrp.com/&#xA;frpc.toml 启动: #./frpc -c frpc.toml 网页 http://public.freefrp.org:59876 serverAddr = &amp;#34;public.freefrp.org&amp;#34; auth.token = &amp;#34;public.freefrp.com&amp;#34; serverPort = 8000 [[proxies]] name = &amp;#34;uzicjb&amp;#34; type = &amp;#34;tcp&amp;#34; localIP = &amp;#34;6.mm&amp;#34; localPort = 80 remotePort = 59876 </description>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/</guid>
+      <description>&#xD;FRP内网穿透&#xD;#&#xD;https://github.com/fatedier/frp/ https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gz 服务端&#xD;#&#xD;wget https://github.com/fatedier/frp/releases/download/v0.61.1/frp_0.61.1_linux_amd64.tar.gz&#xD;tar -zxvf frp_0.61.1_linux_amd64.tar.gz --transform=&amp;#34;s|frp_0.61.1_linux_amd64|frp|g&amp;#34;&#xD;./frp/frps -c ./frp/frps.toml 客户端&#xD;#&#xD;因服务端不在127.0.0.1,直接替换(未备案的域名可能被拦截无法访问,最好用IP) 测试 ssh ali.mm -p 6000 修改后缀.toml为.ini可以不输入参数 sed -i &amp;#39;s|serverAddr = &amp;#34;127.0.0.1&amp;#34;|serverAddr = &amp;#34;ali.mm&amp;#34;|g&amp;#39; ./frp/frpc.toml&#xD;./frp/frpc -c ./frp/frpc.toml 免费FRP&#xD;#&#xD;免费网站https://freefrp.com/&#xA;frpc.toml 启动: #./frpc -c frpc.toml 网页 http://public.freefrp.org:59876 serverAddr = &amp;#34;public.freefrp.org&amp;#34;&#xD;auth.token = &amp;#34;public.freefrp.com&amp;#34;&#xD;serverPort = 8000&#xD;[[proxies]]&#xD;name = &amp;#34;uzicjb&amp;#34;&#xD;type = &amp;#34;tcp&amp;#34;&#xD;localIP = &amp;#34;6.mm&amp;#34;&#xD;localPort = 80&#xD;remotePort = 59876 </description>
     </item>
     <item>
       <title></title>
-      <link>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/goaccess/</link>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/goaccess/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/goaccess/</guid>
-      <description> goaccess # 安装 # apt install -y goaccess sed -i &amp;#39;$a log-format COMBINED&amp;#39; /etc/goaccess/goaccess.conf 生成页面 # goaccess /var/log/nginx/access.log -o 1.html </description>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/goaccess/</guid>
+      <description>&#xD;goaccess&#xD;#&#xD;安装&#xD;#&#xD;apt install -y goaccess&#xD;sed -i &amp;#39;$a log-format COMBINED&amp;#39; /etc/goaccess/goaccess.conf 生成页面&#xD;#&#xD;goaccess /var/log/nginx/access.log -o 1.html </description>
     </item>
     <item>
       <title></title>
-      <link>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/</link>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/</guid>
-      <description>ollama部署 # https://ollama.com/ 我的AI http://public.freefrp.org:11434 deepseek部署R1 # 本地部署纯属玩具 docker pull ollama/ollama ollama run deepseek-r1:1.5b 通义千问2.5 coder # 写代码专用 ollama run qwen2.5-coder:0.5b Docker docker安装 # 精简版的只能使用CPU,但是只有70m的镜像 docker pull alpine/ollama alias ollama=&amp;#34;docker exec -it ollama sh&amp;#34; ollama: container_name: ollama hostname: ollama.service image: alpine/ollama tty: true ports: - &amp;#34;11434:11434&amp;#34; volumes: - /home/ollama/.ollama/:/root/.ollama/ environment: - OLLAMA_KEEP_ALIVE=-1 # ollama run qwen2.5-coder:0.5b Linux Linux安装 # 官方脚本(会检测驱动) 实际下载地址(https://github.com/ollama/ollama/releases/latest/download/ollama-linux-amd64.tgz) curl -fsSL https://ollama.com/install.sh | sh 后台启动 nohup ollama serve &amp;amp; Windows11 下载安装即可,默认服务自动打开 https://ollama.</description>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/</guid>
+      <description>ollama部署&#xD;#&#xD;https://ollama.com/ 我的AI http://public.freefrp.org:11434 deepseek部署R1&#xD;#&#xD;本地部署纯属玩具 docker pull ollama/ollama&#xD;ollama run deepseek-r1:1.5b 通义千问2.5 coder&#xD;#&#xD;写代码专用 ollama run qwen2.5-coder:0.5b Docker&#xD;docker安装&#xD;#&#xD;精简版的只能使用CPU,但是只有70m的镜像 docker pull alpine/ollama&#xD;alias ollama=&amp;#34;docker exec -it ollama sh&amp;#34; ollama:&#xD;container_name: ollama&#xD;hostname: ollama.service&#xD;image: alpine/ollama&#xD;tty: true&#xD;ports:&#xD;- &amp;#34;11434:11434&amp;#34;&#xD;volumes:&#xD;- /home/ollama/.ollama/:/root/.ollama/&#xD;environment:&#xD;- OLLAMA_KEEP_ALIVE=-1&#xD;# ollama run qwen2.5-coder:0.5b Linux&#xD;Linux安装&#xD;#&#xD;官方脚本(会检测驱动) 实际下载地址(https://github.com/ollama/ollama/releases/latest/download/ollama-linux-amd64.tgz) curl -fsSL https://ollama.com/install.sh | sh 后台启动 nohup ollama serve &amp;amp; Windows11&#xD;下载安装即可,默认服务自动打开 https://ollama.</description>
     </item>
     <item>
       <title></title>
-      <link>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/sysbench/</link>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/sysbench/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/sysbench/</guid>
-      <description>sysbench性能测试 # 帮助文档 # sysbench &amp;ndash;help Compiled-in tests: fileio - File I/O test cpu - CPU performance test memory - Memory functions speed test threads - Threads subsystem performance test mutex - Mutex performance test 测试开始 # apt install -y sysbench sysbench cpu run sysbench 测试结果 # root@zian:/home/nginx# sysbench cpu run sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3) Running the test with following options: Number of threads: 1 Initializing random number generator from current time Prime numbers limit: 10000 Initializing worker threads.</description>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/sysbench/</guid>
+      <description>sysbench性能测试&#xD;#&#xD;帮助文档&#xD;#&#xD;sysbench &amp;ndash;help Compiled-in tests:&#xD;fileio - File I/O test&#xD;cpu - CPU performance test&#xD;memory - Memory functions speed test&#xD;threads - Threads subsystem performance test&#xD;mutex - Mutex performance test 测试开始&#xD;#&#xD;apt install -y sysbench&#xD;sysbench cpu run&#xD;sysbench 测试结果&#xD;#&#xD;root@zian:/home/nginx# sysbench cpu run&#xD;sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)&#xD;Running the test with following options:&#xD;Number of threads: 1&#xD;Initializing random number generator from current time&#xD;Prime numbers limit: 10000&#xD;Initializing worker threads.</description>
     </item>
     <item>
       <title></title>
-      <link>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wget/</link>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wget/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wget/</guid>
-      <description>wget使用 # 下载所有能遍历的目录及文件(爬虫) # wget -r -np -nH -R index.html http://127.0.0.1/&#xA;参数解析 # # wget -h GNU Wget 1.21.3，非交互式的网络文件下载工具。 用法： wget [选项]... [URL]... 长选项所必须的参数在使用短选项时也是必须的。 启动： -V, --version 显示 Wget 的版本信息并退出 -h, --help 打印此帮助 -b, --background 启动后转入后台 -e, --execute=命令 运行一个“.wgetrc”风格的命令 日志和输入文件： -o, --output-file=文件 将日志信息写入 FILE -a, --append-output=文件 将信息添加至 FILE -d, --debug 打印大量调试信息 -q, --quiet 安静模式 (无信息输出) -v, --verbose 详尽的输出 (此为默认值) -nv, --no-verbose 关闭详尽输出，但不进入安静模式 --report-speed=类型 以 &amp;lt;类型&amp;gt; 报告带宽。类型可以是 bits -i, --input-file=文件 下载本地或外部 &amp;lt;文件&amp;gt; 中的 URL -F, --force-html 把输入文件当成 HTML 文件 -B, --base=URL 解析相对于 URL 的 HTML 输入文件链接 (-i -F) --config=文件 指定要使用的配置文件 --no-cookies 不读取任何配置文件 --rejected-log=文件 将拒绝 URL 的原因写入 &amp;lt;文件&amp;gt;。 下载： -t, --tries=数字 设置重试次数为 &amp;lt;数字&amp;gt; (0 代表无限制) --retry-connrefused 即使拒绝连接也是重试 --retry-on-http-error=ERRORS 提供以逗号分隔的列表，列出遇到时进行重试的 HTTP 错误 -O, --output-document=文件 将文档写入 FILE -nc, --no-clobber 不要下载已存在将被覆盖的文件 --no-netrc 不要尝试从 .</description>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wget/</guid>
+      <description>wget使用&#xD;#&#xD;下载所有能遍历的目录及文件(爬虫)&#xD;#&#xD;wget -r -np -nH -R index.html http://127.0.0.1/&#xA;参数解析&#xD;#&#xD;# wget -h&#xD;GNU Wget 1.21.3，非交互式的网络文件下载工具。&#xD;用法： wget [选项]... [URL]...&#xD;长选项所必须的参数在使用短选项时也是必须的。&#xD;启动：&#xD;-V, --version 显示 Wget 的版本信息并退出&#xD;-h, --help 打印此帮助&#xD;-b, --background 启动后转入后台&#xD;-e, --execute=命令 运行一个“.wgetrc”风格的命令&#xD;日志和输入文件：&#xD;-o, --output-file=文件 将日志信息写入 FILE&#xD;-a, --append-output=文件 将信息添加至 FILE&#xD;-d, --debug 打印大量调试信息&#xD;-q, --quiet 安静模式 (无信息输出)&#xD;-v, --verbose 详尽的输出 (此为默认值)&#xD;-nv, --no-verbose 关闭详尽输出，但不进入安静模式&#xD;--report-speed=类型 以 &amp;lt;类型&amp;gt; 报告带宽。类型可以是 bits&#xD;-i, --input-file=文件 下载本地或外部 &amp;lt;文件&amp;gt; 中的 URL&#xD;-F, --force-html 把输入文件当成 HTML 文件&#xD;-B, --base=URL 解析相对于 URL 的 HTML 输入文件链接 (-i -F)&#xD;--config=文件 指定要使用的配置文件&#xD;--no-cookies 不读取任何配置文件&#xD;--rejected-log=文件 将拒绝 URL 的原因写入 &amp;lt;文件&amp;gt;。&#xD;下载：&#xD;-t, --tries=数字 设置重试次数为 &amp;lt;数字&amp;gt; (0 代表无限制)&#xD;--retry-connrefused 即使拒绝连接也是重试&#xD;--retry-on-http-error=ERRORS 提供以逗号分隔的列表，列出遇到时进行重试的 HTTP 错误&#xD;-O, --output-document=文件 将文档写入 FILE&#xD;-nc, --no-clobber 不要下载已存在将被覆盖的文件&#xD;--no-netrc 不要尝试从 .</description>
     </item>
   </channel>
 </rss>

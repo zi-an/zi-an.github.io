@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on </title>
-    <link>https://zi-an.github.io/categories/</link>
+    <link>https://example.org/categories/</link>
     <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Sat, 02 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://zi-an.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>大魔王李相赫</title>
-      <link>https://zi-an.github.io/categories/%E5%A4%A7%E9%AD%94%E7%8E%8B%E6%9D%8E%E7%9B%B8%E8%B5%AB/</link>
+      <link>https://example.org/categories/%E5%A4%A7%E9%AD%94%E7%8E%8B%E6%9D%8E%E7%9B%B8%E8%B5%AB/</link>
       <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/categories/%E5%A4%A7%E9%AD%94%E7%8E%8B%E6%9D%8E%E7%9B%B8%E8%B5%AB/</guid>
+      <guid>https://example.org/categories/%E5%A4%A7%E9%AD%94%E7%8E%8B%E6%9D%8E%E7%9B%B8%E8%B5%AB/</guid>
       <description></description>
     </item>
   </channel>

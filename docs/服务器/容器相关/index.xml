@@ -2,38 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>容器相关 on </title>
-    <link>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/</link>
+    <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/</link>
     <description>Recent content in 容器相关 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <atom:link href="https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/debian13/</link>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E4%BB%A3%E7%90%86%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/debian13/</guid>
-      <description> Debian13 # docker https://github.com/debuerreotype/docker-debian-artifacts/raw/32138bf51ca52d8a4a8dcf24953d464fbedbf4bb/trixie/oci/blobs/rootfs.tar.gz # </description>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E4%BB%A3%E7%90%86%E4%BD%BF%E7%94%A8/</guid>
+      <description>&#xD;代理使用&#xD;#&#xD;Docker配置代理&#xD;#&#xD;/etc/systemd/system/docker.service.d [Service]&#xD;Environment=&amp;#34;HTTP_PROXY=http://x:x@172.22.43.127:10086&amp;#34;&#xD;Environment=&amp;#34;HTTPS_PROXY=http://x:x@172.22.43.127:10086&amp;#34;&#xD;Environment=&amp;#34;NO_PROXY=localhost,127.0.0.1,.cn&amp;#34; 重启服务&#xD;#&#xD;sudo systemctl daemon-reload&#xD;sudo systemctl restart docker </description>
     </item>
     <item>
       <title></title>
-      <link>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E4%BB%A3%E7%90%86%E4%BD%BF%E7%94%A8/</link>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E5%AE%B9%E5%99%A8%E8%B5%84%E6%96%99/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E4%BB%A3%E7%90%86%E4%BD%BF%E7%94%A8/</guid>
-      <description> 代理使用 # Docker配置代理 # /etc/systemd/system/docker.service.d [Service] Environment=&amp;#34;HTTP_PROXY=http://x:x@172.22.43.127:10086&amp;#34; Environment=&amp;#34;HTTPS_PROXY=http://x:x@172.22.43.127:10086&amp;#34; Environment=&amp;#34;NO_PROXY=localhost,127.0.0.1,.cn&amp;#34; 重启服务 # sudo systemctl daemon-reload sudo systemctl restart docker </description>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E5%AE%B9%E5%99%A8%E8%B5%84%E6%96%99/</guid>
+      <description>Docker相关&#xD;#&#xD;FROM scratch&#xD;#debian12.x --force-rm&#xD;ADD rootfs.tar.xz /&#xD;ENV TZ=&amp;#39;CST-8&amp;#39; LANG=&amp;#39;zh_CN.UTF-8&amp;#39;&#xD;# 笔记本盒盖问题+apt清华源&#xD;# 安装openssh-server时要确认,使用echo管道&#xD;# 解决sshd时中文显示错误问题(apt安装语言包locales),bash下可以不用&#xD;# 中文汉化,通过find /etc -mtime -1找到dpkg-reconfigure locales的不同,确定是/etc/default/locale文件&#xD;# 添加docker用户不设密码&#xD;RUN echo &amp;#34;HandleLidSwitch=lock&amp;#34; &amp;gt;&amp;gt; /etc/systemd/logind.conf &amp;amp;&amp;amp;\&#xD;sed -i &amp;#34;s|deb.debian.org|mirrors.tuna.tsinghua.edu.cn|g&amp;#34; /etc/apt/sources.list.d/debian.sources &amp;amp;&amp;amp;\&#xD;apt update &amp;amp;&amp;amp;\&#xD;echo &amp;#39;y&amp;#39; | apt install -y bash-completion curl iproute2 iputils-ping locales net-tools openssh-server sudo vim-tiny wget &amp;amp;&amp;amp;\&#xD;mkdir /run/sshd &amp;amp;&amp;amp;\&#xD;apt clean &amp;amp;&amp;amp;\&#xD;echo &amp;#34;zh_CN.UTF-8 UTF-8&amp;#34; &amp;gt; /etc/locale.gen &amp;amp;&amp;amp;\&#xD;echo &amp;#34;LANG=zh_CN.</description>
     </item>
     <item>
       <title></title>
-      <link>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E5%AE%B9%E5%99%A8%E8%B5%84%E6%96%99/</link>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E7%A3%81%E7%9B%98%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E5%AE%B9%E5%99%A8%E8%B5%84%E6%96%99/</guid>
-      <description>Docker相关 # FROM scratch&#xD;#debian12.x --force-rm&#xD;ADD rootfs.tar.xz /&#xD;ENV TZ=&amp;#39;CST-8&amp;#39; LANG=&amp;#39;zh_CN.UTF-8&amp;#39;&#xD;# 笔记本盒盖问题+apt清华源&#xD;# 安装openssh-server时要确认,使用echo管道&#xD;# 解决sshd时中文显示错误问题(apt安装语言包locales),bash下可以不用&#xD;# 中文汉化,通过find /etc -mtime -1找到dpkg-reconfigure locales的不同,确定是/etc/default/locale文件&#xD;# 添加docker用户不设密码&#xD;RUN echo &amp;#34;HandleLidSwitch=lock&amp;#34; &amp;gt;&amp;gt; /etc/systemd/logind.conf &amp;amp;&amp;amp;\&#xD;sed -i &amp;#34;s|deb.debian.org|mirrors.tuna.tsinghua.edu.cn|g&amp;#34; /etc/apt/sources.list.d/debian.sources &amp;amp;&amp;amp;\&#xD;apt update &amp;amp;&amp;amp;\&#xD;echo &amp;#39;y&amp;#39; | apt install -y bash-completion curl iproute2 iputils-ping locales net-tools openssh-server sudo vim-tiny wget &amp;amp;&amp;amp;\&#xD;mkdir /run/sshd &amp;amp;&amp;amp;\&#xD;apt clean &amp;amp;&amp;amp;\&#xD;echo &amp;#34;zh_CN.UTF-8 UTF-8&amp;#34; &amp;gt; /etc/locale.gen &amp;amp;&amp;amp;\&#xD;echo &amp;#34;LANG=zh_CN.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E7%A3%81%E7%9B%98%E6%93%8D%E4%BD%9C/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E7%A3%81%E7%9B%98%E6%93%8D%E4%BD%9C/</guid>
-      <description>Docker磁盘操作 # 磁盘占用 # # docker system df TYPE TOTAL ACTIVE SIZE RECLAIMABLE Images 13 6 10.01GB 4.703GB (46%) Containers 7 2 28.41GB 11.01GB (38%) Local Volumes 3 1 398.5kB 291.2kB (73%) Build Cache 15 0 0B 0B docker system df -v Images space usage: REPOSITORY TAG IMAGE ID CREATED SIZE SHARED SIZE UNIQUE SIZE CONTAINERS mariadb10.11 latest 40a2eb6e350c 4 weeks ago 837.9MB 473.4MB 364.5MB 1 mzz2017/v2raya latest d853d92ccbe4 2 months ago 135.</description>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E7%A3%81%E7%9B%98%E6%93%8D%E4%BD%9C/</guid>
+      <description>Docker磁盘操作&#xD;#&#xD;磁盘占用&#xD;#&#xD;# docker system df&#xD;TYPE TOTAL ACTIVE SIZE RECLAIMABLE&#xD;Images 13 6 10.01GB 4.703GB (46%)&#xD;Containers 7 2 28.41GB 11.01GB (38%)&#xD;Local Volumes 3 1 398.5kB 291.2kB (73%)&#xD;Build Cache 15 0 0B 0B docker system df -v&#xD;Images space usage:&#xD;REPOSITORY TAG IMAGE ID CREATED SIZE SHARED SIZE UNIQUE SIZE CONTAINERS&#xD;mariadb10.11 latest 40a2eb6e350c 4 weeks ago 837.9MB 473.4MB 364.5MB 1&#xD;mzz2017/v2raya latest d853d92ccbe4 2 months ago 135.</description>
     </item>
   </channel>
 </rss>

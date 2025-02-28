@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>windows 11 on </title>
-    <link>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/</link>
+    <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/</link>
     <description>Recent content in windows 11 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <atom:link href="https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/</link>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/</guid>
-      <description> 系统推荐 # WIN7_2011_X64.iso LTSC_2021_X64.iso LTSC_2024_X64.iso U盘启动 安全问题 系统版本 下载地址 备注 WIN7 WIN7_2011_X64.iso 这是专业版;旗舰版不能用kms命令激活 WIN10 LTSC_2021_X64.iso WIN11 LTSC_2024_X64.iso 普通版需要登录才能进系统 #以管理员权限运行&#xD;slmgr /skms kms.03k.org&#xD;slmgr /ato 输入法 # 微软输入法 ctrl+space 切换中英 ctrl+ 。 切换标点 简体/繁体关闭 模糊音打开 浏览器缓存 # 二选其一,同时会有一个不生效 Mklink /d &amp;#34;C:\Users\docker\AppData\Local\Google\Chrome\User Data\Default\Cache&amp;#34; &amp;#34;Z:\Temp&amp;#34;&#xD;Mklink /d &amp;#34;C:\Users\docker\AppData\Local\Microsoft\Edge\User Data\Default\Cache&amp;#34; &amp;#34;Z:\Temp&amp;#34; 注册表优化 # 恢复右键 取消XBOX录屏注册表 reg.exe add &amp;#34;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32&amp;#34; /f /ve&#xD;reg add HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR /f /t REG_DWORD /v &amp;#34;AppCaptureEnabled&amp;#34; /d 0 </description>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
+      <description>&#xD;系统安装&#xD;#&#xD;推荐使用LTSC,专业版需登录账号才能完成安装 </description>
     </item>
     <item>
       <title></title>
-      <link>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96/</link>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96/</guid>
-      <description>系统优化 # 扩展屏幕/多屏显示 # 任务栏设置-&amp;gt;任务栏行为-&amp;gt;在所有显示器上显示任务栏(√)-&amp;gt;当使用多个显示器时,在以下位置显示我的状态栏应用(打开了窗口的任务栏)</description>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96/</guid>
+      <description>系统优化&#xD;#&#xD;扩展屏幕/多屏显示&#xD;#&#xD;任务栏设置-&amp;gt;任务栏行为-&amp;gt;在所有显示器上显示任务栏(√)-&amp;gt;当使用多个显示器时,在以下位置显示我的状态栏应用(打开了窗口的任务栏)</description>
     </item>
     <item>
       <title>WSL1</title>
-      <link>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/wsl1/</link>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/wsl1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/wsl1/</guid>
-      <description>WSL1 # https://learn.microsoft.com/zh-cn/windows/wsl/install-manual#downloading-distributions Ubuntu 24.04 Debian wsl.exe --update https://github.com/microsoft/WSL/releases/download/2.3.26/wsl.2.3.26.0.x64.msi Add-AppxPackage .\app_name.appx 配置 # echo &amp;#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main&amp;#34; | sudo tee /etc/apt/sources.list sudo apt update sudo apt install bash-completion /etc/wsl.conf [boot] systemd=true [network] hostname = redmibook.com generateHosts = false 常用命令 # wsl --shutdown 未解决 # networkingMode Nat</description>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/wsl1/</guid>
+      <description>WSL1&#xD;#&#xD;https://learn.microsoft.com/zh-cn/windows/wsl/install-manual#downloading-distributions Ubuntu 24.04 Debian wsl.exe --update&#xD;https://github.com/microsoft/WSL/releases/download/2.3.26/wsl.2.3.26.0.x64.msi&#xD;Add-AppxPackage .\app_name.appx 配置&#xD;#&#xD;echo &amp;#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main&amp;#34; | sudo tee /etc/apt/sources.list&#xD;sudo apt update&#xD;sudo apt install bash-completion /etc/wsl.conf [boot]&#xD;systemd=true&#xD;[network]&#xD;hostname = redmibook.com&#xD;generateHosts = false 常用命令&#xD;#&#xD;wsl --shutdown 未解决&#xD;#&#xD;networkingMode Nat</description>
     </item>
     <item>
       <title></title>
-      <link>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/</link>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/notepad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/</guid>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/notepad/</guid>
+      <description>notepad 优化&#xD;#&#xD;https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.7.7/npp.8.7.7.Installer.x64.exe 自动换行+ UTF-8 + Unix&#xD;#&#xD;视图-&amp;gt;自动换行 设置-&amp;gt;首选项-&amp;gt;新建-&amp;gt;Unix(LF) 设置-&amp;gt;首选项-&amp;gt;新建-&amp;gt;UTF-8(无BOM)&#xA;暗黑模式&#xD;#&#xD;设置-&amp;gt;首选项-&amp;gt;暗黑模式-&amp;gt;开启暗黑模式&#xA;备份&#xD;#&#xD;设置-&amp;gt;首选项-&amp;gt;备份&#xA;冗余备份-&amp;gt; 使用自定义备份目录(D:\temp\) 默认搜索&#xD;#&#xD;https://cn.bing.com/search?q=$(CURRENT_WORD) 常用插件&#xD;#&#xD;NppExec&#xD;#&#xD;在nppexec中不能用交互式命令,所以在tools.bat中补全 暗色需要在NppExec&amp;ndash;&amp;gt;Advanced Options&amp;ndash;&amp;gt;Blackgroundcolor设置为 66 66 66 插件下也有个style.css文件,有需要自己改 npp_save if $(ext_part) ==.java goto java if $(ext_part) ==.bat goto bat if $(ext_part) ==.md goto md exit :java env_set java_home=d:\tools\ideaic\jbr env_set path=$(sys.path);$(sys.java_home)\bin cd $(current_directory) javac -encoding UTF-8 -d d:\workspaces\.tmp $(file_name) cd d:\workspaces\.tmp //cls java $(name_part) exit :bat cd $(current_directory) $(FILE_NAME) exit :md cd C:\Users\docker\Desktop\zian taskkill /f /t /im nginx.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E6%89%A9%E5%B1%95%E5%91%BD%E4%BB%A4/</link>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E6%89%A9%E5%B1%95%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E6%89%A9%E5%B1%95%E5%91%BD%E4%BB%A4/</guid>
-      <description> 扩展命令 # powershell虽然好用,但是命令与Linux差别巨大 wget hugo </description>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E6%89%A9%E5%B1%95%E5%91%BD%E4%BB%A4/</guid>
+      <description>&#xD;扩展命令&#xD;#&#xD;powershell虽然好用,但是命令与Linux差别巨大 wget hugo </description>
     </item>
     <item>
       <title></title>
-      <link>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</link>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</guid>
-      <description> 磁盘管理 # 虚拟磁盘压缩 # 进入磁盘分区工具 diskpart diskpart下:选择-挂载-压缩-分离 如果虚拟磁盘没变化,多执行几次 select vdisk file = &amp;#34;E:\hyper\Disks\win7.vhdx&amp;#34; attach vdisk readonly compact vdisk detach vdisk </description>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/</guid>
+      <description>&#xD;虎牙推流&#xD;#&#xD;虎牙直播&#xD;#&#xD;-re (input) 以本机帧速率读取输入。这相当于设置-readrate 1。 -stream_loop number (input) 设置输入流应循环的次数。Loop 0表示无循环，loop-1表示无限循环。 -codec[:stream_specifier] codec (input/output,per-stream)为一个或多个流选择编码器（当在输出文件之前使用时）或解码器（当在输入文件之前使用时）。codec是解码器/编码器的名称或特殊值copy（仅输出），指示流不被重新编码。 -c: copy 表示所有流格式都是复制 nohup ffmpeg -re -stream_loop -1 -i bbb.mp4 -c: copy -f flv &amp;#34;rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-7438266878141176820-3575444560-10057-A-1731860186-1?seq=1731856465590&amp;amp;type=simple&amp;#34; &amp;amp; 最快的剪辑视频&#xD;#&#xD;ffmpeg -ss 1:25 -i 3.2_CG16_2_mux.mp4 -c: copy bbb.mp4 </description>
     </item>
     <item>
       <title></title>
-      <link>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/</link>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/</guid>
-      <description> 虎牙推流 # 虎牙直播 # -re (input) 以本机帧速率读取输入。这相当于设置-readrate 1。 -stream_loop number (input) 设置输入流应循环的次数。Loop 0表示无循环，loop-1表示无限循环。 -codec[:stream_specifier] codec (input/output,per-stream)为一个或多个流选择编码器（当在输出文件之前使用时）或解码器（当在输入文件之前使用时）。codec是解码器/编码器的名称或特殊值copy（仅输出），指示流不被重新编码。 -c: copy 表示所有流格式都是复制 nohup ffmpeg -re -stream_loop -1 -i bbb.mp4 -c: copy -f flv &amp;#34;rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-7438266878141176820-3575444560-10057-A-1731860186-1?seq=1731856465590&amp;amp;type=simple&amp;#34; &amp;amp; 最快的剪辑视频 # ffmpeg -ss 1:25 -i 3.2_CG16_2_mux.mp4 -c: copy bbb.mp4 </description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://zi-an.github.io/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD/</guid>
-      <description>资源下载 # win11x64&#xA;开发软件 # webstorm(非商业免费) idea goland WebStorm 2024.2.4 及更新版本才可以获取非商业许可证。 非商业订阅的期限为一年，一年后将自动续订&#xA;环境变量 # IDEA_VM_OPTIONS D:\tools\jetbra\vmoptions\idea.vmoptions GOLAND_VM_OPTIONS D:\tools\jetbra\vmoptions\goland.vmoptions</description>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD/</guid>
+      <description>资源下载&#xD;#&#xD;win11x64&#xA;开发软件&#xD;#&#xD;webstorm(非商业免费) idea goland WebStorm 2024.2.4 及更新版本才可以获取非商业许可证。 非商业订阅的期限为一年，一年后将自动续订</description>
     </item>
   </channel>
 </rss>

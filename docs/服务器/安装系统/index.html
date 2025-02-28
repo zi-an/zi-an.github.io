@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" 服务器安装 # 清华镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 初始化安装 # echo &#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware&#34; | sudo tee /etc/apt/sources.listwget ali.mm/debian/config.tgzsudo tar -zxvf config.tgz -C /rm config.tgz 容器优化 # cat &gt; proxy.conf &lt;&lt; EOF[Service]Environment=&#34;HTTP_PROXY=http://x:x@127.1:10086&#34;Environment=&#34;HTTPS_PROXY=http://x:x@127.1:10086&#34;Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cn&#34;EOFsudo mkdir /etc/systemd/system/docker.service.dsudo mv proxy.conf /etc/systemd/system/docker.service.dsudo apt install -y docker.io 网络优化 # ">
+<meta name="description" content="服务器安装#清华镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 初始化安装#echo &#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware&#34; | sudo tee /etc/apt/sources.listwget ali.mm/debian/config.tgzsudo tar -zxvf config.tgz -C /rm config.tgz 容器优化#cat &gt; proxy.conf &lt;&lt; EOF[Service]Environment=&#34;HTTP_PROXY=http://x:x@127.1:10086&#34;Environment=&#34;HTTPS_PROXY=http://x:x@127.1:10086&#34;Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cn&#34;EOFsudo mkdir /etc/systemd/system/docker.service.dsudo mv proxy.conf /etc/systemd/system/docker.service.dsudo apt install -y docker.io 网络优化#">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content=" 服务器安装 # 清华镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 初始化安装 # echo &#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware&#34; | sudo tee /etc/apt/sources.listwget ali.mm/debian/config.tgzsudo tar -zxvf config.tgz -C /rm config.tgz 容器优化 # cat &gt; proxy.conf &lt;&lt; EOF[Service]Environment=&#34;HTTP_PROXY=http://x:x@127.1:10086&#34;Environment=&#34;HTTPS_PROXY=http://x:x@127.1:10086&#34;Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cn&#34;EOFsudo mkdir /etc/systemd/system/docker.service.dsudo mv proxy.conf /etc/systemd/system/docker.service.dsudo apt install -y docker.io 网络优化 # " />
+<meta property="og:description" content="服务器安装#清华镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 初始化安装#echo &#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware&#34; | sudo tee /etc/apt/sources.listwget ali.mm/debian/config.tgzsudo tar -zxvf config.tgz -C /rm config.tgz 容器优化#cat &gt; proxy.conf &lt;&lt; EOF[Service]Environment=&#34;HTTP_PROXY=http://x:x@127.1:10086&#34;Environment=&#34;HTTPS_PROXY=http://x:x@127.1:10086&#34;Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cn&#34;EOFsudo mkdir /etc/systemd/system/docker.service.dsudo mv proxy.conf /etc/systemd/system/docker.service.dsudo apt install -y docker.io 网络优化#" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/" /><meta property="article:section" content="docs" />
 
 
 <title>安装系统
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://zi-an.github.io/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/">
+<link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.1fa5adea1825394ff7c2d14afb658d724ed3b18c9b648993257c8d914269a052.js" integrity="sha256-H6Wt6hglOU/3wtFK&#43;2WNck7TsYybZImTJXyNkUJpoFI=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.ce3f36980e5db9f15da27648a8b0fe2d3f95a257d095022ad644a9cdf0284de0.js" integrity="sha256-zj82mA5dufFdonZIqLD&#43;LT&#43;VolfQlQIq1kSpzfAoTeA=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -182,19 +182,6 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/debian13/" class="">Debian13</a>
-  
-
-        </li>
-      
     
       
         <li>
@@ -435,7 +422,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%B3%BB%E7%BB%9F%E6%8E%A8%E8%8D%90/" class="">系统推荐</a>
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/" class="">安装系统</a>
   
 
         </li>
@@ -468,6 +455,19 @@ https://github.com/alex-shpak/hugo-book
       
     
       
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/notepad/" class="">Notepad</a>
+  
+
+        </li>
+      
+    
+      
     
       
         <li>
@@ -477,19 +477,6 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E6%89%A9%E5%B1%95%E5%91%BD%E4%BB%A4/" class="">扩展命令</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/" class="">磁盘管理</a>
   
 
         </li>
