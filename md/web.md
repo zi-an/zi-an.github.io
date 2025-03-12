@@ -14,18 +14,17 @@
 
 ---
 
-|[首页](/)|[存储](http://120.76.158.149:88/?from=/)|[日记](http://120.76.158.149:88/?from=/note/)|[缓存](http://120.76.158.149:88/?from=/m3u8/)|[文档](http://120.76.158.149:84)|
+|[首页](https://zian.netlify.app/)|[二维](/web/qrcode.html)|[计时](/web/time.html)|||
 |-|-|-|-|-|
 |资源|[油猴](/js/bing.js)|[广告](/web/adb.html)|[公网](/web/ipv6.html)|[播放](/web/m3u8.html)|
-||[阿里](http://120.76.158.149/)|[PAC](http://120.76.158.149:88/json/.pac)|[DAV](http://zian:zian@120.76.158.149:85)|[计时](/web/time.html)|
-|服务|[迅雷](http://120.76.158.149:996/webman/3rdparty/pan-xunlei-com/index.cgi/#/home)|[BT](http://120.76.158.149:90/transmission/web/)||
-
 
 ---
 
 |内网|[主路](http://10.0.0.1)|[副路](http://10.0.0.2)|[三星](http://10.0.0.5)|[红米](http://10.0.0.6)|
 |-|-|-|-|-|
 |服务|[210](http://210.mm)|[BT](http://208.mm)|[迅雷](http://209.mm)||
-|资源|[代理](http://211.mm/)|[PAC](http://10.0.0.5/json/.pac)|||
+|资源|[代理](http://5.mm:10086)||||
 
 ---
+
+qrcode.html
