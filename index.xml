@@ -27,7 +27,7 @@
       <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
-      <description>&#xD;系统安装&#xD;#&#xD;推荐使用LTSC,专业版需登录账号才能完成安装 </description>
+      <description>系统安装&#xD;#&#xD;推荐使用LTSC,专业版需登录账号才能完成安装 安全中心通知&#xD;#&#xD;gpedit.msc-&amp;gt;计算机配置-&amp;gt;管理模板-&amp;gt;Windows 组件-&amp;gt;Windows 安全中心-&amp;gt;通知-&amp;gt;隐藏所有通知</description>
     </item>
     <item>
       <title>Hadoop 3.4.1 单机版</title>
