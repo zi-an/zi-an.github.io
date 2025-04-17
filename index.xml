@@ -27,7 +27,7 @@
       <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
-      <description>系统安装&#xD;#&#xD;推荐使用LTSC,专业版需登录账号才能完成安装 安全中心通知&#xD;#&#xD;gpedit.msc-&amp;gt;计算机配置-&amp;gt;管理模板-&amp;gt;Windows 组件-&amp;gt;Windows 安全中心-&amp;gt;通知-&amp;gt;隐藏所有通知</description>
+      <description>&#xD;系统安装&#xD;#&#xD;推荐使用LTSC,专业版需登录账号才能完成安装 禁止系统更新安全中心&#xD;#&#xD;https://www.sordum.org/9470/windows-update-blocker-v1-8/ https://www.sordum.org/files/downloads.php?st-windows-update-blocker 安全中心通知&#xD;#&#xD;gpedit.msc-&amp;gt;计算机配置-&amp;gt;管理模板-&amp;gt;Windows 组件-&amp;gt;Windows 安全中心-&amp;gt;通知-&amp;gt;隐藏所有通知&#xA;修改缓存位置&#xD;#&#xD;del &amp;#34;C:\Users\docker\AppData\Local\Microsoft\Edge\User Data\Default\Cache&amp;#34;&#xD;mklink /J &amp;#34;C:\Users\docker\AppData\Local\Microsoft\Edge\User Data\Default\Cache&amp;#34; &amp;#34;z:\Temp&amp;#34; 禁止桌面图标自动排序&#xD;#&#xD;桌面-个性化-主题-桌面图标设置-允许主题修改桌面图标(×)&#xA;副屏&#xD;#&#xD;副屏壁纸 副屏位置 副屏任务栏 </description>
     </item>
     <item>
       <title>Hadoop 3.4.1 单机版</title>
@@ -91,6 +91,13 @@
       <pubDate>Fri, 29 Sep 2023 00:00:00 +0000</pubDate>
       <guid>https://example.org/posts/2023-09-29/</guid>
       <description>&#xD;2022杭州亚运冠军集体照！&#xD;#&#xD;亚运总决赛视频&#xD;#&#xD;第一局:韩国1-0中华台湾&#xD;#&#xD;第二局:韩国2-0中华台湾,我们是冠军!&#xD;#&#xD;亚运半决赛&#xD;#&#xD;第一局 韩国1-0中国&#xD;#&#xD;第二局 韩国2-0中国&#xD;#&#xD;季军争夺战！&#xD;#&#xD;第一局:越南1-0中国&#xD;#&#xD;第二局: 越南1-1中国&#xD;#&#xD;第三局:越南1-2中国,我们是季军！&#xD;#&#xD;</description>
+    </item>
+    <item>
+      <title>车</title>
+      <link>https://example.org/posts/2020-01-01/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/2020-01-01/</guid>
+      <description>&#xD;车&#xD;#&#xD;BBA&#xD;#&#xD;奔驰 A级 25w- 奔驰 C级 33w- 奔驰 E级 45w- 奔驰 S级 96w- 奔驰 迈巴赫 150w- </description>
     </item>
     <item>
       <title>文化地图</title>
@@ -192,10 +199,17 @@
     </item>
     <item>
       <title></title>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/imewlconverter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/imewlconverter/</guid>
+      <description>imewlconverter&#xD;#&#xD;词库&#xD;#&#xD;更高版本要安装更高级的.net,以下版本不需要 https://github.com/studyzy/imewlconverter/releases/tag/v2.9.0 纯汉字无拼音-Win10微软拼音(自学习词库)</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/notepad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/notepad/</guid>
-      <description>notepad 优化&#xD;#&#xD;https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.7.7/npp.8.7.7.Installer.x64.exe 自动换行+ UTF-8 + Unix&#xD;#&#xD;视图-&amp;gt;自动换行 设置-&amp;gt;首选项-&amp;gt;新建-&amp;gt;Unix(LF) 设置-&amp;gt;首选项-&amp;gt;新建-&amp;gt;UTF-8(无BOM)&#xA;暗黑模式&#xD;#&#xD;设置-&amp;gt;首选项-&amp;gt;暗黑模式-&amp;gt;开启暗黑模式&#xA;备份&#xD;#&#xD;设置-&amp;gt;首选项-&amp;gt;备份&#xA;冗余备份-&amp;gt; 使用自定义备份目录(D:\temp\) 默认搜索&#xD;#&#xD;https://cn.bing.com/search?q=$(CURRENT_WORD) 常用插件&#xD;#&#xD;NppExec&#xD;#&#xD;在nppexec中不能用交互式命令,所以在tools.bat中补全 暗色需要在NppExec&amp;ndash;&amp;gt;Advanced Options&amp;ndash;&amp;gt;Blackgroundcolor设置为 66 66 66 插件下也有个style.css文件,有需要自己改 npp_save if $(ext_part) ==.java goto java if $(ext_part) ==.bat goto bat if $(ext_part) ==.md goto md exit :java env_set java_home=d:\tools\ideaic\jbr env_set path=$(sys.path);$(sys.java_home)\bin cd $(current_directory) javac -encoding UTF-8 -d d:\workspaces\.tmp $(file_name) cd d:\workspaces\.tmp //cls java $(name_part) exit :bat cd $(current_directory) $(FILE_NAME) exit :md cd C:\Users\docker\Desktop\zian taskkill /f /t /im nginx.</description>
+      <description>Notepad 优化&#xD;#&#xD;https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.7.7/npp.8.7.7.Installer.x64.exe 自动换行+ UTF-8 + Unix&#xD;#&#xD;视图-&amp;gt;自动换行 设置-&amp;gt;首选项-&amp;gt;新建-&amp;gt;Unix(LF) 设置-&amp;gt;首选项-&amp;gt;新建-&amp;gt;UTF-8(无BOM)&#xA;暗黑模式&#xD;#&#xD;设置-&amp;gt;首选项-&amp;gt;暗黑模式-&amp;gt;开启暗黑模式&#xA;备份&#xD;#&#xD;设置-&amp;gt;首选项-&amp;gt;备份&#xA;冗余备份-&amp;gt; 使用自定义备份目录(D:\temp\) 默认搜索&#xD;#&#xD;https://cn.bing.com/search?q=$(CURRENT_WORD) 常用插件&#xD;#&#xD;NppExec&#xD;#&#xD;在nppexec中不能用交互式命令,所以在tools.bat中补全 暗色需要在NppExec&amp;ndash;&amp;gt;Advanced Options&amp;ndash;&amp;gt;Blackgroundcolor设置为 66 66 66 插件下也有个style.css文件,有需要自己改 npp_save if $(ext_part) ==.java goto java if $(ext_part) ==.bat goto bat if $(ext_part) ==.md goto md exit :java env_set java_home=d:\tools\ideaic\jbr env_set path=$(sys.path);$(sys.java_home)\bin cd $(current_directory) javac -encoding UTF-8 -d d:\workspaces\.tmp $(file_name) cd d:\workspaces\.tmp //cls java $(name_part) exit :bat cd $(current_directory) $(FILE_NAME) exit :md cd C:\Users\docker\Desktop\zian taskkill /f /t /im nginx.</description>
     </item>
     <item>
       <title></title>
@@ -216,7 +230,7 @@
       <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/%E8%99%8E%E7%89%99%E6%8E%A8%E6%B5%81/</guid>
-      <description>&#xD;虎牙推流&#xD;#&#xD;虎牙直播&#xD;#&#xD;-re (input) 以本机帧速率读取输入。这相当于设置-readrate 1。 -stream_loop number (input) 设置输入流应循环的次数。Loop 0表示无循环，loop-1表示无限循环。 -codec[:stream_specifier] codec (input/output,per-stream)为一个或多个流选择编码器（当在输出文件之前使用时）或解码器（当在输入文件之前使用时）。codec是解码器/编码器的名称或特殊值copy（仅输出），指示流不被重新编码。 -c: copy 表示所有流格式都是复制 nohup ffmpeg -re -stream_loop -1 -i bbb.mp4 -c: copy -f flv &amp;#34;rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-7438266878141176820-3575444560-10057-A-1731860186-1?seq=1731856465590&amp;amp;type=simple&amp;#34; &amp;amp; 最快的剪辑视频&#xD;#&#xD;ffmpeg -ss 1:25 -i 3.2_CG16_2_mux.mp4 -c: copy bbb.mp4 </description>
+      <description>虎牙推流&#xD;#&#xD;虎牙直播&#xD;#&#xD;-re (input) 以本机帧速率读取输入。这相当于设置-readrate 1。 -stream_loop number (input) 设置输入流应循环的次数。Loop 0表示无循环，loop-1表示无限循环。 -codec[:stream_specifier] codec (input/output,per-stream)为一个或多个流选择编码器（当在输出文件之前使用时）或解码器（当在输入文件之前使用时）。codec是解码器/编码器的名称或特殊值copy（仅输出），指示流不被重新编码。 -c: copy 表示所有流格式都是复制 nohup ffmpeg -re -stream_loop -1 -i bbb.mp4 -c: copy -f flv &amp;#34;rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-7438266878141176820-3575444560-10057-A-1731860186-1?seq=1731856465590&amp;amp;type=simple&amp;#34; &amp;amp; 最快的剪辑视频&#xD;#&#xD;ffmpeg -ss 1:25 -i 3.2_CG16_2_mux.mp4 -c: copy bbb.mp4 ffmpeg -i 奶牛跳舞.mp4 -vf &amp;ldquo;crop=608:1080&amp;rdquo; out.mp4&#xA;-c:v libx264 ffmpeg -i 奶牛跳舞.mp4 -vf &amp;ldquo;crop=608:1080&amp;rdquo; -c copy -out.mp4&#xA;ffmpeg -i 浆果儿捆绑白.mp4 -vf &amp;ldquo;crop=405:720&amp;rdquo; 浆果儿捆绑白-1.mp4&#xA;ffmpeg -i 1.avi -c:v libx264 1.</description>
     </item>
     <item>
       <title></title>
@@ -244,7 +258,7 @@
       <link>https://example.org/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E7%A1%AC%E7%9B%98%E5%88%86%E7%B1%BB/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E7%A1%AC%E7%9B%98%E5%88%86%E7%B1%BB/</guid>
-      <description>&#xD;硬盘分类&#xD;#&#xD;硬盘型号 容量 系统 备注 机械盘 希捷500G exfat 数据盘 机械盘 三星500G exfat 数据盘 机械盘 三星250G Win7pro 三星台式系统盘 机械盘 500G 神舟 机械盘 140G win7专业版 郎科 64G LTSC2021 闪迪 16G 长城 16G 长城 8G Debian12.8 debian-12.8.0-amd64-DVD-1.iso版 浪潮 4G 预 笔记本用,台式机会识别出软驱无法使用 </description>
+      <description>&#xD;硬盘分类&#xD;#&#xD;硬盘型号 容量 系统 备注 机械盘 希捷500G exfat 数据盘 机械盘 三星500G exfat 数据盘 机械盘 三星250G Win7pro 三星台式系统盘 机械盘 500G 神舟 机械盘 140G win7专业版 郎科 64G LTSC2021 闪迪 16G Ventoy 全系统安装盘 长城 16G 长城 8G Debian12.8 debian-12.8.0-amd64-DVD-1.iso版 浪潮 4G 预 笔记本用,台式机会识别出软驱无法使用 </description>
     </item>
     <item>
       <title></title>
