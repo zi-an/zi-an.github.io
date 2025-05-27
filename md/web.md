@@ -4,7 +4,7 @@
 |抖音|[安珀](https://live.douyin.com/356402078496)|[神黛](https://live.douyin.com/588307360871)|||
 |官方|[地图](https://guangdong.tianditu.gov.cn/)||||
 |刷机|[K30](https://xiaomirom.com/rom/redmi-k30-5g-redmi-k30i-5g-picasso-china-fastboot-recovery-rom/)|[K40](https://xiaomirom.com/rom/redmi-k40s-munch-china-fastboot-recovery-rom/)|[K70](https://xiaomirom.com/rom/redmi-k70e-poco-x6-pro-5g-duchamp-china-fastboot-recovery-rom/)||
-|手机|[配置](/web/?uri=/md/miui.md)|[游戏](/web/?uri=/md/game.md)||
+|手机|[配置](/web/?uri=/md/miui.md)|[登录](/web/?uri=/md/mi.md)|[游戏](/web/?uri=/md/game.md)|
 |应用|[火哥](https://www.firepx.com/)|[虎牙](https://www.firepx.com/app/android-huaya-google-play/)|[哔哩](https://www.firepx.com/app/bilibili-google-play-and-other-version/)|[影音](https://www.firepx.com/app/qqplayer-last-version/)|
 |电影|[追剧](https://m.zjuys.com/)|[短剧](https://www.duanjuwang.cc/)|[影视](/web/?uri=/md/av.md)||
 |音乐|[音乐](https://github.com/maotoumao/MusicFree/releases)|[音源](https://raw.niuma666bet.buzz/Huibq/keep-alive/master/Music_Free/myPlugins.json)|||
