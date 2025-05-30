@@ -19,8 +19,9 @@
 
 |||||||
 |-|-|-|-|-|-|
-|外网|[首页](https://zian.netlify.app/)|[穿透](http://public.freefrp.org:11111/?from=/)|[二维](/web/qrcode.html)|[计时](/web/time.html)|[播放](/web/m3u8.html)|
-|资源|[脚本](/js/bing.js)|[广告](/web/adb.html)|[公网](/web/ipv6.html)||
+|外网|[首页](https://zian.netlify.app/)|[穿透](http://public.freefrp.org:11111/?from=/)|[二维](/web/qrcode.html)|[计时](/web/time.html)|[色彩](/web/color.html?color=)|
+|资源|[脚本](/js/bing.js)|[广告](/web/adb.html)|[公网](/web/ipv6.html)|[播放](/web/m3u8.html)|
+||[AI](/web/ai.html)|||||
 
 ---
 

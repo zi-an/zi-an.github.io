@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>纯色展示</title>
+</head>
+<body>
+<script>
+    const color = new URLSearchParams(window.location.search).get('color');
+    console.log(color);
+    if (color[0] < "g") {
+        document.body.style.backgroundColor = "#" + color;
+    } else {
+        document.body.style.backgroundColor = color;
+    }
+</script>
+</body>
+</html>
