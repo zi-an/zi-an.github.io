@@ -15,7 +15,7 @@
 
         .user-message {
             text-align: right;
-            color: blue;
+            color: darkblue;
         }
 
         #input-container {
@@ -28,11 +28,15 @@
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
         }
+
+        pre {
+            overflow-x: auto;
+        }
     </style>
 </head>
 
 <body>
-<div id="chat-container"></div>
+<div id="chat-container" style=" padding-bottom: 60px;"></div>
 <div id="input-container" style="display: flex;">
     <input type="text" id="message-input" placeholder="输入你的消息..." style="flex-grow: 1;padding: 5px;">
     <button onclick="sendMessage()" style="margin-left: 5px;padding: 5px 10px;">发送</button>
@@ -82,7 +86,7 @@
             if (response.ok) {
                 let aiMessage = data.choices[0].message.content;
                 //messages.push({role: 'assistant', content: aiMessage});
-                aiMessage = marked.parse(aiMessage);
+                aiMessage = marked.parse('<span style="color: darkgray; font-size: xx-small;">total_tokens:' + data.usage.total_tokens + '</span><br>'+aiMessage);
                 appendMessage('assistant', aiMessage);
             } else {
                 handleError(data.error.message);
