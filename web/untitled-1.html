@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>参数显示</title>
+</head>
+<body>
+    <h1 id="h1">参数显示</h1>
+    <ul id="paramsList"></ul>
+    <script>
+        // 获取 URL 中的查询字符串部分
+        const searchParams = new URLSearchParams(window.location.search);
+        const paramsList = document.getElementById('paramsList');
+
+        // 遍历所有参数
+        for (const [key, value] of searchParams) {
+            const listItem = document.createElement('li');
+            listItem.textContent = `${key}: ${value}`;
+            paramsList.appendChild(listItem);
+        }
+    </script>
+</body>
+</html>

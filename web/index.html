@@ -1,26 +1,28 @@
 <!doctype html>
 <html lang="zh">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta charset="utf-8"/>
     <title>导航</title>
     <script src="/js/marked.min.js">
     </script>
-	<style>@media(prefers-color-scheme:dark){body{background-color: black;}}</style>
-  </head>
-  <style>div { font-size: 22px; }</style>
-  <body>
-    <div id="markdown">
-    </div>
-    <script>let httpRequest = new XMLHttpRequest();
-    let md=new URL(window.location.href).searchParams.get("uri")
-    if (md===null){md="/md/web.md"}
-      httpRequest.open("GET", md);
-      httpRequest.send();
-      httpRequest.onreadystatechange = function() {
-        const text = httpRequest.responseText;
-        document.getElementById('markdown').innerHTML = marked.parse(text);
-    }
-    </script>
-  </body>
+    <style>@media (prefers-color-scheme: dark) {
+        body {
+            background-color: black;
+        }
+    }</style>
+</head>
+<body>
+<div id="markdown" style="font-size: 22px">
+</div>
+<script>let httpRequest = new XMLHttpRequest();
+let md = new URL(window.location.href).searchParams.get("uri")
+httpRequest.open("GET", md);
+httpRequest.send();
+httpRequest.onreadystatechange = function () {
+    const text = httpRequest.responseText;
+    document.getElementById('markdown').innerHTML = marked.parse(text);
+}
+</script>
+</body>
 </html>
