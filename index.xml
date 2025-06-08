@@ -199,6 +199,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/europa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/europa/</guid>
+      <description>Eclipse3.2版Europa&#xD;#&#xD;注意查看README.jpg jdk1.5.0 运行当前快捷键ctrl+F11,运行上次F11 打印环境变量&#xD;#&#xD;public class Main { public static void main(String[] args) { System.getProperties().list(System.out); } } MySQL数据库连接代码&#xD;#&#xD;mysql-connector-java-5.1.49.jar import java.sql.Connection; import java.sql.DriverManager; import java.sql.ResultSet; import java.sql.Statement; public class MySQLConnectionDemo { public static void main(String[] args) throws Exception { Class.forName(&amp;#34;com.mysql.jdbc.Driver&amp;#34;); String url = &amp;#34;jdbc:mysql://203.mm:3306/?useSSL=false&amp;amp;characterEncoding=UTF-8&amp;#34;; String user = &amp;#34;zian&amp;#34;; String pwd = &amp;#34;zian&amp;#34;; Connection connection = DriverManager.getConnection(url, user, pwd); Statement statement = connection.createStatement(); ResultSet resultSet = statement.</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/imewlconverter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/imewlconverter/</guid>
