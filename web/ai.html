@@ -42,9 +42,9 @@
     <button onclick="sendMessage()" style="margin-left: 5px;padding: 5px 10px;">发送</button>
 </div>
 <script>
-    const API_URL = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions';
-    const API_KEY = '5318d08d9996134a0254869fa55a114e-ks';
-    const API_MODEL = 'qwen-turbo-latest'
+    const SERVER = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions';
+    const KEY = '5318d08d9996134a0254869fa55a114e-ks';
+    const MODEL = 'qwen-turbo-latest'
 
     const chatContainer = document.getElementById('chat-container');
     const messageInput = document.getElementById('message-input');
@@ -57,12 +57,12 @@
         });
     }
 
-
     // 从cookie中加载聊天记录
     const cookies = document.cookie.split(';');
     cookies.forEach(function (cookie) {
         const messageDiv = document.createElement('div');
-        messageDiv.innerHTML = decodeURIComponent(atob(cookie.substring(cookie.indexOf('=') + 1, cookie.length)));
+        cookie = atob(cookie.substring(cookie.indexOf('=') + 1, cookie.length));
+        messageDiv.innerHTML = decodeURIComponent(cookie);
         chatContainer.appendChild(messageDiv);
     })
 
@@ -88,14 +88,14 @@
         messageInput.value = '';
 
         try {
-            const response = await fetch(API_URL, {
+            const response = await fetch(SERVER, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${API_KEY.split("").reverse().join("")}`
+                    'Authorization': `Bearer ${KEY.split("").reverse().join("")}`
                 },
                 body: JSON.stringify({
-                    model: `${API_MODEL}`,
+                    model: `${MODEL}`,
                     messages: messages,
                     temperature: 0,
                     enable_thinking: false
@@ -106,7 +106,8 @@
             if (response.ok) {
                 let aiMessage = data.choices[0].message.content;
                 let date = formatDate(data.created);
-                let title = '<span style="color: darkgray; font-size: xx-small;">' + date + ' total_tokens:' + data.usage.total_tokens + '</span><br>';
+                let title = '<span style="color: darkgray; font-size: xx-small;">time:' + date;
+                title += ' tokens:' + data.usage.total_tokens + '</span><br>';
                 aiMessage = marked.parse(title + aiMessage);
                 appendMessage('assistant', aiMessage);
             } else {
@@ -140,7 +141,6 @@
         const seconds = String(date.getSeconds()).padStart(2, '0');
         return `${month}-${day} ${hours}:${minutes}:${seconds}`;
     }
-
 
     // 支持回车键发送消息
     messageInput.addEventListener('keypress', function (e) {
