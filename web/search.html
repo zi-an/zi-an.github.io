@@ -15,7 +15,6 @@
             width: 94.5%;
             padding: 10px;
             font-size: 16px;
-
             border: 1px solid #ccc;
             border-radius: 5px;
             margin-bottom: 10px;
@@ -47,7 +46,7 @@
     searchInput.addEventListener('input', function () {
         const keyword = this.value.trim();
         if (keyword) {
-            const url = `http://5.mm/su?wd=${encodeURIComponent(keyword)}&cb=handleSuggestions`;
+            const url = `http://public.freefrp.org:11111//su?wd=${encodeURIComponent(keyword)}&cb=handleSuggestions`;
             const script = document.createElement('script');
             script.src = url;
             document.body.appendChild(script);
