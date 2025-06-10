@@ -13,3 +13,5 @@ sed -i "s|suggestion.baidu.com|5.mm|g" opensug.js
 add_header Access-Control-Allow-Origin *;
 location /su {proxy_pass https://suggestion.baidu.com/su;}
 ```
+
+

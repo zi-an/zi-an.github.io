@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="镜像网站#镜像 清华 南科 阿里 华为 Debian 新× Apache Maven github镜像: https://gh.llkk.cc/ https://github.akams.cn/ 离线debian源镜像#unstable 修改为debian的代号 non-free 修改为其他规范的软件,mirror.list里有模板 apt cleanapt updateapt install -y apt-mirrorsed -i &#39;s|deb|#deb|g&#39; /etc/apt/mirror.listsed -i &#39;$adeb https://mirrors.aliyun.com/debian unstable non-free&#39; /etc/apt/mirror.listapt-mirror graph TDA(工业用地效率)--&gt;B1(土地利用强度)A--&gt;B2(土地经济效益)B1--&gt;C1(容积率)B1--&gt;C2(建筑系数)B1--&gt;C3(亩均固定资本投入)B2--&gt;D1(亩均工业产值)B2--&gt;D2(亩均税收) ">
+<meta name="description" content="几乎不用了 WSL1#https://learn.microsoft.com/zh-cn/windows/wsl/install-manual#downloading-distributions Ubuntu 24.04 Debian wsl.exe --updatehttps://github.com/microsoft/WSL/releases/download/2.3.26/wsl.2.3.26.0.x64.msiAdd-AppxPackage .\app_name.appx 配置#echo &#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main&#34; | sudo tee /etc/apt/sources.listsudo apt updatesudo apt install bash-completion /etc/wsl.conf [boot]systemd=true[network]hostname = redmibook.comgenerateHosts = false 常用命令#wsl --shutdown 未解决#networkingMode Nat">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="镜像网站#镜像 清华 南科 阿里 华为 Debian 新× Apache Maven github镜像: https://gh.llkk.cc/ https://github.akams.cn/ 离线debian源镜像#unstable 修改为debian的代号 non-free 修改为其他规范的软件,mirror.list里有模板 apt cleanapt updateapt install -y apt-mirrorsed -i &#39;s|deb|#deb|g&#39; /etc/apt/mirror.listsed -i &#39;$adeb https://mirrors.aliyun.com/debian unstable non-free&#39; /etc/apt/mirror.listapt-mirror graph TDA(工业用地效率)--&gt;B1(土地利用强度)A--&gt;B2(土地经济效益)B1--&gt;C1(容积率)B1--&gt;C2(建筑系数)B1--&gt;C3(亩均固定资本投入)B2--&gt;D1(亩均工业产值)B2--&gt;D2(亩均税收) " />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="WSL1" />
+<meta property="og:description" content="几乎不用了 WSL1#https://learn.microsoft.com/zh-cn/windows/wsl/install-manual#downloading-distributions Ubuntu 24.04 Debian wsl.exe --updatehttps://github.com/microsoft/WSL/releases/download/2.3.26/wsl.2.3.26.0.x64.msiAdd-AppxPackage .\app_name.appx 配置#echo &#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main&#34; | sudo tee /etc/apt/sources.listsudo apt updatesudo apt install bash-completion /etc/wsl.conf [boot]systemd=true[network]hostname = redmibook.comgenerateHosts = false 常用命令#wsl --shutdown 未解决#networkingMode Nat" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/system/wsl1/" /><meta property="article:section" content="docs" />
 
 
-<title>镜像网站
+<title>WSL1
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/">
+<link rel="canonical" href="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/system/wsl1/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/zh.search.min.168c4d40c555fe04c930f0980e183670cd7a4d39ed40af9c645f1705efca7514.js" integrity="sha256-FoxNQMVV/gTJMPCYDhg2cM16TTntQK&#43;cZF8XBe/KdRQ=" crossorigin="anonymous"></script>
@@ -72,7 +72,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-0488dc51fd99636dd6b4d238151c1db5" class="toggle" checked />
+    <input type="checkbox" id="section-0488dc51fd99636dd6b4d238151c1db5" class="toggle"  />
     <label for="section-0488dc51fd99636dd6b4d238151c1db5" class="flex justify-between">
       <a role="button" class="">服务器</a>
     </label>
@@ -372,7 +372,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/" class="active">镜像网站</a>
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/" class="">镜像网站</a>
   
 
         </li>
@@ -390,7 +390,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-69ea6a18acbd408b17a06556c8b882ae" class="toggle"  />
+    <input type="checkbox" id="section-69ea6a18acbd408b17a06556c8b882ae" class="toggle" checked />
     <label for="section-69ea6a18acbd408b17a06556c8b882ae" class="flex justify-between">
       <a role="button" class="">笔记本</a>
     </label>
@@ -406,7 +406,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-b5b5750d75a81663c53d7ba3cb32c954" class="toggle"  />
+    <input type="checkbox" id="section-b5b5750d75a81663c53d7ba3cb32c954" class="toggle" checked />
     <label for="section-b5b5750d75a81663c53d7ba3cb32c954" class="flex justify-between">
       <a role="button" class="">windows 11</a>
     </label>
@@ -435,7 +435,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/system/wsl1/" class="">WSL1</a>
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/win11-ltsc/system/wsl1/" class="active">WSL1</a>
   
 
         </li>
@@ -736,7 +736,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>镜像网站</strong>
+  <strong>WSL1</strong>
 
   <label for="toc-control">
     
@@ -750,7 +750,13 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#配置">配置</a></li>
+    <li><a href="#常用命令">常用命令</a></li>
+    <li><a href="#未解决">未解决</a></li>
+  </ul>
+</nav>
 
 
 
@@ -761,70 +767,48 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h1 id="镜像网站">
-  镜像网站
-  <a class="anchor" href="#%e9%95%9c%e5%83%8f%e7%bd%91%e7%ab%99">#</a>
-</h1>
-<table>
-<thead>
-<tr>
-<th>镜像</th>
-<th><a href="https://mirrors.tuna.tsinghua.edu.cn/">清华</a></th>
-<th><a href="https://mirrors.sustech.edu.cn/">南科</a></th>
-<th><a href="https://developer.aliyun.com/mirror/">阿里</a></th>
-<th><a href="https://mirrors.huaweicloud.com/home">华为</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Debian</td>
-<td></td>
-<td><a href="https://mirrors.huaweicloud.com/apache/hadoop/common/">新×</a></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Apache</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Maven</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>github镜像: <a href="https://gh.llkk.cc/">https://gh.llkk.cc/</a> <a href="https://github.akams.cn/">https://github.akams.cn/</a></li>
+  <article class="markdown book-article"><ul>
+<li>几乎不用了</li>
 </ul>
-<h1 id="离线debian源镜像">
-  离线debian源镜像
-  <a class="anchor" href="#%e7%a6%bb%e7%ba%bfdebian%e6%ba%90%e9%95%9c%e5%83%8f">#</a>
+<h1 id="wsl1">
+  WSL1
+  <a class="anchor" href="#wsl1">#</a>
 </h1>
 <ul>
-<li>unstable 修改为debian的代号</li>
-<li>non-free 修改为其他规范的软件,mirror.list里有模板</li>
+<li><a href="https://learn.microsoft.com/zh-cn/windows/wsl/install-manual#downloading-distributions">https://learn.microsoft.com/zh-cn/windows/wsl/install-manual#downloading-distributions</a></li>
+<li><a href="https://wslstorestorage.blob.core.windows.net/wslblob/Ubuntu2404-240425.AppxBundle">Ubuntu 24.04</a></li>
+<li><a href="https://wslstorestorage.blob.core.windows.net/wslblob/TheDebianProject.DebianGNULinux_1.12.2.0_neutral___76v4gfsz19hv4.AppxBundle">Debian</a></li>
 </ul>
-<pre tabindex="0"><code>apt clean
-apt update
-apt install -y apt-mirror
-sed -i &#39;s|deb|#deb|g&#39; /etc/apt/mirror.list
-sed -i &#39;$adeb https://mirrors.aliyun.com/debian unstable non-free&#39; /etc/apt/mirror.list
-apt-mirror
-</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TD
-A(工业用地效率)--&gt;B1(土地利用强度)
-A--&gt;B2(土地经济效益)
-B1--&gt;C1(容积率)
-B1--&gt;C2(建筑系数)
-B1--&gt;C3(亩均固定资本投入)
-B2--&gt;D1(亩均工业产值)
-B2--&gt;D2(亩均税收)
-</code></pre></article>
+<pre tabindex="0"><code>wsl.exe --update
+https://github.com/microsoft/WSL/releases/download/2.3.26/wsl.2.3.26.0.x64.msi
+Add-AppxPackage .\app_name.appx
+</code></pre><h2 id="配置">
+  配置
+  <a class="anchor" href="#%e9%85%8d%e7%bd%ae">#</a>
+</h2>
+<pre tabindex="0"><code>echo &#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main&#34; | sudo tee /etc/apt/sources.list
+sudo apt update
+sudo apt install bash-completion
+</code></pre><ul>
+<li>/etc/wsl.conf</li>
+</ul>
+<pre tabindex="0"><code>[boot]
+systemd=true
+
+[network]
+hostname = redmibook.com
+generateHosts = false
+</code></pre><h2 id="常用命令">
+  常用命令
+  <a class="anchor" href="#%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4">#</a>
+</h2>
+<pre tabindex="0"><code>wsl --shutdown
+</code></pre><h2 id="未解决">
+  未解决
+  <a class="anchor" href="#%e6%9c%aa%e8%a7%a3%e5%86%b3">#</a>
+</h2>
+<p>networkingMode Nat</p>
+</article>
  
       
 
@@ -863,7 +847,13 @@ B2--&gt;D2(亩均税收)
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#配置">配置</a></li>
+    <li><a href="#常用命令">常用命令</a></li>
+    <li><a href="#未解决">未解决</a></li>
+  </ul>
+</nav>
 
 
  
