@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ltsc on </title>
+    <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/</link>
+    <description>Recent content in ltsc on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <atom:link href="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/win11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/win11/</guid>
+      <description>系统安装&#xD;#&#xD;推荐使用LTSC,专业版需登录账号才能完成安装 win11x64 禁止系统更新安全中心&#xD;#&#xD;https://www.sordum.org/9470/windows-update-blocker-v1-8/ https://www.sordum.org/files/downloads.php?st-windows-update-blocker 安全中心通知&#xD;#&#xD;gpedit.msc-&amp;gt;计算机配置-&amp;gt;管理模板-&amp;gt;Windows 组件-&amp;gt;Windows 安全中心-&amp;gt;通知-&amp;gt;隐藏所有通知&#xA;修改缓存位置&#xD;#&#xD;采用imdisk-&amp;gt;设置-&amp;gt;数据-&amp;gt;从文件夹挂载 文件夹里需要有\soft\edge和\soft\chrome del &amp;#34;C:\Users\docker\AppData\Local\Microsoft\Edge\User Data\Default\Cache&amp;#34;&#xD;mklink /J &amp;#34;C:\Users\docker\AppData\Local\Microsoft\Edge\User Data\Default\Cache&amp;#34; &amp;#34;Z:\soft\edge&amp;#34;&#xD;del &amp;#34;C:\Users\docker\AppData\Local\Google\Chrome\User Data\Default\Cache&amp;#34;&#xD;mklink /J &amp;#34;C:\Users\docker\AppData\Local\Google\Chrome\User Data\Default\Cache&amp;#34; &amp;#34;Z:\soft\chrome&amp;#34; 禁止桌面图标自动排序&#xD;#&#xD;桌面-个性化-主题-桌面图标设置-允许主题修改桌面图标(×)&#xA;副屏&#xD;#&#xD;副屏壁纸 副屏位置 副屏任务栏 扩展屏幕/多屏显示&#xD;#&#xD;任务栏设置-&amp;gt;任务栏行为-&amp;gt;在所有显示器上显示任务栏(√)-&amp;gt;当使用多个显示器时,在以下位置显示我的状态栏应用(打开了窗口的任务栏)</description>
+    </item>
+    <item>
+      <title>WSL1</title>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/wsl1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/wsl1/</guid>
+      <description>几乎不用了 WSL1&#xD;#&#xD;https://learn.microsoft.com/zh-cn/windows/wsl/install-manual#downloading-distributions Ubuntu 24.04 Debian wsl.exe --update&#xD;https://github.com/microsoft/WSL/releases/download/2.3.26/wsl.2.3.26.0.x64.msi&#xD;Add-AppxPackage .\app_name.appx 配置&#xD;#&#xD;echo &amp;#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main&amp;#34; | sudo tee /etc/apt/sources.list&#xD;sudo apt update&#xD;sudo apt install bash-completion /etc/wsl.conf [boot]&#xD;systemd=true&#xD;[network]&#xD;hostname = redmibook.com&#xD;generateHosts = false 常用命令&#xD;#&#xD;wsl --shutdown 未解决&#xD;#&#xD;networkingMode Nat</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/imewlconverter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/imewlconverter/</guid>
+      <description>imewlconverter&#xD;#&#xD;词库&#xD;#&#xD;更高版本要安装更高级的.net,以下版本不需要 https://github.com/studyzy/imewlconverter/releases/tag/v2.9.0 纯汉字无拼音-Win10微软拼音(自学习词库)</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/shell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/shell/</guid>
+      <description>&#xD;扩展命令&#xD;#&#xD;powershell虽然好用,但是命令与Linux差别巨大 wget hugo </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/win10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/win10/</guid>
+      <description>旧版系统&#xD;#&#xD;win 10 ltsc&#xD;#&#xD;下载 ed2k://|file|LTSC_2021_X64.ISO|5044211712|1555B7DCA052B5958EE68DB58A42408D|/&#xA;win 7&#xD;#&#xD;专业版VL&#xA;旗舰版下载 ed2k://|file|windows_7_ultimate_x64.iso|3419052032|56E90251E665E643C81168F6DD870BCB|/ win7旗舰版不能用kms激活。&#xA;chrome浏览器取消不更新提醒chrome.reg Windows Registry Editor Version 5.00&#xD;[HKEY_CURRENT_USER\Software\Policies\Google\Chrome]&#xD;&amp;#34;SuppressUnsupportedOSWarning&amp;#34;=dword:00000001 QQ拼音输入法 激活win7pro vl版 slmgr /skms kms.03k.org&#xD;slmgr /ato 图片查看器&#xD;#&#xD;tu.reg Windows Registry Editor Version 5.00&#xD;; Change Extension&amp;#39;s File Type&#xD;[HKEY_CURRENT_USER\Software\Classes\.jpg]&#xD;@=&amp;#34;PhotoViewer.FileAssoc.Tiff&amp;#34;&#xD;; Change Extension&amp;#39;s File Type&#xD;[HKEY_CURRENT_USER\Software\Classes\.jpeg]&#xD;@=&amp;#34;PhotoViewer.FileAssoc.Tiff&amp;#34;&#xD;; Change Extension&amp;#39;s File Type&#xD;[HKEY_CURRENT_USER\Software\Classes\.gif]&#xD;@=&amp;#34;PhotoViewer.FileAssoc.Tiff&amp;#34;&#xD;; Change Extension&amp;#39;s File Type&#xD;[HKEY_CURRENT_USER\Software\Classes\.png]&#xD;@=&amp;#34;PhotoViewer.FileAssoc.Tiff&amp;#34;&#xD;; Change Extension&amp;#39;s File Type&#xD;[HKEY_CURRENT_USER\Software\Classes\.</description>
+    </item>
+  </channel>
+</rss>
