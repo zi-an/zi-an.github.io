@@ -45,10 +45,10 @@
 </head>
 
 <body>
-<div id="chat-container" style="height: 600px;padding-bottom: 60px;overflow: auto;"></div>
+<div id="chat-container" style="height: 680px;;overflow: auto;"></div>
 <div id="input-container" style="display: flex;">
     <input id="message-input" placeholder="输入你的消息..." style="flex-grow: 1;padding: 5px;" type="text">
-    <button onclick="sendMessage()" style="margin-left: 5px;padding: 5px 10px;">发送</button>
+    <button onclick="sendMessage()" style="margin-left: 5px;">发送</button>
 </div>
 <script>
     const SERVER = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions';
@@ -100,6 +100,9 @@
         } catch (error) {
             console.error('打开数据库失败:', error);
         }
+		setTimeout(() => {
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }, 10);
     }
 
     // 保存消息到 IndexedDB
@@ -154,7 +157,7 @@
         chatContainer.appendChild(messageDiv);
         setTimeout(() => {
             chatContainer.scrollTop = chatContainer.scrollHeight;
-        }, 1000);
+        }, 10);
     }
 
     async function sendMessage() {
@@ -163,7 +166,7 @@
 
         // 清空messages并添加用户消息到聊天记录
         messages = []
-        messages.push({role: 'user', content: "简洁回答:" + userMessage});
+        messages.push({role: 'user', content: userMessage});
         appendMessage('user', userMessage);
         messageInput.value = '';
         try {
