@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="服务器安装#清华镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 推荐桌面:Cinnamon是debian官方维护的桌面系统 初始化安装#echo &#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware&#34; | sudo tee /etc/apt/sources.listwget ali.mm/debian/config.tgzsudo tar -zxvf config.tgz -C /rm config.tgz 容器优化#cat &gt; proxy.conf &lt;&lt; EOF[Service]Environment=&#34;HTTP_PROXY=http://x:x@127.1:10086&#34;Environment=&#34;HTTPS_PROXY=http://x:x@127.1:10086&#34;Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cn&#34;EOFsudo mkdir /etc/systemd/system/docker.service.dsudo mv proxy.conf /etc/systemd/system/docker.service.dsudo apt install -y docker.io 网络优化#">
+<meta name="description" content="服务器安装#清华镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 推荐桌面:Cinnamon是debian官方维护的桌面系统 初始化安装#echo &#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware&#34; | sudo tee /etc/apt/sources.listwget ali.mm/debian/config.tgzsudo tar -zxvf config.tgz -C /rm config.tgz 容器优化#cat &gt; proxy.conf &lt;&lt; EOF[Service]Environment=&#34;HTTP_PROXY=http://x:x@127.0.0.1:20172&#34;Environment=&#34;HTTPS_PROXY=http://x:x@127.0.0.1:20172&#34;Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cn&#34;EOFsudo mkdir /etc/systemd/system/docker.service.dsudo mv proxy.conf /etc/systemd/system/docker.service.dsystemctl daemon-reloadsystemctl restart docker.socket docker.service 网络优化#">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="服务器安装#清华镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 推荐桌面:Cinnamon是debian官方维护的桌面系统 初始化安装#echo &#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware&#34; | sudo tee /etc/apt/sources.listwget ali.mm/debian/config.tgzsudo tar -zxvf config.tgz -C /rm config.tgz 容器优化#cat &gt; proxy.conf &lt;&lt; EOF[Service]Environment=&#34;HTTP_PROXY=http://x:x@127.1:10086&#34;Environment=&#34;HTTPS_PROXY=http://x:x@127.1:10086&#34;Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cn&#34;EOFsudo mkdir /etc/systemd/system/docker.service.dsudo mv proxy.conf /etc/systemd/system/docker.service.dsudo apt install -y docker.io 网络优化#" />
+<meta property="og:description" content="服务器安装#清华镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 推荐桌面:Cinnamon是debian官方维护的桌面系统 初始化安装#echo &#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware&#34; | sudo tee /etc/apt/sources.listwget ali.mm/debian/config.tgzsudo tar -zxvf config.tgz -C /rm config.tgz 容器优化#cat &gt; proxy.conf &lt;&lt; EOF[Service]Environment=&#34;HTTP_PROXY=http://x:x@127.0.0.1:20172&#34;Environment=&#34;HTTPS_PROXY=http://x:x@127.0.0.1:20172&#34;Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cn&#34;EOFsudo mkdir /etc/systemd/system/docker.service.dsudo mv proxy.conf /etc/systemd/system/docker.service.dsystemctl daemon-reloadsystemctl restart docker.socket docker.service 网络优化#" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/" /><meta property="article:section" content="docs" />
 
@@ -19,7 +19,7 @@
 <link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.202725522bc3e88e8e8fe91e213b2e6b97095fc05d7fc520767ac01a7a09503a.js" integrity="sha256-ICclUivD6I6Oj&#43;keITsua5cJX8Bdf8UgdnrAGnoJUDo=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.f939b40fc04eda39f4e704a96962c53ad968ad14fc8d174c54bc2878a6430f8b.js" integrity="sha256-&#43;Tm0D8BO2jn05wSpaWLFOtlorRT8jRdMVLwoeKZDD4s=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -813,13 +813,14 @@ rm config.tgz
 </h2>
 <pre tabindex="0"><code>cat &gt; proxy.conf &lt;&lt; EOF
 [Service]
-Environment=&#34;HTTP_PROXY=http://x:x@127.1:10086&#34;
-Environment=&#34;HTTPS_PROXY=http://x:x@127.1:10086&#34;
+Environment=&#34;HTTP_PROXY=http://x:x@127.0.0.1:20172&#34;
+Environment=&#34;HTTPS_PROXY=http://x:x@127.0.0.1:20172&#34;
 Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cn&#34;
 EOF
 sudo mkdir /etc/systemd/system/docker.service.d
 sudo mv proxy.conf /etc/systemd/system/docker.service.d
-sudo apt install -y docker.io
+systemctl daemon-reload
+systemctl restart docker.socket docker.service
 </code></pre><h2 id="网络优化">
   网络优化
   <a class="anchor" href="#%e7%bd%91%e7%bb%9c%e4%bc%98%e5%8c%96">#</a>
