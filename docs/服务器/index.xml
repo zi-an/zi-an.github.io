@@ -16,10 +16,10 @@
     </item>
     <item>
       <title></title>
-      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%A1%AC%E7%9B%98%E4%BD%BF%E7%94%A8/</link>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%A1%AC%E7%9B%98%E4%BD%BF%E7%94%A8/</guid>
-      <description>&#xD;硬盘使用&#xD;#&#xD;移动硬盘 格式化+挂载&#xD;#&#xD;sudo apt install -y exfatprogs&#xD;sudo mkfs.exfat /dev/sda&#xD;sudo mount /dev/sda /home/nginx/samsung/ </description>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>云服务器&#xD;#&#xD;执行脚本&#xD;#&#xD;wget config.tgz tar -zxvf config.tgz echo &amp;#34;HandleLidSwitch=lock&amp;#34; &amp;gt;&amp;gt; /etc/systemd/logind.conf &amp;amp;&amp;amp;\ apt update &amp;amp;&amp;amp;\ echo &amp;#39;y&amp;#39; | apt install -y bash-completion curl iproute2 iputils-ping locales net-tools openssh-server sudo vim-tiny wget &amp;amp;&amp;amp;\ apt clean &amp;amp;&amp;amp;\ echo &amp;#34;zh_CN.UTF-8 UTF-8&amp;#34; &amp;gt; /etc/locale.gen &amp;amp;&amp;amp;\ echo &amp;#34;LANG=zh_CN.UTF-8&amp;#34; &amp;gt; /etc/default/locale &amp;amp;&amp;amp;\ locale-gen &amp;amp;&amp;amp;\ rm /etc/motd /etc/update-motd.d/10-uname &amp;amp;&amp;amp;\ echo &amp;#34;PrintLastLog no&amp;#34; &amp;gt;&amp;gt; /etc/ssh/sshd_config &amp;amp;&amp;amp;\ echo &amp;#34;set bell-style none&amp;#34; &amp;gt;&amp;gt; /etc/inputrc &amp;amp;&amp;amp;\ echo &amp;#34;source /etc/profile&amp;#34; &amp;gt;&amp;gt; /root/.</description>
     </item>
     <item>
       <title></title>
@@ -41,6 +41,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/</guid>
       <description>&#xD;镜像网站&#xD;#&#xD;镜像 清华 南科 阿里 华为 Debian 新× Apache Maven github镜像: https://gh.llkk.cc/ https://github.akams.cn/ 离线debian源镜像&#xD;#&#xD;unstable 修改为debian的代号 non-free 修改为其他规范的软件,mirror.list里有模板 apt clean&#xD;apt update&#xD;apt install -y apt-mirror&#xD;sed -i &amp;#39;s|deb|#deb|g&amp;#39; /etc/apt/mirror.list&#xD;sed -i &amp;#39;$adeb https://mirrors.aliyun.com/debian unstable non-free&amp;#39; /etc/apt/mirror.list&#xD;apt-mirror graph TD&#xD;A(工业用地效率)--&amp;gt;B1(土地利用强度)&#xD;A--&amp;gt;B2(土地经济效益)&#xD;B1--&amp;gt;C1(容积率)&#xD;B1--&amp;gt;C2(建筑系数)&#xD;B1--&amp;gt;C3(亩均固定资本投入)&#xD;B2--&amp;gt;D1(亩均工业产值)&#xD;B2--&amp;gt;D2(亩均税收) </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%A1%AC%E7%9B%98%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%A1%AC%E7%9B%98%E4%BD%BF%E7%94%A8/</guid>
+      <description>&#xD;硬盘使用&#xD;#&#xD;移动硬盘 格式化+挂载&#xD;#&#xD;sudo apt install -y exfatprogs&#xD;sudo mkfs.exfat /dev/sda&#xD;sudo mount /dev/sda /home/nginx/samsung/ </description>
     </item>
   </channel>
 </rss>
