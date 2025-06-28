@@ -37,6 +37,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/v2raya/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/v2raya/</guid>
+      <description>&#xD;v2rayA代理使用&#xD;#&#xD;v2rayA部署&#xD;#&#xD;Docker配置 v2raya:&#xD;container_name: v2raya&#xD;hostname: v2raya.mm&#xD;image: mzz2017/v2raya&#xD;restart: always&#xD;tty: true&#xD;ports:&#xD;- &amp;#34;0.0.0.0:20170-20172:20170-20172&amp;#34;&#xD;environment:&#xD;V2RAYA_V2RAY_BIN: /usr/local/bin/v2ray&#xD;V2RAYA_ADDRESS: 0.0.0.0:20171&#xD;volumes:&#xD;- /home/v2raya:/etc/v2raya 开启端口分享 分流规则使用RoutingA,source内IP根据实际调整 其他全关闭 default: block&#xD;domain(domain: update.miui.com) -&amp;gt; block&#xD;domain(geosite:category-ads) -&amp;gt; block&#xD;domain(geosite:cn)-&amp;gt;direct&#xD;source(120.0.0.0/8) -&amp;gt; proxy&#xD;source(172.0.0.0/8) -&amp;gt; proxy 地址与端口:除了20170跟20172其他都为0 *.cn,*.com.cn,*.bing.com Docker配置代理&#xD;#&#xD;sudo mkdir -p /etc/systemd/system/docker.service.d sudo vi /etc/systemd/system/docker.service.d/proxy.conf [Service]&#xD;Environment=&amp;#34;HTTP_PROXY=http://127.0.0.1:20172&amp;#34;&#xD;Environment=&amp;#34;HTTPS_PROXY=http://127.0.0.1:20172&amp;#34;&#xD;Environment=&amp;#34;NO_PROXY=localhost,127.0.0.1&amp;#34; sudo systemctl daemon-reload&#xD;sudo systemctl restart docker </description>
+    </item>
+    <item>
+      <title></title>
       <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wget/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wget/</guid>

@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="计算圆周率#圆周率查询 https://www.pilookup.com/zh-cn/ 圆周率下载 https://www.pilookup.com/zh-cn/download.html 源代码 https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html 最大ftt值为536870912大约512M内存 使用FFT&#43;AGM代码计算#apt install gcc make -ywget https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fftc6_src.tgztar -zxvf pi_fftc6_src.tgzcd pi_fftc6/sed -i &#34;s|-fast|-Ofast|g&#34; Makefile_64bitsed -i &#39;s|scanf(&#34;%lg&#34;, &amp;x)|x=100000|g&#39; pi_fftcw.cmake -f Makefile_64bitnohup ./pi_cw &amp;cat pi.dat 四行代码求圆周率#资料 https://cs.uwaterloo.ca/~alopez-o/math-faq/mathtext/node12.html pi.c如下,执行 * gcc pi.c &amp;&amp; ./a.out * #include &lt;stdio.h&gt;int a=10000,b,c=2800,d,e,f[2801],g;void main(){for(;b-c;)f[b&#43;&#43;]=a/5;for(;d=0,g=c*2;c-=14,printf(&#34;%.4d&#34;,e&#43;d/a),e=d%a)for(b=c;d&#43;=f[b]*a,f[b]=d%--g,d/=g--,--b;d*=b);} 下载#wget https://files.pilookup.com/pi/1-100000000.zipwget https://files.pilookup.com/pi/100000001-200000000.zipwget https://files.pilookup.com/pi/200000001-300000000.zip wget https://files.">
+<meta name="description" content="v2rayA代理使用#v2rayA部署#Docker配置 v2raya:container_name: v2rayahostname: v2raya.mmimage: mzz2017/v2rayarestart: alwaystty: trueports:- &#34;0.0.0.0:20170-20172:20170-20172&#34;environment:V2RAYA_V2RAY_BIN: /usr/local/bin/v2rayV2RAYA_ADDRESS: 0.0.0.0:20171volumes:- /home/v2raya:/etc/v2raya 开启端口分享 分流规则使用RoutingA,source内IP根据实际调整 其他全关闭 default: blockdomain(domain: update.miui.com) -&gt; blockdomain(geosite:category-ads) -&gt; blockdomain(geosite:cn)-&gt;directsource(120.0.0.0/8) -&gt; proxysource(172.0.0.0/8) -&gt; proxy 地址与端口:除了20170跟20172其他都为0 *.cn,*.com.cn,*.bing.com Docker配置代理#sudo mkdir -p /etc/systemd/system/docker.service.d sudo vi /etc/systemd/system/docker.service.d/proxy.conf [Service]Environment=&#34;HTTP_PROXY=http://127.0.0.1:20172&#34;Environment=&#34;HTTPS_PROXY=http://127.0.0.1:20172&#34;Environment=&#34;NO_PROXY=localhost,127.0.0.1&#34; sudo systemctl daemon-reloadsudo systemctl restart docker ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="计算圆周率#圆周率查询 https://www.pilookup.com/zh-cn/ 圆周率下载 https://www.pilookup.com/zh-cn/download.html 源代码 https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html 最大ftt值为536870912大约512M内存 使用FFT&#43;AGM代码计算#apt install gcc make -ywget https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fftc6_src.tgztar -zxvf pi_fftc6_src.tgzcd pi_fftc6/sed -i &#34;s|-fast|-Ofast|g&#34; Makefile_64bitsed -i &#39;s|scanf(&#34;%lg&#34;, &amp;x)|x=100000|g&#39; pi_fftcw.cmake -f Makefile_64bitnohup ./pi_cw &amp;cat pi.dat 四行代码求圆周率#资料 https://cs.uwaterloo.ca/~alopez-o/math-faq/mathtext/node12.html pi.c如下,执行 * gcc pi.c &amp;&amp; ./a.out * #include &lt;stdio.h&gt;int a=10000,b,c=2800,d,e,f[2801],g;void main(){for(;b-c;)f[b&#43;&#43;]=a/5;for(;d=0,g=c*2;c-=14,printf(&#34;%.4d&#34;,e&#43;d/a),e=d%a)for(b=c;d&#43;=f[b]*a,f[b]=d%--g,d/=g--,--b;d*=b);} 下载#wget https://files.pilookup.com/pi/1-100000000.zipwget https://files.pilookup.com/pi/100000001-200000000.zipwget https://files.pilookup.com/pi/200000001-300000000.zip wget https://files." />
+<meta property="og:description" content="v2rayA代理使用#v2rayA部署#Docker配置 v2raya:container_name: v2rayahostname: v2raya.mmimage: mzz2017/v2rayarestart: alwaystty: trueports:- &#34;0.0.0.0:20170-20172:20170-20172&#34;environment:V2RAYA_V2RAY_BIN: /usr/local/bin/v2rayV2RAYA_ADDRESS: 0.0.0.0:20171volumes:- /home/v2raya:/etc/v2raya 开启端口分享 分流规则使用RoutingA,source内IP根据实际调整 其他全关闭 default: blockdomain(domain: update.miui.com) -&gt; blockdomain(geosite:category-ads) -&gt; blockdomain(geosite:cn)-&gt;directsource(120.0.0.0/8) -&gt; proxysource(172.0.0.0/8) -&gt; proxy 地址与端口:除了20170跟20172其他都为0 *.cn,*.com.cn,*.bing.com Docker配置代理#sudo mkdir -p /etc/systemd/system/docker.service.d sudo vi /etc/systemd/system/docker.service.d/proxy.conf [Service]Environment=&#34;HTTP_PROXY=http://127.0.0.1:20172&#34;Environment=&#34;HTTPS_PROXY=http://127.0.0.1:20172&#34;Environment=&#34;NO_PROXY=localhost,127.0.0.1&#34; sudo systemctl daemon-reloadsudo systemctl restart docker " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/v2raya/" /><meta property="article:section" content="docs" />
 
 
-<title>圆周计算
+<title>V2ray A
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/">
+<link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/v2raya/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/zh.search.min.c831ee7d0d7e48ba6147bcfd9776473131f251266f084a6cdea0838e4fdb5ab5.js" integrity="sha256-yDHufQ1&#43;SLphR7z9l3ZHMTHyUSZvCEps3qCDjk/bWrU=" crossorigin="anonymous"></script>
@@ -72,7 +72,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-0488dc51fd99636dd6b4d238151c1db5" class="toggle"  />
+    <input type="checkbox" id="section-0488dc51fd99636dd6b4d238151c1db5" class="toggle" checked />
     <label for="section-0488dc51fd99636dd6b4d238151c1db5" class="flex justify-between">
       <a role="button" class="">服务器</a>
     </label>
@@ -221,7 +221,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-1c94fe179191121debb232d029fa7ab0" class="toggle"  />
+    <input type="checkbox" id="section-1c94fe179191121debb232d029fa7ab0" class="toggle" checked />
     <label for="section-1c94fe179191121debb232d029fa7ab0" class="flex justify-between">
       <a role="button" class="">软件使用</a>
     </label>
@@ -289,7 +289,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/v2raya/" class="">V2ray A</a>
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/v2raya/" class="active">V2ray A</a>
   
 
         </li>
@@ -630,7 +630,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-4c5225b7eae8094cdab6239dd506ef7a" class="toggle" checked />
+    <input type="checkbox" id="section-4c5225b7eae8094cdab6239dd506ef7a" class="toggle"  />
     <label for="section-4c5225b7eae8094cdab6239dd506ef7a" class="flex justify-between">
       <a role="button" class="">代码库</a>
     </label>
@@ -698,7 +698,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/" class="active">圆周计算</a>
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/" class="">圆周计算</a>
   
 
         </li>
@@ -770,7 +770,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>圆周计算</strong>
+  <strong>V2ray A</strong>
 
   <label for="toc-control">
     
@@ -786,9 +786,8 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#使用fftagm代码计算">使用<em>FFT+AGM</em>代码计算</a></li>
-    <li><a href="#四行代码求圆周率">四行代码求圆周率</a></li>
-    <li><a href="#下载">下载</a></li>
+    <li><a href="#v2raya部署">v2rayA部署</a></li>
+    <li><a href="#docker配置代理">Docker配置代理</a></li>
   </ul>
 </nav>
 
@@ -801,59 +800,59 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h1 id="计算圆周率">
-  计算圆周率
-  <a class="anchor" href="#%e8%ae%a1%e7%ae%97%e5%9c%86%e5%91%a8%e7%8e%87">#</a>
+  <article class="markdown book-article"><h1 id="v2raya代理使用">
+  v2rayA代理使用
+  <a class="anchor" href="#v2raya%e4%bb%a3%e7%90%86%e4%bd%bf%e7%94%a8">#</a>
 </h1>
-<ul>
-<li>圆周率查询 <a href="https://www.pilookup.com/zh-cn/">https://www.pilookup.com/zh-cn/</a></li>
-<li>圆周率下载 <a href="https://www.pilookup.com/zh-cn/download.html">https://www.pilookup.com/zh-cn/download.html</a></li>
-<li>源代码 <a href="https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html">https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html</a></li>
-<li>最大ftt值为536870912大约512M内存</li>
-</ul>
-<h2 id="使用fftagm代码计算">
-  使用<em>FFT+AGM</em>代码计算
-  <a class="anchor" href="#%e4%bd%bf%e7%94%a8fftagm%e4%bb%a3%e7%a0%81%e8%ae%a1%e7%ae%97">#</a>
-</h2>
-<pre tabindex="0"><code>apt install gcc make -y
-
-wget https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fftc6_src.tgz
-tar -zxvf pi_fftc6_src.tgz
-cd pi_fftc6/
-sed -i &#34;s|-fast|-Ofast|g&#34; Makefile_64bit
-sed -i &#39;s|scanf(&#34;%lg&#34;, &amp;x)|x=100000|g&#39; pi_fftcw.c
-make -f Makefile_64bit
-
-nohup ./pi_cw &amp;
-cat pi.dat
-</code></pre><h2 id="四行代码求圆周率">
-  四行代码求圆周率
-  <a class="anchor" href="#%e5%9b%9b%e8%a1%8c%e4%bb%a3%e7%a0%81%e6%b1%82%e5%9c%86%e5%91%a8%e7%8e%87">#</a>
+<h2 id="v2raya部署">
+  v2rayA部署
+  <a class="anchor" href="#v2raya%e9%83%a8%e7%bd%b2">#</a>
 </h2>
 <ul>
-<li>资料 <a href="https://cs.uwaterloo.ca/~alopez-o/math-faq/mathtext/node12.html">https://cs.uwaterloo.ca/~alopez-o/math-faq/mathtext/node12.html</a></li>
-<li>pi.c如下,执行 * gcc pi.c &amp;&amp; ./a.out *</li>
+<li>Docker配置</li>
 </ul>
-<pre tabindex="0"><code>#include &lt;stdio.h&gt;
-int a=10000,b,c=2800,d,e,f[2801],g;
-void main(){
-for(;b-c;)f[b++]=a/5;
-for(;d=0,g=c*2;c-=14,printf(&#34;%.4d&#34;,e+d/a),e=d%a)for(b=c;d+=f[b]*a,
-f[b]=d%--g,d/=g--,--b;d*=b);}
-</code></pre><h2 id="下载">
-  下载
-  <a class="anchor" href="#%e4%b8%8b%e8%bd%bd">#</a>
+<pre tabindex="0"><code>  v2raya:
+    container_name: v2raya
+    hostname: v2raya.mm
+    image: mzz2017/v2raya
+    restart: always
+    tty: true
+    ports:
+      - &#34;0.0.0.0:20170-20172:20170-20172&#34;
+    environment:
+      V2RAYA_V2RAY_BIN: /usr/local/bin/v2ray
+      V2RAYA_ADDRESS: 0.0.0.0:20171
+    volumes:
+      - /home/v2raya:/etc/v2raya
+</code></pre><ul>
+<li>开启端口分享</li>
+<li>分流规则使用RoutingA,source内IP根据实际调整</li>
+<li>其他全关闭</li>
+</ul>
+<pre tabindex="0"><code>default: block
+domain(domain: update.miui.com) -&gt; block
+domain(geosite:category-ads) -&gt; block
+domain(geosite:cn)-&gt;direct
+source(120.0.0.0/8) -&gt; proxy
+source(172.0.0.0/8) -&gt; proxy
+</code></pre><ul>
+<li>地址与端口:除了20170跟20172其他都为0</li>
+</ul>
+<pre tabindex="0"><code>*.cn,*.com.cn,*.bing.com
+</code></pre><h2 id="docker配置代理">
+  Docker配置代理
+  <a class="anchor" href="#docker%e9%85%8d%e7%bd%ae%e4%bb%a3%e7%90%86">#</a>
 </h2>
-<pre tabindex="0"><code>wget https://files.pilookup.com/pi/1-100000000.zip
-wget https://files.pilookup.com/pi/100000001-200000000.zip
-wget https://files.pilookup.com/pi/200000001-300000000.zip 
-wget https://files.pilookup.com/pi/300000001-400000000.zip 
-wget https://files.pilookup.com/pi/400000001-500000000.zip 
-wget https://files.pilookup.com/pi/500000001-600000000.zip 
-wget https://files.pilookup.com/pi/600000001-700000000.zip 
-wget https://files.pilookup.com/pi/700000001-800000000.zip 
-wget https://files.pilookup.com/pi/800000001-900000000.zip 
-wget https://files.pilookup.com/pi/900000001-1000000000.zip
+<ul>
+<li>sudo mkdir -p /etc/systemd/system/docker.service.d</li>
+<li>sudo vi /etc/systemd/system/docker.service.d/proxy.conf</li>
+</ul>
+<pre tabindex="0"><code>[Service]
+Environment=&#34;HTTP_PROXY=http://127.0.0.1:20172&#34;
+Environment=&#34;HTTPS_PROXY=http://127.0.0.1:20172&#34;
+Environment=&#34;NO_PROXY=localhost,127.0.0.1&#34;
+</code></pre><pre tabindex="0"><code>sudo systemctl daemon-reload
+sudo systemctl restart docker
 </code></pre></article>
  
       
@@ -895,9 +894,8 @@ wget https://files.pilookup.com/pi/900000001-1000000000.zip
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#使用fftagm代码计算">使用<em>FFT+AGM</em>代码计算</a></li>
-    <li><a href="#四行代码求圆周率">四行代码求圆周率</a></li>
-    <li><a href="#下载">下载</a></li>
+    <li><a href="#v2raya部署">v2rayA部署</a></li>
+    <li><a href="#docker配置代理">Docker配置代理</a></li>
   </ul>
 </nav>
 
