@@ -1,7 +1,7 @@
 |||||||
 |-|-|-|-|-|-|
 |虎牙|[直播](https://m.huya.com/huaweimei)|[开播](https://i.huya.com/index.php?m=ProfileSetting#ktylts)|[关注](https://www.huya.com/myfollow)|[王慕霸](https://m.huya.com/189201)|[玥夕璃](https://m.huya.com/21809097)|
-|抖音|[安珀](https://live.douyin.com/356402078496)|[神黛](https://live.douyin.com/588307360871)|||
+|抖音|[安珀](https://live.douyin.com/356402078496)|[神黛](https://live.douyin.com/588307360871)|[人工](https://v.douyin.com/PadUM_9tqH4)||
 |影音|[追剧](https://m.zjuys.com/)|[短剧](https://www.duanjuwang.cc/)|[音乐](https://github.com/maotoumao/MusicFree/releases)|[音乐源](https://raw.niuma666bet.buzz/Huibq/keep-alive/master/Music_Free/myPlugins.json)|**[小电影](/web/?uri=/md/av.md)**|
 |刷机|[K30](https://xiaomirom.com/rom/redmi-k30-5g-redmi-k30i-5g-picasso-china-fastboot-recovery-rom/)|[K40](https://xiaomirom.com/rom/redmi-k40s-munch-china-fastboot-recovery-rom/)|[K70](https://xiaomirom.com/rom/redmi-k70e-poco-x6-pro-5g-duchamp-china-fastboot-recovery-rom/)|[预设置](/web/?uri=/md/miui.md)|[默认号](/web/?uri=/md/mi.md)|
 |应用|[虎牙](https://www.firepx.com/app/android-huaya-google-play/)|[哔哩](https://www.firepx.com/app/bilibili-google-play-and-other-version/)|[影音](https://www.firepx.com/app/qqplayer-last-version/)|[浏览器](https://www.firepx.com/app/android-via-google-play/)|[资源一](https://cn.uptodown.com/windows)|
@@ -15,9 +15,9 @@
 
 ||||||||
 |-|-|-|-|-|-|-|
-|外网|[首页](/)|[穿透](http://public.freefrp.org:11111/?from=/)|[二维](/web/qrcode.html)|[色彩](/web/color.html?color=)||[三星](http://10.0.0.5)|
-|资源|[脚本](/js/bing.js)|[广告](/web/adb.html)|[公网](/web/ipv6.html)|[播放](/web/m3u8.html)||[火山](http://14.103.224.46)|
-|工具|[表格](/web/markdown.html)|[计时](/web/time.html)|[聊天](/web/ai.html)|[搜索](/web/search.html)|||
+|外网|[首页](/)|[穿透](http://public.freefrp.org:11111/?from=/)|[二维](/web/qrcode.html)|[色彩](/web/color.html?color=)||[晶阳](/web/?uri=/md/jingyang.md)|
+|资源|[脚本](/js/bing.js)|[广告](/web/adb.html)|[公网](/web/ipv6.html)|[播放](/web/m3u8.html)||[三星](http://10.0.0.5)|
+|工具|[表格](/web/markdown.html)|[计时](/web/time.html)|[聊天](/web/ai.html)|[搜索](/web/search.html)||[火山](http://14.103.224.46)|
 
 ---
 
