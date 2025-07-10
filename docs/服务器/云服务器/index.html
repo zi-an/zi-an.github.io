@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="云服务器#执行脚本#wget config.tgz tar -zxvf config.tgz echo &#34;HandleLidSwitch=lock&#34; &gt;&gt; /etc/systemd/logind.conf &amp;&amp;\ apt update &amp;&amp;\ echo &#39;y&#39; | apt install -y bash-completion curl iproute2 iputils-ping locales net-tools openssh-server sudo vim-tiny wget &amp;&amp;\ apt clean &amp;&amp;\ echo &#34;zh_CN.UTF-8 UTF-8&#34; &gt; /etc/locale.gen &amp;&amp;\ echo &#34;LANG=zh_CN.UTF-8&#34; &gt; /etc/default/locale &amp;&amp;\ locale-gen &amp;&amp;\ rm /etc/motd /etc/update-motd.d/10-uname &amp;&amp;\ echo &#34;PrintLastLog no&#34; &gt;&gt; /etc/ssh/sshd_config &amp;&amp;\ echo &#34;set bell-style none&#34; &gt;&gt; /etc/inputrc &amp;&amp;\ echo &#34;source /etc/profile&#34; &gt;&gt; /root/.">
+<meta name="description" content="云服务器#执行脚本#echo &#34;deb http://mirrors.aliyun.com/debian bookworm main&#34; &gt; /etc/apt/sources.list sed -i &#39;s|aliyun|ivolces|g&#39; /etc/apt/sources.list wget config.tgz tar -zxvf config.tgz echo &#34;HandleLidSwitch=lock&#34; &gt;&gt; /etc/systemd/logind.conf &amp;&amp;\ apt update &amp;&amp;\ echo &#39;y&#39; | apt install -y bash-completion curl iproute2 iputils-ping locales net-tools openssh-server sudo vim-tiny wget &amp;&amp;\ apt clean &amp;&amp;\ echo &#34;zh_CN.UTF-8 UTF-8&#34; &gt; /etc/locale.gen &amp;&amp;\ echo &#34;LANG=zh_CN.UTF-8&#34; &gt; /etc/default/locale &amp;&amp;\ locale-gen &amp;&amp;\ rm /etc/motd /etc/update-motd.d/10-uname &amp;&amp;\ echo &#34;PrintLastLog no&#34; &gt;&gt; /etc/ssh/sshd_config &amp;&amp;\ echo &#34;set bell-style none&#34; &gt;&gt; /etc/inputrc &amp;&amp;\ echo &#34;source /etc/profile&#34; &gt;&gt; /root/.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="云服务器#执行脚本#wget config.tgz tar -zxvf config.tgz echo &#34;HandleLidSwitch=lock&#34; &gt;&gt; /etc/systemd/logind.conf &amp;&amp;\ apt update &amp;&amp;\ echo &#39;y&#39; | apt install -y bash-completion curl iproute2 iputils-ping locales net-tools openssh-server sudo vim-tiny wget &amp;&amp;\ apt clean &amp;&amp;\ echo &#34;zh_CN.UTF-8 UTF-8&#34; &gt; /etc/locale.gen &amp;&amp;\ echo &#34;LANG=zh_CN.UTF-8&#34; &gt; /etc/default/locale &amp;&amp;\ locale-gen &amp;&amp;\ rm /etc/motd /etc/update-motd.d/10-uname &amp;&amp;\ echo &#34;PrintLastLog no&#34; &gt;&gt; /etc/ssh/sshd_config &amp;&amp;\ echo &#34;set bell-style none&#34; &gt;&gt; /etc/inputrc &amp;&amp;\ echo &#34;source /etc/profile&#34; &gt;&gt; /root/." />
+<meta property="og:description" content="云服务器#执行脚本#echo &#34;deb http://mirrors.aliyun.com/debian bookworm main&#34; &gt; /etc/apt/sources.list sed -i &#39;s|aliyun|ivolces|g&#39; /etc/apt/sources.list wget config.tgz tar -zxvf config.tgz echo &#34;HandleLidSwitch=lock&#34; &gt;&gt; /etc/systemd/logind.conf &amp;&amp;\ apt update &amp;&amp;\ echo &#39;y&#39; | apt install -y bash-completion curl iproute2 iputils-ping locales net-tools openssh-server sudo vim-tiny wget &amp;&amp;\ apt clean &amp;&amp;\ echo &#34;zh_CN.UTF-8 UTF-8&#34; &gt; /etc/locale.gen &amp;&amp;\ echo &#34;LANG=zh_CN.UTF-8&#34; &gt; /etc/default/locale &amp;&amp;\ locale-gen &amp;&amp;\ rm /etc/motd /etc/update-motd.d/10-uname &amp;&amp;\ echo &#34;PrintLastLog no&#34; &gt;&gt; /etc/ssh/sshd_config &amp;&amp;\ echo &#34;set bell-style none&#34; &gt;&gt; /etc/inputrc &amp;&amp;\ echo &#34;source /etc/profile&#34; &gt;&gt; /root/." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/" /><meta property="article:section" content="docs" />
 
@@ -19,7 +19,7 @@
 <link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.c831ee7d0d7e48ba6147bcfd9776473131f251266f084a6cdea0838e4fdb5ab5.js" integrity="sha256-yDHufQ1&#43;SLphR7z9l3ZHMTHyUSZvCEps3qCDjk/bWrU=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.ee4f72f0409e7b9d48feb57b68ff60a795c20a8dc2c84e2b6e4ef0ff25da5ca8.js" integrity="sha256-7k9y8ECee51I/rV7aP9gp5XCCo3CyE4rbk7w/yXaXKg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -807,7 +807,9 @@ https://github.com/alex-shpak/hugo-book
   执行脚本
   <a class="anchor" href="#%e6%89%a7%e8%a1%8c%e8%84%9a%e6%9c%ac">#</a>
 </h2>
-<pre tabindex="0"><code>wget config.tgz
+<pre tabindex="0"><code>echo &#34;deb http://mirrors.aliyun.com/debian bookworm main&#34; &gt; /etc/apt/sources.list
+sed -i &#39;s|aliyun|ivolces|g&#39; /etc/apt/sources.list
+wget config.tgz
 tar -zxvf config.tgz
 echo &#34;HandleLidSwitch=lock&#34; &gt;&gt; /etc/systemd/logind.conf &amp;&amp;\
 apt update &amp;&amp;\
@@ -822,7 +824,11 @@ echo &#34;set bell-style none&#34; &gt;&gt; /etc/inputrc &amp;&amp;\
 echo &#34;source /etc/profile&#34; &gt;&gt; /root/.bashrc &amp;&amp;\
 useradd -ms/bin/bash -k/etc/skel/ docker &amp;&amp;\
 usermod -aG sudo docker
-sudo dd if=/dev/zero of=/home/swap bs=1M count=2048
+dd if=/dev/zero of=/home/swap bs=1M count=1024
+chmod 600 /home/swap
+mkswap /home/swap
+swapon /home/swap
+echo &#34;/home/swap none swap sw 0 0&#34; &gt;&gt; /etc/fstab
 </code></pre><pre tabindex="0"><code>grep -rl &#34;iv-ydxznxqsjkvr6ol17z41&#34; /etc | xargs sed &#39;s/iv-ydxznxqsjkvr6ol17z41/yun/g&#39;
 hostname yun
 </code></pre><ul>
@@ -831,7 +837,7 @@ hostname yun
 <pre tabindex="0"><code>alias dnslog=&#39;docker exec -it dnsmasq sh -c &#34;tail -fn20 /dns.log | grep reply&#34;&#39;
 alias dps=&#39;docker ps -a --format &#39;\&#39;&#39;table{{.Names}}\t{{.Image}}\t{{.Status}}&#39;\&#39;&#39;&#39;
 alias ls=&#39;ls --color=auto&#39;
-alias suspend=&#39;sudo systemctl suspend&#39;
+#alias suspend=&#39;sudo systemctl suspend&#39;
 alias v2rayalog=&#39;docker logs -fn20 v2raya&#39;
 alias xunlei=&#39;docker exec -it xunlei bash&#39;
 alias zian=&#39;docker exec -it zian bash&#39;
