@@ -6,7 +6,7 @@
     <description>Recent content in 主页 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
@@ -56,6 +56,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/wsl1/</guid>
       <description>几乎不用了 WSL1&#xD;#&#xD;https://learn.microsoft.com/zh-cn/windows/wsl/install-manual#downloading-distributions Ubuntu 24.04 Debian wsl.exe --update&#xD;https://github.com/microsoft/WSL/releases/download/2.3.26/wsl.2.3.26.0.x64.msi&#xD;Add-AppxPackage .\app_name.appx 配置&#xD;#&#xD;echo &amp;#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main&amp;#34; | sudo tee /etc/apt/sources.list&#xD;sudo apt update&#xD;sudo apt install bash-completion /etc/wsl.conf [boot]&#xD;systemd=true&#xD;[network]&#xD;hostname = redmibook.com&#xD;generateHosts = false 常用命令&#xD;#&#xD;wsl --shutdown 未解决&#xD;#&#xD;networkingMode Nat</description>
+    </item>
+    <item>
+      <title>go与java性能对比</title>
+      <link>https://example.org/posts/go-java/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/go-java/</guid>
+      <description>代码&#xD;#&#xD;go build main.go nohup ./main &amp;amp; package main import ( &amp;#34;net/http&amp;#34; &amp;#34;strconv&amp;#34; &amp;#34;sync/atomic&amp;#34; ) func main() { var count int32 http.HandleFunc(&amp;#34;/&amp;#34;, func(w http.ResponseWriter, r *http.Request) { atomic.AddInt32(&amp;amp;count, 1) _, _ = w.Write([]byte(strconv.Itoa(int(count)))) }) http.HandleFunc(&amp;#34;/favicon.ico&amp;#34;, func(w http.ResponseWriter, r *http.Request) {}) _ = http.ListenAndServe(&amp;#34;:8080&amp;#34;, nil) } javac Web.java nohup java Web &amp;amp; import com.sun.net.httpserver.HttpExchange; import com.sun.net.httpserver.HttpHandler; import com.sun.net.httpserver.HttpServer; import java.io.IOException; import java.io.OutputStream; import java.net.InetSocketAddress; import java.util.concurrent.atomic.AtomicInteger; public class Web { public static void main(String[] args) throws Exception { HttpServer server = HttpServer.</description>
     </item>
     <item>
       <title>汽车及定位</title>

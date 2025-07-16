@@ -18,7 +18,7 @@
 |外网|[首页](/)|[穿透](http://public.freefrp.org:11111/?from=/)|[二维](/web/qrcode.html)|[色彩](/web/color.html?color=)||[晶阳](/web/?uri=/md/jingyang.md)|
 |资源|[脚本](/js/bing.js)|[广告](/web/adb.html)|[公网](/web/ipv6.html)|[播放](/web/m3u8.html)||[三星](http://10.0.0.5)|
 |工具|[表格](/web/markdown.html)|[计时](/web/time.html)|[聊天](/web/ai.html)|[搜索](/web/search.html)||[火山](http://14.103.224.46)|
-
+|测试|[8080](http://14.103.224.46:8080)|[8888](http://14.103.224.46:8888)|||
 ---
 
 |内网|[主路](http://10.0.0.1)|[副路](http://10.0.0.2)||[红米](http://10.0.0.6)|
