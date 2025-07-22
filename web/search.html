@@ -46,7 +46,7 @@
     searchInput.addEventListener('input', function () {
         const keyword = this.value.trim();
         if (keyword) {
-            const url = `http://14.103.224.46/su?wd=${encodeURIComponent(keyword)}&cb=handleSuggestions`;
+            const url = `http://241688622/su?wd=${encodeURIComponent(keyword)}&cb=handleSuggestions`;
             const script = document.createElement('script');
             script.src = url;
             document.body.appendChild(script);

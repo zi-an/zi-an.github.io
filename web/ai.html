@@ -54,6 +54,8 @@
     const SERVER = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions';
     const KEY = '5318d08d9996134a0254869fa55a114e-ks';
     const MODEL = 'qwen-turbo-latest'
+	//const MODEL = 'deepseek-r1-distill-llama-70b'
+
     const chatContainer = document.getElementById('chat-container');
     const messageInput = document.getElementById('message-input');
     let messages = [];
@@ -166,7 +168,7 @@
 
         // 清空messages并添加用户消息到聊天记录
         messages = []
-        messages.push({role: 'user', content: userMessage});
+        messages.push({role: 'user', content: userMessage });
         appendMessage('user', userMessage);
         messageInput.value = '';
         try {
