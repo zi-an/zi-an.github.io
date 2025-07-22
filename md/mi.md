@@ -55,3 +55,10 @@
 
 # wo.cn
 - 1___@x__h__y___
+
+# huya
+QAPZ_ x__h__y___1___
+danta x__h__y___1___
+
+# oracle 
+x__h__y___1___@outlook.com/Xi________@1____
