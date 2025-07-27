@@ -10,9 +10,9 @@
     <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>go与java性能对比</title>
-      <link>https://example.org/posts/go-java/</link>
+      <link>https://example.org/posts/study/go-java/</link>
       <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/go-java/</guid>
+      <guid>https://example.org/posts/study/go-java/</guid>
       <description>代码&#xD;#&#xD;go build web.go nohup ./web &amp;amp; package main import ( &amp;#34;net/http&amp;#34; &amp;#34;strconv&amp;#34; &amp;#34;sync/atomic&amp;#34; ) func main() { var count int32 http.HandleFunc(&amp;#34;/&amp;#34;, func(w http.ResponseWriter, r *http.Request) { atomic.AddInt32(&amp;amp;count, 1) _, _ = w.Write([]byte(strconv.Itoa(int(count)))) }) http.HandleFunc(&amp;#34;/favicon.ico&amp;#34;, func(w http.ResponseWriter, r *http.Request) {}) _ = http.ListenAndServe(&amp;#34;:8080&amp;#34;, nil) } javac Web.java nohup java Web &amp;amp; import com.sun.net.httpserver.HttpExchange; import com.sun.net.httpserver.HttpHandler; import com.sun.net.httpserver.HttpServer; import java.io.IOException; import java.io.OutputStream; import java.net.InetSocketAddress; import java.util.concurrent.atomic.AtomicInteger; public class Web { public static void main(String[] args) throws Exception { HttpServer server = HttpServer.</description>
     </item>
     <item>
@@ -42,6 +42,13 @@
       <pubDate>Mon, 08 Jul 2024 00:00:00 +0000</pubDate>
       <guid>https://example.org/posts/2024-07-08/</guid>
       <description> 总决赛(第二底座)&#xD;#&#xD;第一局&#xD;#&#xD;第二局&#xD;#&#xD;第三局&#xD;#&#xD;第四局&#xD;#&#xD;1/4决赛(第一底座)&#xD;#&#xD;第一局&#xD;#&#xD;第二局&#xD;#&#xD;第三局&#xD;#&#xD;</description>
+    </item>
+    <item>
+      <title>RuoYi-Vue</title>
+      <link>https://example.org/posts/study/ruoyi/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/study/ruoyi/</guid>
+      <description>| https://github.com/yangzongzhuan/RuoYi-Vue&#xA;编译部署&#xD;#&#xD;apt update apt install -y git maven nginx npm openjdk-21-jdk-headless cd ~ git clone --branch=springboot3 https://gitee.com/y_project/RuoYi-Vue.git ruoyi-vue cd ruoyi-vue mvn package cp ruoyi-admin/target/ruoyi-admin.jar ~ cd ruoyi-ui npm install --registry=https://registry.npmmirror.com 参数优化&#xD;#&#xD;修改redis及密码 修改登录token有效期为10086分钟 修改mysql数据库及密码 除去druid监控的密码,空的也必须覆盖 直接进入druid的管理页面 cd ~ cp ./ruoyi-vue/ruoyi-admin/target/classes/application* . sed -i &amp;#39;s|localhost|172.20.0.1|g&amp;#39; application.yml sed -i &amp;#39;s| password:| password: zian|g&amp;#39; application.yml sed -i &amp;#39;s|expireTime: 30|expireTime: 10086|g&amp;#39; application.yml sed -i &amp;#39;s|localhost|172.20.0.1|g&amp;#39; application-druid.yml sed -i &amp;#39;s|username: root|username: zian|g&amp;#39; application-druid.</description>
     </item>
     <item>
       <title>Faker第四冠,为了队友!</title>
