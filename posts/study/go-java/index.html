@@ -19,7 +19,7 @@
 <link rel="canonical" href="https://example.org/posts/study/go-java/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.b2beb8aab47c71cd611efc2ef9017ca35ed5e0262eedb16b742db971fcc3c09f.js" integrity="sha256-sr64qrR8cc1hHvwu&#43;QF8o17V4CYu7bFrdC25cfzDwJ8=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.b476c08921e8aa4c823b9d7b84ba49cb80bc48afbf7057c843784652c80e7557.js" integrity="sha256-tHbAiSHoqkyCO517hLpJy4C8SK&#43;/cFfIQ3hGUsgOdVc=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -888,6 +888,7 @@ public class Web {
 </h2>
 <ul>
 <li>使用jmeter或者ab</li>
+<li>apt install apache2-utils</li>
 </ul>
 <pre tabindex="0"><code>ab -n 10000 -c 20 http://x.mm:8080/
 </code></pre><h2 id="结果">
@@ -898,6 +899,7 @@ public class Web {
 <li>在云服务器中,受限于网络带宽区别都不大</li>
 <li>在docker status下查看,其中ssh占用10M左右(表格内未扣除),都是jmeter下测试的结果</li>
 <li>go在本机响应速度25ms,java在本机响应速度55ms</li>
+<li>go build 有无-ldflags=&quot;-s -w&quot;参数区别不大</li>
 </ul>
 <table>
 <thead>
