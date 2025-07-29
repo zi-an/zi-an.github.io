@@ -17,7 +17,7 @@
 <link rel="canonical" href="https://example.org/posts/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.f2630b44ef1c1af11bea4e0ff00980dc2f6ac61f2440cc47828f5c591431ec51.js" integrity="sha256-8mMLRO8cGvEb6k4P8AmA3C9qxh8kQMxHgo9cWRQx7FE=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.9fc74e17e2605d2730a81b2db1477b12f3b307c55d8bdf961e342cc6bde273b0.js" integrity="sha256-n8dOF&#43;JgXScwqBstsUd7EvOzB8Vdi9&#43;WHjQsxr3ic7A=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="https://example.org/posts/index.xml" title="" />
 <!--
 Made with Book Theme
@@ -792,7 +792,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li class="flex justify-between">
           <a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
-          <span>3</span>
+          <span>4</span>
         </li>
       
         <li class="flex justify-between">
@@ -981,6 +981,33 @@ HonestAGI的事情出来后，内部让大家不停的研讨分析，如何公�
   
   <article class="markdown book-post">
     <h2>
+      <a href="/posts/study/dnsmasq/">dnsmasq入库</a>
+    </h2>
+    
+  <h5>2024-01-01</h5>
+
+
+
+  
+  <div>
+    
+      <a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+  </div>
+  
+
+  
+
+
+
+
+    <p>提前准备#cat dns.log | grep -v &#34;miwifi&#34; | grep &#34;query\[A]&#34; &gt; dnstemp.log awk &#39;{printf &#34;2025 %s %s %s,%s,%s\n&#34;, $1, $2, $3, $6, $8}&#39; dnstemp.log &gt; dns.csv cat dns.csv#2025 Jun 22 00:43:39,update.googleapis.com,120.229.173.236 2025 Jun 22 00:43:41,api-access.pangolin-sdk-toutiao1.com,120.229.173.236 2025 Jun 22 00:43:48,ulogs.umeng.com,120.229.173.236 cat dns.sql#-- 使用数据库 USE dns_logs; -- 导入数据 LOAD DATA INFILE &#39;/dns.csv&#39; INTO TABLE dns_queries FIELDS TERMINATED BY &#39;,&#39; LINES TERMINATED BY &#39;\n&#39; (@log_time_str, domain_name, client_ip) SET log_time = STR_TO_DATE(@log_time_str, &#39;%Y %b %d %H:%i:%s&#39;); 执行sql#mysql -h 14.
+        <a href="/posts/study/dnsmasq/">...</a>
+      
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
       <a href="/posts/study/ruoyi/">RuoYi-Vue</a>
     </h2>
     
@@ -1072,26 +1099,6 @@ HonestAGI的事情出来后，内部让大家不停的研讨分析，如何公�
     </p>
   </article>
   
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/study/dnsmasq/">Dnsmasq</a>
-    </h2>
-    
-
-
-  
-
-  
-
-
-
-
-    <p>DNSmasq 入库#提前准备#cat dns.log | grep -v &#34;miwifi&#34; | grep &#34;query\[A]&#34; &gt; dnstemp.log awk &#39;{printf &#34;2025 %s %s %s,%s,%s\n&#34;, $1, $2, $3, $6, $8}&#39; dnstemp.log &gt; dns.csv cat dns.csv#2025 Jun 22 00:43:39,update.googleapis.com,120.229.173.236 2025 Jun 22 00:43:41,api-access.pangolin-sdk-toutiao1.com,120.229.173.236 2025 Jun 22 00:43:48,ulogs.umeng.com,120.229.173.236 cat dns.sql#-- 使用数据库 USE dns_logs; -- 导入数据 LOAD DATA INFILE &#39;/dns.csv&#39; INTO TABLE dns_queries FIELDS TERMINATED BY &#39;,&#39; LINES TERMINATED BY &#39;\n&#39; (@log_time_str, domain_name, client_ip) SET log_time = STR_TO_DATE(@log_time_str, &#39;%Y %b %d %H:%i:%s&#39;); 执行sql#mysql -h 14.
-        <a href="/posts/study/dnsmasq/">...</a>
-      
-    </p>
-  </article>
-  
 
   
  
@@ -1137,7 +1144,7 @@ HonestAGI的事情出来后，内部让大家不停的研讨分析，如何公�
       
         <li class="flex justify-between">
           <a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
-          <span>3</span>
+          <span>4</span>
         </li>
       
         <li class="flex justify-between">

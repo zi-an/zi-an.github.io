@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="DNSmasq 入库#提前准备#cat dns.log | grep -v &#34;miwifi&#34; | grep &#34;query\[A]&#34; &gt; dnstemp.log awk &#39;{printf &#34;2025 %s %s %s,%s,%s\n&#34;, $1, $2, $3, $6, $8}&#39; dnstemp.log &gt; dns.csv cat dns.csv#2025 Jun 22 00:43:39,update.googleapis.com,120.229.173.236 2025 Jun 22 00:43:41,api-access.pangolin-sdk-toutiao1.com,120.229.173.236 2025 Jun 22 00:43:48,ulogs.umeng.com,120.229.173.236 cat dns.sql#-- 使用数据库 USE dns_logs; -- 导入数据 LOAD DATA INFILE &#39;/dns.csv&#39; INTO TABLE dns_queries FIELDS TERMINATED BY &#39;,&#39; LINES TERMINATED BY &#39;\n&#39; (@log_time_str, domain_name, client_ip) SET log_time = STR_TO_DATE(@log_time_str, &#39;%Y %b %d %H:%i:%s&#39;); 执行sql#mysql -h 14.">
+<meta name="description" content="提前准备#cat dns.log | grep -v &#34;miwifi&#34; | grep &#34;query\[A]&#34; &gt; dnstemp.log awk &#39;{printf &#34;2025 %s %s %s,%s,%s\n&#34;, $1, $2, $3, $6, $8}&#39; dnstemp.log &gt; dns.csv cat dns.csv#2025 Jun 22 00:43:39,update.googleapis.com,120.229.173.236 2025 Jun 22 00:43:41,api-access.pangolin-sdk-toutiao1.com,120.229.173.236 2025 Jun 22 00:43:48,ulogs.umeng.com,120.229.173.236 cat dns.sql#-- 使用数据库 USE dns_logs; -- 导入数据 LOAD DATA INFILE &#39;/dns.csv&#39; INTO TABLE dns_queries FIELDS TERMINATED BY &#39;,&#39; LINES TERMINATED BY &#39;\n&#39; (@log_time_str, domain_name, client_ip) SET log_time = STR_TO_DATE(@log_time_str, &#39;%Y %b %d %H:%i:%s&#39;); 执行sql#mysql -h 14.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="DNSmasq 入库#提前准备#cat dns.log | grep -v &#34;miwifi&#34; | grep &#34;query\[A]&#34; &gt; dnstemp.log awk &#39;{printf &#34;2025 %s %s %s,%s,%s\n&#34;, $1, $2, $3, $6, $8}&#39; dnstemp.log &gt; dns.csv cat dns.csv#2025 Jun 22 00:43:39,update.googleapis.com,120.229.173.236 2025 Jun 22 00:43:41,api-access.pangolin-sdk-toutiao1.com,120.229.173.236 2025 Jun 22 00:43:48,ulogs.umeng.com,120.229.173.236 cat dns.sql#-- 使用数据库 USE dns_logs; -- 导入数据 LOAD DATA INFILE &#39;/dns.csv&#39; INTO TABLE dns_queries FIELDS TERMINATED BY &#39;,&#39; LINES TERMINATED BY &#39;\n&#39; (@log_time_str, domain_name, client_ip) SET log_time = STR_TO_DATE(@log_time_str, &#39;%Y %b %d %H:%i:%s&#39;); 执行sql#mysql -h 14." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="dnsmasq入库" />
+<meta property="og:description" content="提前准备#cat dns.log | grep -v &#34;miwifi&#34; | grep &#34;query\[A]&#34; &gt; dnstemp.log awk &#39;{printf &#34;2025 %s %s %s,%s,%s\n&#34;, $1, $2, $3, $6, $8}&#39; dnstemp.log &gt; dns.csv cat dns.csv#2025 Jun 22 00:43:39,update.googleapis.com,120.229.173.236 2025 Jun 22 00:43:41,api-access.pangolin-sdk-toutiao1.com,120.229.173.236 2025 Jun 22 00:43:48,ulogs.umeng.com,120.229.173.236 cat dns.sql#-- 使用数据库 USE dns_logs; -- 导入数据 LOAD DATA INFILE &#39;/dns.csv&#39; INTO TABLE dns_queries FIELDS TERMINATED BY &#39;,&#39; LINES TERMINATED BY &#39;\n&#39; (@log_time_str, domain_name, client_ip) SET log_time = STR_TO_DATE(@log_time_str, &#39;%Y %b %d %H:%i:%s&#39;); 执行sql#mysql -h 14." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.org/posts/study/dnsmasq/" /><meta property="article:section" content="posts" />
-
-
-<title>Dnsmasq
+<meta property="article:published_time" content="2024-01-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-01-01T00:00:00+00:00" />
+<title>dnsmasq入库
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
 <link rel="canonical" href="https://example.org/posts/study/dnsmasq/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.f2630b44ef1c1af11bea4e0ff00980dc2f6ac61f2440cc47828f5c591431ec51.js" integrity="sha256-8mMLRO8cGvEb6k4P8AmA3C9qxh8kQMxHgo9cWRQx7FE=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.9fc74e17e2605d2730a81b2db1477b12f3b307c55d8bdf961e342cc6bde273b0.js" integrity="sha256-n8dOF&#43;JgXScwqBstsUd7EvOzB8Vdi9&#43;WHjQsxr3ic7A=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -770,7 +770,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Dnsmasq</strong>
+  <strong>dnsmasq入库</strong>
 
   <label for="toc-control">
     
@@ -804,21 +804,24 @@ https://github.com/alex-shpak/hugo-book
       
 <article class="markdown book-post">
   <h1>
-    <a href="/posts/study/dnsmasq/">Dnsmasq</a>
+    <a href="/posts/study/dnsmasq/">dnsmasq入库</a>
   </h1>
   
+  <h5>2024-01-01</h5>
 
 
+
+  
+  <div>
+    
+      <a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+  </div>
   
 
   
 
 
 
-<h1 id="dnsmasq-入库">
-  DNSmasq 入库
-  <a class="anchor" href="#dnsmasq-%e5%85%a5%e5%ba%93">#</a>
-</h1>
 <h2 id="提前准备">
   提前准备
   <a class="anchor" href="#%e6%8f%90%e5%89%8d%e5%87%86%e5%a4%87">#</a>

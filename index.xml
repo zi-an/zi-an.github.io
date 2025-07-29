@@ -93,6 +93,13 @@
       <description> 总决赛(第二底座)&#xD;#&#xD;第一局&#xD;#&#xD;第二局&#xD;#&#xD;第三局&#xD;#&#xD;第四局&#xD;#&#xD;1/4决赛(第一底座)&#xD;#&#xD;第一局&#xD;#&#xD;第二局&#xD;#&#xD;第三局&#xD;#&#xD;</description>
     </item>
     <item>
+      <title>dnsmasq入库</title>
+      <link>https://example.org/posts/study/dnsmasq/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/study/dnsmasq/</guid>
+      <description>提前准备&#xD;#&#xD;cat dns.log | grep -v &amp;#34;miwifi&amp;#34; | grep &amp;#34;query\[A]&amp;#34; &amp;gt; dnstemp.log awk &amp;#39;{printf &amp;#34;2025 %s %s %s,%s,%s\n&amp;#34;, $1, $2, $3, $6, $8}&amp;#39; dnstemp.log &amp;gt; dns.csv cat dns.csv&#xD;#&#xD;2025 Jun 22 00:43:39,update.googleapis.com,120.229.173.236 2025 Jun 22 00:43:41,api-access.pangolin-sdk-toutiao1.com,120.229.173.236 2025 Jun 22 00:43:48,ulogs.umeng.com,120.229.173.236 cat dns.sql&#xD;#&#xD;-- 使用数据库 USE dns_logs; -- 导入数据 LOAD DATA INFILE &amp;#39;/dns.csv&amp;#39; INTO TABLE dns_queries FIELDS TERMINATED BY &amp;#39;,&amp;#39; LINES TERMINATED BY &amp;#39;\n&amp;#39; (@log_time_str, domain_name, client_ip) SET log_time = STR_TO_DATE(@log_time_str, &amp;#39;%Y %b %d %H:%i:%s&amp;#39;); 执行sql&#xD;#&#xD;mysql -h 14.</description>
+    </item>
+    <item>
       <title>RuoYi-Vue</title>
       <link>https://example.org/posts/study/ruoyi/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
@@ -322,13 +329,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE/</guid>
       <description>域名配置&#xD;#&#xD;100-125&#xD;#&#xD;127.0.0.1 x.mm&#xD;120.76.158.149 ali.mm&#xD;127.0.0.1 update.miui.com&#xD;10.0.0.100 100.mm&#xD;10.0.0.101 101.mm&#xD;10.0.0.102 102.mm&#xD;10.0.0.103 103.mm&#xD;10.0.0.104 104.mm&#xD;10.0.0.105 105.mm&#xD;10.0.0.106 106.mm&#xD;10.0.0.107 107.mm&#xD;10.0.0.108 108.mm&#xD;10.0.0.109 109.mm&#xD;10.0.0.110 110.mm&#xD;10.0.0.111 111.mm&#xD;10.0.0.112 112.mm&#xD;10.0.0.113 113.mm&#xD;10.0.0.114 114.mm&#xD;10.0.0.115 115.mm&#xD;10.0.0.116 116.mm&#xD;10.0.0.117 117.mm&#xD;10.0.0.118 118.mm&#xD;10.0.0.119 119.mm&#xD;10.0.0.120 120.mm 200~225&#xD;#&#xD;10.0.0.200 200.mm&#xD;10.0.0.201 201.mm&#xD;10.0.0.202 202.mm&#xD;10.0.0.203 203.mm&#xD;10.0.0.204 204.mm&#xD;10.0.0.205 205.mm&#xD;10.0.0.206 206.mm&#xD;10.0.0.207 207.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://example.org/posts/study/dnsmasq/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/study/dnsmasq/</guid>
-      <description>DNSmasq 入库&#xD;#&#xD;提前准备&#xD;#&#xD;cat dns.log | grep -v &amp;#34;miwifi&amp;#34; | grep &amp;#34;query\[A]&amp;#34; &amp;gt; dnstemp.log awk &amp;#39;{printf &amp;#34;2025 %s %s %s,%s,%s\n&amp;#34;, $1, $2, $3, $6, $8}&amp;#39; dnstemp.log &amp;gt; dns.csv cat dns.csv&#xD;#&#xD;2025 Jun 22 00:43:39,update.googleapis.com,120.229.173.236 2025 Jun 22 00:43:41,api-access.pangolin-sdk-toutiao1.com,120.229.173.236 2025 Jun 22 00:43:48,ulogs.umeng.com,120.229.173.236 cat dns.sql&#xD;#&#xD;-- 使用数据库 USE dns_logs; -- 导入数据 LOAD DATA INFILE &amp;#39;/dns.csv&amp;#39; INTO TABLE dns_queries FIELDS TERMINATED BY &amp;#39;,&amp;#39; LINES TERMINATED BY &amp;#39;\n&amp;#39; (@log_time_str, domain_name, client_ip) SET log_time = STR_TO_DATE(@log_time_str, &amp;#39;%Y %b %d %H:%i:%s&amp;#39;); 执行sql&#xD;#&#xD;mysql -h 14.</description>
     </item>
   </channel>
 </rss>
