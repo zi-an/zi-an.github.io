@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="恭喜Faker第五冠！#2024全球总局赛视频#第一局#第二局#第三局#第四局#第五局#">
+<meta name="description" content="DNSmasq 入库#提前准备#cat dns.log | grep -v &#34;miwifi&#34; | grep &#34;query\[A]&#34; &gt; dnstemp.log awk &#39;{printf &#34;2025 %s %s %s,%s,%s\n&#34;, $1, $2, $3, $6, $8}&#39; dnstemp.log &gt; dns.csv cat dns.csv#2025 Jun 22 00:43:39,update.googleapis.com,120.229.173.236 2025 Jun 22 00:43:41,api-access.pangolin-sdk-toutiao1.com,120.229.173.236 2025 Jun 22 00:43:48,ulogs.umeng.com,120.229.173.236 cat dns.sql#-- 使用数据库 USE dns_logs; -- 导入数据 LOAD DATA INFILE &#39;/dns.csv&#39; INTO TABLE dns_queries FIELDS TERMINATED BY &#39;,&#39; LINES TERMINATED BY &#39;\n&#39; (@log_time_str, domain_name, client_ip) SET log_time = STR_TO_DATE(@log_time_str, &#39;%Y %b %d %H:%i:%s&#39;); 执行sql#mysql -h 14.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Faker第五冠,为了所有支持者!" />
-<meta property="og:description" content="恭喜Faker第五冠！#2024全球总局赛视频#第一局#第二局#第三局#第四局#第五局#" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="DNSmasq 入库#提前准备#cat dns.log | grep -v &#34;miwifi&#34; | grep &#34;query\[A]&#34; &gt; dnstemp.log awk &#39;{printf &#34;2025 %s %s %s,%s,%s\n&#34;, $1, $2, $3, $6, $8}&#39; dnstemp.log &gt; dns.csv cat dns.csv#2025 Jun 22 00:43:39,update.googleapis.com,120.229.173.236 2025 Jun 22 00:43:41,api-access.pangolin-sdk-toutiao1.com,120.229.173.236 2025 Jun 22 00:43:48,ulogs.umeng.com,120.229.173.236 cat dns.sql#-- 使用数据库 USE dns_logs; -- 导入数据 LOAD DATA INFILE &#39;/dns.csv&#39; INTO TABLE dns_queries FIELDS TERMINATED BY &#39;,&#39; LINES TERMINATED BY &#39;\n&#39; (@log_time_str, domain_name, client_ip) SET log_time = STR_TO_DATE(@log_time_str, &#39;%Y %b %d %H:%i:%s&#39;); 执行sql#mysql -h 14." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/posts/2024-11-03/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-11-02T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-11-02T00:00:00+00:00" />
-<title>Faker第五冠,为了所有支持者!
+<meta property="og:url" content="https://example.org/posts/study/dnsmasq/" /><meta property="article:section" content="posts" />
+
+
+<title>Dnsmasq
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://example.org/posts/2024-11-03/">
+<link rel="canonical" href="https://example.org/posts/study/dnsmasq/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/zh.search.min.f2630b44ef1c1af11bea4e0ff00980dc2f6ac61f2440cc47828f5c591431ec51.js" integrity="sha256-8mMLRO8cGvEb6k4P8AmA3C9qxh8kQMxHgo9cWRQx7FE=" crossorigin="anonymous"></script>
@@ -770,7 +770,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Faker第五冠,为了所有支持者!</strong>
+  <strong>Dnsmasq</strong>
 
   <label for="toc-control">
     
@@ -786,15 +786,10 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#2024全球总局赛视频">2024全球总局赛视频</a>
-      <ul>
-        <li><a href="#第一局">第一局</a></li>
-        <li><a href="#第二局">第二局</a></li>
-        <li><a href="#第三局">第三局</a></li>
-        <li><a href="#第四局">第四局</a></li>
-        <li><a href="#第五局">第五局</a></li>
-      </ul>
-    </li>
+    <li><a href="#提前准备">提前准备</a></li>
+    <li><a href="#cat-dnscsv">cat dns.csv</a></li>
+    <li><a href="#cat-dnssql">cat dns.sql</a></li>
+    <li><a href="#执行sql">执行sql</a></li>
   </ul>
 </nav>
 
@@ -809,77 +804,70 @@ https://github.com/alex-shpak/hugo-book
       
 <article class="markdown book-post">
   <h1>
-    <a href="/posts/2024-11-03/">Faker第五冠,为了所有支持者!</a>
+    <a href="/posts/study/dnsmasq/">Dnsmasq</a>
   </h1>
   
-  <h5>2024-11-02</h5>
 
 
-
-  
-  <div>
-    
-      <a href="/categories/%E5%A4%A7%E9%AD%94%E7%8E%8B%E6%9D%8E%E7%9B%B8%E8%B5%AB/">大魔王李相赫</a>
-  </div>
   
 
   
 
 
 
-<h1 id="恭喜faker第五冠">
-  恭喜Faker第五冠！
-  <a class="anchor" href="#%e6%81%ad%e5%96%9cfaker%e7%ac%ac%e4%ba%94%e5%86%a0">#</a>
+<h1 id="dnsmasq-入库">
+  DNSmasq 入库
+  <a class="anchor" href="#dnsmasq-%e5%85%a5%e5%ba%93">#</a>
 </h1>
-<video controls width="100%">
-  <source  src="https://al-vod.cdn.huya.com/leaf/1048585/1199580330444/78807369/42696600_a2963aee5c244952ae83b8bcc57edec5_264_1080_6_ai.mp4?appid=66&amp;domainid=25&amp;srckey=NjZfMjVfOTIwNTU3NDU2"  type="video/mp4" />
-  
-</video>
-<h2 id="2024全球总局赛视频">
-  2024全球总局赛视频
-  <a class="anchor" href="#2024%e5%85%a8%e7%90%83%e6%80%bb%e5%b1%80%e8%b5%9b%e8%a7%86%e9%a2%91">#</a>
+<h2 id="提前准备">
+  提前准备
+  <a class="anchor" href="#%e6%8f%90%e5%89%8d%e5%87%86%e5%a4%87">#</a>
 </h2>
-<h3 id="第一局">
-  第一局
-  <a class="anchor" href="#%e7%ac%ac%e4%b8%80%e5%b1%80">#</a>
-</h3>
-<video controls width="100%">
-  <source  src="https://al-vod.cdn.huya.com/leaf/1048585/59a91b252545dcc3e53b1e831b45d090/80804709/45189732_e3dd1e61510391f0c177f244091b459e_264_14100_1_ai_max.mp4?appid=66&amp;domainid=25&amp;srckey=NjZfMjVfOTIwNTU3NDU2"  type="video/mp4" />
-  
-</video>
-<h3 id="第二局">
-  第二局
-  <a class="anchor" href="#%e7%ac%ac%e4%ba%8c%e5%b1%80">#</a>
-</h3>
-<video controls width="100%">
-  <source  src="https://al-vod.cdn.huya.com/leaf/1048585/59a91b252545dcc3e53b1e831b45d090/80806155/45191437_80ced8d4a09403a40a1c199b0cdc6bcc_264_14100_1_ai_max.mp4?appid=66&amp;domainid=25&amp;srckey=NjZfMjVfOTIwNTU3NDU2"  type="video/mp4" />
-  
-</video>
-<h3 id="第三局">
-  第三局
-  <a class="anchor" href="#%e7%ac%ac%e4%b8%89%e5%b1%80">#</a>
-</h3>
-<video controls width="100%">
-  <source  src="https://al-vod.cdn.huya.com/leaf/1048585/59a91b252545dcc3e53b1e831b45d090/80066247/44253951_a41b89b2e1d0de6624f4a6a34f0953df_264_14100_1_ai_max.mp4?appid=66&amp;domainid=25&amp;srckey=NjZfMjVfOTIwNTU3NDU2"  type="video/mp4" />
-  
-</video>
-<h3 id="第四局">
-  第四局
-  <a class="anchor" href="#%e7%ac%ac%e5%9b%9b%e5%b1%80">#</a>
-</h3>
-<video controls width="100%">
-  <source  src="https://al-vod.cdn.huya.com/leaf/1048585/59a91b252545dcc3e53b1e831b45d090/80812689/45199475_bac66ec46fca34fd44dd4df870550d18_264_14100_1_ai_max.mp4?appid=66&amp;domainid=25&amp;srckey=NjZfMjVfOTIwNTU3NDU2"  type="video/mp4" />
-  
-</video>
-<h3 id="第五局">
-  第五局
-  <a class="anchor" href="#%e7%ac%ac%e4%ba%94%e5%b1%80">#</a>
-</h3>
-<video controls width="100%">
-  <source  src="https://al-vod.cdn.huya.com/leaf/1048585/59a91b252545dcc3e53b1e831b45d090/80815065/45202126_5db777f5bf170fbb313a695c35926569_264_14100_1_ai_max.mp4?appid=66&amp;domainid=25&amp;srckey=NjZfMjVfOTIwNTU3NDU2"  type="video/mp4" />
-  
-</video>
-</article>
+<pre tabindex="0"><code>cat dns.log | grep -v &#34;miwifi&#34; | grep &#34;query\[A]&#34; &gt; dnstemp.log
+awk &#39;{printf &#34;2025 %s %s %s,%s,%s\n&#34;, $1, $2, $3, $6, $8}&#39; dnstemp.log &gt; dns.csv
+</code></pre><h2 id="cat-dnscsv">
+  cat dns.csv
+  <a class="anchor" href="#cat-dnscsv">#</a>
+</h2>
+<pre tabindex="0"><code>2025 Jun 22 00:43:39,update.googleapis.com,120.229.173.236
+2025 Jun 22 00:43:41,api-access.pangolin-sdk-toutiao1.com,120.229.173.236
+2025 Jun 22 00:43:48,ulogs.umeng.com,120.229.173.236
+</code></pre><h2 id="cat-dnssql">
+  cat dns.sql
+  <a class="anchor" href="#cat-dnssql">#</a>
+</h2>
+<pre tabindex="0"><code>-- 使用数据库
+USE dns_logs;
+
+-- 导入数据
+LOAD DATA INFILE &#39;/dns.csv&#39;
+INTO TABLE dns_queries
+FIELDS TERMINATED BY &#39;,&#39;
+LINES TERMINATED BY &#39;\n&#39;
+(@log_time_str, domain_name, client_ip)
+SET log_time = STR_TO_DATE(@log_time_str, &#39;%Y %b %d %H:%i:%s&#39;);
+</code></pre><h2 id="执行sql">
+  执行sql
+  <a class="anchor" href="#%e6%89%a7%e8%a1%8csql">#</a>
+</h2>
+<pre tabindex="0"><code>mysql -h 14.103.224.46 -u zian -p &lt; dns.sql
+</code></pre><h1 id="数据库建表">
+  数据库建表
+  <a class="anchor" href="#%e6%95%b0%e6%8d%ae%e5%ba%93%e5%bb%ba%e8%a1%a8">#</a>
+</h1>
+<pre tabindex="0"><code>-- 创建数据库
+CREATE DATABASE IF NOT EXISTS dns_logs;
+-- 使用数据库
+USE dns_logs;
+
+-- 创建表
+CREATE TABLE IF NOT EXISTS dns_queries (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    log_time DATETIME NOT NULL,
+    domain_name VARCHAR(255) NOT NULL,
+    client_ip VARCHAR(45) NOT NULL
+);
+</code></pre></article>
  
       
 
@@ -920,15 +908,10 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#2024全球总局赛视频">2024全球总局赛视频</a>
-      <ul>
-        <li><a href="#第一局">第一局</a></li>
-        <li><a href="#第二局">第二局</a></li>
-        <li><a href="#第三局">第三局</a></li>
-        <li><a href="#第四局">第四局</a></li>
-        <li><a href="#第五局">第五局</a></li>
-      </ul>
-    </li>
+    <li><a href="#提前准备">提前准备</a></li>
+    <li><a href="#cat-dnscsv">cat dns.csv</a></li>
+    <li><a href="#cat-dnssql">cat dns.sql</a></li>
+    <li><a href="#执行sql">执行sql</a></li>
   </ul>
 </nav>
 
