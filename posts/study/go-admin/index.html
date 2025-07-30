@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="代码#go build web.go nohup ./web &amp; package main import ( &#34;net/http&#34; &#34;strconv&#34; &#34;sync/atomic&#34; ) func main() { var count int32 http.HandleFunc(&#34;/&#34;, func(w http.ResponseWriter, r *http.Request) { atomic.AddInt32(&amp;count, 1) _, _ = w.Write([]byte(strconv.Itoa(int(count)))) }) http.HandleFunc(&#34;/favicon.ico&#34;, func(w http.ResponseWriter, r *http.Request) {}) _ = http.ListenAndServe(&#34;:8080&#34;, nil) } javac Web.java nohup java Web &amp; import com.sun.net.httpserver.HttpExchange; import com.sun.net.httpserver.HttpHandler; import com.sun.net.httpserver.HttpServer; import java.io.IOException; import java.io.OutputStream; import java.net.InetSocketAddress; import java.util.concurrent.atomic.AtomicInteger; public class Web { public static void main(String[] args) throws Exception { HttpServer server = HttpServer.">
+<meta name="description" content="准备#apt update apt install -y git libnginx-mod-http-image-filter npm golang git clone https://gitee.com/go-admin-team/go-admin.git git clone https://gitee.com/go-admin-team/go-admin-ui.git 后端编译#国内加速下载,初次启动运行以下一次 ./go-admin migrate -c settings.yml cd ~/go-admin export GOPROXY=https://goproxy.cn,direct go mod tidy go build cp config/settings.yml . sed -i &#39;s|user:password@tcp(127.0.0.1:3306|zian:zian@tcp(172.20.0.1:3306|g&#39; settings.yml sed -i &#39;s|8000|8009|g&#39; settings.yml ./go-admin server -c settings.yml -a true 前端编译#国内加速下载 npm版本太新会出现问题,目前加参数解决 cd ~/go-admin-ui/ export NODE_OPTIONS=--openssl-legacy-provider npm install --registry=https://registry.npmmirror.com --force npm run build:prod nginx#sed -i &#39;s|www-data|root|g&#39; /etc/nginx/nginx.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="go与java性能对比" />
-<meta property="og:description" content="代码#go build web.go nohup ./web &amp; package main import ( &#34;net/http&#34; &#34;strconv&#34; &#34;sync/atomic&#34; ) func main() { var count int32 http.HandleFunc(&#34;/&#34;, func(w http.ResponseWriter, r *http.Request) { atomic.AddInt32(&amp;count, 1) _, _ = w.Write([]byte(strconv.Itoa(int(count)))) }) http.HandleFunc(&#34;/favicon.ico&#34;, func(w http.ResponseWriter, r *http.Request) {}) _ = http.ListenAndServe(&#34;:8080&#34;, nil) } javac Web.java nohup java Web &amp; import com.sun.net.httpserver.HttpExchange; import com.sun.net.httpserver.HttpHandler; import com.sun.net.httpserver.HttpServer; import java.io.IOException; import java.io.OutputStream; import java.net.InetSocketAddress; import java.util.concurrent.atomic.AtomicInteger; public class Web { public static void main(String[] args) throws Exception { HttpServer server = HttpServer." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Go-Admin" />
+<meta property="og:description" content="准备#apt update apt install -y git libnginx-mod-http-image-filter npm golang git clone https://gitee.com/go-admin-team/go-admin.git git clone https://gitee.com/go-admin-team/go-admin-ui.git 后端编译#国内加速下载,初次启动运行以下一次 ./go-admin migrate -c settings.yml cd ~/go-admin export GOPROXY=https://goproxy.cn,direct go mod tidy go build cp config/settings.yml . sed -i &#39;s|user:password@tcp(127.0.0.1:3306|zian:zian@tcp(172.20.0.1:3306|g&#39; settings.yml sed -i &#39;s|8000|8009|g&#39; settings.yml ./go-admin server -c settings.yml -a true 前端编译#国内加速下载 npm版本太新会出现问题,目前加参数解决 cd ~/go-admin-ui/ export NODE_OPTIONS=--openssl-legacy-provider npm install --registry=https://registry.npmmirror.com --force npm run build:prod nginx#sed -i &#39;s|www-data|root|g&#39; /etc/nginx/nginx." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/posts/study/go-java/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2025-07-07T00:00:00+00:00" />
-<meta property="article:modified_time" content="2025-07-07T00:00:00+00:00" />
-<title>go与java性能对比
+<meta property="og:url" content="https://example.org/posts/study/go-admin/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-01-02T00:00:00+00:00" />
+<title>Go-Admin
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://example.org/posts/study/go-java/">
+<link rel="canonical" href="https://example.org/posts/study/go-admin/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/zh.search.min.eeb00339f8df4961f2d9acb83b1f7da04277b0dda8347831a7fe08fefb3e314f.js" integrity="sha256-7rADOfjfSWHy2ay4Ox99oEJ3sN2oNHgxp/4I/vs&#43;MU8=" crossorigin="anonymous"></script>
@@ -770,7 +770,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>go与java性能对比</strong>
+  <strong>Go-Admin</strong>
 
   <label for="toc-control">
     
@@ -786,9 +786,10 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#代码">代码</a></li>
-    <li><a href="#测试">测试</a></li>
-    <li><a href="#结果">结果</a></li>
+    <li><a href="#准备">准备</a></li>
+    <li><a href="#后端编译">后端编译</a></li>
+    <li><a href="#前端编译">前端编译</a></li>
+    <li><a href="#nginx">nginx</a></li>
   </ul>
 </nav>
 
@@ -803,10 +804,10 @@ https://github.com/alex-shpak/hugo-book
       
 <article class="markdown book-post">
   <h1>
-    <a href="/posts/study/go-java/">go与java性能对比</a>
+    <a href="/posts/study/go-admin/">Go-Admin</a>
   </h1>
   
-  <h5>2025-07-07</h5>
+  <h5>2024-01-02</h5>
 
 
 
@@ -821,123 +822,91 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-<h2 id="代码">
-  代码
-  <a class="anchor" href="#%e4%bb%a3%e7%a0%81">#</a>
+<h2 id="准备">
+  准备
+  <a class="anchor" href="#%e5%87%86%e5%a4%87">#</a>
+</h2>
+<pre tabindex="0"><code>apt update
+apt install -y git libnginx-mod-http-image-filter npm golang
+git clone https://gitee.com/go-admin-team/go-admin.git
+git clone https://gitee.com/go-admin-team/go-admin-ui.git
+</code></pre><h2 id="后端编译">
+  后端编译
+  <a class="anchor" href="#%e5%90%8e%e7%ab%af%e7%bc%96%e8%af%91">#</a>
 </h2>
 <ul>
-<li>go build web.go</li>
-<li><em>nohup ./web &amp;</em></li>
+<li>国内加速下载,初次启动运行以下一次</li>
+<li>./go-admin migrate -c settings.yml</li>
 </ul>
-<pre tabindex="0"><code>package main
-
-import (
-	&#34;net/http&#34;
-	&#34;strconv&#34;
-	&#34;sync/atomic&#34;
-)
-
-func main() {
-	var count int32
-	http.HandleFunc(&#34;/&#34;, func(w http.ResponseWriter, r *http.Request) {
-		atomic.AddInt32(&amp;count, 1)
-		_, _ = w.Write([]byte(strconv.Itoa(int(count))))
-	})
-	http.HandleFunc(&#34;/favicon.ico&#34;, func(w http.ResponseWriter, r *http.Request) {})
-	_ = http.ListenAndServe(&#34;:8080&#34;, nil)
-}
-</code></pre><ul>
-<li>javac Web.java</li>
-<li><em>nohup java Web &amp;</em></li>
+<pre tabindex="0"><code>cd ~/go-admin
+export GOPROXY=https://goproxy.cn,direct
+go mod tidy
+go build
+cp config/settings.yml .
+sed -i &#39;s|user:password@tcp(127.0.0.1:3306|zian:zian@tcp(172.20.0.1:3306|g&#39; settings.yml
+sed -i &#39;s|8000|8009|g&#39; settings.yml
+./go-admin server -c settings.yml -a true
+</code></pre><h2 id="前端编译">
+  前端编译
+  <a class="anchor" href="#%e5%89%8d%e7%ab%af%e7%bc%96%e8%af%91">#</a>
+</h2>
+<ul>
+<li>国内加速下载</li>
+<li>npm版本太新会出现问题,目前加参数解决</li>
 </ul>
-<pre tabindex="0"><code>import com.sun.net.httpserver.HttpExchange;
-import com.sun.net.httpserver.HttpHandler;
-import com.sun.net.httpserver.HttpServer;
-
-import java.io.IOException;
-import java.io.OutputStream;
-import java.net.InetSocketAddress;
-import java.util.concurrent.atomic.AtomicInteger;
-
-public class Web {
-    public static void main(String[] args) throws Exception {
-        HttpServer server = HttpServer.create(new InetSocketAddress(8081), 0);
-        server.createContext(&#34;/&#34;, new HttpHandler() {
-            final AtomicInteger atomicInteger = new AtomicInteger(0);
-
-            public void handle(HttpExchange exchange) throws IOException {
-                atomicInteger.incrementAndGet();
-                String response = atomicInteger.toString();
-                exchange.sendResponseHeaders(200, response.getBytes().length);
-                OutputStream os = exchange.getResponseBody();
-                os.write(response.getBytes());
-                os.close();
-            }
-        });
-        server.createContext(&#34;/favicon.ico&#34;, new HttpHandler() {
-            public void handle(HttpExchange exchange) throws IOException {
-            }
-        });
-        server.start();
-        System.out.println(&#34;8081 start!!!&#34;);
+<pre tabindex="0"><code>cd ~/go-admin-ui/
+export NODE_OPTIONS=--openssl-legacy-provider
+npm install --registry=https://registry.npmmirror.com --force
+npm run build:prod
+</code></pre><h2 id="nginx">
+  nginx
+  <a class="anchor" href="#nginx">#</a>
+</h2>
+<pre tabindex="0"><code>sed -i &#39;s|www-data|root|g&#39; /etc/nginx/nginx.conf
+cat &lt;&lt; EOF &gt; /etc/nginx/sites-enabled/8008.conf
+server {
+    listen 8008;
+    root /root/go-admin-ui/dist;
+    gzip_min_length 10240;
+    gzip_types text/plain text/css application/json application/javascript text/javascript;
+    location ~* ^/img/.*\.(jpg|jpeg|png|gif|webp|bmp)$ {
+        expires 7d;
+        image_filter resize 200 -;
+    }
+    location / {
+        expires 7d;
+        limit_rate 90k;
+        try_files \$uri \$uri/ /index.html;
+    }
+    location /api/ {
+        proxy_pass http://localhost:8009/api/;
+        proxy_set_header Host \$host;
+        proxy_set_header X-Real-IP \$remote_addr;
+        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto \$scheme;
+    }
+	location /static/ {
+	    expires 7d;
+        proxy_pass http://localhost:8009/static/;
+        proxy_set_header Host \$host;
+        proxy_set_header X-Real-IP \$remote_addr;
+        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto \$scheme;
     }
 }
-</code></pre><h2 id="测试">
-  测试
-  <a class="anchor" href="#%e6%b5%8b%e8%af%95">#</a>
-</h2>
-<ul>
-<li>使用jmeter或者ab</li>
-<li>apt install apache2-utils</li>
-</ul>
-<pre tabindex="0"><code>ab -n 10000 -c 20 http://x.mm:8080/
-</code></pre><h2 id="结果">
-  结果
-  <a class="anchor" href="#%e7%bb%93%e6%9e%9c">#</a>
-</h2>
-<ul>
-<li>在云服务器中,受限于网络带宽区别都不大</li>
-<li>在docker status下查看,其中ssh占用10M左右(表格内未扣除),都是jmeter下测试的结果</li>
-<li>go在本机响应速度25ms,java在本机响应速度55ms</li>
-<li>go build 有无-ldflags=&quot;-s -w&quot;参数区别不大</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>内存</th>
-<th>吞吐量</th>
-<th>推荐</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>go run web.go</td>
-<td>84.1M</td>
-<td>15117/sec</td>
-<td></td>
-</tr>
-<tr>
-<td>./web</td>
-<td>26.4M</td>
-<td>14259/sec</td>
-<td>√</td>
-</tr>
-<tr>
-<td>java Web.java</td>
-<td>192.0M</td>
-<td>2800+/sec</td>
-<td></td>
-</tr>
-<tr>
-<td>java Web</td>
-<td>148.0M</td>
-<td>2800+/sec</td>
-<td>√</td>
-</tr>
-</tbody>
-</table>
-</article>
+EOF
+nginx -s reload
+</code></pre><h1 id="旧版的nodejsnpm">
+  旧版的nodejs+npm
+  <a class="anchor" href="#%e6%97%a7%e7%89%88%e7%9a%84nodejsnpm">#</a>
+</h1>
+<pre tabindex="0"><code>wget https://nodejs.org/dist/latest-fermium/node-v14.21.3-linux-x64.tar.gz
+tar -zxvf node-v14.21.3-linux-x64.tar.gz
+mv node-v14.21.3-linux-x64 /
+export PATH=$PATH:/node-v14.21.3-linux-x64/bin/
+export NODE_OPTIONS=--openssl-legacy-provider
+npm config set strict-ssl false
+</code></pre></article>
  
       
 
@@ -978,9 +947,10 @@ public class Web {
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#代码">代码</a></li>
-    <li><a href="#测试">测试</a></li>
-    <li><a href="#结果">结果</a></li>
+    <li><a href="#准备">准备</a></li>
+    <li><a href="#后端编译">后端编译</a></li>
+    <li><a href="#前端编译">前端编译</a></li>
+    <li><a href="#nginx">nginx</a></li>
   </ul>
 </nav>
 

@@ -64,6 +64,9 @@
     <loc>https://example.org/posts/2024-07-08/</loc>
     <lastmod>2024-07-08T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://example.org/posts/study/go-admin/</loc>
+    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://example.org/posts/study/dnsmasq/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>

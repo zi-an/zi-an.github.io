@@ -93,6 +93,13 @@
       <description> 总决赛(第二底座)&#xD;#&#xD;第一局&#xD;#&#xD;第二局&#xD;#&#xD;第三局&#xD;#&#xD;第四局&#xD;#&#xD;1/4决赛(第一底座)&#xD;#&#xD;第一局&#xD;#&#xD;第二局&#xD;#&#xD;第三局&#xD;#&#xD;</description>
     </item>
     <item>
+      <title>Go-Admin</title>
+      <link>https://example.org/posts/study/go-admin/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/study/go-admin/</guid>
+      <description>准备&#xD;#&#xD;apt update apt install -y git libnginx-mod-http-image-filter npm golang git clone https://gitee.com/go-admin-team/go-admin.git git clone https://gitee.com/go-admin-team/go-admin-ui.git 后端编译&#xD;#&#xD;国内加速下载,初次启动运行以下一次 ./go-admin migrate -c settings.yml cd ~/go-admin export GOPROXY=https://goproxy.cn,direct go mod tidy go build cp config/settings.yml . sed -i &amp;#39;s|user:password@tcp(127.0.0.1:3306|zian:zian@tcp(172.20.0.1:3306|g&amp;#39; settings.yml sed -i &amp;#39;s|8000|8009|g&amp;#39; settings.yml ./go-admin server -c settings.yml -a true 前端编译&#xD;#&#xD;国内加速下载 npm版本太新会出现问题,目前加参数解决 cd ~/go-admin-ui/ export NODE_OPTIONS=--openssl-legacy-provider npm install --registry=https://registry.npmmirror.com --force npm run build:prod nginx&#xD;#&#xD;sed -i &amp;#39;s|www-data|root|g&amp;#39; /etc/nginx/nginx.</description>
+    </item>
+    <item>
       <title>dnsmasq入库</title>
       <link>https://example.org/posts/study/dnsmasq/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>

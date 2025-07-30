@@ -18,7 +18,7 @@
 |外网|[首页](http://241688622:88/)|[穿透](http://public.freefrp.org:11111/?from=/)|[二维](/web/qrcode.html)|[色彩](/web/color.html?color=)||[晶阳](/web/?uri=/md/jingyang.md)|
 |资源|[脚本](/js/bing.js)|[广告](/web/adb.html)|[公网](/web/ipv6.html)|[播放](/web/m3u8.html)||[三星](http://10.0.0.5)|
 |工具|[表格](/web/markdown.html)|[计时](/web/time.html)|[聊天](/web/ai.html)|[搜索](/web/search.html)||[火山](http://241688622)|
-|测试|[8000](http://241688622:8000)|[8080](http://241688622:8080)|[8081](http://241688622:8081)||
+|测试|[8000](http://241688622:8000)|[8008](http://241688622:8008)|[8080](http://241688622:8080)|[8081](http://241688622:8081)|
 
 ---
 
