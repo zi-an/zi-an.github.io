@@ -1,6 +1,12 @@
 # 阿里百炼大模型
 - max>plus>turbo
 - https://dashscope.aliyuncs.com/compatible-mode/v1
+
+
+- 价格搜*限时免费* https://help.aliyun.com/zh/model-studio/models
+- 免费后只能用 qwen2.5-coder-3b-instruct
+
+
 ## 限时免费版
 - qwen2.5-coder-3b-instruct
 - qwen2.5-coder-1.5b-instruct
