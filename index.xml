@@ -283,6 +283,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/terminal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/terminal/</guid>
+      <description>Windows Terminal&#xD;#&#xD;win+r 输入wt开启&#xD;#&#xD;ctrl+shift+t 打开新标签 ctrl+alt+1 打开第一个标签(配置json后改为ctrl+n) shift+alt+ +/- 水平垂直拆分 shift+alt+ ↑↓←→ 水平垂直调整大小(需先拆分)&#xA;win+1234 调出状态栏的第几个应用,无论时候打开&#xA;json&#xD;#&#xD;配置 https://learn.microsoft.com/zh-cn/windows/terminal/customize-settings/actions 快捷键尽量跟浏览器一致 { &amp;#34;keys&amp;#34;: &amp;#34;ctrl+`&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;Terminal.OpenNewTab&amp;#34; }, { &amp;#34;keys&amp;#34;: &amp;#34;ctrl+1&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;Terminal.SwitchToTab0&amp;#34; }, { &amp;#34;keys&amp;#34;: &amp;#34;ctrl+2&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;Terminal.SwitchToTab1&amp;#34; }, { &amp;#34;keys&amp;#34;: &amp;#34;ctrl+3&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;Terminal.SwitchToTab2&amp;#34; }, { &amp;#34;keys&amp;#34;: &amp;#34;ctrl+4&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;Terminal.SwitchToTab3&amp;#34; }, { &amp;#34;keys&amp;#34;: &amp;#34;ctrl+5&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;Terminal.SwitchToTab4&amp;#34; }, { &amp;#34;keys&amp;#34;: &amp;#34;ctrl+6&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;Terminal.SwitchToTab5&amp;#34; }, { &amp;#34;keys&amp;#34;: &amp;#34;ctrl+7&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;Terminal.</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://example.org/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E7%A1%AC%E7%9B%98%E5%88%86%E7%B1%BB/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E7%A1%AC%E7%9B%98%E5%88%86%E7%B1%BB/</guid>
