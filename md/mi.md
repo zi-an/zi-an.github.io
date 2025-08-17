@@ -1,4 +1,10 @@
-# 2025-05-26
+# 2025-08-16
+
+## 安全员 
+- 13----------@wo.cn qq13---------
+
+## 荣耀 
+- 1300--------  x---------1---
 
 # webdav
 - http://5.mm:85 zian/zian
@@ -62,3 +68,10 @@ danta x__h__y___1___
 
 # oracle 
 x__h__y___1___@outlook.com/Xi________@1____
+
+
+## wifi
+- yan/yan163@@@
+
+## X光
+- https://dev.wamibao.com/hdrypacs/?from=wechat&checkId=4822708

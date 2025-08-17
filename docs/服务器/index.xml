@@ -40,7 +40,7 @@
       <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E9%95%9C%E5%83%8F%E7%BD%91%E7%AB%99/</guid>
-      <description>&#xD;镜像网站&#xD;#&#xD;镜像 清华 南科 阿里 华为 Debian 新× Apache Maven github镜像: https://gh.llkk.cc/ https://github.akams.cn/ 离线debian源镜像&#xD;#&#xD;unstable 修改为debian的代号 non-free 修改为其他规范的软件,mirror.list里有模板 apt clean&#xD;apt update&#xD;apt install -y apt-mirror&#xD;sed -i &amp;#39;s|deb|#deb|g&amp;#39; /etc/apt/mirror.list&#xD;sed -i &amp;#39;$adeb https://mirrors.aliyun.com/debian unstable non-free&amp;#39; /etc/apt/mirror.list&#xD;apt-mirror graph TD&#xD;A(工业用地效率)--&amp;gt;B1(土地利用强度)&#xD;A--&amp;gt;B2(土地经济效益)&#xD;B1--&amp;gt;C1(容积率)&#xD;B1--&amp;gt;C2(建筑系数)&#xD;B1--&amp;gt;C3(亩均固定资本投入)&#xD;B2--&amp;gt;D1(亩均工业产值)&#xD;B2--&amp;gt;D2(亩均税收) </description>
+      <description>&#xD;镜像网站&#xD;#&#xD;镜像 清华 南科 阿里 华为 Debian 新× Apache Maven github镜像: https://gh.llkk.cc/ https://github.akams.cn/ 资源&#xD;#&#xD;蒂凡尼蓝 #0abab5 https://www.svgrepo.com/svg/403015/biohazard 离线debian源镜像&#xD;#&#xD;unstable 修改为debian的代号 non-free 修改为其他规范的软件,mirror.list里有模板 apt clean&#xD;apt update&#xD;apt install -y apt-mirror&#xD;sed -i &amp;#39;s|deb|#deb|g&amp;#39; /etc/apt/mirror.list&#xD;sed -i &amp;#39;$adeb https://mirrors.aliyun.com/debian unstable non-free&amp;#39; /etc/apt/mirror.list&#xD;apt-mirror graph TD&#xD;A(工业用地效率)--&amp;gt;B1(土地利用强度)&#xD;A--&amp;gt;B2(土地经济效益)&#xD;B1--&amp;gt;C1(容积率)&#xD;B1--&amp;gt;C2(建筑系数)&#xD;B1--&amp;gt;C3(亩均固定资本投入)&#xD;B2--&amp;gt;D1(亩均工业产值)&#xD;B2--&amp;gt;D2(亩均税收) </description>
     </item>
     <item>
       <title></title>
