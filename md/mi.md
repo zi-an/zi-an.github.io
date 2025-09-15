@@ -75,3 +75,10 @@ x__h__y___1___@outlook.com/Xi________@1____
 
 ## X光
 - https://dev.wamibao.com/hdrypacs/?from=wechat&checkId=4822708
+
+## telegram
+- x__h__y___1___@outlook.com
+- 131________/0529
+
+- x__h__y___1___@gmail.com
+- 13005711992/0529
