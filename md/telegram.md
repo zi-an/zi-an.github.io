@@ -1,4 +1,5 @@
 # 电报
+
 ## 下载
 |版本|下载|其它||
 |-|-|-|-|
@@ -19,8 +20,8 @@
 |獨立部|@DuLiBuBot|----|
 
 ## 代理
-- [免费](https://t.me/proxy?server=120.241.144.141&port=13248&secret=ee87f3c38426788f6c2bd036713e4b59de617a7572652e6d6963726f736f66742e636f6d)
-- 120.241.144.141 13248
+- [免费](https://t.me/proxy?server=120.241.144.155&port=12121&secret=ee87f3c38426788f6c2bd036713e4b59de617a7572652e6d6963726f736f66742e636f6d)
+- 120.241.144.155 12121
 - ee87f3c38426788f6c2bd036713e4b59de617a7572652e6d6963726f736f66742e636f6d
 - [火山](https://t.me/socks?server=14.103.224.46&port=20170)
 - 14.103.224.46 20170
@@ -31,7 +32,7 @@ default: block
 domain(domain: update.miui.com) -> block
 domain(dashscope.aliyuncs.com) -> direct
 domain(geosite:category-ads) -> block
-domain(geosite:cn)->direct
+domain(geosite:cn) -> direct
 source(223.0.0.0/8) -> proxy
 source(112.0.0.0/8) -> proxy
 source(120.0.0.0/8) -> proxy
