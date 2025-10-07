@@ -49,5 +49,12 @@
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%A1%AC%E7%9B%98%E4%BD%BF%E7%94%A8/</guid>
       <description>&#xD;硬盘使用&#xD;#&#xD;移动硬盘 格式化+挂载&#xD;#&#xD;sudo apt install -y exfatprogs&#xD;sudo mkfs.exfat /dev/sda&#xD;sudo mount /dev/sda /home/nginx/samsung/ </description>
     </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%B8%89%E6%98%9F%E5%8F%B0%E5%BC%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%B8%89%E6%98%9F%E5%8F%B0%E5%BC%8F/</guid>
+      <description>三星台式机Debian13&#xD;#&#xD;root执行&#xD;#&#xD;echo &amp;#34;deb http://mirrors.aliyun.com/debian trixie main&amp;#34; &amp;gt; /etc/apt/sources.list apt update apt install -y curl docker-compose docker.io openssh-server sudo unzip wget wget https://zian.netlify.app/debian/config.tgz rm /etc/ssh/ssh_host_*key* /sbin/usermod -aG sudo docker tar -zxvf config.tgz -C / rm config.tgz cp /root/.ssh /etc/skel/ -r Docker优化&#xD;#&#xD;禁用ipv6 使用代理联网 echo {\&amp;#34;ipv6\&amp;#34;: false,\&amp;#34;ip6tables\&amp;#34;: false} &amp;gt; /etc/docker/daemon.json cat &amp;gt; proxy.conf &amp;lt;&amp;lt; EOF [Service] Environment=&amp;#34;HTTPS_PROXY=socks5://10.0.0.5:20170&amp;#34; Environment=&amp;#34;NO_PROXY=localhost,127.0.0.1,.cn&amp;#34; EOF sudo mkdir /etc/systemd/system/docker.service.d sudo mv proxy.conf /etc/systemd/system/docker.service.d systemctl daemon-reload systemctl restart docker.</description>
+    </item>
   </channel>
 </rss>

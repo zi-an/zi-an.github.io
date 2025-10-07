@@ -3,24 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Windows Terminal#win&#43;r 输入wt开启#ctrl&#43;shift&#43;t 打开新标签 ctrl&#43;alt&#43;1 打开第一个标签(配置json后改为ctrl&#43;n) shift&#43;alt&#43; &#43;/- 水平垂直拆分 shift&#43;alt&#43; ↑↓←→ 水平垂直调整大小(需先拆分)
-win&#43;1234 调出状态栏的第几个应用,无论时候打开
-json#配置 https://learn.microsoft.com/zh-cn/windows/terminal/customize-settings/actions 快捷键尽量跟浏览器一致 { &#34;keys&#34;: &#34;ctrl&#43;`&#34;, &#34;id&#34;: &#34;Terminal.OpenNewTab&#34; }, { &#34;keys&#34;: &#34;ctrl&#43;1&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab0&#34; }, { &#34;keys&#34;: &#34;ctrl&#43;2&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab1&#34; }, { &#34;keys&#34;: &#34;ctrl&#43;3&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab2&#34; }, { &#34;keys&#34;: &#34;ctrl&#43;4&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab3&#34; }, { &#34;keys&#34;: &#34;ctrl&#43;5&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab4&#34; }, { &#34;keys&#34;: &#34;ctrl&#43;6&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab5&#34; }, { &#34;keys&#34;: &#34;ctrl&#43;7&#34;, &#34;id&#34;: &#34;Terminal.">
+<meta name="description" content="三星台式机Debian13#root执行#echo &#34;deb http://mirrors.aliyun.com/debian trixie main&#34; &gt; /etc/apt/sources.list apt update apt install -y curl docker-compose docker.io openssh-server sudo unzip wget wget https://zian.netlify.app/debian/config.tgz rm /etc/ssh/ssh_host_*key* /sbin/usermod -aG sudo docker tar -zxvf config.tgz -C / rm config.tgz cp /root/.ssh /etc/skel/ -r Docker优化#禁用ipv6 使用代理联网 echo {\&#34;ipv6\&#34;: false,\&#34;ip6tables\&#34;: false} &gt; /etc/docker/daemon.json cat &gt; proxy.conf &lt;&lt; EOF [Service] Environment=&#34;HTTPS_PROXY=socks5://10.0.0.5:20170&#34; Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cn&#34; EOF sudo mkdir /etc/systemd/system/docker.service.d sudo mv proxy.conf /etc/systemd/system/docker.service.d systemctl daemon-reload systemctl restart docker.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="Windows Terminal#win&#43;r 输入wt开启#ctrl&#43;shift&#43;t 打开新标签 ctrl&#43;alt&#43;1 打开第一个标签(配置json后改为ctrl&#43;n) shift&#43;alt&#43; &#43;/- 水平垂直拆分 shift&#43;alt&#43; ↑↓←→ 水平垂直调整大小(需先拆分)
-win&#43;1234 调出状态栏的第几个应用,无论时候打开
-json#配置 https://learn.microsoft.com/zh-cn/windows/terminal/customize-settings/actions 快捷键尽量跟浏览器一致 { &#34;keys&#34;: &#34;ctrl&#43;`&#34;, &#34;id&#34;: &#34;Terminal.OpenNewTab&#34; }, { &#34;keys&#34;: &#34;ctrl&#43;1&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab0&#34; }, { &#34;keys&#34;: &#34;ctrl&#43;2&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab1&#34; }, { &#34;keys&#34;: &#34;ctrl&#43;3&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab2&#34; }, { &#34;keys&#34;: &#34;ctrl&#43;4&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab3&#34; }, { &#34;keys&#34;: &#34;ctrl&#43;5&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab4&#34; }, { &#34;keys&#34;: &#34;ctrl&#43;6&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab5&#34; }, { &#34;keys&#34;: &#34;ctrl&#43;7&#34;, &#34;id&#34;: &#34;Terminal." />
+<meta property="og:description" content="三星台式机Debian13#root执行#echo &#34;deb http://mirrors.aliyun.com/debian trixie main&#34; &gt; /etc/apt/sources.list apt update apt install -y curl docker-compose docker.io openssh-server sudo unzip wget wget https://zian.netlify.app/debian/config.tgz rm /etc/ssh/ssh_host_*key* /sbin/usermod -aG sudo docker tar -zxvf config.tgz -C / rm config.tgz cp /root/.ssh /etc/skel/ -r Docker优化#禁用ipv6 使用代理联网 echo {\&#34;ipv6\&#34;: false,\&#34;ip6tables\&#34;: false} &gt; /etc/docker/daemon.json cat &gt; proxy.conf &lt;&lt; EOF [Service] Environment=&#34;HTTPS_PROXY=socks5://10.0.0.5:20170&#34; Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cn&#34; EOF sudo mkdir /etc/systemd/system/docker.service.d sudo mv proxy.conf /etc/systemd/system/docker.service.d systemctl daemon-reload systemctl restart docker." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/terminal/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%B8%89%E6%98%9F%E5%8F%B0%E5%BC%8F/" /><meta property="article:section" content="docs" />
 
 
-<title>Terminal
+<title>三星台式
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/terminal/">
+<link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%B8%89%E6%98%9F%E5%8F%B0%E5%BC%8F/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/zh.search.min.f5c0ff29267977cd97514fc9cc571ec2c76ae0b7f0cae15de144f64c6a091832.js" integrity="sha256-9cD/KSZ5d82XUU/JzFcewsdq4LfwyuFd4UT2TGoJGDI=" crossorigin="anonymous"></script>
@@ -76,7 +72,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-0488dc51fd99636dd6b4d238151c1db5" class="toggle"  />
+    <input type="checkbox" id="section-0488dc51fd99636dd6b4d238151c1db5" class="toggle" checked />
     <label for="section-0488dc51fd99636dd6b4d238151c1db5" class="flex justify-between">
       <a role="button" class="">服务器</a>
     </label>
@@ -402,7 +398,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%B8%89%E6%98%9F%E5%8F%B0%E5%BC%8F/" class="">三星台式</a>
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%B8%89%E6%98%9F%E5%8F%B0%E5%BC%8F/" class="active">三星台式</a>
   
 
         </li>
@@ -420,7 +416,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-69ea6a18acbd408b17a06556c8b882ae" class="toggle" checked />
+    <input type="checkbox" id="section-69ea6a18acbd408b17a06556c8b882ae" class="toggle"  />
     <label for="section-69ea6a18acbd408b17a06556c8b882ae" class="flex justify-between">
       <a role="button" class="">笔记本</a>
     </label>
@@ -522,7 +518,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-896f1e92695a73a9a6017e4012138ca4" class="toggle" checked />
+    <input type="checkbox" id="section-896f1e92695a73a9a6017e4012138ca4" class="toggle"  />
     <label for="section-896f1e92695a73a9a6017e4012138ca4" class="flex justify-between">
       <a role="button" class="">soft</a>
     </label>
@@ -590,7 +586,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/terminal/" class="active">Terminal</a>
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/terminal/" class="">Terminal</a>
   
 
         </li>
@@ -800,7 +796,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Terminal</strong>
+  <strong>三星台式</strong>
 
   <label for="toc-control">
     
@@ -816,8 +812,11 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#winr-输入wt开启">win+r 输入wt开启</a></li>
-    <li><a href="#json">json</a></li>
+    <li><a href="#root执行">root执行</a></li>
+    <li><a href="#docker优化">Docker优化</a></li>
+    <li><a href="#硬盘内存处理">硬盘内存处理</a></li>
+    <li><a href="#开机优化">开机优化</a></li>
+    <li><a href="#命令别名">命令别名</a></li>
   </ul>
 </nav>
 
@@ -830,36 +829,76 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h1 id="windows-terminal">
-  Windows Terminal
-  <a class="anchor" href="#windows-terminal">#</a>
+  <article class="markdown book-article"><h1 id="三星台式机debian13">
+  三星台式机Debian13
+  <a class="anchor" href="#%e4%b8%89%e6%98%9f%e5%8f%b0%e5%bc%8f%e6%9c%badebian13">#</a>
 </h1>
-<h2 id="winr-输入wt开启">
-  win+r 输入wt开启
-  <a class="anchor" href="#winr-%e8%be%93%e5%85%a5wt%e5%bc%80%e5%90%af">#</a>
+<h2 id="root执行">
+  root执行
+  <a class="anchor" href="#root%e6%89%a7%e8%a1%8c">#</a>
 </h2>
-<p>ctrl+shift+t 打开新标签
-ctrl+alt+1 打开第一个标签(配置json后改为ctrl+n)
-shift+alt+ +/- 水平垂直拆分
-shift+alt+ ↑↓←→ 水平垂直调整大小(需先拆分)</p>
-<p>win+1234 调出状态栏的第几个应用,无论时候打开</p>
-<h2 id="json">
-  json
-  <a class="anchor" href="#json">#</a>
+<pre tabindex="0"><code>echo &#34;deb http://mirrors.aliyun.com/debian trixie main&#34; &gt; /etc/apt/sources.list
+apt update
+apt install -y curl docker-compose docker.io openssh-server sudo unzip wget
+wget https://zian.netlify.app/debian/config.tgz
+rm /etc/ssh/ssh_host_*key*
+/sbin/usermod -aG sudo docker
+tar -zxvf config.tgz -C /
+rm config.tgz
+cp /root/.ssh /etc/skel/ -r
+</code></pre><h2 id="docker优化">
+  Docker优化
+  <a class="anchor" href="#docker%e4%bc%98%e5%8c%96">#</a>
 </h2>
 <ul>
-<li>配置 <a href="https://learn.microsoft.com/zh-cn/windows/terminal/customize-settings/actions">https://learn.microsoft.com/zh-cn/windows/terminal/customize-settings/actions</a></li>
-<li>快捷键尽量跟浏览器一致</li>
+<li>禁用ipv6</li>
+<li>使用代理联网</li>
 </ul>
-<pre tabindex="0"><code>{ &#34;keys&#34;: &#34;ctrl+`&#34;, &#34;id&#34;: &#34;Terminal.OpenNewTab&#34; },
-{ &#34;keys&#34;: &#34;ctrl+1&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab0&#34; },
-{ &#34;keys&#34;: &#34;ctrl+2&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab1&#34; },
-{ &#34;keys&#34;: &#34;ctrl+3&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab2&#34; },
-{ &#34;keys&#34;: &#34;ctrl+4&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab3&#34; },
-{ &#34;keys&#34;: &#34;ctrl+5&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab4&#34; },
-{ &#34;keys&#34;: &#34;ctrl+6&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab5&#34; },
-{ &#34;keys&#34;: &#34;ctrl+7&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab6&#34; },
-{ &#34;keys&#34;: &#34;ctrl+8&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab7&#34; }
+<pre tabindex="0"><code>echo {\&#34;ipv6\&#34;: false,\&#34;ip6tables\&#34;: false} &gt; /etc/docker/daemon.json
+cat &gt; proxy.conf &lt;&lt; EOF
+[Service]
+Environment=&#34;HTTPS_PROXY=socks5://10.0.0.5:20170&#34;
+Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cn&#34;
+EOF
+sudo mkdir /etc/systemd/system/docker.service.d
+sudo mv proxy.conf /etc/systemd/system/docker.service.d
+systemctl daemon-reload
+systemctl restart docker.socket docker.service
+</code></pre><h2 id="硬盘内存处理">
+  硬盘内存处理
+  <a class="anchor" href="#%e7%a1%ac%e7%9b%98%e5%86%85%e5%ad%98%e5%a4%84%e7%90%86">#</a>
+</h2>
+<ul>
+<li>查看硬盘ID ls -l /dev/disk/by-uuid/</li>
+<li>nofail如果有问题就跳过</li>
+</ul>
+<pre tabindex="0"><code>sudo sed -i &#39;$atmpfs /home/nginx/temp/tmp tmpfs defaults,size=6G 0 0&#39; /etc/fstab
+sudo sed -i &#39;$aUUID=E76B-31F3 /home/nginx/samsung exfat defaults,nofail 0 2&#39; /etc/fstab
+sudo sed -i &#39;$aUUID=EF9F-FBCE /home/nginx/toshiba exfat defaults,nofail 0 2&#39; /etc/fstab
+</code></pre><h2 id="开机优化">
+  开机优化
+  <a class="anchor" href="#%e5%bc%80%e6%9c%ba%e4%bc%98%e5%8c%96">#</a>
+</h2>
+<ul>
+<li>快速启动,跳过读秒</li>
+<li>禁用ipv6</li>
+</ul>
+<pre tabindex="0"><code>sed -i &#39;s|GRUB_TIMEOUT=5|GRUB_TIMEOUT=0|g&#39; /etc/default/grub
+sed -i &#39;s|GRUB_CMDLINE_LINUX=&#34;&#34;|GRUB_CMDLINE_LINUX=&#34;ipv6.disable=1&#34;|g&#39; /etc/default/grub
+sudo update-grub
+sudo reboot
+</code></pre><h2 id="命令别名">
+  命令别名
+  <a class="anchor" href="#%e5%91%bd%e4%bb%a4%e5%88%ab%e5%90%8d">#</a>
+</h2>
+<pre tabindex="0"><code>alias test2222=&#39;docker exec -it test bash&#39;
+alias server=&#39;docker exec -it server bash&#39;
+alias dnslog=&#39;docker exec -it dnsmasq sh -c &#34;tail -fn20 /dns.log | grep reply&#34;&#39;
+alias dps=&#34;docker ps -a --format &#39;table{{.Names}}\t{{.Image}}\t{{.Status}}&#39;&#34;
+alias suspend=&#34;sudo systemctl suspend&#34;
+alias zian=&#34;docker exec -it zian bash&#34;
+alias xunlei=&#34;docker exec -it xunlei bash&#34;
+alias v2rayalog=&#34;docker logs -fn20 v2raya&#34;
 </code></pre></article>
  
       
@@ -901,8 +940,11 @@ shift+alt+ ↑↓←→ 水平垂直调整大小(需先拆分)</p>
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#winr-输入wt开启">win+r 输入wt开启</a></li>
-    <li><a href="#json">json</a></li>
+    <li><a href="#root执行">root执行</a></li>
+    <li><a href="#docker优化">Docker优化</a></li>
+    <li><a href="#硬盘内存处理">硬盘内存处理</a></li>
+    <li><a href="#开机优化">开机优化</a></li>
+    <li><a href="#命令别名">命令别名</a></li>
   </ul>
 </nav>
 
