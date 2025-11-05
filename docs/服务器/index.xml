@@ -9,10 +9,10 @@
     <atom:link href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
-      <description>&#xD;服务器安装&#xD;#&#xD;清华镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 推荐桌面:Cinnamon是debian官方维护的桌面系统 初始化安装&#xD;#&#xD;echo &amp;#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware&amp;#34; | sudo tee /etc/apt/sources.list&#xD;wget ali.mm/debian/config.tgz&#xD;sudo tar -zxvf config.tgz -C /&#xD;rm config.tgz 容器优化&#xD;#&#xD;cat &amp;gt; proxy.conf &amp;lt;&amp;lt; EOF&#xD;[Service]&#xD;Environment=&amp;#34;HTTP_PROXY=http://x:x@127.0.0.1:20172&amp;#34;&#xD;Environment=&amp;#34;HTTPS_PROXY=http://x:x@127.0.0.1:20172&amp;#34;&#xD;Environment=&amp;#34;NO_PROXY=localhost,127.0.0.1,.cn&amp;#34;&#xD;EOF&#xD;sudo mkdir /etc/systemd/system/docker.service.d&#xD;sudo mv proxy.conf /etc/systemd/system/docker.service.d&#xD;systemctl daemon-reload&#xD;systemctl restart docker.socket docker.service 网络优化&#xD;#&#xD;</description>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F/</guid>
+      <description>本地系统&#xD;#&#xD;安装Debian13&#xD;#&#xD;中科镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 推荐桌面:Cinnamon是debian官方维护的桌面系统 root执行&#xD;#&#xD;echo &amp;#34;deb http://mirrors.ustc.edu.cn/debian trixie main&amp;#34; &amp;gt; /etc/apt/sources.list&#xD;apt update&#xD;apt install -y curl docker-compose docker.io openssh-server sudo unzip wget&#xD;wget https://zian.netlify.app/debian/config.tgz&#xD;rm /etc/ssh/ssh_host_*key*&#xD;#/sbin/usermod -aG sudo docker&#xD;tar -zxvf config.tgz -C /&#xD;rm config.tgz&#xD;cp /root/.ssh /etc/skel/ -r Docker优化&#xD;#&#xD;禁用ipv6 使用代理联网 sudo sh -c &amp;#39;echo {\&amp;#34;ipv6\&amp;#34;: false,\&amp;#34;ip6tables\&amp;#34;: false} &amp;gt; /etc/docker/daemon.json&amp;#39;&#xD;cat &amp;gt; proxy.conf &amp;lt;&amp;lt; EOF&#xD;[Service]&#xD;Environment=&amp;#34;HTTPS_PROXY=socks5://127.</description>
     </item>
     <item>
       <title></title>
@@ -48,13 +48,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%A1%AC%E7%9B%98%E4%BD%BF%E7%94%A8/</guid>
       <description>&#xD;硬盘使用&#xD;#&#xD;移动硬盘 格式化+挂载&#xD;#&#xD;sudo apt install -y exfatprogs&#xD;sudo mkfs.exfat /dev/sda&#xD;sudo mount /dev/sda /home/nginx/samsung/ </description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%B8%89%E6%98%9F%E5%8F%B0%E5%BC%8F/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%B8%89%E6%98%9F%E5%8F%B0%E5%BC%8F/</guid>
-      <description>三星台式机Debian13&#xD;#&#xD;root执行&#xD;#&#xD;echo &amp;#34;deb http://mirrors.aliyun.com/debian trixie main&amp;#34; &amp;gt; /etc/apt/sources.list apt update apt install -y curl docker-compose docker.io openssh-server sudo unzip wget wget https://zian.netlify.app/debian/config.tgz rm /etc/ssh/ssh_host_*key* #/sbin/usermod -aG sudo docker tar -zxvf config.tgz -C / rm config.tgz cp /root/.ssh /etc/skel/ -r Docker优化&#xD;#&#xD;禁用ipv6 使用代理联网 sudo sh -c &amp;#39;echo {\&amp;#34;ipv6\&amp;#34;: false,\&amp;#34;ip6tables\&amp;#34;: false} &amp;gt; /etc/docker/daemon.json&amp;#39; cat &amp;gt; proxy.conf &amp;lt;&amp;lt; EOF [Service] Environment=&amp;#34;HTTPS_PROXY=socks5://10.0.0.5:20170&amp;#34; Environment=&amp;#34;NO_PROXY=localhost,127.0.0.1,.cn&amp;#34; EOF sudo mkdir /etc/systemd/system/docker.service.d sudo mv proxy.</description>
     </item>
   </channel>
 </rss>
