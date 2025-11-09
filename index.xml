@@ -6,7 +6,7 @@
     <description>Recent content in 主页 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
@@ -56,6 +56,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/wsl1/</guid>
       <description>几乎不用了 WSL1&#xD;#&#xD;https://learn.microsoft.com/zh-cn/windows/wsl/install-manual#downloading-distributions Ubuntu 24.04 Debian wsl.exe --update&#xD;https://github.com/microsoft/WSL/releases/download/2.3.26/wsl.2.3.26.0.x64.msi&#xD;Add-AppxPackage .\app_name.appx 配置&#xD;#&#xD;echo &amp;#34;deb http://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main&amp;#34; | sudo tee /etc/apt/sources.list&#xD;sudo apt update&#xD;sudo apt install bash-completion /etc/wsl.conf [boot]&#xD;systemd=true&#xD;[network]&#xD;hostname = redmibook.com&#xD;generateHosts = false 常用命令&#xD;#&#xD;wsl --shutdown 未解决&#xD;#&#xD;networkingMode Nat</description>
+    </item>
+    <item>
+      <title>Faker第六冠,为了多兰</title>
+      <link>https://example.org/posts/2025-11-09/</link>
+      <pubDate>Sun, 09 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/2025-11-09/</guid>
+      <description>&#xD;名人糖颁奖&#xD;#&#xD;S15全球总决赛&#xD;#&#xD;第一局&#xD;#&#xD;第二局&#xD;#&#xD;第三局&#xD;#&#xD;第四局&#xD;#&#xD;第五局&#xD;#&#xD;</description>
     </item>
     <item>
       <title>go与java性能对比</title>

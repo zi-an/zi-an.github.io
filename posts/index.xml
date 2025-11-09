@@ -6,8 +6,15 @@
     <description>Recent content in 日记本 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Faker第六冠,为了多兰</title>
+      <link>https://example.org/posts/2025-11-09/</link>
+      <pubDate>Sun, 09 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/2025-11-09/</guid>
+      <description>&#xD;名人糖颁奖&#xD;#&#xD;S15全球总决赛&#xD;#&#xD;第一局&#xD;#&#xD;第二局&#xD;#&#xD;第三局&#xD;#&#xD;第四局&#xD;#&#xD;第五局&#xD;#&#xD;</description>
+    </item>
     <item>
       <title>go与java性能对比</title>
       <link>https://example.org/posts/study/go-java/</link>

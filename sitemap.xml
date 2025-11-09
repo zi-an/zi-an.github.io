@@ -34,14 +34,20 @@
   </url><url>
     <loc>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/</loc>
   </url><url>
+    <loc>https://example.org/categories/</loc>
+    <lastmod>2025-11-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.org/posts/2025-11-09/</loc>
+    <lastmod>2025-11-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.org/categories/%E5%A4%A7%E9%AD%94%E7%8E%8B%E6%9D%8E%E7%9B%B8%E8%B5%AB/</loc>
+    <lastmod>2025-11-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://example.org/posts/</loc>
-    <lastmod>2025-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.org/</loc>
-    <lastmod>2025-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/categories/</loc>
-    <lastmod>2025-07-07T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.org/posts/study/go-java/</loc>
     <lastmod>2025-07-07T00:00:00+00:00</lastmod>
@@ -56,9 +62,6 @@
     <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.org/posts/2024-11-03/</loc>
-    <lastmod>2024-11-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/categories/%E5%A4%A7%E9%AD%94%E7%8E%8B%E6%9D%8E%E7%9B%B8%E8%B5%AB/</loc>
     <lastmod>2024-11-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.org/posts/2024-07-08/</loc>
