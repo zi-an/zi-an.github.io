@@ -9,6 +9,13 @@
     <atom:link href="https://example.org/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://example.org/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E5%AE%89%E5%8D%93%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E5%AE%89%E5%8D%93%E8%BD%AF%E4%BB%B6/</guid>
+      <description>安卓推荐&#xD;#&#xD;市场&#xD;#&#xD;一般软件 下载 备注(均为64位版) vlc org.videolan.vlc-3.5.7.apk TGX org.thunderdog.challegram-0.27v8a.apk 更改版本的滑动有问题 github com.github.android-1.169.1.apk 其它版本需要apkm connectbot org.connectbot-1.9.13.apk wifianalyzer com.vrem.wifianalyzer-3.2.1.apk v2rayNG com.v2ray.ang.apk 订阅 musicfree fun.upup.musicfree-0.6.2.apk 订阅 红果免费短剧 com.phoenix.read-6.4.9.32.apk 拼多多 com.xunmeng.pinduoduo-5.4.0.apk 搜狗输入法 [com.sohu.inputmethod.sogou-10.38.2.apk] 最简单的版本 今日水印相机 com.xhey.xcamera-2.8.255.8.apk 第一个加入水印的版本 布丁扫描 com.wibo.bigbang.ocr-2.1.0.1.apk vivo出品,最简洁的64位版 虎牙直播 com.huya.kiwi-7.11.69.apk 能网页扫码版 哔哩哔哩 com.bilibili.app.in-3.17.0.apk 能看评论图的最早版本 系统&#xD;#&#xD;miui软件 下载 备注 wps定制版 cn.wps.moffice_eng.xiaomi.lite-3.6.4.apk 电子邮箱 com.android.email-13.apk 指南针 com.miui.compass-9.7.5.apk miui桌面 com.miui.home-4.26.apk 无字模式,支持miui12 小米音乐 com.miui.player-4.4.apk QQ音乐版,无广告,可播放已下载文件 已过时&#xD;#&#xD;一般软件 下载 备注(均为64位版) QQ浏览器 com.tencent.mtt-12.5.0.apk 几乎无广告,但有时不走免流 腾讯地图 com.</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://example.org/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E7%A1%AC%E7%9B%98%E5%88%86%E7%B1%BB/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E7%A1%AC%E7%9B%98%E5%88%86%E7%B1%BB/</guid>

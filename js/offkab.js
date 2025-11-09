@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         offkab
-// @author       offkab
+// @version      2025-11-09
 // @include      */upload/*
+// @exclude      */upload/Application/*
+// @run-at       document-end
 // ==/UserScript==
 
 (function() {
     'use strict';
     window.location.href=document.getElementsByTagName("img")[3].src
-    // Your code here...
 })();

@@ -13,3 +13,6 @@
 
 
 https://zian.netlify.app/js/offkab.js
+
+*/upload/assets/*
+*/upload/images/*

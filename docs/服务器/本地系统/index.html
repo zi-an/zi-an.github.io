@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="本地系统#安装Debian13#中科镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 推荐桌面:Cinnamon是debian官方维护的桌面系统 root执行#echo &#34;deb http://mirrors.ustc.edu.cn/debian trixie main&#34; &gt; /etc/apt/sources.listapt updateapt install -y curl docker-compose docker.io openssh-server sudo unzip wgetwget https://zian.netlify.app/debian/config.tgzrm /etc/ssh/ssh_host_*key*#/sbin/usermod -aG sudo dockertar -zxvf config.tgz -C /rm config.tgzcp /root/.ssh /etc/skel/ -r Docker优化#禁用ipv6 使用代理联网 sudo sh -c &#39;echo {\&#34;ipv6\&#34;: false,\&#34;ip6tables\&#34;: false} &gt; /etc/docker/daemon.json&#39;cat &gt; proxy.conf &lt;&lt; EOF[Service]Environment=&#34;HTTPS_PROXY=socks5://127.">
+<meta name="description" content="本地系统#安装Debian13#中科镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 推荐桌面:Cinnamon是debian官方维护的桌面系统 root执行#echo &#34;deb http://mirrors.ustc.edu.cn/debian trixie main&#34; &gt; /etc/apt/sources.listapt updateapt install -y curl docker-compose docker.io openssh-server sudo unzip wgetwget https://zian.netlify.app/debian/config.tgzrm /etc/ssh/ssh_host_*key*#/sbin/usermod -aG sudo dockertar -zxvf config.tgz -C /rm config.tgzcp /root/.ssh /etc/skel/ -r Docker优化#禁用ipv6 使用代理联网 在daemon中配置代理,可能因网络不通畅无法启动 sudo sh -c &#39;echo {\&#34;ipv6\&#34;: false,\&#34;ip6tables\&#34;: false} &gt; /etc/docker/daemon.json&#39;cat &gt; proxy.conf &lt;&lt; EOF[Service]Environment=&#34;HTTPS_PROXY=socks5://127.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="本地系统#安装Debian13#中科镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 推荐桌面:Cinnamon是debian官方维护的桌面系统 root执行#echo &#34;deb http://mirrors.ustc.edu.cn/debian trixie main&#34; &gt; /etc/apt/sources.listapt updateapt install -y curl docker-compose docker.io openssh-server sudo unzip wgetwget https://zian.netlify.app/debian/config.tgzrm /etc/ssh/ssh_host_*key*#/sbin/usermod -aG sudo dockertar -zxvf config.tgz -C /rm config.tgzcp /root/.ssh /etc/skel/ -r Docker优化#禁用ipv6 使用代理联网 sudo sh -c &#39;echo {\&#34;ipv6\&#34;: false,\&#34;ip6tables\&#34;: false} &gt; /etc/docker/daemon.json&#39;cat &gt; proxy.conf &lt;&lt; EOF[Service]Environment=&#34;HTTPS_PROXY=socks5://127." />
+<meta property="og:description" content="本地系统#安装Debian13#中科镜像下载 软碟通 王涛 7C81-1689-4046-626F 只要下载4G左右的,1G以下是网络安装版,7G以上是教育版(内置的软件不同) 命令查找 推荐桌面:Cinnamon是debian官方维护的桌面系统 root执行#echo &#34;deb http://mirrors.ustc.edu.cn/debian trixie main&#34; &gt; /etc/apt/sources.listapt updateapt install -y curl docker-compose docker.io openssh-server sudo unzip wgetwget https://zian.netlify.app/debian/config.tgzrm /etc/ssh/ssh_host_*key*#/sbin/usermod -aG sudo dockertar -zxvf config.tgz -C /rm config.tgzcp /root/.ssh /etc/skel/ -r Docker优化#禁用ipv6 使用代理联网 在daemon中配置代理,可能因网络不通畅无法启动 sudo sh -c &#39;echo {\&#34;ipv6\&#34;: false,\&#34;ip6tables\&#34;: false} &gt; /etc/docker/daemon.json&#39;cat &gt; proxy.conf &lt;&lt; EOF[Service]Environment=&#34;HTTPS_PROXY=socks5://127." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F/" /><meta property="article:section" content="docs" />
 
@@ -19,7 +19,7 @@
 <link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.203d6d244ab33bdcc13f74cb355ef6c1c048caaad2102bd23838a04223c93810.js" integrity="sha256-ID1tJEqzO9zBP3TLNV72wcBIyqrSECvSODigQiPJOBA=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.7f542eb4630f9c1c649777677ce77e3f6fb335339e947ac59cf09b596f12ca50.js" integrity="sha256-f1QutGMPnBxkl3dnfOd&#43;P2&#43;zNTOelHrFnPCbWW8SylA=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -612,6 +612,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E5%AE%89%E5%8D%93%E8%BD%AF%E4%BB%B6/" class="">安卓软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E7%A1%AC%E7%9B%98%E5%88%86%E7%B1%BB/" class="">硬盘分类</a>
   
 
@@ -852,12 +865,12 @@ cp /root/.ssh /etc/skel/ -r
 <ul>
 <li>禁用ipv6</li>
 <li>使用代理联网</li>
+<li>在daemon中配置代理,可能因网络不通畅无法启动</li>
 </ul>
 <pre tabindex="0"><code>sudo sh -c &#39;echo {\&#34;ipv6\&#34;: false,\&#34;ip6tables\&#34;: false} &gt; /etc/docker/daemon.json&#39;
 cat &gt; proxy.conf &lt;&lt; EOF
 [Service]
 Environment=&#34;HTTPS_PROXY=socks5://127.0.0.1:20170&#34;
-Environment=&#34;NO_PROXY=localhost,127.0.0.1,.cn&#34;
 EOF
 sudo mkdir /etc/systemd/system/docker.service.d
 sudo mv proxy.conf /etc/systemd/system/docker.service.d
