@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.7f542eb4630f9c1c649777677ce77e3f6fb335339e947ac59cf09b596f12ca50.js" integrity="sha256-f1QutGMPnBxkl3dnfOd&#43;P2&#43;zNTOelHrFnPCbWW8SylA=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.6afa0e86d16d6f814e60bfd30612791a757f72ecd88c1731b1f03a051040dc76.js" integrity="sha256-avoOhtFtb4FOYL/TBhJ5GnV/cuzYjBcxsfA6BRBA3HY=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -910,10 +910,14 @@ alias dockerps=&#34;docker ps -a --format &#39;table {{.Names}}\t{{.Status}}&#39
   <a class="anchor" href="#%e6%9b%b4%e6%96%b0mtproto">#</a>
 </h3>
 <ul>
-<li>apt install libnginx-mod-stream</li>
+<li></li>
 <li>编辑配置文件</li>
+<li>编写mtproto.sh,防止空返回加多一次curl</li>
+<li>定时器 */10 * * * * docker exec -i zian mtproto.sh</li>
 </ul>
-<pre tabindex="0"><code>cat &gt; /etc/nginx/modules-enabled/.conf &lt;&lt; EOF
+<pre tabindex="0"><code>apt update
+apt install libnginx-mod-stream -y
+cat &gt; /etc/nginx/modules-enabled/.conf &lt;&lt; EOF
 stream {
     upstream mtproto {
     }
@@ -921,22 +925,19 @@ stream {
     server {
         listen 81;
         proxy_pass mtproto;
-        proxy_download_rate 40k;
     }
 }
 EOF
-</code></pre><ul>
-<li>编写mtproto.sh,防止空返回加多一次curl</li>
-<li>定时器 0 * * * * docker exec -it zian mtproto.sh</li>
-</ul>
-<pre tabindex="0"><code>#!/bin/bash
+cat &gt; /bin/mtproto.sh &lt;&lt; EOF
+#!/bin/bash
 
-curl -s https://t.me/s/ProxyMTProting --proxy socks5h://14.103.224.46:20170 &gt; mtproto.html
-curl -s https://t.me/s/ProxyMTProting --proxy socks5h://14.103.224.46:20170 &gt; mtproto.html
-cat mtproto.html | grep -oP &#39;server=\K[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+&#39; | tail -n20 | uniq | sort | sed &#39;s/^/server /;s/$/:12121;/&#39; &gt; mtproto.txt
-sed &#39;2r mtproto.txt&#39; /etc/nginx/modules-enabled/.conf &gt; /etc/nginx/modules-enabled/81.conf
+curl --retry 9 -s https://t.me/s/ProxyMTProting --proxy socks5h://yun.mm:20170 &gt; /mtproto.html
+cat /mtproto.html | grep -oP &#39;server=\K[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+&#39; | tail -n20 | uniq | sort | sed &#39;s/^/server /;s/$/:12121;/&#39; &gt; /mtproto.txt
+sed &#39;2r /mtproto.txt&#39; /etc/nginx/modules-enabled/.conf &gt; /etc/nginx/modules-enabled/81.conf
 cat /etc/nginx/modules-enabled/81.conf
 nginx -s reload
+EOF
+chmod +x /bin/mtproto.sh
 </code></pre></article>
  
       
