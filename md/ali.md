@@ -1,3 +1,15 @@
+## 免费的api
+
+https://platform.aitools.cfd/docs
+https://platform.aitools.cfd/api/v1/
+sk-86e778d9a30a4a51892c3db8256b1ca4
+sk-278d4e92cb8442b98701d316672f8a28
+sk-1d00617bd03e4886bbfcdd164bd90d28 (测试号)
+
+https://api.suanli.cn/v1/
+sk-W0rpStc95T7JVYVwDYc29IyirjtpPPby6SozFMQr17m8KWeo
+
+
 # 阿里百炼大模型
 - max>plus>turbo
 - [API](https://dashscope.aliyuncs.com/compatible-mode/v1)

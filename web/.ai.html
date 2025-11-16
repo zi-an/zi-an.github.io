@@ -42,9 +42,9 @@
     <button onclick="sendMessage()" style="margin-left: 5px;padding: 5px 10px;">发送</button>
 </div>
 <script>
-    const SERVER = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions';
-    const KEY = '5318d08d9996134a0254869fa55a114e-ks';
-    const MODEL = 'qwen-turbo-latest'
+    const SERVER = 'https://platform.aitools.cfd/api/v1/chat/completions';
+    const KEY = 'sk-1d00617bd03e4886bbfcdd164bd90d28';
+    const MODEL = 'qwen/qwen3-30b-a3b'
 
     const chatContainer = document.getElementById('chat-container');
     const messageInput = document.getElementById('message-input');
@@ -92,7 +92,7 @@
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${KEY.split("").reverse().join("")}`
+                    'Authorization': `Bearer ${KEY}`
                 },
                 body: JSON.stringify({
                     model: `${MODEL}`,

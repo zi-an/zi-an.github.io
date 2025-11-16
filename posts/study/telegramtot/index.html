@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=80&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Telegram &#43; Qwen#package main import ( &#34;context&#34; &#34;database/sql&#34; &#34;fmt&#34; _ &#34;github.com/go-sql-driver/mysql&#34; tgbotapi &#34;github.com/go-telegram-bot-api/telegram-bot-api/v5&#34; &#34;github.com/openai/openai-go/v2&#34; &#34;github.com/openai/openai-go/v2/option&#34; &#34;net/http&#34; &#34;net/url&#34; &#34;strconv&#34; &#34;strings&#34; ) var proxyURL = &#34;http://14.103.224.46:20172&#34; var botToken = &#34;8480580315:AAHYaX5eKimC0jq_a7vKdVL59qTdz33cpZs&#34; var apiEndpoint = &#34;https://api.telegram.org/bot%s/%s&#34; var format = &#34;2006-01-02 15:04:05&#34; var aiUrl = &#34;https://dashscope.aliyuncs.com/compatible-mode/v1/&#34; var aiKey = &#34;sk-e411a55af9684520a4316999d80d8135&#34; func main() { proxyURL, _ := url.Parse(proxyURL) transport := &amp;http.Transport{Proxy: http.ProxyURL(proxyURL)} client := &amp;http.Client{Transport: transport} bot, _ := tgbotapi.NewBotAPIWithClient(botToken, apiEndpoint, client) fmt.Printf(&#34;机器人ID:%s\n&#34;, bot.">
+<meta name="description" content="Telegram &#43; Qwen#package main import ( &#34;context&#34; &#34;database/sql&#34; &#34;fmt&#34; _ &#34;github.com/go-sql-driver/mysql&#34; tgbotapi &#34;github.com/go-telegram-bot-api/telegram-bot-api/v5&#34; &#34;github.com/openai/openai-go/v3&#34; &#34;github.com/openai/openai-go/v3/option&#34; &#34;net/http&#34; &#34;net/url&#34; &#34;strconv&#34; &#34;strings&#34; ) var proxyURL = &#34;http://yun.mm:20172&#34; var botToken = &#34;8480580315:AAHYaX5eKimC0jq_a7vKdVL59qTdz33cpZs&#34; var apiEndpoint = &#34;https://api.telegram.org/bot%s/%s&#34; var format = &#34;2006-01-02 15:04:05&#34; var aiUrl = &#34;https://platform.aitools.cfd/api/v1/&#34; var aiKey = &#34;sk-1d00617bd03e4886bbfcdd164bd90d28&#34; func main() { proxyURL, _ := url.Parse(proxyURL) transport := &amp;http.Transport{Proxy: http.ProxyURL(proxyURL)} httpclient := &amp;http.Client{Transport: transport} bot, _ := tgbotapi.NewBotAPIWithClient(botToken, apiEndpoint, httpclient) fmt.Printf(&#34;机器人ID:%s\n&#34;, bot.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Telegram &#43; Qwen" />
-<meta property="og:description" content="Telegram &#43; Qwen#package main import ( &#34;context&#34; &#34;database/sql&#34; &#34;fmt&#34; _ &#34;github.com/go-sql-driver/mysql&#34; tgbotapi &#34;github.com/go-telegram-bot-api/telegram-bot-api/v5&#34; &#34;github.com/openai/openai-go/v2&#34; &#34;github.com/openai/openai-go/v2/option&#34; &#34;net/http&#34; &#34;net/url&#34; &#34;strconv&#34; &#34;strings&#34; ) var proxyURL = &#34;http://14.103.224.46:20172&#34; var botToken = &#34;8480580315:AAHYaX5eKimC0jq_a7vKdVL59qTdz33cpZs&#34; var apiEndpoint = &#34;https://api.telegram.org/bot%s/%s&#34; var format = &#34;2006-01-02 15:04:05&#34; var aiUrl = &#34;https://dashscope.aliyuncs.com/compatible-mode/v1/&#34; var aiKey = &#34;sk-e411a55af9684520a4316999d80d8135&#34; func main() { proxyURL, _ := url.Parse(proxyURL) transport := &amp;http.Transport{Proxy: http.ProxyURL(proxyURL)} client := &amp;http.Client{Transport: transport} bot, _ := tgbotapi.NewBotAPIWithClient(botToken, apiEndpoint, client) fmt.Printf(&#34;机器人ID:%s\n&#34;, bot." />
+<meta property="og:description" content="Telegram &#43; Qwen#package main import ( &#34;context&#34; &#34;database/sql&#34; &#34;fmt&#34; _ &#34;github.com/go-sql-driver/mysql&#34; tgbotapi &#34;github.com/go-telegram-bot-api/telegram-bot-api/v5&#34; &#34;github.com/openai/openai-go/v3&#34; &#34;github.com/openai/openai-go/v3/option&#34; &#34;net/http&#34; &#34;net/url&#34; &#34;strconv&#34; &#34;strings&#34; ) var proxyURL = &#34;http://yun.mm:20172&#34; var botToken = &#34;8480580315:AAHYaX5eKimC0jq_a7vKdVL59qTdz33cpZs&#34; var apiEndpoint = &#34;https://api.telegram.org/bot%s/%s&#34; var format = &#34;2006-01-02 15:04:05&#34; var aiUrl = &#34;https://platform.aitools.cfd/api/v1/&#34; var aiKey = &#34;sk-1d00617bd03e4886bbfcdd164bd90d28&#34; func main() { proxyURL, _ := url.Parse(proxyURL) transport := &amp;http.Transport{Proxy: http.ProxyURL(proxyURL)} httpclient := &amp;http.Client{Transport: transport} bot, _ := tgbotapi.NewBotAPIWithClient(botToken, apiEndpoint, httpclient) fmt.Printf(&#34;机器人ID:%s\n&#34;, bot." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:80/posts/study/telegramtot/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://example.org/posts/study/telegramtot/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2025-09-09T00:00:00+00:00" />
 <meta property="article:modified_time" content="2025-09-09T00:00:00+00:00" />
 <title>Telegram &#43; Qwen
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="http://localhost:80/posts/study/telegramtot/">
+<link rel="canonical" href="https://example.org/posts/study/telegramtot/">
 <link rel="stylesheet" href="/book.min.4964903a822a7acb10dac6d1ab524833c97fb5f99b141976bcb8a47d539be9c0.css" integrity="sha256-SWSQOoIqessQ2sbRq1JIM8l/tfmbFBl2vLikfVOb6cA=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.45618edfcab15a6ad7c031d3f596e8aaa1476149d62957b693e3777faf906763.js" integrity="sha256-RWGO38qxWmrXwDHT9ZboqqFHYUnWKVe2k&#43;N3f6&#43;QZ2M=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.cc4eb32cf4f6273c9c5b7cab1363568ff2f7c541aebfe65fc4ea9773ba4acca5.js" integrity="sha256-zE6zLPT2JzycW3yrE2NWj/L3xUGuv&#43;ZfxOqXc7pKzKU=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -861,26 +861,26 @@ import (
 	&#34;fmt&#34;
 	_ &#34;github.com/go-sql-driver/mysql&#34;
 	tgbotapi &#34;github.com/go-telegram-bot-api/telegram-bot-api/v5&#34;
-	&#34;github.com/openai/openai-go/v2&#34;
-	&#34;github.com/openai/openai-go/v2/option&#34;
+	&#34;github.com/openai/openai-go/v3&#34;
+	&#34;github.com/openai/openai-go/v3/option&#34;
 	&#34;net/http&#34;
 	&#34;net/url&#34;
 	&#34;strconv&#34;
 	&#34;strings&#34;
 )
 
-var proxyURL = &#34;http://14.103.224.46:20172&#34;
+var proxyURL = &#34;http://yun.mm:20172&#34;
 var botToken = &#34;8480580315:AAHYaX5eKimC0jq_a7vKdVL59qTdz33cpZs&#34;
 var apiEndpoint = &#34;https://api.telegram.org/bot%s/%s&#34;
 var format = &#34;2006-01-02 15:04:05&#34;
-var aiUrl = &#34;https://dashscope.aliyuncs.com/compatible-mode/v1/&#34;
-var aiKey = &#34;sk-e411a55af9684520a4316999d80d8135&#34;
+var aiUrl = &#34;https://platform.aitools.cfd/api/v1/&#34;
+var aiKey = &#34;sk-1d00617bd03e4886bbfcdd164bd90d28&#34;
 
 func main() {
 	proxyURL, _ := url.Parse(proxyURL)
 	transport := &amp;http.Transport{Proxy: http.ProxyURL(proxyURL)}
-	client := &amp;http.Client{Transport: transport}
-	bot, _ := tgbotapi.NewBotAPIWithClient(botToken, apiEndpoint, client)
+	httpclient := &amp;http.Client{Transport: transport}
+	bot, _ := tgbotapi.NewBotAPIWithClient(botToken, apiEndpoint, httpclient)
 	fmt.Printf(&#34;机器人ID:%s\n&#34;, bot.Self.UserName)
 	u := tgbotapi.NewUpdate(0)
 	u.Timeout = 60
@@ -916,15 +916,16 @@ func qwen(text string) string {
 	chatCompletion, _ := client.Chat.Completions.New(context.TODO(), openai.ChatCompletionNewParams{
 		Messages: []openai.ChatCompletionMessageParamUnion{
 			openai.UserMessage(text),
-			openai.SystemMessage(&#34;简短回答&#34;),
+			openai.SystemMessage(&#34;话痨/no_think&#34;),
 		},
-		Model: &#34;qwen2.5-coder-3b-instruct&#34;,
+		Model:       &#34;qwen/qwen3-30b-a3b&#34;,
+		Temperature: openai.Float(0.1),
 	})
 	return chatCompletion.Choices[0].Message.Content
 }
 
 func insertIntoMariadb(username, text string) {
-	dsn := &#34;zian:zian@tcp(14.103.224.46:3306)/zian?parseTime=true&#34;
+	dsn := &#34;zian:zian@tcp(yun.mm:3306)/zian?parseTime=true&#34;
 	mariadb, _ := sql.Open(&#34;mysql&#34;, dsn)
 	_, _ = mariadb.Exec(&#34;insert into telegrambot (username,text) values (?,?)&#34;, username, text)
 	_ = mariadb.Close()
