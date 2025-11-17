@@ -1,13 +1,17 @@
 ## 免费的api
 
-https://platform.aitools.cfd/docs
-https://platform.aitools.cfd/api/v1/
-sk-86e778d9a30a4a51892c3db8256b1ca4
-sk-278d4e92cb8442b98701d316672f8a28
-sk-1d00617bd03e4886bbfcdd164bd90d28 (测试号)
+- https://platform.aitools.cfd/docs
+- https://platform.aitools.cfd/api/v1/
+- sk-86e778d9a30a4a51892c3db8256b1ca4
+- sk-278d4e92cb8442b98701d316672f8a28
+- sk-1d00617bd03e4886bbfcdd164bd90d28 (测试号)
+- zhipu/glm-4-flash (推荐)
+- openai/gpt-oss-20b
 
-https://api.suanli.cn/v1/
-sk-W0rpStc95T7JVYVwDYc29IyirjtpPPby6SozFMQr17m8KWeo
+
+- https://api.suanli.cn/v1/
+- free:Qwen3-30B-A3B
+- sk-W0rpStc95T7JVYVwDYc29IyirjtpPPby6SozFMQr17m8KWeo
 
 
 # 阿里百炼大模型
