@@ -1,13 +1,74 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <title>江油纪录片</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>江油记录片</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    video {
+      width: 100%;
+      object-fit: cover;
+      background-color: #000;
+    }
+  </style>
 </head>
 <body>
-    <video  controls>
-        <source src="https://fan2.875085.xyz/wp-content/uploads/video/jiangyou.mp4" type="video/mp4">
-    </video>
+
+  <video id="video" controls></video>
+
+  <script src="https://cdn.bootcdn.net/ajax/libs/hls.js/1.6.13/hls.js"></script>
+  <script>
+    const video = document.getElementById('video');
+    const m3u8Url = './m3u8/jiangyou.m3u8'; // 替换为你的 M3U8 地址
+
+    // 判断是否为桌面端
+    const isDesktop = () => {
+      return !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    };
+
+    // 自动播放并请求全屏
+    function autoFullscreen() {
+      if (isDesktop()) {
+        video.play().then(() => {
+          if (video.requestFullscreen) {
+            video.requestFullscreen();
+          } else if (video.webkitRequestFullscreen) {
+            video.webkitRequestFullscreen();
+          } else if (video.msRequestFullscreen) {
+            video.msRequestFullscreen();
+          }
+        }).catch(err => {
+          console.log("自动播放失败：", err);
+        });
+      }
+    }
+
+    // 初始化 hls.js 播放器
+    if (Hls.isSupported()) {
+      const hls = new Hls();
+      hls.loadSource(m3u8Url);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        autoFullscreen();
+      });
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      // Safari 原生支持
+      video.src = m3u8Url;
+      video.addEventListener('loadedmetadata', () => {
+        autoFullscreen();
+      });
+    } else {
+      alert("您的浏览器不支持播放 M3U8 视频");
+    }
+  </script>
+
 </body>
 </html>
