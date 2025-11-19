@@ -17,4 +17,6 @@ https://zian.netlify.app/js/offkab.js
 ```
 */upload/assets/*
 */upload/images/*
+sukebei.moonchan.xyz###ec01fd54-016b-41b4-bec9-b9b93f9b3b77
+sukebei.moonchan.xyz###e71bf691-4eb4-453f-8f11-6f40280c18f6
 ```

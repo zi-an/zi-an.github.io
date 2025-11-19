@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>桌面自动全屏视频</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <video id="myVideo" autoplay muted playsinline controls>
+    <source src="http://fan2.875085.xyz/wp-content/uploads/video/jiangyou.mp4" type="video/mp4">
+    您的浏览器不支持 HTML5 视频播放。
+  </video>
+
+  <script>
+    const video = document.getElementById('myVideo');
+
+    // 判断是否为桌面端
+    const isDesktop = () => {
+      return !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    };
+
+    // 桌面端自动全屏
+    document.addEventListener('DOMContentLoaded', () => {
+      if (isDesktop()) {
+        video.play().then(() => {
+          if (video.requestFullscreen) {
+            video.requestFullscreen();
+          } else if (video.webkitRequestFullscreen) {
+            video.webkitRequestFullscreen();
+          } else if (video.msRequestFullscreen) {
+            video.msRequestFullscreen();
+          }
+        }).catch(err => {
+          console.log("自动播放失败：", err);
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

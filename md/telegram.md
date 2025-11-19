@@ -29,8 +29,8 @@
 
 ```
 default: block
-domain(domain: update.miui.com) -> block
-domain(dashscope.aliyuncs.com) -> direct
+domain(domain:update.miui.com) -> block
+domain(domain:dashscope.aliyuncs.com) -> direct
 domain(geosite:category-ads) -> block
 domain(geosite:cn) -> direct
 source(223.0.0.0/8) -> proxy
@@ -46,4 +46,5 @@ source(14.103.224.46) -> proxy
 
 
 
-https://t.me/proxy?server=14.103.224.46&port=81&secret=7ofzw4QmeI9sK9A2cT5LWd5henVyZS5taWNyb3NvZnQuY29t
+- https://t.me/socks?server=14.103.224.46&port=20170
+- https://t.me/proxy?server=14.103.224.46&port=81&secret=7ofzw4QmeI9sK9A2cT5LWd5henVyZS5taWNyb3NvZnQuY29t
