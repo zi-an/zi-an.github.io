@@ -19,8 +19,8 @@ import (
 var format = "2006-01-02 15:04:05"
 var aiUrl = "https://platform.aitools.cfd/api/v1/"
 var aiKey = "sk-1d00617bd03e4886bbfcdd164bd90d28"
+var models = []string{"qwen/qwen3-coder", "qwen/qwen3-30b-a3b", "meituan/longcat-flash-chat"}
 var model = models[0]
-var models = []string{"qwen/qwen3-30b-a3b", "meituan/longcat-flash-chat"}
 var trytimes = 0
 
 func main() {
@@ -101,10 +101,12 @@ func splitMessage(text string, limit int) []string {
 		temp = strings.ReplaceAll(temp, "####", "🟡")
 		temp = strings.ReplaceAll(temp, "###", "🟠")
 		temp = strings.ReplaceAll(temp, "##", "🔴")
+		temp = strings.ReplaceAll(temp, "\n#", "\n⚫️")
 		temp = strings.ReplaceAll(temp, "---\n", "")
 		//以下为防止*号不成对导致的解析错误
 		temp = strings.ReplaceAll(temp, "\n* ", "\n- ")
 		temp = strings.ReplaceAll(temp, " * ", " - ")
+		temp = strings.ReplaceAll(temp, "**", "*")
 		messages = append(messages, temp)
 	}
 	return messages
@@ -117,7 +119,7 @@ func ai(text string) string {
 	)
 	chatCompletion, err := client.Chat.Completions.New(context.TODO(), openai.ChatCompletionNewParams{
 		Model:       model,
-		Temperature: openai.Float(0.7),
+		Temperature: openai.Float(0.0),
 		Messages: []openai.ChatCompletionMessageParamUnion{
 			openai.UserMessage(text),
 			openai.SystemMessage("详细解答/no_think"),

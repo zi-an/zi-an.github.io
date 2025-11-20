@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="服务器常用脚本#参考资料 https://github.com/fengyuhetao/shell
-常用定时器#自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * /bin/powersave.sh*/10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches0 */2 * * * docker exec zian updategit powersave.sh#让系统休眠 debian13需安装apt install wtmpdb #!/bin/bashlogintime=$(last docker --time-format iso | head -n1 | awk &#39;{print $6}&#39;)if [ ${#logintime} -eq 5 ]; thenecho &#34;$(date) : no reboot&#34;elselogintime=$(expr $(date -d $logintime &#43;%s))now=$(expr $(expr $(date &#43;%s)) - $logintime)if [ $now -gt 7200 ]; thensystemctl powerofffifi updategit##!">
+常用定时器#自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches0 */2 * * * docker exec zian updategit powersave.sh#两小时自动关机 debian13需安装apt install wtmpdb &#43; sudo su root cat &gt; /bin/powersave.sh &lt;&lt; EOF#!/bin/bashsince_time=\$(date -d &#39;120 minutes ago&#39; &#39;&#43;%Y-%m-%d %H:%M:%S&#39;)recent_ssh_login=\$(last -s &#34;\$since_time&#34; | grep &#34;pts&#34;)if [ -z &#34;\$recent_ssh_login&#34; ]; thenecho &#34;shutdown time:&#34;\$(date &#34;&#43;%Y-%m-%d %H:%M:%S&#34;)shutdown -h nowfiEOFchmod &#43;x /bin/powersave.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
 <meta property="og:description" content="服务器常用脚本#参考资料 https://github.com/fengyuhetao/shell
-常用定时器#自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * /bin/powersave.sh*/10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches0 */2 * * * docker exec zian updategit powersave.sh#让系统休眠 debian13需安装apt install wtmpdb #!/bin/bashlogintime=$(last docker --time-format iso | head -n1 | awk &#39;{print $6}&#39;)if [ ${#logintime} -eq 5 ]; thenecho &#34;$(date) : no reboot&#34;elselogintime=$(expr $(date -d $logintime &#43;%s))now=$(expr $(expr $(date &#43;%s)) - $logintime)if [ $now -gt 7200 ]; thensystemctl powerofffifi updategit##!" />
+常用定时器#自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches0 */2 * * * docker exec zian updategit powersave.sh#两小时自动关机 debian13需安装apt install wtmpdb &#43; sudo su root cat &gt; /bin/powersave.sh &lt;&lt; EOF#!/bin/bashsince_time=\$(date -d &#39;120 minutes ago&#39; &#39;&#43;%Y-%m-%d %H:%M:%S&#39;)recent_ssh_login=\$(last -s &#34;\$since_time&#34; | grep &#34;pts&#34;)if [ -z &#34;\$recent_ssh_login&#34; ]; thenecho &#34;shutdown time:&#34;\$(date &#34;&#43;%Y-%m-%d %H:%M:%S&#34;)shutdown -h nowfiEOFchmod &#43;x /bin/powersave." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/" /><meta property="article:section" content="docs" />
 
@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/">
 <link rel="stylesheet" href="/book.min.c0de645cb4cb75e493aef507ff38ba72ba0f974534b528b15573c8cda4febc46.css" integrity="sha256-wN5kXLTLdeSTrvUH/zi6croPl0U0tSixVXPIzaT&#43;vEY=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.e7b9787598ff2d61327021a31b87ecbc930ab3c67e1553f77c8c0261c8c52688.js" integrity="sha256-57l4dZj/LWEycCGjG4fsvJMKs8Z&#43;FVP3fIwCYcjFJog=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.fe38e2d53786d9020d2ce2e3b9be5b0ca6578ebc44cd1f859eabdee60be1d871.js" integrity="sha256-/jji1TeG2QINLOLjub5bDKZXjrxEzR&#43;Fnqve5gvh2HE=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -852,29 +852,28 @@ https://github.com/alex-shpak/hugo-book
 <li>更新容器内的git项目</li>
 <li>定时器日志需要安装邮箱 <em>apt install postfix -y</em> (选择5. Local only)日志在/var/mail/用户下</li>
 </ul>
-<pre tabindex="0"><code>*/10 * * * * /bin/powersave.sh
-*/10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches
+<pre tabindex="0"><code>*/10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches
 0 */2 * * * docker exec zian updategit
 </code></pre><h3 id="powersavesh">
   powersave.sh
   <a class="anchor" href="#powersavesh">#</a>
 </h3>
 <ul>
-<li>让系统休眠</li>
-<li>debian13需安装<code>apt install wtmpdb</code></li>
+<li>两小时自动关机</li>
+<li>debian13需安装<code>apt install wtmpdb</code> + <code>sudo su root</code></li>
 </ul>
-<pre tabindex="0"><code>#!/bin/bash
+<pre tabindex="0"><code>cat &gt; /bin/powersave.sh &lt;&lt; EOF
+#!/bin/bash
 
-logintime=$(last docker --time-format iso | head -n1 | awk &#39;{print $6}&#39;)
-if [ ${#logintime} -eq 5 ]; then
-	echo &#34;$(date) : no reboot&#34;
-else
-	logintime=$(expr $(date -d $logintime +%s))
-	now=$(expr $(expr $(date +%s)) - $logintime)
-	if [ $now -gt 7200 ]; then
-		systemctl poweroff
-	fi
+since_time=\$(date -d &#39;120 minutes ago&#39; &#39;+%Y-%m-%d %H:%M:%S&#39;)
+recent_ssh_login=\$(last -s &#34;\$since_time&#34; | grep &#34;pts&#34;)
+if [ -z &#34;\$recent_ssh_login&#34; ]; then
+    echo &#34;shutdown time:&#34;\$(date &#34;+%Y-%m-%d %H:%M:%S&#34;)
+    shutdown -h now
 fi
+EOF
+chmod +x /bin/powersave.sh
+(crontab -l 2&gt;/dev/null; echo &#34;*/10 * * * * /bin/powersave.sh&#34;) | crontab -
 </code></pre><h3 id="updategit">
   updategit
   <a class="anchor" href="#updategit">#</a>
@@ -882,10 +881,10 @@ fi
 <pre tabindex="0"><code>#!/bin/bash
 
 cd /var/www/
+rm master*
 command -v unzip &gt;/dev/null 2&gt;&amp;1 || apt install -y unzip
 wget github.com/zi-an/zi-an.github.io/archive/refs/heads/master.zip
 unzip -o master.zip
-rm master.zip
 </code></pre><h3 id="kaibosh">
   kaibo.sh
   <a class="anchor" href="#kaibosh">#</a>
