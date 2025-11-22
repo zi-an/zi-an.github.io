@@ -1,8 +1,8 @@
 # v2ray
 |版本|地址||
 |-|-|-|
-|手机|https://github.com/2dust/v2rayNG/releases||
-|电脑|https://github.com/2dust/v2rayn/releases||
+|手机|[github](https://github.com/2dust/v2rayNG/releases)||
+|电脑|[github](https://github.com/2dust/v2rayn/releases)||
 
 ---
 
@@ -19,9 +19,9 @@
 ## 订阅
 |名称|地址|功能|
 |-|-|-|
-|设置中文|https://t.me/setlanguage/zhcncc||
-|极搜|https://t.me/jisou|资源搜索|
-|TG代理频道|https://t.me/proxy_pub|免费的MTProto|
+|设置中文|t.me/setlanguage/zhcncc||
+|极搜|t.me/jisou|资源搜索|
+|TG代理频道|t.me/proxy_pub|免费的MTProto|
 |Microsoft Copilot|@CopilotOfficialBot|免费的AI|
 |Gmail Bot|@GmailBot|谷歌邮箱接收|
 |koukekele|@KouKeKeLeBot|----|
@@ -29,8 +29,6 @@
 
 ## 代理
 - [免费](https://t.me/proxy?server=14.103.224.46&port=81&secret=ee87f3c38426788f6c2bd036713e4b59de617a7572652e6d6963726f736f66742e636f6d)
-- 14.103.224.46 81
-- ee87f3c38426788f6c2bd036713e4b59de617a7572652e6d6963726f736f66742e636f6d
 - [火山](https://t.me/socks?server=14.103.224.46&port=20170)
 - 14.103.224.46 20170
 
@@ -38,7 +36,7 @@
 ```
 default: block
 domain(domain:update.miui.com) -> block
-domain(domain:dashscope.aliyuncs.com) -> direct
+domain(domain:aliyuncs.com) -> direct
 domain(geosite:category-ads) -> block
 domain(geosite:cn) -> direct
 source(223.0.0.0/8) -> proxy
@@ -54,5 +52,5 @@ source(14.103.224.46) -> proxy
 
 
 
-- https://t.me/socks?server=14.103.224.46&port=20170
-- https://t.me/proxy?server=14.103.224.46&port=81&secret=7ofzw4QmeI9sK9A2cT5LWd5henVyZS5taWNyb3NvZnQuY29t
+- [我的socks](https://t.me/socks?server=14.103.224.46&port=20170)
+- [我的MTProto](https://t.me/proxy?server=14.103.224.46&port=81&secret=7ofzw4QmeI9sK9A2cT5LWd5henVyZS5taWNyb3NvZnQuY29t)

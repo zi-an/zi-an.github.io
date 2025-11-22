@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         offkab
-// @version      2025-11-09
+// @version      2025-11-22
 // @include      */upload/*
 // @exclude      */upload/Application/*
 // @run-at       document-end

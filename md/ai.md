@@ -22,6 +22,7 @@
 # 阿里百炼大模型
 - max>plus>turbo
 - [API](https://dashscope.aliyuncs.com/compatible-mode/v1)
+- sk-5cd393b0433e4eacbaef58f41047144b
 
 
 - 价格搜*限时免费* https://help.aliyun.com/zh/model-studio/models
