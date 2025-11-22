@@ -107,7 +107,7 @@ func splitMessage(text string, limit int) []string {
 		temp = strings.ReplaceAll(temp, "\n* ", "\n- ")
 		temp = strings.ReplaceAll(temp, " * ", " - ")
 		temp = strings.ReplaceAll(temp, "**", "*")
-		temp = strings.ReplaceAll(temp, "\n   - ", "\n   ")
+		temp = strings.ReplaceAll(temp, "   -", "  ")
 		temp = strings.ReplaceAll(temp, "\n- ", "\n  ")
 		messages = append(messages, temp)
 	}

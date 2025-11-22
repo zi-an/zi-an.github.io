@@ -1,4 +1,4 @@
-## 免费的api
+# 免费的api
 
 - https://platform.aitools.cfd/docs
 - https://platform.aitools.cfd/api/v1/
@@ -14,7 +14,11 @@
 - free:Qwen3-30B-A3B
 - sk-W0rpStc95T7JVYVwDYc29IyirjtpPPby6SozFMQr17m8KWeo
 
-
+---
+# ai比赛
+- AI炒币比赛 https://nof1.ai/
+- AI炒股比赛 https://rockalpha.rockflow.ai/
+---
 # 阿里百炼大模型
 - max>plus>turbo
 - [API](https://dashscope.aliyuncs.com/compatible-mode/v1)
