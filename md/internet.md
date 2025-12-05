@@ -48,7 +48,7 @@ source(14.103.224.46) -> proxy
 
 ## 代理订阅
 - [github](https://raw.githubusercontent.com/WLget/V2Ray_configs_64/refs/heads/master/ConfigSub_list.txt)
-- [dongtaiwang.com](https://dgithub.xyz/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
+- [dongtaiwang.com](https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
 
 
 

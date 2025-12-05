@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/">
 <link rel="stylesheet" href="/book.min.c0de645cb4cb75e493aef507ff38ba72ba0f974534b528b15573c8cda4febc46.css" integrity="sha256-wN5kXLTLdeSTrvUH/zi6croPl0U0tSixVXPIzaT&#43;vEY=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.78c02ee42ddff01cde86074033ef13269b9028639b769d26fa0030a33035d6a1.js" integrity="sha256-eMAu5C3f8BzehgdAM&#43;8TJpuQKGObdp0m&#43;gAwozA11qE=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.f95feff1c20ae54818f12e33ea2cae64e80abc16783535b6ab4515a7d8ed72ae.js" integrity="sha256-&#43;V/v8cIK5UgY8S4z6iyuZOgKvBZ4NTW2q0UVp9jtcq4=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -903,10 +903,13 @@ alias mailroot=&#39;sudo tail -n100 /var/mail/root | nl -ba&#39;
 
 alias zian=&#34;docker exec -it zian bash&#34;
 alias xunlei=&#34;docker exec -it xunlei bash&#34;
-alias maomiav=&#34;docker exec -it maomiav bash&#34;
 alias transmission=&#34;docker exec -it transmission bash&#34;
-alias v2rayalog=&#34;docker logs -fn20 v2raya&#34;
+alias v2rayalog=&#34;docker logs -fn20 v2raya | awk &#39;{print substr(\$2,1,8), \$5, \$7, \$8}&#39;&#34;
 alias dockerps=&#34;docker ps -a --format &#39;table {{.Names}}\t{{.Status}}&#39;&#34;
+
+ff() {
+	find -iname *$1* ! -name .*
+}
 </code></pre><h3 id="更新mtproto">
   更新mtproto
   <a class="anchor" href="#%e6%9b%b4%e6%96%b0mtproto">#</a>

@@ -20,6 +20,7 @@
 - AI炒股比赛 https://rockalpha.rockflow.ai/
 ---
 # 阿里百炼大模型
+- https://www.qianwen.com/
 - max>plus>turbo
 - [API](https://dashscope.aliyuncs.com/compatible-mode/v1)
 - sk-5cd393b0433e4eacbaef58f41047144b
@@ -67,10 +68,16 @@
 - deepseek-r1
 - deepseek-v3
 
+# [openrouter](https://openrouter.ai/)
+- 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
 
 
 
 
 
 
+x-ai/grok-4.1-fast:free
 
+
+## 千王之王2000
+- 8536963899:AAHtRvhCjQWR1uYwSgp-YYiPMyuY1j1KtNQ
