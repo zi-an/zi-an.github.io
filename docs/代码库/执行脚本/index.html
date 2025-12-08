@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/">
 <link rel="stylesheet" href="/book.min.c0de645cb4cb75e493aef507ff38ba72ba0f974534b528b15573c8cda4febc46.css" integrity="sha256-wN5kXLTLdeSTrvUH/zi6croPl0U0tSixVXPIzaT&#43;vEY=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.f95feff1c20ae54818f12e33ea2cae64e80abc16783535b6ab4515a7d8ed72ae.js" integrity="sha256-&#43;V/v8cIK5UgY8S4z6iyuZOgKvBZ4NTW2q0UVp9jtcq4=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.27187815241ee1e3ef353832d6295b2077de75a210d53e41c1530f4c8c3b3264.js" integrity="sha256-Jxh4FSQe4ePvNTgy1ilbIHfedaIQ1T5BwVMPTIw7MmQ=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -897,7 +897,9 @@ nohup ffmpeg -re -stream_loop -1 -i bbb.mp4 -c: copy -f flv &#34;$1&#34; &amp;
   alias
   <a class="anchor" href="#alias">#</a>
 </h3>
-<pre tabindex="0"><code>alias httpproxy=&#39;export https_proxy=http://yun.mm:20172&#39;
+<pre tabindex="0"><code>cat &gt; /etc/profile.d/mybash.sh &lt;&lt; EOF
+
+alias httpproxy=&#39;export https_proxy=http://yun.mm:20172&#39;
 alias maildocker=&#39;tail -n100 /var/mail/docker | nl -ba&#39;
 alias mailroot=&#39;sudo tail -n100 /var/mail/root | nl -ba&#39;
 
@@ -908,8 +910,9 @@ alias v2rayalog=&#34;docker logs -fn20 v2raya | awk &#39;{print substr(\$2,1,8),
 alias dockerps=&#34;docker ps -a --format &#39;table {{.Names}}\t{{.Status}}&#39;&#34;
 
 ff() {
-	find -iname *$1* ! -name .*
+	find -iname &#34;*$1*&#34; ! -name &#34;.*&#34;
 }
+EOF
 </code></pre><h3 id="更新mtproto">
   更新mtproto
   <a class="anchor" href="#%e6%9b%b4%e6%96%b0mtproto">#</a>
@@ -936,11 +939,19 @@ EOF
 cat &gt; /bin/mtproto.sh &lt;&lt; EOF
 #!/bin/bash
 
-curl --retry 9 -s https://t.me/s/ProxyMTProting --proxy socks5h://yun.mm:20170 &gt; /mtproto.html
-cat /mtproto.html | grep -oP &#39;server=\K[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+&#39; | tail -n20 | uniq | sort | sed &#39;s/^/server /;s/$/:12121;/&#39; &gt; /mtproto.txt
-sed &#39;2r /mtproto.txt&#39; /etc/nginx/modules-enabled/.conf &gt; /etc/nginx/modules-enabled/81.conf
-cat /etc/nginx/modules-enabled/81.conf
-nginx -s reload
+for count in {1..5}; do
+    echo \$count
+	ip=\$(curl --retry 9 -s https://t.me/s/ProxyMTProting --proxy socks5h://yun.mm:20170)
+	if [ \${#ip} -gt 100 ]; then
+		ip=\$(echo &#34;\$ip&#34; | grep -oP &#39;server=\K[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+&#39; | tail -n1)
+		ip=\$(nmap --open -p 12121 &#34;\${ip%.*}&#34;.1-255 | grep -oE &#39;[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}&#39;)
+		echo &#34;\$ip&#34; | uniq | sort | sed &#39;s/^/server /;s/\$/:12121;/&#39; &gt;/mtproto.txt
+		sed &#39;2r /mtproto.txt&#39; /etc/nginx/modules-enabled/.conf &gt;/etc/nginx/modules-enabled/81.conf
+		cat /etc/nginx/modules-enabled/81.conf
+		nginx -s reload
+		break
+	fi
+done
 EOF
 chmod +x /bin/mtproto.sh
 </code></pre></article>
