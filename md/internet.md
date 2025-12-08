@@ -35,22 +35,25 @@
 
 ```
 default: block
-domain(domain:update.miui.com) -> block
-domain(domain:aliyuncs.com) -> direct
-domain(geosite:category-ads) -> block
-domain(geosite:cn) -> direct
+domain(domain: update.miui.com) -> block
+domain(domain: aitools.cfdd) -> direct
+domain(domain: api.suanli.cn) -> direct
+domain(ext.quark.cn) -> proxy
+domain(api.qianwen.com) -> direct
+domain(dashscope.aliyuncs.com) -> direct
+
 source(223.0.0.0/8) -> proxy
 source(112.0.0.0/8) -> proxy
 source(120.0.0.0/8) -> proxy
 source(172.0.0.0/8) -> proxy
 source(14.103.224.46) -> proxy
+source(128.0.0.0/8) -> block
 ```
 
 ## 代理订阅
+- [yun.pac](/config/yun.pac)  [5.pac](/config/5.pac)
 - [github](https://raw.githubusercontent.com/WLget/V2Ray_configs_64/refs/heads/master/ConfigSub_list.txt)
 - [dongtaiwang.com](https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
-
-
 
 - [我的socks](https://t.me/socks?server=14.103.224.46&port=20170)
 - [我的MTProto](https://t.me/proxy?server=14.103.224.46&port=81&secret=7ofzw4QmeI9sK9A2cT5LWd5henVyZS5taWNyb3NvZnQuY29t)
