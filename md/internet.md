@@ -51,7 +51,7 @@ source(128.0.0.0/8) -> block
 ```
 
 ## 代理订阅
-- [yun.pac](/config/yun.pac)  [5.pac](/config/5.pac)
+- [yun.pac](/config/yun.mm.txt)  [5.pac](/config/5.mm.txt) [v2ray](/config/v2ray.txt)
 - [github](https://raw.githubusercontent.com/WLget/V2Ray_configs_64/refs/heads/master/ConfigSub_list.txt)
 - [dongtaiwang.com](https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7)
 

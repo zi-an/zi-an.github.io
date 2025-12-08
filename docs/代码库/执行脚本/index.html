@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/">
 <link rel="stylesheet" href="/book.min.c0de645cb4cb75e493aef507ff38ba72ba0f974534b528b15573c8cda4febc46.css" integrity="sha256-wN5kXLTLdeSTrvUH/zi6croPl0U0tSixVXPIzaT&#43;vEY=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.27187815241ee1e3ef353832d6295b2077de75a210d53e41c1530f4c8c3b3264.js" integrity="sha256-Jxh4FSQe4ePvNTgy1ilbIHfedaIQ1T5BwVMPTIw7MmQ=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.6b2432061e7cc79e75ea424d4619b3eba0c288ad38934959d427d907339c497b.js" integrity="sha256-ayQyBh58x5516kJNRhmz66DCiK04k0lZ1CfZBzOcSXs=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -883,7 +883,7 @@ chmod +x /bin/powersave.sh
 cd /var/www/
 rm master*
 command -v unzip &gt;/dev/null 2&gt;&amp;1 || apt install -y unzip
-wget github.com/zi-an/zi-an.github.io/archive/refs/heads/master.zip
+wget https://github.com/zi-an/zi-an.github.io/archive/refs/heads/master.zip
 unzip -o master.zip
 </code></pre><h3 id="kaibosh">
   kaibo.sh
@@ -897,20 +897,25 @@ nohup ffmpeg -re -stream_loop -1 -i bbb.mp4 -c: copy -f flv &#34;$1&#34; &amp;
   alias
   <a class="anchor" href="#alias">#</a>
 </h3>
+<ul>
+<li>awk可能需要mawk跟gawk一起安装</li>
+</ul>
 <pre tabindex="0"><code>cat &gt; /etc/profile.d/mybash.sh &lt;&lt; EOF
-
-alias httpproxy=&#39;export https_proxy=http://yun.mm:20172&#39;
-alias maildocker=&#39;tail -n100 /var/mail/docker | nl -ba&#39;
+#if [ -z \$SSH_TTY ];then LANG=;fi
 alias mailroot=&#39;sudo tail -n100 /var/mail/root | nl -ba&#39;
+alias maildocker=&#39;tail -n100 /var/mail/docker | nl -ba&#39;
+alias httpproxy=&#39;export https_proxy=http://yun.mm:20172&#39;
 
+alias xunlei=&#34;docker start xunlei&#34;
 alias zian=&#34;docker exec -it zian bash&#34;
-alias xunlei=&#34;docker exec -it xunlei bash&#34;
+alias test222=&#39;docker exec -it test222 bash&#39;
 alias transmission=&#34;docker exec -it transmission bash&#34;
-alias v2rayalog=&#34;docker logs -fn20 v2raya | awk &#39;{print substr(\$2,1,8), \$5, \$7, \$8}&#39;&#34;
-alias dockerps=&#34;docker ps -a --format &#39;table {{.Names}}\t{{.Status}}&#39;&#34;
+
+alias dps=&#34;docker ps -a --format &#39;table {{.Names}}\t{{.Image}}\t{{.Status}}&#39;&#34;
+alias v2rayalog=&#34;docker logs -fn20 v2raya | awk &#39;{print substr(\\\$2,1,8), \\\$5, \\\$7, \\\$8}&#39;&#34;
 
 ff() {
-	find -iname &#34;*$1*&#34; ! -name &#34;.*&#34;
+	find -iname &#34;*\$1*&#34; ! -name &#34;.*&#34;
 }
 EOF
 </code></pre><h3 id="更新mtproto">
@@ -922,6 +927,7 @@ EOF
 <li>编辑配置文件</li>
 <li>编写mtproto.sh,防止空返回加多一次curl</li>
 <li>定时器 */10 * * * * docker exec -i zian mtproto.sh</li>
+<li>apt install -y nmap</li>
 </ul>
 <pre tabindex="0"><code>apt update
 apt install libnginx-mod-stream -y
