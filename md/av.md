@@ -12,10 +12,10 @@
 |种子|[字幕](https://manko.fun)|[搜索](https://sukebei.nyaa.si)|[备份](https://sukebei.moonchan.xyz/user/offkab)||
 
 
-https://zian.netlify.app/js/offkab.js
-https://zian.netlify.app/js/imagetwist.js
+- https://zian.netlify.app/js/offkab.js
+- https://zian.netlify.app/js/imagetwist.js
 
-```c
+```
 ! hsck.cc
 ##.stui-pannel__head
 ##.gonggao
@@ -28,4 +28,6 @@ https://zian.netlify.app/js/imagetwist.js
 */upload/images/*
 sukebei.moonchan.xyz###ec01fd54-016b-41b4-bec9-b9b93f9b3b77
 sukebei.moonchan.xyz###e71bf691-4eb4-453f-8f11-6f40280c18f6
+||imagetwist.com^$script,stylesheet
+||imagetwist.com/imgs/$all
 ```
