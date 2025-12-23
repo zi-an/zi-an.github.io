@@ -5,8 +5,8 @@
 |配置|[默认](/web/?uri=/md/mi.md)|[语录](/web/?uri=/md/recorded.md)|[购物](/web/?uri=/md/buy.md)|[预设置](/web/?uri=/md/miui.md)|[因特网](/web/?uri=/md/internet.md)|
 |影音|[K70](https://xiaomirom.com/rom/redmi-k70e-poco-x6-pro-5g-duchamp-china-fastboot-recovery-rom/)|[追剧](https://m.zjuys.com/)|[短剧](https://www.duanjuwang.cc/)|[音乐源](/web/?uri=/md/music.md)|**[小电影](/web/?uri=/md/av.md)**|
 |应用|[虎牙](https://www.firepx.com/app/android-huaya-google-play/)|[哔哩](https://www.firepx.com/app/bilibili-google-play-and-other-version/)|[影音](https://www.firepx.com/app/qqplayer-last-version/)|[浏览器](https://www.firepx.com/app/android-via-google-play/)|[资源一](https://cn.uptodown.com/windows)|
-|联通|[推荐](https://onlinesim.io/zh)|[备用](https://www.yunjiema.top)|[客服](tel:10010)|[流量一](sms:10010?body=cxll)|[流量二](sms:10010?body=2082)|
-|资源|[秘塔](https://metaso.cn)|[千问](https://www.qianwen.com/)|[豆包](https://www.doubao.com)|[天地图](https://guangdong.tianditu.gov.cn/)|[大模型](/web/?uri=/md/ai.md)|
+|联通|[推荐](https://onlinesim.io/zh)|[备用](https://www.zusms.com)|[客服](tel:10010)|[流量一](sms:10010?body=cxll)|[流量二](sms:10010?body=2082)|
+|[智能](https://chat.qwen.ai/)|[秘塔](https://metaso.cn)|[千问](https://www.qianwen.com/)|[豆包](https://www.doubao.com)|[天地图](https://guangdong.tianditu.gov.cn/)|[大模型](/web/?uri=/md/ai.md)|
 |股价|[阳光](https://www.msn.cn/zh-cn/money/stockdetails/fi-adei2w)|[小米](https://www.msn.cn/zh-cn/money/stockdetails/fi-bgnyp2)|[苹果](https://www.msn.cn/zh-cn/money/stockdetails/fi-a1mou2)|[英伟达](https://www.msn.cn/zh-cn/money/stockdetails/fi-a1yv52)|[道琼斯](https://www.msn.cn/zh-cn/money/watchlist?id=a6qja2)|
 ||[上证](https://www.msn.cn/zh-cn/money/indexdetails/000001-cn-index/fi-adfh77)|[深证](https://www.msn.cn/zh-cn/money/watchlist?id=adg1m7)|[恒生](https://www.msn.cn/zh-cn/money/watchlist?id=ah7etc)|[纳斯达](https://www.msn.cn/zh-cn/money/watchlist?id=a3oxnm)|
 ||[黄金](http://www.huangjinjiage.cn/guoneijinjia.html)|[美油](https://www.msn.cn/zh-cn/money/watchlist?id=auvwzr)|[标普](https://www.msn.cn/zh-cn/money/watchlist?id=a33k6h)|

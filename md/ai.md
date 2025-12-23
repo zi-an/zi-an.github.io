@@ -80,4 +80,6 @@ x-ai/grok-4.1-fast:free
 
 
 ## 千王之王2000
-- 8536963899:AAHtRvhCjQWR1uYwSgp-YYiPMyuY1j1KtNQ
+
+## 火山云
+- 可用镜像 https://www.volcengine.com/docs/6396/68806

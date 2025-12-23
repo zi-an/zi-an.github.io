@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="服务器常用脚本#参考资料 https://github.com/fengyuhetao/shell
-常用定时器#自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches0 */2 * * * docker exec zian updategit powersave.sh#两小时自动关机 debian13需安装sudo su root &#43; apt install -y wtmpdb cat &gt; /bin/powersave.sh &lt;&lt; EOF#!/bin/bashsince_time=\$(date -d &#39;120 minutes ago&#39; &#39;&#43;%Y-%m-%d %H:%M:%S&#39;)recent_ssh_login=\$(last -s &#34;\$since_time&#34; | grep &#34;pts&#34;)if [ -z &#34;\$recent_ssh_login&#34; ]; thenecho &#34;shutdown time:&#34;\$(date &#34;&#43;%Y-%m-%d %H:%M:%S&#34;)/sbin/powerofffiEOFchmod &#43;x /bin/powersave.">
+常用定时器#自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches0 */2 * * * docker exec zian updategit powersave.sh#两小时自动关机 debian13需安装sudo su root &#43; apt install -y wtmpdb cat &gt; /bin/powersave.sh &lt;&lt; &#39;EOF&#39;#!/bin/bashseconds=7200uptime=$(($(date &#43;%s) - $(stat -c %Y /proc/1)))if [ $uptime -lt $seconds ]; thenecho &#34;less than 2 hours ago&#34;exit 0fisince_time=$(date -d &#34;$seconds seconds ago&#34; &#39;&#43;%Y-%m-%d %H:%M:%S&#39;)recent_ssh_login=$(last -s &#34;$since_time&#34; | grep &#34;pts&#34;)if [ -z &#34;$recent_ssh_login&#34; ]; thenecho &#34;shutdown time:&#34;$(date &#34;&#43;%Y-%m-%d %H:%M:%S&#34;)/sbin/powerofffiEOFchmod &#43;x /bin/powersave.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
 <meta property="og:description" content="服务器常用脚本#参考资料 https://github.com/fengyuhetao/shell
-常用定时器#自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches0 */2 * * * docker exec zian updategit powersave.sh#两小时自动关机 debian13需安装sudo su root &#43; apt install -y wtmpdb cat &gt; /bin/powersave.sh &lt;&lt; EOF#!/bin/bashsince_time=\$(date -d &#39;120 minutes ago&#39; &#39;&#43;%Y-%m-%d %H:%M:%S&#39;)recent_ssh_login=\$(last -s &#34;\$since_time&#34; | grep &#34;pts&#34;)if [ -z &#34;\$recent_ssh_login&#34; ]; thenecho &#34;shutdown time:&#34;\$(date &#34;&#43;%Y-%m-%d %H:%M:%S&#34;)/sbin/powerofffiEOFchmod &#43;x /bin/powersave." />
+常用定时器#自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches0 */2 * * * docker exec zian updategit powersave.sh#两小时自动关机 debian13需安装sudo su root &#43; apt install -y wtmpdb cat &gt; /bin/powersave.sh &lt;&lt; &#39;EOF&#39;#!/bin/bashseconds=7200uptime=$(($(date &#43;%s) - $(stat -c %Y /proc/1)))if [ $uptime -lt $seconds ]; thenecho &#34;less than 2 hours ago&#34;exit 0fisince_time=$(date -d &#34;$seconds seconds ago&#34; &#39;&#43;%Y-%m-%d %H:%M:%S&#39;)recent_ssh_login=$(last -s &#34;$since_time&#34; | grep &#34;pts&#34;)if [ -z &#34;$recent_ssh_login&#34; ]; thenecho &#34;shutdown time:&#34;$(date &#34;&#43;%Y-%m-%d %H:%M:%S&#34;)/sbin/powerofffiEOFchmod &#43;x /bin/powersave." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/" /><meta property="article:section" content="docs" />
 
@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/">
 <link rel="stylesheet" href="/book.min.c0de645cb4cb75e493aef507ff38ba72ba0f974534b528b15573c8cda4febc46.css" integrity="sha256-wN5kXLTLdeSTrvUH/zi6croPl0U0tSixVXPIzaT&#43;vEY=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.6b2432061e7cc79e75ea424d4619b3eba0c288ad38934959d427d907339c497b.js" integrity="sha256-ayQyBh58x5516kJNRhmz66DCiK04k0lZ1CfZBzOcSXs=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.e087f6384972cc72d16e62a5e11f599f70209d753fdda892d4abdd754ced8243.js" integrity="sha256-4If2OElyzHLRbmKl4R9Zn3AgnXU/3aiS1KvddUztgkM=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -862,13 +862,18 @@ https://github.com/alex-shpak/hugo-book
 <li>两小时自动关机</li>
 <li>debian13需安装<code>sudo su root</code> + <code>apt install -y wtmpdb</code></li>
 </ul>
-<pre tabindex="0"><code>cat &gt; /bin/powersave.sh &lt;&lt; EOF
+<pre tabindex="0"><code>cat &gt; /bin/powersave.sh &lt;&lt; &#39;EOF&#39;
 #!/bin/bash
-
-since_time=\$(date -d &#39;120 minutes ago&#39; &#39;+%Y-%m-%d %H:%M:%S&#39;)
-recent_ssh_login=\$(last -s &#34;\$since_time&#34; | grep &#34;pts&#34;)
-if [ -z &#34;\$recent_ssh_login&#34; ]; then
-    echo &#34;shutdown time:&#34;\$(date &#34;+%Y-%m-%d %H:%M:%S&#34;)
+seconds=7200
+uptime=$(($(date +%s) - $(stat -c %Y /proc/1)))
+if [ $uptime -lt $seconds ]; then
+    echo &#34;less than 2 hours ago&#34;
+    exit 0
+fi
+since_time=$(date -d &#34;$seconds seconds ago&#34; &#39;+%Y-%m-%d %H:%M:%S&#39;)
+recent_ssh_login=$(last -s &#34;$since_time&#34; | grep &#34;pts&#34;)
+if [ -z &#34;$recent_ssh_login&#34; ]; then
+    echo &#34;shutdown time:&#34;$(date &#34;+%Y-%m-%d %H:%M:%S&#34;)
     /sbin/poweroff
 fi
 EOF
@@ -878,21 +883,25 @@ chmod +x /bin/powersave.sh
   updategit
   <a class="anchor" href="#updategit">#</a>
 </h3>
-<pre tabindex="0"><code>#!/bin/bash
+<pre tabindex="0"><code>cat &gt; /bin/updategit &lt;&lt; &#39;EOF&#39;
+#!/bin/bash
 
 cd /var/www/
 rm master*
 command -v unzip &gt;/dev/null 2&gt;&amp;1 || apt install -y unzip
 wget https://github.com/zi-an/zi-an.github.io/archive/refs/heads/master.zip
 unzip -o master.zip
+EOF
 </code></pre><h3 id="kaibosh">
   kaibo.sh
   <a class="anchor" href="#kaibosh">#</a>
 </h3>
-<pre tabindex="0"><code>#!/bin/bash
+<pre tabindex="0"><code>cat &gt; /bin/kaibo.sh &lt;&lt; &#39;EOF&#39;
+#!/bin/bash
 
 command -v ffmpeg &gt;/dev/null 2&gt;&amp;1 || apt install -y ffmpeg
 nohup ffmpeg -re -stream_loop -1 -i bbb.mp4 -c: copy -f flv &#34;$1&#34; &amp;
+EOF
 </code></pre><h3 id="alias">
   alias
   <a class="anchor" href="#alias">#</a>
@@ -900,8 +909,8 @@ nohup ffmpeg -re -stream_loop -1 -i bbb.mp4 -c: copy -f flv &#34;$1&#34; &amp;
 <ul>
 <li>awk可能需要mawk跟gawk一起安装</li>
 </ul>
-<pre tabindex="0"><code>cat &gt; /etc/profile.d/mybash.sh &lt;&lt; EOF
-#if [ -z \$SSH_TTY ];then LANG=;fi
+<pre tabindex="0"><code>cat &gt; /etc/profile.d/mybash.sh &lt;&lt; &#39;EOF&#39;
+#if [ -z $SSH_TTY ];then LANG=;fi
 alias mailroot=&#39;sudo tail -n100 /var/mail/root | nl -ba&#39;
 alias maildocker=&#39;tail -n100 /var/mail/docker | nl -ba&#39;
 alias httpproxy=&#39;export https_proxy=http://yun.mm:20172&#39;
@@ -912,10 +921,10 @@ alias test222=&#39;docker exec -it test222 bash&#39;
 alias transmission=&#34;docker exec -it transmission bash&#34;
 
 alias dps=&#34;docker ps -a --format &#39;table {{.Names}}\t{{.Image}}\t{{.Status}}&#39;&#34;
-alias v2rayalog=&#34;docker logs -fn20 v2raya | awk &#39;{print substr(\\\$2,1,8), \\\$5, \\\$7, \\\$8}&#39;&#34;
+alias v2rayalog=&#34;docker logs -fn20 v2raya | awk &#39;{print substr(\$2,1,8), \$5, \$7, \$8}&#39;&#34;
 
 ff() {
-	find -iname &#34;*\$1*&#34; ! -name &#34;.*&#34;
+	find -iname &#34;*$1*&#34; ! -name &#34;.*&#34;
 }
 EOF
 </code></pre><h3 id="更新mtproto">
@@ -931,7 +940,7 @@ EOF
 </ul>
 <pre tabindex="0"><code>apt update
 apt install libnginx-mod-stream -y
-cat &gt; /etc/nginx/modules-enabled/.conf &lt;&lt; EOF
+cat &gt; /etc/nginx/modules-enabled/.conf &lt;&lt; &#39;EOF&#39;
 stream {
     upstream mtproto {
     }
@@ -942,21 +951,21 @@ stream {
     }
 }
 EOF
-cat &gt; /bin/mtproto.sh &lt;&lt; EOF
+cat &gt; /bin/mtproto.sh &lt;&lt; &#39;EOF&#39;
 #!/bin/bash
-
+port=47727
 for count in {1..5}; do
-    echo \$count
-	ip=\$(curl --retry 9 -s https://t.me/s/ProxyMTProting --proxy socks5h://yun.mm:20170)
-	if [ \${#ip} -gt 100 ]; then
-		ip=\$(echo &#34;\$ip&#34; | grep -oP &#39;server=\K[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+&#39; | tail -n1)
-		ip=\$(nmap --open -p 12121 &#34;\${ip%.*}&#34;.1-255 | grep -oE &#39;[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}&#39;)
-		echo &#34;\$ip&#34; | uniq | sort | sed &#39;s/^/server /;s/\$/:12121;/&#39; &gt;/mtproto.txt
-		sed &#39;2r /mtproto.txt&#39; /etc/nginx/modules-enabled/.conf &gt;/etc/nginx/modules-enabled/81.conf
-		cat /etc/nginx/modules-enabled/81.conf
-		nginx -s reload
-		break
-	fi
+    echo $count
+        ip=$(curl --retry 9 -s https://t.me/s/ProxyMTProting --proxy socks5h://yun.mm:20170)
+        if [ ${#ip} -gt 100 ]; then
+                ip=$(echo &#34;$ip&#34; | grep -oP &#39;server=\K[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+&#39; | tail -n1)
+                ip=$(nmap --open -p $port &#34;${ip%.*}&#34;.1-255 | grep -oE &#39;[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}&#39;)
+                echo &#34;$ip&#34; | uniq | sort | sed &#34;s/^/server /;s/\$/:$port;/&#34; &gt;/mtproto.txt
+                sed &#39;2r /mtproto.txt&#39; /etc/nginx/modules-enabled/.conf &gt;/etc/nginx/modules-enabled/81.conf
+                cat /etc/nginx/modules-enabled/81.conf
+                nginx -s reload
+                break
+        fi
 done
 EOF
 chmod +x /bin/mtproto.sh
