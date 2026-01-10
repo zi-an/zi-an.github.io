@@ -6,14 +6,14 @@
 <meta name="description" content="Notepad 优化#https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.7.7/npp.8.7.7.Installer.x64.exe 自动换行&#43; UTF-8 &#43; Unix#视图-&gt;自动换行 设置-&gt;首选项-&gt;新建-&gt;Unix(LF) 设置-&gt;首选项-&gt;新建-&gt;UTF-8(无BOM)
 暗黑模式#设置-&gt;首选项-&gt;暗黑模式-&gt;开启暗黑模式
 备份#设置-&gt;首选项-&gt;备份
-冗余备份-&gt; 使用自定义备份目录(D:\temp\) 默认搜索#https://cn.bing.com/search?q=$(CURRENT_WORD) 常用插件#NppExec#在nppexec中不能用交互式命令,所以在tools.bat中补全 暗色需要在NppExec&ndash;&gt;Advanced Options&ndash;&gt;Blackgroundcolor设置为 66 66 66 插件下也有个style.css文件,有需要自己改 npp_save if $(ext_part) ==.java goto java if $(ext_part) ==.bat goto bat if $(ext_part) ==.md goto md exit :java env_set java_home=d:\tools\ideaic\jbr env_set path=$(sys.path);$(sys.java_home)\bin cd $(current_directory) javac -encoding UTF-8 -d d:\workspaces\.tmp $(file_name) cd d:\workspaces\.tmp //cls java $(name_part) exit :bat cd $(current_directory) $(FILE_NAME) exit :md cd C:\Users\docker\Desktop\zian taskkill /f /t /im nginx.">
+冗余备份-&gt; 使用自定义备份目录(D:\temp\) 默认搜索#https://cn.bing.com/search?q=$(CURRENT_WORD) 常用插件#NppExec#在nppexec中不能用交互式命令,所以在tools.bat中补全 暗色需要在NppExec&ndash;&gt;Advanced Options&ndash;&gt;Blackgroundcolor设置为 66 66 66 插件下也有个style.css文件,有需要自己改 npp_save if $(ext_part) ==.conf goto conf if $(ext_part) ==.java goto java if $(ext_part) ==.bat goto bat if $(ext_part) ==.md goto md exit :conf taskkill /f /t /im nginx.exe cd C:\Users\docker\Desktop\nginx\ ./nginx.exe exit :java env_set java_home=d:\tools\ideaic\jbr env_set path=$(sys.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
 <meta property="og:description" content="Notepad 优化#https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.7.7/npp.8.7.7.Installer.x64.exe 自动换行&#43; UTF-8 &#43; Unix#视图-&gt;自动换行 设置-&gt;首选项-&gt;新建-&gt;Unix(LF) 设置-&gt;首选项-&gt;新建-&gt;UTF-8(无BOM)
 暗黑模式#设置-&gt;首选项-&gt;暗黑模式-&gt;开启暗黑模式
 备份#设置-&gt;首选项-&gt;备份
-冗余备份-&gt; 使用自定义备份目录(D:\temp\) 默认搜索#https://cn.bing.com/search?q=$(CURRENT_WORD) 常用插件#NppExec#在nppexec中不能用交互式命令,所以在tools.bat中补全 暗色需要在NppExec&ndash;&gt;Advanced Options&ndash;&gt;Blackgroundcolor设置为 66 66 66 插件下也有个style.css文件,有需要自己改 npp_save if $(ext_part) ==.java goto java if $(ext_part) ==.bat goto bat if $(ext_part) ==.md goto md exit :java env_set java_home=d:\tools\ideaic\jbr env_set path=$(sys.path);$(sys.java_home)\bin cd $(current_directory) javac -encoding UTF-8 -d d:\workspaces\.tmp $(file_name) cd d:\workspaces\.tmp //cls java $(name_part) exit :bat cd $(current_directory) $(FILE_NAME) exit :md cd C:\Users\docker\Desktop\zian taskkill /f /t /im nginx." />
+冗余备份-&gt; 使用自定义备份目录(D:\temp\) 默认搜索#https://cn.bing.com/search?q=$(CURRENT_WORD) 常用插件#NppExec#在nppexec中不能用交互式命令,所以在tools.bat中补全 暗色需要在NppExec&ndash;&gt;Advanced Options&ndash;&gt;Blackgroundcolor设置为 66 66 66 插件下也有个style.css文件,有需要自己改 npp_save if $(ext_part) ==.conf goto conf if $(ext_part) ==.java goto java if $(ext_part) ==.bat goto bat if $(ext_part) ==.md goto md exit :conf taskkill /f /t /im nginx.exe cd C:\Users\docker\Desktop\nginx\ ./nginx.exe exit :java env_set java_home=d:\tools\ideaic\jbr env_set path=$(sys." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/notepad/" /><meta property="article:section" content="docs" />
 
@@ -25,7 +25,7 @@
 <link rel="canonical" href="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/notepad/">
 <link rel="stylesheet" href="/book.min.c0de645cb4cb75e493aef507ff38ba72ba0f974534b528b15573c8cda4febc46.css" integrity="sha256-wN5kXLTLdeSTrvUH/zi6croPl0U0tSixVXPIzaT&#43;vEY=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.c42941758d98a650a49776d60c98a1334f569642230f6169b29455f8aa94220e.js" integrity="sha256-xClBdY2YplCkl3bWDJihM09WlkIjD2FpspRV&#43;KqUIg4=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.5a4c9016d6f26f75b04b2a260d06905bb1efbaaf5c84a93598e58aa07d5bd096.js" integrity="sha256-WkyQFtbyb3WwSyomDQaQW7Hvuq9chKk1mOWKoH1b0JY=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -886,9 +886,16 @@ https://github.com/alex-shpak/hugo-book
 <li>插件下也有个style.css文件,有需要自己改</li>
 </ul>
 <pre tabindex="0"><code>npp_save
+if $(ext_part) ==.conf goto conf
 if $(ext_part) ==.java goto java
 if $(ext_part) ==.bat goto bat
 if $(ext_part) ==.md goto md
+exit
+
+:conf
+taskkill /f /t /im nginx.exe
+cd C:\Users\docker\Desktop\nginx\
+./nginx.exe
 exit
 
 :java
