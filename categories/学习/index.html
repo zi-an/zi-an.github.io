@@ -17,7 +17,7 @@
 <link rel="canonical" href="https://example.org/categories/%E5%AD%A6%E4%B9%A0/">
 <link rel="stylesheet" href="/book.min.c0de645cb4cb75e493aef507ff38ba72ba0f974534b528b15573c8cda4febc46.css" integrity="sha256-wN5kXLTLdeSTrvUH/zi6croPl0U0tSixVXPIzaT&#43;vEY=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.5a4c9016d6f26f75b04b2a260d06905bb1efbaaf5c84a93598e58aa07d5bd096.js" integrity="sha256-WkyQFtbyb3WwSyomDQaQW7Hvuq9chKk1mOWKoH1b0JY=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.237ce9380db9307ab18e590f9a9280d697a86191c41e3d8e317bb187b24abe07.js" integrity="sha256-I3zpOA25MHqxjlkPmpKA1peoYZHEHj2OMXuxh7JKvgc=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="https://example.org/categories/%E5%AD%A6%E4%B9%A0/index.xml" title="" />
 <!--
 Made with Book Theme
@@ -546,6 +546,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/jetbrains/continue/" class="">Continue</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/jetbrains/jetbrains/" class="">Jet Brains</a>
   
 
@@ -872,7 +885,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-    <p>TelegramBot#package main import ( &#34;context&#34; &#34;database/sql&#34; &#34;fmt&#34; _ &#34;github.com/go-sql-driver/mysql&#34; tgbotapi &#34;github.com/go-telegram-bot-api/telegram-bot-api/v5&#34; &#34;github.com/openai/openai-go/v3&#34; &#34;github.com/openai/openai-go/v3/option&#34; &#34;os&#34; &#34;regexp&#34; &#34;strconv&#34; &#34;strings&#34; &#34;time&#34; ) var format = &#34;2006-01-02 15:04:05&#34; var aiUrl = &#34;https://platform.aitools.cfd/api/v1/&#34; var aiKey = &#34;sk-1d00617bd03e4886bbfcdd164bd90d28&#34; var model = &#34;meituan/longcat-flash-chat&#34; var trytimes = 0 func main() { _ = os.Setenv(&#34;HTTPS_PROXY&#34;, &#34;http://yun.mm:20172&#34;) bot, err := tgbotapi.NewBotAPI(&#34;8480580315:AAHYaX5eKimC0jq_a7vKdVL59qTdz33cpZs&#34;) if err != nil { main() } bot.Debug = false fmt.Printf(&#34;启:%s\n&#34;, bot.Self.UserName) updates := bot.GetUpdatesChan(tgbotapi.NewUpdate(0)) for update := range updates { if update.
+    <p>TelegramBot # package main import ( &#34;context&#34; &#34;database/sql&#34; &#34;fmt&#34; _ &#34;github.com/go-sql-driver/mysql&#34; tgbotapi &#34;github.com/go-telegram-bot-api/telegram-bot-api/v5&#34; &#34;github.com/openai/openai-go/v3&#34; &#34;github.com/openai/openai-go/v3/option&#34; &#34;os&#34; &#34;regexp&#34; &#34;strconv&#34; &#34;strings&#34; &#34;time&#34; ) var format = &#34;2006-01-02 15:04:05&#34; var aiUrl = &#34;https://platform.aitools.cfd/api/v1/&#34; var aiKey = &#34;sk-1d00617bd03e4886bbfcdd164bd90d28&#34; var model = &#34;meituan/longcat-flash-chat&#34; var trytimes = 0 func main() { _ = os.Setenv(&#34;HTTPS_PROXY&#34;, &#34;http://yun.mm:20172&#34;) bot, err := tgbotapi.NewBotAPI(&#34;8480580315:AAHYaX5eKimC0jq_a7vKdVL59qTdz33cpZs&#34;) if err != nil { main() } bot.Debug = false fmt.Printf(&#34;启:%s\n&#34;, bot.Self.UserName) updates := bot.GetUpdatesChan(tgbotapi.NewUpdate(0)) for update := range updates { if update.
         <a href="/posts/study/telegramtot/">...</a>
       
     </p>
@@ -899,7 +912,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-    <p>代码#go build web.go nohup ./web &amp; package main import ( &#34;net/http&#34; &#34;strconv&#34; &#34;sync/atomic&#34; ) func main() { var count int32 http.HandleFunc(&#34;/&#34;, func(w http.ResponseWriter, r *http.Request) { atomic.AddInt32(&amp;count, 1) _, _ = w.Write([]byte(strconv.Itoa(int(count)))) }) http.HandleFunc(&#34;/favicon.ico&#34;, func(w http.ResponseWriter, r *http.Request) {}) _ = http.ListenAndServe(&#34;:8080&#34;, nil) } javac Web.java nohup java Web &amp; import com.sun.net.httpserver.HttpExchange; import com.sun.net.httpserver.HttpHandler; import com.sun.net.httpserver.HttpServer; import java.io.IOException; import java.io.OutputStream; import java.net.InetSocketAddress; import java.util.concurrent.atomic.AtomicInteger; public class Web { public static void main(String[] args) throws Exception { HttpServer server = HttpServer.
+    <p>代码 # go build web.go nohup ./web &amp; package main import ( &#34;net/http&#34; &#34;strconv&#34; &#34;sync/atomic&#34; ) func main() { var count int32 http.HandleFunc(&#34;/&#34;, func(w http.ResponseWriter, r *http.Request) { atomic.AddInt32(&amp;count, 1) _, _ = w.Write([]byte(strconv.Itoa(int(count)))) }) http.HandleFunc(&#34;/favicon.ico&#34;, func(w http.ResponseWriter, r *http.Request) {}) _ = http.ListenAndServe(&#34;:8080&#34;, nil) } javac Web.java nohup java Web &amp; import com.sun.net.httpserver.HttpExchange; import com.sun.net.httpserver.HttpHandler; import com.sun.net.httpserver.HttpServer; import java.io.IOException; import java.io.OutputStream; import java.net.InetSocketAddress; import java.util.concurrent.atomic.AtomicInteger; public class Web { public static void main(String[] args) throws Exception { HttpServer server = HttpServer.
         <a href="/posts/study/go-java/">...</a>
       
     </p>
@@ -954,7 +967,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-    <p>准备#apt update apt install -y git libnginx-mod-http-image-filter npm golang git clone https://gitee.com/go-admin-team/go-admin.git git clone https://gitee.com/go-admin-team/go-admin-ui.git 后端编译#国内加速下载,初次启动运行以下一次 ./go-admin migrate -c settings.yml cd ~/go-admin export GOPROXY=https://goproxy.cn,direct go mod tidy go build cp config/settings.yml . sed -i &#39;s|user:password@tcp(127.0.0.1:3306|zian:zian@tcp(172.20.0.1:3306|g&#39; settings.yml sed -i &#39;s|8000|8009|g&#39; settings.yml ./go-admin server -c settings.yml -a true 前端编译#国内加速下载 npm版本太新会出现问题,目前加参数解决 cd ~/go-admin-ui/ export NODE_OPTIONS=--openssl-legacy-provider npm install --registry=https://registry.npmmirror.com --force npm run build:prod nginx#sed -i &#39;s|www-data|root|g&#39; /etc/nginx/nginx.
+    <p>准备 # apt update apt install -y git libnginx-mod-http-image-filter npm golang git clone https://gitee.com/go-admin-team/go-admin.git git clone https://gitee.com/go-admin-team/go-admin-ui.git 后端编译 # 国内加速下载,初次启动运行以下一次 ./go-admin migrate -c settings.yml cd ~/go-admin export GOPROXY=https://goproxy.cn,direct go mod tidy go build cp config/settings.yml . sed -i &#39;s|user:password@tcp(127.0.0.1:3306|zian:zian@tcp(172.20.0.1:3306|g&#39; settings.yml sed -i &#39;s|8000|8009|g&#39; settings.yml ./go-admin server -c settings.yml -a true 前端编译 # 国内加速下载 npm版本太新会出现问题,目前加参数解决 cd ~/go-admin-ui/ export NODE_OPTIONS=--openssl-legacy-provider npm install --registry=https://registry.npmmirror.com --force npm run build:prod nginx # sed -i &#39;s|www-data|root|g&#39; /etc/nginx/nginx.
         <a href="/posts/study/go-admin/">...</a>
       
     </p>
@@ -981,7 +994,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-    <p>提前准备#cat dns.log | grep -v &#34;miwifi&#34; | grep &#34;query\[A]&#34; &gt; dnstemp.log awk &#39;{printf &#34;2025 %s %s %s,%s,%s\n&#34;, $1, $2, $3, $6, $8}&#39; dnstemp.log &gt; dns.csv cat dns.csv#2025 Jun 22 00:43:39,update.googleapis.com,120.229.173.236 2025 Jun 22 00:43:41,api-access.pangolin-sdk-toutiao1.com,120.229.173.236 2025 Jun 22 00:43:48,ulogs.umeng.com,120.229.173.236 cat dns.sql#-- 使用数据库 USE dns_logs; -- 导入数据 LOAD DATA INFILE &#39;/dns.csv&#39; INTO TABLE dns_queries FIELDS TERMINATED BY &#39;,&#39; LINES TERMINATED BY &#39;\n&#39; (@log_time_str, domain_name, client_ip) SET log_time = STR_TO_DATE(@log_time_str, &#39;%Y %b %d %H:%i:%s&#39;); 执行sql#mysql -h 14.
+    <p>提前准备 # cat dns.log | grep -v &#34;miwifi&#34; | grep &#34;query\[A]&#34; &gt; dnstemp.log awk &#39;{printf &#34;2025 %s %s %s,%s,%s\n&#34;, $1, $2, $3, $6, $8}&#39; dnstemp.log &gt; dns.csv cat dns.csv # 2025 Jun 22 00:43:39,update.googleapis.com,120.229.173.236 2025 Jun 22 00:43:41,api-access.pangolin-sdk-toutiao1.com,120.229.173.236 2025 Jun 22 00:43:48,ulogs.umeng.com,120.229.173.236 cat dns.sql # -- 使用数据库 USE dns_logs; -- 导入数据 LOAD DATA INFILE &#39;/dns.csv&#39; INTO TABLE dns_queries FIELDS TERMINATED BY &#39;,&#39; LINES TERMINATED BY &#39;\n&#39; (@log_time_str, domain_name, client_ip) SET log_time = STR_TO_DATE(@log_time_str, &#39;%Y %b %d %H:%i:%s&#39;); 执行sql # mysql -h 14.
         <a href="/posts/study/dnsmasq/">...</a>
       
     </p>
@@ -1009,7 +1022,7 @@ https://github.com/alex-shpak/hugo-book
 
 
     <p>| https://github.com/yangzongzhuan/RuoYi-Vue
-编译部署v3.9.0版#apt update apt install -y git libnginx-mod-http-image-filter maven npm openjdk-21-jdk-headless cd ~ git clone --branch=springboot3 https://gitee.com/y_project/RuoYi-Vue.git ruoyi-vue cd ruoyi-vue mvn package cp ruoyi-admin/target/ruoyi-admin.jar ~ cd ruoyi-ui npm install --registry=https://registry.npmmirror.com 参数优化#修改redis及密码 修改登录token有效期为10086分钟 修改mysql数据库及密码 除去druid监控的密码,空的也必须覆盖 直接进入druid的管理页面 修改了Token名称 cd ~ cp ./ruoyi-vue/ruoyi-admin/target/classes/application* . sed -i &#39;s|localhost|yun.mm|g&#39; application.yml sed -i &#39;s| password:| password: zian|g&#39; application.yml sed -i &#39;s|expireTime: 30|expireTime: 10086|g&#39; application.yml sed -i &#39;s|localhost|yun.mm|g&#39; application-druid.yml sed -i &#39;s|username: root|username: zian|g&#39; application-druid.
+编译部署v3.9.0版 # apt update apt install -y git libnginx-mod-http-image-filter maven npm openjdk-21-jdk-headless cd ~ git clone --branch=springboot3 https://gitee.com/y_project/RuoYi-Vue.git ruoyi-vue cd ruoyi-vue mvn package cp ruoyi-admin/target/ruoyi-admin.jar ~ cd ruoyi-ui npm install --registry=https://registry.npmmirror.com 参数优化 # 修改redis及密码 修改登录token有效期为10086分钟 修改mysql数据库及密码 除去druid监控的密码,空的也必须覆盖 直接进入druid的管理页面 修改了Token名称 cd ~ cp ./ruoyi-vue/ruoyi-admin/target/classes/application* . sed -i &#39;s|localhost|yun.mm|g&#39; application.yml sed -i &#39;s| password:| password: zian|g&#39; application.yml sed -i &#39;s|expireTime: 30|expireTime: 10086|g&#39; application.yml sed -i &#39;s|localhost|yun.mm|g&#39; application-druid.yml sed -i &#39;s|username: root|username: zian|g&#39; application-druid.
         <a href="/posts/study/ruoyi/">...</a>
       
     </p>

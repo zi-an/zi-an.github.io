@@ -1,0 +1,37 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\.md]
+@="MarkdownFile"
+"PerceivedType"="text"
+"Content Type"="text/plain"
+
+[HKEY_CLASSES_ROOT\.md\ShellNew]
+"NullFile"=""
+
+[HKEY_CLASSES_ROOT\MarkdownFile]
+@="Markdown"
+
+[-HKEY_CLASSES_ROOT\.txt\ShellNew]
+[-HKEY_CLASSES_ROOT\.bmp\ShellNew]
+[-HKEY_CLASSES_ROOT\.lnk\ShellNew]
+[-HKEY_CLASSES_ROOT\.zip\CompressedFolder\ShellNew]
+
+[HKEY_CLASSES_ROOT\.jpg\ShellNew]
+"FileName"="C:\\Windows\\0.jpg"
+
+[HKEY_CLASSES_ROOT\jpgfile]
+@="JPG"
+
+[HKEY_CLASSES_ROOT\.jpg]
+@="jpegfile"
+"Content Type"="image/jpeg"
+"PerceivedType"="image"
+
+[HKEY_CLASSES_ROOT\.jpg\ShellNew]
+"NullFile"=""
+
+[HKEY_CLASSES_ROOT\jpegfile]
+@="JPEG"
+
+[HKEY_CLASSES_ROOT\jpegfile\DefaultIcon]
+@="imageres.dll,-72"

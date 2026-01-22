@@ -17,11 +17,10 @@ import (
 )
 
 var format = "2006-01-02 15:04:05"
-var bottoken = "8536963899:AAHtRvhCjQWR1uYwSgp-YYiPMyuY1j1KtNQ"
+var bottoken = "8555683400:AAEFABjX704lc529bvzHZWxV5RaOfIUtw60"
 var aiUrl = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 var aiKey = "sk-5cd393b0433e4eacbaef58f41047144b"
-var models = []string{"qwen2.5-coder-3b-instruct"}
-var model = models[0]
+var model = "qwen2.5-coder-3b-instruct"
 var trytimes = 0
 
 func main() {
@@ -36,6 +35,12 @@ func main() {
 	for update := range updates {
 		if update.Message != nil {
 			if strings.Index(update.Message.Text, "/") >= 0 {
+				if strings.Index(update.Message.Text, "/set") >= 0 {
+					aiUrl = strings.Split(update.Message.Text, " ")[1]
+					aiKey = strings.Split(update.Message.Text, " ")[2]
+					model = strings.Split(update.Message.Text, " ")[3]
+					fmt.Println(aiUrl, aiKey, model)
+				}
 				continue
 			}
 			go handleMessage(bot, update.Message)
@@ -63,7 +68,7 @@ func handleMessage(bot *tgbotapi.BotAPI, update *tgbotapi.Message) {
 		_, err := bot.Send(msg)
 		if err != nil {
 			fmt.Println("错:", err)
-			msg := tgbotapi.NewMessage(update.Chat.ID, "格式错误")
+			msg.ParseMode = ""
 			_, _ = bot.Send(msg)
 		}
 	}
@@ -128,7 +133,7 @@ func ai(text string) string {
 		Temperature: openai.Float(0.0),
 		Messages: []openai.ChatCompletionMessageParamUnion{
 			openai.UserMessage(text),
-			openai.SystemMessage("详细解答/no_think"),
+			openai.SystemMessage("详细解答,标准markdown格式"),
 		},
 	})
 	if err != nil {
