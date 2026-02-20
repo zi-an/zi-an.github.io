@@ -21,7 +21,7 @@ json # 配置 https://learn.microsoft.com/zh-cn/windows/terminal/customize-setti
 <link rel="canonical" href="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/terminal/">
 <link rel="stylesheet" href="/book.min.c0de645cb4cb75e493aef507ff38ba72ba0f974534b528b15573c8cda4febc46.css" integrity="sha256-wN5kXLTLdeSTrvUH/zi6croPl0U0tSixVXPIzaT&#43;vEY=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.237ce9380db9307ab18e590f9a9280d697a86191c41e3d8e317bb187b24abe07.js" integrity="sha256-I3zpOA25MHqxjlkPmpKA1peoYZHEHj2OMXuxh7JKvgc=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.92ba9f19754c176169bbb787b738b68cf1a4ea4d02403270ce0a389c735d2d7b.js" integrity="sha256-krqfGXVMF2Fpu7eHtzi2jPGk6k0CQDJwzgo4nHNdLXs=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -523,24 +523,14 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/europa/" class="">Europa</a>
+    <input type="checkbox" id="section-8fa71f0d6d09033383b45cb2fa3e9391" class="toggle"  />
+    <label for="section-8fa71f0d6d09033383b45cb2fa3e9391" class="flex justify-between">
+      <a role="button" class="">jetbrains</a>
+    </label>
   
 
-        </li>
-      
-    
-      
-        <li>
           
-  
-  
-
-  
-    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/ffmpef/" class="">Ffmpef</a>
-  
-
-        </li>
-      
+  <ul>
     
       
         <li>
@@ -562,7 +552,51 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/jetbrains/goland/" class="">Go Land</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/jetbrains/jetbrains/" class="">Jet Brains</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/europa/" class="">Europa</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/ffmpeg/" class="">Ffmpeg</a>
   
 
         </li>
@@ -829,6 +863,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#winr-输入wt开启">win+r 输入wt开启</a></li>
     <li><a href="#json">json</a></li>
+    <li><a href="#常用命令">常用命令</a></li>
   </ul>
 </nav>
 
@@ -875,6 +910,22 @@ https://github.com/alex-shpak/hugo-book
 { &#34;keys&#34;: &#34;ctrl+6&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab5&#34; },
 { &#34;keys&#34;: &#34;ctrl+7&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab6&#34; },
 { &#34;keys&#34;: &#34;ctrl+8&#34;, &#34;id&#34;: &#34;Terminal.SwitchToTab7&#34; }
+</code></pre><h2 id="常用命令">
+  常用命令
+  <a class="anchor" href="#%e5%b8%b8%e7%94%a8%e5%91%bd%e4%bb%a4">#</a>
+</h2>
+<pre tabindex="0"><code>alias 5.mm=&#39;ssh docker@5.mm&#39;
+alias yun.mm=&#39;ssh docker@yun.mm&#39;
+alias 221.mm=&#39;ssh root@221.mm&#39;
+alias 222.mm=&#39;ssh root@222.mm&#39;
+alias server=&#39;ssh root@yun.mm -p1111&#39;
+alias test=&#39;ssh root@yun.mm -p2222&#39;
+
+export LANG=&#39;zh_CN.UTF-8&#39;
+alias redis=&#39;redis-cli.exe -h yun.mm -a zian&#39;
+alias mysql=&#39;mysql-cli.exe -h yun.mm -u zian -p&#39;zian&#39; zian&#39;
+alias postgresql=&#39;/d/tools/shell/postgresql/psql.exe -h yun.mm -U postgres&#39; 
+# setx PGPASSWORD zian
 </code></pre></article>
  
       
@@ -918,6 +969,7 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#winr-输入wt开启">win+r 输入wt开启</a></li>
     <li><a href="#json">json</a></li>
+    <li><a href="#常用命令">常用命令</a></li>
   </ul>
 </nav>
 

@@ -265,7 +265,7 @@
       <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/win10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/win10/</guid>
-      <description>旧版系统 # win 10 ltsc # 下载 ed2k://|file|LTSC_2021_X64.ISO|5044211712|1555B7DCA052B5958EE68DB58A42408D|/&#xA;win 7 # 专业版VL&#xA;旗舰版下载 ed2k://|file|windows_7_ultimate_x64.iso|3419052032|56E90251E665E643C81168F6DD870BCB|/ win7旗舰版不能用kms激活。&#xA;chrome浏览器取消不更新提醒chrome.reg Windows Registry Editor Version 5.00 [HKEY_CURRENT_USER\Software\Policies\Google\Chrome] &amp;#34;SuppressUnsupportedOSWarning&amp;#34;=dword:00000001 QQ拼音输入法 激活win7pro vl版 slmgr /skms kms.03k.org slmgr /ato 图片查看器 # tu.reg Windows Registry Editor Version 5.00 ; Change Extension&amp;#39;s File Type [HKEY_CURRENT_USER\Software\Classes\.jpg] @=&amp;#34;PhotoViewer.FileAssoc.Tiff&amp;#34; ; Change Extension&amp;#39;s File Type [HKEY_CURRENT_USER\Software\Classes\.jpeg] @=&amp;#34;PhotoViewer.FileAssoc.Tiff&amp;#34; ; Change Extension&amp;#39;s File Type [HKEY_CURRENT_USER\Software\Classes\.gif] @=&amp;#34;PhotoViewer.FileAssoc.Tiff&amp;#34; ; Change Extension&amp;#39;s File Type [HKEY_CURRENT_USER\Software\Classes\.png] @=&amp;#34;PhotoViewer.FileAssoc.Tiff&amp;#34; ; Change Extension&amp;#39;s File Type [HKEY_CURRENT_USER\Software\Classes\.</description>
+      <description>旧版系统 # win 10 ltsc # 下载 ed2k://|file|LTSC_2021_X64.iso|5044211712|1555B7DCA052B5958EE68DB58A42408D|/&#xA;win 7 # 专业版VL&#xA;旗舰版下载 win7旗舰版不能用kms激活。&#xA;chrome浏览器取消不更新提醒chrome.reg Windows Registry Editor Version 5.00 [HKEY_CURRENT_USER\Software\Policies\Google\Chrome] &amp;#34;SuppressUnsupportedOSWarning&amp;#34;=dword:00000001 QQ拼音输入法 激活win7pro vl版 slmgr /skms kms.03k.org slmgr /ato 图片查看器 # tu.reg Windows Registry Editor Version 5.00 ; Change Extension&amp;#39;s File Type [HKEY_CURRENT_USER\Software\Classes\.jpg] @=&amp;#34;PhotoViewer.FileAssoc.Tiff&amp;#34; ; Change Extension&amp;#39;s File Type [HKEY_CURRENT_USER\Software\Classes\.jpeg] @=&amp;#34;PhotoViewer.FileAssoc.Tiff&amp;#34; ; Change Extension&amp;#39;s File Type [HKEY_CURRENT_USER\Software\Classes\.gif] @=&amp;#34;PhotoViewer.FileAssoc.Tiff&amp;#34; ; Change Extension&amp;#39;s File Type [HKEY_CURRENT_USER\Software\Classes\.png] @=&amp;#34;PhotoViewer.FileAssoc.Tiff&amp;#34; ; Change Extension&amp;#39;s File Type [HKEY_CURRENT_USER\Software\Classes\.</description>
     </item>
     <item>
       <title></title>
@@ -276,9 +276,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/ffmpef/</link>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/ffmpeg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/ffmpef/</guid>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/ffmpeg/</guid>
       <description>虎牙推流 # 虎牙直播 # -re (input) 以本机帧速率读取输入。这相当于设置-readrate 1。 -stream_loop number (input) 设置输入流应循环的次数。Loop 0表示无循环，loop-1表示无限循环。 -codec[:stream_specifier] codec (input/output,per-stream)为一个或多个流选择编码器（当在输出文件之前使用时）或解码器（当在输入文件之前使用时）。codec是解码器/编码器的名称或特殊值copy（仅输出），指示流不被重新编码。 -c: copy 表示所有流格式都是复制 nohup ffmpeg -re -stream_loop -1 -i bbb.mp4 -c: copy -f flv &amp;#34;rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-7438266878141176820-3575444560-10057-A-1731860186-1?seq=1731856465590&amp;amp;type=simple&amp;#34; &amp;amp; 最快的剪辑视频 # ffmpeg -ss 1:25 -i 3.2_CG16_2_mux.mp4 -c: copy bbb.mp4 ffmpeg -i 奶牛跳舞.mp4 -vf &amp;ldquo;crop=608:1080&amp;rdquo; out.mp4&#xA;-c:v libx264 ffmpeg -i 奶牛跳舞.mp4 -vf &amp;ldquo;crop=608:1080&amp;rdquo; -c copy -out.mp4&#xA;ffmpeg -i 浆果儿捆绑白.mp4 -vf &amp;ldquo;crop=405:720&amp;rdquo; 浆果儿捆绑白-1.mp4&#xA;ffmpeg -i 1.avi -c:v libx264 1.</description>
     </item>
     <item>
@@ -287,6 +287,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/jetbrains/continue/</guid>
       <description> Continue # 离线AI name: Config&#xD;version: 1.0.0&#xD;schema: v1&#xD;models:&#xD;- name: Qwen&#xD;provider: openai&#xD;model: &amp;#34;qwen2.5-coder-3b-instruct&amp;#34;&#xD;apiKey: &amp;#34;sk-XXX&amp;#34;&#xD;apiBase: &amp;#34;https://dashscope.aliyuncs.com/compatible-mode/v1&amp;#34; 添加Ruler # 你只会用golang写代码,只会用中文回答问题 </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/jetbrains/goland/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/jetbrains/goland/</guid>
+      <description> GoLand # 遇到过的问题 # AI # Goland2024.2只能用Windsurf2.8.5 Continue GO模块设置 # 配置代理 goland的配置里要设置local才能避免下载其他版本的go GOPROXY=https://goproxy.cn,direct;GOSUMDB=sum.golang.google.cn;GOTOOLCHAIN=local;GO111MODULE=on dlv要编译后把goland里的替换掉&#xA;交叉编译时,set不一定生效,可能要用$env $env:GOOS=&amp;#34;linux&amp;#34; $env:GOARCH=&amp;#34;amd64&amp;#34; go build -o monitors ./cmd/monitors/ </description>
     </item>
     <item>
       <title></title>

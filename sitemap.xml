@@ -20,6 +20,8 @@
   </url><url>
     <loc>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-clustersetup/</loc>
   </url><url>
+    <loc>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/jetbrains/</loc>
+  </url><url>
     <loc>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/</loc>
   </url><url>
     <loc>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/</loc>
@@ -124,9 +126,11 @@
   </url><url>
     <loc>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/europa/</loc>
   </url><url>
-    <loc>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/ffmpef/</loc>
+    <loc>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/ffmpeg/</loc>
   </url><url>
     <loc>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/jetbrains/continue/</loc>
+  </url><url>
+    <loc>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/jetbrains/goland/</loc>
   </url><url>
     <loc>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/jetbrains/jetbrains/</loc>
   </url><url>
