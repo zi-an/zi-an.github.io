@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content=" 端口安全 # Chromium内核浏览器 # Chromium不安全端口源码 const int kRestrictedPorts[] = { 0, // Not in Fetch Spec. 1, // tcpmux 7, // echo 9, // discard 11, // systat 13, // daytime 15, // netstat 17, // qotd 19, // chargen 20, // ftp data 21, // ftp access 22, // ssh 23, // telnet 25, // smtp 37, // time 42, // name 43, // nicname 53, // domain 69, // tftp 77, // priv-rjs 79, // finger 87, // ttylink 95, // supdup 101, // hostriame 102, // iso-tsap 103, // gppitnp 104, // acr-nema 109, // pop2 110, // pop3 111, // sunrpc 113, // auth 115, // sftp 117, // uucp-path 119, // nntp 123, // NTP 135, // loc-srv /epmap 137, // netbios 139, // netbios 143, // imap2 161, // snmp 179, // BGP 389, // ldap 427, // SLP (Also used by Apple Filing Protocol) 465, // smtp&#43;ssl 512, // print / exec 513, // login 514, // shell 515, // printer 526, // tempo 530, // courier 531, // chat 532, // netnews 540, // uucp 548, // AFP (Apple Filing Protocol) 554, // rtsp 556, // remotefs 563, // nntp&#43;ssl 587, // smtp (rfc6409) 601, // syslog-conn (rfc3195) 636, // ldap&#43;ssl 989, // ftps-data 990, // ftps 993, // ldap&#43;ssl 995, // pop3&#43;ssl 1719, // h323gatestat 1720, // h323hostcall 1723, // pptp 2049, // nfs 3659, // apple-sasl / PasswordServer 4045, // lockd 5060, // sip 5061, // sips 6000, // X11 6566, // sane-port 6665, // Alternate IRC [Apple addition] 6666, // Alternate IRC [Apple addition] 6667, // Standard IRC [Apple addition] 6668, // Alternate IRC [Apple addition] 6669, // Alternate IRC [Apple addition] 6697, // IRC &#43; TLS 10080, // Amanda }; ">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content=" 端口安全 # Chromium内核浏览器 # Chromium不安全端口源码 const int kRestrictedPorts[] = { 0, // Not in Fetch Spec. 1, // tcpmux 7, // echo 9, // discard 11, // systat 13, // daytime 15, // netstat 17, // qotd 19, // chargen 20, // ftp data 21, // ftp access 22, // ssh 23, // telnet 25, // smtp 37, // time 42, // name 43, // nicname 53, // domain 69, // tftp 77, // priv-rjs 79, // finger 87, // ttylink 95, // supdup 101, // hostriame 102, // iso-tsap 103, // gppitnp 104, // acr-nema 109, // pop2 110, // pop3 111, // sunrpc 113, // auth 115, // sftp 117, // uucp-path 119, // nntp 123, // NTP 135, // loc-srv /epmap 137, // netbios 139, // netbios 143, // imap2 161, // snmp 179, // BGP 389, // ldap 427, // SLP (Also used by Apple Filing Protocol) 465, // smtp&#43;ssl 512, // print / exec 513, // login 514, // shell 515, // printer 526, // tempo 530, // courier 531, // chat 532, // netnews 540, // uucp 548, // AFP (Apple Filing Protocol) 554, // rtsp 556, // remotefs 563, // nntp&#43;ssl 587, // smtp (rfc6409) 601, // syslog-conn (rfc3195) 636, // ldap&#43;ssl 989, // ftps-data 990, // ftps 993, // ldap&#43;ssl 995, // pop3&#43;ssl 1719, // h323gatestat 1720, // h323hostcall 1723, // pptp 2049, // nfs 3659, // apple-sasl / PasswordServer 4045, // lockd 5060, // sip 5061, // sips 6000, // X11 6566, // sane-port 6665, // Alternate IRC [Apple addition] 6666, // Alternate IRC [Apple addition] 6667, // Standard IRC [Apple addition] 6668, // Alternate IRC [Apple addition] 6669, // Alternate IRC [Apple addition] 6697, // IRC &#43; TLS 10080, // Amanda }; " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%AE%89%E5%85%A8%E7%AB%AF%E5%8F%A3/" /><meta property="article:section" content="docs" />
+
+
+<title>安全端口
+</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%AE%89%E5%85%A8%E7%AB%AF%E5%8F%A3/">
+<link rel="stylesheet" href="/book.min.c0de645cb4cb75e493aef507ff38ba72ba0f974534b528b15573c8cda4febc46.css" integrity="sha256-wN5kXLTLdeSTrvUH/zi6croPl0U0tSixVXPIzaT&#43;vEY=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/zh.search.min.0adc8657157a61507ffa20382c2f83cb914c300beb16a5d12cda845b07399fe3.js" integrity="sha256-CtyGVxV6YVB/&#43;iA4LC&#43;Dy5FMMAvrFqXRLNqEWwc5n&#43;M=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span></span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0488dc51fd99636dd6b4d238151c1db5" class="toggle"  />
+    <label for="section-0488dc51fd99636dd6b4d238151c1db5" class="flex justify-between">
+      <a role="button" class="">服务器</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-325b6b542a51d3d21ff88c5bf7887306" class="toggle"  />
+    <label for="section-325b6b542a51d3d21ff88c5bf7887306" class="flex justify-between">
+      <a role="button" class="">分布式篇</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-singlecluster/" class="">Hadoop 3.4.1 单机版</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-clustersetup/" class="">Hadoop 3.4.1 集群版</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%BF%90%E7%BB%B4%E7%AF%87/" class="">Hadoop 3.4.1 运维篇</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%AE%A1%E7%AE%97%E7%AF%87/" class="">Hadoop3.4.1 计算篇</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hive4.0.1/" class="">Hive4.0.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-52ca3c06231d11fcc8c0b70afaaf1f47" class="toggle"  />
+    <label for="section-52ca3c06231d11fcc8c0b70afaaf1f47" class="flex justify-between">
+      <a role="button" class="">容器相关</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E5%AE%B9%E5%99%A8%E8%B5%84%E6%96%99/" class="">容器资料</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E7%A3%81%E7%9B%98%E6%93%8D%E4%BD%9C/" class="">磁盘操作</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1c94fe179191121debb232d029fa7ab0" class="toggle"  />
+    <label for="section-1c94fe179191121debb232d029fa7ab0" class="flex justify-between">
+      <a role="button" class="">软件使用</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/" class="">Frp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/goaccess/" class="">Goaccess</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wondershaper/" class="">Wondershaper</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/" class="">Ollama</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/sysbench/" class="">Sysbench</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/v2raya/" class="">V2ray A</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wget/" class="">Wget</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F/" class="">本地系统</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="">云服务器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%B0%83%E8%AF%95%E7%A8%8B%E5%BA%8F/" class="">调试程序</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/" class="">官方文档</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%B5%84%E6%BA%90%E9%95%9C%E5%83%8F/" class="">资源镜像</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%A1%AC%E7%9B%98%E4%BD%BF%E7%94%A8/" class="">硬盘使用</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-69ea6a18acbd408b17a06556c8b882ae" class="toggle"  />
+    <label for="section-69ea6a18acbd408b17a06556c8b882ae" class="flex justify-between">
+      <a role="button" class="">笔记本</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cb0051c707d2647c7883e09b86ecf887" class="toggle"  />
+    <label for="section-cb0051c707d2647c7883e09b86ecf887" class="flex justify-between">
+      <a role="button" class="">ltsc</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/win11/" class="">Win11</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/wsl1/" class="">WSL1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/imewlconverter/" class="">Imewlconverter</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/shell/" class="">Shell</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/win10/" class="">Win10</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-896f1e92695a73a9a6017e4012138ca4" class="toggle"  />
+    <label for="section-896f1e92695a73a9a6017e4012138ca4" class="flex justify-between">
+      <a role="button" class="">soft</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8fa71f0d6d09033383b45cb2fa3e9391" class="toggle"  />
+    <label for="section-8fa71f0d6d09033383b45cb2fa3e9391" class="flex justify-between">
+      <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/jetbrains/" class="">Jetbrains</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/jetbrains/goland/" class="">GoLand</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/jetbrains/continue/" class="">Continue</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/europa/" class="">Europa</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/ffmpeg/" class="">Ffmpeg</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/notepad/" class="">Notepad</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/terminal/" class="">Terminal</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8275259d5746a9fb519d904ee673e025" class="toggle"  />
+    <label for="section-8275259d5746a9fb519d904ee673e025" class="flex justify-between">
+      <a role="button" class="">硬件库</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E5%AE%89%E5%8D%93%E8%BD%AF%E4%BB%B6/" class="">安卓软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E7%A1%AC%E7%9B%98%E5%88%86%E7%B1%BB/" class="">硬盘分类</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E8%AE%BE%E5%A4%87%E8%B5%84%E6%96%99/" class="">设备资料</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4c5225b7eae8094cdab6239dd506ef7a" class="toggle" checked />
+    <label for="section-4c5225b7eae8094cdab6239dd506ef7a" class="flex justify-between">
+      <a role="button" class="">代码库</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E4%B8%BB%E9%A2%98%E6%95%99%E7%A8%8B/" class="">主题教程</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%89%8D%E7%AB%AF%E8%B5%84%E6%BA%90/" class="">前端资源</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/" class="">执行脚本</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91/" class="">代码编译</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/" class="">圆周计算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%AE%89%E5%85%A8%E7%AB%AF%E5%8F%A3/" class="active">安全端口</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE/" class="">域名配置</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        日记本
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>安全端口</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#chromium内核浏览器">Chromium内核浏览器</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="端口安全">
+  端口安全
+  <a class="anchor" href="#%e7%ab%af%e5%8f%a3%e5%ae%89%e5%85%a8">#</a>
+</h1>
+<h2 id="chromium内核浏览器">
+  Chromium内核浏览器
+  <a class="anchor" href="#chromium%e5%86%85%e6%a0%b8%e6%b5%8f%e8%a7%88%e5%99%a8">#</a>
+</h2>
+<ul>
+<li><a href="https://github.com/chromium/chromium/blob/main/net/base/port_util.cc">Chromium不安全端口源码</a></li>
+</ul>
+<pre tabindex="0"><code>const int kRestrictedPorts[] = {
+    0,      // Not in Fetch Spec.
+    1,      // tcpmux
+    7,      // echo
+    9,      // discard
+    11,     // systat
+    13,     // daytime
+    15,     // netstat
+    17,     // qotd
+    19,     // chargen
+    20,     // ftp data
+    21,     // ftp access
+    22,     // ssh
+    23,     // telnet
+    25,     // smtp
+    37,     // time
+    42,     // name
+    43,     // nicname
+    53,     // domain
+    69,     // tftp
+    77,     // priv-rjs
+    79,     // finger
+    87,     // ttylink
+    95,     // supdup
+    101,    // hostriame
+    102,    // iso-tsap
+    103,    // gppitnp
+    104,    // acr-nema
+    109,    // pop2
+    110,    // pop3
+    111,    // sunrpc
+    113,    // auth
+    115,    // sftp
+    117,    // uucp-path
+    119,    // nntp
+    123,    // NTP
+    135,    // loc-srv /epmap
+    137,    // netbios
+    139,    // netbios
+    143,    // imap2
+    161,    // snmp
+    179,    // BGP
+    389,    // ldap
+    427,    // SLP (Also used by Apple Filing Protocol)
+    465,    // smtp+ssl
+    512,    // print / exec
+    513,    // login
+    514,    // shell
+    515,    // printer
+    526,    // tempo
+    530,    // courier
+    531,    // chat
+    532,    // netnews
+    540,    // uucp
+    548,    // AFP (Apple Filing Protocol)
+    554,    // rtsp
+    556,    // remotefs
+    563,    // nntp+ssl
+    587,    // smtp (rfc6409)
+    601,    // syslog-conn (rfc3195)
+    636,    // ldap+ssl
+    989,    // ftps-data
+    990,    // ftps
+    993,    // ldap+ssl
+    995,    // pop3+ssl
+    1719,   // h323gatestat
+    1720,   // h323hostcall
+    1723,   // pptp
+    2049,   // nfs
+    3659,   // apple-sasl / PasswordServer
+    4045,   // lockd
+    5060,   // sip
+    5061,   // sips
+    6000,   // X11
+    6566,   // sane-port
+    6665,   // Alternate IRC [Apple addition]
+    6666,   // Alternate IRC [Apple addition]
+    6667,   // Standard IRC [Apple addition]
+    6668,   // Alternate IRC [Apple addition]
+    6669,   // Alternate IRC [Apple addition]
+    6697,   // IRC + TLS
+    10080,  // Amanda
+};
+</code></pre></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#chromium内核浏览器">Chromium内核浏览器</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -23,6 +23,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wondershaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wondershaper/</guid>
+      <description>Wondershaper 使用教程 # Wondershaper 是一个用于 Linux 系统的简单网络流量整形（Traffic Shaping）脚本。它底层基于 tc (Traffic Control) 命令，但封装得更易用，主要用于限制特定网卡的上传和下载带宽。&#xA;以下是详细的使用教程：&#xA;1. 安装 Wondershaper # 大多数 Linux 发行版的软件源中都包含 wondershaper。&#xA;Debian / Ubuntu / Kali # sudo apt update sudo apt install wondershaper CentOS / RHEL / Fedora # # Fedora sudo dnf install wondershaper # CentOS (可能需要 EPEL 源) sudo yum install wondershaper Arch Linux / Manjaro # sudo pacman -S wondershaper 手动安装 (GitHub) # 如果软件源中没有，可以从 GitHub 下载脚本：</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/</guid>

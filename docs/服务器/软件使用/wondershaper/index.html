@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Wondershaper 使用教程 # Wondershaper 是一个用于 Linux 系统的简单网络流量整形（Traffic Shaping）脚本。它底层基于 tc (Traffic Control) 命令，但封装得更易用，主要用于限制特定网卡的上传和下载带宽。
+以下是详细的使用教程：
+1. 安装 Wondershaper # 大多数 Linux 发行版的软件源中都包含 wondershaper。
+Debian / Ubuntu / Kali # sudo apt update sudo apt install wondershaper CentOS / RHEL / Fedora # # Fedora sudo dnf install wondershaper # CentOS (可能需要 EPEL 源) sudo yum install wondershaper Arch Linux / Manjaro # sudo pacman -S wondershaper 手动安装 (GitHub) # 如果软件源中没有，可以从 GitHub 下载脚本：">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="Wondershaper 使用教程 # Wondershaper 是一个用于 Linux 系统的简单网络流量整形（Traffic Shaping）脚本。它底层基于 tc (Traffic Control) 命令，但封装得更易用，主要用于限制特定网卡的上传和下载带宽。
+以下是详细的使用教程：
+1. 安装 Wondershaper # 大多数 Linux 发行版的软件源中都包含 wondershaper。
+Debian / Ubuntu / Kali # sudo apt update sudo apt install wondershaper CentOS / RHEL / Fedora # # Fedora sudo dnf install wondershaper # CentOS (可能需要 EPEL 源) sudo yum install wondershaper Arch Linux / Manjaro # sudo pacman -S wondershaper 手动安装 (GitHub) # 如果软件源中没有，可以从 GitHub 下载脚本：" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wondershaper/" /><meta property="article:section" content="docs" />
+
+
+<title>Wondershaper
+</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wondershaper/">
+<link rel="stylesheet" href="/book.min.c0de645cb4cb75e493aef507ff38ba72ba0f974534b528b15573c8cda4febc46.css" integrity="sha256-wN5kXLTLdeSTrvUH/zi6croPl0U0tSixVXPIzaT&#43;vEY=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/zh.search.min.0adc8657157a61507ffa20382c2f83cb914c300beb16a5d12cda845b07399fe3.js" integrity="sha256-CtyGVxV6YVB/&#43;iA4LC&#43;Dy5FMMAvrFqXRLNqEWwc5n&#43;M=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span></span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0488dc51fd99636dd6b4d238151c1db5" class="toggle" checked />
+    <label for="section-0488dc51fd99636dd6b4d238151c1db5" class="flex justify-between">
+      <a role="button" class="">服务器</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-325b6b542a51d3d21ff88c5bf7887306" class="toggle"  />
+    <label for="section-325b6b542a51d3d21ff88c5bf7887306" class="flex justify-between">
+      <a role="button" class="">分布式篇</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-singlecluster/" class="">Hadoop 3.4.1 单机版</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-clustersetup/" class="">Hadoop 3.4.1 集群版</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%BF%90%E7%BB%B4%E7%AF%87/" class="">Hadoop 3.4.1 运维篇</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-%E8%AE%A1%E7%AE%97%E7%AF%87/" class="">Hadoop3.4.1 计算篇</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hive4.0.1/" class="">Hive4.0.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-52ca3c06231d11fcc8c0b70afaaf1f47" class="toggle"  />
+    <label for="section-52ca3c06231d11fcc8c0b70afaaf1f47" class="flex justify-between">
+      <a role="button" class="">容器相关</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E5%AE%B9%E5%99%A8%E8%B5%84%E6%96%99/" class="">容器资料</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3/%E7%A3%81%E7%9B%98%E6%93%8D%E4%BD%9C/" class="">磁盘操作</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1c94fe179191121debb232d029fa7ab0" class="toggle" checked />
+    <label for="section-1c94fe179191121debb232d029fa7ab0" class="flex justify-between">
+      <a role="button" class="">软件使用</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/frp/" class="">Frp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/goaccess/" class="">Goaccess</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wondershaper/" class="active">Wondershaper</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/" class="">Ollama</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/sysbench/" class="">Sysbench</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/v2raya/" class="">V2ray A</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wget/" class="">Wget</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F/" class="">本地系统</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="">云服务器</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%B0%83%E8%AF%95%E7%A8%8B%E5%BA%8F/" class="">调试程序</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/" class="">官方文档</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%B5%84%E6%BA%90%E9%95%9C%E5%83%8F/" class="">资源镜像</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E7%A1%AC%E7%9B%98%E4%BD%BF%E7%94%A8/" class="">硬盘使用</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-69ea6a18acbd408b17a06556c8b882ae" class="toggle"  />
+    <label for="section-69ea6a18acbd408b17a06556c8b882ae" class="flex justify-between">
+      <a role="button" class="">笔记本</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cb0051c707d2647c7883e09b86ecf887" class="toggle"  />
+    <label for="section-cb0051c707d2647c7883e09b86ecf887" class="flex justify-between">
+      <a role="button" class="">ltsc</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/win11/" class="">Win11</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/wsl1/" class="">WSL1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/imewlconverter/" class="">Imewlconverter</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/shell/" class="">Shell</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/win10/" class="">Win10</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-896f1e92695a73a9a6017e4012138ca4" class="toggle"  />
+    <label for="section-896f1e92695a73a9a6017e4012138ca4" class="flex justify-between">
+      <a role="button" class="">soft</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8fa71f0d6d09033383b45cb2fa3e9391" class="toggle"  />
+    <label for="section-8fa71f0d6d09033383b45cb2fa3e9391" class="flex justify-between">
+      <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/jetbrains/" class="">Jetbrains</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/jetbrains/goland/" class="">GoLand</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/jetbrains/continue/" class="">Continue</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/europa/" class="">Europa</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/ffmpeg/" class="">Ffmpeg</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/notepad/" class="">Notepad</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/terminal/" class="">Terminal</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8275259d5746a9fb519d904ee673e025" class="toggle"  />
+    <label for="section-8275259d5746a9fb519d904ee673e025" class="flex justify-between">
+      <a role="button" class="">硬件库</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E5%AE%89%E5%8D%93%E8%BD%AF%E4%BB%B6/" class="">安卓软件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E7%A1%AC%E7%9B%98%E5%88%86%E7%B1%BB/" class="">硬盘分类</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E5%85%B6%E4%BB%96%E8%AE%BE%E5%A4%87/%E8%AE%BE%E5%A4%87%E8%B5%84%E6%96%99/" class="">设备资料</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4c5225b7eae8094cdab6239dd506ef7a" class="toggle"  />
+    <label for="section-4c5225b7eae8094cdab6239dd506ef7a" class="flex justify-between">
+      <a role="button" class="">代码库</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E4%B8%BB%E9%A2%98%E6%95%99%E7%A8%8B/" class="">主题教程</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%89%8D%E7%AB%AF%E8%B5%84%E6%BA%90/" class="">前端资源</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/" class="">执行脚本</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91/" class="">代码编译</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/" class="">圆周计算</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%AE%89%E5%85%A8%E7%AB%AF%E5%8F%A3/" class="">安全端口</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE/" class="">域名配置</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/posts/"  >
+        日记本
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Wondershaper</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-安装-wondershaper">1. 安装 Wondershaper</a>
+      <ul>
+        <li><a href="#debian--ubuntu--kali">Debian / Ubuntu / Kali</a></li>
+        <li><a href="#centos--rhel--fedora">CentOS / RHEL / Fedora</a></li>
+        <li><a href="#arch-linux--manjaro">Arch Linux / Manjaro</a></li>
+        <li><a href="#手动安装-github">手动安装 (GitHub)</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-查找网络接口名称">2. 查找网络接口名称</a></li>
+    <li><a href="#3-基本用法">3. 基本用法</a>
+      <ul>
+        <li><a href="#语法格式">语法格式</a></li>
+        <li><a href="#示例命令">示例命令</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-关于速度单位的重要说明">4. 关于速度单位的重要说明</a></li>
+    <li><a href="#5-设置开机自启-持久化">5. 设置开机自启 (持久化)</a></li>
+    <li><a href="#6-常见问题与注意事项">6. 常见问题与注意事项</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="wondershaper-使用教程">
+  Wondershaper 使用教程
+  <a class="anchor" href="#wondershaper-%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b">#</a>
+</h1>
+<p>Wondershaper 是一个用于 Linux 系统的简单网络流量整形（Traffic Shaping）脚本。它底层基于 <code>tc</code> (Traffic Control) 命令，但封装得更易用，主要用于<strong>限制特定网卡的上传和下载带宽</strong>。</p>
+<p>以下是详细的使用教程：</p>
+<hr>
+<h2 id="1-安装-wondershaper">
+  1. 安装 Wondershaper
+  <a class="anchor" href="#1-%e5%ae%89%e8%a3%85-wondershaper">#</a>
+</h2>
+<p>大多数 Linux 发行版的软件源中都包含 wondershaper。</p>
+<h3 id="debian--ubuntu--kali">
+  Debian / Ubuntu / Kali
+  <a class="anchor" href="#debian--ubuntu--kali">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install wondershaper
+</span></span></code></pre></div><h3 id="centos--rhel--fedora">
+  CentOS / RHEL / Fedora
+  <a class="anchor" href="#centos--rhel--fedora">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Fedora</span>
+</span></span><span style="display:flex;"><span>sudo dnf install wondershaper
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># CentOS (可能需要 EPEL 源)</span>
+</span></span><span style="display:flex;"><span>sudo yum install wondershaper
+</span></span></code></pre></div><h3 id="arch-linux--manjaro">
+  Arch Linux / Manjaro
+  <a class="anchor" href="#arch-linux--manjaro">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S wondershaper
+</span></span></code></pre></div><h3 id="手动安装-github">
+  手动安装 (GitHub)
+  <a class="anchor" href="#%e6%89%8b%e5%8a%a8%e5%ae%89%e8%a3%85-github">#</a>
+</h3>
+<p>如果软件源中没有，可以从 GitHub 下载脚本：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/magnific0/wondershaper.git
+</span></span><span style="display:flex;"><span>cd wondershaper
+</span></span><span style="display:flex;"><span>sudo make install
+</span></span></code></pre></div><hr>
+<h2 id="2-查找网络接口名称">
+  2. 查找网络接口名称
+  <a class="anchor" href="#2-%e6%9f%a5%e6%89%be%e7%bd%91%e7%bb%9c%e6%8e%a5%e5%8f%a3%e5%90%8d%e7%a7%b0">#</a>
+</h2>
+<p>在使用之前，你需要知道你要限制哪个网卡（例如 <code>eth0</code>, <code>ens33</code>, <code>wlan0</code> 等）。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ip addr
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 或者</span>
+</span></span><span style="display:flex;"><span>ifconfig
+</span></span></code></pre></div><p>找到你正在使用的网络接口名称（假设为 <code>eth0</code>）。</p>
+<hr>
+<h2 id="3-基本用法">
+  3. 基本用法
+  <a class="anchor" href="#3-%e5%9f%ba%e6%9c%ac%e7%94%a8%e6%b3%95">#</a>
+</h2>
+<h3 id="语法格式">
+  语法格式
+  <a class="anchor" href="#%e8%af%ad%e6%b3%95%e6%a0%bc%e5%bc%8f">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo wondershaper <span style="color:#f92672">[</span>网络接口<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>下载速度<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>上传速度<span style="color:#f92672">]</span>
+</span></span></code></pre></div><blockquote>
+<p><strong>注意：</strong> 速度单位通常是 <strong>Kbps</strong> (千比特每秒)，而不是 KB/s (千字节每秒)。</p>
+<ul>
+<li>1 Byte = 8 bits</li>
+<li>1024 Kbps = 128 KB/s</li>
+</ul>
+</blockquote>
+<h3 id="示例命令">
+  示例命令
+  <a class="anchor" href="#%e7%a4%ba%e4%be%8b%e5%91%bd%e4%bb%a4">#</a>
+</h3>
+<ol>
+<li>
+<p><strong>限制 eth0 网卡：</strong></p>
+<ul>
+<li>下载限速：1024 Kbps (约 128 KB/s)</li>
+<li>上传限速：512 Kbps (约 64 KB/s)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo wondershaper eth0 <span style="color:#ae81ff">1024</span> <span style="color:#ae81ff">512</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>限制无线网卡 wlan0：</strong></p>
+<ul>
+<li>下载限速：2 Mbps (2048 Kbps)</li>
+<li>上传限速：1 Mbps (1024 Kbps)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo wondershaper wlan0 <span style="color:#ae81ff">2048</span> <span style="color:#ae81ff">1024</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>查看当前限速状态：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo wondershaper status eth0
+</span></span></code></pre></div><p><em>(注：部分旧版本可能不支持 status 参数，直接运行 <code>wondershaper</code> 可查看帮助)</em></p>
+</li>
+<li>
+<p><strong>清除限速（恢复原状）：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo wondershaper clear eth0
+</span></span></code></pre></div></li>
+<li>
+<p><strong>查看帮助信息：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wondershaper -h
+</span></span></code></pre></div></li>
+</ol>
+<hr>
+<h2 id="4-关于速度单位的重要说明">
+  4. 关于速度单位的重要说明
+  <a class="anchor" href="#4-%e5%85%b3%e4%ba%8e%e9%80%9f%e5%ba%a6%e5%8d%95%e4%bd%8d%e7%9a%84%e9%87%8d%e8%a6%81%e8%af%b4%e6%98%8e">#</a>
+</h2>
+<p>这是用户最容易混淆的地方。Wondershaper 默认接受的参数单位是 <strong>Kbps (Kilobits per second)</strong>。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">你设定的值 (Kbps)</th>
+<th style="text-align:left">实际下载速度 (KB/s)</th>
+<th style="text-align:left">适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">512</td>
+<td style="text-align:left">64 KB/s</td>
+<td style="text-align:left">极低带宽限制</td>
+</tr>
+<tr>
+<td style="text-align:left">1024</td>
+<td style="text-align:left">128 KB/s</td>
+<td style="text-align:left">1 Mbps 宽带</td>
+</tr>
+<tr>
+<td style="text-align:left">2048</td>
+<td style="text-align:left">256 KB/s</td>
+<td style="text-align:left">2 Mbps 宽带</td>
+</tr>
+<tr>
+<td style="text-align:left">8192</td>
+<td style="text-align:left">1024 KB/s (1 MB/s)</td>
+<td style="text-align:left">8 Mbps 宽带</td>
+</tr>
+<tr>
+<td style="text-align:left">10240</td>
+<td style="text-align:left">1280 KB/s (1.25 MB/s)</td>
+<td style="text-align:left">10 Mbps 宽带</td>
+</tr>
+</tbody>
+</table>
+<p><strong>计算公式：</strong> <code>设定值 ÷ 8 = 实际每秒下载千字节数</code></p>
+<hr>
+<h2 id="5-设置开机自启-持久化">
+  5. 设置开机自启 (持久化)
+  <a class="anchor" href="#5-%e8%ae%be%e7%bd%ae%e5%bc%80%e6%9c%ba%e8%87%aa%e5%90%af-%e6%8c%81%e4%b9%85%e5%8c%96">#</a>
+</h2>
+<p>Wondershaper 的设置是临时的，重启网络或系统后会失效。如果需要永久生效，建议创建一个 systemd 服务。</p>
+<ol>
+<li>
+<p><strong>创建服务文件：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/systemd/system/wondershaper.service
+</span></span></code></pre></div></li>
+<li>
+<p><strong>填入以下内容</strong> (以限制 eth0 为例)：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#66d9ef">[Unit]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Description</span><span style="color:#f92672">=</span><span style="color:#e6db74">Limit bandwidth with wondershaper</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">After</span><span style="color:#f92672">=</span><span style="color:#e6db74">network.target</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">[Service]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Type</span><span style="color:#f92672">=</span><span style="color:#e6db74">oneshot</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ExecStart</span><span style="color:#f92672">=</span><span style="color:#e6db74">/usr/sbin/wondershaper eth0 1024 512</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ExecStop</span><span style="color:#f92672">=</span><span style="color:#e6db74">/usr/sbin/wondershaper clear eth0</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">RemainAfterExit</span><span style="color:#f92672">=</span><span style="color:#e6db74">yes</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">[Install]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">WantedBy</span><span style="color:#f92672">=</span><span style="color:#e6db74">multi-user.target</span>
+</span></span></code></pre></div><p><em>(注意：<code>/usr/sbin/wondershaper</code> 是脚本路径，可用 <code>which wondershaper</code> 确认)</em></p>
+</li>
+<li>
+<p><strong>启用服务：</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl daemon-reload
+</span></span><span style="display:flex;"><span>sudo systemctl enable wondershaper.service
+</span></span><span style="display:flex;"><span>sudo systemctl start wondershaper.service
+</span></span></code></pre></div></li>
+</ol>
+<hr>
+<h2 id="6-常见问题与注意事项">
+  6. 常见问题与注意事项
+  <a class="anchor" href="#6-%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98%e4%b8%8e%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a1%b9">#</a>
+</h2>
+<ol>
+<li><strong>权限问题：</strong> 所有设置限速的命令都必须使用 <code>sudo</code> 或 root 权限执行。</li>
+<li><strong>内网接口：</strong> 不要对 <code>lo</code> (本地回环接口) 进行限速，否则可能导致本地服务异常。</li>
+<li><strong>版本差异：</strong> 存在 <code>wondershaper</code> 和 <code>wondershaper2</code> 等不同版本，参数可能略有不同，请以 <code>wondershaper -h</code> 显示的帮助信息为准。</li>
+<li><strong>效果验证：</strong> 设置完成后，建议使用 <code>speedtest</code> 或下载大文件来验证限速是否生效。</li>
+<li><strong>冲突：</strong> 如果系统中已经使用了复杂的 <code>tc</code> 规则或其他防火墙流量控制，wondershaper 可能会与之冲突。</li>
+</ol>
+<p>希望这份教程能帮助你顺利使用 Wondershaper！如果有具体报错，可以提供详细信息以便进一步排查。</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-安装-wondershaper">1. 安装 Wondershaper</a>
+      <ul>
+        <li><a href="#debian--ubuntu--kali">Debian / Ubuntu / Kali</a></li>
+        <li><a href="#centos--rhel--fedora">CentOS / RHEL / Fedora</a></li>
+        <li><a href="#arch-linux--manjaro">Arch Linux / Manjaro</a></li>
+        <li><a href="#手动安装-github">手动安装 (GitHub)</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-查找网络接口名称">2. 查找网络接口名称</a></li>
+    <li><a href="#3-基本用法">3. 基本用法</a>
+      <ul>
+        <li><a href="#语法格式">语法格式</a></li>
+        <li><a href="#示例命令">示例命令</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-关于速度单位的重要说明">4. 关于速度单位的重要说明</a></li>
+    <li><a href="#5-设置开机自启-持久化">5. 设置开机自启 (持久化)</a></li>
+    <li><a href="#6-常见问题与注意事项">6. 常见问题与注意事项</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

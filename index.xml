@@ -24,6 +24,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wondershaper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wondershaper/</guid>
+      <description>Wondershaper 使用教程 # Wondershaper 是一个用于 Linux 系统的简单网络流量整形（Traffic Shaping）脚本。它底层基于 tc (Traffic Control) 命令，但封装得更易用，主要用于限制特定网卡的上传和下载带宽。&#xA;以下是详细的使用教程：&#xA;1. 安装 Wondershaper # 大多数 Linux 发行版的软件源中都包含 wondershaper。&#xA;Debian / Ubuntu / Kali # sudo apt update sudo apt install wondershaper CentOS / RHEL / Fedora # # Fedora sudo dnf install wondershaper # CentOS (可能需要 EPEL 源) sudo yum install wondershaper Arch Linux / Manjaro # sudo pacman -S wondershaper 手动安装 (GitHub) # 如果软件源中没有，可以从 GitHub 下载脚本：</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/win11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/win11/</guid>
@@ -167,7 +174,7 @@
       <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
-      <description>云服务器 # 执行脚本 # echo &amp;#34;deb http://mirrors.aliyun.com/debian bookworm main&amp;#34; &amp;gt; /etc/apt/sources.list sed -i &amp;#39;s|aliyun|ivolces|g&amp;#39; /etc/apt/sources.list wget config.tgz tar -zxvf config.tgz echo &amp;#34;HandleLidSwitch=lock&amp;#34; &amp;gt;&amp;gt; /etc/systemd/logind.conf &amp;amp;&amp;amp;\ apt update &amp;amp;&amp;amp;\ echo &amp;#39;y&amp;#39; | apt install -y bash-completion curl iproute2 iputils-ping locales net-tools openssh-server sudo vim-tiny wget &amp;amp;&amp;amp;\ apt clean &amp;amp;&amp;amp;\ echo &amp;#34;zh_CN.UTF-8 UTF-8&amp;#34; &amp;gt; /etc/locale.gen &amp;amp;&amp;amp;\ echo &amp;#34;LANG=zh_CN.UTF-8&amp;#34; &amp;gt; /etc/default/locale &amp;amp;&amp;amp;\ locale-gen &amp;amp;&amp;amp;\ rm /etc/motd /etc/update-motd.d/10-uname &amp;amp;&amp;amp;\ echo &amp;#34;PrintLastLog no&amp;#34; &amp;gt;&amp;gt; /etc/ssh/sshd_config &amp;amp;&amp;amp;\ echo &amp;#34;set bell-style none&amp;#34; &amp;gt;&amp;gt; /etc/inputrc &amp;amp;&amp;amp;\ echo &amp;#34;source /etc/profile&amp;#34; &amp;gt;&amp;gt; /root/.</description>
+      <description>云服务器 # 执行脚本 # echo &amp;#34;deb http://mirrors.ivolces.com/debian bookworm main&amp;#34; &amp;gt; /etc/apt/sources.list wget config.tgz rm /etc/ssh/* -rf tar -zxvf config.tgz -C / export DEBIAN_FRONTEND=noninteractive apt update &amp;amp;&amp;amp;\ echo &amp;#39;y&amp;#39; | apt install -y bash-completion curl iproute2 iputils-ping locales net-tools sudo vim-tiny wget &amp;amp;&amp;amp;\ apt clean &amp;amp;&amp;amp;\ echo &amp;#34;zh_CN.UTF-8 UTF-8&amp;#34; &amp;gt; /etc/locale.gen &amp;amp;&amp;amp;\ echo &amp;#34;LANG=zh_CN.UTF-8&amp;#34; &amp;gt; /etc/default/locale &amp;amp;&amp;amp;\ locale-gen &amp;amp;&amp;amp;\ rm /etc/motd /etc/update-motd.d/10-uname &amp;amp;&amp;amp;\ echo &amp;#34;PrintLastLog no&amp;#34; &amp;gt;&amp;gt; /etc/ssh/sshd_config &amp;amp;&amp;amp;\ echo &amp;#34;set bell-style none&amp;#34; &amp;gt;&amp;gt; /etc/inputrc &amp;amp;&amp;amp;\ echo &amp;#34;source /etc/profile&amp;#34; &amp;gt;&amp;gt; /root/.</description>
     </item>
     <item>
       <title></title>
@@ -286,7 +293,7 @@
       <link>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/ffmpeg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/soft/ffmpeg/</guid>
-      <description>虎牙推流 # 虎牙直播 # -re (input) 以本机帧速率读取输入。这相当于设置-readrate 1。 -stream_loop number (input) 设置输入流应循环的次数。Loop 0表示无循环，loop-1表示无限循环。 -codec[:stream_specifier] codec (input/output,per-stream)为一个或多个流选择编码器（当在输出文件之前使用时）或解码器（当在输入文件之前使用时）。codec是解码器/编码器的名称或特殊值copy（仅输出），指示流不被重新编码。 -c: copy 表示所有流格式都是复制 nohup ffmpeg -re -stream_loop -1 -i bbb.mp4 -c: copy -f flv &amp;#34;rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-7438266878141176820-3575444560-10057-A-1731860186-1?seq=1731856465590&amp;amp;type=simple&amp;#34; &amp;amp; 最快的剪辑视频 # ffmpeg -ss 1:25 -i 3.2_CG16_2_mux.mp4 -c: copy bbb.mp4 ffmpeg -i 奶牛跳舞.mp4 -vf &amp;ldquo;crop=608:1080&amp;rdquo; out.mp4&#xA;-c:v libx264 ffmpeg -i 奶牛跳舞.mp4 -vf &amp;ldquo;crop=608:1080&amp;rdquo; -c copy -out.mp4&#xA;ffmpeg -i 浆果儿捆绑白.mp4 -vf &amp;ldquo;crop=405:720&amp;rdquo; 浆果儿捆绑白-1.mp4&#xA;ffmpeg -i 1.avi -c:v libx264 1.</description>
+      <description>虎牙推流 # wget https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n7.1-latest-linux64-lgpl-7.1.tar.xz 2&amp;gt;/dev/null&#xA;虎牙直播 # -re (input) 以本机帧速率读取输入。这相当于设置-readrate 1。 -stream_loop number (input) 设置输入流应循环的次数。Loop 0表示无循环，loop-1表示无限循环。 -codec[:stream_specifier] codec (input/output,per-stream)为一个或多个流选择编码器（当在输出文件之前使用时）或解码器（当在输入文件之前使用时）。codec是解码器/编码器的名称或特殊值copy（仅输出），指示流不被重新编码。 -c: copy 表示所有流格式都是复制 nohup ffmpeg -re -stream_loop -1 -i bbb.mp4 -c: copy -f flv &amp;#34;rtmp://al.direct.huya.com/huyalive/1787660552-1787660552-7438266878141176820-3575444560-10057-A-1731860186-1?seq=1731856465590&amp;amp;type=simple&amp;#34; &amp;amp; 最快的剪辑视频 # ffmpeg -ss 1:25 -i 3.2_CG16_2_mux.mp4 -c: copy bbb.mp4 ffmpeg -i 奶牛跳舞.mp4 -vf &amp;ldquo;crop=608:1080&amp;rdquo; out.mp4&#xA;-c:v libx264 ffmpeg -i 奶牛跳舞.mp4 -vf &amp;ldquo;crop=608:1080&amp;rdquo; -c copy -out.mp4&#xA;ffmpeg -i 浆果儿捆绑白.mp4 -vf &amp;ldquo;crop=405:720&amp;rdquo; 浆果儿捆绑白-1.mp4&#xA;ffmpeg -i 1.</description>
     </item>
     <item>
       <title></title>
@@ -371,6 +378,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%9C%86%E5%91%A8%E8%AE%A1%E7%AE%97/</guid>
       <description>计算圆周率 # 圆周率查询 https://www.pilookup.com/zh-cn/ 圆周率下载 https://www.pilookup.com/zh-cn/download.html 源代码 https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fft.html 最大ftt值为536870912大约512M内存 使用FFT+AGM代码计算 # apt install gcc make -y wget https://www.kurims.kyoto-u.ac.jp/~ooura/pi_fftc6_src.tgz tar -zxvf pi_fftc6_src.tgz cd pi_fftc6/ sed -i &amp;#34;s|-fast|-Ofast|g&amp;#34; Makefile_64bit sed -i &amp;#39;s|scanf(&amp;#34;%lg&amp;#34;, &amp;amp;x)|x=100000|g&amp;#39; pi_fftcw.c make -f Makefile_64bit nohup ./pi_cw &amp;amp; cat pi.dat 四行代码求圆周率 # 资料 https://cs.uwaterloo.ca/~alopez-o/math-faq/mathtext/node12.html pi.c如下,执行 * gcc pi.c &amp;amp;&amp;amp; ./a.out * #include &amp;lt;stdio.h&amp;gt; int a=10000,b,c=2800,d,e,f[2801],g; void main(){ for(;b-c;)f[b++]=a/5; for(;d=0,g=c*2;c-=14,printf(&amp;#34;%.4d&amp;#34;,e+d/a),e=d%a)for(b=c;d+=f[b]*a, f[b]=d%--g,d/=g--,--b;d*=b);} 下载 # wget https://files.pilookup.com/pi/1-100000000.zip wget https://files.pilookup.com/pi/100000001-200000000.zip wget https://files.pilookup.com/pi/200000001-300000000.zip wget https://files.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%AE%89%E5%85%A8%E7%AB%AF%E5%8F%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E5%AE%89%E5%85%A8%E7%AB%AF%E5%8F%A3/</guid>
+      <description> 端口安全 # Chromium内核浏览器 # Chromium不安全端口源码 const int kRestrictedPorts[] = { 0, // Not in Fetch Spec. 1, // tcpmux 7, // echo 9, // discard 11, // systat 13, // daytime 15, // netstat 17, // qotd 19, // chargen 20, // ftp data 21, // ftp access 22, // ssh 23, // telnet 25, // smtp 37, // time 42, // name 43, // nicname 53, // domain 69, // tftp 77, // priv-rjs 79, // finger 87, // ttylink 95, // supdup 101, // hostriame 102, // iso-tsap 103, // gppitnp 104, // acr-nema 109, // pop2 110, // pop3 111, // sunrpc 113, // auth 115, // sftp 117, // uucp-path 119, // nntp 123, // NTP 135, // loc-srv /epmap 137, // netbios 139, // netbios 143, // imap2 161, // snmp 179, // BGP 389, // ldap 427, // SLP (Also used by Apple Filing Protocol) 465, // smtp+ssl 512, // print / exec 513, // login 514, // shell 515, // printer 526, // tempo 530, // courier 531, // chat 532, // netnews 540, // uucp 548, // AFP (Apple Filing Protocol) 554, // rtsp 556, // remotefs 563, // nntp+ssl 587, // smtp (rfc6409) 601, // syslog-conn (rfc3195) 636, // ldap+ssl 989, // ftps-data 990, // ftps 993, // ldap+ssl 995, // pop3+ssl 1719, // h323gatestat 1720, // h323hostcall 1723, // pptp 2049, // nfs 3659, // apple-sasl / PasswordServer 4045, // lockd 5060, // sip 5061, // sips 6000, // X11 6566, // sane-port 6665, // Alternate IRC [Apple addition] 6666, // Alternate IRC [Apple addition] 6667, // Standard IRC [Apple addition] 6668, // Alternate IRC [Apple addition] 6669, // Alternate IRC [Apple addition] 6697, // IRC + TLS 10080, // Amanda }; </description>
     </item>
     <item>
       <title></title>
