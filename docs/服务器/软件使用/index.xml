@@ -30,6 +30,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/nginx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/nginx/</guid>
+      <description>Nginx # HPPTS签证.mm域名 # 可能要 rm /etc/nginx/sites-enabled/default IP=10.0.0.1 openssl req -x509 -nodes -not_before 19890604000000Z -not_after 20890604000000Z \ -newkey rsa:2048 -keyout /etc/nginx/mm.key -out /etc/nginx/mm.crt \ -subj &amp;#34;/CN=*.mm&amp;#34; -addext &amp;#34;subjectAltName=DNS:*.mm,IP:$IP&amp;#34; sudo chmod 600 /etc/nginx/mm.key sudo chmod 644 /etc/nginx/mm.crt cp /etc/nginx/mm.crt /var/www/html/ cat &amp;gt; /etc/nginx/sites-enabled/443.conf &amp;lt;&amp;lt; &amp;#39;EOF&amp;#39; server { listen 443 ssl; ssl_certificate /etc/nginx/mm.crt; ssl_certificate_key /etc/nginx/mm.key; location / { root /var/www/html; index index.nginx-debian.html; } } EOF wget https://zian.netlify.app/debian/https.tgz &amp;amp;&amp;amp;\ tar -zxf https.tgz -C /etc/nginx/ &amp;amp;&amp;amp;\ rm https.</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/ollama/</guid>

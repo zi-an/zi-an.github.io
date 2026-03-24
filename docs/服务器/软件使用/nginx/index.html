@@ -3,22 +3,23 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="Nginx # HPPTS签证.mm域名 # 可能要 rm /etc/nginx/sites-enabled/default IP=10.0.0.1 openssl req -x509 -nodes -not_before 19890604000000Z -not_after 20890604000000Z \ -newkey rsa:2048 -keyout /etc/nginx/mm.key -out /etc/nginx/mm.crt \ -subj &#34;/CN=*.mm&#34; -addext &#34;subjectAltName=DNS:*.mm,IP:$IP&#34; sudo chmod 600 /etc/nginx/mm.key sudo chmod 644 /etc/nginx/mm.crt cp /etc/nginx/mm.crt /var/www/html/ cat &gt; /etc/nginx/sites-enabled/443.conf &lt;&lt; &#39;EOF&#39; server { listen 443 ssl; ssl_certificate /etc/nginx/mm.crt; ssl_certificate_key /etc/nginx/mm.key; location / { root /var/www/html; index index.nginx-debian.html; } } EOF wget https://zian.netlify.app/debian/https.tgz &amp;&amp;\ tar -zxf https.tgz -C /etc/nginx/ &amp;&amp;\ rm https.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="ltsc" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/" />
-<title>ltsc
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="Nginx # HPPTS签证.mm域名 # 可能要 rm /etc/nginx/sites-enabled/default IP=10.0.0.1 openssl req -x509 -nodes -not_before 19890604000000Z -not_after 20890604000000Z \ -newkey rsa:2048 -keyout /etc/nginx/mm.key -out /etc/nginx/mm.crt \ -subj &#34;/CN=*.mm&#34; -addext &#34;subjectAltName=DNS:*.mm,IP:$IP&#34; sudo chmod 600 /etc/nginx/mm.key sudo chmod 644 /etc/nginx/mm.crt cp /etc/nginx/mm.crt /var/www/html/ cat &gt; /etc/nginx/sites-enabled/443.conf &lt;&lt; &#39;EOF&#39; server { listen 443 ssl; ssl_certificate /etc/nginx/mm.crt; ssl_certificate_key /etc/nginx/mm.key; location / { root /var/www/html; index index.nginx-debian.html; } } EOF wget https://zian.netlify.app/debian/https.tgz &amp;&amp;\ tar -zxf https.tgz -C /etc/nginx/ &amp;&amp;\ rm https." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/nginx/" /><meta property="article:section" content="docs" />
+
+
+<title>Nginx
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/">
+<link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/nginx/">
 <link rel="stylesheet" href="/book.min.c0de645cb4cb75e493aef507ff38ba72ba0f974534b528b15573c8cda4febc46.css" integrity="sha256-wN5kXLTLdeSTrvUH/zi6croPl0U0tSixVXPIzaT&#43;vEY=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/zh.search.min.7b89216ef8176f9caca18eaf591784eb3fe618be0f7b975513e5a61a619cfe86.js" integrity="sha256-e4khbvgXb5ysoY6vWReE6z/mGL4Pe5dVE&#43;WmGmGc/oY=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="https://example.org/docs/%E7%AC%94%E8%AE%B0%E6%9C%AC/ltsc/index.xml" title="" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -71,7 +72,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-0488dc51fd99636dd6b4d238151c1db5" class="toggle"  />
+    <input type="checkbox" id="section-0488dc51fd99636dd6b4d238151c1db5" class="toggle" checked />
     <label for="section-0488dc51fd99636dd6b4d238151c1db5" class="flex justify-between">
       <a role="button" class="">服务器</a>
     </label>
@@ -220,7 +221,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-1c94fe179191121debb232d029fa7ab0" class="toggle"  />
+    <input type="checkbox" id="section-1c94fe179191121debb232d029fa7ab0" class="toggle" checked />
     <label for="section-1c94fe179191121debb232d029fa7ab0" class="flex justify-between">
       <a role="button" class="">软件使用</a>
     </label>
@@ -275,7 +276,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/nginx/" class="">Nginx</a>
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/nginx/" class="active">Nginx</a>
   
 
         </li>
@@ -428,7 +429,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-69ea6a18acbd408b17a06556c8b882ae" class="toggle" checked />
+    <input type="checkbox" id="section-69ea6a18acbd408b17a06556c8b882ae" class="toggle"  />
     <label for="section-69ea6a18acbd408b17a06556c8b882ae" class="flex justify-between">
       <a role="button" class="">笔记本</a>
     </label>
@@ -444,9 +445,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-cb0051c707d2647c7883e09b86ecf887" class="toggle" checked />
+    <input type="checkbox" id="section-cb0051c707d2647c7883e09b86ecf887" class="toggle"  />
     <label for="section-cb0051c707d2647c7883e09b86ecf887" class="flex justify-between">
-      <a role="button" class="active">ltsc</a>
+      <a role="button" class="">ltsc</a>
     </label>
   
 
@@ -870,7 +871,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>ltsc</strong>
+  <strong>Nginx</strong>
 
   <label for="toc-control">
     
@@ -884,7 +885,11 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#hppts签证mm域名">HPPTS签证.mm域名</a></li>
+  </ul>
+</nav>
 
 
 
@@ -895,7 +900,63 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"></article>
+  <article class="markdown book-article"><h1 id="nginx">
+  Nginx
+  <a class="anchor" href="#nginx">#</a>
+</h1>
+<h2 id="hppts签证mm域名">
+  HPPTS签证.mm域名
+  <a class="anchor" href="#hppts%e7%ad%be%e8%af%81mm%e5%9f%9f%e5%90%8d">#</a>
+</h2>
+<ul>
+<li>可能要 rm /etc/nginx/sites-enabled/default</li>
+</ul>
+<pre tabindex="0"><code>IP=10.0.0.1
+openssl req -x509 -nodes -not_before 19890604000000Z -not_after 20890604000000Z \
+-newkey rsa:2048 -keyout /etc/nginx/mm.key -out /etc/nginx/mm.crt \
+-subj &#34;/CN=*.mm&#34; -addext &#34;subjectAltName=DNS:*.mm,IP:$IP&#34;
+
+sudo chmod 600 /etc/nginx/mm.key
+sudo chmod 644 /etc/nginx/mm.crt
+cp /etc/nginx/mm.crt /var/www/html/
+
+cat &gt; /etc/nginx/sites-enabled/443.conf &lt;&lt; &#39;EOF&#39;
+server {
+    listen 443 ssl;
+    ssl_certificate /etc/nginx/mm.crt;
+    ssl_certificate_key /etc/nginx/mm.key;
+    location / {
+        root /var/www/html;
+        index index.nginx-debian.html;
+    }
+}
+EOF
+</code></pre><pre tabindex="0"><code>wget https://zian.netlify.app/debian/https.tgz &amp;&amp;\
+tar -zxf https.tgz -C /etc/nginx/ &amp;&amp;\
+rm https.tgz
+</code></pre><p>vi /etc/nginx/sites-enabled/443.conf</p>
+<pre tabindex="0"><code>server {
+    listen 443 ssl;
+    http2 on;
+    ssl_certificate /etc/nginx/mm.crt;
+    ssl_certificate_key /etc/nginx/mm.key;
+    root /var/www/html;
+}
+</code></pre><h1 id="8443">
+  8443
+  <a class="anchor" href="#8443">#</a>
+</h1>
+<pre tabindex="0"><code>server {
+	http2 on;
+	http3 on;
+    listen 8443 ssl;
+	listen 8443 quic reuseport;
+    ssl_certificate /etc/nginx/mm.crt;
+    ssl_certificate_key /etc/nginx/mm.key;
+	add_header Alt-Svc &#39;h3=&#34;:8443&#34;; ma=2592000&#39;;
+    root /var/www/html/;
+}
+</code></pre></article>
  
       
 
@@ -920,6 +981,10 @@ https://github.com/alex-shpak/hugo-book
 
       
   
+  <div class="book-comments">
+
+</div>
+  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -930,7 +995,11 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#hppts签证mm域名">HPPTS签证.mm域名</a></li>
+  </ul>
+</nav>
 
 
  

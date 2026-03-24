@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="服务器常用脚本 # 参考资料 https://github.com/fengyuhetao/shell
-常用定时器 # 自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches 0 */2 * * * docker exec zian updategit powersave.sh # 两小时自动关机 debian13需安装sudo su root &#43; apt install -y wtmpdb cat &gt; /bin/powersave.sh &lt;&lt; &#39;EOF&#39; #!/bin/bash seconds=7200 uptime=$(($(date &#43;%s) - $(stat -c %Y /proc/1))) if [ $uptime -lt $seconds ]; then echo &#34;less than 2 hours ago&#34; exit 0 fi since_time=$(date -d &#34;$seconds seconds ago&#34; &#39;&#43;%Y-%m-%d %H:%M:%S&#39;) recent_ssh_login=$(last -s &#34;$since_time&#34; | grep &#34;pts&#34;) if [ -z &#34;$recent_ssh_login&#34; ]; then echo &#34;shutdown time:&#34;$(date &#34;&#43;%Y-%m-%d %H:%M:%S&#34;) /sbin/poweroff fi EOF chmod &#43;x /bin/powersave.">
+常用定时器 # 自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches 0 */2 * * * docker exec zian updategit powersave.sh # 两小时自动关机 debian13需安装sudo su root &#43; apt install -y wtmpdb cat &gt; /bin/powersave.sh &lt;&lt; &#39;EOF&#39; #!/bin/bash if ping -c 2 -W 1 10.0.0.6 &gt; /dev/null 2&gt;&amp;1; then echo &#34;10.0.0.6 online&#34; exit 0 fi seconds=7200 uptime=$(($(date &#43;%s) - $(stat -c %Y /proc/1))) if [ $uptime -lt $seconds ]; then echo &#34;less than 2 hours ago&#34; exit 0 fi since_time=$(date -d &#34;$seconds seconds ago&#34; &#39;&#43;%Y-%m-%d %H:%M:%S&#39;) recent_ssh_login=$(last -s &#34;$since_time&#34; | grep &#34;pts&#34;) if [ -z &#34;$recent_ssh_login&#34; ]; then echo &#34;shutdown time:&#34;$(date &#34;&#43;%Y-%m-%d %H:%M:%S&#34;) /sbin/poweroff fi EOF chmod &#43;x /bin/powersave.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
 <meta property="og:description" content="服务器常用脚本 # 参考资料 https://github.com/fengyuhetao/shell
-常用定时器 # 自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches 0 */2 * * * docker exec zian updategit powersave.sh # 两小时自动关机 debian13需安装sudo su root &#43; apt install -y wtmpdb cat &gt; /bin/powersave.sh &lt;&lt; &#39;EOF&#39; #!/bin/bash seconds=7200 uptime=$(($(date &#43;%s) - $(stat -c %Y /proc/1))) if [ $uptime -lt $seconds ]; then echo &#34;less than 2 hours ago&#34; exit 0 fi since_time=$(date -d &#34;$seconds seconds ago&#34; &#39;&#43;%Y-%m-%d %H:%M:%S&#39;) recent_ssh_login=$(last -s &#34;$since_time&#34; | grep &#34;pts&#34;) if [ -z &#34;$recent_ssh_login&#34; ]; then echo &#34;shutdown time:&#34;$(date &#34;&#43;%Y-%m-%d %H:%M:%S&#34;) /sbin/poweroff fi EOF chmod &#43;x /bin/powersave." />
+常用定时器 # 自动休眠 清楚内存 更新容器内的git项目 定时器日志需要安装邮箱 apt install postfix -y (选择5. Local only)日志在/var/mail/用户下 */10 * * * * echo 3 &gt; /proc/sys/vm/drop_caches 0 */2 * * * docker exec zian updategit powersave.sh # 两小时自动关机 debian13需安装sudo su root &#43; apt install -y wtmpdb cat &gt; /bin/powersave.sh &lt;&lt; &#39;EOF&#39; #!/bin/bash if ping -c 2 -W 1 10.0.0.6 &gt; /dev/null 2&gt;&amp;1; then echo &#34;10.0.0.6 online&#34; exit 0 fi seconds=7200 uptime=$(($(date &#43;%s) - $(stat -c %Y /proc/1))) if [ $uptime -lt $seconds ]; then echo &#34;less than 2 hours ago&#34; exit 0 fi since_time=$(date -d &#34;$seconds seconds ago&#34; &#39;&#43;%Y-%m-%d %H:%M:%S&#39;) recent_ssh_login=$(last -s &#34;$since_time&#34; | grep &#34;pts&#34;) if [ -z &#34;$recent_ssh_login&#34; ]; then echo &#34;shutdown time:&#34;$(date &#34;&#43;%Y-%m-%d %H:%M:%S&#34;) /sbin/poweroff fi EOF chmod &#43;x /bin/powersave." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/" /><meta property="article:section" content="docs" />
 
@@ -21,7 +21,7 @@
 <link rel="canonical" href="https://example.org/docs/%E4%BB%A3%E7%A0%81%E5%BA%93/%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC/">
 <link rel="stylesheet" href="/book.min.c0de645cb4cb75e493aef507ff38ba72ba0f974534b528b15573c8cda4febc46.css" integrity="sha256-wN5kXLTLdeSTrvUH/zi6croPl0U0tSixVXPIzaT&#43;vEY=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.157a8fcc1d8a6e38f67c571870e6044cbaf19cf4cf71cd3b0ba4723385d5b169.js" integrity="sha256-FXqPzB2Kbjj2fFcYcOYETLrxnPTPcc07C6RyM4XVsWk=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.7b89216ef8176f9caca18eaf591784eb3fe618be0f7b975513e5a61a619cfe86.js" integrity="sha256-e4khbvgXb5ysoY6vWReE6z/mGL4Pe5dVE&#43;WmGmGc/oY=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -266,6 +266,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/wondershaper/" class="">Wondershaper</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/nginx/" class="">Nginx</a>
   
 
         </li>
@@ -879,7 +892,7 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#常用定时器">常用定时器</a>
       <ul>
         <li><a href="#powersavesh">powersave.sh</a></li>
-        <li><a href="#updategit">updategit</a></li>
+        <li><a href="#gitupdate">gitupdate</a></li>
         <li><a href="#kaibosh">kaibo.sh</a></li>
         <li><a href="#alias">alias</a></li>
         <li><a href="#更新mtproto">更新mtproto</a></li>
@@ -926,12 +939,20 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 <pre tabindex="0"><code>cat &gt; /bin/powersave.sh &lt;&lt; &#39;EOF&#39;
 #!/bin/bash
+
+if ping -c 2 -W 1 10.0.0.6 &gt; /dev/null 2&gt;&amp;1; then
+        echo &#34;10.0.0.6 online&#34;
+        exit 0
+fi
+
 seconds=7200
 uptime=$(($(date +%s) - $(stat -c %Y /proc/1)))
 if [ $uptime -lt $seconds ]; then
         echo &#34;less than 2 hours ago&#34;
         exit 0
 fi
+
+
 since_time=$(date -d &#34;$seconds seconds ago&#34; &#39;+%Y-%m-%d %H:%M:%S&#39;)
 recent_ssh_login=$(last -s &#34;$since_time&#34; | grep &#34;pts&#34;)
 if [ -z &#34;$recent_ssh_login&#34; ]; then
@@ -941,18 +962,21 @@ fi
 EOF
 chmod +x /bin/powersave.sh
 (crontab -l 2&gt;/dev/null; echo &#34;*/10 * * * * /bin/powersave.sh&#34;) | crontab -
-</code></pre><h3 id="updategit">
-  updategit
-  <a class="anchor" href="#updategit">#</a>
+</code></pre><h3 id="gitupdate">
+  gitupdate
+  <a class="anchor" href="#gitupdate">#</a>
 </h3>
 <pre tabindex="0"><code>cat &gt; /bin/updategit &lt;&lt; &#39;EOF&#39;
 #!/bin/bash
 
-cd /var/www/
-rm master*
-command -v unzip &gt;/dev/null 2&gt;&amp;1 || apt install -y unzip
-wget https://github.com/zi-an/zi-an.github.io/archive/refs/heads/master.zip
-unzip -o master.zip
+ulimit -t 60
+command -v git &gt;/dev/null 2&gt;&amp;1 || { sudo apt update -qq &amp;&amp; sudo apt install -y git; }
+
+if [ -d /var/www/zian ]; then
+        cd /var/www/zian &amp;&amp; git pull
+else
+        git clone --depth=1 https://github.com/zi-an/zi-an.github.io.git /var/www/zian
+f
 EOF
 </code></pre><h3 id="kaibosh">
   kaibo.sh
@@ -981,7 +1005,7 @@ ff() {
 }
 
 if [ &#34;$(uname -s)&#34; = &#34;Linux&#34; ]; then
-        if [ -z $SSH_TTY ]; then LANG=; fi
+        if [ -z $SSH_TTY ] &amp;&amp; [ ! -f /.dockerenv ]; then LANG=; fi
         alias xunlei=&#34;docker start xunlei&#34;
         alias ollama=&#39;docker exec -it ollama sh&#39;
         alias qwen3=&#39;docker exec -it ollama ollama run qwen3:0.6b --think=false&#39;
@@ -991,7 +1015,7 @@ if [ &#34;$(uname -s)&#34; = &#34;Linux&#34; ]; then
         alias mailroot=&#39;sudo tail -n100 /var/mail/root | nl -ba&#39;
         alias maildocker=&#39;tail -n100 /var/mail/docker | nl -ba&#39;
 
-        alias cpumen=&#39;ps -eo pid,pcpu,rss:8,cmd --sort=-rss --width 80| head -n 20&#39;
+        alias mm=&#39;ps -eo rss:8,pid,cmd --sort=-rss --width 80| head -n 20&#39;
         alias dps=&#34;docker ps -a --format &#39;table {{.Names}}\t{{.Image}}\t{{.Status}}&#39;&#34;
         alias v2rayalog=&#34;docker logs -fn20 v2raya | awk &#39;{print substr(\$2,1,8), \$5, \$7, \$8}&#39;&#34;
 
@@ -1016,7 +1040,6 @@ else
 				#gobuildlinux monitors ./cmd/monitors/ 编译目录需要从.开始
 		}
 fi
-
 EOF
 </code></pre><h3 id="更新mtproto">
   更新mtproto
@@ -1025,8 +1048,8 @@ EOF
 <ul>
 <li>编辑配置文件</li>
 <li>定时器 */10 * * * * docker exec -i zian mtproto.sh</li>
-<li>mtproto.sh &ldquo;<a href="https://t.me/s/qiuyue2%22">https://t.me/s/qiuyue2"</a> 10060 91</li>
-<li>mtproto.sh &ldquo;<a href="https://t.me/s/MFDLPD%22">https://t.me/s/MFDLPD"</a> 16469 92</li>
+<li>mtproto.sh &lsquo;<a href="https://t.me/s/qiuyue2%27">https://t.me/s/qiuyue2'</a> 10060 91</li>
+<li>mtproto.sh &lsquo;<a href="https://t.me/s/MFDLPD%27">https://t.me/s/MFDLPD'</a> 16469 92</li>
 </ul>
 <pre tabindex="0"><code>apt update
 apt install -y libnginx-mod-stream nmap
@@ -1110,7 +1133,7 @@ chmod +x /bin/mtproto.sh
     <li><a href="#常用定时器">常用定时器</a>
       <ul>
         <li><a href="#powersavesh">powersave.sh</a></li>
-        <li><a href="#updategit">updategit</a></li>
+        <li><a href="#gitupdate">gitupdate</a></li>
         <li><a href="#kaibosh">kaibo.sh</a></li>
         <li><a href="#alias">alias</a></li>
         <li><a href="#更新mtproto">更新mtproto</a></li>
