@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Hadoop 3.4.1 单机版 # https://www.runoob.com/w3cnote/hadoop-tutorial.html https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html 目前JDK11能正常使用,JDK17网页无法使用上传下载 root操作 # export HADOOP_VERSION=3.4.1 wget https://dlcdn.apache.org/hadoop/common/hadoop-${HADOOP_VERSION}/hadoop-${HADOOP_VERSION}.tar.gz sed -i &#34;s|bookworm-updates|bookworm-updates bullseye|g&#34; /etc/apt/sources.list.d/debian.sources apt update &amp;&amp; apt install openjdk-11-jdk-headless -y sed -i &#39;$aexport HADOOP_VERSION=\$HADOOP_VERSION&#39; /etc/profile sed -i &#39;$aexport JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64&#39; /etc/profile sed -i &#39;$aexport HADOOP_HOME=/opt/hadoop&#39; /etc/profile sed -i &#39;$aPATH=\$PATH:\$JAVA_HOME/bin/:\$HADOOP_HOME/bin:\$HADOOP_HOME/sbin&#39; /etc/profile sudo useradd -ms/bin/bash -k/etc/skel/ hadoop sudo usermod -aG sudo hadoop echo hadoop:. | chpasswd tar -zxvf hadoop-${HADOOP_VERSION}.tar.gz -C /opt/ --transform=&#34;s|hadoop-${HADOOP_VERSION}|hadoop|g&#34; rm hadoop-${HADOOP_VERSION}.tar.gz sed -i &#34;1 i JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64&#34; /opt/hadoop/etc/hadoop/hadoop-env.">
+<meta name="description" content="安装Coredns # wget https://github.com/coredns/coredns/releases/download/v1.14.3/coredns_1.14.3_linux_amd64.tgz tar -zxvf coredns_1.14.3_linux_amd64.tgz rm coredns_1.14.3_linux_amd64.tgz mv coredns /bin/ cat &gt; /etc/dns.conf &lt;&lt; &#39;EOF&#39; .:53 { acl { allow net 120.0.0.0/8 drop } hosts { 14.103.224.46 yun.mm 127.0.0.1 x.mm 10.0.0.1 1.mm 10.0.0.2 2.mm 10.0.0.3 3.mm 10.0.0.4 4.mm 10.0.0.5 5.mm 10.0.0.6 6.mm 10.0.0.7 7.mm 10.0.0.8 8.mm 10.0.0.9 9.mm 10.0.0.10 10.mm 10.0.0.209 209.mm 10.0.0.221 221.mm 10.0.0.222 222.mm fallthrough } forward . 223.5.5.5 log . &#34;from:{remote} domain:{name}&#34; } fi EOF 快速启动(打印时间) # sudo su root dns() { (coredns -conf /etc/dns.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Hadoop 3.4.1 单机版" />
-<meta property="og:description" content="Hadoop 3.4.1 单机版 # https://www.runoob.com/w3cnote/hadoop-tutorial.html https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html 目前JDK11能正常使用,JDK17网页无法使用上传下载 root操作 # export HADOOP_VERSION=3.4.1 wget https://dlcdn.apache.org/hadoop/common/hadoop-${HADOOP_VERSION}/hadoop-${HADOOP_VERSION}.tar.gz sed -i &#34;s|bookworm-updates|bookworm-updates bullseye|g&#34; /etc/apt/sources.list.d/debian.sources apt update &amp;&amp; apt install openjdk-11-jdk-headless -y sed -i &#39;$aexport HADOOP_VERSION=\$HADOOP_VERSION&#39; /etc/profile sed -i &#39;$aexport JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64&#39; /etc/profile sed -i &#39;$aexport HADOOP_HOME=/opt/hadoop&#39; /etc/profile sed -i &#39;$aPATH=\$PATH:\$JAVA_HOME/bin/:\$HADOOP_HOME/bin:\$HADOOP_HOME/sbin&#39; /etc/profile sudo useradd -ms/bin/bash -k/etc/skel/ hadoop sudo usermod -aG sudo hadoop echo hadoop:. | chpasswd tar -zxvf hadoop-${HADOOP_VERSION}.tar.gz -C /opt/ --transform=&#34;s|hadoop-${HADOOP_VERSION}|hadoop|g&#34; rm hadoop-${HADOOP_VERSION}.tar.gz sed -i &#34;1 i JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64&#34; /opt/hadoop/etc/hadoop/hadoop-env." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="安装Coredns # wget https://github.com/coredns/coredns/releases/download/v1.14.3/coredns_1.14.3_linux_amd64.tgz tar -zxvf coredns_1.14.3_linux_amd64.tgz rm coredns_1.14.3_linux_amd64.tgz mv coredns /bin/ cat &gt; /etc/dns.conf &lt;&lt; &#39;EOF&#39; .:53 { acl { allow net 120.0.0.0/8 drop } hosts { 14.103.224.46 yun.mm 127.0.0.1 x.mm 10.0.0.1 1.mm 10.0.0.2 2.mm 10.0.0.3 3.mm 10.0.0.4 4.mm 10.0.0.5 5.mm 10.0.0.6 6.mm 10.0.0.7 7.mm 10.0.0.8 8.mm 10.0.0.9 9.mm 10.0.0.10 10.mm 10.0.0.209 209.mm 10.0.0.221 221.mm 10.0.0.222 222.mm fallthrough } forward . 223.5.5.5 log . &#34;from:{remote} domain:{name}&#34; } fi EOF 快速启动(打印时间) # sudo su root dns() { (coredns -conf /etc/dns." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-singlecluster/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/coredns/" /><meta property="article:section" content="docs" />
 
 
-<title>Hadoop 3.4.1 单机版
+<title>Coredns
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-singlecluster/">
+<link rel="canonical" href="https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/coredns/">
 <link rel="stylesheet" href="/book.min.c0de645cb4cb75e493aef507ff38ba72ba0f974534b528b15573c8cda4febc46.css" integrity="sha256-wN5kXLTLdeSTrvUH/zi6croPl0U0tSixVXPIzaT&#43;vEY=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/zh.search.min.c23efcc6dd5e92cb2887a1aeab8ba5bd9cfcec379bf00dce7bb8bdee11827bca.js" integrity="sha256-wj78xt1ekssoh6Guq4ulvZz87Deb8A3Oe7i97hGCe8o=" crossorigin="anonymous"></script>
@@ -88,7 +88,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-325b6b542a51d3d21ff88c5bf7887306" class="toggle" checked />
+    <input type="checkbox" id="section-325b6b542a51d3d21ff88c5bf7887306" class="toggle"  />
     <label for="section-325b6b542a51d3d21ff88c5bf7887306" class="flex justify-between">
       <a role="button" class="">分布式篇</a>
     </label>
@@ -104,7 +104,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-singlecluster/" class="active">Hadoop 3.4.1 单机版</a>
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%88%86%E5%B8%83%E5%BC%8F%E7%AF%87/hadoop3.4.1-singlecluster/" class="">Hadoop 3.4.1 单机版</a>
   
 
         </li>
@@ -221,7 +221,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-1c94fe179191121debb232d029fa7ab0" class="toggle"  />
+    <input type="checkbox" id="section-1c94fe179191121debb232d029fa7ab0" class="toggle" checked />
     <label for="section-1c94fe179191121debb232d029fa7ab0" class="flex justify-between">
       <a role="button" class="">软件使用</a>
     </label>
@@ -276,7 +276,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/coredns/" class="">Coredns</a>
+    <a href="/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/coredns/" class="active">Coredns</a>
   
 
         </li>
@@ -884,7 +884,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Hadoop 3.4.1 单机版</strong>
+  <strong>Coredns</strong>
 
   <label for="toc-control">
     
@@ -900,10 +900,8 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#root操作">root操作</a></li>
-    <li><a href="#hadoop免登录hadoop">hadoop免登录hadoop</a></li>
-    <li><a href="#hadoop操作">hadoop操作</a></li>
-    <li><a href="#启动命令">启动命令</a></li>
+    <li><a href="#安装coredns">安装Coredns</a></li>
+    <li><a href="#快速启动打印时间">快速启动(打印时间)</a></li>
   </ul>
 </nav>
 
@@ -916,105 +914,56 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h1 id="hadoop-341-单机版">
-  Hadoop 3.4.1 单机版
-  <a class="anchor" href="#hadoop-341-%e5%8d%95%e6%9c%ba%e7%89%88">#</a>
-</h1>
-<ul>
-<li><a href="https://www.runoob.com/w3cnote/hadoop-tutorial.html">https://www.runoob.com/w3cnote/hadoop-tutorial.html</a></li>
-<li><a href="https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html">https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html</a></li>
-<li>目前JDK11能正常使用,JDK17网页无法使用上传下载</li>
-</ul>
-<h2 id="root操作">
-  root操作
-  <a class="anchor" href="#root%e6%93%8d%e4%bd%9c">#</a>
+  <article class="markdown book-article"><h2 id="安装coredns">
+  安装Coredns
+  <a class="anchor" href="#%e5%ae%89%e8%a3%85coredns">#</a>
 </h2>
-<pre tabindex="0"><code>export HADOOP_VERSION=3.4.1
-wget https://dlcdn.apache.org/hadoop/common/hadoop-${HADOOP_VERSION}/hadoop-${HADOOP_VERSION}.tar.gz
-sed -i &#34;s|bookworm-updates|bookworm-updates bullseye|g&#34; /etc/apt/sources.list.d/debian.sources
-apt update &amp;&amp; apt install openjdk-11-jdk-headless -y
-sed -i &#39;$aexport HADOOP_VERSION=\$HADOOP_VERSION&#39; /etc/profile
-sed -i &#39;$aexport JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64&#39; /etc/profile
-sed -i &#39;$aexport HADOOP_HOME=/opt/hadoop&#39; /etc/profile
-sed -i &#39;$aPATH=\$PATH:\$JAVA_HOME/bin/:\$HADOOP_HOME/bin:\$HADOOP_HOME/sbin&#39; /etc/profile
-sudo useradd -ms/bin/bash -k/etc/skel/ hadoop
-sudo usermod -aG sudo hadoop
-echo hadoop:. | chpasswd
-tar -zxvf hadoop-${HADOOP_VERSION}.tar.gz -C /opt/ --transform=&#34;s|hadoop-${HADOOP_VERSION}|hadoop|g&#34;
-rm hadoop-${HADOOP_VERSION}.tar.gz
-sed -i &#34;1 i JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64&#34; /opt/hadoop/etc/hadoop/hadoop-env.sh
-find /opt/hadoop/ -name *cmd -delete
-mkdir /opt/hadoop/data
-chown hadoop /opt -R
-</code></pre><details ><summary>文档(可以不做)</summary>
-  <div class="markdown-inner">
-    <ul>
-<li><a href="http://222.mm">文档</a> <a href="http://222.mm:9870">管理</a></li>
-</ul>
-<pre tabindex="0"><code>apt install nginx -y
-cp /opt/hadoop/share/doc/hadoop/* /var/www/html -r
-nginx
-</code></pre>
-  </div>
-</details>
-
-<h2 id="hadoop免登录hadoop">
-  hadoop免登录hadoop
-  <a class="anchor" href="#hadoop%e5%85%8d%e7%99%bb%e5%bd%95hadoop">#</a>
-</h2>
-<pre tabindex="0"><code>mkdir ~/.ssh
-echo &#34;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDR5HpVwM8VvMcfS+gJBkW/IS6n7Pgcd1Rkq6AbxP7aShCFJewuPhQM6FslaARkWoAgH4wC3qtMxLkZ5fNgAPFewYEYuJXARGOIuBoAtwJYc7KYoDeYwkhFcnsWWAWezYOtqG3IapRfIgOcx3+j7HditZAn5nCsZit4WZAD+VdW3w== &#34; &gt;&gt; ~/.ssh/authorized_keys
-chmod 700 ~/.ssh
-chmod 644 ~/.ssh/authorized_keys
-cat &gt; ~/.ssh/id_rsa &lt;&lt;EOF
------BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAlwAAAAdzc2gtcn
-NhAAAAAwEAAQAAAIEA0eR6VcDPFbzHH0voCQZFvyEup+z4HHdUZKugG8T+2koQhSXsLj4U
-DOhbJWgEZFqAIB+MAt6rTMS5GeXzYADxXsGBGLiVwERjiLgaALcCWHOymKA3mMJIRXJ7Fl
-gFns2DrahtyGqUXyIDnMd/o+x3YrWQJ+ZwrGYreFmQA/lXVt8AAAIIeMsZxnjLGcYAAAAH
-c3NoLXJzYQAAAIEA0eR6VcDPFbzHH0voCQZFvyEup+z4HHdUZKugG8T+2koQhSXsLj4UDO
-hbJWgEZFqAIB+MAt6rTMS5GeXzYADxXsGBGLiVwERjiLgaALcCWHOymKA3mMJIRXJ7FlgF
-ns2DrahtyGqUXyIDnMd/o+x3YrWQJ+ZwrGYreFmQA/lXVt8AAAADAQABAAAAgEsyyIGgqp
-DnKZAU6fURwjtP8B9JzzqjpiDLPHm2gnhCwNhzVcLbiuN0+/LS6X/qzKy1oLwGeujuMkMN
-F7z1mYPqqcZmpVj97BF7ITQuzVJdEs6ujva/arp3V/FQYECLGHJ+pz+IBkJhVaXpKeLJOD
-aeESEOy3jCp66fH6mFiFvBAAAAQGNHUW02lSyOGdoIPvxVk+boTXuZNYENCKOtBHTxX1Fd
-vQBFMuWWvk0dEHZ1sSbGds+CHrrMGEJN6aIxKXSuKdoAAABBAPyYTB4PV6WpKiJPAy/F6m
-MViOnfjfiX9/KqFYENd5EElm8FjjJ0lmC6YwJsSOPaB18BSmi2LpG9+QB7ujMHcgUAAABB
-ANS40Jx9hA9HJ3gFQ06GS5Xr3sPjoOqkmCPFC+nhNBvdOxUwxfVsKly3qI5jjs9zZ3sben
-5ge2hwzEq0xZMtxpMAAAAMcm9vdEB0ZXN0Lm1tAQIDBAUGBw==
------END OPENSSH PRIVATE KEY-----
+<pre tabindex="0"><code>wget https://github.com/coredns/coredns/releases/download/v1.14.3/coredns_1.14.3_linux_amd64.tgz
+tar -zxvf coredns_1.14.3_linux_amd64.tgz
+rm coredns_1.14.3_linux_amd64.tgz
+mv coredns /bin/
+cat &gt; /etc/dns.conf &lt;&lt; &#39;EOF&#39;
+.:53 {
+    acl {
+allow net 120.0.0.0/8
+        drop
+    }
+    hosts {
+14.103.224.46 yun.mm
+127.0.0.1 x.mm
+10.0.0.1 1.mm
+10.0.0.2 2.mm
+10.0.0.3 3.mm
+10.0.0.4 4.mm
+10.0.0.5 5.mm
+10.0.0.6 6.mm
+10.0.0.7 7.mm
+10.0.0.8 8.mm
+10.0.0.9 9.mm
+10.0.0.10 10.mm
+10.0.0.209 209.mm
+10.0.0.221 221.mm
+10.0.0.222 222.mm
+        fallthrough  
+    }
+    forward . 223.5.5.5
+    log . &#34;from:{remote} domain:{name}&#34;
+}
+fi
 EOF
-chmod 600 ~/.ssh/id_rsa
-</code></pre><h2 id="hadoop操作">
-  hadoop操作
-  <a class="anchor" href="#hadoop%e6%93%8d%e4%bd%9c">#</a>
+</code></pre><h2 id="快速启动打印时间">
+  快速启动(打印时间)
+  <a class="anchor" href="#%e5%bf%ab%e9%80%9f%e5%90%af%e5%8a%a8%e6%89%93%e5%8d%b0%e6%97%b6%e9%97%b4">#</a>
 </h2>
 <ul>
-<li>/opt/hadoop/etc/core-site.xml:①使用单机网络模式 ②网页默认用户为hadoop</li>
-<li>/opt/hadoop/etc/hdfs-site.xml:①只使用一个副本</li>
-<li>/opt/hadoop/etc/hadoop/yarn-site.xml</li>
-<li>/opt/hadoop/etc/hadoop/mapred-site.xml</li>
-<li>/opt/hadoop/etc/hadoop/workers</li>
+<li>sudo su root</li>
 </ul>
-<pre tabindex="0"><code>sed -i &#34;20 i &lt;property&gt;&lt;name&gt;fs.defaultFS&lt;/name&gt;&lt;value&gt;hdfs://localhost:9000&lt;/value&gt;&lt;/property&gt;&#34; ${HADOOP_HOME}/etc/hadoop/core-site.xml
-sed -i &#34;20 i &lt;property&gt;&lt;name&gt;hadoop.http.staticuser.user&lt;/name&gt;&lt;value&gt;hadoop&lt;/value&gt;&lt;/property&gt;&#34; ${HADOOP_HOME}/etc/hadoop/core-site.xml
-sed -i &#34;20 i &lt;property&gt;&lt;name&gt;hadoop.tmp.dir&lt;/name&gt;&lt;value&gt;${HADOOP_HOME}/data/&lt;/value&gt;&lt;/property&gt;&#34; ${HADOOP_HOME}/etc/hadoop/core-site.xml
-sed -i &#34;20 i &lt;property&gt;&lt;name&gt;dfs.replication&lt;/name&gt;&lt;value&gt;1&lt;/value&gt;&lt;/property&gt;&#34; ${HADOOP_HOME}/etc/hadoop/hdfs-site.xml
-
-sed -i &#34;16 i &lt;property&gt;&lt;name&gt;yarn.resourcemanager.hostname&lt;/name&gt;&lt;value&gt;0.0.0.0&lt;/value&gt;&lt;/property&gt;&#34; ${HADOOP_HOME}/etc/hadoop/yarn-site.xml
-sed -i &#34;16 i &lt;property&gt;&lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt;&lt;value&gt;mapreduce_shuffle&lt;/value&gt;&lt;/property&gt;&#34; ${HADOOP_HOME}/etc/hadoop/yarn-site.xml
-sed -i &#34;16 i &lt;property&gt;&lt;name&gt;yarn.application.classpath&lt;/name&gt;&lt;value&gt;`hadoop classpath`&lt;/value&gt;&lt;/property&gt;&#34; ${HADOOP_HOME}/etc/hadoop/yarn-site.xml
-sed -i &#34;20 i &lt;property&gt;&lt;name&gt;mapreduce.framework.name&lt;/name&gt;&lt;value&gt;yarn&lt;/value&gt;&lt;/property&gt;&#34; ${HADOOP_HOME}/etc/hadoop/mapred-site.xml
-</code></pre><h2 id="启动命令">
-  启动命令
-  <a class="anchor" href="#%e5%90%af%e5%8a%a8%e5%91%bd%e4%bb%a4">#</a>
-</h2>
-<ul>
-<li>必须先格式化节点 <em>hdfs namenode -format &amp;&amp; start-dfs.sh</em></li>
-</ul>
-<pre tabindex="0"><code>echo &#34;formathadoop=hdfs namenode -format&#34; &gt;&gt; ~/.bashrc
-echo &#34;alias starthadoop=\${HADOOP_HOME}/sbin/start-all.sh&#34; &gt;&gt; ~/.bashrc
-echo &#34;alias stophadoop=\${HADOOP_HOME}/sbin/stop-all.sh&#34; &gt;&gt; ~/.bashrc
+<pre tabindex="0"><code>dns() {
+    (coredns -conf /etc/dns.conf 2&gt;&amp;1 | while IFS= read -r line; do
+        printf &#39;%s %s\n&#39; &#34;$(date &#39;+%Y-%m-%d %H:%M:%S&#39;)&#34; &#34;$line&#34;
+    done &gt;&gt; coredns.log) &lt;/dev/null &amp;
+    disown
+}
 </code></pre></article>
  
       
@@ -1056,10 +1005,8 @@ echo &#34;alias stophadoop=\${HADOOP_HOME}/sbin/stop-all.sh&#34; &gt;&gt; ~/.bas
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#root操作">root操作</a></li>
-    <li><a href="#hadoop免登录hadoop">hadoop免登录hadoop</a></li>
-    <li><a href="#hadoop操作">hadoop操作</a></li>
-    <li><a href="#启动命令">启动命令</a></li>
+    <li><a href="#安装coredns">安装Coredns</a></li>
+    <li><a href="#快速启动打印时间">快速启动(打印时间)</a></li>
   </ul>
 </nav>
 

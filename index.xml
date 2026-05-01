@@ -234,6 +234,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/coredns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/coredns/</guid>
+      <description>安装Coredns # wget https://github.com/coredns/coredns/releases/download/v1.14.3/coredns_1.14.3_linux_amd64.tgz tar -zxvf coredns_1.14.3_linux_amd64.tgz rm coredns_1.14.3_linux_amd64.tgz mv coredns /bin/ cat &amp;gt; /etc/dns.conf &amp;lt;&amp;lt; &amp;#39;EOF&amp;#39; .:53 { acl { allow net 120.0.0.0/8 drop } hosts { 14.103.224.46 yun.mm 127.0.0.1 x.mm 10.0.0.1 1.mm 10.0.0.2 2.mm 10.0.0.3 3.mm 10.0.0.4 4.mm 10.0.0.5 5.mm 10.0.0.6 6.mm 10.0.0.7 7.mm 10.0.0.8 8.mm 10.0.0.9 9.mm 10.0.0.10 10.mm 10.0.0.209 209.mm 10.0.0.221 221.mm 10.0.0.222 222.mm fallthrough } forward . 223.5.5.5 log . &amp;#34;from:{remote} domain:{name}&amp;#34; } fi EOF 快速启动(打印时间) # sudo su root dns() { (coredns -conf /etc/dns.</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/nginx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/nginx/</guid>
