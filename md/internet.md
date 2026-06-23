@@ -19,7 +19,6 @@
 ## 订阅
 |名称|地址|功能|
 |-|-|-|
-|设置中文|t.me/setlanguage/zhcncc||
 |极搜|t.me/jisou|资源搜索|
 |TG代理频道|t.me/proxy_pub|免费的MTProto|
 |Microsoft Copilot|@CopilotOfficialBot|免费的AI|
@@ -28,7 +27,6 @@
 |獨立部|@DuLiBuBot|----|
 
 ## 代理
-- [火山](https://t.me/socks?server=14.103.224.46&port=20170)
 - 14.103.224.46 20170
 
 
@@ -50,8 +48,9 @@ source(128.0.0.0/8) -> block
 ```
 
 ## 代理订阅
-- [yun.pac](/config/yun.mm.txt)  [5.pac](/config/5.mm.txt) [v2ray](/config/v2ray.txt)
-- [github](https://raw.githubusercontent.com/WLget/V2Ray_configs_64/refs/heads/master/ConfigSub_list.txt)
+- [my.txt](/config/my.txt)
 - [dongtaiwang.com](https://github.com/Alvin9999-newpac/fanqiang/wiki/)
 
-- [我的socks](https://t.me/socks?server=14.103.224.46&port=20170)
+- [github](https://raw.githubusercontent.com/WLget/V2Ray_configs_64/refs/heads/master/ConfigSub_list.txt)
+
+https://telegram.org/captcha?scope=sbot_spam&actor=f622d75e48d6ebb40e

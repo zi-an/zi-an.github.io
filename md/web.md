@@ -15,16 +15,14 @@
 
 |||||||
 |-|-|-|-|-|-|
-|外网|[首页](https://241688622/)|[托管](https://zian.netlify.app/)|[二维](/web/qrcode.html)|[色彩](/web/color.html?color=)|[晶阳](/web/?uri=/md/jingyang.md)|
-|资源|[脚本](/js/bing.js)|[广告](/web/adb.html)|[公网](/web/ipv6.html)|[播放](/web/m3u8.html)|[若依](http://241688622:8000)|
+|外网|[托管](https://zian.netlify.app/)|[二维](/web/qrcode.html)|[色彩](/web/color.html?color=)|[晶阳](/web/?uri=/md/jingyang.md)||
+|资源|[脚本](/js/bing.js)|[广告](/web/adb.html)|[公网](/web/ipv6.html)|[播放](/web/m3u8.html)|
 |工具|[表格](/web/markdown.html)|[计时](/web/time.html)||[搜索](/web/search.html)||
-|测试|[81](http://241688622:81/user/offkab)|[82](http://241688622:82)|[83](http://241688622:83/models?orderBy=weightPopular%3ADESC&filters=nimType%3Anim_type_preview&pageSize=96)|[性能](http://241688622:8010/cm)|[订阅](http://241688622:8010)|
-|站内|[仓库](http://241688622)|[笔记](http://241688622/note/)|[软件](http://241688622/soft/)|[图片](http://241688622/temp/douyin/)|[V2](http://241688622:20171)|
 
 ---
 
 |内网|[主路](http://10.0.0.1)|[副路](http://10.0.0.2)|[红米](http://10.0.0.6)|[三星](http://10.0.0.5)|
 |-|-|-|-|-|
-|服务|[210](http://10.0.0.210)|[BT](http://10.0.0.208)|[迅雷](http://10.0.0.209)|[V2](http://10.0.0.5:20171)|
+|服务|[210](http://10.0.0.210)|[BT](http://10.0.0.208)|[迅雷](http://10.0.0.209)|[V2](http://10.0.0.211)|
 
 ---
