@@ -9,7 +9,7 @@
 |[智能](https://chat.qwen.ai/)|[秘塔](https://metaso.cn)|[千问](https://www.qianwen.com/)|[豆包](https://www.doubao.com)|[天地图](https://guangdong.tianditu.gov.cn/)|[大模型](/web/?uri=/md/ai.md)|
 |股价|[阳光](https://www.msn.cn/zh-cn/money/stockdetails/fi-adei2w)|[小米](https://www.msn.cn/zh-cn/money/stockdetails/fi-bgnyp2)|[苹果](https://www.msn.cn/zh-cn/money/stockdetails/fi-a1mou2)|[英伟达](https://www.msn.cn/zh-cn/money/stockdetails/fi-a1yv52)|[道琼斯](https://www.msn.cn/zh-cn/money/watchlist?id=a6qja2)|
 ||[上证](https://www.msn.cn/zh-cn/money/indexdetails/000001-cn-index/fi-adfh77)|[深证](https://www.msn.cn/zh-cn/money/watchlist?id=adg1m7)|[恒生](https://www.msn.cn/zh-cn/money/watchlist?id=ah7etc)|[纳斯达](https://www.msn.cn/zh-cn/money/watchlist?id=a3oxnm)|
-||[黄金](http://www.huangjinjiage.cn/guoneijinjia.html)|[美油](https://www.msn.cn/zh-cn/money/watchlist?id=auvwzr)|[标普](https://www.msn.cn/zh-cn/money/watchlist?id=a33k6h)|
+||[黄金](http://www.huangjinjiage.cn/guoneijinjia.html)|[美油](https://www.msn.cn/zh-cn/money/watchlist?id=auvwzr)|[标普](https://www.msn.cn/zh-cn/money/watchlist?id=a33k6h)||[世界杯](https://tiyu.baidu.com/al/match?match=%E4%B8%96%E7%95%8C%E6%9D%AF)|
 
 ---
 
