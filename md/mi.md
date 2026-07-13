@@ -19,6 +19,7 @@
 # outlook
 - x__h__y___1___@outlook.com/1___@x__h__y___
 - zian8964@outlook.com/1___@x_________
+- zian8964@hotmail.com/1___@x_________
 
 # redhat
 - x__h__y___1___@outlook.com/Qq35_______
@@ -83,10 +84,13 @@ x__h__y___1___@outlook.com/Xi________@1____
 - 131________/0529
 
 - x__h__y___1___@gmail.com
-- 13005711992/0529
+- +1 3005711992/0529
 
 - zian8964@outlook.com
 - +880 1804623647/0529
+
+- zian8964@hotmail.com
+- +1 7266971727/0529
 
 ## 交警12123 
 - 身份证/名字拼音
