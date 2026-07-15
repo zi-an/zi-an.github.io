@@ -58,6 +58,13 @@
     </item>
     <item>
       <title></title>
+      <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/test/</guid>
+      <description>test [ ] [[ ]] 判断 # 1. 核心概念：一切皆命令 # 在 Shell 脚本中，if 后面跟的是一个命令，而不是一个&amp;quot;条件表达式&amp;quot;。命令执行后返回退出码（exit code）：&#xA;0：表示成功（条件为真） 非 0：表示失败（条件为假） # if 实际上是在检查命令的退出码 if command; then echo &amp;#34;命令执行成功（退出码为 0）&amp;#34; fi 验证这一点：&#xA;# 直接运行 test 命令，看不到输出 test -f &amp;#34;123.MP4&amp;#34; # 用 $? 查看退出码 echo $? # 0 表示文件存在，1 表示不存在 2. test 命令详解 # test 是一个内置命令，专门用于文件检查、字符串比较和数值比较。&#xA;基本语法 # test 条件 示例 # # 检查文件是否存在 test -f &amp;#34;123.MP4&amp;#34; echo $? # 0=存在，1=不存在 # 检查数字是否相等 test 5 -eq 5 echo $?</description>
+    </item>
+    <item>
+      <title></title>
       <link>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/v2raya/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/docs/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/v2raya/</guid>

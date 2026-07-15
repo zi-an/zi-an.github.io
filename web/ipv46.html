@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://10.0.0.5/json/temp/ip.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP地址与归属地查询</title>
+    <style>
+        .ip-clickable {
+            cursor: pointer;
+            user-select: all;
+            transition: color 0.2s;
+        }
+        .ip-clickable:hover {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+        .copy-tip {
+            font-size: 14px;
+            color: #28a745;
+            margin-left: 12px;
+            font-weight: normal;
+            transition: opacity 0.3s;
+        }
+        .copy-tip.error {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <span id="ipv4" class="ip-clickable" style="font-size:30px; font-weight:bold;">120.229.167.110</span>
+        <span id="copyTip4" class="copy-tip"></span>
+    </p>
+    <p><span id="loc4" style="font-size:16px; font-weight:bold;">China Guangdong Shenzhen China Mobile</span></p>
+    <br>
+    <p>
+        <span id="ipv6" class="ip-clickable" style="font-size:16px; font-weight:bold;">2409:8a55:9842:b5d0:ada0:aaf9:b33f:91bb</span>
+        <span id="copyTip6" class="copy-tip"></span>
+    </p>
+    <p><span id="loc6" style="font-size:16px; font-weight:bold;">China Guangdong Huizhou China Mobile</span></p>
+
+    <script>
+        // ---------- 工具：复制 IP 到剪贴板（IPv6 自动加 [ ]） ----------
+        function setupCopy(ipElemId, tipElemId) {
+            const ipEl = document.getElementById(ipElemId);
+            const tipEl = document.getElementById(tipElemId);
+
+            ipEl.addEventListener('click', function() {
+                const ipText = ipEl.textContent.trim();
+
+                // 检查是否是有效的 IP（排除错误信息）
+                const isError = /获取中|失败|❌|超时|HTTP/i.test(ipText);
+                if (isError || ipText === '') {
+                    showTip(tipEl, '未获取到有效IP', true);
+                    return;
+                }
+
+                // 🔥 关键改进：IPv6 自动添加 [ ]，方便浏览器直接打开
+                let copyText = ipText;
+                let isIPv6 = ipText.includes(':');
+                if (isIPv6) {
+                    copyText = `[${ipText}]`;
+                }
+
+                // 使用 Clipboard API 复制
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(copyText)
+                        .then(() => {
+                            const msg = '✓ 已复制';
+                            showTip(tipEl, msg, false);
+                        })
+                        .catch(() => {
+                            fallbackCopy(copyText, tipEl);
+                        });
+                } else {
+                    fallbackCopy(copyText, tipEl);
+                }
+            });
+        }
+
+        // 降级复制方案 (兼容旧浏览器)
+        function fallbackCopy(text, tipEl) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                const success = document.execCommand('copy');
+                if (success) {
+                    // 简单提示，不区分是否IPv6（降级方案尽量简洁）
+                    showTip(tipEl, '✓ 已复制', false);
+                } else {
+                    showTip(tipEl, '复制失败，请手动复制', true);
+                }
+            } catch (e) {
+                showTip(tipEl, '复制失败，请手动复制', true);
+            }
+            document.body.removeChild(textarea);
+        }
+
+        // 显示提示信息，2秒后自动消失
+        function showTip(tipEl, message, isError) {
+            tipEl.textContent = message;
+            tipEl.className = 'copy-tip' + (isError ? ' error' : '');
+            if (tipEl._timer) clearTimeout(tipEl._timer);
+            tipEl._timer = setTimeout(() => {
+                tipEl.textContent = '';
+                tipEl.className = 'copy-tip';
+            }, 2500);
+        }
+
+        // ---------- 原有的 IP 获取和归属地查询 ----------
+        function fetchIPAndLocation(ipUrl, ipElemId, locElemId) {
+            const ipEl = document.getElementById(ipElemId);
+            const locEl = document.getElementById(locElemId);
+
+            fetch(ipUrl, { signal: AbortSignal.timeout(8000) })
+                .then(res => {
+                    if (!res.ok) throw new Error('HTTP ' + res.status);
+                    return res.text();
+                })
+                .then(ip => {
+                    const ipStr = ip.trim();
+                    ipEl.textContent = ipStr || '获取失败（空）';
+                    if (ipStr) {
+                        fetchLocation(ipStr, locEl);
+                    } else {
+                        locEl.textContent = '无有效IP';
+                    }
+                })
+                .catch(err => {
+                    ipEl.textContent = '❌ ' + (err.name === 'TimeoutError' ? '超时' : err.message);
+                    locEl.textContent = 'IP获取失败，跳过归属地查询';
+                });
+        }
+
+        function fetchLocation(ip, locEl) {
+            const apiUrl = `https://api.ip.sb/geoip/${ip}`;
+            fetch(apiUrl, { signal: AbortSignal.timeout(8000) })
+                .then(response => {
+                    if (!response.ok) throw new Error('HTTP ' + response.status);
+                    return response.json();
+                })
+                .then(data => {
+                    if (Object.keys(data).length === 1 && data.ip) {
+                        locEl.textContent = '数据库暂无此IP归属地';
+                        return;
+                    }
+                    const country = data.country || '';
+                    const region = data.region || '';
+                    const city = data.city || '';
+                    const isp = data.isp || '';
+                    const locationInfo = `${country} ${region} ${city} ${isp}`.trim();
+                    locEl.textContent = locationInfo || '未知';
+                })
+                .catch(err => {
+                    locEl.textContent = '❌ ' + (err.name === 'TimeoutError' ? '超时' : err.message);
+                });
+        }
+
+        // ---------- 页面加载 ----------
+        window.addEventListener('load', function() {
+            fetchIPAndLocation('https://ipv4.ddnspod.com/', 'ipv4', 'loc4');
+            fetchIPAndLocation('https://ipv6.ddnspod.com/', 'ipv6', 'loc6');
+
+            setupCopy('ipv4', 'copyTip4');
+            setupCopy('ipv6', 'copyTip6');
+        });
+    </script>
+
+</body></html>
