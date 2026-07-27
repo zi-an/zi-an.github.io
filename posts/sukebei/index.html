@@ -3,22 +3,20 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=80&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" 考题提取 # 题目下载 先把PDF转为txt文件 以下为替换规则
-使用notepad&#43;&#43;的替换 正则表达式 (?&lt;!:)A. 仅匹配不使用 广东省建筑施工企业安全生产管理人员服务中心 -&gt; 无 空格 -&gt; 无 \r -&gt; 无 \n -&gt; 无 (?&lt;!:)A\. -&gt; \nA. (\d{1,3})、 -&gt; \n\1、 （） -&gt; \( \) ， -&gt; , ">
+<meta name="description" content="nginx配置 # proxy_cache_path sukebeicache levels=1:2 keys_zone=sukebeicache:10m max_size=5g inactive=30d use_temp_path=off; map &#34;$target_host$target_uri&#34; $final_host { &#34;~^(.*)\.skt.*Application&#34; $1.com; default $target_host; } server { listen 80; resolver 223.5.5.5 valid=300s ipv6=off; resolver_timeout 5s; # SSL 配置 proxy_ssl_server_name on; proxy_ssl_verify off; # Proxy 通用配置 proxy_cache_key &#34;$request_uri&#34;; proxy_cache sukebeicache; proxy_cache_revalidate on; proxy_cache_background_update on; proxy_cache_use_stale updating error timeout; proxy_cache_lock on; proxy_cache_lock_timeout 3s; proxy_ignore_headers Cache-Control Vary Set-Cookie; proxy_hide_header Set-Cookie; proxy_set_header Accept-Encoding &#34;&#34;; # 响应头 add_header X-Cache-Status $upstream_cache_status; location / { proxy_pass https://sukebei.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="考题提取" />
-<meta property="og:description" content=" 考题提取 # 题目下载 先把PDF转为txt文件 以下为替换规则
-使用notepad&#43;&#43;的替换 正则表达式 (?&lt;!:)A. 仅匹配不使用 广东省建筑施工企业安全生产管理人员服务中心 -&gt; 无 空格 -&gt; 无 \r -&gt; 无 \n -&gt; 无 (?&lt;!:)A\. -&gt; \nA. (\d{1,3})、 -&gt; \n\1、 （） -&gt; \( \) ， -&gt; , " />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="sukebei代理" />
+<meta property="og:description" content="nginx配置 # proxy_cache_path sukebeicache levels=1:2 keys_zone=sukebeicache:10m max_size=5g inactive=30d use_temp_path=off; map &#34;$target_host$target_uri&#34; $final_host { &#34;~^(.*)\.skt.*Application&#34; $1.com; default $target_host; } server { listen 80; resolver 223.5.5.5 valid=300s ipv6=off; resolver_timeout 5s; # SSL 配置 proxy_ssl_server_name on; proxy_ssl_verify off; # Proxy 通用配置 proxy_cache_key &#34;$request_uri&#34;; proxy_cache sukebeicache; proxy_cache_revalidate on; proxy_cache_background_update on; proxy_cache_use_stale updating error timeout; proxy_cache_lock on; proxy_cache_lock_timeout 3s; proxy_ignore_headers Cache-Control Vary Set-Cookie; proxy_hide_header Set-Cookie; proxy_set_header Accept-Encoding &#34;&#34;; # 响应头 add_header X-Cache-Status $upstream_cache_status; location / { proxy_pass https://sukebei." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:80/posts/study/exam/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2025-08-19T00:00:00+00:00" />
-<meta property="article:modified_time" content="2025-08-19T00:00:00+00:00" />
-<title>考题提取
+<meta property="og:url" content="http://localhost:80/posts/sukebei/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2026-07-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2026-07-19T00:00:00+00:00" />
+<title>sukebei代理
 </title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="http://localhost:80/posts/study/exam/">
+<link rel="canonical" href="http://localhost:80/posts/sukebei/">
 <link rel="stylesheet" href="/book.min.c0de645cb4cb75e493aef507ff38ba72ba0f974534b528b15573c8cda4febc46.css" integrity="sha256-wN5kXLTLdeSTrvUH/zi6croPl0U0tSixVXPIzaT&#43;vEY=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/zh.search.min.8c5805c1c8b89c5bfbf756c4bf1e2b74c2123fd59137653dec75c0922b17f0e3.js" integrity="sha256-jFgFwci4nFv791bEvx4rdMISP9WRN2U97HXAkisX8OM=" crossorigin="anonymous"></script>
@@ -899,7 +897,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>考题提取</strong>
+  <strong>sukebei代理</strong>
 
   <label for="toc-control">
     
@@ -913,11 +911,7 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#考题提取">考题提取</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
 
@@ -930,10 +924,10 @@ https://github.com/alex-shpak/hugo-book
       
 <article class="markdown book-post">
   <h1>
-    <a href="/posts/study/exam/">考题提取</a>
+    <a href="/posts/sukebei/">sukebei代理</a>
   </h1>
   
-  <h5>2025-08-19</h5>
+  <h5>2026-07-19</h5>
 
 
 
@@ -948,27 +942,258 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-<h2 id="考题提取">
-  考题提取
-  <a class="anchor" href="#%e8%80%83%e9%a2%98%e6%8f%90%e5%8f%96">#</a>
-</h2>
-<ul>
-<li>题目下载</li>
-<li><a href="https://cdkm.com/cn/pdf-to-txt">先把PDF转为txt文件</a></li>
-</ul>
-<p>以下为替换规则</p>
-<ul>
-<li>使用notepad++的替换 正则表达式</li>
-<li>(?&lt;!:)A.   仅匹配不使用</li>
-</ul>
-<pre tabindex="0"><code>广东省建筑施工企业安全生产管理人员服务中心 -&gt; 无
-空格 -&gt; 无
-\r -&gt; 无
-\n -&gt; 无
-(?&lt;!:)A\. -&gt; \nA.
-(\d{1,3})、 -&gt; \n\1、
-（） -&gt; \( \)
-， -&gt; ,
+<h1 id="nginx配置">
+  nginx配置
+  <a class="anchor" href="#nginx%e9%85%8d%e7%bd%ae">#</a>
+</h1>
+<pre tabindex="0"><code>proxy_cache_path sukebeicache levels=1:2 keys_zone=sukebeicache:10m max_size=5g inactive=30d use_temp_path=off;
+map &#34;$target_host$target_uri&#34; $final_host {
+	&#34;~^(.*)\.skt.*Application&#34; $1.com;
+	default $target_host;
+}
+server {
+	listen 80;
+	resolver 223.5.5.5 valid=300s ipv6=off;
+	resolver_timeout 5s;
+
+	# SSL 配置
+	proxy_ssl_server_name on;
+	proxy_ssl_verify off;
+
+	# Proxy 通用配置
+	proxy_cache_key &#34;$request_uri&#34;;
+	proxy_cache sukebeicache;
+	proxy_cache_revalidate on;
+	proxy_cache_background_update on;
+	proxy_cache_use_stale updating error timeout;
+	proxy_cache_lock on;
+	proxy_cache_lock_timeout 3s;
+	proxy_ignore_headers Cache-Control Vary Set-Cookie;
+	proxy_hide_header Set-Cookie;
+	proxy_set_header Accept-Encoding &#34;&#34;;
+
+	# 响应头
+	add_header X-Cache-Status $upstream_cache_status;
+	location / {
+		proxy_pass https://sukebei.moonchan.xyz;
+
+		#socks_pass 10.0.0.211:20170;
+		sub_filter_once off;
+		sub_filter &#39;https://&#39; &#39;http://$http_host/proxy/&#39;;
+		sub_filter &#39;http://&#39; &#39;http://$http_host/proxy/&#39;;
+		sub_filter &#39;/upload/&#39; &#39;/upload/en/&#39;;
+		sub_filter &#39;//localhost&#39; &#39;&#39;;
+
+		# location 特定配置
+		proxy_cache_valid 200 10m;
+		proxy_cache_valid 404 5m;
+		add_header X-Cache-Expires $sent_http_cache_control;
+	}
+	location ~ ^/proxy/([^/]+)/(.*)$ {
+		set $target_host $1;
+		set $target_uri $2;
+		sub_filter_once off;
+		sub_filter &#39;https://&#39; &#39;/proxy/&#39;;
+		sub_filter &#39;http://&#39; &#39;/proxy/&#39;;
+		sub_filter &#39;.com/&#39; &#39;.skt/&#39;;
+		sub_filter &#39;/upload/assets/&#39; &#39;&#39;;
+		sub_filter &#39;.com&#39; &#39;.8964&#39;;
+		proxy_pass https://$final_host/$target_uri$is_args$args;
+
+		#socks_pass 10.0.0.211:20170;
+		proxy_set_header Host $final_host;
+		proxy_set_header Referer &#34;https://$final_host&#34;;
+
+		#proxy_cache_bypass 1;
+		proxy_set_header Accept-Encoding &#34;&#34;;
+
+		# location 特定配置
+		proxy_cache_valid 200 7d;
+		proxy_cache_valid 404 1h;
+		add_header X-Cache-Status-Dynamic &#34;HIT from $final_host&#34;;
+		proxy_cache_valid 500 502 503 504 0s; # 明确 5xx 缓存时间为 0
+		proxy_intercept_errors on;
+		error_page 502 504 @go_fallback;
+	}
+	location @go_fallback {
+		internal;
+
+		# 继承外部的请求头参数
+		proxy_set_header Accept-Encoding &#34;&#34;;
+		proxy_cache_valid 200 7d;
+		sub_filter_once off;
+		sub_filter &#39;https://&#39; &#39;/proxy/&#39;;
+		sub_filter &#39;http://&#39; &#39;/proxy/&#39;;
+		sub_filter &#39;.com/&#39; &#39;.skt/&#39;;
+		sub_filter &#39;/upload/assets/&#39; &#39;&#39;;
+		sub_filter &#39;.com&#39; &#39;.8964&#39;;
+
+		# 将必要的目标主机和 URI 传递给 Go 程序
+		proxy_set_header X-Target-Host $final_host;
+		proxy_set_header X-Target-URI $target_uri;
+
+		# 转发到本地运行的 Go 服务
+		proxy_pass http://127.0.0.1:8080/fallback$is_args$args;
+	}
+}
+</code></pre><h1 id="go代码">
+  go代码
+  <a class="anchor" href="#go%e4%bb%a3%e7%a0%81">#</a>
+</h1>
+<pre tabindex="0"><code>package main
+
+import (
+	&#34;fmt&#34;
+	&#34;io&#34;
+	&#34;log&#34;
+	&#34;net/http&#34;
+	&#34;net/url&#34;
+	&#34;strings&#34;
+	&#34;time&#34;
+)
+
+const (
+	HTTP_PROXY  = &#34;http://10.0.0.211:20172&#34; // HTTP 代理地址
+	LISTEN_ADDR = &#34;127.0.0.1:8080&#34;         // Go 中转服务监听地址
+)
+
+func main() {
+	log.Println(&#34;[INIT] 正在初始化 Go Fallback Proxy 服务...&#34;)
+
+	// 1. 解析 HTTP 代理 URL
+	proxyURL, err := url.Parse(HTTP_PROXY)
+	if err != nil {
+		log.Fatalf(&#34;[FATAL] 代理 URL 解析失败 (%s): %v&#34;, HTTP_PROXY, err)
+	}
+	log.Printf(&#34;[INIT] 成功配置上游 HTTP 代理: %s&#34;, HTTP_PROXY)
+
+	// 2. 创建带代理的 HTTP Transport &amp; Client
+	transport := &amp;http.Transport{
+		Proxy: http.ProxyURL(proxyURL),
+	}
+	client := &amp;http.Client{
+		Transport: transport,
+		Timeout:   30 * time.Second,
+	}
+
+	// 3. 注册处理路由
+	http.HandleFunc(&#34;/fallback&#34;, func(w http.ResponseWriter, r *http.Request) {
+		reqStart := time.Now()
+		log.Println(&#34;----------------------------------------------------------------&#34;)
+		log.Printf(&#34;[REQ START] 收到来自 Nginx 的降级请求: %s %s&#34;, r.Method, r.URL.String())
+
+		// 读取 Nginx 传过来的 Header 参数
+		targetHost := r.Header.Get(&#34;X-Target-Host&#34;)
+		targetURI := r.Header.Get(&#34;X-Target-URI&#34;)
+
+		log.Printf(&#34;[PARAM] 读取请求头 X-Target-Host = &#39;%s&#39;&#34;, targetHost)
+		log.Printf(&#34;[PARAM] 读取请求头 X-Target-URI  = &#39;%s&#39;&#34;, targetURI)
+
+		if targetHost == &#34;&#34; {
+			log.Println(&#34;[ERROR] 缺失必要参数 X-Target-Host，直接返回 400&#34;)
+			http.Error(w, &#34;Missing X-Target-Host header&#34;, http.StatusBadRequest)
+			return
+		}
+
+		// ------------------ 拦截逻辑 ------------------
+		// 1. 域名拦截（保留原有的 .skt 检查）
+		if strings.Contains(strings.ToLower(targetHost), &#34;.skt&#34;) {
+			log.Printf(&#34;[BLOCK] 监测到无效/伪域名 (%s)，直接拒绝连接，返回 404&#34;, targetHost)
+			w.WriteHeader(http.StatusNotFound)
+			w.Write([]byte(&#34;404 Not Found (Blocked Domain)&#34;))
+			log.Printf(&#34;[REQ END] 请求被拦截并返回 404，耗时: %v&#34;, time.Since(reqStart))
+			log.Println(&#34;----------------------------------------------------------------&#34;)
+			return
+		}
+
+		// 2. 非图片请求拦截
+		pathLower := strings.ToLower(targetURI)
+		allowedExts := []string{&#34;.jpg&#34;, &#34;.jpeg&#34;, &#34;.png&#34;, &#34;.gif&#34;, &#34;.webp&#34;, &#34;.ico&#34;, &#34;.bmp&#34;, &#34;.svg&#34;, &#34;.avif&#34;}
+
+		isImage := false
+		for _, ext := range allowedExts {
+			// 支持带参数的图片请求（例如 /image.jpg?v=1.0）
+			if strings.HasSuffix(pathLower, ext) || strings.Contains(pathLower, ext+&#34;?&#34;) {
+				isImage = true
+				break
+			}
+		}
+
+		if !isImage {
+			log.Printf(&#34;[BLOCK] 监测到非图片请求 (%s)，直接返回 404&#34;, targetURI)
+			w.WriteHeader(http.StatusNotFound)
+			w.Write([]byte(&#34;404 Not Found (Only images allowed)&#34;))
+			log.Printf(&#34;[REQ END] 请求被拦截并返回 404，耗时: %v&#34;, time.Since(reqStart))
+			log.Println(&#34;----------------------------------------------------------------&#34;)
+			return
+		}
+		// -------------------------------------------------------
+
+		// 拼接目标 URL
+		targetURL := fmt.Sprintf(&#34;https://%s/%s&#34;, targetHost, targetURI)
+		if r.URL.RawQuery != &#34;&#34; {
+			targetURL += &#34;?&#34; + r.URL.RawQuery
+		}
+		log.Printf(&#34;[TARGET] 准备通过代理请求真实目标: %s&#34;, targetURL)
+
+		// 构造新的 HTTP 请求
+		req, err := http.NewRequest(r.Method, targetURL, r.Body)
+		if err != nil {
+			log.Printf(&#34;[ERROR] 创建出站请求失败: %v&#34;, err)
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
+		}
+
+		// 复制 Header 并重置 Host/Referer
+		log.Println(&#34;[HEADER] 正在透传并修正 Header...&#34;)
+		for k, v := range r.Header {
+			if k != &#34;X-Target-Host&#34; &amp;&amp; k != &#34;X-Target-URI&#34; &amp;&amp; k != &#34;Host&#34; {
+				req.Header[k] = v
+			}
+		}
+		req.Header.Set(&#34;Host&#34;, targetHost)
+		req.Header.Set(&#34;Referer&#34;, fmt.Sprintf(&#34;https://%s&#34;, targetHost))
+
+		// 开始发起请求
+		log.Printf(&#34;[FETCH] 开始发送代理请求 (超时时间: 30s)...&#34;)
+		fetchStart := time.Now()
+		resp, err := client.Do(req)
+		fetchCost := time.Since(fetchStart)
+
+		if err != nil {
+			log.Printf(&#34;[FETCH FAIL] 通过代理访问目标失败! 耗时: %v, 错误: %v&#34;, fetchCost, err)
+			http.Error(w, fmt.Sprintf(&#34;Proxy fetch failed: %v&#34;, err), http.StatusBadGateway)
+			return
+		}
+		defer resp.Body.Close()
+
+		log.Printf(&#34;[FETCH SUCCESS] 成功拿到响应! 目标返回状态码: %d, 耗时: %v&#34;, resp.StatusCode, fetchCost)
+
+		// 复制响应头回传给 Nginx
+		for k, v := range resp.Header {
+			w.Header()[k] = v
+		}
+		w.Header().Set(&#34;X-Proxy-Via&#34;, &#34;Go-Fallback-Proxy&#34;)
+		w.WriteHeader(resp.StatusCode)
+
+		// 复制响应体
+		log.Println(&#34;[STREAM] 开始向 Nginx 写回响应 Body...&#34;)
+		written, err := io.Copy(w, resp.Body)
+		if err != nil {
+			log.Printf(&#34;[ERROR] 回写响应 Body 过程中断: %v&#34;, err)
+		} else {
+			log.Printf(&#34;[STREAM DONE] 响应 Body 写入完毕，传输字节数: %d bytes&#34;, written)
+		}
+
+		log.Printf(&#34;[REQ END] 本次降级请求处理完成，总耗时: %v&#34;, time.Since(reqStart))
+		log.Println(&#34;----------------------------------------------------------------&#34;)
+	})
+
+	log.Printf(&#34;[READY] Go 降级服务已就绪，正在监听: %s&#34;, LISTEN_ADDR)
+	if err := http.ListenAndServe(LISTEN_ADDR, nil); err != nil {
+		log.Fatalf(&#34;[FATAL] 服务异常退出: %v&#34;, err)
+	}
+}
 </code></pre></article>
  
       
@@ -1008,11 +1233,7 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents">
-  <ul>
-    <li><a href="#考题提取">考题提取</a></li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
 
 
  
