@@ -5,6 +5,7 @@
 ##.stui-header__logo
 ##div[style=" max-width:990px; margin:0 auto;"]
 ##div:has(> .stui-vodlist__thumb.lazyload.pa-thumb)
+###rm-float3
 
 ! sukebei
 ##div.protection#protection
