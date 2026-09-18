@@ -1,47 +1,44 @@
 // ==UserScript==
-// @name         hsck play
-// @version      2026-05-11
-// @description  try to take over the world!
-// @match        http://*.xyz/*
+// @name         HSCK视频倒计时
+// @include      /^https?:\/\/[^/]*\/v5\/\d+-\d+-\d+\.html/
 // ==/UserScript==
 
-(function() {
-    'use strict';
+const player = u => {
+  window.MacPlayer = { PlayUrl: u, FullUrl: u, JsonUrl: u, PlayType: 'auto', PlayIsLive: false };
+  const app = document.getElementById('read_zone');
+  if (!app) return;
+  const ifr = document.createElement('iframe');
+  ifr.src = atob('L3N0YXRpYy9wbGF5ZXIvZHBsYXllci5odG1s') + '?v=' + Date.now();
+  ifr.setAttribute('frameborder', '0');
+  ifr.setAttribute('allowfullscreen', 'true');
+  ifr.setAttribute('webkitallowfullscreen', 'true');
+  ifr.setAttribute('scrolling', 'no');
+  ifr.style.cssText = 'width:100%;height:100%;position:absolute;top:0;left:0;right:0;bottom:0;border:0;display:block;';
+  app.innerHTML = '<div style="position:relative;width:100%;padding-top:56.25%;background:#000;"><div id="frame_slot" style="position:absolute;top:0;left:0;right:0;bottom:0;"></div></div>';
+  document.getElementById('frame_slot').appendChild(ifr);
+};
 
-    // 处理所有链接
-    function processLinks() {
-        // 查找所有包含 -1-1.html 的 a 标签
-        const links = document.querySelectorAll('a[href*="-1-1.html"]');
+const play = p => {
+  const body = ['id=' + p.id, 'sid=' + p.sid, 'nid=' + p.nid, 'tk=' + p.tk, 'g=1', 'x=100', 'y=100', 'dt=1',
+    'sw=' + ((screen && screen.width) || 0), 'sh=' + ((screen && screen.height) || 0),
+    'tz=' + new Date().getTimezoneOffset(), 't=' + Date.now()].join('&');
+  fetch('/static/count.php', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'X-Requested-With': 'XMLHttpRequest' },
+    body: body, credentials: 'same-origin'
+  }).then(r => r.json()).then(j => { if (j && j.ok && j.u) player(atob(j.u)); });
+};
 
-        links.forEach(link => {
-            const href = link.getAttribute('href');
-            if (href && href.includes('-1-1.html')) {
-                // 替换链接
-                const newHref = href.replace(/-1-1\.html$/, '-1-1.html?play=1');
-                link.setAttribute('href', newHref);
-                console.log(href)
+const params = () => {
+  const m = document.documentElement.outerHTML.match(/var\s+AID='([^']+)',\s*ASID='([^']+)',\s*ANID='([^']+)',\s*AK='([^']+)'/);
+  return m ? { id: m[1], sid: m[2], nid: m[3], tk: m[4] } : null;
+};
 
-            }
-            if (href && href.includes('-1-1\//')) {
-                // 替换链接
-                const newHref = href.replace(/-1-1\//, '-1-1.html?play=1');
-                link.setAttribute('href', newHref);
-                console.log(href)
-            }
-        });
-    }
-
-    // 使用 MutationObserver 监听动态加载的内容
-    const observer = new MutationObserver((mutations) => {
-        processLinks();
-    });
-
-    // 初始处理
-    processLinks();
-
-    // 开始监听
-    observer.observe(document.body, {
-        childList: true,
-        subtree: true
-    });
-})();
+let n = 0;
+const t = setInterval(() => {
+  n += 300;
+  const app = document.getElementById('read_zone');
+  const p = params();
+  if (app && p) { play(p); clearInterval(t); }
+  else if (n > 15000) clearInterval(t);
+}, 300);

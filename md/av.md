@@ -15,5 +15,6 @@
 - https://zian.netlify.app/js/offkab.js
 - https://zian.netlify.app/js/hsck.js
 - https://zian.netlify.app/js/imagetwist.js
+- https://zian.netlify.app/js/1mm.js
 - https://zian.netlify.app/config/adblock.txt
 
