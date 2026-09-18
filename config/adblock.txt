@@ -1,9 +1,11 @@
-! hsck.cc
+! hsck.tv
 ##.stui-pannel__head
 ##.gonggao
 ##.stui-foot
 ##.stui-header__logo
 ##div[style=" max-width:990px; margin:0 auto;"]
+##div:has(> .stui-vodlist__thumb.lazyload.pa-thumb)
+
 ! sukebei
 ##div.protection#protection
 */upload/assets/*

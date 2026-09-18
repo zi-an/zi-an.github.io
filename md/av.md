@@ -12,9 +12,12 @@
 |种子|[字幕](https://manko.fun)|[搜索](https://sukebei.nyaa.si)|[备份](https://sukebei.moonchan.xyz/user/offkab)|[我的](http://14.103.224.46:81/user/offkab)|
 
 
-- https://zian.netlify.app/js/offkab.js
-- https://zian.netlify.app/js/hsck.js
-- https://zian.netlify.app/js/imagetwist.js
+
 - https://zian.netlify.app/js/1mm.js
+- https://zian.netlify.app/js/hsck.js
 - https://zian.netlify.app/config/adblock.txt
+
+- https://zian.netlify.app/js/imagetwist.js
+- https://zian.netlify.app/js/offkab.js
+
 
