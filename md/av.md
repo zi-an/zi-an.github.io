@@ -15,6 +15,7 @@
 
 - https://zian.netlify.app/js/1mm.js
 - https://zian.netlify.app/js/hsck.js
+- https://zian.netlify.app/js/v2raya.js
 - https://zian.netlify.app/config/adblock.txt
 
 - https://zian.netlify.app/js/imagetwist.js
