@@ -18,6 +18,7 @@
 |外网|[托管](https://zian.netlify.app/)|[二维](/web/qrcode.html)|[色彩](/web/color.html?color=)|[晶阳](/web/?uri=/md/jingyang.md)|[英伟达](https://build.nvidia.com/models?filters=nimType%3Anim_type_preview)|
 |资源|[脚本](/js/bing.js)|[广告](/web/adb.html)|[公网](/web/ipv6.html)|[播放](/web/m3u8.html)|[世界杯](https://tiyu.baidu.com/al/match?match=%E4%B8%96%E7%95%8C%E6%9D%AF)|
 |工具|[表格](/web/markdown.html)|[计时](/web/time.html)|[搜索](/web/search.html)||[归属地](/web/ipv46.html)|
+|竞赛|[京东](https://race.jd.com/verD/#/?activeId=5383)|[联盟](https://tiyu.baidu.com/al/match?match=s16)|[人1](https://live.douyin.com/5469085245)|[人2](https://live.douyin.com/384718562505)||
 
 ---
 

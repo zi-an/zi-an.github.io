@@ -19,7 +19,7 @@
 <link rel="canonical" href="http://localhost:80/posts/sukebei/">
 <link rel="stylesheet" href="/book.min.c0de645cb4cb75e493aef507ff38ba72ba0f974534b528b15573c8cda4febc46.css" integrity="sha256-wN5kXLTLdeSTrvUH/zi6croPl0U0tSixVXPIzaT&#43;vEY=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zh.search.min.2da2bd7bfb0aa290a006160ccbb03569a24449c41b84f66207c80af68af22d94.js" integrity="sha256-LaK9e/sKopCgBhYMy7A1aaJEScQbhPZiB8gK9oryLZQ=" crossorigin="anonymous"></script>
+  <script defer src="/zh.search.min.6e7a841279f02515856be9515d7f568fd3738a456baf7850d445b11076b8b129.js" integrity="sha256-bnqEEnnwJRWFa&#43;lRXX9Wj9NzikVrr3hQ1EWxEHa4sSk=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -1119,6 +1119,55 @@ func handleGoProxy(w http.ResponseWriter, r *http.Request, client *http.Client) 
 
 	_, _ = io.Copy(w, resp.Body)
 }
+</code></pre><h1 id="缓存遍历脚本">
+  缓存遍历脚本
+  <a class="anchor" href="#%e7%bc%93%e5%ad%98%e9%81%8d%e5%8e%86%e8%84%9a%e6%9c%ac">#</a>
+</h1>
+<pre tabindex="0"><code>#!/bin/bash
+
+# 遍历 p=1 到 p=50 的页面
+for page in {1..50}; do
+    echo &#34;========================================&#34;
+    echo &#34;处理第 $page 页&#34;
+
+    # 获取 http://10.0.0.222/user/offkab?p=页面 页面内容并提取 /view/* 链接
+    view_links=$(curl -s &#34;http://10.0.0.222/user/offkab?p=$page&#34; | grep -oP &#39;/view/[^&#34;&#39;\&#39;&#39; ]+&#39; | sort -u)
+
+    if [ -z &#34;$view_links&#34; ]; then
+        echo &#34;第 $page 页未找到 /view/* 链接&#34;
+        continue
+    fi
+
+    echo &#34;第 $page 页找到的 /view/* 链接:&#34;
+    echo &#34;$view_links&#34;
+
+    # 遍历每个 /view/* 链接
+    for view_link in $view_links; do
+        echo &#34;----------------------------------------&#34;
+        echo &#34;处理链接: $view_link&#34;
+
+        # 构建完整的URL
+        full_url=&#34;http://10.0.0.222$view_link&#34;
+
+        # 获取该页面的内容，将 &amp;#10; 替换为换行符，然后提取完整的 http://10.0.0.222/域名/upload/路径/*.jpg 链接
+        upload_links=$(curl -s &#34;$full_url&#34; | sed &#39;s/&amp;#10;/\n/g&#39; | grep -oP &#39;http://10\.0\.0\.222/[^/]+/upload/[^&#34;&#39;\&#39;&#39; ]+\.jpg&#39; | sort -u)
+
+        if [ -z &#34;$upload_links&#34; ]; then
+            echo &#34;未找到 upload 链接&#34;
+            continue
+        fi
+
+        echo &#34;找到的 upload 链接:&#34;
+        echo &#34;$upload_links&#34;
+
+        # 遍历并尝试打开每个 upload 链接（使用GET请求触发缓存）
+        while IFS= read -r upload_link; do
+            echo &#34;尝试打开: $upload_link&#34;
+            curl -s &#34;$upload_link&#34; &gt; /dev/null
+            echo &#34;完成&#34;
+        done &lt;&lt;&lt; &#34;$upload_links&#34;
+    done
+done
 </code></pre></article>
  
       
